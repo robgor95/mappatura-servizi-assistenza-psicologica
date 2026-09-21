@@ -162,11 +162,108 @@ sitemap.append("</urlset>")
 )
 
 headers = (ROOT/"_headers").read_text(encoding="utf-8")
-headers = re.sub(r'(?m)^  X-Robots-Tag:.*$', f'  X-Robots-Tag: {ROBOTS_OFF}', headers, count=1)
+headers = re.sub(r'(?m)^  X-Robots-Tag:.*
+vp = ROOT/"version.json"
+v = json.loads(vp.read_text(encoding="utf-8"))
+v["web_version"] = "7.7.4"
+v["seo_version"] = "7.7.4"
+v["indexing_enabled"] = False
+v["sitemap_ready"] = True
+v["indexing_policy"] = "noindex_html_and_http; robots_allows_crawl_to_observe_noindex; sitemap_not_announced"
+v["deployment_checked_by_preparer"] = False
+v["release_note"] = "SEO predisposto ma indicizzazione disattivata: canonical, metadata social, sitemap e dati strutturati pronti; noindex resta attivo via HTML e HTTP."
+vp.write_text(json.dumps(v, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+
+ch = ROOT/"CHANGELOG.md"
+ct = ch.read_text(encoding="utf-8")
+section = """## 7.7.4 — 21 settembre 2026
+
+- Predisposizione SEO completa senza attivare l’indicizzazione.
+- Canonical, title, description, Open Graph e Twitter metadata uniformati sulle pagine utente.
+- Sitemap XML pronta ma non annunciata ai crawler finché il sito resta fuori dai risultati di ricerca.
+- Noindex mantenuto in HTML e rafforzato con X-Robots-Tag; robots.txt consente il crawl necessario a leggere noindex.
+- Dati strutturati WebSite/SearchAction predisposti in home.
+- Archivio legacy, 404, documenti tecnici, dataset, download e pagina qualità restano esclusi dall’indicizzazione anche per il futuro.
+- Aggiunto uno script controllato per abilitare/disabilitare l’indicizzazione in una futura release.
+- Nessuna modifica ai dataset sanitari o alla logica di Menta.
+
+"""
+if "## 7.7.4" not in ct:
+    ct = ct.replace("# Changelog\n\n", "# Changelog\n\n"+section)
+ch.write_text(ct, encoding="utf-8")
+
+rp = ROOT/"README.md"
+rt = rp.read_text(encoding="utf-8")
+rt = rt.replace("## Versione corrente V7.7.3", "## Versione corrente V7.7.4")
+rt = rt.replace("La produzione usa **V7.7.3**", "La produzione usa **V7.7.4**")
+if "### Indicizzazione e SEO" not in rt:
+    insert = """
+### Indicizzazione e SEO
+
+La struttura SEO è predisposta, ma **l’indicizzazione pubblica è disattivata**. Le pagine principali hanno title, description, canonical, metadata social e sitemap già pronti; noindex è applicato sia nell’HTML sia negli header HTTP. robots.txt consente il crawl per permettere ai motori di leggere il noindex, ma non pubblicizza la sitemap.
+
+Quando si deciderà di aprire il sito ai motori di ricerca, usare python tools/set-indexing.py --enable su un branch dedicato, verificare la preview e solo dopo portare la modifica su main. Dataset, download, pagine legacy e documentazione tecnica rimangono esclusi dall’indicizzazione.
+
+"""
+    marker = "### Verifica della versione corrente"
+    rt = rt.replace(marker, insert+marker)
+rp.write_text(rt, encoding="utf-8")
+
+(ROOT/"downloads/Note_Rilascio_V7_7_4.txt").write_text(
+"""SEO / indicizzazione 7.7.4
+
+La struttura SEO è pronta, ma il sito resta volontariamente fuori dai risultati dei motori di ricerca.
+
+Attivo ora:
+- meta robots noindex/nofollow/noarchive/nosnippet/noimageindex;
+- X-Robots-Tag globale equivalente;
+- canonical coerenti;
+- title e description orientati all’utente;
+- Open Graph e Twitter metadata;
+- dati strutturati WebSite/SearchAction in home;
+- sitemap.xml predisposta ma non annunciata in robots.txt.
+
+robots.txt consente il crawl perché un motore deve poter leggere il noindex. Questo non rende il sito indicizzabile.
+Noindex non è un controllo di accesso: chi possiede il link può aprire il sito.
+
+Per il futuro:
+- eseguire tools/set-indexing.py --enable su un branch;
+- verificare preview, canonical, sitemap, header e pagine;
+- solo dopo unire su main e, se desiderato, inviare sitemap.xml ai motori.
+
+Sempre esclusi dall’indicizzazione: archivio legacy, 404, documenti tecnici, qualità dati, privacy, dataset, download, offline e interfaccia precedente.
+
+Nessuna modifica ai dati sanitari o all’orientatore Menta.
+""", encoding="utf-8")
+, f'  X-Robots-Tag: {ROBOTS_OFF}', headers, count=1)
+
+def remove_header_blocks(text, markers):
+    lines = text.splitlines()
+    out=[]; skip=False
+    for line in lines:
+        if line.startswith("/") and not line.startswith("  "):
+            skip = line.strip() in markers
+            if skip:
+                continue
+        if skip:
+            continue
+        out.append(line)
+    return "\n".join(out).rstrip()
+
+cache_overrides = r'''
+/assets/site-v7-4.js
+  Cache-Control: no-cache, must-revalidate
+/assets/directory-v7-5.js
+  Cache-Control: no-cache, must-revalidate
+/assets/servizi-v7-5-1.js
+  Cache-Control: no-cache, must-revalidate
+'''.strip()
 extra = r'''
 /downloads/*
+  Cache-Control: public, max-age=3600
   X-Robots-Tag: noindex, nofollow, noarchive
 /data/*
+  Cache-Control: no-cache
   X-Robots-Tag: noindex, nofollow, noarchive
 /offline/*
   X-Robots-Tag: noindex, nofollow, noarchive
@@ -183,10 +280,13 @@ extra = r'''
 /privacy.html
   X-Robots-Tag: noindex, follow
 '''.strip()
-markers = ["/downloads/*","/data/*","/offline/*","/archivio.html","/interfaccia-precedente.html","/404.html","/documenti.html","/qualita-dati.html","/privacy.html"]
-for marker in markers:
-    headers = re.sub(rf'(?ms)^{re.escape(marker)}\n(?:  .*\n?)+?(?=^/|\Z)', '', headers)
-headers = headers.rstrip()+"\n\n"+extra+"\n"
+markers = {
+ "/assets/site-v7-4.js","/assets/directory-v7-5.js","/assets/servizi-v7-5-1.js",
+ "/downloads/*","/data/*","/offline/*","/archivio.html","/interfaccia-precedente.html",
+ "/404.html","/documenti.html","/qualita-dati.html","/privacy.html"
+}
+headers = remove_header_blocks(headers, markers)
+headers = headers.rstrip()+"\n\n"+cache_overrides+"\n\n"+extra+"\n"
 (ROOT/"_headers").write_text(headers, encoding="utf-8")
 
 vp = ROOT/"version.json"
