@@ -1,0 +1,84 @@
+name: Apply Menta V7.7 candidate v2
+
+on:
+  push:
+    branches: [menta-v7-7]
+    paths:
+      - '.github/workflows/menta-apply-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Verify baseline, reconstruct candidate and test
+        shell: bash
+        run: |
+          set -euo pipefail
+          baseline="b52e4eb25f1226312e99fd9f82bd61a0bfacc876"
+          patch_sha="b0bccf76693ecff3eca58a9fca22c8b325eeff3b88f1a4c027e0e3f0f08ad1aa"
+          target_sha="9766c7232b19e892cad934571ad5f06ae52e2a8ef0fb8f523a7326303f7a1059"
+
+          git fetch origin main
+          current_main="$(git rev-parse origin/main)"
+          if [ "$current_main" != "$baseline" ]; then
+            echo "ABORT: main moved from audited baseline: $current_main"
+            exit 1
+          fi
+
+          rm -rf /tmp/menta-candidate
+          mkdir -p /tmp/menta-candidate
+          git archive --format=zip "$baseline" -o /tmp/menta-base.zip
+
+          python3 - <<'PY'
+          from zipfile import ZipFile
+          import tarfile, io, hashlib
+          with ZipFile('/tmp/menta-base.zip') as z:
+              data = {n: z.read(n) for n in z.namelist() if not n.endswith('/')}
+          with tarfile.open('/tmp/base.tar', 'w', format=tarfile.USTAR_FORMAT) as tar:
+              for name, payload in sorted(data.items()):
+                  info = tarfile.TarInfo(name)
+                  info.size = len(payload)
+                  info.mode = 0o644
+                  info.mtime = 0
+                  tar.addfile(info, io.BytesIO(payload))
+          got = hashlib.sha256(open('/tmp/base.tar','rb').read()).hexdigest()
+          expected = '6fa4a1ba63ac2689e8abb5542ad19a278e445fc38e1d98600b16ea07cbe51bf8'
+          if got != expected:
+              raise SystemExit(f'baseline archive mismatch: {got}')
+          PY
+
+          : > /tmp/candidate.patch
+          for i in 1 2 3; do
+            base64 -d ".menta-transfer/part${i}.b64" >> /tmp/candidate.patch
+          done
+          cat .menta-transfer/part4a.b64 .menta-transfer/part4b.b64 .menta-transfer/part4c.b64 | base64 -d >> /tmp/candidate.patch
+          cat .menta-transfer/part5a.b64 .menta-transfer/part5b.b64 .menta-transfer/part5c.b64 | base64 -d >> /tmp/candidate.patch
+          for i in 6 7; do
+            base64 -d ".menta-transfer/part${i}.b64" >> /tmp/candidate.patch
+          done
+          echo "$patch_sha  /tmp/candidate.patch" | sha256sum -c -
+
+          zstd -q -d --patch-from=/tmp/base.tar /tmp/candidate.patch -o /tmp/candidate.tar
+          echo "$target_sha  /tmp/candidate.tar" | sha256sum -c -
+          tar -xf /tmp/candidate.tar -C /tmp/menta-candidate
+
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/menta-candidate/. .
+
+          node tools/test-menta-v7-7.cjs
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "feat: add Menta V7.7 guided orientation"
+          git push origin HEAD:menta-v7-7
