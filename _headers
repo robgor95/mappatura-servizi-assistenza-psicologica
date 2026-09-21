@@ -2,20 +2,27 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  X-Robots-Tag: noindex, nofollow
+  X-Robots-Tag: noindex,nofollow,noarchive,nosnippet,noimageindex
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
 /assets/*
   Cache-Control: public, max-age=604800
-/data/*
-  Cache-Control: no-cache
+
 /downloads/*
-  Cache-Control: public, max-age=3600
-/assets/site-v7-4.js
-  Cache-Control: no-cache, must-revalidate
-
-/assets/directory-v7-5.js
-  Cache-Control: no-cache, must-revalidate
-
-/assets/servizi-v7-5-1.js
-  Cache-Control: no-cache, must-revalidate
+  X-Robots-Tag: noindex, nofollow, noarchive
+/data/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+/offline/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+/archivio.html
+  X-Robots-Tag: noindex, follow
+/interfaccia-precedente.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+/404.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+/documenti.html
+  X-Robots-Tag: noindex, follow
+/qualita-dati.html
+  X-Robots-Tag: noindex, follow
+/privacy.html
+  X-Robots-Tag: noindex, follow

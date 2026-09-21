@@ -1,5 +1,5 @@
 {
-  "web_version": "7.7.3",
+  "web_version": "7.7.4",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -31,7 +31,7 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo",
-  "deployment_checked_by_preparer": true,
+  "deployment_checked_by_preparer": false,
   "counts_current": {
     "rete": 296,
     "moduli": 115,
@@ -53,7 +53,7 @@
     "routes": 39,
     "towns": 93
   },
-  "release_note": "Navigazione semplificata: quattro percorsi principali, home per situazioni, download secondari, guida con linguaggio più naturale. Dati e orientatore invariati.",
+  "release_note": "SEO predisposto ma indicizzazione disattivata: canonical, metadata social, sitemap e dati strutturati pronti; noindex resta attivo via HTML e HTTP.",
   "navigation_version": "7.7.3",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -63,5 +63,9 @@
     "passed": 33,
     "total": 33,
     "scope": "24 pagine HTML uguali al contenuto testato; 7 asset, dataset e PDF con byte corrispondenti; URL archivio.html?view=stpit e pagina 404 effettiva verificati sull'indirizzo di produzione"
-  }
+  },
+  "seo_version": "7.7.4",
+  "indexing_enabled": false,
+  "sitemap_ready": true,
+  "indexing_policy": "noindex_html_and_http; robots_allows_crawl_to_observe_noindex; sitemap_not_announced"
 }

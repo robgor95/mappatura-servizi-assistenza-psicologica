@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+# Indicizzazione disattivata: le pagine inviano noindex via HTML e HTTP.
+# sitemap.xml è predisposta ma non pubblicizzata finché il sito resta fuori dai motori di ricerca.

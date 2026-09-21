@@ -1,0 +1,24 @@
+SEO / indicizzazione 7.7.4
+
+La struttura SEO è pronta, ma il sito resta volontariamente fuori dai risultati dei motori di ricerca.
+
+Attivo ora:
+- meta robots noindex/nofollow/noarchive/nosnippet/noimageindex;
+- X-Robots-Tag globale equivalente;
+- canonical coerenti;
+- title e description orientati all’utente;
+- Open Graph e Twitter metadata;
+- dati strutturati WebSite/SearchAction in home;
+- sitemap.xml predisposta ma non annunciata in robots.txt.
+
+robots.txt consente il crawl perché un motore deve poter leggere il noindex. Questo non rende il sito indicizzabile.
+Noindex non è un controllo di accesso: chi possiede il link può aprire il sito.
+
+Per il futuro:
+- eseguire tools/set-indexing.py --enable su un branch;
+- verificare preview, canonical, sitemap, header e pagine;
+- solo dopo unire su main e, se desiderato, inviare sitemap.xml ai motori.
+
+Sempre esclusi dall’indicizzazione: archivio legacy, 404, documenti tecnici, qualità dati, privacy, dataset, download, offline e interfaccia precedente.
+
+Nessuna modifica ai dati sanitari o all’orientatore Menta.
