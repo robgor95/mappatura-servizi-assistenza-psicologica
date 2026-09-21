@@ -1,0 +1,28 @@
+{
+  "version": "7.5",
+  "verified_at": "2026-09-21",
+  "generated_at": "2026-09-21",
+  "datasets": {
+    "universita": {
+      "path": "/data/universita_v7_5.json",
+      "count": 17
+    },
+    "scuole": {
+      "path": "/data/sportelli_scolastici_v7_5.json",
+      "count": 13
+    },
+    "helpline": {
+      "path": "/data/helpline_v7_5.json",
+      "count": 19
+    },
+    "centri_ascolto": {
+      "path": "/data/centri_ascolto_v7_5.json",
+      "count": 23
+    },
+    "privati": {
+      "path": "/data/privati_v7_5.json",
+      "count": 11
+    }
+  },
+  "method_note": "Dataset incrementali V7.5. I dataset V7.3 restano invariati e autorevoli per l'archivio storico. Ogni nuovo record include fonte e data di verifica."
+}
