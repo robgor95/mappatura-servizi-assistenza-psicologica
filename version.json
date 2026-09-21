@@ -31,7 +31,7 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo",
-  "deployment_checked_by_preparer": false,
+  "deployment_checked_by_preparer": true,
   "counts_current": {
     "rete": 296,
     "moduli": 119,
@@ -115,5 +115,19 @@
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap"
+  },
+  "ux_map_deployment_verification": {
+    "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
+    "checked_at": "2026-09-21T21:53:26.343Z",
+    "workflow_run": 35659547804,
+    "production_origin": "https://mappatura-servizi-assistenza-psicologica.pages.dev",
+    "http_checks": {"passed": 37, "total": 37},
+    "browser_test_groups": {"passed": 15, "total": 15},
+    "automated_accessibility_pages": 26,
+    "preserved_historical_file_hashes": 72,
+    "viewports": [360, 390, 768, 1440],
+    "indexing_enabled": false,
+    "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
+    "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   }
 }
