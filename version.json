@@ -31,7 +31,7 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo",
-  "deployment_checked_by_preparer": false,
+  "deployment_checked_by_preparer": true,
   "counts_current": {
     "rete": 296,
     "moduli": 119,
@@ -86,5 +86,21 @@
       "downloads and legacy paths noindex"
     ]
   },
-  "multisite_extension_version": "7.7.5"
+  "multisite_extension_version": "7.7.5",
+  "multisite_deployment_verification": {
+    "checked_commit": "f4ab76e46dacf705829553a816b596a040aa2145",
+    "checked_at": "2026-09-21T20:34:47Z",
+    "workflow_run": 35651889791,
+    "production_origin": "https://mappatura-servizi-assistenza-psicologica.pages.dev",
+    "checks": [
+      "version 7.7.5 served",
+      "432 search results",
+      "119 non-ASL structures/services",
+      "Reverie returns 4 distinct units",
+      "Nuovi Orizzonti returns 2 distinct units",
+      "Via Morlupo 94 returns CTC 2 and Centro Diurno separately",
+      "structure directory returns 173 results",
+      "SEO indexing remains disabled"
+    ]
+  }
 }
