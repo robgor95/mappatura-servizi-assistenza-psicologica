@@ -2,7 +2,7 @@ name: UX and map candidate verification
 on:
   push:
     branches: [ux-map-v7-8]
-    paths: ['.github/workflows/map-candidate.yml']
+    paths: ['.github/workflows/map-candidate.yml', '.map-release/refinements.py']
 permissions:
   contents: write
   actions: read
