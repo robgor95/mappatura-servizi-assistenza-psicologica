@@ -21,11 +21,11 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.7.1 — Menta
+## Versione corrente V7.7.2 — Menta
 
-La produzione usa **V7.7.1** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
+La produzione usa **V7.7.2** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 
-Menta è una guida locale, non un chatbot: **29 intenti**, **246 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
+Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. La V7.7.2 semplifica il linguaggio del frontend, sposta i dettagli di audit fuori dal percorso principale e amplia la guida al privato con scelta del professionista e approcci psicoterapeutici. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
 
 - `assets/menta-config-v7-7.js`: vocabolario, priorità, percorsi, combinazioni e luoghi del database.
 - `assets/menta-core-v7-7.js`: funzioni pure di riconoscimento e composizione dei link, senza rete o storage.
