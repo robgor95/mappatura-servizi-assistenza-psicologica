@@ -59,6 +59,10 @@ jobs:
           headers=Path('_headers').read_text()
           first=headers.split('/assets/*',1)[0]
           assert 'X-Robots-Tag: noindex,nofollow,noarchive,nosnippet,noimageindex' in first
+          for asset in ['/assets/site-v7-4.js','/assets/directory-v7-5.js','/assets/servizi-v7-5-1.js']:
+              assert asset in headers and 'Cache-Control: no-cache, must-revalidate' in headers
+          assert '/data/*' in headers and 'Cache-Control: no-cache' in headers
+          assert '/downloads/*' in headers and 'Cache-Control: public, max-age=3600' in headers
           root=ET.parse('sitemap.xml').getroot()
           ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
           locs=[x.text for x in root.findall('s:url/s:loc',ns)]
