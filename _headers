@@ -13,3 +13,9 @@
   Cache-Control: public, max-age=3600
 /assets/site-v7-4.js
   Cache-Control: no-cache, must-revalidate
+
+/assets/directory-v7-5.js
+  Cache-Control: no-cache, must-revalidate
+
+/assets/servizi-v7-5-1.js
+  Cache-Control: no-cache, must-revalidate

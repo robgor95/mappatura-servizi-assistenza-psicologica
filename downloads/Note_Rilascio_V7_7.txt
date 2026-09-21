@@ -1,0 +1,54 @@
+V7.7 — Menta: guida visiva e orientamento locale
+Data: 21 settembre 2026
+Base verificata: main @ b52e4eb25f1226312e99fd9f82bd61a0bfacc876 (V7.6)
+
+HOME E ORIENTAMENTO
+“Ciao, sono Menta” e “Di cosa hai bisogno?” con invio esplicito.
+Nessun chatbot generativo, nessun redirect automatico. “Esplora in autonomia” resta sempre disponibile.
+29 intenti; 250 assegnazioni di parole/frasi, 246 distinte dopo normalizzazione; 38 espressioni di sicurezza (37 distinte). I luoghi sono conteggiati separatamente: 93 comuni/valori geografici del database, province e ASL.
+37 percorsi dichiarativi verso 17 pagine distinte, anche con filtri o ancore.
+CSM Viterbo → servizi.html?tipo=CSM&comune=Viterbo.
+“Provincia di Viterbo” e “ASL Roma 2” attivano i rispettivi filtri supportati.
+Minori, studenti generici e richieste generiche possono mostrare 2–4 alternative. “Mio figlio” da solo non determina un’età.
+Le parole sintomatologiche generiche rinviano a informazioni introduttive, non a diagnosi o trattamenti.
+
+EMERGENZA
+Le parole di possibile emergenza fanno comparire immediatamente un avviso sobrio.
+112/118: emergenza. 116117: sanità non urgente. Helpline e ascolto non equivalgono al soccorso.
+Nessuna chiamata automatica e nessuna valutazione del rischio. Il riquadro può apparire anche per una richiesta informativa.
+Fonte della nuova microcopy: Regione Lazio, 26/08/2026; consultata 21/09/2026.
+https://regione.lazio.it/notizie/salute-attivo-in-tutta-la-regione-il-numero-116117
+
+PRIVACY
+Nessun testo Menta trasmesso dal codice applicativo a server o servizi esterni.
+Nessuna API, analytics, cookie di profilazione, localStorage/sessionStorage dei bisogni.
+Il campo non ha un attributo name; senza JavaScript resta disabilitato. Nessuna serializzazione accidentale della frase.
+Solo filtri da liste predefinite compaiono nei collegamenti. Il testo è cancellato all’uscita e al ripristino della pagina dalla cache di navigazione.
+Le ricerche libere del database restano una funzione separata: URL e cronologia possono contenerle. Il sito non promette navigazione invisibile o controllo sui browser, sulle tastiere e sui log tecnici dell’hosting.
+
+GRAFICA E INTERFACCIA
+Otto composizioni contestuali: accoglienza, ricerca, guide, università, scuola, telefono, ascolto, qualità dati.
+Una base WebP derivata dalla mascotte fornita + sei accessori SVG riutilizzabili. Non sono otto ridisegni indipendenti.
+Colori menta e turchese, lime e lilla solo come accenti; superfici calme e testo scuro.
+Figure piccole su mobile, focus visibile, target grandi, alternative testuali e reduced-motion.
+Le mascotte sono decorative: alt vuoto e informazioni equivalenti nel testo.
+
+CONSERVAZIONE
+428 schede nell’indice corrente: 296 nodi rete, 115 moduli non ASL, 17 attività private.
+I file sanitari V7.3, le integrazioni V7.5, il riesame V7.6, i download originali, gli ID e le date non sono riscritti.
+Conservati archivio.html e compatibilità dei parametri legacy, precedente interfaccia e copie offline.
+Le cinque guide mantengono il contenuto: cambia soltanto il contesto grafico e di navigazione.
+Corretto il solo conteggio UI della rete, che usava 295 anziché le 296 schede già presenti nell’overlay V7.6.
+
+TEST E MANUTENZIONE
+node tools/test-menta-v7-7.cjs
+python tools/test-menta-browser-v7-7.py (dipendenze solo di sviluppo: Playwright, BeautifulSoup; axe-core per i controlli automatici)
+Il deploy del sito non richiede build, dipendenze, API, backend, framework o servizi a pagamento.
+Test completi: Verifiche_Menta_V7_7.json. Provenienza e hash conservati: Audit_Menta_V7_7.json.
+Il test V7.5.1 rimane storico, con assunzioni precedenti all’overlay V7.6; per la versione attuale usare la suite V7.7.
+
+LIMITI
+Sinonimi non censiti, refusi e frasi complesse possono non essere riconosciuti o produrre alternative generiche.
+Non vengono stimati appropriatezza clinica, posti liberi, gratuità, diagnosi o urgenza effettiva.
+Test automatici non equivalgono a una certificazione di accessibilità o a una prova con ogni browser e tecnologia assistiva.
+La V7.7 non attribuisce nuove verifiche sanitarie al restyling.

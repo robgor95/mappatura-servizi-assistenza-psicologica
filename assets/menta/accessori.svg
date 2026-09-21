@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mint" x2="1" y2="1"><stop stop-color="#ecf9b2"/><stop offset="1" stop-color="#84c965"/></linearGradient>
+    <linearGradient id="teal" x2="1" y2="1"><stop stop-color="#62d4c6"/><stop offset="1" stop-color="#187966"/></linearGradient>
+    <linearGradient id="violet" x2="1" y2="1"><stop stop-color="#d9c9fc"/><stop offset="1" stop-color="#9684d2"/></linearGradient>
+  </defs>
+  <symbol id="search" viewBox="0 0 100 100">
+    <path d="m54 55 30 31" fill="none" stroke="#164e47" stroke-width="15" stroke-linecap="round"/>
+    <path d="m56 56 27 28" fill="none" stroke="url(#mint)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="36" cy="36" r="27" fill="#effbf5" fill-opacity=".92" stroke="#164e47" stroke-width="5"/>
+    <circle cx="36" cy="36" r="21" fill="#bceae8" fill-opacity=".8" stroke="#79b9a8" stroke-width="2"/>
+    <path d="M22 31q4-12 17-12" fill="none" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="book" viewBox="0 0 100 100">
+    <path d="M8 21q22-7 42 6 20-13 42-6v60q-22-6-42 5-20-11-42-5Z" fill="url(#violet)" stroke="#164e47" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M14 15q22-5 36 8 14-13 36-8v59q-22-5-36 8-14-13-36-8Z" fill="#fffcf0" stroke="#164e47" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M50 23v59M24 34l16 3m-16 11 16 3m20-14 15-3m-15 17 15-3" stroke="#81bfa0" fill="none" stroke-width="3" stroke-linecap="round"/>
+    <path d="M69 16v28l6-6 5 4V15" fill="#edb464"/>
+  </symbol>
+  <symbol id="university" viewBox="0 0 100 100">
+    <path d="M23 44v24q25 16 53 0V44" fill="url(#teal)" stroke="#164e47" stroke-width="4"/>
+    <path d="M5 34 49 12 94 34 49 57Z" fill="#2c6864" stroke="#164e47" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M49 34h36v34" fill="none" stroke="#edc66c" stroke-width="4" stroke-linecap="round"/>
+    <path d="m86 65-5 19h10Z" fill="#edc66c" stroke="#987323" stroke-width="2"/>
+  </symbol>
+  <symbol id="school" viewBox="0 0 100 100">
+    <path d="M36 23V13q14-10 28 0v10" fill="none" stroke="#164e47" stroke-width="5"/>
+    <path d="M18 32q0-14 17-14h29q17 0 17 14v54H18Z" fill="url(#violet)" stroke="#164e47" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M24 46h51" stroke="#164e47" stroke-width="3"/>
+    <rect x="28" y="58" width="42" height="23" rx="6" fill="url(#mint)" stroke="#164e47" stroke-width="3"/>
+    <path d="M36 32h26" stroke="#fff8ec" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="phone" viewBox="0 0 100 100">
+    <path d="M14 55V44a36 36 0 0 1 72 0v11" fill="none" stroke="#164e47" stroke-width="9"/>
+    <path d="M14 43a36 36 0 0 1 72 0" fill="none" stroke="url(#violet)" stroke-width="5"/>
+    <rect x="6" y="43" width="18" height="30" rx="8" fill="url(#teal)" stroke="#164e47" stroke-width="3"/>
+    <rect x="76" y="43" width="18" height="30" rx="8" fill="url(#teal)" stroke="#164e47" stroke-width="3"/>
+    <path d="M84 73q0 15-27 15" fill="none" stroke="#164e47" stroke-width="4" stroke-linecap="round"/>
+    <rect x="43" y="82" width="19" height="9" rx="4" fill="#164e47"/>
+  </symbol>
+  <symbol id="quality" viewBox="0 0 100 100">
+    <rect x="17" y="12" width="65" height="79" rx="9" fill="#fffaf0" stroke="#164e47" stroke-width="4"/>
+    <rect x="35" y="7" width="29" height="13" rx="5" fill="url(#violet)" stroke="#164e47" stroke-width="3"/>
+    <path d="m27 36 5 5 9-11m-14 28 5 5 9-11m-14 28 5 5 9-11" fill="none" stroke="#227566" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M49 36h21M49 58h21M49 80h21" stroke="#84b3a1" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+</svg>

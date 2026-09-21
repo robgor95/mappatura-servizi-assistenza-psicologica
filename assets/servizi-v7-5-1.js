@@ -153,7 +153,7 @@ async function start(){
   if(base.status!=='fulfilled')throw new Error('Database principale non caricabile. Riprova o usa i download originali.');
   D=base.value;rows=A.build(D,extra.status==='fulfilled'?extra.value:null);populate();wire();
   $('svc-total').textContent=rows.length+' schede';
-  $('svc-breakdown').textContent=D.rete_asl.length+' nodi rete ASL · '+D.moduli.length+' moduli non ASL · '+rows.filter(r=>r.origin==='privati').length+' schede di attività privata.';
+  $('svc-breakdown').textContent=rows.filter(r=>r.origin==='rete').length+' nodi rete ASL · '+rows.filter(r=>r.origin==='moduli').length+' moduli non ASL · '+rows.filter(r=>r.origin==='privati').length+' schede di attività privata.';
   if(extra.status==='fulfilled')$('svc-load-status').hidden=true;else{$('svc-load-status').textContent='Il dataset dei centri con attività privata non è stato caricato: stai consultando solo i '+rows.length+' record del database principale.';}
   $('svc-controls').disabled=false;state=stateFromURL();commit(state,false);
   if(state.tecnico){$('svc-technical').scrollIntoView({block:'start'});}

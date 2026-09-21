@@ -1,5 +1,5 @@
 {
-  "web_version": "7.6",
+  "web_version": "7.7",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -41,5 +41,17 @@
     "universita": 19,
     "helpline": 20,
     "search": 428
-  }
+  },
+  "menta_version": "7.7",
+  "menta": {
+    "intents": 29,
+    "keyword_assignments": 250,
+    "unique_keywords": 246,
+    "emergency_assignments": 38,
+    "unique_emergency_keywords": 37,
+    "destination_pages": 17,
+    "routes": 37,
+    "towns": 93
+  },
+  "release_note": "Menta: evoluzione UI e orientamento locale. Nessun riesame sanitario aggiuntivo."
 }
