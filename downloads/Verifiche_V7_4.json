@@ -1,0 +1,658 @@
+{
+  "built_at": "2026-09-21",
+  "production_deployed": false,
+  "clinical_review": false,
+  "browser": {
+    "environment": "Chromium headless; pagine e risorse locali in memoria; XHR e History API simulati per policy di rete del browser; non test di produzione",
+    "tests": [
+      {
+        "test": "Desktop index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop guide/index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop guide/index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop ascolto.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop ascolto.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop studenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop studenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop glossario.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop glossario.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop metodo.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop metodo.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop documenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop documenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop privacy.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop privacy.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop guide/primo-percorso.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop guide/primo-percorso.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop guide/pubblico.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop guide/pubblico.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop guide/privato.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop guide/privato.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop guide/ricovero.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop guide/ricovero.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Desktop guide/riabilitazione.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow desktop guide/riabilitazione.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro rubrica nome",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Reset rubrica",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Stato vuoto",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro studenti",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro archivio CSM",
+        "passed": true,
+        "detail": "62 / 295 nodi della rete ASL"
+      },
+      {
+        "test": "Etichetta filtri CSM",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro archivio SerD",
+        "passed": true,
+        "detail": "42 / 295 nodi della rete ASL"
+      },
+      {
+        "test": "Etichetta filtri SerD",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro archivio SPDC",
+        "passed": true,
+        "detail": "20 / 295 nodi della rete ASL"
+      },
+      {
+        "test": "Etichetta filtri SPDC",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro archivio Centro diurno",
+        "passed": true,
+        "detail": "53 / 295 nodi della rete ASL"
+      },
+      {
+        "test": "Etichetta filtri Centro diurno",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro archivio TSMREE/NPIA",
+        "passed": true,
+        "detail": "25 / 295 nodi della rete ASL"
+      },
+      {
+        "test": "Etichetta filtri TSMREE/NPIA",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro archivio DNA/DCA",
+        "passed": true,
+        "detail": "10 / 295 nodi della rete ASL"
+      },
+      {
+        "test": "Etichetta filtri DNA/DCA",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro convenzionate Psichiatria",
+        "passed": true,
+        "detail": "57 / 73 moduli convenzionati residenziali/semiresidenziali"
+      },
+      {
+        "test": "Filtro convenzionate Dipendenze",
+        "passed": true,
+        "detail": "12 / 73 moduli convenzionati residenziali/semiresidenziali"
+      },
+      {
+        "test": "Filtro convenzionate Doppia diagnosi",
+        "passed": true,
+        "detail": "4 / 73 moduli convenzionati residenziali/semiresidenziali"
+      },
+      {
+        "test": "STPIT caricati",
+        "passed": true,
+        "detail": "7"
+      },
+      {
+        "test": "URL scheda",
+        "passed": true,
+        "detail": "https://mappatura-servizi-assistenza-psicologica.pages.dev/archivio.html?view=network&tipo=CSM&id=R1-02"
+      },
+      {
+        "test": "Azioni scheda",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Riapertura scheda",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro cancella scheda precedente",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Indietro ripristina scheda e filtro",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Cambio tab URL",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Filtro invalido segnalato",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "ID invalido segnalato",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab summary",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab public",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab pending",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab extra",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab coverage",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab sources",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab quality",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab history",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Tab method",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 guide/index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 ascolto.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 studenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 glossario.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 metodo.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 documenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 privacy.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 guide/primo-percorso.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 guide/pubblico.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 guide/privato.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 guide/ricovero.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 guide/riabilitazione.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 390 archivio.html?view=network&tipo=CSM",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 guide/index.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 ascolto.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 studenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 glossario.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 metodo.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 documenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 privacy.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 guide/primo-percorso.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 guide/pubblico.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 guide/privato.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 guide/ricovero.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 guide/riabilitazione.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "No overflow 360 archivio.html?view=network&tipo=CSM",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Contenuto senza JS guide/ricovero.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Contenuto senza JS ascolto.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Contenuto senza JS studenti.html",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "test": "Nessun errore JavaScript",
+        "passed": true,
+        "detail": "[]"
+      }
+    ],
+    "javascript_errors": [],
+    "passed": 95,
+    "total": 95
+  },
+  "static": {
+    "internal_links_checked": 362,
+    "issues": [],
+    "legacy_files": [
+      {
+        "path": "data/portal_data_v7_3.json",
+        "identical": true,
+        "sha256": "3360a38954f77e259343c80bb96bf816a5aee77438af0f408dc58c618eca1bbd"
+      },
+      {
+        "path": "downloads/Accesso_Extraregionale_V7_3.csv",
+        "identical": true,
+        "sha256": "5df8c2d9301b3a85caf7cbe83e00cf8bd4bc2dc8b772b30203192d500391d2f2"
+      },
+      {
+        "path": "downloads/Audit_Qualita_Dati_V7_3.csv",
+        "identical": true,
+        "sha256": "7946170db7380c616ddfabf7215495bd28b9dcad5b2a2d9f11f100cf08b04392"
+      },
+      {
+        "path": "downloads/Convenzionate_Dipendenze_V7_3.csv",
+        "identical": true,
+        "sha256": "52c4ef8eaff3518fc93ac697c07b703a60d5cb523638b8b9e484f628263aaf1b"
+      },
+      {
+        "path": "downloads/Convenzionate_Doppia_Diagnosi_V7_3.csv",
+        "identical": true,
+        "sha256": "80e2294de452993670380522dd9cd1f14e6ead0537911ba6f6c006d0929346b8"
+      },
+      {
+        "path": "downloads/Convenzionate_Psichiatriche_V7_3.csv",
+        "identical": true,
+        "sha256": "15c0bc6bbb7ba909d343b3bac2f8f08863574920672a6f2f7043ee7550e93697"
+      },
+      {
+        "path": "downloads/Da_Verificare_2026_V7_3.csv",
+        "identical": true,
+        "sha256": "df13c7ba846d2e0f981bc697edc8eec49538ba483913b0cfb4a3adefbda2d4a2"
+      },
+      {
+        "path": "downloads/Dataset_Lazio_V7_3.json",
+        "identical": true,
+        "sha256": "bcf42774d7fb55d120cd89e9d991033f57f64f2cb1b81664267779a6160fcc09"
+      },
+      {
+        "path": "downloads/Fonti_Master_V7_3.csv",
+        "identical": true,
+        "sha256": "81a4df08e5d852c5c8c637a7c8a1583855283e2430362b28885e176ba40ba9b1"
+      },
+      {
+        "path": "downloads/LEGGIMI_V7_3.txt",
+        "identical": true,
+        "sha256": "9c7206e0916c0a352e896fecbdf03da5bd96e9a8e994718495b7cf33a66fc015"
+      },
+      {
+        "path": "downloads/Mappatura_Lazio_V7_3.xlsx",
+        "identical": true,
+        "sha256": "76354e85c9f848df585e3bf92c89d681f9e53584c56d46308dfd63989ff45f5f"
+      },
+      {
+        "path": "downloads/Matrice_Copertura_Pubblica_V7_3.csv",
+        "identical": true,
+        "sha256": "1b559d7677226732564fb8137defbf39176ee37f40991f29cfa0890c2fe78b09"
+      },
+      {
+        "path": "downloads/Matrice_Copertura_V7_3.csv",
+        "identical": true,
+        "sha256": "c6eb491866ff7d0da7c825f3e70a71bf9462472803b2db0956b681a4cde4ca92"
+      },
+      {
+        "path": "downloads/Rete_ASL_V7_3.csv",
+        "identical": true,
+        "sha256": "16a141b2b51d5df7cd86be78ab7ba2ed05ef0cb36a9dd86b0681598dba9ecfd7"
+      },
+      {
+        "path": "downloads/STPIT_V7_3.csv",
+        "identical": true,
+        "sha256": "762b3e7a884595171fbb00a63852a002035c67aed18d423d350c039872cf39f9"
+      },
+      {
+        "path": "downloads/Stato_Amministrativo_Moduli_V7_3.csv",
+        "identical": true,
+        "sha256": "5df8c2d9301b3a85caf7cbe83e00cf8bd4bc2dc8b772b30203192d500391d2f2"
+      },
+      {
+        "path": "downloads/Storico_Completo_V7_3.csv",
+        "identical": true,
+        "sha256": "49a91721993179fb2e83e100982536214450b4acfad3ef887e89d91076b9b79a"
+      },
+      {
+        "path": "downloads/Strutture_Pubbliche_Ricontrollate_V7_3.csv",
+        "identical": true,
+        "sha256": "6ef642e9a07fb5dfa9dff73bdd9d1abf4eade4d75aa6b7be503f80f462f0158c"
+      },
+      {
+        "path": "downloads/Tutti_Moduli_V7_3.csv",
+        "identical": true,
+        "sha256": "5df8c2d9301b3a85caf7cbe83e00cf8bd4bc2dc8b772b30203192d500391d2f2"
+      },
+      {
+        "path": "downloads/Verifiche_Rete_Pubblica_V7_3.csv",
+        "identical": true,
+        "sha256": "6f1e45d1a6299627d64fd73b4786e1e5837a272fb8ecb736fa7df77fcd5101cb"
+      },
+      {
+        "path": "downloads/Verifiche_Web_2026_V7_3.csv",
+        "identical": true,
+        "sha256": "03fe9231f5a5f7f424df840ed6f7963ce316bdf7dc28de547b771aae5db568c5"
+      },
+      {
+        "path": "offline/Portale_Lazio_V7_3_Offline.html",
+        "identical": true,
+        "sha256": "b70e4a685d981ce285f46c20f5daae0188939735147d08de394de8b9521dee72"
+      }
+    ],
+    "pdf_checks": [
+      {
+        "path": "downloads/Guide_Percorsi_Cura_Lazio_V7_4.pdf",
+        "pages": 25,
+        "nonempty": true,
+        "internal_local_urls": [],
+        "outside_page": [],
+        "very_short_pages": []
+      },
+      {
+        "path": "downloads/guide/Guida_05_riabilitazione.pdf",
+        "pages": 4,
+        "nonempty": true,
+        "internal_local_urls": [],
+        "outside_page": [],
+        "very_short_pages": []
+      },
+      {
+        "path": "downloads/guide/Guida_02_pubblico.pdf",
+        "pages": 5,
+        "nonempty": true,
+        "internal_local_urls": [],
+        "outside_page": [],
+        "very_short_pages": []
+      },
+      {
+        "path": "downloads/guide/Guida_01_primo-percorso.pdf",
+        "pages": 6,
+        "nonempty": true,
+        "internal_local_urls": [],
+        "outside_page": [],
+        "very_short_pages": []
+      },
+      {
+        "path": "downloads/guide/Guida_03_privato.pdf",
+        "pages": 4,
+        "nonempty": true,
+        "internal_local_urls": [],
+        "outside_page": [],
+        "very_short_pages": []
+      },
+      {
+        "path": "downloads/guide/Guida_04_ricovero.pdf",
+        "pages": 5,
+        "nonempty": true,
+        "internal_local_urls": [],
+        "outside_page": [],
+        "very_short_pages": []
+      }
+    ],
+    "archive_counts": {
+      "private_modules": 115,
+      "public_nodes": 295
+    }
+  }
+}

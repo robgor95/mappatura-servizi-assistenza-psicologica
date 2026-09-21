@@ -1,0 +1,1269 @@
+{
+  "meta": {
+    "version": "7.4",
+    "content_reviewed_at": "2026-09-21",
+    "legacy_dataset_version": "7.3",
+    "clinical_review": false,
+    "exhaustive": false
+  },
+  "guides": [
+    {
+      "id": "primo-percorso",
+      "n": "01",
+      "title": "Affrontare per la prima volta un percorso di cura",
+      "short": "Da dove iniziare",
+      "subtitle": "Professionisti, primo colloquio, psicoterapia e farmaci: capire le possibilità senza dover scegliere da soli un trattamento.",
+      "summary": "Puoi chiedere un primo incontro anche senza conoscere il nome di ciò che stai vivendo. Il primo obiettivo è chiarire il bisogno e concordare i passi successivi.",
+      "links": [
+        [
+          "Trova un CSM",
+          "/archivio.html?view=network&tipo=CSM"
+        ],
+        [
+          "Accesso al pubblico",
+          "/guide/pubblico.html"
+        ],
+        [
+          "Scegliere un professionista",
+          "/guide/privato.html"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "iniziare",
+          "title": "Che cosa significa “percorso di cura”?",
+          "body": "<p>Un percorso non è un pacchetto identico per tutti: comprende una valutazione, obiettivi condivisi, interventi e momenti di verifica. Può includere colloqui, psicoterapia, trattamento medico, riabilitazione o supporto alla vita quotidiana. Non è necessario utilizzare tutte queste possibilità.</p><p>Una prima richiesta può essere molto semplice: <em>“Sto attraversando un periodo difficile e vorrei capire a chi rivolgermi.”</em> Non serve arrivare con un’autodiagnosi. Un colloquio di orientamento e una psicoterapia continuativa non sono la stessa prestazione.</p><div class=\"callout\"><strong>Una domanda utile</strong><p>“Qual è l’obiettivo dei primi incontri? Quando decideremo insieme come continuare?”</p></div>",
+          "refs": [
+            "nimhpsico"
+          ]
+        },
+        {
+          "id": "professionisti",
+          "title": "Psicologo, psicoterapeuta e psichiatra",
+          "body": "<dl class=\"definitions\"><dt>Psicologo</dt><dd>Professionista sanitario abilitato e iscritto all’Albo. Si occupa, tra l’altro, di valutazione e diagnosi psicologica, sostegno, prevenzione e riabilitazione. Non prescrive farmaci in quanto psicologo.</dd><dt>Psicoterapeuta</dt><dd>Psicologo o medico con il titolo che abilita all’esercizio della psicoterapia. L’iscrizione come psicologo non equivale da sola a questa qualifica: verifica anche l’annotazione o chiedi all’Ordine. Un professionista non medico non può prescrivere farmaci.</dd><dt>Psichiatra</dt><dd>Medico specialista in psichiatria. Valuta gli aspetti clinici e medici della salute mentale e può prescrivere farmaci. Per una psicoterapia, chiedi esplicitamente quale prestazione propone e con quale qualifica.</dd></dl><p>Queste figure possono collaborare. Non rappresentano tre livelli di gravità e non occorre “passare” obbligatoriamente dall’una all’altra.</p>",
+          "refs": [
+            "cnop",
+            "legge56",
+            "medici"
+          ]
+        },
+        {
+          "id": "primo-incontro",
+          "title": "Cosa portare e cosa chiedere al primo incontro",
+          "body": "<p>Puoi preparare un breve promemoria: che cosa ti preoccupa, da quando, come influisce sulla giornata, quali tentativi hai già fatto e che aiuto speri di ottenere. Porta, se disponibili, referti pertinenti e un elenco dei farmaci che assumi. Per documenti, impegnativa e costi chiedi al servizio prima dell’appuntamento.</p><p>Non devi raccontare tutto immediatamente. Puoi dire che un argomento è difficile e chiedere di procedere gradualmente. Chiedi chi avrà accesso alle informazioni, quali sono i limiti della riservatezza e se verranno coinvolti altri professionisti.</p><div class=\"checklist\"><h3>Promemoria da usare al colloquio</h3><ul><li>Quali interventi proponete e perché?</li><li>Chi sarà il mio riferimento e come lo contatto?</li><li>Quanto costano gli incontri e quali sono le regole di disdetta?</li><li>Come verificheremo i progressi e cosa faccio se peggioro?</li></ul></div>",
+          "refs": [
+            "nimhpsico"
+          ]
+        },
+        {
+          "id": "approcci",
+          "title": "Gli approcci psicoterapici, senza classifiche",
+          "body": "<p>Le descrizioni seguenti sono orientative: non identificano da sole il trattamento adatto. Chiedi al professionista come il suo modello si traduce nel lavoro concreto e quali evidenze sono pertinenti al tuo bisogno.</p><dl class=\"definitions\"><dt>Cognitivo-comportamentale</dt><dd>Lavora sui rapporti tra pensieri, emozioni e comportamenti. Può prevedere obiettivi espliciti, esercizi e attività tra gli incontri.</dd><dt>Sistemico-relazionale</dt><dd>Considera la persona nelle relazioni e nei contesti. Può lavorare con individui, coppie o famiglie, secondo il progetto concordato.</dd><dt>Psicodinamico</dt><dd>Esplora significati, conflitti e modalità relazionali ricorrenti, anche nella relazione terapeutica. Esistono interventi focali e percorsi più estesi.</dd><dt>Psicoanalitico</dt><dd>Approfondisce vissuti e processi non immediatamente consapevoli. Frequenza e impegno possono essere maggiori; vanno esplicitati prima di iniziare.</dd><dt>Interpersonale</dt><dd>Si concentra su relazioni e cambiamenti di vita; esistono protocolli strutturati e a tempo definito.</dd></dl><p><strong>“Cognitivo-interpersonale” non è automaticamente sinonimo di terapia interpersonale (IPT).</strong> Quando compare questa denominazione, chiedi quale modello specifico viene usato, quale formazione lo sostiene e come sarà valutato il lavoro. Non attribuiamo a etichette diverse gli stessi protocolli o la stessa efficacia.</p>",
+          "refs": [
+            "bacp",
+            "nimhpsico"
+          ]
+        },
+        {
+          "id": "durata",
+          "title": "Breve o a medio-lungo termine?",
+          "body": "<p>Non assegniamo una durata fissa a ciascuna scuola. Concorda il numero iniziale di incontri, gli obiettivi, la frequenza e una data per fare il punto. Un percorso può essere prolungato, concluso o modificato sulla base della valutazione condivisa, non soltanto dell’etichetta dell’approccio.</p><p>Puoi chiedere: <em>“Quale cambiamento concreto cerchiamo? Tra quanto lo rivalutiamo? Come distinguiamo un periodo difficile da un trattamento che non sta aiutando?”</em> Una promessa di risultato certo o immediato non sostituisce una spiegazione del metodo.</p>",
+          "refs": [
+            "nimhpsico",
+            "bacp"
+          ]
+        },
+        {
+          "id": "relazione",
+          "title": "Come capire se il professionista è adatto a te",
+          "body": "<p>Considera sia la competenza sia la possibilità di parlare con sufficiente fiducia. Essere a proprio agio non significa che ogni seduta debba essere facile; poter fare domande, esprimere disaccordo e discutere un disagio nella relazione è invece un buon punto da verificare.</p><p>Puoi dire: <em>“Non mi sono sentito compreso in quel passaggio: possiamo riprenderlo?”</em> Chiedi un chiarimento o un secondo parere quando serve. Se cambi professionista, concorda, quando possibile, come trasferire le informazioni utili e mantenere la continuità delle eventuali cure mediche.</p>",
+          "refs": [
+            "nimhpsico"
+          ]
+        },
+        {
+          "id": "farmaci",
+          "title": "A cosa servono gli psicofarmaci?",
+          "body": "<p>Sono trattamenti medici, con benefici possibili e rischi da valutare individualmente. Non definiscono il valore o l’identità di chi li assume. Il nome di una classe non rivela automaticamente una diagnosi: farmaci della stessa classe possono essere usati con obiettivi diversi.</p><p>Qui non trovi dosi, indicazioni personalizzate né associazioni “sintomo → farmaco”. L’elenco serve a preparare domande al medico. I singoli prodotti, le formulazioni e le indicazioni autorizzate non sono intercambiabili.</p>",
+          "refs": [
+            "nimhfarmaci"
+          ]
+        },
+        {
+          "id": "classi",
+          "title": "Le principali classi: obiettivi e cautele",
+          "body": "<div class=\"med-class\"><h3>Antidepressivi</h3><p>Possono essere impiegati per difficoltà persistenti dell’umore e altri obiettivi clinici. Il beneficio può richiedere settimane; non sono tutti sedativi. Possibili effetti includono disturbi gastrointestinali, cambiamenti del sonno o della sessualità. Concorda come riconoscere e riferire un peggioramento iniziale. La sospensione improvvisa può causare sintomi da interruzione.</p><p class=\"source-inline\">Riferimento: <a href=\"https://www.nhs.uk/medicines/antidepressants/\">NHS — antidepressivi</a>.</p></div>\n <div class=\"med-class\"><h3>Ansiolitici e ipnotici</h3><p>Comprendono farmaci diversi; le benzodiazepine sono una parte del gruppo. Alcune agiscono rapidamente ma possono dare sonnolenza e, con l’uso continuato, dipendenza e problemi alla sospensione. Alcol e altri sedativi possono aumentare i rischi. Tempi d’uso, guida e interruzione richiedono indicazioni specifiche del prescrittore.</p><p class=\"source-inline\">Riferimenti: <a href=\"https://www.nhs.uk/medicines/lorazepam/about-lorazepam/\">NHS — esempio di benzodiazepina</a>; <a href=\"https://www.nimh.nih.gov/health/topics/mental-health-medications\">NIMH — farmaci</a>.</p></div>\n <div class=\"med-class\"><h3>Antipsicotici</h3><p>Possono aiutare su alterazioni del pensiero o della percezione e su altri sintomi valutati dal medico. I tempi d’effetto sono variabili. Sedazione, variazioni del peso o del metabolismo e disturbi del movimento sono tra gli aspetti da discutere e monitorare, secondo il farmaco.</p><p class=\"source-inline\">Riferimenti: <a href=\"https://www.nimh.nih.gov/health/topics/mental-health-medications\">NIMH — farmaci</a>; <a href=\"https://www.nhs.uk/medicines/olanzapine/about-olanzapine/\">NHS — esempio di antipsicotico</a>.</p></div>\n <div class=\"med-class\"><h3>Stabilizzatori dell’umore</h3><p>Sono impiegati per ridurre o prevenire importanti oscillazioni dell’umore. Non sono tutti uguali: alcuni richiedono esami periodici. Il litio, per esempio, richiede controlli della concentrazione nel sangue. Il programma di monitoraggio e le possibili interazioni vanno definiti dal medico.</p><p class=\"source-inline\">Riferimenti: <a href=\"https://www.nhs.uk/medicines/lithium/about-lithium/\">NHS — litio</a>; <a href=\"https://www.nimh.nih.gov/health/topics/mental-health-medications\">NIMH — farmaci</a>.</p></div>\n <div class=\"med-class\"><h3>Farmaci per attenzione e impulsività</h3><p>Esistono opzioni stimolanti e non stimolanti, prescritte dopo valutazione clinica. Non sono strumenti generici per migliorare lo studio. Indicazioni, benefici attesi e controlli devono essere spiegati dal prescrittore; non vanno condivisi con altre persone.</p><p class=\"source-inline\">Riferimenti: <a href=\"https://www.nimh.nih.gov/health/topics/mental-health-medications\">NIMH — farmaci</a>; <a href=\"https://www.nhs.uk/medicines/methylphenidate-adults/about-methylphenidate-for-adults/\">NHS — esempio di stimolante</a>.</p></div>",
+          "refs": []
+        },
+        {
+          "id": "sicurezza",
+          "title": "Le domande da fare al medico sui farmaci",
+          "body": "<p>Annota l’obiettivo del trattamento, quando rivalutarlo, quali effetti riferire, quali esami eseguire e come contattare il prescrittore. Segnala tutti i medicinali, gli integratori, l’alcol o le sostanze che usi, oltre a eventuale gravidanza o allattamento.</p><p><strong>Non iniziare, modificare, condividere o interrompere autonomamente una terapia.</strong> In caso di effetti gravi, sovradosaggio o pericolo immediato chiedi soccorso; negli altri casi contatta il curante per indicazioni. Le fonti internazionali qui citate non sostituiscono il foglio illustrativo italiano del prodotto né le istruzioni ricevute.</p>",
+          "refs": [
+            "antidepressivi",
+            "benzodiazepine",
+            "nimhfarmaci"
+          ]
+        }
+      ],
+      "source_ids": [
+        "nimhpsico",
+        "cnop",
+        "legge56",
+        "medici",
+        "bacp",
+        "nimhfarmaci",
+        "antidepressivi",
+        "benzodiazepine",
+        "antipsicotici",
+        "litio",
+        "attenzione"
+      ]
+    },
+    {
+      "id": "pubblico",
+      "n": "02",
+      "title": "Accedere al pubblico e ai servizi gratuiti",
+      "short": "Cure pubbliche e ascolto",
+      "subtitle": "Capire chi contattare, cosa chiedere e quali condizioni verificare prima del primo accesso.",
+      "summary": "Servizio pubblico, prestazione gratuita e telefonata gratuita sono tre cose diverse. La scheda del singolo servizio e una conferma diretta evitano false aspettative.",
+      "links": [
+        [
+          "CSM del Lazio",
+          "/archivio.html?view=network&tipo=CSM"
+        ],
+        [
+          "SerD del Lazio",
+          "/archivio.html?view=network&tipo=SerD"
+        ],
+        [
+          "Numeri e ascolto",
+          "/ascolto.html"
+        ],
+        [
+          "Università e scuole",
+          "/studenti.html"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "orientamento",
+          "title": "Da dove posso iniziare?",
+          "body": "<p>Per un bisogno non urgente puoi chiedere orientamento al medico di medicina generale, al servizio territoriale pertinente o al 116117. Se hai già una presa in carico, parti dai contatti concordati con l’équipe. Per salute mentale adulta consulta i CSM; per problemi legati a sostanze o dipendenze, i SerD.</p><p>Quando non sai quale servizio scegliere, formula la domanda senza dover indicare una diagnosi: <em>“Vivo in questo comune, cerco un primo colloquio: siete il servizio competente? Come si prenota?”</em></p>",
+          "refs": [
+            "aslmentale",
+            "serd",
+            "lazio116"
+          ]
+        },
+        {
+          "id": "csm",
+          "title": "CSM e DSM: qual è la differenza?",
+          "body": "<p>Il <strong>Centro di Salute Mentale (CSM)</strong> è un riferimento territoriale per la salute mentale adulta. Il <strong>Dipartimento di Salute Mentale (DSM)</strong> coordina una rete di servizi: non è semplicemente un ambulatorio da prenotare. La rete comprende attività territoriali, ospedaliere e riabilitative.</p><p>Il primo contatto con il CSM serve a capire competenza territoriale, modalità della valutazione e possibili passi successivi. Non promettiamo una psicoterapia gratuita illimitata a chiunque: prestazioni, criteri e disponibilità devono essere verificati localmente.</p><p><a class=\"button\" href=\"/archivio.html?view=network&tipo=CSM\">Cerca i CSM nell’archivio</a> <a class=\"button secondary\" href=\"/archivio.html?view=network&tipo=Ambulatorio%20CSM\">Ambulatori CSM</a></p>",
+          "refs": [
+            "laziopiano",
+            "aslmentale"
+          ]
+        },
+        {
+          "id": "serd",
+          "title": "SerD: un percorso per le dipendenze",
+          "body": "<p>I Servizi per le Dipendenze si occupano di prevenzione, cura e riabilitazione nell’ambito delle dipendenze. Il lavoro può coinvolgere professionisti sanitari e sociali e non coincide soltanto con la prescrizione di un farmaco o l’invio in comunità.</p><p>Puoi chiedere informazioni anche come familiare. Contatta il servizio per verificare primo accesso, privacy, documenti, destinatari e percorsi disponibili per il bisogno specifico, compreso il gioco d’azzardo. In presenza di problemi di salute mentale e dipendenze, chiedi come viene organizzato il coordinamento tra SerD e CSM.</p><p><a class=\"button\" href=\"/archivio.html?view=network&tipo=SerD\">Trova un SerD</a></p>",
+          "refs": [
+            "serd",
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "116117",
+          "title": "116117: consigli sanitari non urgenti",
+          "body": "<p>Dal <strong>24 agosto 2026</strong> il 116117 è attivo in tutto il Lazio, gratuitamente e 24 ore su 24, per bisogni sanitari non urgenti e orientamento. Il servizio regionale prevede anche un livello di supporto psicologico. L’operatore indirizza alla risposta pertinente: non equivale a prenotare una psicoterapia continuativa.</p><p>La disponibilità telefonica del 116117 non va confusa con gli orari del medico di continuità assistenziale. Per questi consulta la pagina regionale e chiedi al numero come accedere. <strong>Per un’emergenza non attendere una consulenza non urgente: chiama il 112.</strong></p><p><a class=\"button\" href=\"tel:116117\">Chiama 116117</a></p>",
+          "refs": [
+            "lazio116",
+            "asl116",
+            "guardia"
+          ]
+        },
+        {
+          "id": "ascolto",
+          "title": "Ascolto telefonico: quale servizio?",
+          "body": "<p>Un ascolto emotivo, un servizio antiviolenza e una centrale sanitaria rispondono a bisogni diversi. La rubrica distingue destinatari, orari, costo del servizio e costo della chiamata. Un numero geografico non è automaticamente un numero verde.</p><p>Telefono Amico offre ascolto; il 1522 è specializzato in violenza e stalking; Telefono Rosa è un’associazione con propri servizi e contatti; il 19696 è dedicato a bambini, adolescenti e adulti che si occupano di loro. Non li presentiamo come equivalenti né come sostituti del soccorso.</p><p><a class=\"button\" href=\"/ascolto.html\">Apri numeri utili e ascolto</a></p>",
+          "refs": [
+            "amico",
+            "1522",
+            "rosaservizi",
+            "azzurro"
+          ]
+        },
+        {
+          "id": "studenti",
+          "title": "Università, scuole e minori",
+          "body": "<p>Alcuni atenei offrono percorsi brevi rivolti alla propria comunità, con requisiti e prenotazioni specifici. Per esempio Sapienza pubblica quattro colloqui gratuiti e un follow-up; Tuscia descrive un ciclo di quattro colloqui gratuiti. Non sono offerte automaticamente accessibili a tutta la popolazione.</p><p>Per la scuola verifica sul sito dell’istituto o con la segreteria se lo sportello è attivo nell’anno scolastico corrente. Chiedi chi lo gestisce, come prenotare e quali regole di consenso e riservatezza si applicano. Non presumiamo che ogni scuola abbia uno psicologo disponibile.</p><p>Per i servizi sanitari dell’età evolutiva consulta TSMREE/NPIA, anziché applicare automaticamente le procedure dei CSM adulti.</p><p><a class=\"button\" href=\"/studenti.html\">Servizi per studenti e guida alle scuole</a> <a class=\"button secondary\" href=\"/archivio.html?view=network&tipo=TSMREE%2FNPIA\">TSMREE / NPIA</a></p>",
+          "refs": [
+            "sapstudenti",
+            "tuscia",
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "costi",
+          "title": "Come verificare gratuità, ticket e documenti",
+          "body": "<p>Prima di prenotare chiedi: <em>“La prestazione è a carico del Servizio sanitario? È previsto un ticket? La mia eventuale esenzione si applica? È necessaria un’impegnativa? Ci sono condizioni di residenza, domicilio o iscrizione?”</em></p><p>Non equiparare pubblico, privato accreditato e privato a pagamento. Un centro può erogare alcune prestazioni per il SSN e altre privatamente. Chiedi una risposta riferita alla prestazione concreta e alla data della richiesta, non soltanto alla qualifica generale della struttura.</p><div class=\"callout\"><strong>Documenti da chiedere, non da presumere</strong><p>Informati sull’eventuale necessità di documento, tessera sanitaria, impegnativa e documentazione clinica. Non rinviare una richiesta di soccorso urgente per cercare documenti.</p></div>",
+          "refs": [
+            "aslmentale",
+            "laziorequisiti"
+          ]
+        },
+        {
+          "id": "attesa",
+          "title": "Se non rispondono o c’è una lista d’attesa",
+          "body": "<p>Prova i canali ufficiali indicati nella scheda e chiedi un riferimento alternativo all’URP dell’ASL. Annota data della richiesta, servizio contattato e risposta, senza pubblicare dati sanitari. Chiedi al medico o al servizio come gestire l’attesa e a chi rivolgerti in caso di peggioramento.</p><p>La rubrica non mostra disponibilità in tempo reale. Una scheda senza contatti aggiornati non significa che il servizio non esista. Se la situazione diventa un’emergenza, non continuare a cercare appuntamenti ordinari: utilizza il soccorso.</p>",
+          "refs": []
+        }
+      ],
+      "source_ids": [
+        "aslmentale",
+        "serd",
+        "lazio116",
+        "laziopiano",
+        "asl116",
+        "guardia",
+        "amico",
+        "1522",
+        "rosaservizi",
+        "azzurro",
+        "sapstudenti",
+        "tuscia",
+        "laziorequisiti"
+      ]
+    },
+    {
+      "id": "privato",
+      "n": "03",
+      "title": "Come intraprendere un percorso privato",
+      "short": "Scegliere nel privato",
+      "subtitle": "Verificare qualifiche, metodo, costi e continuità delle cure senza affidarsi a classifiche o promesse.",
+      "summary": "Prima di scegliere, verifica chi eroga la prestazione e quale prestazione stai acquistando. Una consulenza, una psicoterapia e una visita medica non sono sinonimi.",
+      "links": [
+        [
+          "Differenze tra professionisti",
+          "/guide/primo-percorso.html#professionisti"
+        ],
+        [
+          "Alternative pubbliche",
+          "/guide/pubblico.html"
+        ],
+        [
+          "Convenzionate nell’archivio",
+          "/archivio.html?view=contracted"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "qualifiche",
+          "title": "Verificare il professionista",
+          "body": "<p>Per uno psicologo consulta l’Albo nazionale o l’Ordine territoriale. Per la psicoterapia verifica anche la relativa qualifica: non basta il termine “terapeuta” su un sito. Per un medico consulta l’Albo FNOMCeO e verifica la specializzazione dichiarata; in caso di dubbi chiedi all’Ordine competente.</p><p>Controlla che nome, iscrizione e professionista che svolgerà gli incontri coincidano. Titoli pubblicitari, recensioni e numero di follower non sostituiscono queste verifiche. La possibilità di prescrivere farmaci dipende dall’essere medico, non dal nome dell’approccio psicologico.</p><div class=\"actions\"><a class=\"button\" href=\"https://www.psy.it/albo-nazionale/\">Albo psicologi</a><a class=\"button secondary\" href=\"https://albounico.fnomceo.it/\">Albo medici</a></div>",
+          "refs": [
+            "albo",
+            "medici",
+            "legge56"
+          ]
+        },
+        {
+          "id": "richiesta",
+          "title": "Definire una richiesta utile",
+          "body": "<p>Puoi partire dal bisogno, non da una tecnica: <em>“Vorrei una valutazione iniziale”, “Cerco sostegno in questo periodo”, “Vorrei capire se una psicoterapia è indicata”, “Mi serve una valutazione medica”.</em> Chiedi se il professionista ha esperienza con persone della tua fascia d’età e con richieste simili.</p><p>Per una diagnosi o una certificazione necessaria a scuola, università o lavoro, specifica a cosa servirà e verifica con l’ente destinatario quali requisiti richiede. Non dare per scontato che qualsiasi relazione privata abbia lo stesso valore per ogni procedura.</p>",
+          "refs": [
+            "cnop"
+          ]
+        },
+        {
+          "id": "primo-contatto",
+          "title": "Le domande da fare prima di prenotare",
+          "body": "<div class=\"checklist\"><ul><li>Chi svolge il colloquio e qual è la sua qualifica?</li><li>È una consulenza, una valutazione, una visita medica o una psicoterapia?</li><li>Qual è il costo complessivo, inclusi eventuali test, relazioni e incontri aggiuntivi?</li><li>Quanto dura l’incontro e quali sono le regole di cancellazione?</li><li>Come viene protetta la riservatezza? Quali contatti sono utilizzabili tra gli incontri?</li><li>Come vengono gestiti un peggioramento, un’interruzione o l’invio a un altro servizio?</li></ul></div><p>Puoi chiedere queste informazioni per iscritto. Prima di acquistare un pacchetto di incontri, chiarisci che cosa succede se la valutazione suggerisce un percorso diverso.</p>",
+          "refs": []
+        },
+        {
+          "id": "scelta",
+          "title": "Metodo, relazione ed evidenze",
+          "body": "<p>Chiedi una spiegazione comprensibile del lavoro proposto: obiettivi, modalità e criteri di verifica. Non scegliamo un “approccio migliore” in assoluto. La scelta dovrebbe considerare la valutazione, le evidenze per il problema concreto, le preferenze e i vincoli pratici.</p><p>Un percorso può richiedere impegno, ma questo non elimina la possibilità di fare domande. Se senti che qualcosa non funziona, chiedi di discuterlo. Una seconda opinione può aiutare a chiarire la proposta senza interrompere autonomamente eventuali terapie mediche.</p>",
+          "refs": [
+            "nimhpsico"
+          ]
+        },
+        {
+          "id": "online",
+          "title": "In presenza oppure online?",
+          "body": "<p>Prima di un incontro a distanza concorda con il professionista se la modalità è adatta e come proteggere lo spazio del colloquio. Chiedi quale piattaforma verrà usata, come ricevere documenti e cosa fare se la connessione cade.</p><p>Prepara un luogo sufficientemente riservato e chiarisci se altre persone possono essere presenti. Non registrare gli incontri senza un accordo esplicito. Chiedi come vengono gestite le emergenze e le cure quando ti trovi in un luogo diverso. Un servizio online non è automaticamente un servizio di urgenza.</p>",
+          "refs": [
+            "nimhpsico"
+          ]
+        },
+        {
+          "id": "centri",
+          "title": "Centri privati, accreditati e convenzionati",
+          "body": "<p><strong>Autorizzazione</strong>, <strong>accreditamento</strong> e <strong>rapporto contrattuale con il SSN</strong> sono informazioni distinte. Nel nostro archivio le evidenze sono separate: l’assenza di un documento non viene trasformata in una conferma.</p><p>Prima di una prestazione ambulatoriale o di degenza chiedi chi paga, quali passaggi amministrativi servono, quale modulo eroga il trattamento e chi manterrà il collegamento con i servizi territoriali. Le condizioni possono differire tra moduli della stessa struttura e tra pazienti di territori diversi.</p><p><a class=\"button\" href=\"/archivio.html?view=contracted\">Consulta le convenzionate già censite</a> <a class=\"button secondary\" href=\"/archivio.html?view=extra\">Leggi le evidenze extraregionali</a></p>",
+          "refs": [
+            "laziorequisiti"
+          ]
+        },
+        {
+          "id": "neutralita",
+          "title": "Perché non trovi “le cliniche migliori per…”",
+          "body": "<p>Questa edizione non aggiunge una classifica né un censimento generale del privato puro. Per inserirlo servono criteri omogenei su titolarità, servizi effettivamente erogati, requisiti professionali, costi dichiarati, accesso e fonti.</p><p>Le strutture convenzionate già presenti restano consultabili con i loro limiti documentali. La presenza nell’archivio non è una raccomandazione sanitaria, e il numero di informazioni disponibili non misura la qualità clinica.</p>",
+          "refs": []
+        },
+        {
+          "id": "continuita",
+          "title": "Cambiare o terminare un percorso",
+          "body": "<p>Puoi chiedere un confronto sugli obiettivi raggiunti, su ciò che resta da affrontare e sulle alternative. Quando si cambia servizio, chiedi quali documenti portare e come coordinare i professionisti, con il consenso necessario.</p><p>Non usare il cambio di terapeuta come motivo per sospendere da solo una terapia farmacologica. Per farmaci, prescrizioni e monitoraggi chiedi al medico come garantire continuità. Prima dell’ultimo incontro è utile avere un riferimento per eventuali nuove difficoltà.</p>",
+          "refs": [
+            "antidepressivi"
+          ]
+        }
+      ],
+      "source_ids": [
+        "albo",
+        "medici",
+        "legge56",
+        "cnop",
+        "nimhpsico",
+        "laziorequisiti",
+        "antidepressivi"
+      ]
+    },
+    {
+      "id": "ricovero",
+      "n": "04",
+      "title": "Come funziona un ricovero in psichiatria",
+      "short": "Emergenza, SPDC e STPIT",
+      "subtitle": "Valutazione urgente, ricovero volontario, TSO, vita in reparto e continuità delle cure dopo la dimissione.",
+      "summary": "Andare in pronto soccorso non significa automaticamente essere ricoverati. Il bisogno viene valutato e il ricovero è una delle possibili risposte.",
+      "links": [
+        [
+          "SPDC censiti",
+          "/archivio.html?view=network&tipo=SPDC"
+        ],
+        [
+          "STPIT censite",
+          "/archivio.html?view=stpit"
+        ],
+        [
+          "CSM per il territorio",
+          "/archivio.html?view=network&tipo=CSM"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "emergenza",
+          "title": "Quando chiedere aiuto immediato",
+          "body": "<div class=\"callout urgent\"><strong>Pericolo immediato: 112</strong><p>Se temi un danno imminente per te o per un’altra persona, non riesci a restare al sicuro, c’è un sovradosaggio o una grave alterazione dello stato di coscienza, chiama il 112. Per l’emergenza sanitaria è disponibile anche il 118. Non aspettare una risposta via email o da questo sito.</p><a class=\"button danger\" href=\"tel:112\">Chiama 112</a></div><p>Puoi rivolgerti al pronto soccorso per una valutazione urgente. Non metterti alla guida se le tue condizioni non lo consentono; chiedi indicazioni alla centrale. Il 116117 serve invece per bisogni non urgenti.</p>",
+          "refs": [
+            "ares",
+            "lazio116",
+            "112eu"
+          ]
+        },
+        {
+          "id": "valutazione",
+          "title": "Cosa succede prima dell’eventuale ricovero?",
+          "body": "<p>In pronto soccorso viene valutata la situazione sanitaria e, quando necessario, richiesta una consulenza psichiatrica. La valutazione considera anche possibili cause mediche, farmaci o sostanze coinvolte. Non ogni crisi richiede un ricovero e non ogni accesso urgente porta a un TSO.</p><p>Puoi facilitare la valutazione riferendo che cosa è successo, i trattamenti in corso, allergie e contatti dei servizi che già ti seguono. Quando possibile porta la documentazione pertinente, senza ritardare il soccorso.</p>",
+          "refs": [
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "spdc",
+          "title": "Che cos’è uno SPDC?",
+          "body": "<p>Il <strong>Servizio Psichiatrico di Diagnosi e Cura</strong> è un reparto ospedaliero per la valutazione e il trattamento di situazioni acute che richiedono degenza. Non è una comunità residenziale e non sostituisce il percorso territoriale nel lungo periodo.</p><p>Il ricovero mira ad affrontare la fase critica e a organizzare la continuità delle cure. Tempi, attività e passaggi successivi dipendono dalla situazione e dal servizio. Nell’archivio trovi i reparti censiti, non la disponibilità dei letti in tempo reale.</p><p><a class=\"button\" href=\"/archivio.html?view=network&tipo=SPDC\">Consulta gli SPDC</a></p>",
+          "refs": [
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "volontario",
+          "title": "Ricovero volontario e TSO non sono equivalenti",
+          "body": "<p>Nel ricovero volontario la persona accetta il trattamento proposto. Chiedi spiegazioni sugli obiettivi, sulle alternative e sulle regole del reparto. Per rendere il testo comprensibile usiamo “ricovero volontario”, invece di affidarci soltanto all’acronimo TSV.</p><p>Il TSO non consegue automaticamente a una diagnosi, a un conflitto familiare o al rifiuto di una proposta. È una procedura sanitaria con presupposti specifici e controlli. Se durante un ricovero volontario chiedi di interrompere le cure, la situazione deve essere valutata: il TSO non è una scorciatoia per evitare il confronto sul consenso.</p>",
+          "refs": [
+            "tso76"
+          ]
+        },
+        {
+          "id": "tso",
+          "title": "TSO: presupposti, controlli e diritti",
+          "body": "<p>Per il TSO psichiatrico in degenza devono ricorrere insieme: necessità di interventi terapeutici urgenti per alterazioni psichiche; mancata accettazione delle cure; impossibilità di adottare tempestivamente misure extraospedaliere idonee. Sono previsti proposta medica, convalida sanitaria, provvedimento del sindaco e controllo del giudice tutelare.</p><p>Il periodo iniziale è di sette giorni; la prosecuzione richiede una nuova motivazione e gli adempimenti previsti. Il trattamento può cessare prima se vengono meno le condizioni. Non è una durata standard di ogni ricovero.</p><p>La sentenza costituzionale <strong>76/2025</strong> ha rafforzato le garanzie: comunicazione del provvedimento alla persona o al rappresentante, audizione della persona prima della convalida e notificazione del decreto; è prevista anche la comunicazione relativa alla proroga nei termini della decisione. Restano i rimedi per chiedere modifica, revoca o controllo giudiziario.</p><p>Chiedi copia dei provvedimenti, informazioni sui tuoi diritti e assistenza qualificata per una contestazione. Questa sintesi non è consulenza legale e non descrive ogni scadenza procedurale.</p>",
+          "refs": [
+            "tso76"
+          ]
+        },
+        {
+          "id": "reparto",
+          "title": "La vita in reparto: che cosa chiedere",
+          "body": "<p>Accoglienza, colloqui, assistenza infermieristica, terapie ed eventuali attività seguono l’organizzazione del singolo SPDC. Chiedi quali regole si applicano a visite, telefono, oggetti personali, spazi comuni, uscite e contatti con i familiari. Non descriviamo come universali regole che cambiano tra reparti.</p><div class=\"checklist\"><h3>Prima o durante l’ingresso</h3><ul><li>Chi è il referente clinico e come posso parlare con lui?</li><li>Qual è il motivo del ricovero e quali obiettivi state valutando?</li><li>Quali informazioni saranno condivise e con chi?</li><li>Come segnalo un effetto indesiderato, una difficoltà o un reclamo?</li><li>Quando parleremo della dimissione e dei controlli successivi?</li></ul></div>",
+          "refs": []
+        },
+        {
+          "id": "equipe",
+          "title": "Quali professionisti possono essere coinvolti?",
+          "body": "<p>Chiedi al reparto quali figure fanno parte dell’équipe e quali sono effettivamente disponibili: medici psichiatri, infermieri e, secondo l’organizzazione, psicologi, assistenti sociali, professionisti della riabilitazione e altri operatori.</p><p>Il <strong>TeRP</strong> è il Tecnico della riabilitazione psichiatrica. Nel progetto riabilitativo lavora su abilità, autonomia e partecipazione alla vita quotidiana, in collaborazione con l’équipe. Non sostituisce il medico prescrittore. La sua presenza nel percorso non implica che sia presente in ogni SPDC.</p><p>Domanda pratica: <em>“Chi mi aiuta a recuperare le attività quotidiane e a costruire il progetto dopo il ricovero?”</em></p>",
+          "refs": [
+            "laziopiano",
+            "terp"
+          ]
+        },
+        {
+          "id": "dimissione",
+          "title": "Che cosa succede dopo?",
+          "body": "<p>Prima di uscire chiedi un piano comprensibile: terapia e modalità di assunzione, controlli necessari, appuntamento o contatto territoriale, segnali per ricontattare i curanti e riferimento in caso di emergenza. Chiedi chi attiva il primo contatto con CSM, SerD o altro servizio.</p><p>Il percorso può continuare a casa con servizi territoriali, in un trattamento diurno oppure, se indicato, in una struttura. <strong>SPDC → STPIT → comunità non è una sequenza obbligatoria.</strong> Ogni passaggio richiede una valutazione, il coinvolgimento della persona e le procedure pertinenti.</p>",
+          "refs": [
+            "laziopiano",
+            "laziorequisiti"
+          ]
+        },
+        {
+          "id": "stpit",
+          "title": "STPIT: che cosa sono e come si accede",
+          "body": "<p>Le <strong>Strutture per Trattamenti Psichiatrici Intensivi Territoriali</strong> sono un setting distinto dallo SPDC e dalle comunità riabilitative. Il riferimento regionale di base prevede un trattamento volontario ad alta intensità e accesso autorizzato dal DSM. Possono accogliere persone dopo un ricovero ospedaliero oppure provenienti dal territorio, quando indicato.</p><p>Non tutte le cliniche psichiatriche convenzionate sono STPIT. Verifica il modulo, l’atto amministrativo, il percorso di invio e l’eventuale copertura economica: un contatto diretto con la struttura non sostituisce l’autorizzazione richiesta.</p><p><a class=\"button\" href=\"/archivio.html?view=stpit\">Apri le STPIT censite</a></p>",
+          "refs": [
+            "laziorequisiti"
+          ]
+        }
+      ],
+      "source_ids": [
+        "ares",
+        "lazio116",
+        "112eu",
+        "laziopiano",
+        "tso76",
+        "terp",
+        "laziorequisiti"
+      ]
+    },
+    {
+      "id": "riabilitazione",
+      "n": "05",
+      "title": "Comunità, centri diurni e progetti a lungo termine",
+      "short": "Riabilitazione e comunità",
+      "subtitle": "Capire le differenze tra contesti, gli obiettivi del progetto e le domande da fare prima di un inserimento.",
+      "summary": "Il punto di partenza è il progetto della persona, non il posto disponibile. Residenzialità e centro diurno sono possibilità diverse, non tappe obbligatorie.",
+      "links": [
+        [
+          "Comunità psichiatriche convenzionate",
+          "/archivio.html?view=contracted&ambito=Psichiatria"
+        ],
+        [
+          "Dipendenze",
+          "/archivio.html?view=contracted&ambito=Dipendenze"
+        ],
+        [
+          "Doppia diagnosi",
+          "/archivio.html?view=contracted&ambito=Doppia%20diagnosi"
+        ],
+        [
+          "Centri diurni pubblici",
+          "/archivio.html?view=network&tipo=Centro%20diurno"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "progetto",
+          "title": "Che cosa significa progetto terapeutico-riabilitativo?",
+          "body": "<p>È un percorso con obiettivi, interventi e verifiche riferiti alla persona. Il lavoro può riguardare autonomia, relazioni, attività quotidiane, studio, lavoro e gestione delle difficoltà. Non coincide necessariamente con vivere in una struttura.</p><p>Chiedi che il progetto sia comprensibile: <em>“Quali obiettivi abbiamo? Chi fa cosa? Quando li rivediamo? Qual è il mio ruolo nelle decisioni?”</em> Un progetto a lungo termine non dovrebbe essere un inserimento senza criteri di verifica o prospettive di uscita.</p>",
+          "refs": [
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "differenze",
+          "title": "Residenziale, semiresidenziale e centro diurno",
+          "body": "<p>Nel <strong>residenziale</strong> si vive nella struttura per il periodo concordato; nel <strong>semiresidenziale</strong> si partecipa al programma per una parte della giornata senza pernottamento. Il centro diurno è un servizio diurno con attività e finalità definite dal percorso.</p><p>Le sigle regionali distinguono intensità e obiettivi: STPIT, SRTR e SRSR non sono sinonimi. Le descrizioni generiche non attestano quali moduli una struttura sia attualmente autorizzata a erogare: consulta la scheda e la relativa fonte.</p>",
+          "refs": [
+            "laziorequisiti"
+          ]
+        },
+        {
+          "id": "psichiatria",
+          "title": "Comunità e strutture psichiatriche",
+          "body": "<p>Il programma può mettere al centro trattamento e riabilitazione oppure sostegno all’autonomia con livelli diversi di assistenza. Per orientarti chiedi al CSM quale setting risponde al progetto e perché. Non equipariamo una comunità a un reparto ospedaliero o a un semplice alloggio.</p><p>Prima dell’inserimento chiedi una presentazione delle attività, della presenza degli operatori, del collegamento con il territorio e dei criteri di dimissione. Controlla che la descrizione riguardi proprio il modulo proposto, non genericamente l’intera struttura.</p><p><a class=\"button\" href=\"/archivio.html?view=contracted&ambito=Psichiatria\">Convenzionate psichiatriche</a> <a class=\"button secondary\" href=\"/archivio.html?view=public\">Strutture pubbliche ricontrollate</a></p>",
+          "refs": [
+            "laziorequisiti",
+            "aslmentale"
+          ]
+        },
+        {
+          "id": "dipendenze",
+          "title": "Comunità per le dipendenze",
+          "body": "<p>Un programma residenziale o semiresidenziale per dipendenze è una possibilità del percorso, non la risposta obbligatoria a ogni uso problematico. Parti dal SerD per la valutazione e chiedi come si collegano trattamento medico, sostegno psicologico, interventi sociali e continuità dopo l’uscita.</p><p>Informati su obiettivi, compatibilità con le terapie in corso, criteri di ammissione, gestione delle eventuali ricadute, contatti con familiari e servizi invianti. Non dedurre queste condizioni dal nome “comunità terapeutica”.</p><p><a class=\"button\" href=\"/archivio.html?view=contracted&ambito=Dipendenze\">Convenzionate per dipendenze</a> <a class=\"button secondary\" href=\"/archivio.html?view=network&tipo=SerD\">Trova il SerD</a></p>",
+          "refs": [
+            "serd"
+          ]
+        },
+        {
+          "id": "doppia",
+          "title": "Doppia diagnosi: serve un percorso integrato",
+          "body": "<p>La compresenza di problemi psichiatrici e di dipendenza richiede di chiarire come vengono affrontati entrambi e come collaborano i servizi. Una generica disponibilità a “pazienti complessi” non è prova che un modulo sia specificamente dedicato alla doppia diagnosi.</p><p>Chiedi chi coordina il progetto, come lavorano CSM e SerD, quali trattamenti sono possibili e quali criteri di ingresso o esclusione si applicano. Nell’archivio questo ambito resta distinto e va letto insieme alle fonti.</p><p><a class=\"button\" href=\"/archivio.html?view=contracted&ambito=Doppia%20diagnosi\">Moduli di doppia diagnosi</a></p>",
+          "refs": [
+            "laziopiano",
+            "serd"
+          ]
+        },
+        {
+          "id": "centro-diurno",
+          "title": "Cosa si fa in un centro diurno?",
+          "body": "<p>Il programma dipende dal servizio e dal progetto: chiedi quali attività sono previste, quante giornate frequentare, quali obiettivi perseguire e come verificarli. Non basta che un’attività sia chiamata “laboratorio” per capire quale funzione ha nel tuo percorso.</p><p>Verifica trasporto, pasti, accessibilità, eventuale supporto all’assunzione delle terapie, contatti in caso di assenza e coordinamento con il CSM. Chiedi se sono possibili una visita conoscitiva o una presentazione prima di iniziare.</p><p><a class=\"button\" href=\"/archivio.html?view=network&tipo=Centro%20diurno\">Centri diurni della rete pubblica</a> <a class=\"button secondary\" href=\"/archivio.html?view=contracted\">Moduli convenzionati residenziali e semiresidenziali</a></p>",
+          "refs": [
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "accesso",
+          "title": "Come si arriva all’inserimento?",
+          "body": "<p>Chiedi al servizio inviante di spiegare valutazione, progetto, consenso, documentazione e passaggi autorizzativi. Per l’area psichiatrica il riferimento territoriale è normalmente il CSM/DSM; per le dipendenze il SerD. Le condizioni concrete possono variare secondo setting, ASL e provenienza.</p><p>La struttura può dare informazioni sul proprio programma, ma un colloquio conoscitivo o una disponibilità dichiarata non equivalgono ad autorizzazione al pagamento da parte del SSN. Prima di trasferimenti da altre ASL o regioni serve una verifica specifica.</p>",
+          "refs": [
+            "laziorequisiti",
+            "serd"
+          ]
+        },
+        {
+          "id": "durata",
+          "title": "Quanto dura e come si conclude?",
+          "body": "<p>Non indichiamo una durata universale. Chiedi durata iniziale prevista, condizioni per rivalutarla, obiettivi misurabili e piano di dimissione. Un eventuale prolungamento deve essere spiegato, non dato per scontato.</p><p>Prima di uscire concorda dove continuerà il trattamento, chi sarà il riferimento, quali attività proseguiranno e come affrontare eventuali nuove difficoltà. Anche il ritorno alle attività quotidiane può richiedere un supporto graduale.</p>",
+          "refs": [
+            "laziopiano"
+          ]
+        },
+        {
+          "id": "prima-ingresso",
+          "title": "La checklist prima di accettare un inserimento",
+          "body": "<div class=\"checklist\"><ul><li>Quale struttura e quale modulo sono proposti?</li><li>Quali obiettivi personali orientano la scelta?</li><li>Chi autorizza l’inserimento e chi sostiene le diverse spese?</li><li>Quali professionisti sono presenti, anche la notte?</li><li>Quali regole valgono per visite, telefono, uscite e terapie?</li><li>Come verranno protetti riservatezza e contatti con le persone scelte?</li><li>Quando verrà rivalutato il progetto e come si prepara l’uscita?</li></ul></div><p>Chiedi risposte riferite al modulo specifico. L’archivio conserva i campi “non documentato” e “da verificare” proprio per non trasformare informazioni mancanti in garanzie.</p>",
+          "refs": []
+        }
+      ],
+      "source_ids": [
+        "laziopiano",
+        "laziorequisiti",
+        "aslmentale",
+        "serd"
+      ]
+    }
+  ],
+  "helplines": [
+    {
+      "id": "nue112",
+      "name": "112 — Numero unico di emergenza",
+      "category": "Emergenza",
+      "owner": "Servizio pubblico di emergenza",
+      "phone": "112",
+      "display": "112",
+      "hours": "Emergenze, 24 ore su 24",
+      "cost_service": "Soccorso pubblico",
+      "cost_call": "Chiamata gratuita",
+      "audience": "Persone in una situazione di pericolo immediato",
+      "description": "Per richieste di soccorso urgente. Non è un servizio di prenotazione o un colloquio psicologico.",
+      "refs": [
+        "112eu",
+        "ares"
+      ],
+      "status": "Riferimento di emergenza",
+      "note": "Per il soccorso sanitario è disponibile anche il 118. Non attendere risposte dal sito.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "116117",
+      "name": "116117 — Cure e consigli non urgenti",
+      "category": "Sanità non urgente",
+      "owner": "Regione Lazio",
+      "phone": "116117",
+      "display": "116117",
+      "hours": "24 ore su 24, tutti i giorni",
+      "cost_service": "Gratuito",
+      "cost_call": "Gratuita",
+      "audience": "Persone che si trovano nel Lazio",
+      "description": "Orientamento sanitario non urgente e accesso ai livelli previsti dal servizio, incluso il supporto psicologico. Copertura di tutto il Lazio dal 24/08/2026.",
+      "refs": [
+        "lazio116",
+        "asl116",
+        "guardia"
+      ],
+      "status": "Verifica documentale",
+      "note": "Non sostituisce 112/118. Gli orari della continuità assistenziale medica sono distinti dalla disponibilità del numero.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "amico",
+      "name": "Telefono Amico Italia",
+      "category": "Ascolto emotivo",
+      "owner": "Associazione di volontariato",
+      "phone": "+390223272327",
+      "display": "02 2327 2327",
+      "hours": "Homepage consultata: tutti i giorni, 24 ore su 24",
+      "cost_service": "Ascolto gratuito",
+      "cost_call": "Numero geografico: dipende dal piano telefonico",
+      "audience": "Persone che desiderano ascolto per difficoltà emotive",
+      "description": "Spazio di ascolto telefonico. Non è una centrale di soccorso e non equivale a una psicoterapia.",
+      "refs": [
+        "amico"
+      ],
+      "status": "Verifica documentale",
+      "note": "Orari e canali possono cambiare. WhatsApp e altri canali hanno disponibilità da verificare sul sito ufficiale.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "1522",
+      "name": "1522 — Antiviolenza e stalking",
+      "category": "Violenza e stalking",
+      "owner": "Servizio pubblico nazionale",
+      "phone": "1522",
+      "display": "1522",
+      "hours": "24 ore su 24, tutti i giorni",
+      "cost_service": "Gratuito",
+      "cost_call": "Gratuita da rete fissa e mobile",
+      "audience": "Donne che subiscono violenza e stalking; richieste di aiuto e orientamento",
+      "description": "Ascolto specializzato e orientamento alla rete antiviolenza. Chat accessibile dal sito ufficiale.",
+      "refs": [
+        "1522"
+      ],
+      "status": "Verifica documentale",
+      "note": "In pericolo immediato chiama 112. Se il dispositivo è controllato, usa un canale sicuro; uscire da questa pagina non cancella la cronologia.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "rosa",
+      "name": "Telefono Rosa — Centralino nazionale",
+      "category": "Violenza e stalking",
+      "owner": "Associazione Nazionale Volontarie del Telefono Rosa",
+      "phone": "+390637518282",
+      "display": "06 3751 8282",
+      "hours": "Lunedì–venerdì 9–18; sabato 10–17",
+      "cost_service": "Consulenza gratuita secondo i servizi dell’associazione",
+      "cost_call": "Numero geografico: secondo il piano telefonico",
+      "audience": "Donne che subiscono violenza di genere",
+      "description": "Informazioni e contatto con l’associazione e i suoi servizi. Sede nazionale: Viale Giuseppe Mazzini 73, Roma.",
+      "refs": [
+        "rosa",
+        "rosaservizi"
+      ],
+      "status": "Verifica documentale",
+      "note": "Non è un altro nome del 1522. Verificare appuntamenti e modalità dei singoli servizi.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "azzurro",
+      "name": "Telefono Azzurro — Ascolto 19696",
+      "category": "Minori e famiglie",
+      "owner": "Fondazione SOS Il Telefono Azzurro ETS",
+      "phone": "19696",
+      "display": "19696",
+      "hours": "24 ore su 24, 7 giorni su 7",
+      "cost_service": "Gratuito",
+      "cost_call": "Linea gratuita secondo il servizio",
+      "audience": "Bambini e adolescenti fino a 18 anni; adulti e famiglie per bisogni dei minori",
+      "description": "Ascolto, supporto e orientamento su difficoltà che riguardano bambini e adolescenti.",
+      "refs": [
+        "azzurro"
+      ],
+      "status": "Verifica documentale",
+      "note": "Non è una linea generalista per la psicoterapia degli adulti. Gli altri canali si consultano sul sito ufficiale.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "114",
+      "name": "114 — Emergenza infanzia",
+      "category": "Tutela dei minori",
+      "owner": "Servizio pubblico gestito da Telefono Azzurro",
+      "phone": "114",
+      "display": "114",
+      "hours": "24 ore su 24, 365 giorni l’anno",
+      "cost_service": "Gratuito",
+      "cost_call": "Gratuita da rete fissa e mobile",
+      "audience": "Chiunque debba segnalare pericolo o emergenza riguardante un minore",
+      "description": "Segnalazioni di situazioni di pericolo, abuso o violenza su bambini e adolescenti.",
+      "refs": [
+        "114"
+      ],
+      "status": "Verifica documentale",
+      "note": "Per soccorso sanitario immediato chiama 112. Email e moduli di orientamento legale non sono canali per un intervento immediato.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "issdroga",
+      "name": "ISS — Telefono Verde Droga",
+      "category": "Dipendenze",
+      "owner": "Istituto Superiore di Sanità",
+      "phone": "800186070",
+      "display": "800 186070",
+      "hours": "Non riconfermati in questa revisione",
+      "cost_service": "Servizio nazionale di counselling telefonico",
+      "cost_call": "Numero verde; verificare accessibilità con il proprio operatore",
+      "audience": "Persone con bisogni di informazione sulle droghe e dipendenze",
+      "description": "Numero riscontrato nell’indice pubblico della pagina ISS. Le informazioni operative complete non sono state riconfermate.",
+      "refs": [
+        "issdroga"
+      ],
+      "status": "Verifica parziale",
+      "note": "La pagina integrale non è stata acquisibile. Per iniziare un percorso puoi contattare anche il SerD territoriale. Non è un numero di soccorso.",
+      "checked_at": "2026-09-21",
+      "verification_method": "indice_pubblico",
+      "contact_tested": false
+    }
+  ],
+  "universities": [
+    {
+      "id": "sapienza-studenti",
+      "name": "Sapienza — Centro counselling studenti",
+      "category": "Percorso studenti",
+      "owner": "Sapienza Università di Roma",
+      "audience": "Studenti dei corsi di laurea e dottorato; assegnisti, secondo la pagina dell’ateneo",
+      "cost": "Gratuito",
+      "sessions": "4 colloqui e follow-up a 3 mesi",
+      "mode": "In presenza; online per formazione all’estero o sedi decentrate secondo i criteri pubblicati",
+      "place": "Roma, Piazzale Aldo Moro 5, edificio CU002, piano terra",
+      "email": "centrocounselling.psicologico@uniroma1.it",
+      "booking": "Richiesta tramite il contatto ufficiale del Centro",
+      "description": "Consulenza psicologica per difficoltà personali e nel percorso universitario; non è un servizio di emergenza.",
+      "refs": [
+        "sapstudenti",
+        "saphub"
+      ],
+      "status": "Verifica documentale",
+      "note": "Disponibilità di appuntamenti e tempi di attesa non verificati telefonicamente.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "sapienza-hub",
+      "name": "Sapienza — Hub di prima accoglienza",
+      "category": "Orientamento universitario",
+      "owner": "Sapienza Università di Roma",
+      "audience": "Comunità accademica: studenti, docenti e personale",
+      "cost": "Non specificato nella pagina consultata: chiedere conferma",
+      "sessions": "Non specificati per l’Hub",
+      "mode": "Contatto email e accesso alla sede indicata",
+      "place": "Roma, Piazzale Aldo Moro 5, edificio CU002, piano terra",
+      "email": "servizi.counselling@uniroma1.it",
+      "booking": "Scrivere all’Hub per orientamento e modalità di accesso",
+      "description": "Prima accoglienza e analisi della domanda, con eventuale invio ad altri servizi. È distinto dal ciclo di colloqui studenti.",
+      "refs": [
+        "saphub"
+      ],
+      "status": "Verifica documentale",
+      "note": "Non sommare automaticamente i colloqui dell’Hub a quelli del Centro studenti; percorsi distinti.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "tuscia",
+      "name": "Tuscia — Consulenza psicologica",
+      "category": "Percorso universitario",
+      "owner": "Università degli Studi della Tuscia",
+      "audience": "Studenti, personale tecnico-amministrativo e docenti secondo i moduli dedicati",
+      "cost": "Gratuito",
+      "sessions": "4 colloqui: accoglienza e 3 successivi; rinnovo secondo i criteri del servizio",
+      "mode": "In presenza o a distanza, da concordare",
+      "place": "Viterbo; percorsi indicati anche per Rieti e Civitavecchia. Sede da confermare in prenotazione.",
+      "email": "",
+      "booking": "Moduli per sede/lingua sulla pagina ufficiale; usare l’account istituzionale richiesto",
+      "description": "Percorso breve di consulenza. La pagina distingue prenotazioni per studenti e personale.",
+      "refs": [
+        "tuscia"
+      ],
+      "status": "Verifica documentale",
+      "note": "Non riportiamo l’indirizzo del rettorato come sede clinica. Orari e disponibilità vengono concordati con il servizio.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    },
+    {
+      "id": "roma3",
+      "name": "Roma Tre — Colloqui e gruppi di supporto",
+      "category": "Programma universitario",
+      "owner": "Università degli Studi Roma Tre",
+      "audience": "Studenti e studentesse dell’ateneo, secondo l’iniziativa pubblicata",
+      "cost": "Non specificato nella fonte consultata: da confermare",
+      "sessions": "3 colloqui propedeutici all’eventuale inserimento nei gruppi descritti",
+      "mode": "Modalità e sede da confermare al servizio",
+      "place": "Roma — sede operativa non indicata nella fonte acquisita",
+      "email": "",
+      "booking": "Collegamento di prenotazione pubblicato nella pagina ufficiale dell’ateneo",
+      "description": "Avviso relativo a gruppi su gestione dello studio, ACT e abilità sociali. Non attesta disponibilità immediata o apertura continuativa delle iscrizioni.",
+      "refs": [
+        "roma3"
+      ],
+      "status": "Verifica parziale",
+      "note": "Prima di prenotare chiedere se il programma è attivo, i destinatari ammessi, la gratuità e il calendario attuale.",
+      "checked_at": "2026-09-21",
+      "verification_method": "documentale_web",
+      "contact_tested": false
+    }
+  ],
+  "glossary": [
+    [
+      "ASL",
+      "Azienda sanitaria locale",
+      "Organizza servizi sanitari sul territorio. La ASL territorialmente competente non coincide necessariamente con la struttura più vicina."
+    ],
+    [
+      "DSM",
+      "Dipartimento di salute mentale",
+      "Organizzazione che coordina la rete della salute mentale. Non è sinonimo di una singola sede CSM."
+    ],
+    [
+      "CSM",
+      "Centro di salute mentale",
+      "Servizio territoriale di riferimento per la salute mentale adulta; modalità di accesso e competenza si verificano localmente."
+    ],
+    [
+      "SerD",
+      "Servizio per le dipendenze",
+      "Servizio per la valutazione e i percorsi di cura e riabilitazione delle dipendenze."
+    ],
+    [
+      "SPDC",
+      "Servizio psichiatrico di diagnosi e cura",
+      "Reparto ospedaliero per situazioni acute che richiedono degenza."
+    ],
+    [
+      "STPIT",
+      "Struttura per trattamenti psichiatrici intensivi territoriali",
+      "Setting intensivo territoriale distinto da SPDC e comunità riabilitative; accesso secondo il percorso autorizzato."
+    ],
+    [
+      "SRTR",
+      "Struttura residenziale terapeutico-riabilitativa",
+      "Sigla di strutture con programmi terapeutico-riabilitativi. Intensità e requisiti dipendono dal modulo."
+    ],
+    [
+      "SRSR",
+      "Struttura residenziale socio-riabilitativa",
+      "Setting con finalità socio-riabilitative e livelli di assistenza diversi, da verificare nel modulo specifico."
+    ],
+    [
+      "Centro diurno",
+      "Servizio semiresidenziale",
+      "Programma diurno senza pernottamento. Attività e frequenza sono definite nel progetto."
+    ],
+    [
+      "TSMREE / NPIA",
+      "Tutela salute mentale e riabilitazione in età evolutiva / Neuropsichiatria dell’infanzia e adolescenza",
+      "Servizi per bisogni dell’età evolutiva; non applicare automaticamente le procedure dei servizi adulti."
+    ],
+    [
+      "DNA / DCA",
+      "Disturbi della nutrizione e dell’alimentazione / disturbi del comportamento alimentare",
+      "Denominazioni presenti nell’archivio per i servizi dedicati. La sigla non specifica da sola età e criteri di accesso."
+    ],
+    [
+      "TSO",
+      "Trattamento sanitario obbligatorio",
+      "Procedura con requisiti e garanzie di legge; non equivale genericamente a ricovero psichiatrico."
+    ],
+    [
+      "TSV",
+      "Trattamento sanitario volontario",
+      "In questa guida si preferisce la formulazione estesa “ricovero o trattamento volontario”."
+    ],
+    [
+      "TeRP",
+      "Tecnico della riabilitazione psichiatrica",
+      "Professionista sanitario della riabilitazione: lavora con l’équipe su autonomia e abilità nel progetto della persona."
+    ],
+    [
+      "PTRP",
+      "Progetto terapeutico-riabilitativo personalizzato",
+      "Obiettivi, interventi, responsabilità e verifiche del percorso riabilitativo."
+    ],
+    [
+      "SSN",
+      "Servizio sanitario nazionale",
+      "Il rapporto di una struttura con il SSN va verificato per la prestazione e il periodo pertinenti."
+    ],
+    [
+      "Autorizzazione",
+      "Requisiti per l’esercizio di un’attività",
+      "Non equivale da sola ad accreditamento o finanziamento pubblico."
+    ],
+    [
+      "Accreditamento",
+      "Qualificazione istituzionale per attività sanitarie",
+      "Non prova da solo che ogni prestazione sia oggi a carico del SSN."
+    ],
+    [
+      "Contratto SSN",
+      "Rapporto contrattuale per prestazioni finanziate",
+      "Va distinto dall’accreditamento; condizioni, moduli, periodo e accesso possono differire."
+    ],
+    [
+      "Doppia diagnosi",
+      "Compresenza di problemi psichiatrici e di dipendenza",
+      "Richiede un progetto coordinato; non ogni struttura tratta entrambi gli ambiti."
+    ]
+  ],
+  "sources": [
+    {
+      "id": "lazio116",
+      "title": "Regione Lazio — 116117 attivo in tutta la regione",
+      "url": "https://www.regione.lazio.it/notizie/salute-attivo-in-tutta-la-regione-il-numero-116117",
+      "publication_date": "26/08/2026",
+      "checked_at": "2026-09-21",
+      "notes": "Copertura regionale, gratuità e finalità non urgenti.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "asl116",
+      "title": "ASL Roma 1 — 116117 per cure non urgenti",
+      "url": "https://www.aslroma1.it/news/attivo-nella-regione-lazio-il-116117-per-cure-non-urgenti",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Orientamento e livelli di assistenza del servizio.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "guardia",
+      "title": "Salute Lazio — Guardia medica",
+      "url": "https://salutelazio.it/it/servizi/guardia-medica",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Distinzione tra disponibilità del numero e orari della continuità assistenziale.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "ares",
+      "title": "ARES 118 — emergenza sanitaria nel Lazio",
+      "url": "https://www.ares118.it/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Riferimento istituzionale per il soccorso sanitario regionale.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "amico",
+      "title": "Telefono Amico Italia — sito del servizio",
+      "url": "https://www.telefonoamico.it/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Numero geografico di ascolto e orario pubblicato sulla homepage.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "1522",
+      "title": "1522 — servizio pubblico antiviolenza e stalking",
+      "url": "https://www.1522.eu/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Numero gratuito, destinatari e accesso alla chat.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "rosa",
+      "title": "Telefono Rosa — contatti",
+      "url": "https://www.telefonorosa.it/contatti/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Numero, sede nazionale e orari del centralino.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "rosaservizi",
+      "title": "Telefono Rosa — attività e consulenza",
+      "url": "https://www.telefonorosa.it/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Ambito antiviolenza e consulenza gratuita.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "azzurro",
+      "title": "Telefono Azzurro — linea di ascolto 19696",
+      "url": "https://www.azzurro.it/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Destinatari, gratuità e operatività della linea nazionale.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "114",
+      "title": "114 Emergenza infanzia — destinatari e funzionamento",
+      "url": "https://114.it/chi-siamo/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Servizio nazionale gratuito da fisso e mobile, 24 ore su 24, 365 giorni l’anno. La pagina contiene anche riferimenti storici alle convenzioni: non sono usati per attestare contratti attuali.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "issdroga",
+      "title": "ISS — Telefono Verde Droga",
+      "url": "https://www.iss.it/en/numeri-verdi/-/asset_publisher/LXvuDqwiaG9G/content/il-telefono-verde-droga",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Numero 800186070 riscontrato nell’indice pubblico ufficiale; pagina integrale non acquisibile, orari non riconfermati.",
+      "verification_method": "indice_pubblico_pagina_ufficiale",
+      "clinical_review": false
+    },
+    {
+      "id": "saphub",
+      "title": "Sapienza — servizi di counselling",
+      "url": "https://www.uniroma1.it/it/pagina/counselling-psicologico",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Hub, destinatari e contatti distinti per studenti e personale.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "sapstudenti",
+      "title": "Sapienza — Centro counselling per studenti",
+      "url": "https://www.uniroma1.it/it/pagina/centro-counselling-psicologico-le-studentesse-e-gli-studenti",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Quattro colloqui gratuiti e follow-up; modalità e contatto.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "tuscia",
+      "title": "Università della Tuscia — consulente psicologico",
+      "url": "https://www.unitus.it/studenti/servizicomunitastudentesca/consulente-psicologico/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Destinatari, quattro colloqui gratuiti e moduli di prenotazione.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "roma3",
+      "title": "Roma Tre — gruppi di supporto e accesso ai colloqui",
+      "url": "https://www.uniroma3.it/articoli/benessere-psicologico-e-successo-negli-studi-al-via-i-nuovi-gruppi-di-supporto-per-studenti-e-studentesse-991440/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Iniziativa pubblicata dall’ateneo; disponibilità corrente dei gruppi da confermare.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "cnop",
+      "title": "CNOP — la professione psicologica",
+      "url": "https://www.psy.it/la-professione-psicologica/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Ambiti di intervento dello psicologo.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "legge56",
+      "title": "CNOP — legge 56/1989, artt. 1–3",
+      "url": "https://www.psy.it/wp-content/uploads/2020/06/4555-Legge-n-56-del-1989-con-agg-2018.pdf",
+      "publication_date": "Testo con aggiornamenti 2018",
+      "checked_at": "2026-09-21",
+      "notes": "Definizioni professionali e requisiti della psicoterapia; non usato per descrivere le attuali procedure universitarie di abilitazione.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "albo",
+      "title": "CNOP — Albo nazionale",
+      "url": "https://www.psy.it/albo-nazionale/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Verifica di iscrizione e rimando agli Ordini.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "medici",
+      "title": "FNOMCeO — Albo unico nazionale",
+      "url": "https://albounico.fnomceo.it/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Portale indicato dalla pagina ufficiale Cerca professionista della FNOMCeO.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "nimhpsico",
+      "title": "NIMH — Psychotherapies",
+      "url": "https://www.nimh.nih.gov/health/topics/psychotherapies",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Obiettivi, scelta del professionista e collaborazione nel trattamento. Fonte in inglese; non descrive il sistema italiano.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "bacp",
+      "title": "BACP — Types of counselling and psychotherapy",
+      "url": "https://www.bacp.co.uk/about-therapy/types-of-therapy/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Panoramica descrittiva degli orientamenti; non graduatoria di efficacia.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "nimhfarmaci",
+      "title": "NIMH — Mental Health Medications",
+      "url": "https://www.nimh.nih.gov/health/topics/mental-health-medications",
+      "publication_date": "Revisione dicembre 2023",
+      "checked_at": "2026-09-21",
+      "notes": "Classi e cautele generali. Le modalità prescrittive italiane non sono desunte da questa fonte statunitense.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "antidepressivi",
+      "title": "NHS — Antidepressants",
+      "url": "https://www.nhs.uk/medicines/antidepressants/",
+      "publication_date": "Revisione 12/06/2025",
+      "checked_at": "2026-09-21",
+      "notes": "Tempi variabili, effetti indesiderati e sospensione concordata.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "benzodiazepine",
+      "title": "NHS — About lorazepam",
+      "url": "https://www.nhs.uk/medicines/lorazepam/about-lorazepam/",
+      "publication_date": "Revisione 14/02/2023",
+      "checked_at": "2026-09-21",
+      "notes": "Esempio di benzodiazepina: sedazione, alcol, uso generalmente breve; non applicabile indistintamente a ogni ansiolitico.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "litio",
+      "title": "NHS — About lithium",
+      "url": "https://www.nhs.uk/medicines/lithium/about-lithium/",
+      "publication_date": "Revisione 09/08/2023",
+      "checked_at": "2026-09-21",
+      "notes": "Esempio di stabilizzatore: necessità di controlli ematici.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "antipsicotici",
+      "title": "NHS — About olanzapine",
+      "url": "https://www.nhs.uk/medicines/olanzapine/about-olanzapine/",
+      "publication_date": "Revisione 19/02/2025",
+      "checked_at": "2026-09-21",
+      "notes": "Esempio di antipsicotico: effetti attesi, tempi variabili e sedazione.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "attenzione",
+      "title": "NHS — About methylphenidate for adults",
+      "url": "https://www.nhs.uk/medicines/methylphenidate-adults/about-methylphenidate-for-adults/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Farmaci stimolanti e attenzione; non utilizzato per importare regole di prescrizione britanniche.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "tso76",
+      "title": "Corte costituzionale — sentenza 76/2025",
+      "url": "https://www.cortecostituzionale.it/scheda-pronuncia/2025/76",
+      "publication_date": "30/05/2025",
+      "checked_at": "2026-09-21",
+      "notes": "Presupposti e garanzie del TSO; comunicazione, audizione e notificazione, anche per proroga nei termini della decisione.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "laziorequisiti",
+      "title": "Regione Lazio — DCA U0090/2010, allegato 1, §4.3",
+      "url": "https://www.regione.lazio.it/sites/default/files/documentazione/SAN_DCA_U0090_10_11_2010_Allegato_1.pdf",
+      "publication_date": "10/11/2010",
+      "checked_at": "2026-09-21",
+      "notes": "Riferimento di base per STPIT e residenzialità. Per i singoli moduli valgono gli atti applicabili e le successive modifiche; non attesta un contratto SSN attuale.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "laziopiano",
+      "title": "Regione Lazio — Piano salute mentale 2022–2024",
+      "url": "https://www.regione.lazio.it/sites/default/files/2022-12/Piano-regionale-salute-mentale.pdf",
+      "publication_date": "04/10/2022",
+      "checked_at": "2026-09-21",
+      "notes": "Descrizione della rete e dei percorsi, sezioni 3.3–3.4 e 5.3. Documento del periodo 2022–2024, non presentato come piano corrente 2026.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "aslmentale",
+      "title": "ASL Roma 1 — Salute mentale",
+      "url": "https://www.aslroma1.it/salute-mentale",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Articolazione territoriale e contatti ufficiali; le procedure non vanno estese automaticamente a tutte le ASL.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "serd",
+      "title": "ASL Roma 5 — Dipendenze patologiche",
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/uoc-dipendenze-patologiche/",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Finalità dei servizi per le dipendenze e percorsi assistenziali.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "cloudflare",
+      "title": "Cloudflare Pages — Git integration",
+      "url": "https://developers.cloudflare.com/pages/get-started/git-integration/",
+      "publication_date": "21/04/2026",
+      "checked_at": "2026-09-21",
+      "notes": "Deploy automatico del sito statico dal repository GitHub collegato al progetto Pages.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "terp",
+      "title": "FNO TSRM e PSTRP — Codice deontologico dei TeRP",
+      "url": "https://www.aiterp.it/wp-content/uploads/2025/04/CD_TeRP-def.pdf",
+      "publication_date": "2025-01-31",
+      "checked_at": "2026-09-21",
+      "notes": "Testo della Federazione ospitato da AITeRP. Artt. 49–52: identità, competenze e obiettivi riabilitativi; non attesta la presenza del professionista in ogni struttura.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    },
+    {
+      "id": "112eu",
+      "title": "Unione europea — numero unico di emergenza 112",
+      "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/index_it.htm",
+      "publication_date": null,
+      "checked_at": "2026-09-21",
+      "notes": "Gratuità e finalità del 112 in tutta l’Unione europea.",
+      "verification_method": "documentale_web",
+      "clinical_review": false
+    }
+  ]
+}

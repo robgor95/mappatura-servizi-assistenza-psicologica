@@ -1,0 +1,65 @@
+NOTE DI RILASCIO — V7.4 — 21/09/2026
+
+REALIZZATO
+Nuova home di orientamento, area Guide, cinque guide complete in HTML e PDF,
+raccolta PDF unica di 25 pagine, rubrica di ascolto con otto schede, quattro
+schede di counselling riferite a tre atenei, orientamento per gli sportelli
+scolastici, glossario di venti voci, registro delle fonti, pagine metodo,
+documenti e uso/privacy.
+Guide: primo percorso; cure pubbliche; percorso privato; ricovero/SPDC/TSO/STPIT;
+comunità, dipendenze, doppia diagnosi e centri diurni.
+Ricerca locale nelle rubriche, collegamenti tel/mail, link alle fonti,
+pulsanti stampa e condivisione, layout mobile, URL condivisibili di sezioni,
+filtri e schede dell'archivio. Ripristino dello stato tramite navigazione
+indietro/avanti; messaggi espliciti per filtri e identificativi non riconosciuti.
+
+DATI CONSERVATI
+Il dataset è ancora V7.3: 115 moduli privati e 295 nodi pubblici.
+Nessuna eliminazione, riclassificazione o aggiornamento indiscriminato delle
+date dei record. Le 22 risorse originali in data/, downloads/ e offline/ sono
+state confrontate byte per byte con lo ZIP V7.3: identiche.
+L'interfaccia del precedente archivio è raggiungibile da archivio.html.
+Il portale offline V7.3 e tutti gli Excel/JSON/CSV originali restano disponibili.
+
+FONTI E DATI PARZIALI
+Le guide sono una sintesi di orientamento con consultazione documentale;
+non una revisione clinica indipendente o una verifica normativa esaustiva.
+Non sono state effettuate telefonate, prenotazioni o verifiche di posti letto.
+Rubrica ascolto: ISS Telefono Verde Droga ha verifica parziale dal risultato
+indicizzato del sito ufficiale; orari non riconfermati.
+Università: Sapienza (due schede per funzioni distinte), Tuscia, Roma Tre.
+Non sono quattro atenei. Per Roma Tre alcune condizioni operative vanno
+confermate. La ricognizione non copre tutte le università del Lazio.
+Scuole: indicazioni e domande per verificare il servizio dell'anno corrente;
+non un censimento degli sportelli scolastici attivi nel 2026/2027.
+Privato puro: guida alla scelta e alle verifiche, non nuovo catalogo di cliniche.
+Le strutture convenzionate già censite restano nell'archivio originario.
+
+SICUREZZA INFORMATIVA
+Emergenze distinte da cure non urgenti, ascolto emotivo, antiviolenza e tutela
+minori. Costo della prestazione distinto dal costo della chiamata. Nessuna
+associazione automatica sintomo-farmaco, nessun dosaggio o prescrizione.
+SPDC, STPIT e comunità non sono presentati come passaggi obbligatori consecutivi.
+Qualità documentale distinta dalla qualità sanitaria della struttura.
+Date dei piani regionali storici esplicite. TSO: inclusa sentenza 76/2025.
+
+VERIFICHE TECNICHE E LIMITI
+95 controlli locali di presentazione e logica in Chromium headless, comprese
+viste a 360 e 390 pixel e contenuti principali senza JavaScript: superati.
+Le policy dell'ambiente impediscono la navigazione HTTP del browser: le pagine
+sono state renderizzate in memoria con CSS e script locali. XHR del dataset e
+History API sono simulati nel banco di prova. Non è un test end-to-end di rete,
+non è un test su smartphone fisico e non è un test del sito pubblicato.
+Controllati file interni, ancore, valori dei filtri e assenza di link locali nei
+PDF. Tutte le pagine dei PDF sono state renderizzate per ispezione; controllati
+anche testo fuori pagina, pagine quasi vuote e numerazione della raccolta.
+Dettagli e conteggi aggiornati nel file Verifiche_V7_4.json.
+Condivisione nativa, chiamate, email e dialogo di stampa dipendono dal browser
+reale e dal dispositivo: la loro attivazione esterna non è stata collaudata qui.
+Non si dichiara conformità certificata di accessibilità.
+
+PUBBLICAZIONE
+Pacchetto consegnato, non distribuito su Cloudflare. Il sito online non è
+stato modificato da questa sessione. Seguire ISTRUZIONI_CLOUDFLARE.txt sul
+progetto Pages esistente. Mantenute le impostazioni di non indicizzazione.
+Nessuna nuova infrastruttura a pagamento è stata introdotta nel codice.

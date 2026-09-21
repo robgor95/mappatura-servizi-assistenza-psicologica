@@ -1,0 +1,20 @@
+MAPPATURA SERVIZI DI ASSISTENZA PSICOLOGICA — LAZIO
+DEPLOY V7.4 CON GITHUB + CLOUDFLARE PAGES
+
+Repository:
+https://github.com/robgor95/mappatura-servizi-assistenza-psicologica
+
+Progetto Pages:
+mappatura-servizi-assistenza-psicologica
+
+Branch di produzione: main
+Deploy automatici: abilitati
+
+Ogni push su main avvia automaticamente un deployment di produzione su Cloudflare Pages.
+Non sono necessari GitHub Actions, Wrangler o secret Cloudflare per il deploy ordinario.
+
+Sito:
+https://mappatura-servizi-assistenza-psicologica.pages.dev/
+
+Documentazione:
+https://developers.cloudflare.com/pages/get-started/git-integration/

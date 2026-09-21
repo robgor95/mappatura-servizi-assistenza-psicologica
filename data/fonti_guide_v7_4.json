@@ -1,0 +1,352 @@
+[
+  {
+    "id": "lazio116",
+    "title": "Regione Lazio — 116117 attivo in tutta la regione",
+    "url": "https://www.regione.lazio.it/notizie/salute-attivo-in-tutta-la-regione-il-numero-116117",
+    "publication_date": "26/08/2026",
+    "checked_at": "2026-09-21",
+    "notes": "Copertura regionale, gratuità e finalità non urgenti.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "asl116",
+    "title": "ASL Roma 1 — 116117 per cure non urgenti",
+    "url": "https://www.aslroma1.it/news/attivo-nella-regione-lazio-il-116117-per-cure-non-urgenti",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Orientamento e livelli di assistenza del servizio.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "guardia",
+    "title": "Salute Lazio — Guardia medica",
+    "url": "https://salutelazio.it/it/servizi/guardia-medica",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Distinzione tra disponibilità del numero e orari della continuità assistenziale.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "ares",
+    "title": "ARES 118 — emergenza sanitaria nel Lazio",
+    "url": "https://www.ares118.it/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Riferimento istituzionale per il soccorso sanitario regionale.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "amico",
+    "title": "Telefono Amico Italia — sito del servizio",
+    "url": "https://www.telefonoamico.it/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Numero geografico di ascolto e orario pubblicato sulla homepage.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "1522",
+    "title": "1522 — servizio pubblico antiviolenza e stalking",
+    "url": "https://www.1522.eu/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Numero gratuito, destinatari e accesso alla chat.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "rosa",
+    "title": "Telefono Rosa — contatti",
+    "url": "https://www.telefonorosa.it/contatti/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Numero, sede nazionale e orari del centralino.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "rosaservizi",
+    "title": "Telefono Rosa — attività e consulenza",
+    "url": "https://www.telefonorosa.it/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Ambito antiviolenza e consulenza gratuita.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "azzurro",
+    "title": "Telefono Azzurro — linea di ascolto 19696",
+    "url": "https://www.azzurro.it/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Destinatari, gratuità e operatività della linea nazionale.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "114",
+    "title": "114 Emergenza infanzia — destinatari e funzionamento",
+    "url": "https://114.it/chi-siamo/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Servizio nazionale gratuito da fisso e mobile, 24 ore su 24, 365 giorni l’anno. La pagina contiene anche riferimenti storici alle convenzioni: non sono usati per attestare contratti attuali.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "issdroga",
+    "title": "ISS — Telefono Verde Droga",
+    "url": "https://www.iss.it/en/numeri-verdi/-/asset_publisher/LXvuDqwiaG9G/content/il-telefono-verde-droga",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Numero 800186070 riscontrato nell’indice pubblico ufficiale; pagina integrale non acquisibile, orari non riconfermati.",
+    "verification_method": "indice_pubblico_pagina_ufficiale",
+    "clinical_review": false
+  },
+  {
+    "id": "saphub",
+    "title": "Sapienza — servizi di counselling",
+    "url": "https://www.uniroma1.it/it/pagina/counselling-psicologico",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Hub, destinatari e contatti distinti per studenti e personale.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "sapstudenti",
+    "title": "Sapienza — Centro counselling per studenti",
+    "url": "https://www.uniroma1.it/it/pagina/centro-counselling-psicologico-le-studentesse-e-gli-studenti",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Quattro colloqui gratuiti e follow-up; modalità e contatto.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "tuscia",
+    "title": "Università della Tuscia — consulente psicologico",
+    "url": "https://www.unitus.it/studenti/servizicomunitastudentesca/consulente-psicologico/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Destinatari, quattro colloqui gratuiti e moduli di prenotazione.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "roma3",
+    "title": "Roma Tre — gruppi di supporto e accesso ai colloqui",
+    "url": "https://www.uniroma3.it/articoli/benessere-psicologico-e-successo-negli-studi-al-via-i-nuovi-gruppi-di-supporto-per-studenti-e-studentesse-991440/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Iniziativa pubblicata dall’ateneo; disponibilità corrente dei gruppi da confermare.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "cnop",
+    "title": "CNOP — la professione psicologica",
+    "url": "https://www.psy.it/la-professione-psicologica/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Ambiti di intervento dello psicologo.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "legge56",
+    "title": "CNOP — legge 56/1989, artt. 1–3",
+    "url": "https://www.psy.it/wp-content/uploads/2020/06/4555-Legge-n-56-del-1989-con-agg-2018.pdf",
+    "publication_date": "Testo con aggiornamenti 2018",
+    "checked_at": "2026-09-21",
+    "notes": "Definizioni professionali e requisiti della psicoterapia; non usato per descrivere le attuali procedure universitarie di abilitazione.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "albo",
+    "title": "CNOP — Albo nazionale",
+    "url": "https://www.psy.it/albo-nazionale/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Verifica di iscrizione e rimando agli Ordini.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "medici",
+    "title": "FNOMCeO — Albo unico nazionale",
+    "url": "https://albounico.fnomceo.it/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Portale indicato dalla pagina ufficiale Cerca professionista della FNOMCeO.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "nimhpsico",
+    "title": "NIMH — Psychotherapies",
+    "url": "https://www.nimh.nih.gov/health/topics/psychotherapies",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Obiettivi, scelta del professionista e collaborazione nel trattamento. Fonte in inglese; non descrive il sistema italiano.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "bacp",
+    "title": "BACP — Types of counselling and psychotherapy",
+    "url": "https://www.bacp.co.uk/about-therapy/types-of-therapy/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Panoramica descrittiva degli orientamenti; non graduatoria di efficacia.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "nimhfarmaci",
+    "title": "NIMH — Mental Health Medications",
+    "url": "https://www.nimh.nih.gov/health/topics/mental-health-medications",
+    "publication_date": "Revisione dicembre 2023",
+    "checked_at": "2026-09-21",
+    "notes": "Classi e cautele generali. Le modalità prescrittive italiane non sono desunte da questa fonte statunitense.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "antidepressivi",
+    "title": "NHS — Antidepressants",
+    "url": "https://www.nhs.uk/medicines/antidepressants/",
+    "publication_date": "Revisione 12/06/2025",
+    "checked_at": "2026-09-21",
+    "notes": "Tempi variabili, effetti indesiderati e sospensione concordata.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "benzodiazepine",
+    "title": "NHS — About lorazepam",
+    "url": "https://www.nhs.uk/medicines/lorazepam/about-lorazepam/",
+    "publication_date": "Revisione 14/02/2023",
+    "checked_at": "2026-09-21",
+    "notes": "Esempio di benzodiazepina: sedazione, alcol, uso generalmente breve; non applicabile indistintamente a ogni ansiolitico.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "litio",
+    "title": "NHS — About lithium",
+    "url": "https://www.nhs.uk/medicines/lithium/about-lithium/",
+    "publication_date": "Revisione 09/08/2023",
+    "checked_at": "2026-09-21",
+    "notes": "Esempio di stabilizzatore: necessità di controlli ematici.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "antipsicotici",
+    "title": "NHS — About olanzapine",
+    "url": "https://www.nhs.uk/medicines/olanzapine/about-olanzapine/",
+    "publication_date": "Revisione 19/02/2025",
+    "checked_at": "2026-09-21",
+    "notes": "Esempio di antipsicotico: effetti attesi, tempi variabili e sedazione.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "attenzione",
+    "title": "NHS — About methylphenidate for adults",
+    "url": "https://www.nhs.uk/medicines/methylphenidate-adults/about-methylphenidate-for-adults/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Farmaci stimolanti e attenzione; non utilizzato per importare regole di prescrizione britanniche.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "tso76",
+    "title": "Corte costituzionale — sentenza 76/2025",
+    "url": "https://www.cortecostituzionale.it/scheda-pronuncia/2025/76",
+    "publication_date": "30/05/2025",
+    "checked_at": "2026-09-21",
+    "notes": "Presupposti e garanzie del TSO; comunicazione, audizione e notificazione, anche per proroga nei termini della decisione.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "laziorequisiti",
+    "title": "Regione Lazio — DCA U0090/2010, allegato 1, §4.3",
+    "url": "https://www.regione.lazio.it/sites/default/files/documentazione/SAN_DCA_U0090_10_11_2010_Allegato_1.pdf",
+    "publication_date": "10/11/2010",
+    "checked_at": "2026-09-21",
+    "notes": "Riferimento di base per STPIT e residenzialità. Per i singoli moduli valgono gli atti applicabili e le successive modifiche; non attesta un contratto SSN attuale.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "laziopiano",
+    "title": "Regione Lazio — Piano salute mentale 2022–2024",
+    "url": "https://www.regione.lazio.it/sites/default/files/2022-12/Piano-regionale-salute-mentale.pdf",
+    "publication_date": "04/10/2022",
+    "checked_at": "2026-09-21",
+    "notes": "Descrizione della rete e dei percorsi, sezioni 3.3–3.4 e 5.3. Documento del periodo 2022–2024, non presentato come piano corrente 2026.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "aslmentale",
+    "title": "ASL Roma 1 — Salute mentale",
+    "url": "https://www.aslroma1.it/salute-mentale",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Articolazione territoriale e contatti ufficiali; le procedure non vanno estese automaticamente a tutte le ASL.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "serd",
+    "title": "ASL Roma 5 — Dipendenze patologiche",
+    "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/uoc-dipendenze-patologiche/",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Finalità dei servizi per le dipendenze e percorsi assistenziali.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "cloudflare",
+    "title": "Cloudflare Pages — Git integration",
+    "url": "https://developers.cloudflare.com/pages/get-started/git-integration/",
+    "publication_date": "21/04/2026",
+    "checked_at": "2026-09-21",
+    "notes": "Deploy automatico del sito statico dal repository GitHub collegato al progetto Pages.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "terp",
+    "title": "FNO TSRM e PSTRP — Codice deontologico dei TeRP",
+    "url": "https://www.aiterp.it/wp-content/uploads/2025/04/CD_TeRP-def.pdf",
+    "publication_date": "2025-01-31",
+    "checked_at": "2026-09-21",
+    "notes": "Testo della Federazione ospitato da AITeRP. Artt. 49–52: identità, competenze e obiettivi riabilitativi; non attesta la presenza del professionista in ogni struttura.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  },
+  {
+    "id": "112eu",
+    "title": "Unione europea — numero unico di emergenza 112",
+    "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/index_it.htm",
+    "publication_date": null,
+    "checked_at": "2026-09-21",
+    "notes": "Gratuità e finalità del 112 in tutta l’Unione europea.",
+    "verification_method": "documentale_web",
+    "clinical_review": false
+  }
+]
