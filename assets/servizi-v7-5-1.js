@@ -148,12 +148,27 @@ function wire(){
 }
 async function getJSON(url){const controller=new AbortController(),t=setTimeout(()=>controller.abort(),18000);try{const r=await fetch(url,{signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(t);}}
 async function start(){
-  const [base,extra]=await Promise.allSettled([getJSON('/data/portal_data_v7_3.json'),getJSON('/data/privati_v7_5.json')]);
+  const [base,extra,multisite]=await Promise.allSettled([
+    getJSON('/data/portal_data_v7_3.json'),
+    getJSON('/data/privati_v7_5.json'),
+    getJSON('/data/multisede_v7_7_5.json')
+  ]);
   if(base.status!=='fulfilled')throw new Error('I servizi non sono stati caricati. Riprova oppure usa i documenti disponibili.');
-  D=base.value;rows=A.build(D,extra.status==='fulfilled'?extra.value:null);populate();wire();
+  D=JSON.parse(JSON.stringify(base.value));
+  if(multisite.status==='fulfilled'&&Array.isArray(multisite.value.records)){
+    const existing=new Set((D.moduli||[]).map(r=>String(r.id_modulo||r.id||'')));
+    multisite.value.records.forEach(r=>{const id=String(r.id_modulo||r.id||'');if(id&&!existing.has(id)){D.moduli.push(r);existing.add(id);}});
+  }
+  rows=A.build(D,extra.status==='fulfilled'?extra.value:null);populate();wire();
   $('svc-total').textContent=rows.length+' risultati';
   $('svc-breakdown').textContent=rows.filter(r=>r.origin==='rete').length+' servizi pubblici / SSN · '+rows.filter(r=>r.origin==='moduli').length+' strutture non ASL · '+rows.filter(r=>r.origin==='privati').length+' strutture private.';
-  if(extra.status==='fulfilled')$('svc-load-status').hidden=true;else{$('svc-load-status').textContent='Le strutture private non sono state caricate: stai consultando solo i '+rows.length+' risultati principali.';}
+  if(extra.status==='fulfilled'&&multisite.status==='fulfilled')$('svc-load-status').hidden=true;
+  else{
+    const missing=[];
+    if(extra.status!=='fulfilled')missing.push('le strutture private');
+    if(multisite.status!=='fulfilled')missing.push('le integrazioni multisede');
+    $('svc-load-status').textContent='Non sono state caricate '+missing.join(' e ')+': la ricerca resta disponibile sui dati caricati.';
+  }
   $('svc-controls').disabled=false;state=stateFromURL();commit(state,false);
   if(state.tecnico&&$('svc-technical')){$('svc-technical').scrollIntoView({block:'start'});}
 }

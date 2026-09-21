@@ -1,5 +1,5 @@
 {
-  "web_version": "7.7.4",
+  "web_version": "7.7.5",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -31,16 +31,18 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo",
-  "deployment_checked_by_preparer": true,
+  "deployment_checked_by_preparer": false,
   "counts_current": {
     "rete": 296,
-    "moduli": 115,
+    "moduli": 119,
     "privati": 17,
     "scuole": 20,
     "centri_ascolto": 33,
     "universita": 19,
     "helpline": 20,
-    "search": 428
+    "search": 432,
+    "multisite_overlay": 4,
+    "structure_directory": 173
   },
   "menta_version": "7.7.2",
   "menta": {
@@ -53,7 +55,7 @@
     "routes": 39,
     "towns": 93
   },
-  "release_note": "SEO predisposto ma indicizzazione disattivata: canonical, metadata social, sitemap e dati strutturati pronti; noindex resta attivo via HTML e HTTP.",
+  "release_note": "Integrazione multisede: aggiunte 4 unità documentate (3 Reverie e Casa Gioia) senza modificare i dataset storici; audit separa ente, sede e servizio.",
   "navigation_version": "7.7.3",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -83,5 +85,6 @@
       "sitemap.xml ready",
       "downloads and legacy paths noindex"
     ]
-  }
+  },
+  "multisite_extension_version": "7.7.5"
 }

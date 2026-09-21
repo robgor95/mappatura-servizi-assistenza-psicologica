@@ -1,0 +1,26 @@
+Multisede / multiservizio 7.7.5
+
+Obiettivo: evitare che un ente con più sedi o servizi sia rappresentato da una sola unità.
+
+Regola dati:
+- ente/gestore, struttura/sede e servizio/modulo sono livelli distinti;
+- due servizi nello stesso indirizzo non vengono accorpati;
+- i dataset storici non vengono modificati: le integrazioni sono additive.
+
+Aggiunte documentate:
+- Reverie – Comunità terapeutica Capena CTC 1;
+- Reverie – Comunità terapeutica Capena CTC 2;
+- Reverie – Centro Diurno, Via Morlupo 94;
+- Nuovi Orizzonti – Comunità Casa Gioia, Marino.
+
+Già presente e preservato:
+- Reverie – Comunità terapeutica romana;
+- Nuovi Orizzonti – Comunità di Piglio.
+
+Casi rilevati ma non ancora trasformati in nuovi record:
+- Il Ponte – Centro di Solidarietà: due sedi operative correnti documentate; dettaglio amministrativo per sede da consolidare.
+- Cooperate – FEBO Bracciano: autorizzato, ma il gestore lo indica in attesa di accreditamento; escluso dall’overlay accreditato.
+
+Ricerca prevista dopo l’integrazione: 432 risultati (296 rete ASL, 119 non ASL, 17 privati).
+
+Nessuna modifica ai dati storici V7.3/V7.5/V7.6.

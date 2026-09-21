@@ -21,9 +21,9 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.7.4 — Navigazione semplificata
+## Versione corrente V7.7.5 — Integrazione multisede
 
-La produzione usa **V7.7.4** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
+La produzione usa **V7.7.5** per l’interfaccia e l’overlay multisede, **V7.6** per il riesame documentale precedente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 
 Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. La V7.7.2 semplifica il linguaggio del frontend, sposta i dettagli di audit fuori dal percorso principale e amplia la guida al privato con scelta del professionista e approcci psicoterapeutici. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
 
@@ -34,6 +34,18 @@ Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi no
 
 Non sono effettuate diagnosi, valutazioni del rischio o verifiche di disponibilità. Nessuna promessa automatica di gratuità o convenzione SSN.
 
+
+
+### Integrazione multisede 7.7.5
+
+La gerarchia usata per i nuovi controlli è **ente/gestore → struttura/sede → servizio/modulo**. Più servizi nello stesso indirizzo non vengono accorpati automaticamente.
+
+- Reverie: la ricerca passa da 1 a 4 unità visibili (Comunità romana già presente, CTC 1, CTC 2 e Centro Diurno).
+- Nuovi Orizzonti: aggiunta Casa Gioia di Marino accanto alla Comunità di Piglio già presente.
+- Il Ponte: due sedi operative correnti sono documentate, ma lo split in due record resta pendente finché non viene consolidato il dettaglio amministrativo/accreditamento per singola sede.
+- Cooperate FEBO: rilevato ma non inserito nell’overlay accreditato perché il gestore lo descrive come autorizzato e in attesa di accreditamento.
+
+Audit: `downloads/Audit_Multisede_V7_7_5.json`.
 
 ### Indicizzazione e SEO
 
@@ -55,7 +67,7 @@ Il test V7.5.1 citato nelle sezioni storiche sotto conserva le vecchie assunzion
 
 Report: `downloads/Verifiche_Menta_V7_7.json`; audit e hash dei file preservati: `downloads/Audit_Menta_V7_7.json`; note: `downloads/Note_Rilascio_V7_7.txt`.
 
-Il database operativo resta di **428 schede**, non strutture uniche: **296 rete ASL, 115 moduli non ASL, 17 attività private**. I servizi universitari e le altre directory dedicate restano separati. Il contatore UI della rete è stato allineato ai 296 record già presenti: nessun dato sanitario è aggiunto o eliminato dalla V7.7.
+La ricerca operativa mostra **432 risultati**: 296 servizi della rete ASL, 119 strutture/servizi non ASL (115 storici + 4 integrazioni multisede) e 17 attività private. I quattro nuovi risultati sono in `data/multisede_v7_7_5.json`: i dataset storici V7.3/V7.5/V7.6 non vengono riscritti.
 
 Le sezioni che seguono documentano le evoluzioni precedenti.
 
