@@ -1,5 +1,17 @@
 # Changelog
 
+## 7.7 — 21 settembre 2026
+
+- Home con Menta, testo libero elaborato localmente e alternativa “Esplora in autonomia”.
+- 29 intenti dichiarativi, sinonimi, combinazioni, territorio e filtri reali; nessun redirect obbligatorio.
+- Priorità alle parole di possibile emergenza con distinzione 112/118, 116117 e ascolto.
+- Otto composizioni contestuali della mascotte, superfici calme, focus visibile e reduced-motion.
+- Prefiltri canonici delle directory; corretta la sola visualizzazione del conteggio dei nodi già presenti nell’overlay V7.6.
+- Suite dedicata di routing, integrità, privacy, tastiera, mobile e accessibilità automatica.
+- Dati, date, documenti clinici, download e URL precedenti conservati. Nessun nuovo riesame sanitario.
+
+Dettagli: `downloads/Note_Rilascio_V7_7.txt`, `downloads/Audit_Menta_V7_7.json`, `downloads/Verifiche_Menta_V7_7.json`.
+
 ## 7.5.1 — 21 settembre 2026
 
 - “Trova un servizio” sostituisce la denominazione “Archivio” nell'interfaccia.

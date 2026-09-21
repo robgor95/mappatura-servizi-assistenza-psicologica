@@ -21,6 +21,37 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
+## Versione corrente V7.7 — Menta
+
+La produzione usa **V7.7** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Base di questo intervento: `b52e4eb`.
+
+Menta è una guida locale, non un chatbot: **29 intenti**, **246 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
+
+- `assets/menta-config-v7-7.js`: vocabolario, priorità, percorsi, combinazioni e luoghi del database.
+- `assets/menta-core-v7-7.js`: funzioni pure di riconoscimento e composizione dei link, senza rete o storage.
+- `assets/menta-ui-v7-7.js`: interfaccia progressiva, scelte, sicurezza e pulizia del campo.
+- `assets/menta-v7-7.css`, `assets/menta-site-v7-7.js`, `assets/menta/`: stile e supporti contestuali.
+
+Non sono effettuate diagnosi, valutazioni del rischio o verifiche di disponibilità. Nessuna promessa automatica di gratuità o convenzione SSN.
+
+### Verifica della versione corrente
+
+```sh
+node tools/test-menta-v7-7.cjs
+# Solo per test di sviluppo, non per il deploy:
+python tools/test-menta-browser-v7-7.py
+```
+
+Il browser test richiede Playwright e BeautifulSoup; `AXE_PATH` indica il file locale `axe.min.js` per i controlli automatici. Il workflow di verifica li installa solo sul runner di test. Non si aggiungono dipendenze al sito pubblicato.
+
+Il test V7.5.1 citato nelle sezioni storiche sotto conserva le vecchie assunzioni e non è il test dell’overlay V7.6: usare i comandi V7.7 qui sopra.
+
+Report: `downloads/Verifiche_Menta_V7_7.json`; audit e hash dei file preservati: `downloads/Audit_Menta_V7_7.json`; note: `downloads/Note_Rilascio_V7_7.txt`.
+
+Il database operativo resta di **428 schede**, non strutture uniche: **296 rete ASL, 115 moduli non ASL, 17 attività private**. I servizi universitari e le altre directory dedicate restano separati. Il contatore UI della rete è stato allineato ai 296 record già presenti: nessun dato sanitario è aggiunto o eliminato dalla V7.7.
+
+Le sezioni che seguono documentano le evoluzioni precedenti.
+
 ## Versione V7.5
 
 La V7.5 aggiunge dataset e pagine statiche separate per servizi universitari, sportelli scolastici, helpline, centri/sportelli pubblici di ascolto, centri privati e approfondimento di comunità/STPIT/centri diurni. I dataset V7.3 e le guide V7.4 sono preservati.
