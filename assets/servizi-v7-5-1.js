@@ -28,7 +28,7 @@ function populate(){
 }
 function stateFromURL(){
   notices=[];const p=new URLSearchParams(location.search),s=A.parse(location.search,D);
-  if(p.get('view')&&!['summary','network','contracted','stpit','pending','extra','public','coverage','sources','quality','history','method'].includes(p.get('view')))notices.push('Vista precedente non riconosciuta. Sono mostrate le schede senza quel filtro.');
+  if(p.get('view')&&!['summary','network','contracted','stpit','pending','extra','public','coverage','sources','quality','history','method'].includes(p.get('view')))notices.push('Il vecchio collegamento contiene una vista non riconosciuta: vengono mostrati i risultati disponibili.');
   const allowed=new Set(A.filterKeys.concat(['ordine','pagina','scheda','tecnico','view','id','indice','verifica']));
   for(const key of p.keys())if(!allowed.has(key))notices.push('Parametro ignorato: '+key.slice(0,70)+'.');
   for(const key of A.filterKeys){const el=$('svc-'+key);if(el&&el.tagName==='SELECT'&&s[key]&&![...el.options].some(o=>o.value===s[key])){
@@ -38,7 +38,7 @@ function stateFromURL(){
   if(s.percorso&&!A.labels[s.percorso]){notices.push('Scorciatoia non riconosciuta.');delete s.percorso;}
   if(s.ordine&&!['nome','comune','tipo'].includes(s.ordine)){notices.push('Ordinamento non riconosciuto: usato Nome A–Z.');s.ordine='nome';}
   if(s.tecnico&&!['summary','coverage','sources','quality','history','method'].includes(s.tecnico)){notices.push('Strumento documentale non riconosciuto.');delete s.tecnico;}
-  if(s.scheda){const r=rows.find(r=>r.key===s.scheda||r.id===s.scheda);if(r)s.scheda=r.key;else{notices.push('La scheda richiesta non è presente tra i dati caricati. Nessun servizio è stato selezionato al suo posto.');delete s.scheda;}}
+  if(s.scheda){const r=rows.find(r=>r.key===s.scheda||r.id===s.scheda);if(r)s.scheda=r.key;else{notices.push('Il servizio richiesto non è presente tra i dati caricati. Nessun altro risultato è stato selezionato al suo posto.');delete s.scheda;}}
   return s;
 }
 function chipLabel(key,value){
@@ -51,7 +51,6 @@ function card(r){
   const privateStyle=r.origin==='rete'?'':' private';
   return '<article class="svc-card"><div class="svc-tags"><span class="svc-tag'+privateStyle+'">'+esc(originLabel(r))+'</span><span class="svc-tag plain">'+esc(r.regime)+'</span></div><h3><a href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'">'+esc(r.name)+'</a></h3><p class="svc-module">'+esc(r.subtype)+'</p><p class="svc-location">'+esc(r.town)+' · '+esc(r.asl)+'</p><p class="svc-location">'+esc(r.address)+'</p><p class="svc-admin-note">'+esc(ssnNote(r))+'</p><div class="svc-card-footer">'+(r.phone?'<a href="tel:'+esc(r.phone)+'" aria-label="Chiama '+esc(r.name)+'">Telefono</a>':'')+'<a href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'" data-section="accesso">Come si accede</a><a class="button secondary" href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'">Dettagli e contatti <span aria-hidden="true">→</span></a></div><p class="svc-record-meta">Informazioni verificate: '+esc(r.date||'data non documentata')+'</p></article>';
 }
-function rawFields(r,title){return '<details class="svc-raw"><summary>'+esc(title)+' ('+Object.keys(r).length+' campi)</summary><dl>'+Object.entries(r).map(([k,v])=>'<dt>'+esc(k)+'</dt><dd>'+esc(v===null?'Non documentato':typeof v==='object'?JSON.stringify(v):A.nd(v))+'</dd>').join('')+'</dl></details>';}
 function detail(r){
   const v=r.raw,isPrivate=r.origin==='privati';
   const serviceAnchor=({'CSM':'csm','SerD':'serd','DSM':'dsm','SPDC':'spdc','STPIT':'stpit','SRTR':'srtr','SRSR':'srsr','Centro diurno':'centro-diurno','TSMREE/NPIA':'tsmree-npia','DCA/DNA':'dca-dna'})[r.type];
@@ -143,8 +142,8 @@ function wire(){
   $('svc-close').addEventListener('click',closeDetail);dialog.addEventListener('cancel',e=>{e.preventDefault();closeDetail();});
   dialog.addEventListener('click',e=>{const b=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom))closeDetail();});
   for(const [id,delta] of [['svc-prev',-1],['svc-next',1]])$(id).addEventListener('click',()=>{commit({...state,pagina:String((parseInt(state.pagina,10)||1)+delta)});$('svc-results-title').focus({preventScroll:true});$('risultati').scrollIntoView({block:'start'});});
-  $('svc-csv').addEventListener('click',()=>{const blob=new Blob([A.csv(filtered)],{type:'text/csv;charset=utf-8'}),u=URL.createObjectURL(blob),link=document.createElement('a');link.href=u;link.download='Servizi_Lazio_risultati_V7_5_1.csv';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);});
-  $('svc-tech-view').addEventListener('change',()=>commit({...state,tecnico:$('svc-tech-view').value}));
+  $('svc-csv').addEventListener('click',()=>{const blob=new Blob([A.csv(filtered)],{type:'text/csv;charset=utf-8'}),u=URL.createObjectURL(blob),link=document.createElement('a');link.href=u;link.download='Servizi_Lazio_risultati.csv';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);});
+  if($('svc-tech-view'))$('svc-tech-view').addEventListener('change',()=>commit({...state,tecnico:$('svc-tech-view').value}));
   window.addEventListener('popstate',()=>{clearTimeout(timer);state=stateFromURL();render();});
 }
 async function getJSON(url){const controller=new AbortController(),t=setTimeout(()=>controller.abort(),18000);try{const r=await fetch(url,{signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(t);}}
@@ -154,9 +153,9 @@ async function start(){
   D=base.value;rows=A.build(D,extra.status==='fulfilled'?extra.value:null);populate();wire();
   $('svc-total').textContent=rows.length+' schede';
   $('svc-breakdown').textContent=rows.filter(r=>r.origin==='rete').length+' nodi rete ASL · '+rows.filter(r=>r.origin==='moduli').length+' moduli non ASL · '+rows.filter(r=>r.origin==='privati').length+' schede di attività privata.';
-  if(extra.status==='fulfilled')$('svc-load-status').hidden=true;else{$('svc-load-status').textContent='Il dataset dei centri con attività privata non è stato caricato: stai consultando solo i '+rows.length+' record del database principale.';}
+  if(extra.status==='fulfilled')$('svc-load-status').hidden=true;else{$('svc-load-status').textContent='Le strutture private non sono state caricate: stai consultando solo i '+rows.length+' risultati principali.';}
   $('svc-controls').disabled=false;state=stateFromURL();commit(state,false);
-  if(state.tecnico){$('svc-technical').scrollIntoView({block:'start'});}
+  if(state.tecnico&&$('svc-technical')){$('svc-technical').scrollIntoView({block:'start'});}
 }
 start().catch(e=>{$('svc-load-status').classList.add('error');$('svc-load-status').textContent=e.message;$('svc-total').textContent='Dati non caricati';$('svc-count').textContent='Nessun risultato disponibile: il caricamento non è riuscito.';$('risultati').setAttribute('aria-busy','false');});
 })();
