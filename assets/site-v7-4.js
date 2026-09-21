@@ -1,9 +1,9 @@
-/* Funzioni progressive: i contenuti restano leggibili senza JavaScript. */
+/* Funzioni progressive: contenuti e dataset originali preservati. Revisione UI 7.5.1. */
 (function () {
   'use strict';
   function notice(text) {
     var box = document.getElementById('toast');
-    if (!box) { box = document.createElement('div'); box.id = 'toast'; box.setAttribute('role', 'status'); document.body.appendChild(box); }
+    if (!box) { box = document.createElement('div'); box.id = 'toast'; box.className = 'toast'; box.setAttribute('role', 'status'); document.body.appendChild(box); }
     box.textContent = text; box.hidden = false;
     clearTimeout(notice.timer); notice.timer = setTimeout(function () { box.hidden = true; }, 5500);
   }
@@ -31,10 +31,11 @@
     }
   });
   var tools = document.querySelector('[data-directory-tools]');
-  if (tools) {
-    var search = document.getElementById('directory-search'), category = document.getElementById('directory-category');
+  var search = document.getElementById('directory-search'), category = document.getElementById('directory-category');
+  // V7.5 directories own their filters. Do not attach legacy handlers to an absent select.
+  if (tools && search && category && document.getElementById('result-count')) {
     var cards = Array.from(document.querySelectorAll('[data-entry]'));
-    function normalize(value) { return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
+    function normalize(value) { return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
     function update() {
       var query = normalize(search.value.trim()), count = 0;
       cards.forEach(function (card) {
@@ -45,7 +46,40 @@
       var empty = document.querySelector('.empty-result'); if (empty) empty.hidden = count !== 0;
     }
     tools.hidden = false; search.addEventListener('input', update); category.addEventListener('change', update);
-    tools.querySelector('[data-reset]').addEventListener('click', function () { search.value = ''; category.value = ''; update(); search.focus(); });
+    var reset = tools.querySelector('[data-reset]');
+    if (reset) reset.addEventListener('click', function () { search.value = ''; category.value = ''; update(); search.focus(); });
     update();
+  }
+  // Compatibility for unchanged, versioned V7.4 documents: update visible vocabulary and routes only.
+  function wording(s) { return s.replace(/\bArchivio\b/g, 'Database').replace(/\barchivio\b/g, 'database'); }
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), node;
+  while ((node = walker.nextNode())) {
+    if (node.parentElement && !node.parentElement.closest('script,style,code,pre,textarea,[data-preserve-original]')) node.nodeValue = wording(node.nodeValue);
+  }
+  document.title = wording(document.title);
+  document.querySelectorAll('meta[name="description"],meta[property="og:description"]').forEach(function(el){el.content=wording(el.content);});
+  document.querySelectorAll('a[href],form[action]').forEach(function(el){
+    var attr = el.tagName === 'FORM' ? 'action' : 'href', value = el.getAttribute(attr);
+    try {
+      var u = new URL(value, document.baseURI);
+      if (u.origin === new URL(document.baseURI).origin && /^\/archivio(?:\.html)?\/?$/.test(u.pathname)) {
+        el.setAttribute(attr, '/servizi.html' + u.search + u.hash);
+        if (el.closest('.site-header nav') && el.tagName === 'A') el.textContent = 'Trova un servizio';
+      }
+    } catch (err) { /* Keep non-URL actions untouched. */ }
+  });
+  var path = new URL(document.baseURI).pathname.replace(/\.html$/, '').replace(/\/$/, '');
+  var maps = {
+    '/studenti': [['/universita.html', 'Servizi universitari'], ['/scuole.html', 'Sportelli scolastici']],
+    '/ascolto': [['/helpline.html', 'Tutte le helpline'], ['/centri-ascolto.html', 'Centri e sportelli di ascolto']],
+    '/glossario': [['/orientamento-servizi.html', 'Schede di orientamento ai servizi']],
+    '/documenti': [['/downloads/Note_Rilascio_V7_5_1.txt', 'Novità di Trova un servizio'], ['/downloads/Verifiche_UI_V7_5_1.json', 'Verifiche interfaccia V7.5.1']],
+    '/metodo': [['/servizi.html', 'Database dei servizi'], ['/downloads/Note_Rilascio_V7_5_1.txt', 'Metodo del restyling V7.5.1']]
+  };
+  if (maps[path] && !document.getElementById('service-links')) {
+    var nav = document.createElement('nav'); nav.id = 'service-links'; nav.className = 'actions'; nav.setAttribute('aria-label','Sezioni collegate');
+    maps[path].forEach(function(item){var a=document.createElement('a');a.className='button secondary';a.href=item[0];a.textContent=item[1]+' →';nav.appendChild(a);});
+    var lead=document.querySelector('.page-lead'),main=document.querySelector('main');
+    if (lead) lead.insertAdjacentElement('afterend',nav); else if(main)main.insertBefore(nav,main.firstChild);
   }
 }());

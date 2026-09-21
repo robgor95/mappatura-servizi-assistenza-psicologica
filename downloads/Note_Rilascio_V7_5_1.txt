@@ -1,0 +1,70 @@
+NOTE DI RILASCIO — INTERFACCIA V7.5.1 — 21/09/2026
+
+TROVA UN SERVIZIO
+La sezione prima denominata Archivio è il database operativo dei servizi,
+non una raccolta storica. Nuovo percorso principale: /servizi.html.
+Titolo: Mappa dei servizi di salute mentale nel Lazio.
+Progetto indipendente: non è un database ufficiale della Regione Lazio.
+
+RICERCA E PRESENTAZIONE
+Indice unificato: 421 schede = 295 nodi rete ASL + 115 moduli non ASL
++ 11 schede di attività privata già presenti nella V7.5. Non sono 421
+strutture uniche. Gli 89 nodi ricontrollati e i 168 approfondimenti
+non sono aggiunti una seconda volta. La copertura non è esaustiva.
+
+Ricerca per nome, comune, indirizzo, servizi dichiarati e parole multiple.
+Tre filtri iniziali: tipologia, provincia/territorio ASL, regime.
+Filtri avanzati richiudibili: origine, ASL, comune, ambito, tipo originale,
+titolarità, autorizzazione, accreditamento, rapporto SSN, verifica,
+mobilità territoriale e dati sulla capacità. Filtri combinati in AND.
+Scorciatoie per territorio/tipologia; risultati ordinati alfabeticamente,
+paginazione, filtri rimovibili, azzeramento e URL condivisibili.
+
+Schede sintetiche e dettaglio con accesso, destinatari, équipe, contatti,
+orari, dati amministrativi separati, fonti e date originali.
+Espansione di TUTTI i campi originali, anche quelli non sintetizzati.
+Struttura/sede e modulo rimangono distinti. Nessun dato sanitario è
+ricavato dal solo nome. Le categorie di ricerca non riscrivono i dati.
+I badge amministrativi descrivono l'evidenza indicata nei dataset;
+non attestano la vigenza corrente di un contratto SSN.
+
+INTERFACCIA
+Tipografia, colori, header, footer, pulsanti e spaziature coerenti con il sito.
+Layout a una colonna su mobile; dettagli in dialogo accessibile da tastiera,
+chiusura con Escape, focus mantenuto e ripristinato, stampa e condivisione.
+Esportazione CSV dei risultati: riepilogo a 15 colonne con citazioni e date;
+i dataset integrali CSV/JSON/XLSX/PDF originali restano nei download.
+Nessun backend, framework, font remoto o servizio a pagamento aggiunto.
+
+COMPATIBILITÀ
+/archivio.html contiene lo stesso motore ed è un ingresso compatibile.
+I vecchi parametri view, tipo, asl, ambito, regime, q, id, indice e verifica
+sono interpretati e normalizzati senza perdere la selezione del record.
+Disponibili anche i link privi dell'estensione, gestiti da Cloudflare Pages.
+Le viste documentali sono conservate sotto Dati, fonti, copertura e storico.
+Una copia della precedente interfaccia resta in /interfaccia-precedente.html.
+Le guide V7.4 non sono riscritte: lo script comune aggiorna progressivamente
+nomi e collegamenti nell'interfaccia senza modificare il loro contenuto clinico.
+Università, scuole, helpline e centri di ascolto restano sezioni separate.
+Corretto il conflitto tra i filtri V7.4 e quelli delle pagine V7.5.
+
+CONSERVAZIONE
+Nessun file sorgente in data/ e nessun download precedente è riscritto.
+Nessuna eliminazione di record o cambio indiscriminato delle date.
+Questa release NON è una nuova verifica sanitaria dei dati.
+Versioni conservate: database V7.3, integrazioni V7.5, guide V7.4.
+
+TEST E LIMITI
+Test del modello dati riproducibili con:
+  node tools/test-servizi-v7-5-1.cjs
+Risultati dei controlli in /downloads/Verifiche_UI_V7_5_1.json.
+Chromium headless: DOM, tastiera, dialoghi, filtri, URL, back/forward,
+layout 360/390 px, stampa CSS ed esportazione CSV realmente esercitati.
+L'ambiente impedisce la navigazione HTTP del browser: CSS e script sono
+caricati in memoria, fetch usa i dataset originali verificati tramite hash,
+e i cambi di percorso sono mappati su query URL about:blank.
+Non è un test end-to-end della rete pubblica né su smartphone fisico.
+Le funzioni native di stampa/condivisione sono testate tramite chiamate
+controllate; nessuna telefonata o email viene inviata.
+Il deployment deve essere controllato sul check Cloudflare Pages del commit
+finale; il report locale non sostituisce quel controllo.

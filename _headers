@@ -11,3 +11,5 @@
   Cache-Control: no-cache
 /downloads/*
   Cache-Control: public, max-age=3600
+/assets/site-v7-4.js
+  Cache-Control: no-cache, must-revalidate

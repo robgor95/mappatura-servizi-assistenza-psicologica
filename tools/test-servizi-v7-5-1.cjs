@@ -1,0 +1,31 @@
+// Run from any directory: node tools/test-servizi-v7-5-1.cjs
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'),A=require(path.join(root,'assets/servizi-data-v7-5-1.js'));
+const D=JSON.parse(fs.readFileSync(path.join(root,'data/portal_data_v7_3.json'))),P=JSON.parse(fs.readFileSync(path.join(root,'data/privati_v7_5.json')));
+const baseline=JSON.stringify(D),privBaseline=JSON.stringify(P),R=A.build(D,P),tests=[];
+function check(name,fn){try{fn();tests.push({name,passed:true});}catch(e){tests.push({name,passed:false,error:e.message});}}
+const query=q=>R.filter(r=>A.matches(r,A.parse(q,D)));
+check('421 rows; 410 legacy nodes/modules plus 11 private records',()=>assert.equal(R.length,421));
+check('All original IDs represented exactly once within their source',()=>{assert.equal(new Set(R.map(r=>r.key)).size,421);for(const r of D.rete_asl)assert(R.some(x=>x.key==='rete:'+r.id));for(const r of D.moduli)assert(R.some(x=>x.key==='moduli:'+r.id_modulo));for(const r of P.records)assert(R.some(x=>x.key==='privati:'+r.id));});
+check('No mutation of any source object or date',()=>{assert.equal(JSON.stringify(D),baseline);assert.equal(JSON.stringify(P),privBaseline);for(const r of R){const a=r.origin==='rete'?D.rete_asl.find(x=>x.id===r.id):r.origin==='moduli'?D.moduli.find(x=>x.id_modulo===r.id):P.records.find(x=>x.id===r.id);assert.deepEqual(a,r.raw);}});
+check('Day-centre enrichment and public rechecks are not counted twice',()=>{assert.equal(query('?origine=rete').length,295);assert.equal(query('?origine=moduli').length,115);assert.equal(query('?origine=privati').length,11);});
+for(const [type,count] of [['CSM',62],['SerD',42],['SPDC',20],['Centro diurno',53],['TSMREE/NPIA',25],['DNA/DCA',10]])check('Legacy exact type '+type,()=>assert.equal(query('?view=network&tipo='+encodeURIComponent(type)).length,count));
+for(const [view,n] of [['network',295],['contracted',73],['stpit',7],['pending',35],['public',89]])check('Legacy view '+view,()=>assert.equal(query('?view='+view).length,n));
+for(const [amb,n] of [['Psichiatria',57],['Dipendenze',12],['Doppia diagnosi',4]])check('Legacy contracted '+amb,()=>assert.equal(query('?view=contracted&ambito='+encodeURIComponent(amb)).length,n));
+check('All 89 legacy public indices reopen their original ID',()=>{D.pubbliche_ricontrollate.forEach((r,i)=>assert.equal(A.parse('?view=public&indice='+i,D).scheda,'rete:'+r.id));});
+check('All 115 module IDs accepted unchanged by the legacy adapter',()=>{D.moduli.forEach(r=>assert.equal(A.parse('?view=stpit&id='+r.id_modulo,D).scheda,r.id_modulo));});
+check('Case and diacritics ignored by text search',()=>assert.deepEqual(query('?q=VITERBO').map(r=>r.key),query('?q=viterbo').map(r=>r.key)));
+check('Multi-word search is an AND, not an OR',()=>query('?q=centro%20Roma').forEach(r=>assert(r.search.includes('centro')&&r.search.includes('roma'))));
+check('All five territories present and filterable',()=>['RM','FR','LT','RI','VT'].forEach(p=>assert(query('?provincia='+p).length>0)));
+check('ASL aliases grouped without rewriting source data',()=>{assert.equal(A.asl('R1'),'ASL Roma 1');assert.equal(A.asl('Roma 1'),'ASL Roma 1');assert.equal(A.asl('VT'),'ASL Viterbo');});
+check('Every filter uses intersection semantics',()=>{for(const r of R){const s={origine:r.origin,tipo:r.type,provincia:r.territory,regime:r.regime,comune:r.town,asl:r.asl};assert(A.matches(r,s));}});
+check('Each exploration shortcut has results',()=>Object.keys(A.labels).forEach(percorso=>assert(R.some(r=>A.matches(r,{percorso})))));
+check('Authorization, accreditation and contract are independent',()=>{assert.equal(A.evidence('Da distinguere'),'da-verificare');assert.equal(A.evidence('Non documentato'),'da-verificare');assert.equal(A.evidence('Accreditata secondo gestore'),'dichiarazione');assert.equal(A.evidence('Contratto 2025-2026 pubblicato'),'indicata');assert.equal(A.evidence('Autorizzazione da acquisire'),'da-verificare');});
+check('Uncertain ownership remains uncertain',()=>assert.equal(R.filter(r=>r.ownership==='Da verificare').length,28));
+check('Invalid query yields zero results, not a fabricated record',()=>assert.equal(query('?q=NESSUNSERVIZIO_82934').length,0));
+check('CSV quotes semicolons/newlines and neutralises spreadsheet formulas',()=>{const csv=A.csv([{...R[0],name:'=SUM(1;2)\n"abc"'}]);assert(csv.includes("\"'=SUM(1;2)\n\"\"abc\"\"\""));assert(csv.startsWith('\ufeff'));});
+check('Unsafe URLs are not turned into active links',()=>{assert.equal(A.urls('javascript:alert(1)').length,0);assert.deepEqual(A.urls('https://example.org/a | https://example.org/b'),['https://example.org/a','https://example.org/b']);});
+check('Dedicated contacts only, no fabricated phone for missing values',()=>{assert.equal(A.phone('ND — non documentato'),'');assert.equal(A.phone('06 37518261 / 06 37518262'),'0637518261');assert.equal(A.email('Non documentato'),'');});
+for(const [p,sha] of [['data/portal_data_v7_3.json','b180de852be5f0a61be64c272c60604784e0bf8b'],['data/privati_v7_5.json','f3c680ff0bfa56859df7eea83b785231b9d82520']])check('Git blob hash matches production baseline: '+p,()=>{const b=fs.readFileSync(path.join(root,p)),h=crypto.createHash('sha1').update(Buffer.concat([Buffer.from('blob '+b.length+'\0'),b])).digest('hex');assert.equal(h,sha);});
+const report={version:'7.5.1',tests,passed:tests.filter(x=>x.passed).length,total:tests.length};console.log(JSON.stringify(report,null,2));if(report.passed!==report.total)process.exitCode=1;

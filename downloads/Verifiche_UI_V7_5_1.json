@@ -1,0 +1,87 @@
+{
+  "version": "7.5.1",
+  "checked_at": "2026-09-21",
+  "baseline_commit": "7e40073634a5bcdf8866e0c54b48e1be59daa774",
+  "scope": "Restyling e ricerca. Nessuna nuova verifica sanitaria o modifica ai dataset sorgente.",
+  "records": {
+    "rete_asl": 295,
+    "moduli_non_asl": 115,
+    "attivita_privata": 11,
+    "search_total": 421,
+    "unit": "schede; non strutture uniche",
+    "rechecks_not_duplicated": 89,
+    "enrichment_not_duplicated": 168
+  },
+  "checks": {
+    "data_adapter": {
+      "passed": 34,
+      "total": 34,
+      "reproduce": "node tools/test-servizi-v7-5-1.cjs"
+    },
+    "browser_interactions": {
+      "passed": 87,
+      "total": 87,
+      "javascript_errors": [],
+      "viewports": [
+        360,
+        390,
+        1280
+      ]
+    },
+    "site_integration": {
+      "passed": 61,
+      "total": 61,
+      "scope": "In-memory Chromium integration, shared-script legacy fixtures and exact HTML content comparison. Does not claim production HTTP testing."
+    },
+    "total_executed": 182,
+    "static_links": {
+      "checked_references": 295,
+      "modified_html_pages": 10,
+      "missing_targets": [],
+      "duplicate_ids": [],
+      "missing_local_anchors": [],
+      "method": "HTML href/src/action controllati sul tree GitHub iniziale (87 file) e sui nuovi file. Non richieste HTTP."
+    }
+  },
+  "actual_behaviours_tested": [
+    "Ricerca, AND dei filtri, reset e risultati vuoti",
+    "6 scorciatoie, ordinamento e paginazione",
+    "URL legacy network/contracted/STPIT/pending/public e ID precedenti",
+    "Back/forward delle query nel banco di prova",
+    "Dialogo nativo, Tab/Shift-Tab, Escape e ripristino del focus",
+    "Dati amministrativi separati e campi originali completi",
+    "Fonti, copertura, qualità documentale e storico",
+    "Rendering mobile 360/390 px e testo ingrandito",
+    "Download CSV effettivo dal browser: 7 righe STPIT, 15 colonne, più intestazione",
+    "Caricamento fallito della fonte opzionale o principale",
+    "Layout e navigazione delle 6 directory V7.5, home e orientamento",
+    "Preservazione esatta delle 15 schede di orientamento: 180 risposte",
+    "Contratto dei filtri legacy dello script comune (fixture esplicite)"
+  ],
+  "preservation": {
+    "source_files_edited": [],
+    "previous_downloads_edited": [],
+    "guide_html_edited": [],
+    "original_data_git_blobs": {
+      "data/portal_data_v7_3.json": "b180de852be5f0a61be64c272c60604784e0bf8b",
+      "data/privati_v7_5.json": "f3c680ff0bfa56859df7eea83b785231b9d82520"
+    },
+    "old_interface_preserved_as": "interfaccia-precedente.html",
+    "old_interface_git_blob": "3614592ed0431d71204a1e27f4612223d56525ea",
+    "directory_descriptions_fields_configs_unchanged": true,
+    "original_verification_dates_unchanged": true
+  },
+  "limitations": {
+    "browser_harness": "Chromium headless. Exact local application scripts and CSS. Network fetch mocked with exact source datasets; path updates mapped to about:blank query URLs because environment blocks HTTP navigation. Native DOM, layout, dialog, events, query history and CSV export exercised. Not an end-to-end production-network or physical-device test.",
+    "native_share_print": "Invocazioni verificate con stub; dialoghi del sistema operativo non collaudati. CSV Blob realmente scaricato e riletto.",
+    "public_http_end_to_end": "Non eseguito: navigazione HTTP del browser bloccata dall’ambiente.",
+    "physical_mobile": "Non eseguito; viewport Chromium 360/390 px realmente renderizzate.",
+    "clinical_review": false,
+    "availability_contacts": "Non effettuate telefonate, email, prenotazioni o controlli dei posti liberi."
+  },
+  "deployment": {
+    "in_this_precommit_report": "Da controllare sul check Cloudflare Pages del commit finale dopo il push.",
+    "expected_branch": "main",
+    "manual_upload_required": false
+  }
+}
