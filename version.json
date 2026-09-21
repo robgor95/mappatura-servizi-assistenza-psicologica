@@ -1,5 +1,5 @@
 {
-  "web_version": "7.7.2",
+  "web_version": "7.7.3",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -31,7 +31,7 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo",
-  "deployment_checked_by_preparer": true,
+  "deployment_checked_by_preparer": false,
   "counts_current": {
     "rete": 296,
     "moduli": 115,
@@ -53,5 +53,6 @@
     "routes": 39,
     "towns": 93
   },
-  "release_note": "Frontend semplificato: termini user-friendly, dettagli tecnici spostati fuori dalla ricerca principale, guide private ampliate con scelta del professionista e approcci psicoterapeutici. Nessuna modifica ai dataset sanitari."
+  "release_note": "Navigazione semplificata: quattro percorsi principali, home per situazioni, download secondari, guida con linguaggio più naturale. Dati e orientatore invariati.",
+  "navigation_version": "7.7.3"
 }

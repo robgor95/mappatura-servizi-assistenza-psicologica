@@ -1,5 +1,14 @@
 # Changelog
 
+## 7.7.3 — 21 settembre 2026
+
+- Navigazione a quattro percorsi, Altro e menu mobile accessibile.
+- Home lineare: Menta, tre alternative, sei situazioni e risorse secondarie.
+- Download raggruppati e dichiarati copie precedenti; pagine, file e collegamenti conservati.
+- Studenti conduce alle directory complete; ricerche rapide e contenuti storici restano facoltativi.
+- Rimossa la precisazione meta cognitivo-interpersonale/IPT in favore di domande pratiche.
+- Dataset, fonti, orientatore e filtri invariati. Report: downloads/Verifiche_Navigazione_V7_7_3.json.
+
 ## 7.7.2 — 21 settembre 2026
 
 - Semplificata la ricerca dei servizi con terminologia orientata all’utente: servizi pubblici / SSN, strutture non ASL o convenzionate e strutture private.

@@ -21,9 +21,9 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.7.2 — Menta
+## Versione corrente V7.7.3 — Navigazione semplificata
 
-La produzione usa **V7.7.2** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
+La produzione usa **V7.7.3** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 
 Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. La V7.7.2 semplifica il linguaggio del frontend, sposta i dettagli di audit fuori dal percorso principale e amplia la guida al privato con scelta del professionista e approcci psicoterapeutici. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
 
@@ -84,3 +84,9 @@ node tools/test-servizi-v7-5-1.cjs
 
 Note di rilascio: `downloads/Note_Rilascio_V7_5_1.txt`.
 Report e limiti del banco di prova Chromium: `downloads/Verifiche_UI_V7_5_1.json`.
+
+## Navigazione 7.7.3
+
+Header e footer sono HTML statico: nessun caricamento remoto del menu. I file navigation-v7-7-3.css/js migliorano la navigazione senza leggere o salvare bisogni. Quattro percorsi primari, Altro per directory e risorse, download secondari. I file PDF precedenti restano immutati e sono etichettati come tali.
+
+Controlli: `node tools/test-menta-v7-7.cjs` e `python tools/test-navigation-v7-7-3.py`. Gli strumenti Python richiedono BeautifulSoup e Playwright solo in sviluppo. Nessuna dipendenza serve al sito statico.
