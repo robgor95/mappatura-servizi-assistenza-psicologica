@@ -48,7 +48,7 @@ function directory(category,rows,data){
   const v=applyRaw(r,ev);if(ev.fields.denominazione)v.struttura=ev.fields.denominazione;if(ev.fields.indirizzo)v.sede=ev.fields.indirizzo;
   const aliases={telefono:'contatti',orari:'orari_segreteria',autorizzazione_stato:'autorizzazione',accreditamento_stato:'accreditamento',contratto_ssn_stato:'contratto_ssn'};
   Object.entries(aliases).forEach(([k,a])=>{if(k in ev.fields)v[a]=ev.fields[k];});
-  if(ev.fields.ssn_evidence_v79==='da-verificare')v.rapporto_ssn=ev.fields.nota_rapporto_ssn||'Da verificare per questa unità';
+  if(ev.fields.ssn_evidence_v79==='da-verificare'){v.rapporto_ssn=ev.fields.nota_rapporto_ssn||'Da verificare per questa unità';v.stato='Rapporto SSN da verificare per questa unità';}
   v.riesame_v79='Parziale: '+ev.checked_at;v.fonti_v79=ev.sources.join(' | ');v.note_v79=ev.note;return v;
  });
  const known=new Set(result.map(r=>String(r.id_modulo||r.id)));

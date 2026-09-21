@@ -56,7 +56,7 @@ s=s.replace('init(rows)}).catch',"rows=window.LazioAudit79.directory(c,rows,audi
 write('assets/directory-v7-9.js',s)
 s=load('assets/audit-data-v7-9.js').replace("if(ev.fields.ssn_evidence_v79==='da-verificare')v.rapporto_ssn=ev.fields.nota_rapporto_ssn||'Da verificare per questa unità';", "if(ev.fields.ssn_evidence_v79==='da-verificare'){v.rapporto_ssn=ev.fields.nota_rapporto_ssn||'Da verificare per questa unità';v.stato='Rapporto SSN da verificare per questa unità';}")
 write('assets/audit-data-v7-9.js',s)
-for p in ['servizi.html','mappa.html']:
+for p in ['servizi.html','archivio.html','mappa.html']:
  s=load(p)
  if 'audit-data-v7-9.js' not in s:s=s.replace('<script defer="" src="/assets/servizi-data-v7-5-1.js"></script>','<script defer="" src="/assets/servizi-data-v7-5-1.js"></script><script defer="" src="/assets/audit-data-v7-9.js"></script>')
  s=s.replace('/assets/servizi-v7-5-1.js?v=7.8','/assets/servizi-v7-9.js').replace('/assets/map-data-v7-8.js','/assets/map-data-v7-9.js').replace('/assets/map-v7-8.js','/assets/map-v7-9.js').replace('data-ui-version="7.8"','data-ui-version="7.9"')
@@ -64,7 +64,7 @@ for p in ['servizi.html','mappa.html']:
   s=re.sub(r'<p class="map-legend">.*?</p>','<p class="map-legend"><strong>A / B</strong>: indirizzo/civico documentato. <strong>~ C</strong>: posizione indicativa, non un ingresso verificato. <strong>D / E</strong>: nessun pin, servizio comunque in elenco. I numeri raggruppano servizi distinti.</p>',s)
   s=s.replace('apri l’indirizzo in una mappa esterna','consulta l’indirizzo e i recapiti nella scheda')
  write(p,s)
-p='strutture-approfondite.html';s=load(p)
+p='strutture-approfondite.html';s=load(p).replace('Informazioni verificate il 21/09/2026','Riesame V7.9 parziale: 22/09/2026').replace('Questa pagina espone in forma uniforme i campi già documentati nel baseline.','Questa pagina integra i dati precedenti con un riesame parziale V7.9; le date e i campi controllati sono indicati nelle singole schede.')
 s=s.replace('<script src="/assets/directory-v7-5.js?v=7.7.5"></script>','<script src="/assets/audit-data-v7-9.js"></script><script src="/assets/directory-v7-9.js"></script>')
 m=re.search(r'window.V75_CONFIG=(.*?);</script>',s);cfg=json.loads(m[1]);cfg['fields']+=['telefono','email','orari','accesso','autorizzazione_stato','accreditamento_stato','contratto_ssn_stato','costi','stato_servizio','riesame_v79','fonti_v79','note_v79']
 cfg['fields']=list(dict.fromkeys(cfg['fields']));s=s[:m.start(1)]+json.dumps(cfg,ensure_ascii=False,separators=(',',':'))+s[m.end(1):];write(p,s)

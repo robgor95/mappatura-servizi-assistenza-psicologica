@@ -9,7 +9,7 @@ for source in a['sources']:
  if 'aslroma' in source['url']:source['kind']='asl'
  if 'italianhospitalgroup.it' in source['url']:source['verification']='tentativo non riuscito; fonte non acquisita, nessun aggiornamento operativo'
 out('data/audit_operativo_v7_9.json',a)
-allowed={'README.md','CHANGELOG.md','version.json','servizi.html','mappa.html','strutture-approfondite.html','documenti.html'}
+allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','documenti.html'}
 oldfiles=subprocess.check_output(['git','ls-tree','-r','--name-only',BASE],cwd=R,text=True).splitlines();hashes={};bad=[]
 for p in oldfiles:
  data=subprocess.check_output(['git','show',BASE+':'+p],cwd=R);h=hashlib.sha256(data).hexdigest();hashes[p]={'sha256':h,'bytes':len(data)}
@@ -28,6 +28,22 @@ check('Il Ponte three distinct services; no unsupported per-site SSN promotion',
 check('FEBO and Villa Licia not promoted to accredited/contracted',all(by[k]['ssn']=='da-verificare' for k in ['moduli:V79-COOPERATE-FEBO','moduli:V79-GV-LICIA']))
 check('All operational changes have source and per-field dates',all(e['sources'] and e['checked_at']==D and set(e['fields'])==set(e['field_evidence']) for e in a['revisions']))
 check('Clinical review and indexing remain disabled',read('version.json').get('clinical_review') is False and 'noindex' in (R/'_headers').read_text() and 'Sitemap:' not in (R/'robots.txt').read_text())
+# Independent checks of geometry and documented operator identity.
+from shapely.geometry import shape,Point
+region=shape(read('downloads/Lazio_Boundary_OSM_V7_9.geojson'))
+check('All published pins lie in cached Lazio polygon',all(region.covers(Point(p['lng'],p['lat'])) for p in g['records'].values() if p['lat'] is not None))
+check('Il Ponte shared site retains both service identities',all(g['records']['moduli:V79-PONTE-RES'][k]==g['records']['moduli:V79-PONTE-COCCINELLA'][k] for k in ['lat','lng']))
+check('Additions reuse documented operator identity',all(by[new]['raw']['ente_id']==by[old]['raw']['ente_id'] for new,old in [('moduli:V79-PONTE-RES','moduli:MOD-109'),('moduli:V79-COOPERATE-FEBO','moduli:MOD-108'),('moduli:V79-GV-LICIA','moduli:MOD-094')]))
+groups=collections.defaultdict(list)
+for key,p in g['records'].items():
+ if p['lat'] is not None:groups[(p['lat'],p['lng'])].append(key)
+shared=[]
+for pos,keys in groups.items():
+ if len(keys)<2:continue
+ addresses=sorted({g['records'][k]['source_address'] for k in keys});towns=sorted({g['records'][k]['comune'] for k in keys})
+ shared.append({'coordinates':list(pos),'service_keys':keys,'source_addresses':addresses,'municipalities':towns,'interpretation':'Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione.' if len(addresses)>1 else 'Indirizzo condiviso; servizi distinti.'})
+check('No coordinate shared across inconsistent municipalities',all(len(x['municipalities'])==1 for x in shared))
+out('downloads/Coordinate_Condivise_V7_9.json',{'groups':shared,'policy':'I gruppi di via possono contenere civici diversi: approssimazione esplicita, non verifica della sede condivisa.'})
 fields={}
 for e in a['revisions']:
  for k,v in e['field_evidence'].items():
@@ -79,9 +95,12 @@ if 'id="release-v79"' not in text:text=text.replace('</main>','<section class="p
 # Generate a new browser suite; do not rewrite the historical V7.8 suite.
 t=(R/'tools/test-ux-map-v7-8.mjs').read_text().replace("version:'7.8'","version:'7.9'").replace('all 432 services','all 440 services').replace('/432','/440').replace('presidi_geo_v7_8.json','presidi_geo_v7_9.json').replace(".includes('Posizione da verificare')",".toLowerCase().includes('posizione da verificare')").replace("['index.html','servizi.html','mappa.html','giovani.html']","['index.html','servizi.html','mappa.html','giovani.html','universita.html','scuole.html','strutture-approfondite.html','centri-ascolto.html']")
 extra="""  await test('Current operational fields and correct unknown SSN labels',async()=>{
- await p.setViewportSize({width:390,height:900});await p.goto(BASE+'/servizi.html?q=FEBO',{waitUntil:'networkidle'});await p.locator('#svc-controls:not([disabled])').waitFor();assert.equal(await p.locator('.svc-card').count(),1);assert.match(await p.locator('.svc-card').innerText(),/Struttura non ASL/);await p.locator('[data-open]').first().click();let text=await p.locator('#svc-detail').innerText();assert.match(text,/in attesa di accreditamento/);assert.match(text,/31.12.2019/);assert.match(text,/Riesame operativo V7.9/);await shot(p,'febo-dettagli-390');const ax=await new AxeBuilder({page:p}).analyze();assert.equal(ax.violations.length,0,JSON.stringify(ax.violations));await p.keyboard.press('Escape');
- await p.goto(BASE+'/servizi.html?q=Le+Ali+del+Ponte',{waitUntil:'networkidle'});await p.locator('#svc-controls:not([disabled])').waitFor();assert.equal(await p.locator('.svc-card').count(),3);
+ await p.setViewportSize({width:390,height:900});await p.goto(BASE+'/servizi.html?q=FEBO',{waitUntil:'networkidle'});await p.locator('#svc-controls:not([disabled])').waitFor();assert.equal(await p.locator('.svc-card').count(),1);assert.match(await p.locator('.svc-card').innerText(),/Struttura non ASL/);await p.locator('#svc-list a[data-open]').first().click();let text=await p.locator('#svc-detail').innerText();assert.match(text,/in attesa di accreditamento/);assert.match(text,/31.12.2019/);assert.match(text,/Riesame operativo V7.9/);await shot(p,'febo-dettagli-390');const ax=await new AxeBuilder({page:p}).analyze();assert.equal(ax.violations.length,0,JSON.stringify(ax.violations));await p.keyboard.press('Escape');
+ await p.goto(BASE+'/servizi.html?q=Le+Ali+del+Ponte&comune=Civitavecchia',{waitUntil:'networkidle'});await p.locator('#svc-controls:not([disabled])').waitFor();assert.equal(await p.locator('.svc-card').count(),3);
  await p.goto(BASE+'/strutture-approfondite.html',{waitUntil:'networkidle'});assert.match(await p.locator('#result-count').innerText(),/181/);await p.locator('#directory-search').fill('FEBO');await p.waitForTimeout(500);assert.match(await p.locator('#directory-grid').innerText(),/FEBO/);
+ });
+ await test('Il Ponte shared address retains two services in one popup',async()=>{
+ await p.goto(BASE+'/mappa.html?q=Le+Ali+del+Ponte+Veneto',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();assert.equal(await p.locator('#map-list>li').count(),2);await p.locator('#map-activate').click();await p.waitForTimeout(450);assert.equal(await p.locator('.presidio-marker').count(),1);await p.locator('.presidio-marker').click();assert.equal(await p.locator('.map-popup-item').count(),2);assert.match(await p.locator('.leaflet-popup-content').innerText(),/Coccinella/);assert.match(await p.locator('.leaflet-popup-content').innerText(),/Comunità residenziale/);await shot(p,'ponte-popup-390');
  });
  await test('Search text stays local and missing audit has a visible warning',async()=>{
  const {c:ct,p:pg}=await context();const req=[];pg.on('request',r=>req.push(r.url()));await pg.goto(BASE+'/servizi.html',{waitUntil:'networkidle'});await pg.locator('#svc-controls:not([disabled])').waitFor();req.length=0;await pg.locator('#svc-q').fill('MENTAL_HEALTH_PRIVATE_SENTINEL_79');await pg.waitForTimeout(600);assert(!req.some(u=>u.includes('MENTAL_HEALTH_PRIVATE_SENTINEL_79')));assert.equal(req.filter(u=>!u.startsWith(BASE)).length,0);await ct.route('**/data/audit_operativo_v7_9.json',r=>r.fulfill({status:503,body:'unavailable'}));await pg.reload({waitUntil:'networkidle'});await pg.locator('#svc-controls:not([disabled])').waitFor();assert.equal(await pg.locator('#svc-load-status').isVisible(),true);assert.match(await pg.locator('#svc-load-status').innerText(),/V7.9/);await ct.close();

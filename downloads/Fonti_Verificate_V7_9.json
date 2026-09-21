@@ -1,0 +1,328 @@
+{
+  "curated_sources": [
+    {
+      "url": "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-subiaco/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-monterotondo/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-tivoli/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-colleferro/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-calvino/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-giovagnoli/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/",
+      "kind": "asl",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://reverie.it/strutture/comunita-terapeutica-romana/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://reverie.it/strutture/il-centro-diurno/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://reverie.it/strutture/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://gestivar.it/le-strutture/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://gestivar.it/contatti/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.comunitainsieme.com/strutture/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.ilpontecivitavecchia.it/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.alidelponte.com/servizi",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.alidelponte.com/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.cooperate.it/home.html",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.cooperate.it/servizi/bracciano.html",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.cooperate.it/servizi/bracciano/centro_specialistico_semiresidenziale.html",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.villaletizia.org/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.maieusis.org/contatti/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": "2021-06",
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "documentale; nessuna chiamata o sopralluogo"
+    },
+    {
+      "url": "https://italianhospitalgroup.it/",
+      "kind": "gestore",
+      "checked_at": "2026-09-22",
+      "document_date": null,
+      "verification": "tentativo non riuscito; fonte non acquisita, nessun aggiornamento operativo"
+    }
+  ],
+  "snapshots": [
+    {
+      "url": "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf",
+      "file": "ebb85129ab074b32.pdf",
+      "final_url": "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf",
+      "sha256": "79ea5228900a25f2061a7a49342504538871671680b72be20b98fd1188aba380",
+      "checked_at": "2026-09-21T23:07:04.618677+00:00"
+    },
+    {
+      "url": "https://www.ilpontecivitavecchia.it/wp-content/uploads/2020/01/IL_PONTE_CV_CARTA_SERVIZI.pdf",
+      "file": "d1254f556c84dfcb.pdf",
+      "final_url": "https://www.ilpontecivitavecchia.it/wp-content/uploads/2020/01/IL_PONTE_CV_CARTA_SERVIZI.pdf",
+      "sha256": "c8165222119fe5394a09b3b81e33600b47e47bec1a4df89596fea8f47de9883f",
+      "checked_at": "2026-09-21T23:07:09.112073+00:00"
+    },
+    {
+      "url": "https://www.ilpontecivitavecchia.it/",
+      "file": "cf48d3d367eb2180.html",
+      "final_url": "https://www.ilpontecivitavecchia.it/",
+      "sha256": "be0c47ae149be99429f673236c82f6f744c7ba5f3bc0edbcd2d3947b9ee7ae01",
+      "checked_at": "2026-09-21T23:07:13.063897+00:00"
+    },
+    {
+      "url": "https://www.cooperate.it/home.html",
+      "file": "6d8fc70c45f0b121.html",
+      "final_url": "https://www.cooperate.it/home.html",
+      "sha256": "7ed76ec398fafde7c2434f190098be9422cb4f66a9fab78bf301fa97786358fa",
+      "checked_at": "2026-09-21T23:07:15.114635+00:00"
+    },
+    {
+      "url": "https://www.cooperate.it/servizi/bracciano.html",
+      "file": "28997b5fa9c86bf5.html",
+      "final_url": "https://www.cooperate.it/servizi/bracciano.html",
+      "sha256": "bc2584a00dd000cb4eed4e4fe0efd7b2a50322bef5ae90736990e11642763451",
+      "checked_at": "2026-09-21T23:07:17.044181+00:00"
+    },
+    {
+      "url": "https://reverie.it/strutture/",
+      "file": "9646ecbb716f9a13.html",
+      "final_url": "https://reverie.it/strutture/",
+      "sha256": "de49497acf180f6776f85748c79dd4429acc6ee3a6e62f63594abcb6be9fcc96",
+      "checked_at": "2026-09-21T23:07:21.078753+00:00"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-di-salute-mentale-plinio",
+      "file": "a75dfe572535a1e0.html",
+      "final_url": "https://www.aslroma1.it/presidi-territoriali/centro-di-salute-mentale-plinio",
+      "sha256": "50c3897e553bb05f978815000b5a81c4c2cf98f587cf7066d0223acfe59052ff",
+      "checked_at": "2026-09-21T23:07:24.489989+00:00"
+    },
+    {
+      "url": "https://www.villaletizia.org/uploads/csvm25.pdf",
+      "file": "378f18275e9ed0f5.pdf",
+      "sha256": "676f083feac6839ade10e64b5163c82d99394f46c2d63ff96f3f4f9db6520447",
+      "checked_at": "2026-09-21T23:07:27.558254+00:00"
+    },
+    {
+      "url": "https://reverie.it/wp-content/uploads/2023/04/Manuale-completo.pdf",
+      "file": "b65f06a3a72c4aa3.pdf",
+      "sha256": "ee41b246900ab5bcfddb24b7fe113da226290376f00fe234bde944f9827dde5b",
+      "checked_at": "2026-09-21T23:07:30.864304+00:00"
+    },
+    {
+      "url": "https://gestivar.it/le-strutture/",
+      "file": "2bcd542532bc72b0.html",
+      "sha256": "bdd967b3a589c8233d9e53069409cc6af0f871b0147b78add0f19d35e299661f",
+      "checked_at": "2026-09-21T23:07:34.665774+00:00"
+    },
+    {
+      "url": "https://www.comunitainsieme.com/strutture/",
+      "file": "58c80170e256eb44.html",
+      "sha256": "fc245d854a98c0fa33552cb8583ee2ee10564f9f214d47c202a778044ec12c96",
+      "checked_at": "2026-09-21T23:07:37.325938+00:00"
+    },
+    {
+      "url": "https://www.alidelponte.com/servizi",
+      "file": "ca215fa9bce84376.html",
+      "sha256": "31a2fd3ace64cac8cf17136842474a3eb5c88dabc509b167b4baabf74a2fcf15",
+      "checked_at": "2026-09-21T23:07:40.152975+00:00"
+    }
+  ],
+  "anncsu_attempt": {
+    "url": "https://anncsu.open.agenziaentrate.gov.it/age-inspire/opendata/anncsu/getds.php?INDIR_LAZI=",
+    "outcome": "HTTP 406 nel tentativo documentato; dati non acquisiti e nessun pin creato da questa fonte"
+  },
+  "pdf_dates": "Nuovi Orizzonti: carta giugno 2021 anche se URL /2025/01/. Il Ponte: carta gennaio 2020; non usata per affermare contatti o disponibilità correnti."
+}
