@@ -21,11 +21,11 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.7 — Menta
+## Versione corrente V7.7.1 — Menta
 
-La produzione usa **V7.7** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Base di questo intervento: `b52e4eb`.
+La produzione usa **V7.7.1** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 
-Menta è una guida locale, non un chatbot: **29 intenti**, **246 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
+Menta è una guida locale, non un chatbot: **29 intenti**, **246 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
 
 - `assets/menta-config-v7-7.js`: vocabolario, priorità, percorsi, combinazioni e luoghi del database.
 - `assets/menta-core-v7-7.js`: funzioni pure di riconoscimento e composizione dei link, senza rete o storage.

@@ -1,5 +1,13 @@
 # Changelog
 
+## 7.7.1 — 21 settembre 2026
+
+- Menta passa da presenza statica a guida visiva con micro-animazioni contestuali: attesa, ascolto, ricerca, scelta, risultato, nessun risultato ed errore.
+- Le animazioni restano leggere, senza librerie esterne, e sono disattivate con `prefers-reduced-motion`.
+- Menta è integrata nella pagina 404 e negli errori di caricamento del database; gli stati senza risultati usano una posa dedicata.
+- Rimossi dalla UI pubblica i riferimenti tecnici V7.x non utili all’orientamento; versionamento e tracciabilità restano in repository, changelog e file tecnici.
+- Nessuna modifica a dataset, fonti, date di verifica, logica clinica o percorsi sanitari.
+
 ## 7.7 — 21 settembre 2026
 
 - Home con Menta, testo libero elaborato localmente e alternativa “Esplora in autonomia”.

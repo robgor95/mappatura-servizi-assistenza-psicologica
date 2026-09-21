@@ -1,5 +1,5 @@
 {
-  "web_version": "7.7",
+  "web_version": "7.7.1",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -31,7 +31,7 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo",
-  "deployment_checked_by_preparer": true,
+  "deployment_checked_by_preparer": false,
   "counts_current": {
     "rete": 296,
     "moduli": 115,
@@ -42,7 +42,7 @@
     "helpline": 20,
     "search": 428
   },
-  "menta_version": "7.7",
+  "menta_version": "7.7.1",
   "menta": {
     "intents": 29,
     "keyword_assignments": 250,
@@ -53,5 +53,5 @@
     "routes": 37,
     "towns": 93
   },
-  "release_note": "Menta: evoluzione UI e orientamento locale. Nessun riesame sanitario aggiuntivo."
+  "release_note": "Menta dinamica con micro-animazioni accessibili, stati di errore/assenza risultati e testi pubblici semplificati. Nessuna modifica ai dati sanitari."
 }
