@@ -1,0 +1,2411 @@
+{
+  "version": "7.7.3",
+  "scope": "static and Chromium navigation QA",
+  "baseline": "1979f0d51ed6d2203be6c02605bee313ac5cd91e",
+  "axe_used": true,
+  "tests": [
+    {
+      "name": "Original bytes preserved: data/centri_ascolto_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/contenuti_v7_4.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/fonti_guide_v7_4.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/helpline_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/integrazioni_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/portal_data_v7_3.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/privati_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/revisioni_v7_6.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/sportelli_scolastici_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/strutture_approfondite_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: data/universita_v7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Accesso_Extraregionale_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Audit_Menta_V7_7.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Audit_Qualita_Dati_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Audit_Rete_Moduli_V7_6.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Centri_Privati_V7_5.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Centri_Sportelli_Ascolto_V7_5.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Convenzionate_Dipendenze_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Convenzionate_Doppia_Diagnosi_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Convenzionate_Psichiatriche_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Da_Verificare_2026_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Dataset_Integrazioni_V7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Dataset_Lazio_V7_3.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Fonti_Master_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Fonti_V7_6.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Guide_Percorsi_Cura_Lazio_V7_4.pdf",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Helpline_V7_5.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/LEGGIMI_V7_3.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Manifest_Originale_V7_3.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Mappatura_Lazio_V7_3.xlsx",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Matrice_Copertura_Pubblica_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Matrice_Copertura_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_4.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_5.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_5_1.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_6.md",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_7.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_7_1.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Note_Rilascio_V7_7_2.txt",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Nuove_Schede_V7_6.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Rete_ASL_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Rubrica_Ascolto_V7_4.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/STPIT_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Sportelli_Scolastici_V7_5.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Stato_Amministrativo_Moduli_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Storico_Completo_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Strutture_Pubbliche_Ricontrollate_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Tutti_Moduli_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Universita_Ascolto_V7_4.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Universita_Servizi_Psicologici_V7_5.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Variazioni_Per_Campo_V7_6.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_Menta_V7_7.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_Preparazione_V7_6.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_Rete_Pubblica_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_UI_V7_5_1.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_V7_4.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_V7_5.json",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/Verifiche_Web_2026_V7_3.csv",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/guide/Guida_01_primo-percorso.pdf",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/guide/Guida_02_pubblico.pdf",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/guide/Guida_03_privato.pdf",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/guide/Guida_04_ricovero.pdf",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: downloads/guide/Guida_05_riabilitazione.pdf",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: offline/Portale_Lazio_V7_3_Offline.html",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: assets/servizi-data-v7-5-1.js",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: assets/menta-config-v7-7.js",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: assets/menta-core-v7-7.js",
+      "passed": true
+    },
+    {
+      "name": "Original bytes preserved: assets/menta-ui-v7-7.js",
+      "passed": true
+    },
+    {
+      "name": "Correct passage found in first guide",
+      "passed": true
+    },
+    {
+      "name": "Removed only meta passage",
+      "passed": true
+    },
+    {
+      "name": "Four primary routes on every page",
+      "passed": true
+    },
+    {
+      "name": "Legacy service entrypoint identical",
+      "passed": true
+    },
+    {
+      "name": "No clinical/router data changed",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: 404.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: index.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: index.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: index.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: privati.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs: universita.html",
+      "passed": true
+    },
+    {
+      "name": "One page heading: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Local destinations and assets: universita.html",
+      "passed": true
+    },
+    {
+      "name": "All current content reachable within 3 links",
+      "passed": true,
+      "detail": {
+        "index.html": 0,
+        "universita.html": 1,
+        "strutture-approfondite.html": 1,
+        "metodo.html": 1,
+        "privati.html": 1,
+        "scuole.html": 1,
+        "helpline.html": 1,
+        "guide/primo-percorso.html": 1,
+        "centri-ascolto.html": 1,
+        "documenti.html": 1,
+        "guide/privato.html": 1,
+        "guide/riabilitazione.html": 1,
+        "servizi.html": 1,
+        "orientamento-servizi.html": 1,
+        "guide/ricovero.html": 1,
+        "studenti.html": 1,
+        "glossario.html": 1,
+        "ascolto.html": 1,
+        "guide/pubblico.html": 1,
+        "guide/index.html": 1,
+        "privacy.html": 1,
+        "archivio.html": 2,
+        "qualita-dati.html": 2
+      }
+    },
+    {
+      "name": "Downloads secondary on home",
+      "passed": true
+    },
+    {
+      "name": "No counter wall on home",
+      "passed": true
+    },
+    {
+      "name": "No automatic duplicate links on new layout",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: 404.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: privati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 360: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 360: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 360: universita.html",
+      "passed": true
+    },
+    {
+      "name": "JavaScript errors 360",
+      "passed": true
+    },
+    {
+      "name": "Correct mobile button 360",
+      "passed": true
+    },
+    {
+      "name": "Closed mobile menu 360",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu 360",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches first main link 360",
+      "passed": true
+    },
+    {
+      "name": "Altro keyboard open 360",
+      "passed": true
+    },
+    {
+      "name": "Altro no overflow 360",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches dedicated pages 360",
+      "passed": true
+    },
+    {
+      "name": "Visible focus 360",
+      "passed": true
+    },
+    {
+      "name": "Escape closes Altro 360",
+      "passed": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 360",
+      "passed": true
+    },
+    {
+      "name": "Menta input above fold 360",
+      "passed": true
+    },
+    {
+      "name": "Primary controls usable 360",
+      "passed": true
+    },
+    {
+      "name": "Ambiguous choices 360",
+      "passed": true
+    },
+    {
+      "name": "Focus on result heading 360",
+      "passed": true
+    },
+    {
+      "name": "Unknown request help 360",
+      "passed": true
+    },
+    {
+      "name": "Immediate safety panel 360",
+      "passed": true
+    },
+    {
+      "name": "Safety numbers retained 360",
+      "passed": true
+    },
+    {
+      "name": "Filters applied 360",
+      "passed": true
+    },
+    {
+      "name": "Service detail opens 360",
+      "passed": true
+    },
+    {
+      "name": "Service closes 360",
+      "passed": true
+    },
+    {
+      "name": "Empty-result state 360",
+      "passed": true
+    },
+    {
+      "name": "Reset service filters 360",
+      "passed": true
+    },
+    {
+      "name": "Optional shortcuts still work 360",
+      "passed": true
+    },
+    {
+      "name": "Old URL works 360",
+      "passed": true
+    },
+    {
+      "name": "Original quick search preserved 360",
+      "passed": true
+    },
+    {
+      "name": "Historical download fragment opens group 360",
+      "passed": true
+    },
+    {
+      "name": "Historical student fragment works 360",
+      "passed": true
+    },
+    {
+      "name": "Natural approach guidance 360",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion respected 360",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: 404.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: index.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: privati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 390: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 390: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 390: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Axe: universita.html",
+      "passed": true
+    },
+    {
+      "name": "JavaScript errors 390",
+      "passed": true
+    },
+    {
+      "name": "Correct mobile button 390",
+      "passed": true
+    },
+    {
+      "name": "Closed mobile menu 390",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu 390",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches first main link 390",
+      "passed": true
+    },
+    {
+      "name": "Altro keyboard open 390",
+      "passed": true
+    },
+    {
+      "name": "Altro no overflow 390",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches dedicated pages 390",
+      "passed": true
+    },
+    {
+      "name": "Visible focus 390",
+      "passed": true
+    },
+    {
+      "name": "Axe: menu-390",
+      "passed": true
+    },
+    {
+      "name": "Escape closes Altro 390",
+      "passed": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 390",
+      "passed": true
+    },
+    {
+      "name": "Menta input above fold 390",
+      "passed": true
+    },
+    {
+      "name": "Primary controls usable 390",
+      "passed": true
+    },
+    {
+      "name": "Ambiguous choices 390",
+      "passed": true
+    },
+    {
+      "name": "Focus on result heading 390",
+      "passed": true
+    },
+    {
+      "name": "Unknown request help 390",
+      "passed": true
+    },
+    {
+      "name": "Immediate safety panel 390",
+      "passed": true
+    },
+    {
+      "name": "Safety numbers retained 390",
+      "passed": true
+    },
+    {
+      "name": "Filters applied 390",
+      "passed": true
+    },
+    {
+      "name": "Service detail opens 390",
+      "passed": true
+    },
+    {
+      "name": "Service closes 390",
+      "passed": true
+    },
+    {
+      "name": "Empty-result state 390",
+      "passed": true
+    },
+    {
+      "name": "Reset service filters 390",
+      "passed": true
+    },
+    {
+      "name": "Optional shortcuts still work 390",
+      "passed": true
+    },
+    {
+      "name": "Old URL works 390",
+      "passed": true
+    },
+    {
+      "name": "Original quick search preserved 390",
+      "passed": true
+    },
+    {
+      "name": "Historical download fragment opens group 390",
+      "passed": true
+    },
+    {
+      "name": "Historical student fragment works 390",
+      "passed": true
+    },
+    {
+      "name": "Natural approach guidance 390",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion respected 390",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: 404.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: privati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 768: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 768: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 768: universita.html",
+      "passed": true
+    },
+    {
+      "name": "JavaScript errors 768",
+      "passed": true
+    },
+    {
+      "name": "Correct mobile button 768",
+      "passed": true
+    },
+    {
+      "name": "Closed mobile menu 768",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu 768",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches first main link 768",
+      "passed": true
+    },
+    {
+      "name": "Altro keyboard open 768",
+      "passed": true
+    },
+    {
+      "name": "Altro no overflow 768",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches dedicated pages 768",
+      "passed": true
+    },
+    {
+      "name": "Visible focus 768",
+      "passed": true
+    },
+    {
+      "name": "Escape closes Altro 768",
+      "passed": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 768",
+      "passed": true
+    },
+    {
+      "name": "Menta input above fold 768",
+      "passed": true
+    },
+    {
+      "name": "Primary controls usable 768",
+      "passed": true
+    },
+    {
+      "name": "Ambiguous choices 768",
+      "passed": true
+    },
+    {
+      "name": "Focus on result heading 768",
+      "passed": true
+    },
+    {
+      "name": "Unknown request help 768",
+      "passed": true
+    },
+    {
+      "name": "Immediate safety panel 768",
+      "passed": true
+    },
+    {
+      "name": "Safety numbers retained 768",
+      "passed": true
+    },
+    {
+      "name": "Filters applied 768",
+      "passed": true
+    },
+    {
+      "name": "Service detail opens 768",
+      "passed": true
+    },
+    {
+      "name": "Service closes 768",
+      "passed": true
+    },
+    {
+      "name": "Empty-result state 768",
+      "passed": true
+    },
+    {
+      "name": "Reset service filters 768",
+      "passed": true
+    },
+    {
+      "name": "Optional shortcuts still work 768",
+      "passed": true
+    },
+    {
+      "name": "Old URL works 768",
+      "passed": true
+    },
+    {
+      "name": "Original quick search preserved 768",
+      "passed": true
+    },
+    {
+      "name": "Historical download fragment opens group 768",
+      "passed": true
+    },
+    {
+      "name": "Historical student fragment works 768",
+      "passed": true
+    },
+    {
+      "name": "Natural approach guidance 768",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion respected 768",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: 404.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: 404.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: archivio.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: glossario.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: helpline.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: index.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: index.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: index.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: metodo.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: privacy.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: privati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: privati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: scuole.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: servizi.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: studenti.html",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow 1440: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Navigation loaded 1440: universita.html",
+      "passed": true
+    },
+    {
+      "name": "Images and alt 1440: universita.html",
+      "passed": true
+    },
+    {
+      "name": "JavaScript errors 1440",
+      "passed": true
+    },
+    {
+      "name": "Correct mobile button 1440",
+      "passed": true
+    },
+    {
+      "name": "Altro keyboard open 1440",
+      "passed": true
+    },
+    {
+      "name": "Altro no overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches dedicated pages 1440",
+      "passed": true
+    },
+    {
+      "name": "Visible focus 1440",
+      "passed": true
+    },
+    {
+      "name": "Axe: menu-1440",
+      "passed": true
+    },
+    {
+      "name": "Escape closes Altro 1440",
+      "passed": true
+    },
+    {
+      "name": "Menta input above fold 1440",
+      "passed": true
+    },
+    {
+      "name": "Primary controls usable 1440",
+      "passed": true
+    },
+    {
+      "name": "Ambiguous choices 1440",
+      "passed": true
+    },
+    {
+      "name": "Focus on result heading 1440",
+      "passed": true
+    },
+    {
+      "name": "Unknown request help 1440",
+      "passed": true
+    },
+    {
+      "name": "Immediate safety panel 1440",
+      "passed": true
+    },
+    {
+      "name": "Safety numbers retained 1440",
+      "passed": true
+    },
+    {
+      "name": "Filters applied 1440",
+      "passed": true
+    },
+    {
+      "name": "Service detail opens 1440",
+      "passed": true
+    },
+    {
+      "name": "Service closes 1440",
+      "passed": true
+    },
+    {
+      "name": "Empty-result state 1440",
+      "passed": true
+    },
+    {
+      "name": "Reset service filters 1440",
+      "passed": true
+    },
+    {
+      "name": "Optional shortcuts still work 1440",
+      "passed": true
+    },
+    {
+      "name": "Old URL works 1440",
+      "passed": true
+    },
+    {
+      "name": "Original quick search preserved 1440",
+      "passed": true
+    },
+    {
+      "name": "Historical download fragment opens group 1440",
+      "passed": true
+    },
+    {
+      "name": "Historical student fragment works 1440",
+      "passed": true
+    },
+    {
+      "name": "Natural approach guidance 1440",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion respected 1440",
+      "passed": true
+    },
+    {
+      "name": "No-JS navigation available",
+      "passed": true
+    },
+    {
+      "name": "No-JS Altro works",
+      "passed": true
+    },
+    {
+      "name": "No-JS independent search",
+      "passed": true
+    },
+    {
+      "name": "Missing navigation script has static fallback",
+      "passed": true
+    },
+    {
+      "name": "Typing/submitting Menta causes no network requests",
+      "passed": true
+    },
+    {
+      "name": "No free text in URLs, bodies or link hrefs",
+      "passed": true
+    },
+    {
+      "name": "No persistence of needs",
+      "passed": true
+    },
+    {
+      "name": "Click outside closes Altro",
+      "passed": true
+    },
+    {
+      "name": "Real missing path serves custom 404",
+      "passed": true
+    },
+    {
+      "name": "Download/content response: documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Download/content response: downloads/guide/Guida_01_primo-percorso.pdf",
+      "passed": true
+    },
+    {
+      "name": "Download/content response: downloads/guide/Guida_03_privato.pdf",
+      "passed": true
+    },
+    {
+      "name": "Download/content response: downloads/Guide_Percorsi_Cura_Lazio_V7_4.pdf",
+      "passed": true
+    },
+    {
+      "name": "Download/content response: data/portal_data_v7_3.json",
+      "passed": true
+    }
+  ],
+  "passed": 593,
+  "total": 593,
+  "limits": [
+    "Automated checks are not a complete screen-reader audit.",
+    "No clinical data verification was performed."
+  ]
+}

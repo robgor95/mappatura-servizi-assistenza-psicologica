@@ -42,7 +42,7 @@
         var show = (!query || normalize(card.dataset.search).includes(query)) && (!category.value || card.dataset.category === category.value);
         card.hidden = !show; if (show) count++;
       });
-      document.getElementById('result-count').textContent = count + ' di ' + cards.length + ' schede mostrate.';
+      document.getElementById('result-count').textContent = count + ' di ' + cards.length + ' risultati.';
       var empty = document.querySelector('.empty-result'); if (empty) empty.hidden = count !== 0;
     }
     tools.hidden = false; search.addEventListener('input', update); category.addEventListener('change', update);
@@ -76,7 +76,7 @@
     '/documenti': [['/downloads/Note_Rilascio_V7_5_1.txt', 'Novità di Trova un servizio'], ['/downloads/Verifiche_UI_V7_5_1.json', 'Verifiche interfaccia V7.5.1']],
     '/metodo': [['/servizi.html', 'Database dei servizi'], ['/downloads/Note_Rilascio_V7_5_1.txt', 'Metodo del restyling V7.5.1']]
   };
-  if (maps[path] && !document.getElementById('service-links')) {
+  if (!document.body.hasAttribute('data-navigation-version') && maps[path] && !document.getElementById('service-links')) {
     var nav = document.createElement('nav'); nav.id = 'service-links'; nav.className = 'actions'; nav.setAttribute('aria-label','Sezioni collegate');
     maps[path].forEach(function(item){var a=document.createElement('a');a.className='button secondary';a.href=item[0];a.textContent=item[1]+' →';nav.appendChild(a);});
     var lead=document.querySelector('.page-lead'),main=document.querySelector('main');

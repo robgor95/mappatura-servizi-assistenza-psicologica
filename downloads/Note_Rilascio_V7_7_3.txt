@@ -1,0 +1,12 @@
+Navigazione 7.7.3 — 21 settembre 2026
+
+Quattro percorsi principali: Inizia qui, Trova un servizio, Guide, Numeri utili.
+Menu Altro per servizi dedicati e risorse. Menu mobile con pulsante, tastiera, Escape e fallback senza JavaScript.
+Home: Menta, tre punti di partenza, sei situazioni, guide online e download facoltativi in un riquadro chiuso.
+Documenti e download raggruppati, con tutti i file precedenti conservati.
+Studenti: accesso diretto a Università e Scuole; esempi precedenti consultabili a parte.
+Frase cognitivo-interpersonale/IPT sostituita nella guida Da dove iniziare con domande pratiche sul metodo.
+Guida al privato coerente; PDF indicati come copie precedenti, senza sovrascriverli.
+Ricerche rapide dei servizi raccolte in un riquadro facoltativo; filtri e URL restano invariati.
+Nessun nuovo contenuto clinico, dataset, contatto o data di verifica dei servizi.
+Nessuna API, tracking, cookie o dipendenza aggiunta al sito.

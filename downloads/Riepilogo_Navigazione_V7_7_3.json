@@ -1,0 +1,27 @@
+{
+  "version": "7.7.3",
+  "baseline_commit": "1979f0d51ed6d2203be6c02605bee313ac5cd91e",
+  "content_commit": "90d5a82058e778dbaa10507c9ea218cc4f921311",
+  "pages_updated": 24,
+  "primary_navigation": ["Inizia qui", "Trova un servizio", "Guide", "Numeri utili"],
+  "secondary_navigation": "Altro: servizi dedicati e risorse",
+  "home": "Menta, tre punti di partenza, sei situazioni, guide online, download facoltativi",
+  "documents": "Tutti i file conservati; copie scaricabili e documentazione tecnica raggruppate in riquadri espandibili",
+  "students": "Università e Scuole in primo piano; prima raccolta conservata separatamente",
+  "wording": "Precisazione cognitivo-interpersonale/IPT sostituita in guide/primo-percorso.html; introduzione al metodo uniforme nella guida privata",
+  "data_or_router_changed": false,
+  "preserved_file_hashes": 68,
+  "tests": {
+    "node_regressions": {"passed": 588, "total": 588},
+    "navigation_and_browser": {"passed": 593, "total": 593},
+    "axe_scans": 26,
+    "viewports": [360, 390, 768, 1440],
+    "preview_pages_checked": 12,
+    "candidate_workflow_run": 35635952983,
+    "preview_workflow_run": 35636436058,
+    "privacy": "Testo sintetico non trovato in richieste, URL o storage; nessuna richiesta avviata dalla digitazione o invio del campo Menta"
+  },
+  "visual_review": "Home, menu, studenti e documenti controllati nelle schermate della preview Cloudflare; nessun overflow nei test",
+  "limits": ["I PDF precedenti non sono stati riscritti e sono etichettati come copie precedenti", "Controlli automatici e tastiera non equivalgono a una verifica completa con tutti gli screen reader", "Nessuna nuova verifica sanitaria dei servizi"],
+  "temporary_workflows_removed": true
+}
