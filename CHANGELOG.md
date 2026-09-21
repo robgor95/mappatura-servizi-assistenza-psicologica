@@ -1,5 +1,15 @@
 # Changelog
 
+## 7.7.2 — 21 settembre 2026
+
+- Semplificata la ricerca dei servizi con terminologia orientata all’utente: servizi pubblici / SSN, strutture non ASL o convenzionate e strutture private.
+- Rimossi dalla vista principale filtri, pannelli e metadati di audit non necessari all’orientamento; fonti e metodo restano accessibili nelle pagine dedicate.
+- Le schede dei risultati mostrano soprattutto accesso, destinatari, attività, contatti, orari, rapporto con il SSN e ultimo controllo.
+- Directory Università e Privato rese più generiche e leggibili; rimossi riferimenti tecnici di versione dalla UI pubblica.
+- Guida al privato ampliata con differenze tra psicologo, psicoterapeuta e psichiatra, domande per il primo colloquio e spiegazione neutrale dei principali approcci psicoterapeutici.
+- Menta riconosce ora richieste sulla scelta del professionista e sugli approcci terapeutici.
+- Dataset, fonti, date di verifica e URL storici non sono stati modificati.
+
 ## 7.7.1 — 21 settembre 2026
 
 - Menta passa da presenza statica a guida visiva con micro-animazioni contestuali: attesa, ascolto, ricerca, scelta, risultato, nessun risultato ed errore.

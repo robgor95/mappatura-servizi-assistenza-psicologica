@@ -1,0 +1,17 @@
+Menta / frontend 7.7.2 — interfaccia user-friendly
+
+- Ricerca principale semplificata per l’utente finale.
+- “Rete ASL / nodi” viene presentata come “Servizi pubblici / SSN”.
+- Le strutture non ASL sono presentate con etichette leggibili; “Struttura convenzionata” compare solo quando il rapporto SSN è documentato, altrimenti resta “Struttura non ASL” o “Convenzione dichiarata”.
+- Le attività private sono presentate come “Strutture private”.
+- Rimossi dalla vista principale pannelli di audit, campi grezzi, identificativi interni e filtri amministrativi avanzati non necessari.
+- Fonti, metodo, download e tracciabilità tecnica restano disponibili nelle pagine dedicate e nel repository.
+- Università: ricerca e linguaggio resi più generici e orientati allo studente.
+- Guida privata ampliata con scelta di psicologo/psicoterapeuta, differenze professionali, primo colloquio, setting e principali orientamenti psicoterapeutici.
+- Menta aggiunge intenti per “come scegliere psicologo/psicoterapeuta” e per approcci come CBT, psicodinamico, sistemico-relazionale, umanistico/Gestalt, integrato ed EMDR.
+- Nessuna modifica ai dataset sanitari, alle fonti, alle date di verifica o alla logica di emergenza.
+
+Fonti aggiuntive della guida:
+- Ordine degli Psicologi del Lazio — elenco online.
+- Ministero dell’Università e della Ricerca — fonti normative e istituti abilitati alla specializzazione in psicoterapia.
+- FNOMCeO — Albo unico nazionale.
