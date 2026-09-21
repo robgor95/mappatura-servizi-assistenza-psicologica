@@ -1,0 +1,3115 @@
+{
+  "version": "7.8",
+  "baseline": "bcda3c90cc241a848f67cb825bc8a10a742d6a65",
+  "provider": "OpenStreetMap / Nominatim",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "source": "https://www.openstreetmap.org/copyright",
+  "records": {
+    "rete:R1-02": {
+      "lat": 41.9070769,
+      "lng": 12.4644242,
+      "precision": "address",
+      "source_address": "Via Plinio, 31",
+      "source_town": "Roma",
+      "matched_address": "Centro vaccinazioni Plinio, 31, Via Plinio, Prati, Municipio Roma I, Roma, Lazio, 00192, Italia",
+      "source_url": "https://www.openstreetmap.org/node/13507398148",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-03": {
+      "lat": 41.9055958,
+      "lng": 12.5033258,
+      "precision": "address",
+      "source_address": "Via Palestro, 39",
+      "source_town": "Roma",
+      "matched_address": "39, Via Palestro, Castro Pretorio, Municipio Roma I, Roma, Lazio, 00185, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9908094347",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-04": {
+      "lat": 41.9248469,
+      "lng": 12.5175108,
+      "precision": "street",
+      "source_address": "Via Sabrata, 12",
+      "source_town": "Roma",
+      "matched_address": "Via Sabrata, Trieste, Municipio Roma II, Roma, Lazio, 00199, Italia",
+      "source_url": "https://www.openstreetmap.org/way/23899217",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-05": {
+      "lat": 41.9105267,
+      "lng": 12.5259107,
+      "precision": "address",
+      "source_address": "Via Boemondo, 21",
+      "source_town": "Roma",
+      "matched_address": "Centro vaccinale, 21, Via Boemondo, Nomentano, Municipio Roma II, Roma, Lazio, 00162, Italia",
+      "source_url": "https://www.openstreetmap.org/node/12581796620",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-06": {
+      "lat": 41.9313901,
+      "lng": 12.538742,
+      "precision": "street",
+      "source_address": "Via Monte Tomatico, 9",
+      "source_town": "Roma",
+      "matched_address": "Via Monte Tomatico, Monte Sacro, Municipio Roma III, Roma, Lazio, 00141, Italia",
+      "source_url": "https://www.openstreetmap.org/way/190502825",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-07": {
+      "lat": 41.9635354,
+      "lng": 12.5159117,
+      "precision": "street",
+      "source_address": "Via Ugo Farulli, 6",
+      "source_town": "Roma",
+      "matched_address": "Via Ugo Farulli, Serpentara, Castel Giubileo, Municipio Roma III, Saxa Rubra, Roma, Lazio, 00139, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1544781505",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-11": {
+      "lat": 41.9138465,
+      "lng": 12.4251507,
+      "precision": "street",
+      "source_address": "Via Ventura, 60",
+      "source_town": "Roma",
+      "matched_address": "Via Gioacchino Ventura, Municipio Roma XIV, Roma, Lazio, 00167, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27620679",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-12": {
+      "lat": 41.9398857,
+      "lng": 12.4649811,
+      "precision": "address",
+      "source_address": "Via Antonino Di Giorgio, 19",
+      "source_town": "Roma",
+      "matched_address": "Centro di salute mentale Antonino Di Giorgio, 19, Via Antonino di Giorgio, Ponte Milvio, Municipio Roma XV, Roma, Lazio, 00194, Italia",
+      "source_url": "https://www.openstreetmap.org/way/383444113",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-13": {
+      "lat": 41.8932153,
+      "lng": 12.4642345,
+      "precision": "street",
+      "source_address": "Via dei Riari, 48",
+      "source_town": "Roma",
+      "matched_address": "Via dei Riari, Trastevere, Municipio Roma I, Roma, Lazio, 00120, Italia",
+      "source_url": "https://www.openstreetmap.org/way/190850030",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-14": {
+      "lat": 41.9055958,
+      "lng": 12.5033258,
+      "precision": "address",
+      "source_address": "Via Palestro, 39",
+      "source_town": "Roma",
+      "matched_address": "39, Via Palestro, Castro Pretorio, Municipio Roma I, Roma, Lazio, 00185, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9908094347",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-17": {
+      "lat": 42.0119585,
+      "lng": 12.522009,
+      "precision": "street",
+      "source_address": "Salita della Marcigliana, 27",
+      "source_town": "Roma",
+      "matched_address": "Salita della Marcigliana, Marcigliana, Municipio Roma III, Settebagni, Roma, Lazio, 00138, Italia",
+      "source_url": "https://www.openstreetmap.org/way/683538472",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-18": {
+      "lat": 41.9408977,
+      "lng": 12.4196005,
+      "precision": "street",
+      "source_address": "Piazza Santa Maria della Pietà, 5",
+      "source_town": "Roma",
+      "matched_address": "Piazza Santa Maria della Pietà, Municipio Roma XIV, Roma, Lazio, 00168, Italia",
+      "source_url": "https://www.openstreetmap.org/way/55973903",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-20": {
+      "lat": 41.9070769,
+      "lng": 12.4644242,
+      "precision": "address",
+      "source_address": "Via Plinio, 31",
+      "source_town": "Roma",
+      "matched_address": "Centro vaccinazioni Plinio, 31, Via Plinio, Prati, Municipio Roma I, Roma, Lazio, 00192, Italia",
+      "source_url": "https://www.openstreetmap.org/node/13507398148",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-21": {
+      "lat": 41.9248469,
+      "lng": 12.5175108,
+      "precision": "street",
+      "source_address": "Via Sabrata, 12",
+      "source_town": "Roma",
+      "matched_address": "Via Sabrata, Trieste, Municipio Roma II, Roma, Lazio, 00199, Italia",
+      "source_url": "https://www.openstreetmap.org/way/23899217",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R1-22": {
+      "lat": 41.9070769,
+      "lng": 12.4644242,
+      "precision": "address",
+      "source_address": "Via Plinio, 31",
+      "source_town": "Roma",
+      "matched_address": "Centro vaccinazioni Plinio, 31, Via Plinio, Prati, Municipio Roma I, Roma, Lazio, 00192, Italia",
+      "source_url": "https://www.openstreetmap.org/node/13507398148",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-01": {
+      "lat": 41.885699,
+      "lng": 12.5151361,
+      "precision": "address",
+      "source_address": "Via Monza 2, terzo piano, Roma",
+      "source_town": "Roma",
+      "matched_address": "2, Via Monza, Municipio Roma VII, Roma, Lazio, 00182, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9100449056",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-02": {
+      "lat": 41.9141398,
+      "lng": 12.5710371,
+      "precision": "address",
+      "source_address": "Viale Battista Bardanzellu 8, Roma",
+      "source_town": "Roma",
+      "matched_address": "8, Viale Battista Bardanzellu, Colli Aniene, Municipio Roma IV, Roma, Lazio, 00155, Italia",
+      "source_url": "https://www.openstreetmap.org/node/2925244483",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-03": {
+      "lat": 41.8816933,
+      "lng": 12.5393881,
+      "precision": "address",
+      "source_address": "Via Casilina 395, Roma",
+      "source_town": "Roma",
+      "matched_address": "395, Via Casilina, Marranella, Pigneto, Municipio Roma V, Roma, Lazio, 00176, Italia",
+      "source_url": "https://www.openstreetmap.org/way/532544008",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-04": {
+      "lat": 41.8764568,
+      "lng": 12.5674461,
+      "precision": "street",
+      "source_address": "Via degli Eucalipti 20, Roma",
+      "source_town": "Roma",
+      "matched_address": "Via degli Eucalipti, Prenestino-Centocelle, Municipio Roma V, Roma, Lazio, 00172, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27421963",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-05": {
+      "lat": 41.8635371,
+      "lng": 12.5859495,
+      "precision": "address",
+      "source_address": "Via di Torre Spaccata 157, Roma",
+      "source_town": "Roma",
+      "matched_address": "157, Via di Torre Spaccata, Cinecittà Est, Don Bosco, Romanina, Roma, Lazio, 00169, Italia",
+      "source_url": "https://www.openstreetmap.org/node/5922649667",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-06": {
+      "lat": 41.885699,
+      "lng": 12.5151361,
+      "precision": "address",
+      "source_address": "Via Monza 2, Roma",
+      "source_town": "Roma",
+      "matched_address": "2, Via Monza, Municipio Roma VII, Roma, Lazio, 00182, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9100449056",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-07": {
+      "lat": 41.8536819,
+      "lng": 12.5692721,
+      "precision": "address",
+      "source_address": "Piazza di Cinecittà 11, terzo piano, Roma",
+      "source_town": "Roma",
+      "matched_address": "VII Gruppo Tuscolano Polizia Locale di Roma Capitale, 11, Piazza di Cinecittà, Cinecittà, Municipio Roma VII, Osteria del Curato, Roma, Lazio, 00174, Italia",
+      "source_url": "https://www.openstreetmap.org/node/5444697132",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-08": {
+      "lat": 41.8570279,
+      "lng": 12.5014526,
+      "precision": "address",
+      "source_address": "Piazzale Antonio Tosti 4, Roma",
+      "source_town": "Roma",
+      "matched_address": "4, Piazzale Antonio Tosti, Tor Marancia, Municipio Roma VIII, Roma, Lazio, 00147, Italia",
+      "source_url": "https://www.openstreetmap.org/node/12155709624",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-09": {
+      "lat": 41.8138718,
+      "lng": 12.4740125,
+      "precision": "street",
+      "source_address": "Via Orio Vergani 1, Roma",
+      "source_town": "Roma",
+      "matched_address": "Via Orio Vergani, Fonte Ostiense, Municipio Roma IX, Roma, Lazio, 00144, Italia",
+      "source_url": "https://www.openstreetmap.org/way/172283663",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-11": {
+      "lat": 41.8814036,
+      "lng": 12.539749,
+      "precision": "address",
+      "source_address": "Via Casilina, 397",
+      "source_town": "Roma",
+      "matched_address": "SERT Servizio Tossicodipendenze, 397, Via Casilina, Marranella, Pigneto, Municipio Roma V, Roma, Lazio, 00176, Italia",
+      "source_url": "https://www.openstreetmap.org/way/984819141",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-12": {
+      "lat": 41.8623266,
+      "lng": 12.6456999,
+      "precision": "street",
+      "source_address": "Via Casilina, 1368",
+      "source_town": "Roma",
+      "matched_address": "Via Casilina, Torre Angela, Municipio Roma VI, Villaggio Breda, Roma, Lazio, 00133, Italia",
+      "source_url": "https://www.openstreetmap.org/way/121482065",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-13": {
+      "lat": 41.8636781,
+      "lng": 12.5460301,
+      "precision": "street",
+      "source_address": "Via dei Sestili 7, Roma",
+      "source_town": "Roma",
+      "matched_address": "Via dei Sestili, Quadraretto, Quadraro, Municipio Roma VII, Roma, Lazio, 00175, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27527754",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-14": {
+      "lat": 41.848628,
+      "lng": 12.5234751,
+      "precision": "address",
+      "source_address": "Via Appia Antica, 220",
+      "source_town": "Roma",
+      "matched_address": "220, Via Appia Antica, Municipio Roma VIII, Roma, Lazio, 00178, Italia",
+      "source_url": "https://www.openstreetmap.org/way/158010956",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-16": {
+      "lat": 41.848628,
+      "lng": 12.5234751,
+      "precision": "address",
+      "source_address": "Via Appia Antica, 220",
+      "source_town": "Roma",
+      "matched_address": "220, Via Appia Antica, Municipio Roma VIII, Roma, Lazio, 00178, Italia",
+      "source_url": "https://www.openstreetmap.org/way/158010956",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R2-17": {
+      "lat": 41.9310166,
+      "lng": 12.5727771,
+      "precision": "street",
+      "source_address": "Via Raffaele Majetti, 70",
+      "source_town": "Roma",
+      "matched_address": "Via Raffaele Majetti, Ponte Mammolo, Municipio Roma IV, Casal Monastero, Roma, Lazio, 00156, Italia",
+      "source_url": "https://www.openstreetmap.org/way/23034278",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-01": {
+      "lat": 41.8818015,
+      "lng": 12.4595712,
+      "precision": "address",
+      "source_address": "Via Raffaello Giovagnoli 29, Roma",
+      "source_town": "Roma",
+      "matched_address": "Gianicolo Garden, 29, Via Raffaello Giovagnoli, Monteverde, Municipio Roma XII, Roma, Lazio, 00152, Italia",
+      "source_url": "https://www.openstreetmap.org/node/3738285264",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-02": {
+      "lat": 41.7317644,
+      "lng": 12.2717997,
+      "precision": "address",
+      "source_address": "Via Adolfo Cozza, 7",
+      "source_town": "Roma",
+      "matched_address": "Direzione Tecnica, 7, Via Adolfo Cozza, Municipio Roma X, Lido di Ostia, Roma, Lazio, 00121, Italia",
+      "source_url": "https://www.openstreetmap.org/node/12525852012",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-03": {
+      "lat": 41.7882863,
+      "lng": 12.3622826,
+      "precision": "street",
+      "source_address": "Via Poggio di Acilia, 62",
+      "source_town": "Roma",
+      "matched_address": "Via del Poggio di Acilia, Municipio Roma X, Acilia, Roma, Lazio, 00125, Italia",
+      "source_url": "https://www.openstreetmap.org/way/132617719",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-04": {
+      "lat": 41.7740782,
+      "lng": 12.2349864,
+      "precision": "street",
+      "source_address": "Largo dello Spinarello, 12/14",
+      "source_town": "Fiumicino",
+      "matched_address": "Largo dello Spinarello, Fiumicino, Roma, Lazio, 00054, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33391443",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-06": {
+      "lat": 41.881894,
+      "lng": 12.4595891,
+      "precision": "street",
+      "source_address": "Via Raffaello Giovagnoli, 28",
+      "source_town": "Roma",
+      "matched_address": "Via Raffaello Giovagnoli, Monteverde, Municipio Roma XII, Roma, Lazio, 00152, Italia",
+      "source_url": "https://www.openstreetmap.org/way/212505291",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-07": {
+      "lat": 41.7381821,
+      "lng": 12.2708597,
+      "precision": "street",
+      "source_address": "Via Tagaste, 2/4",
+      "source_town": "Roma",
+      "matched_address": "Via Tagaste, Municipio Roma X, Lido di Ostia, Roma, Lazio, 00121, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33859063",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-08": {
+      "lat": 41.8620869,
+      "lng": 12.4349945,
+      "precision": "address",
+      "source_address": "Via del Casaletto, 400",
+      "source_town": "Roma",
+      "matched_address": "Stazioni di Posta – Housing First, 400, Via del Casaletto, Municipio Roma XII, Roma, Lazio, 00151, Italia",
+      "source_url": "https://www.openstreetmap.org/node/13336871731",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-09": {
+      "lat": 41.7735062,
+      "lng": 12.2332441,
+      "precision": "street",
+      "source_address": "Via delle Ombrine, 9",
+      "source_town": "Fiumicino",
+      "matched_address": "Via delle Ombrine, Fiumicino, Roma, Lazio, 00054, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33391442",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-10": {
+      "lat": 41.7381821,
+      "lng": 12.2708597,
+      "precision": "street",
+      "source_address": "Via Tagaste, 2/4",
+      "source_town": "Roma",
+      "matched_address": "Via Tagaste, Municipio Roma X, Lido di Ostia, Roma, Lazio, 00121, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33859063",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-11": {
+      "lat": 41.8810775,
+      "lng": 12.4599115,
+      "precision": "street",
+      "source_address": "Via Colautti",
+      "source_town": "Roma",
+      "matched_address": "Via Arturo Colautti, Monteverde, Municipio Roma XII, Roma, Lazio, 00152, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27858593",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R3-12": {
+      "lat": 41.8514005,
+      "lng": 12.4527582,
+      "precision": "street",
+      "source_address": "Via Domenico Lupatelli, 7",
+      "source_town": "Roma",
+      "matched_address": "Via Domenico Lupatelli, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27924186",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R4-04": {
+      "lat": 42.1023127,
+      "lng": 12.175879,
+      "precision": "street",
+      "source_address": "Via Trento 18, Bracciano",
+      "source_town": "Bracciano",
+      "matched_address": "Via Trento, Bracciano, Roma, Lazio, 00062, Italia",
+      "source_url": "https://www.openstreetmap.org/way/77502887",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R5-01": {
+      "lat": 41.7294877,
+      "lng": 13.0005798,
+      "precision": "street",
+      "source_address": "Via degli Esplosivi, 9/b",
+      "source_town": "Colleferro",
+      "matched_address": "Via degli Esplosivi, Colleferro Scalo, Colleferro, Roma, Lazio, 00034, Italia",
+      "source_url": "https://www.openstreetmap.org/way/222802472",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R5-05": {
+      "lat": 41.9622363,
+      "lng": 12.8018449,
+      "precision": "street",
+      "source_address": "Via Domenico Giuliani 4, Tivoli",
+      "source_town": "Tivoli",
+      "matched_address": "Via Domenico Giuliani, Tivoli, Paterno, Tivoli, Roma, Lazio, 00019, Italia",
+      "source_url": "https://www.openstreetmap.org/way/36882715",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R5-06": {
+      "lat": 41.7294877,
+      "lng": 13.0005798,
+      "precision": "street",
+      "source_address": "Via degli Esplosivi 9/b, Colleferro",
+      "source_town": "Colleferro",
+      "matched_address": "Via degli Esplosivi, Colleferro Scalo, Colleferro, Roma, Lazio, 00034, Italia",
+      "source_url": "https://www.openstreetmap.org/way/222802472",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R5-07": {
+      "lat": 41.8399229,
+      "lng": 12.8879882,
+      "precision": "street",
+      "source_address": "Via Porta San Martino 36, Palestrina",
+      "source_town": "Palestrina",
+      "matched_address": "Via Porta San Martino, Borgo, Colombella, Palestrina, Roma, Lazio, 00036, Italia",
+      "source_url": "https://www.openstreetmap.org/way/174359938",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R5-11": {
+      "lat": 41.839073,
+      "lng": 12.8885082,
+      "precision": "street",
+      "source_address": "Via Porta San Martino, 46",
+      "source_town": "Palestrina",
+      "matched_address": "Via Porta San Martino, Borgo, Colombella, Palestrina, Roma, Lazio, 00036, Italia",
+      "source_url": "https://www.openstreetmap.org/way/173691653",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R6-04": {
+      "lat": 41.6947651,
+      "lng": 12.7905822,
+      "precision": "address",
+      "source_address": "Via Ariana, 26",
+      "source_town": "Velletri",
+      "matched_address": "26, Via Ariana, Velletri, Roma, Lazio, 00049, Italia",
+      "source_url": "https://www.openstreetmap.org/node/12121970353",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R6-08": {
+      "lat": 41.8029177,
+      "lng": 12.599346,
+      "precision": "street",
+      "source_address": "Viale del Lavoro, 69",
+      "source_town": "Ciampino",
+      "matched_address": "Viale del Lavoro, Ciampino, Roma, Lazio, 00043, Italia",
+      "source_url": "https://www.openstreetmap.org/way/28307696",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R6-09": {
+      "lat": 41.8117912,
+      "lng": 12.6840272,
+      "precision": "street",
+      "source_address": "Via Gregoriana, 27",
+      "source_town": "Frascati",
+      "matched_address": "Via Gregoriana, Frascati, Roma, Lazio, 00044, Italia",
+      "source_url": "https://www.openstreetmap.org/way/179106617",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R6-10": {
+      "lat": 41.7062459,
+      "lng": 12.6934267,
+      "precision": "street",
+      "source_address": "Via Ospedale Vecchio, 4",
+      "source_town": "Genzano di Roma",
+      "matched_address": "Via Ospedale Vecchio, Borgo Vecchio, Ville di Nemi, Genzano di Roma, Roma, Lazio, 00045, Italia",
+      "source_url": "https://www.openstreetmap.org/way/86351185",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R6-11": {
+      "lat": 41.686643,
+      "lng": 12.7810938,
+      "precision": "street",
+      "source_address": "Via Orti Ginnetti, 55",
+      "source_town": "Velletri",
+      "matched_address": "Via Orti Ginnetti, Velletri, Roma, Lazio, 00049, Italia",
+      "source_url": "https://www.openstreetmap.org/way/35988858",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:R6-12": {
+      "lat": 41.7234645,
+      "lng": 12.6758277,
+      "precision": "address",
+      "source_address": "Via delle Cerquette, 2",
+      "source_town": "Ariccia",
+      "matched_address": "2, Via delle Cerquette, Monte Gentile, Ariccia, Roma, Lazio, 00040, Italia",
+      "source_url": "https://www.openstreetmap.org/node/2463597363",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:RI-11": {
+      "lat": 42.1530093,
+      "lng": 12.6466516,
+      "precision": "street",
+      "source_address": "Via Garibaldi, 17",
+      "source_town": "Fara in Sabina",
+      "matched_address": "Via Garibaldi, Passo Corese, Fara in Sabina, Rieti, Lazio, 02032, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1159567881",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:VT-02": {
+      "lat": 42.740957,
+      "lng": 11.8682922,
+      "precision": "street",
+      "source_address": "Via Palmiro Togliatti 14, Acquapendente",
+      "source_town": "Acquapendente",
+      "matched_address": "Via Palmiro Togliatti, Acquapendente, Viterbo, Lazio, 01021, Italia",
+      "source_url": "https://www.openstreetmap.org/way/988165424",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:VT-07": {
+      "lat": 42.2498808,
+      "lng": 11.7604967,
+      "precision": "street",
+      "source_address": "Via Suor Serafina Giudici, Tarquinia",
+      "source_town": "Tarquinia",
+      "matched_address": "Via Suor Serafina Giudici, Tarquinia, Viterbo, Lazio, 01016, Italia",
+      "source_url": "https://www.openstreetmap.org/way/299280040",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:VT-11": {
+      "lat": 42.4197729,
+      "lng": 12.2338839,
+      "precision": "street",
+      "source_address": "Via Innocenzo VIII, Soriano nel Cimino",
+      "source_town": "Soriano nel Cimino",
+      "matched_address": "Via Innocenzo VIII, Soriano nel Cimino, Viterbo, Lazio, 01038, Italia",
+      "source_url": "https://www.openstreetmap.org/way/364339092",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:VT-16": {
+      "lat": 42.2409723,
+      "lng": 12.3409399,
+      "precision": "street",
+      "source_address": "Via Tre Portoni 2, Nepi",
+      "source_town": "Nepi",
+      "matched_address": "Via Tre Portoni, Nepi, Viterbo, Lazio, 01036, Italia",
+      "source_url": "https://www.openstreetmap.org/way/545641110",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:VT-20": {
+      "lat": 42.5399488,
+      "lng": 12.0324516,
+      "precision": "street",
+      "source_address": "Via Croce, 11",
+      "source_town": "Montefiascone",
+      "matched_address": "Via della Croce, Le Mosse, Le Coste, Montefiascone, Viterbo, Lazio, 01027, Italia",
+      "source_url": "https://www.openstreetmap.org/way/59876688",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:FR-04": {
+      "lat": 41.7416582,
+      "lng": 13.1635541,
+      "precision": "street",
+      "source_address": "Via Onorato Capo, 2",
+      "source_town": "Anagni",
+      "matched_address": "Via Onorato Capo, Anagni, Frosinone, Lazio, 03012, Italia",
+      "source_url": "https://www.openstreetmap.org/way/163717945",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:FR-06": {
+      "lat": 41.7266688,
+      "lng": 13.6265383,
+      "precision": "street",
+      "source_address": "Via San Marciano",
+      "source_town": "Sora",
+      "matched_address": "Via San Marciano, Sora, Frosinone, Lazio, 03039, Italia",
+      "source_url": "https://www.openstreetmap.org/way/390607917",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:FR-12": {
+      "lat": 41.7170487,
+      "lng": 13.6137735,
+      "precision": "street",
+      "source_address": "Via Piemonte",
+      "source_town": "Sora",
+      "matched_address": "Via Piemonte, Sora, Frosinone, Lazio, 03039, Italia",
+      "source_url": "https://www.openstreetmap.org/way/37886971",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:FR-16": {
+      "lat": 41.6364479,
+      "lng": 13.7866251,
+      "precision": "street",
+      "source_address": "Colle Melfa — Casa della Salute",
+      "source_town": "Atina",
+      "matched_address": "Via Colle Melfa, Atina Inferiore - Ponte Melfa, Atina, Frosinone, Lazio, 03042, Italia",
+      "source_url": "https://www.openstreetmap.org/way/167367707",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-05": {
+      "lat": 41.3030142,
+      "lng": 13.0216881,
+      "precision": "street",
+      "source_address": "Via Conte Verde, 10",
+      "source_town": "Sabaudia",
+      "matched_address": "Via Conte Verde, Belvedere d'Ulisse, Sabaudia, Latina, Lazio, 04016, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1203559844",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-08": {
+      "lat": 41.2892363,
+      "lng": 13.2525439,
+      "precision": "street",
+      "source_address": "Via Don Orione 8, Terracina",
+      "source_town": "Terracina",
+      "matched_address": "Via don Luigi Orione, Terracina, Latina, Lazio, 04049, Italia",
+      "source_url": "https://www.openstreetmap.org/way/143843150",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-09": {
+      "lat": 41.3594469,
+      "lng": 13.416077,
+      "precision": "address",
+      "source_address": "Via San Magno 4, Fondi",
+      "source_town": "Fondi",
+      "matched_address": "GranCaffè, 4/H, Via San Magno, San Magno, Fondi, Latina, Lazio, 04022, Italia",
+      "source_url": "https://www.openstreetmap.org/node/2365655371",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-11": {
+      "lat": 41.5878119,
+      "lng": 12.6501724,
+      "precision": "street",
+      "source_address": "Via Giustiniano, Aprilia",
+      "source_town": "Aprilia",
+      "matched_address": "Via Giustiniano, Aprilia, Latina, Lazio, 04011, Italia",
+      "source_url": "https://www.openstreetmap.org/way/36010765",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-12": {
+      "lat": 41.4623408,
+      "lng": 12.9088691,
+      "precision": "street",
+      "source_address": "Via Guido Reni, 22",
+      "source_town": "Latina",
+      "matched_address": "Via Guido Reni, Prampolini, Latina, Lazio, 04100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/45877182",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-13": {
+      "lat": 41.4794942,
+      "lng": 13.1678811,
+      "precision": "street",
+      "source_address": "Via Torretta Rocchigiana, Priverno",
+      "source_town": "Priverno",
+      "matched_address": "Via Torretta Rocchigiana, Priverno, Latina, Lazio, 04015, Italia",
+      "source_url": "https://www.openstreetmap.org/way/179866048",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:LT-14": {
+      "lat": 41.2900507,
+      "lng": 13.2478909,
+      "precision": "street",
+      "source_address": "Via Fratelli Bandiera 15, Terracina",
+      "source_town": "Terracina",
+      "matched_address": "Via Fratelli Bandiera, Borgo Cipollata, Terracina, Latina, Lazio, 04019, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27623283",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-001": {
+      "lat": 41.9007689,
+      "lng": 12.4627453,
+      "precision": "address",
+      "source_address": "Lungotevere in Sassia, 1",
+      "source_town": "Roma",
+      "matched_address": "Clandestine – Mordi e fuggi, 1, Lungotevere in Sassia, Borgo, Municipio Roma I, Roma, Lazio, 00193, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9862494433",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-003": {
+      "lat": 41.8892001,
+      "lng": 12.47769,
+      "precision": "street",
+      "source_address": "Piazza Castellani, 23",
+      "source_town": "Roma",
+      "matched_address": "Piazza Castellani, Trastevere, Municipio Roma I, Roma, Lazio, 00153, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33685498",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-004": {
+      "lat": 41.9281908,
+      "lng": 12.5238259,
+      "precision": "address",
+      "source_address": "Via Tripoli, 39",
+      "source_town": "Roma",
+      "matched_address": "ASL Roma 1 - Servizio tutela salute mentale e riabilitazione età evolutiva, 39, Via Tripoli, Quartiere Africano, Trieste, Municipio Roma II, Roma, Lazio, 00199, Italia",
+      "source_url": "https://www.openstreetmap.org/way/151342392",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-005": {
+      "lat": 41.9554531,
+      "lng": 12.5332349,
+      "precision": "street",
+      "source_address": "Via Dina Galli, 8",
+      "source_town": "Roma",
+      "matched_address": "Via Dina Galli, Val Melaina, Municipio Roma III, Roma, Lazio, 00139, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27186802",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-006": {
+      "lat": 41.9072347,
+      "lng": 12.4590351,
+      "precision": "street",
+      "source_address": "Via Catone, 30",
+      "source_town": "Roma",
+      "matched_address": "Via Catone, Prati, Municipio Roma I, Roma, Lazio, 00192, Italia",
+      "source_url": "https://www.openstreetmap.org/way/15461489",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-009": {
+      "lat": 41.9408977,
+      "lng": 12.4196005,
+      "precision": "street",
+      "source_address": "Piazza Santa Maria della Pietà, 5",
+      "source_town": "Roma",
+      "matched_address": "Piazza Santa Maria della Pietà, Municipio Roma XIV, Roma, Lazio, 00168, Italia",
+      "source_url": "https://www.openstreetmap.org/way/55973903",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-020": {
+      "lat": 41.8589748,
+      "lng": 12.4868566,
+      "precision": "address",
+      "source_address": "Via San Nemesio, 21",
+      "source_town": "Roma",
+      "matched_address": "21, Via San Nemesio, Garbatella, Municipio Roma VIII, Roma, Lazio, 00145, Italia",
+      "source_url": "https://www.openstreetmap.org/node/4732458721",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-021": {
+      "lat": 41.8762747,
+      "lng": 12.5670917,
+      "precision": "address",
+      "source_address": "Via degli Eucalipti, 14",
+      "source_town": "Roma",
+      "matched_address": "Poliambulatorio San Felice, 14, Via degli Eucalipti, Prenestino-Centocelle, Municipio Roma V, Roma, Lazio, 00171, Italia",
+      "source_url": "https://www.openstreetmap.org/way/304443999",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-022": {
+      "lat": 41.8816933,
+      "lng": 12.5393881,
+      "precision": "address",
+      "source_address": "Via Casilina, 395",
+      "source_town": "Roma",
+      "matched_address": "395, Via Casilina, Marranella, Pigneto, Municipio Roma V, Roma, Lazio, 00176, Italia",
+      "source_url": "https://www.openstreetmap.org/way/532544008",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-024": {
+      "lat": 41.7291983,
+      "lng": 12.2992769,
+      "precision": "address",
+      "source_address": "Via Giancarlo Passeroni, 28",
+      "source_town": "Roma",
+      "matched_address": "Pronto Soccorso Ospadale \"Giovanni Battista Grassi\", 28, Via Giancarlo Passeroni, Lido di Ostia Levante, Municipio Roma X, Lido di Ostia, Roma, Lazio, 00122, Italia",
+      "source_url": "https://www.openstreetmap.org/node/5220461914",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-025": {
+      "lat": 41.8633058,
+      "lng": 12.4541705,
+      "precision": "address",
+      "source_address": "Via Portuense, 332",
+      "source_town": "Roma",
+      "matched_address": "332, Via Portuense, Municipio Roma XII, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/node/675650571",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-049": {
+      "lat": 41.9601303,
+      "lng": 12.8020302,
+      "precision": "address",
+      "source_address": "Via Antonio Parrozzani, 3",
+      "source_town": "Tivoli",
+      "matched_address": "Università degli Studi di Roma \"Tor Vergata\" - Scienze Infermieristiche, 3, Via Antonio Parrozzani, Tivoli, Roma, Lazio, 00019, Italia",
+      "source_url": "https://www.openstreetmap.org/way/432746837",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-058": {
+      "lat": 41.6924886,
+      "lng": 12.7864139,
+      "precision": "street",
+      "source_address": "Via San Biagio, 12",
+      "source_town": "Velletri",
+      "matched_address": "Via San Biagio, Velletri, Roma, Lazio, 00049, Italia",
+      "source_url": "https://www.openstreetmap.org/way/200685913",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-059": {
+      "lat": 41.7234645,
+      "lng": 12.6758277,
+      "precision": "address",
+      "source_address": "Via delle Cerquette, 2",
+      "source_town": "Ariccia",
+      "matched_address": "2, Via delle Cerquette, Monte Gentile, Ariccia, Roma, Lazio, 00040, Italia",
+      "source_url": "https://www.openstreetmap.org/node/2463597363",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-060": {
+      "lat": 41.7307575,
+      "lng": 12.6858764,
+      "precision": "street",
+      "source_address": "Via delle Cerquette",
+      "source_town": "Ariccia",
+      "matched_address": "Via delle Cerquette, Monte Gentile, Ariccia, Roma, Lazio, 00041, Italia",
+      "source_url": "https://www.openstreetmap.org/way/395674835",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-068": {
+      "lat": 42.7419156,
+      "lng": 11.8669411,
+      "precision": "street",
+      "source_address": "Via del Fiore, 14",
+      "source_town": "Acquapendente",
+      "matched_address": "Via del Fiore, Acquapendente, Viterbo, Lazio, 01021, Italia",
+      "source_url": "https://www.openstreetmap.org/way/161293734",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-071": {
+      "lat": 42.4179342,
+      "lng": 11.8745183,
+      "precision": "street",
+      "source_address": "Piazza Matteotti, 16",
+      "source_town": "Tuscania",
+      "matched_address": "Piazza Matteotti, Tuscania, Viterbo, Lazio, 01017, Italia",
+      "source_url": "https://www.openstreetmap.org/way/126664751",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-072": {
+      "lat": 42.4098964,
+      "lng": 12.1091818,
+      "precision": "address",
+      "source_address": "Via Enrico Fermi, 15",
+      "source_town": "Viterbo",
+      "matched_address": "15, Via Enrico Fermi, Pietrare, Viterbo, Lazio, 01100, Italia",
+      "source_url": "https://www.openstreetmap.org/node/4464545789",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-089": {
+      "lat": 41.473866,
+      "lng": 12.9032748,
+      "precision": "street",
+      "source_address": "Piazzale Carturan, 7",
+      "source_town": "Latina",
+      "matched_address": "Piazzale Giuliano Carturan, Goretti, Latina, Lazio, 04100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/61082787",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-026": {
+      "lat": 41.8622317,
+      "lng": 12.4550374,
+      "precision": "street",
+      "source_address": "Via Alessandro Brisse, 20",
+      "source_town": "Roma",
+      "matched_address": "Via Alessandro Brisse, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/39460423",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-028": {
+      "lat": 41.7381821,
+      "lng": 12.2708597,
+      "precision": "street",
+      "source_address": "Via Tagaste, 6",
+      "source_town": "Roma",
+      "matched_address": "Via Tagaste, Municipio Roma X, Lido di Ostia, Roma, Lazio, 00121, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33859063",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-029": {
+      "lat": 41.7882863,
+      "lng": 12.3622826,
+      "precision": "street",
+      "source_address": "Via del Poggio di Acilia, 62",
+      "source_town": "Roma",
+      "matched_address": "Via del Poggio di Acilia, Municipio Roma X, Acilia, Roma, Lazio, 00125, Italia",
+      "source_url": "https://www.openstreetmap.org/way/132617719",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-031": {
+      "lat": 41.8810775,
+      "lng": 12.4599115,
+      "precision": "street",
+      "source_address": "Via Arturo Colautti, 28",
+      "source_town": "Roma",
+      "matched_address": "Via Arturo Colautti, Monteverde, Municipio Roma XII, Roma, Lazio, 00152, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27858593",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-034": {
+      "lat": 42.0820521,
+      "lng": 11.8136349,
+      "precision": "street",
+      "source_address": "Via Toscana 25, Civitavecchia",
+      "source_town": "Civitavecchia",
+      "matched_address": "Via Toscana, Campo dell'Oro, Civitavecchia, Roma, Lazio, 00053, Italia",
+      "source_url": "https://www.openstreetmap.org/way/60094809",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-036": {
+      "lat": 42.1023127,
+      "lng": 12.175879,
+      "precision": "street",
+      "source_address": "Via Trento 18, Bracciano",
+      "source_town": "Bracciano",
+      "matched_address": "Via Trento, Bracciano, Roma, Lazio, 00062, Italia",
+      "source_url": "https://www.openstreetmap.org/way/77502887",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-038": {
+      "lat": 42.0769404,
+      "lng": 12.1943602,
+      "precision": "street",
+      "source_address": "Via Fra Giovanni 38, Bracciano",
+      "source_town": "Bracciano",
+      "matched_address": "Via di Fra' Giovanni, Vigna di Valle, Bracciano, Roma, Lazio, 00062, Italia",
+      "source_url": "https://www.openstreetmap.org/way/77511586",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-010": {
+      "lat": 41.936689,
+      "lng": 12.5006125,
+      "precision": "street",
+      "source_address": "Via del Forte Antenne",
+      "source_town": "Roma",
+      "matched_address": "Via del Forte Antenne, Parioli, Municipio Roma II, Roma, Lazio, 00199, Italia",
+      "source_url": "https://www.openstreetmap.org/way/39359106",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-011": {
+      "lat": 41.9105267,
+      "lng": 12.5259107,
+      "precision": "address",
+      "source_address": "Via Boemondo, 21",
+      "source_town": "Roma",
+      "matched_address": "Centro vaccinale, 21, Via Boemondo, Nomentano, Municipio Roma II, Roma, Lazio, 00162, Italia",
+      "source_url": "https://www.openstreetmap.org/node/12581796620",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-013": {
+      "lat": 41.9181766,
+      "lng": 12.4144799,
+      "precision": "address",
+      "source_address": "Via Federico Borromeo, 67",
+      "source_town": "Roma",
+      "matched_address": "Biblioteca Franco Basaglia, 67, Via Federico Borromeo, Primavalle, Municipio Roma XIV, Roma, Lazio, 00168, Italia",
+      "source_url": "https://www.openstreetmap.org/node/5469321122",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-014": {
+      "lat": 41.9248469,
+      "lng": 12.5175108,
+      "precision": "street",
+      "source_address": "Via Sabrata, 12",
+      "source_town": "Roma",
+      "matched_address": "Via Sabrata, Trieste, Municipio Roma II, Roma, Lazio, 00199, Italia",
+      "source_url": "https://www.openstreetmap.org/way/23899217",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-016": {
+      "lat": 41.9435118,
+      "lng": 12.4339397,
+      "precision": "street",
+      "source_address": "Via del Casale Piombino, 30",
+      "source_town": "Roma",
+      "matched_address": "Via del Casale Piombino, Monte Mario Alto, Municipio Roma XIV, Roma, Lazio, 00135, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27374459",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-067": {
+      "lat": 42.5351741,
+      "lng": 12.0314644,
+      "precision": "street",
+      "source_address": "Via Donatori di Sangue, 1-2",
+      "source_town": "Montefiascone",
+      "matched_address": "Via Donatori di Sangue, Le Mosse, Zepponami, Montefiascone, Viterbo, Lazio, 01027, Italia",
+      "source_url": "https://www.openstreetmap.org/way/59876679",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-080": {
+      "lat": 41.6821864,
+      "lng": 13.5789152,
+      "precision": "street",
+      "source_address": "Via Ospedale, Isola del Liri",
+      "source_town": "Isola del Liri",
+      "matched_address": "via Ospedale, Isola del Liri, Frosinone, Lazio, 03036, Italia",
+      "source_url": "https://www.openstreetmap.org/way/225126423",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-086": {
+      "lat": 41.4642616,
+      "lng": 12.915092,
+      "precision": "street",
+      "source_address": "Via Alfieri 34, Latina",
+      "source_town": "Latina",
+      "matched_address": "Via Vittorio Alfieri, Frezzotti, Latina, Lazio, 04100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/64720491",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-087": {
+      "lat": 41.2892363,
+      "lng": 13.2525439,
+      "precision": "street",
+      "source_address": "Via Don Orione, 8",
+      "source_town": "Terracina",
+      "matched_address": "Via don Luigi Orione, Terracina, Latina, Lazio, 04049, Italia",
+      "source_url": "https://www.openstreetmap.org/way/143843150",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-088": {
+      "lat": 41.2528307,
+      "lng": 13.7513856,
+      "precision": "street",
+      "source_address": "Via Fontana di Voza",
+      "source_town": "Minturno",
+      "matched_address": "Via Fontana di Voza, Simonelli, Tremensuoli, Minturno, Latina, Lazio, 04026, Italia",
+      "source_url": "https://www.openstreetmap.org/way/279954792",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET-094": {
+      "lat": 41.2528307,
+      "lng": 13.7513856,
+      "precision": "street",
+      "source_address": "Via Fontana di Voza",
+      "source_town": "Minturno",
+      "matched_address": "Via Fontana di Voza, Simonelli, Tremensuoli, Minturno, Latina, Lazio, 04026, Italia",
+      "source_url": "https://www.openstreetmap.org/way/279954792",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-001": {
+      "lat": 41.9055958,
+      "lng": 12.5033258,
+      "precision": "address",
+      "source_address": "Via Palestro, 39",
+      "source_town": "Roma",
+      "matched_address": "39, Via Palestro, Castro Pretorio, Municipio Roma I, Roma, Lazio, 00185, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9908094347",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-002": {
+      "lat": 41.9070769,
+      "lng": 12.4644242,
+      "precision": "address",
+      "source_address": "Via Plinio, 31",
+      "source_town": "Roma",
+      "matched_address": "Centro vaccinazioni Plinio, 31, Via Plinio, Prati, Municipio Roma I, Roma, Lazio, 00192, Italia",
+      "source_url": "https://www.openstreetmap.org/node/13507398148",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-003": {
+      "lat": 41.9167823,
+      "lng": 12.459749,
+      "precision": "address",
+      "source_address": "Via Sabotino, 4",
+      "source_town": "Roma",
+      "matched_address": "4, Via Sabotino, Della Vittoria, Città giudiziaria, Municipio Roma I, Roma, Lazio, 00195, Italia",
+      "source_url": "https://www.openstreetmap.org/node/8481569374",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-004": {
+      "lat": 41.8944636,
+      "lng": 12.4884161,
+      "precision": "street",
+      "source_address": "Via Baccina, 81",
+      "source_town": "Roma",
+      "matched_address": "Via Baccina, Monti, Municipio Roma I, Roma, Lazio, 00184, Italia",
+      "source_url": "https://www.openstreetmap.org/way/23694808",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-005": {
+      "lat": 41.8777591,
+      "lng": 12.487028,
+      "precision": "street",
+      "source_address": "Via Bramante, 6",
+      "source_town": "Roma",
+      "matched_address": "Via Bramante, San Saba, Municipio Roma I, Roma, Lazio, 00154, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27590925",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-007": {
+      "lat": 41.9179202,
+      "lng": 12.4620384,
+      "precision": "address",
+      "source_address": "Via Oslavia, 37",
+      "source_town": "Roma",
+      "matched_address": "37, Via Oslavia, Della Vittoria, Città giudiziaria, Municipio Roma I, Roma, Lazio, 00195, Italia",
+      "source_url": "https://www.openstreetmap.org/node/8430440538",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-008": {
+      "lat": 41.8776438,
+      "lng": 12.4863208,
+      "precision": "street",
+      "source_address": "Via Giacomo Della Porta, 5",
+      "source_town": "Roma",
+      "matched_address": "Via Giacomo della Porta, San Saba, Municipio Roma I, Roma, Lazio, 00154, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27590924",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-009": {
+      "lat": 41.8858285,
+      "lng": 12.4703712,
+      "precision": "street",
+      "source_address": "Via Emilio Morosini, 30",
+      "source_town": "Roma",
+      "matched_address": "Via Emilio Morosini, Trastevere, Municipio Roma I, Roma, Lazio, 00153, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33682753",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-010": {
+      "lat": 41.8891105,
+      "lng": 12.5116059,
+      "precision": "street",
+      "source_address": "Via Giovanni Battista Piatti, 19",
+      "source_town": "Roma",
+      "matched_address": "Via Giovanni Battista Piatti, Esquilino, Municipio Roma I, Roma, Lazio, 00182, Italia",
+      "source_url": "https://www.openstreetmap.org/way/24154106",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-011": {
+      "lat": 41.9248469,
+      "lng": 12.5175108,
+      "precision": "street",
+      "source_address": "Via Sabrata, 12",
+      "source_town": "Roma",
+      "matched_address": "Via Sabrata, Trieste, Municipio Roma II, Roma, Lazio, 00199, Italia",
+      "source_url": "https://www.openstreetmap.org/way/23899217",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-012": {
+      "lat": 41.9335595,
+      "lng": 12.4767246,
+      "precision": "street",
+      "source_address": "Via Turchia, 7",
+      "source_town": "Roma",
+      "matched_address": "Via Turchia, Parioli, Municipio Roma II, Roma, Lazio, 00196, Italia",
+      "source_url": "https://www.openstreetmap.org/way/207355445",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-013": {
+      "lat": 41.9313901,
+      "lng": 12.538742,
+      "precision": "street",
+      "source_address": "Via Monte Tomatico, 9",
+      "source_town": "Roma",
+      "matched_address": "Via Monte Tomatico, Monte Sacro, Municipio Roma III, Roma, Lazio, 00141, Italia",
+      "source_url": "https://www.openstreetmap.org/way/190502825",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-014": {
+      "lat": 41.9629775,
+      "lng": 12.5167557,
+      "precision": "street",
+      "source_address": "Via Gennaro Pasquariello, 8",
+      "source_town": "Roma",
+      "matched_address": "Via Gennaro Pasquariello, Serpentara, Castel Giubileo, Municipio Roma III, Saxa Rubra, Roma, Lazio, 00139, Italia",
+      "source_url": "https://www.openstreetmap.org/way/167049953",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-015": {
+      "lat": 41.977747,
+      "lng": 12.5134517,
+      "precision": "street",
+      "source_address": "Via Quarrata, 7/15",
+      "source_town": "Roma",
+      "matched_address": "Via Quarrata, Fidene, Castel Giubileo, Municipio Roma III, Saxa Rubra, Roma, Lazio, 00138, Italia",
+      "source_url": "https://www.openstreetmap.org/way/167366103",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-016": {
+      "lat": 41.947937,
+      "lng": 12.527654,
+      "precision": "street",
+      "source_address": "Via Scarpanto, 8",
+      "source_town": "Roma",
+      "matched_address": "Via Scarpanto, Tufello, Monte Sacro, Municipio Roma III, Roma, Lazio, 00139, Italia",
+      "source_url": "https://www.openstreetmap.org/way/50280669",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-017": {
+      "lat": 41.9585569,
+      "lng": 12.5839164,
+      "precision": "address",
+      "source_address": "Via Nomentana, 1199",
+      "source_town": "Roma",
+      "matched_address": "1199, Via Nomentana, Municipio Roma III, Casal Monastero, Roma, Lazio, 00137, Italia",
+      "source_url": "https://www.openstreetmap.org/node/9961665532",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-022": {
+      "lat": 41.9398857,
+      "lng": 12.4649811,
+      "precision": "address",
+      "source_address": "Via Antonino Di Giorgio, 19",
+      "source_town": "Roma",
+      "matched_address": "Centro di salute mentale Antonino Di Giorgio, 19, Via Antonino di Giorgio, Ponte Milvio, Municipio Roma XV, Roma, Lazio, 00194, Italia",
+      "source_url": "https://www.openstreetmap.org/way/383444113",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-024": {
+      "lat": 42.0003165,
+      "lng": 12.4917685,
+      "precision": "street",
+      "source_address": "Via della Stazione di Prima Porta, 8",
+      "source_town": "Roma",
+      "matched_address": "Via della Stazione di Prima Porta, Municipio Roma XV, Casale Prima Porta, Roma, Lazio, 00188, Italia",
+      "source_url": "https://www.openstreetmap.org/way/209452984",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R1-025": {
+      "lat": 41.9398857,
+      "lng": 12.4649811,
+      "precision": "address",
+      "source_address": "Via Antonino Di Giorgio, 19",
+      "source_town": "Roma",
+      "matched_address": "Centro di salute mentale Antonino Di Giorgio, 19, Via Antonino di Giorgio, Ponte Milvio, Municipio Roma XV, Roma, Lazio, 00194, Italia",
+      "source_url": "https://www.openstreetmap.org/way/383444113",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-002": {
+      "lat": 41.8816933,
+      "lng": 12.5393881,
+      "precision": "address",
+      "source_address": "Via Casilina, 395",
+      "source_town": "Roma",
+      "matched_address": "395, Via Casilina, Marranella, Pigneto, Municipio Roma V, Roma, Lazio, 00176, Italia",
+      "source_url": "https://www.openstreetmap.org/way/532544008",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-003": {
+      "lat": 41.8926421,
+      "lng": 12.5768513,
+      "precision": "address",
+      "source_address": "Via Manfredonia, 43",
+      "source_town": "Roma",
+      "matched_address": "43, Via Manfredonia, Quarticciolo, Alessandrino, Municipio Roma V, Roma, Lazio, 00171, Italia",
+      "source_url": "https://www.openstreetmap.org/node/8084829624",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-004": {
+      "lat": 41.8683516,
+      "lng": 12.6015966,
+      "precision": "street",
+      "source_address": "Via delle Canapiglie, 50; Via delle Pispole, 1",
+      "source_town": "Roma",
+      "matched_address": "Via delle Canapiglie, Torre Maura, Municipio Roma VI, Torrenova, Roma, Lazio, 00169, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27473785",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-005": {
+      "lat": 41.8536819,
+      "lng": 12.5692721,
+      "precision": "address",
+      "source_address": "Piazza di Cinecittà, 11",
+      "source_town": "Roma",
+      "matched_address": "VII Gruppo Tuscolano Polizia Locale di Roma Capitale, 11, Piazza di Cinecittà, Cinecittà, Municipio Roma VII, Osteria del Curato, Roma, Lazio, 00174, Italia",
+      "source_url": "https://www.openstreetmap.org/node/5444697132",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-006": {
+      "lat": 41.8766931,
+      "lng": 12.5313236,
+      "precision": "street",
+      "source_address": "Via Paolo Albera, 50",
+      "source_town": "Roma",
+      "matched_address": "Via Paolo Albera, Villa Certosa, Torpignattara, Municipio Roma VII, Roma, Lazio, 00181, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27475132",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-007": {
+      "lat": 41.8560913,
+      "lng": 12.4839716,
+      "precision": "street",
+      "source_address": "Viale Giustiniano Imperatore, 45",
+      "source_town": "Roma",
+      "matched_address": "Viale Giustiniano Imperatore, San Paolo, Municipio Roma VIII, Roma, Lazio, 00145, Italia",
+      "source_url": "https://www.openstreetmap.org/way/124195113",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-008": {
+      "lat": 41.8138718,
+      "lng": 12.4740125,
+      "precision": "street",
+      "source_address": "Via Orio Vergani, 1",
+      "source_town": "Roma",
+      "matched_address": "Via Orio Vergani, Fonte Ostiense, Municipio Roma IX, Roma, Lazio, 00144, Italia",
+      "source_url": "https://www.openstreetmap.org/way/172283663",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-010": {
+      "lat": 41.9155171,
+      "lng": 12.634524,
+      "precision": "street",
+      "source_address": "Via della Stazione di Salone, 12",
+      "source_town": "Roma",
+      "matched_address": "Via della Stazione di Salone, Lunghezza, Roma, Lazio, 00115, Italia",
+      "source_url": "https://www.openstreetmap.org/way/60500149",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R2-011": {
+      "lat": 41.9427664,
+      "lng": 12.5859586,
+      "precision": "street",
+      "source_address": "Piazza Urbania, 4",
+      "source_town": "Roma",
+      "matched_address": "Piazza Urbania, San Basilio, Municipio Roma IV, Casal Monastero, Roma, Lazio, 00156, Italia",
+      "source_url": "https://www.openstreetmap.org/way/164548090",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R3-001": {
+      "lat": 41.8357904,
+      "lng": 12.4314014,
+      "precision": "street",
+      "source_address": "Via delle Catacombe di Generosa, 5",
+      "source_town": "Roma",
+      "matched_address": "Via delle Catacombe di Generosa, Portuense, Municipio Roma XI, Roma, Lazio, 00148, Italia",
+      "source_url": "https://www.openstreetmap.org/way/28000389",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-R3-003": {
+      "lat": 41.7740782,
+      "lng": 12.2349864,
+      "precision": "street",
+      "source_address": "Largo dello Spinarello, 12/14",
+      "source_town": "Fiumicino",
+      "matched_address": "Largo dello Spinarello, Fiumicino, Roma, Lazio, 00054, Italia",
+      "source_url": "https://www.openstreetmap.org/way/33391443",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-VT-001": {
+      "lat": 42.2498808,
+      "lng": 11.7604967,
+      "precision": "street",
+      "source_address": "Via Suor Serafina Giudici",
+      "source_town": "Tarquinia",
+      "matched_address": "Via Suor Serafina Giudici, Tarquinia, Viterbo, Lazio, 01016, Italia",
+      "source_url": "https://www.openstreetmap.org/way/299280040",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:PUB72-VT-005": {
+      "lat": 42.4156483,
+      "lng": 12.1012829,
+      "precision": "street",
+      "source_address": "Piazza San Lorenzo",
+      "source_town": "Viterbo",
+      "matched_address": "Piazza San Lorenzo, Viterbo, Lazio, 01100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/452880766",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:NET76-001": {
+      "lat": 41.5930723,
+      "lng": 12.6508837,
+      "precision": "street",
+      "source_address": "Via degli Oleandri 94, Aprilia",
+      "source_town": "Aprilia",
+      "matched_address": "Via degli Oleandri, Aprilia, Latina, Lazio, 04011, Italia",
+      "source_url": "https://www.openstreetmap.org/way/71396575",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-046": {
+      "lat": 41.296023,
+      "lng": 13.7803507,
+      "precision": "street",
+      "source_address": "Via Cerri Aprano",
+      "source_town": "Santi Cosma e Damiano",
+      "matched_address": "Via Cerri Aprano, Santi Cosma e Damiano, Latina, Lazio, 04021, Italia",
+      "source_url": "https://www.openstreetmap.org/way/108380704",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-086": {
+      "lat": 41.9130039,
+      "lng": 12.5615621,
+      "precision": "street",
+      "source_address": "Via del Frantoio, 58",
+      "source_town": "Roma",
+      "matched_address": "Via del Frantoio, Municipio Roma IV, Roma, Lazio, 00158, Italia",
+      "source_url": "https://www.openstreetmap.org/way/123953416",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-057": {
+      "lat": 41.849802,
+      "lng": 12.4909561,
+      "precision": "street",
+      "source_address": "Via Attilio Ambrosini,129",
+      "source_town": "Roma",
+      "matched_address": "Via Attilio Ambrosini, Poggio Ameno, Tor Marancia, Municipio Roma VIII, Roma, Lazio, 00147, Italia",
+      "source_url": "https://www.openstreetmap.org/way/44176785",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-058": {
+      "lat": 41.8208291,
+      "lng": 12.5665225,
+      "precision": "street",
+      "source_address": "Via Appia Nuova,1251",
+      "source_town": "Roma",
+      "matched_address": "Via Appia Nuova, Capannelle, Municipio Roma VII, Osteria del Curato, Roma, Lazio, 00178, Italia",
+      "source_url": "https://www.openstreetmap.org/way/39318146",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-048": {
+      "lat": 42.0848212,
+      "lng": 12.7516777,
+      "precision": "street",
+      "source_address": "Strada Salvia,13",
+      "source_town": "Palombara Sabina",
+      "matched_address": "Strada della Salvia, Palombara Sabina, Roma, Lazio, 00018, Italia",
+      "source_url": "https://www.openstreetmap.org/way/66434301",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-090": {
+      "lat": 41.863167,
+      "lng": 12.4496303,
+      "precision": "address",
+      "source_address": "Via Bernardino Ramazzini, 31",
+      "source_town": "Roma",
+      "matched_address": "Poliambulatorio Monteverde, 31, Via Bernardino Ramazzini, Municipio Roma XII, Roma, Lazio, 00151, Italia",
+      "source_url": "https://www.openstreetmap.org/node/7842403522",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-089": {
+      "lat": 41.863167,
+      "lng": 12.4496303,
+      "precision": "address",
+      "source_address": "Via Bernardino Ramazzini, 31",
+      "source_town": "Roma",
+      "matched_address": "Poliambulatorio Monteverde, 31, Via Bernardino Ramazzini, Municipio Roma XII, Roma, Lazio, 00151, Italia",
+      "source_url": "https://www.openstreetmap.org/node/7842403522",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-088": {
+      "lat": 41.863167,
+      "lng": 12.4496303,
+      "precision": "address",
+      "source_address": "Via Bernardino Ramazzini, 31",
+      "source_town": "Roma",
+      "matched_address": "Poliambulatorio Monteverde, 31, Via Bernardino Ramazzini, Municipio Roma XII, Roma, Lazio, 00151, Italia",
+      "source_url": "https://www.openstreetmap.org/node/7842403522",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-108": {
+      "lat": 42.0226944,
+      "lng": 11.9557926,
+      "precision": "street",
+      "source_address": "Via dei Normanni, 8-10 – Santa Severa",
+      "source_town": "Santa Marinella",
+      "matched_address": "Via dei Normanni, Santa Severa, Santa Marinella, Roma, Lazio, Italia",
+      "source_url": "https://www.openstreetmap.org/way/105145685",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-109": {
+      "lat": 42.0992969,
+      "lng": 11.7933353,
+      "precision": "street",
+      "source_address": "Via Amba Aradam, 25",
+      "source_town": "Civitavecchia",
+      "matched_address": "Via Amba Aradam, Borgo Odescalchi, Civitavecchia, Roma, Lazio, 00053, Italia",
+      "source_url": "https://www.openstreetmap.org/way/60137355",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-043": {
+      "lat": 41.296023,
+      "lng": 13.7803507,
+      "precision": "street",
+      "source_address": "Via Cerri Aprano",
+      "source_town": "Santi Cosma e Damiano",
+      "matched_address": "Via Cerri Aprano, Santi Cosma e Damiano, Latina, Lazio, 04021, Italia",
+      "source_url": "https://www.openstreetmap.org/way/108380704",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-042": {
+      "lat": 41.296023,
+      "lng": 13.7803507,
+      "precision": "street",
+      "source_address": "Via Cerri Aprano",
+      "source_town": "Santi Cosma e Damiano",
+      "matched_address": "Via Cerri Aprano, Santi Cosma e Damiano, Latina, Lazio, 04021, Italia",
+      "source_url": "https://www.openstreetmap.org/way/108380704",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-084": {
+      "lat": 42.1699967,
+      "lng": 12.5898538,
+      "precision": "street",
+      "source_address": "Via Filippo Turati, 2–4",
+      "source_town": "Fiano Romano",
+      "matched_address": "Via Filippo Turati, Fiano Romano, Roma, Lazio, 00065, Italia",
+      "source_url": "https://www.openstreetmap.org/way/51125395",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-107": {
+      "lat": 41.8266535,
+      "lng": 13.1345228,
+      "precision": "street",
+      "source_address": "Via Prenestina, 95",
+      "source_town": "Piglio",
+      "matched_address": "Via Prenestina, Piglio, Frosinone, Lazio, Italia",
+      "source_url": "https://www.openstreetmap.org/way/192327068",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-103": {
+      "lat": 41.9080863,
+      "lng": 12.4101118,
+      "precision": "street",
+      "source_address": "Via Giambattista Soria, 13",
+      "source_town": "Roma",
+      "matched_address": "Via Giambattista Soria, Municipio Roma XIV, Roma, Lazio, 00167, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27797743",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-047": {
+      "lat": 41.296023,
+      "lng": 13.7803507,
+      "precision": "street",
+      "source_address": "Via Cerri Aprano",
+      "source_town": "Santi Cosma e Damiano",
+      "matched_address": "Via Cerri Aprano, Santi Cosma e Damiano, Latina, Lazio, 04021, Italia",
+      "source_url": "https://www.openstreetmap.org/way/108380704",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-005": {
+      "lat": 41.8816172,
+      "lng": 12.3980344,
+      "precision": "street",
+      "source_address": "Via dei Bevilacqua, 43",
+      "source_town": "Roma",
+      "matched_address": "Via dei Bevilacqua, Colle Aurelio, Municipio Roma XII, Roma, Lazio, 00163, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27777482",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-003": {
+      "lat": 41.8816172,
+      "lng": 12.3980344,
+      "precision": "street",
+      "source_address": "Via dei Bevilacqua, 43",
+      "source_town": "Roma",
+      "matched_address": "Via dei Bevilacqua, Colle Aurelio, Municipio Roma XII, Roma, Lazio, 00163, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27777482",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-002": {
+      "lat": 41.8816172,
+      "lng": 12.3980344,
+      "precision": "street",
+      "source_address": "Via dei Bevilacqua, 43",
+      "source_town": "Roma",
+      "matched_address": "Via dei Bevilacqua, Colle Aurelio, Municipio Roma XII, Roma, Lazio, 00163, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27777482",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-004": {
+      "lat": 41.8816172,
+      "lng": 12.3980344,
+      "precision": "street",
+      "source_address": "Via dei Bevilacqua, 43",
+      "source_town": "Roma",
+      "matched_address": "Via dei Bevilacqua, Colle Aurelio, Municipio Roma XII, Roma, Lazio, 00163, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27777482",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-008": {
+      "lat": 41.8561613,
+      "lng": 12.4527739,
+      "precision": "street",
+      "source_address": "Viale Prospero Colonna, 46",
+      "source_town": "Roma",
+      "matched_address": "Viale Prospero Colonna, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/122371535",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-007": {
+      "lat": 41.8561613,
+      "lng": 12.4527739,
+      "precision": "street",
+      "source_address": "Viale Prospero Colonna, 46",
+      "source_town": "Roma",
+      "matched_address": "Viale Prospero Colonna, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/122371535",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-006": {
+      "lat": 41.8561613,
+      "lng": 12.4527739,
+      "precision": "street",
+      "source_address": "Viale Prospero Colonna, 46",
+      "source_town": "Roma",
+      "matched_address": "Viale Prospero Colonna, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/122371535",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-011": {
+      "lat": 41.8792702,
+      "lng": 12.4525982,
+      "precision": "street",
+      "source_address": "Via Sesto Celere, 16–18–20",
+      "source_town": "Roma",
+      "matched_address": "Via Sesto Celere, Monteverde, Municipio Roma XII, Roma, Lazio, 00152, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27874902",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-010": {
+      "lat": 41.8792702,
+      "lng": 12.4525982,
+      "precision": "street",
+      "source_address": "Via Sesto Celere, 16–18–20",
+      "source_town": "Roma",
+      "matched_address": "Via Sesto Celere, Monteverde, Municipio Roma XII, Roma, Lazio, 00152, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27874902",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-015": {
+      "lat": 41.7137958,
+      "lng": 12.690639,
+      "precision": "street",
+      "source_address": "Via della Madonnina, 1",
+      "source_town": "Genzano di Roma",
+      "matched_address": "Via della Madonnina, Borgo Vecchio, Ville di Nemi, Genzano di Roma, Roma, Lazio, 00045, Italia",
+      "source_url": "https://www.openstreetmap.org/way/86250167",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-018": {
+      "lat": 41.7137958,
+      "lng": 12.690639,
+      "precision": "street",
+      "source_address": "Via della Madonnina, 1",
+      "source_town": "Genzano di Roma",
+      "matched_address": "Via della Madonnina, Borgo Vecchio, Ville di Nemi, Genzano di Roma, Roma, Lazio, 00045, Italia",
+      "source_url": "https://www.openstreetmap.org/way/86250167",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-016": {
+      "lat": 41.7137958,
+      "lng": 12.690639,
+      "precision": "street",
+      "source_address": "Via della Madonnina, 1",
+      "source_town": "Genzano di Roma",
+      "matched_address": "Via della Madonnina, Borgo Vecchio, Ville di Nemi, Genzano di Roma, Roma, Lazio, 00045, Italia",
+      "source_url": "https://www.openstreetmap.org/way/86250167",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-017": {
+      "lat": 41.7137958,
+      "lng": 12.690639,
+      "precision": "street",
+      "source_address": "Via della Madonnina, 1",
+      "source_town": "Genzano di Roma",
+      "matched_address": "Via della Madonnina, Borgo Vecchio, Ville di Nemi, Genzano di Roma, Roma, Lazio, 00045, Italia",
+      "source_url": "https://www.openstreetmap.org/way/86250167",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-104": {
+      "lat": 41.9085295,
+      "lng": 12.461081,
+      "precision": "street",
+      "source_address": "Via Germanico, 198",
+      "source_town": "Roma",
+      "matched_address": "Via Germanico, Prati, Municipio Roma I, Roma, Lazio, 00192, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1342284943",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-115": {
+      "lat": 42.4483245,
+      "lng": 12.8203396,
+      "precision": "street",
+      "source_address": "Via Cese, 12",
+      "source_town": "Rieti",
+      "matched_address": "Via Cese, Rieti, Lazio, 02100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/61047488",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-110": {
+      "lat": 42.0857743,
+      "lng": 12.3098969,
+      "precision": "street",
+      "source_address": "Via Giacomo Cusmano, 28",
+      "source_town": "Anguillara Sabazia",
+      "matched_address": "Via Giacomo Cusmano, Anguillara Sabazia, Roma, Lazio, 00061, Italia",
+      "source_url": "https://www.openstreetmap.org/way/39548773",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-050": {
+      "lat": 41.7763547,
+      "lng": 13.2755032,
+      "precision": "street",
+      "source_address": "Borgo San Rocco,2",
+      "source_town": "Trivigliano",
+      "matched_address": "Borgo San Rocco, San Giovanni-Patoni, Trivigliano, Frosinone, Lazio, 03010, Italia",
+      "source_url": "https://www.openstreetmap.org/way/175579260",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-097": {
+      "lat": 41.5505428,
+      "lng": 13.6611309,
+      "precision": "street",
+      "source_address": "Via Montello, 22",
+      "source_town": "Roccasecca",
+      "matched_address": "Via Montello, Roccasecca, Frosinone, Lazio, 03038, Italia",
+      "source_url": "https://www.openstreetmap.org/way/169050061",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-106": {
+      "lat": 41.9400201,
+      "lng": 12.5332035,
+      "precision": "street",
+      "source_address": "Via Moncenisio, 20",
+      "source_town": "Roma",
+      "matched_address": "Via Moncenisio, Monte Sacro, Municipio Roma III, Roma, Lazio, 00141, Italia",
+      "source_url": "https://www.openstreetmap.org/way/22947161",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-100": {
+      "lat": 41.9874436,
+      "lng": 12.4042662,
+      "precision": "street",
+      "source_address": "Via della Cappelletta della Giustiniana, 119",
+      "source_town": "Roma",
+      "matched_address": "Via della Cappelletta della Giustiniana, Giustiniana, Municipio Roma XV, Roma, Lazio, 00189, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27306767",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-101": {
+      "lat": 41.5224094,
+      "lng": 13.6971371,
+      "precision": "street",
+      "source_address": "Via per la Stazione d’Aquino",
+      "source_town": "Castrocielo",
+      "matched_address": "Via per la Stazione d'Aquino, Capodacqua, Castrocielo, Frosinone, Lazio, 03030, Italia",
+      "source_url": "https://www.openstreetmap.org/way/101446574",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-009": {
+      "lat": 41.8561613,
+      "lng": 12.4527739,
+      "precision": "street",
+      "source_address": "Viale Prospero Colonna, 46",
+      "source_town": "Roma",
+      "matched_address": "Viale Prospero Colonna, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/122371535",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-102": {
+      "lat": 41.5224094,
+      "lng": 13.6971371,
+      "precision": "street",
+      "source_address": "Via per la Stazione d’Aquino",
+      "source_town": "Castrocielo",
+      "matched_address": "Via per la Stazione d'Aquino, Capodacqua, Castrocielo, Frosinone, Lazio, 03030, Italia",
+      "source_url": "https://www.openstreetmap.org/way/101446574",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-099": {
+      "lat": 41.9874436,
+      "lng": 12.4042662,
+      "precision": "street",
+      "source_address": "Via della Cappelletta della Giustiniana, 119",
+      "source_town": "Roma",
+      "matched_address": "Via della Cappelletta della Giustiniana, Giustiniana, Municipio Roma XV, Roma, Lazio, 00189, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27306767",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-001": {
+      "lat": 41.8816172,
+      "lng": 12.3980344,
+      "precision": "street",
+      "source_address": "Via dei Bevilacqua, 43",
+      "source_town": "Roma",
+      "matched_address": "Via dei Bevilacqua, Colle Aurelio, Municipio Roma XII, Roma, Lazio, 00163, Italia",
+      "source_url": "https://www.openstreetmap.org/way/27777482",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MOD-014": {
+      "lat": 41.7137958,
+      "lng": 12.690639,
+      "precision": "street",
+      "source_address": "Via della Madonnina, 1",
+      "source_town": "Genzano di Roma",
+      "matched_address": "Via della Madonnina, Borgo Vecchio, Ville di Nemi, Genzano di Roma, Roma, Lazio, 00045, Italia",
+      "source_url": "https://www.openstreetmap.org/way/86250167",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MS775-REV-CTC2": {
+      "lat": 42.1414454,
+      "lng": 12.5405146,
+      "precision": "street",
+      "source_address": "Via Morlupo, 94",
+      "source_town": "Capena",
+      "matched_address": "Via Morlupo, Capena, Roma, Lazio, 00067, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1124671632",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MS775-REV-CD": {
+      "lat": 42.1414454,
+      "lng": 12.5405146,
+      "precision": "street",
+      "source_address": "Via Morlupo, 94",
+      "source_town": "Capena",
+      "matched_address": "Via Morlupo, Capena, Roma, Lazio, 00067, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1124671632",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "moduli:MS775-NO-CASAGIOIA": {
+      "lat": 41.770032,
+      "lng": 12.6547848,
+      "precision": "address",
+      "source_address": "Piazza Garibaldi, 8",
+      "source_town": "Marino",
+      "matched_address": "Osteria La Piazzetta, 8, Piazza Giuseppe Garibaldi, Marino, Roma, Lazio, 00073, Italia",
+      "source_url": "https://www.openstreetmap.org/node/5731935686",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI-002": {
+      "lat": 41.9037232,
+      "lng": 12.4937945,
+      "precision": "address",
+      "source_address": "Piazza San Bernardo 109, Roma; area età evolutiva anche Via Nizza 63",
+      "source_town": "Roma",
+      "matched_address": "109, Piazza San Bernardo, Castro Pretorio, Municipio Roma I, Roma, Lazio, 00187, Italia",
+      "source_url": "https://www.openstreetmap.org/node/8626237470",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI-007": {
+      "lat": 41.8813936,
+      "lng": 12.5906424,
+      "precision": "address",
+      "source_address": "Via Francesco Tovaglieri 17, Roma",
+      "source_town": "Roma",
+      "matched_address": "CS Consulenza sulla Sicurezza S.r.l., 17, Via Francesco Tovaglieri, Tor Tre Teste, Alessandrino, Municipio Roma V, Roma, Lazio, 00155, Italia",
+      "source_url": "https://www.openstreetmap.org/node/6430376534",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI-008": {
+      "lat": 41.8530533,
+      "lng": 12.4569673,
+      "precision": "address",
+      "source_address": "Via della Magliana Nuova 166, Roma",
+      "source_town": "Roma",
+      "matched_address": "166, Via della Magliana Nuova, Municipio Roma XI, Roma, Lazio, 00149, Italia",
+      "source_url": "https://www.openstreetmap.org/way/407194728",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI-009": {
+      "lat": 41.9209473,
+      "lng": 12.4627786,
+      "precision": "street",
+      "source_address": "Via Bassano del Grappa 19, Roma",
+      "source_town": "Roma",
+      "matched_address": "Via Bassano del Grappa, Della Vittoria, Città giudiziaria, Municipio Roma I, Roma, Lazio, 00195, Italia",
+      "source_url": "https://www.openstreetmap.org/way/20904925",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI-010": {
+      "lat": 41.8993716,
+      "lng": 12.4668912,
+      "precision": "address",
+      "source_address": "Corso Vittorio Emanuele II 305, Roma",
+      "source_town": "Roma",
+      "matched_address": "305, Corso Vittorio Emanuele Secondo, Ponte, Municipio Roma I, Roma, Lazio, 00186, Italia",
+      "source_url": "https://www.openstreetmap.org/node/4869726879",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI76-002": {
+      "lat": 41.7453814,
+      "lng": 13.1544416,
+      "precision": "street",
+      "source_address": "Via Giovanni Giminiani 17, Anagni",
+      "source_town": "Anagni",
+      "matched_address": "Via Giovanni Giminiani, Anagni, Frosinone, Lazio, 03012, Italia",
+      "source_url": "https://www.openstreetmap.org/way/1551306672",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI76-004": {
+      "lat": 41.4740863,
+      "lng": 12.9076628,
+      "precision": "street",
+      "source_address": "Via Custoza 3, Latina; ingresso da confermare (anche 3/B nel sito)",
+      "source_town": "Latina",
+      "matched_address": "Via Custoza, Villaggio Trieste, Latina, Lazio, 04100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/122529610",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI76-005": {
+      "lat": 42.404941,
+      "lng": 12.8672074,
+      "precision": "street",
+      "source_address": "Via Nuova 169/A, Rieti; sede della prestazione da confermare alla segreteria",
+      "source_town": "Rieti",
+      "matched_address": "Via Nuova, Centro storico, Piazza Tevere, Rieti, Lazio, 02100, Italia",
+      "source_url": "https://www.openstreetmap.org/way/34995159",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "privati:PRI76-006": {
+      "lat": 41.4537943,
+      "lng": 12.8828183,
+      "precision": "address",
+      "source_address": "Viale Le Corbusier 393, Latina",
+      "source_town": "Latina",
+      "matched_address": "Centro Polifunzionale Pontino (Ex Università), 393, Viale Le Corbusier, Quartiere Italia, Latina, Lazio, 04100, Italia",
+      "source_url": "https://www.openstreetmap.org/relation/8390088",
+      "checked_at": "2026-09-21",
+      "method": "Nominatim: confronto automatico via/comune/civico; ingresso non verificato"
+    },
+    "rete:VT-12": {
+      "lat": 42.4098964,
+      "lng": 12.1091818,
+      "precision": "address",
+      "source_address": "Via E. Fermi 15, Viterbo",
+      "source_town": "Viterbo",
+      "matched_address": "15, Via Enrico Fermi, Pietrare, Viterbo, Lazio, 01100, Italia",
+      "source_url": "https://www.openstreetmap.org/node/4464545789",
+      "checked_at": "2026-09-21",
+      "method": "Stesso comune, via Fermi e civico 15; abbreviazione E. risolta confrontando indirizzo completo del presidio TSMREE Viterbo. Posizione del civico, ingresso non verificato.",
+      "derived_from_key": "rete:NET-072"
+    }
+  },
+  "unlocated": [
+    {
+      "key": "rete:R1-01",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:R1-08",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R1-09",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R1-10",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R1-15",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R1-16",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R1-19",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R2-10",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:R2-15",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R3-05",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-01",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-02",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-05",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-06",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-07",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R4-08",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-02",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-04",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-08",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-09",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-10",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R5-12",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R6-01",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R6-02",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R6-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R6-05",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R6-06",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:R6-07",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-01",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:RI-02",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-04",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-05",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-06",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-07",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-08",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-09",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-10",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-12",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-13",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:RI-14",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:VT-01",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:VT-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-04",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-05",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-06",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-08",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-09",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-10",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-13",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-14",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-15",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-17",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-18",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-19",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-21",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-22",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:VT-23",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-01",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-02",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-05",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-07",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-08",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-09",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-10",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-11",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-13",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:FR-14",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:FR-15",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:LT-01",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-02",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-03",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-04",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-06",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-07",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-10",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:LT-15",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-002",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-007",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-008",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-017",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-018",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-019",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-023",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-032",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-033",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-039",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-040",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-041",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-042",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-050",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-051",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-052",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-053",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-054",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-055",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-057",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-061",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-062",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-065",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-066",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-069",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-070",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-073",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-074",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-075",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-076",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-082",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-084",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-085",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-090",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-091",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-092",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-027",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-030",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-035",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-037",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-012",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-015",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-043",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-044",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-045",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-046",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-047",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-048",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "rete:NET-056",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-063",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-064",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-077",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-078",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-079",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-081",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-083",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:NET-093",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R1-006",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R1-018",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R1-019",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R1-020",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R1-021",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R1-023",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R2-001",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R2-009",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R2-012",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-R3-002",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-RI-001",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-RI-002",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-VT-002",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-VT-003",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-VT-004",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-FR-001",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-FR-002",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "rete:PUB72-FR-003",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-038",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-091",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-064",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-094",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-081",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-082",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-013",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-075",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-076",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-025",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-026",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-027",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-028",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-024",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-023",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-069",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-070",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-051",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-065",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-045",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-040",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-039",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-041",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-087",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-067",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-083",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-063",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-068",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-071",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-072",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-073",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-074",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-085",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-029",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-061",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-062",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-066",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-012",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-021",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-020",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-079",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-080",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-077",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-078",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-105",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-095",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-049",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-056",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-052",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-053",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-092",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-044",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-093",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-060",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-114",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-113",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-112",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-111",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-055",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-033",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-032",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-031",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-059",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "moduli:MOD-096",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-054",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-098",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-037",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-036",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-035",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-022",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-030",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-019",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MOD-034",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "moduli:MS775-REV-CTC1",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "privati:PRI-001",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "privati:PRI-003",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "privati:PRI-004",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "privati:PRI-005",
+      "reason": "Indirizzo non sufficientemente documentato"
+    },
+    {
+      "key": "privati:PRI-006",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "privati:PRI-011",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "privati:PRI76-001",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    },
+    {
+      "key": "privati:PRI76-003",
+      "reason": "Nessuna corrispondenza geografica abbastanza univoca"
+    }
+  ],
+  "stats": {
+    "services": 432,
+    "address": 55,
+    "street": 140,
+    "unlocated": 237,
+    "queries_cached": 301,
+    "requests_this_run": 301,
+    "reviewed_address_aliases": 1
+  }
+}

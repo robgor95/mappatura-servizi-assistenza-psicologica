@@ -10,6 +10,9 @@ function originLabel(r){if(r.origin==='rete')return 'Servizio pubblico / SSN';if
 function ssnNote(r){if(r.origin==='rete')return 'Servizio della rete pubblica. Verifica modalità di accesso e competenza territoriale.';if(r.origin==='privati')return 'Prestazioni private: costi e modalità vanno confermati con la struttura.';return 'Rapporto con il SSN: '+evidenceLabels[r.ssn]+'. Verifica condizioni e periodo nelle fonti.';}
 let D,rows=[],filtered=[],state={},notices=[],returnKey='',timer,lastTyping=0,openKey='';
 const dialog=$('svc-dialog');
+function mapURL(r){return '/mappa.html?presidio='+encodeURIComponent(r.key);}
+function managementLabel(v){const text=String(v||'');return /^Rete ASL\s*[—–-]\s*dato ereditato V\d/i.test(text)?'Rete ASL: attribuzione precedente, gestione da confermare':text;}
+
 function info(message){const target=dialog.open?$('svc-detail-feedback'):$('toast');if(target){target.textContent=message;target.hidden=false;}if(!dialog.open)setTimeout(()=>{$('toast').hidden=true;},6000);}
 function field(label,value,wide){return '<div'+(wide?' class="wide"':'')+'><dt>'+esc(label)+'</dt><dd>'+esc(A.nd(value))+'</dd></div>';}
 function sourceLinks(s){return s.length?'<ol class="svc-detail-sources">'+s.map(u=>'<li><a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(u)+'</a></li>').join('')+'</ol>':'<p>Nessuna fonte specifica è collegata a questo risultato. Consulta la pagina Metodo e fonti.</p>';}
@@ -20,7 +23,7 @@ function commit(next,push=true){state={...next};const u=serialize(state);if(loca
 function updateForm(){A.filterKeys.forEach(k=>{const el=$('svc-'+k);if(el)el.value=state[k]||'';});$('svc-order').value=state.ordine||'nome';}
 function populate(){
   const mapping={tipo:'type',sottotipo:'subtype',provincia:'territory',asl:'asl',comune:'town',regime:'regime',ambito:'domains'};
-  const territory={RM:'Roma / territorio ASL (RM)',FR:'Frosinone (FR)',LT:'Latina (LT)',RI:'Rieti (RI)',VT:'Viterbo (VT)',ND:'Non documentato'};
+  const territory={RM:'Roma (RM)',FR:'Frosinone (FR)',LT:'Latina (LT)',RI:'Rieti (RI)',VT:'Viterbo (VT)',ND:'Non documentato'};
   for(const [key,prop] of Object.entries(mapping)){
     const values=[...new Set(rows.flatMap(r=>Array.isArray(r[prop])?r[prop]:[r[prop]]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'it'));
     values.forEach(value=>{const o=document.createElement('option');o.value=value;o.textContent=key==='provincia'?(territory[value]||value):value;$('svc-'+key).appendChild(o);});
@@ -43,21 +46,21 @@ function stateFromURL(){
 }
 function chipLabel(key,value){
   if(key==='percorso')return A.labels[value]||value;
-  if(key==='elenco')return value==='convenzionate'?'Res/semi V7.3 · leggere gli stati SSN':value==='pending'?'Moduli da verificare V7.3':value;
+  if(key==='elenco')return value==='convenzionate'?'Residenziali e semiresidenziali: verifica il rapporto SSN':value==='pending'?'Strutture da verificare':value;
   const el=$('svc-'+key);if(el&&el.tagName==='SELECT')return el.options[el.selectedIndex]?.textContent||value;
   return value;
 }
 function card(r){
   const privateStyle=r.origin==='rete'?'':' private';
-  return '<article class="svc-card"><div class="svc-tags"><span class="svc-tag'+privateStyle+'">'+esc(originLabel(r))+'</span><span class="svc-tag plain">'+esc(r.regime)+'</span></div><h3><a href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'">'+esc(r.name)+'</a></h3><p class="svc-module">'+esc(r.subtype)+'</p><p class="svc-location">'+esc(r.town)+' · '+esc(r.asl)+'</p><p class="svc-location">'+esc(r.address)+'</p><p class="svc-admin-note">'+esc(ssnNote(r))+'</p><div class="svc-card-footer">'+(r.phone?'<a href="tel:'+esc(r.phone)+'" aria-label="Chiama '+esc(r.name)+'">Telefono</a>':'')+'<a href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'" data-section="accesso">Come si accede</a><a class="button secondary" href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'">Dettagli e contatti <span aria-hidden="true">→</span></a></div><p class="svc-record-meta">Informazioni verificate: '+esc(r.date||'data non documentata')+'</p></article>';
+  return '<article class="svc-card"><div class="svc-tags"><span class="svc-tag'+privateStyle+'">'+esc(originLabel(r))+'</span><span class="svc-tag plain">'+esc(r.regime==='Non distinto nel dataset'?'Modalità non specificata':r.regime)+'</span></div><h3><a href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'">'+esc(r.name)+'</a></h3><p class="svc-module">'+esc(r.subtype)+'</p><p class="svc-location">'+esc(r.town)+' · '+esc(r.asl)+'</p><p class="svc-location">'+esc(r.address)+'</p><p class="svc-admin-note">'+esc(ssnNote(r))+'</p><div class="svc-card-footer"><a href="'+esc(mapURL(r))+'">Mappa</a>'+(r.phone?'<a href="tel:'+esc(r.phone)+'" aria-label="Chiama '+esc(r.name)+'">Telefono</a>':'')+'<a href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'" data-section="accesso">Come si accede</a><a class="button secondary" href="'+esc(urlFor(r))+'" data-open="'+esc(r.key)+'">Dettagli e contatti <span aria-hidden="true">→</span></a></div><p class="svc-record-meta">Informazioni verificate: '+esc(r.date||'data non documentata')+'</p></article>';
 }
 function detail(r){
   const v=r.raw,isPrivate=r.origin==='privati';
   const serviceAnchor=({'CSM':'csm','SerD':'serd','DSM':'dsm','SPDC':'spdc','STPIT':'stpit','SRTR':'srtr','SRSR':'srsr','Centro diurno':'centro-diurno','TSMREE/NPIA':'tsmree-npia','DCA/DNA':'dca-dna'})[r.type];
-  const intro='<div class="svc-tags"><span class="svc-tag">'+esc(originLabel(r))+'</span><span class="svc-tag plain">'+esc(r.regime)+'</span></div><h2 id="svc-detail-title" tabindex="-1">'+esc(r.name)+'</h2><p class="svc-subtitle">'+esc(r.subtype)+' · '+esc(r.town)+'</p>';
-  const buttons='<div class="svc-detail-actions">'+(r.phone?'<a class="button" href="tel:'+esc(r.phone)+'">Chiama</a>':'')+(r.email?'<a class="button secondary" href="mailto:'+esc(r.email)+'">Email</a>':'')+'<button class="text-button" data-detail-share type="button">Condividi</button><button class="text-button" data-detail-print type="button">Stampa</button><a class="text-button" href="/orientamento-servizi.html'+(serviceAnchor?'#'+serviceAnchor:'')+'">Che cos’è questo servizio? →</a></div><p id="svc-detail-feedback" role="status" class="micro" hidden></p>';
+  const intro='<div class="svc-tags"><span class="svc-tag">'+esc(originLabel(r))+'</span><span class="svc-tag plain">'+esc(r.regime==='Non distinto nel dataset'?'Modalità non specificata':r.regime)+'</span></div><h2 id="svc-detail-title" tabindex="-1">'+esc(r.name)+'</h2><p class="svc-subtitle">'+esc(r.subtype)+' · '+esc(r.town)+'</p>';
+  const buttons='<div class="svc-detail-actions"><a class="button secondary" href="'+esc(mapURL(r))+'">Vedi sulla mappa</a>'+(r.phone?'<a class="button" href="tel:'+esc(r.phone)+'">Chiama</a>':'')+(r.email?'<a class="button secondary" href="mailto:'+esc(r.email)+'">Email</a>':'')+'<button class="text-button" data-detail-share type="button">Condividi</button><button class="text-button" data-detail-print type="button">Stampa</button><a class="text-button" href="/orientamento-servizi.html'+(serviceAnchor?'#'+serviceAnchor:'')+'">Che cos’è questo servizio? →</a></div><p id="svc-detail-feedback" role="status" class="micro" hidden></p>';
   const section=(name,content,id)=>'<section class="svc-detail-section"'+(id?' id="'+id+'" tabindex="-1"':'')+'><h3>'+name+'</h3><dl class="svc-detail-fields">'+content+'</dl></section>';
-  let body=section('Dove si trova',field('Tipo di servizio',r.subtype,true)+field('Comune',r.town)+field('ASL / territorio',r.asl)+field('Indirizzo',r.address,true)+field('Gestione',v.gestore||v.gestione||v.natura,true));
+  let body=section('Dove si trova',field('Tipo di servizio',r.subtype,true)+field('Comune',r.town)+field('ASL / territorio',r.asl)+field('Indirizzo',r.address,true)+field('Gestione',managementLabel(v.gestore||v.gestione||v.natura),true));
   body+=section('Come si accede',field('Accesso / prenotazione',v.accesso||v.ammissione||v.prenotazione,true)+field('Requisiti o limitazioni',v.criteri_limitazioni,true)+field('Documenti richiesti',v.documenti_ingresso,true)+field('Durata indicata',v.durata_percorso,true)+field('Accesso da altri territori',v.mobilita_intraregionale||v.accesso_fuori_lazio_stato||v.accesso_extraregionale,true),'svc-accesso');
   body+=section('A chi è rivolto e cosa offre',field('Destinatari',v.destinatari,true)+field('Attività / servizi',r.services,true)+field('Professionisti indicati',v.equipe||v.equipe_professionisti,true)+field('Accessibilità',v.accessibilita,true));
   body+=section('Contatti e orari',field('Telefono',v.telefono||v.contatti,true)+field('Email',v.email||(isPrivate?r.email:''),true)+field('Orari',v.orari,true));
@@ -90,6 +93,8 @@ function renderTechnical(){
   $('svc-tech-content').innerHTML=h;
 }
 function render(){
+  const mapLink=$('svc-map-results');if(mapLink){const p=new URLSearchParams();A.filterKeys.forEach(k=>{if(state[k])p.set(k,state[k]);});mapLink.href='/mappa.html'+(p.size?'?'+p:'');}
+
   updateForm();
   filtered=rows.filter(r=>A.matches(r,state));
   const prop=({comune:'town',tipo:'type'})[state.ordine]||'name';
