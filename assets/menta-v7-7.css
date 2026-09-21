@@ -34,3 +34,37 @@ input,select{border-color:#7c9589;border-radius:12px}input::placeholder{color:#6
 @media(min-width:1100px){.menta-input-row .button{flex:0 0 auto;min-width:285px}}
 @media(max-width:650px){.emergency-strip .container{flex-direction:row}.emergency-strip .container>span{flex:1;max-width:none}.header-inner{padding-block:12px;gap:8px}}
 .menta-crisis{grid-template-columns:1fr}.menta-crisis .menta-welcome{display:none}.menta-crisis .menta-home-copy{max-width:850px}.menta-crisis h1{max-width:none}
+
+
+/* V7.7.1 · motion states: subtle, optional and entirely local. */
+@keyframes mentaFloat{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(0,-5px,0) rotate(.6deg)}}
+@keyframes mentaListen{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(2px,-3px,0) rotate(1.6deg)}}
+@keyframes mentaSearch{0%,100%{transform:translate3d(-2px,0,0) rotate(-.8deg)}50%{transform:translate3d(3px,-2px,0) rotate(1deg)}}
+@keyframes mentaFound{0%{transform:translateY(0) scale(1)}35%{transform:translateY(-7px) scale(1.025)}70%{transform:translateY(1px) scale(.995)}100%{transform:translateY(0) scale(1)}}
+@keyframes mentaChoice{0%,100%{transform:rotate(-.5deg)}50%{transform:translateY(-3px) rotate(.8deg)}}
+@keyframes mentaEmpty{0%,100%{transform:translateX(0) rotate(0)}33%{transform:translateX(-3px) rotate(-1deg)}66%{transform:translateX(3px) rotate(1deg)}}
+@keyframes mentaAccessorySearch{0%,100%{transform:rotate(-3deg) scale(1)}50%{transform:rotate(4deg) scale(1.035)}}
+
+.menta-figure[data-state="idle"]{animation:mentaFloat 5.8s ease-in-out infinite}
+.menta-figure[data-state="ambient"]{animation:mentaFloat 7.5s ease-in-out infinite}
+.menta-figure[data-state="listening"]{animation:mentaListen 2.6s ease-in-out infinite}
+.menta-figure[data-state="searching"]{animation:mentaSearch 1.8s ease-in-out infinite}
+.menta-figure[data-state="searching"]>svg,.menta-figure[data-state="error"]>svg{animation:mentaAccessorySearch 2.1s ease-in-out infinite;transform-origin:50% 70%}
+.menta-figure[data-state="found"]{animation:mentaFound .72s cubic-bezier(.2,.7,.2,1) 1}
+.menta-figure[data-state="choice"]{animation:mentaChoice 3.2s ease-in-out infinite}
+.menta-figure[data-state="empty"],.menta-figure[data-state="error"]{animation:mentaEmpty 3.4s ease-in-out infinite}
+.menta-figure[data-state="urgent"]{animation:none!important;transform:none!important}
+.menta-home[data-menta-state="searching"] .menta-welcome:before{filter:saturate(1.04)}
+.menta-home[data-menta-state="found"] .menta-welcome:before{filter:saturate(1.08)}
+.menta-results[data-state="choices"] .menta-figure,.menta-results[data-state="route"] .menta-figure{display:block}
+.page-404 .menta-guide{margin-top:4px}
+.page-404 .menta-guide .menta-figure{width:92px}
+
+@media(max-width:650px){
+  .menta-figure[data-state="idle"],.menta-figure[data-state="ambient"]{animation-duration:6.8s}
+  .page-404 .menta-guide .menta-figure{width:62px}
+}
+@media(prefers-reduced-motion:reduce){
+  .menta-figure[data-state]{animation:none!important;transform:none!important}
+  .menta-figure[data-state]>svg{animation:none!important}
+}
