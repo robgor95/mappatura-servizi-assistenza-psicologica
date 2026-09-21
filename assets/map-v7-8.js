@@ -79,7 +79,7 @@ function activate(){
   if(!window.L){tell('La libreria della mappa non è disponibile. Usa l’elenco o riprova ricaricando la pagina.');return;}
   try{
     $('map-canvas').hidden=false;map=L.map('map-canvas',{scrollWheelZoom:false,zoomAnimation:!prefersReduced(),fadeAnimation:!prefersReduced(),markerZoomAnimation:!prefersReduced(),attributionControl:true}).setView([41.98,12.68],8);
-    map.attributionControl.setPrefix(false);layer=L.layerGroup().addTo(map);
+    map.attributionControl.setPrefix(false);map.zoomControl.setPosition('bottomleft');layer=L.layerGroup().addTo(map);
     tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{minZoom:6,maxZoom:18,keepBuffer:1,updateWhenIdle:true,referrerPolicy:'origin',attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>'});
     tiles.on('tileerror',()=>{if(++tileErrors>=3){$('map-tile-warning').hidden=false;}});tiles.on('tileload',()=>{tileErrors=0;});tiles.addTo(map);
     map.zoomControl._zoomInButton.setAttribute('aria-label','Ingrandisci la mappa');map.zoomControl._zoomOutButton.setAttribute('aria-label','Riduci la mappa');

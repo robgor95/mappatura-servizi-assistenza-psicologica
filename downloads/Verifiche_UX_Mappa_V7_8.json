@@ -1,6 +1,6 @@
 {
   "version": "7.8",
-  "tested_at": "2026-09-21T21:44:44.338Z",
+  "tested_at": "2026-09-21T21:49:01.799Z",
   "base": "http://127.0.0.1:8123",
   "osm_tiles": "mocked; no external map-tile requests during automated checks",
   "tests": [
