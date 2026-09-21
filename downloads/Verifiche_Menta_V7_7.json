@@ -1,5 +1,98 @@
 {
   "version": "7.7",
-  "status": "preparazione_test",
-  "baseline_commit": "b52e4eb25f1226312e99fd9f82bd61a0bfacc876"
+  "status": "completato",
+  "verified_at": "2026-09-21",
+  "baseline_commit": "b52e4eb25f1226312e99fd9f82bd61a0bfacc876",
+  "implementation_commit": "a0ba0141f2937b8324e7f1f7deb0a70afc697e8f",
+  "deterministic_tests": {
+    "runner": "GitHub Actions",
+    "workflow_run_id": 35625957925,
+    "job_id": 106420267495,
+    "passed": 554,
+    "total": 554,
+    "status": "success"
+  },
+  "browser_qa": {
+    "method": "Playwright con page.set_content, asset locali e dataset locale simulato; usato per aggirare la policy Chromium dell'ambiente che blocca la navigazione URL",
+    "viewports": [360, 390, 768, 1440],
+    "pages": [
+      "index.html",
+      "servizi.html",
+      "archivio.html",
+      "universita.html",
+      "helpline.html",
+      "guide/index.html",
+      "qualita-dati.html",
+      "404.html"
+    ],
+    "passed": 225,
+    "total": 225,
+    "checks": [
+      "assenza overflow orizzontale",
+      "struttura H1",
+      "immagini e alt",
+      "assenza errori JavaScript nelle pagine campionate",
+      "campo Menta usabile su mobile",
+      "target interattivi >= 44px nei controlli principali",
+      "prefers-reduced-motion",
+      "ambiguita con scelta utente",
+      "focus da tastiera e ritorno focus",
+      "fallback senza corrispondenza",
+      "messaggio emergenza e numeri distinti",
+      "routing canonico CSM + territorio",
+      "microcopy privacy",
+      "conteggi directory e servizi"
+    ]
+  },
+  "accessibility_checks": {
+    "keyboard_focus": true,
+    "touch_targets": true,
+    "reduced_motion": true,
+    "horizontal_overflow": true,
+    "contrast_pairs_sampled": 10,
+    "contrast_pairs_wcag_aa_normal_text_passed": 10,
+    "lowest_sampled_contrast_ratio": 4.97,
+    "automated_axe_run": false,
+    "note": "axe-core non era disponibile nell'ambiente di esecuzione. I controlli automatici e mirati non costituiscono una certificazione di accessibilita."
+  },
+  "privacy_checks": {
+    "external_api_for_query": false,
+    "query_persistence": false,
+    "query_sent_to_analytics": false,
+    "raw_query_in_generated_routes": false,
+    "processing": "client-side"
+  },
+  "data_integrity": {
+    "search_records": 428,
+    "rete": 296,
+    "moduli": 115,
+    "privati": 17,
+    "original_ids_unique": true,
+    "original_data_and_download_bytes_preserved": true
+  },
+  "menta": {
+    "intents": 29,
+    "keyword_assignments": 250,
+    "unique_keywords": 246,
+    "unique_emergency_keywords": 37,
+    "routes": 37,
+    "destination_pages": 17,
+    "towns": 93,
+    "contextual_graphic_variants": 8
+  },
+  "cloudflare_pages": {
+    "implementation_commit_check": "success",
+    "check_id": 106420913119,
+    "deployment_id": "218760b9-9654-45a3-ba87-e2c58e2e65b4",
+    "preview_url": "https://218760b9.mappatura-servizi-assistenza-psicologica.pages.dev",
+    "provider_message": "Deployed successfully",
+    "note": "Il check ufficiale Cloudflare Pages su GitHub ha riportato deploy riuscito. L'ambiente di verifica non consente un fetch HTTP indipendente dei domini pages.dev."
+  },
+  "limitations": [
+    "L'orientatore usa vocabolario e regole deterministiche: non comprende liberamente ogni formulazione.",
+    "Non produce diagnosi, trattamenti personalizzati o inferenze cliniche.",
+    "Localita non presenti nel dizionario richiedono la selezione manuale nei filtri.",
+    "Disponibilita, gratuita e condizioni SSN non sono inferite dal testo dell'utente.",
+    "Il controllo browser mirato non sostituisce un audit WCAG completo con tecnologie assistive reali."
+  ]
 }
