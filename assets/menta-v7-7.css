@@ -68,3 +68,15 @@ input,select{border-color:#7c9589;border-radius:12px}input::placeholder{color:#6
   .menta-figure[data-state]{animation:none!important;transform:none!important}
   .menta-figure[data-state]>svg{animation:none!important}
 }
+
+
+/* V7.7.2 · user-facing guide and directory refinements. */
+.approach-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 22px}
+.approach-grid article{border:1px solid #d3e2d8;border-radius:16px;background:#fbfdfb;padding:18px;box-shadow:0 5px 20px #153d3608}
+.approach-grid h3{font-size:1rem;line-height:1.35;margin:0 0 8px;color:var(--ink)}
+.approach-grid p{font-size:.9rem;line-height:1.65;margin:0;color:var(--muted)}
+.directory-card-link{margin:14px 0 0;padding-top:12px;border-top:1px solid #d9e5dd}
+.directory-card-link a{font-weight:700}
+.svc-detail-sources{padding-left:1.2rem}
+.svc-detail-sources a{word-break:break-word}
+@media(max-width:650px){.approach-grid{grid-template-columns:1fr}.approach-grid article{padding:15px}}
