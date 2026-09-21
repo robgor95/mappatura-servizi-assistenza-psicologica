@@ -21,9 +21,9 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.7.5 — Integrazione multisede
+## Versione corrente V7.8 — UX e mappa dei presidi
 
-La produzione usa **V7.7.5** per l’interfaccia e l’overlay multisede, **V7.6** per il riesame documentale precedente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
+La produzione usa **V7.8** per l’interfaccia e l’overlay multisede, **V7.6** per il riesame documentale precedente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 
 Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. La V7.7.2 semplifica il linguaggio del frontend, sposta i dettagli di audit fuori dal percorso principale e amplia la guida al privato con scelta del professionista e approcci psicoterapeutici. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
 
@@ -109,3 +109,22 @@ Report e limiti del banco di prova Chromium: `downloads/Verifiche_UI_V7_5_1.json
 Header e footer sono HTML statico: nessun caricamento remoto del menu. I file navigation-v7-7-3.css/js migliorano la navigazione senza leggere o salvare bisogni. Quattro percorsi primari, Altro per directory e risorse, download secondari. I file PDF precedenti restano immutati e sono etichettati come tali.
 
 Controlli: `node tools/test-menta-v7-7.cjs` e `python tools/test-navigation-v7-7-3.py`. Gli strumenti Python richiedono BeautifulSoup e Playwright solo in sviluppo. Nessuna dipendenza serve al sito statico.
+
+## Mappa interattiva e correzioni UX — 7.8
+
+La mappa `/mappa.html` usa lo stesso adattatore e gli stessi 432 servizi della ricerca, inclusa l’integrazione multisede. La pagina `/giovani.html` offre quattro punti di accesso senza scegliere automaticamente TSMREE/NPIA. Ricerca mobile, titoli, etichette, menu e landmark sono stati corretti dopo l’audit UX.
+
+### Copertura geografica
+- **55** servizi localizzati a livello di indirizzo con OpenStreetMap/Nominatim: non è una verifica dell’ingresso.
+- **140** servizi con posizione indicativa sulla via, graficamente distinta.
+- **237** senza corrispondenza abbastanza univoca: rimangono nell’elenco e l’indirizzo pubblico può essere aperto su una mappa esterna.
+- Nessun punto è inventato al centro del comune. Enti, servizi e unità allo stesso indirizzo non vengono fusi: il raggruppamento è solo visivo.
+
+`data/presidi_geo_v7_8.json` conserva metodo, precisione, data e fonte per posizione, separate dai dati sanitari. La licenza dei dati derivati OSM è ODbL 1.0; l’attribuzione è visibile sulla mappa. La cache delle 301 richieste una tantum è conservata in `downloads/Geocoding_Cache_V7_8.json`; lo script di manutenzione la riusa e non va schedulato o integrato nel browser.
+
+### Privacy e limiti della cartografia
+Leaflet 1.9.4 è distribuito localmente con la propria licenza. Le immagini da `tile.openstreetmap.org` sono richieste soltanto dopo “Apri mappa OpenStreetMap”. Nessun tracciamento, geocodifica live, cookie, salvataggio delle ricerche o accesso alla posizione del dispositivo. Le richieste dei tasselli includono solo l’origine del sito come Referer, mai query o percorso. Il fornitore vede IP e area geografica richiesta. La mappa è opzionale; l’elenco è sempre disponibile. La disponibilità delle immagini OSM non è garantita e le policy del fornitore vanno rispettate.
+
+Policy: https://operations.osmfoundation.org/policies/tiles/ e https://operations.osmfoundation.org/policies/nominatim/ . Libreria: https://leafletjs.com/download.html . I test automatici intercettano i tasselli, senza scaricarli o eseguire scansioni sul servizio pubblico.
+
+**Indicizzazione ancora disattivata**: noindex HTML e HTTP invariati; le due nuove pagine sono solo predisposte nella sitemap e nello script futuro, non viene attivato Google. Nessun file storico in data/, download precedenti o versione offline è riscritto.

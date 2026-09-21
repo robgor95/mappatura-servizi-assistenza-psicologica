@@ -1,0 +1,8 @@
+V7.8 — UX e mappa interattiva
+
+Otto correzioni UX applicate senza cambiare significato dei dati o inferire gestione ASL certa dai record ereditati.
+Mappa con 432 servizi nell’elenco: 55 indirizzi localizzati automaticamente, 140 posizioni indicative sulla via e 237 senza posizione univoca. Nessuna coordinata comunale usata al posto della sede.
+Più servizi nello stesso edificio restano separati e apribili singolarmente.
+Fonti geografiche, date e precisione in data/presidi_geo_v7_8.json; fonte OSM/Nominatim, licenza ODbL 1.0.
+Leaflet locale; tasselli OpenStreetMap caricati solo dopo azione esplicita. Nessuna posizione del dispositivo raccolta, nessuna API di geocodifica nel sito, nessun nuovo tracking.
+Dataset clinici e download precedenti invariati. Noindex attivo.

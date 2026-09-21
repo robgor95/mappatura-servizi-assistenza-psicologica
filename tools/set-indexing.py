@@ -5,7 +5,7 @@ import argparse, json, re
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://mappatura-servizi-assistenza-psicologica.pages.dev/"
 INDEXABLE = [
-    "index.html","servizi.html","guide/index.html","guide/primo-percorso.html",
+    "mappa.html","giovani.html","index.html","servizi.html","guide/index.html","guide/primo-percorso.html",
     "guide/pubblico.html","guide/privato.html","guide/ricovero.html",
     "guide/riabilitazione.html","ascolto.html","helpline.html","centri-ascolto.html",
     "universita.html","scuole.html","privati.html","strutture-approfondite.html",

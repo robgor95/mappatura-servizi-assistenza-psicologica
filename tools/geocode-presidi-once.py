@@ -17,7 +17,9 @@ def clean(s,town):
     s=re.sub(r',?\s*'+re.escape(town)+r'\s*$', '', s, flags=re.I)
     return re.sub(r'\s+',' ',s).strip(' ,.')
 rows=json.loads(Path(sys.argv[1]).read_text());out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)
-cachefile=out/'geocoding-cache.json';cache=json.loads(cachefile.read_text()) if cachefile.exists() else {}
+cachefile=out/'geocoding-cache.json'
+seed=Path(__file__).resolve().parents[1]/'downloads/Geocoding_Cache_V7_8.json'
+cache=json.loads(cachefile.read_text()) if cachefile.exists() else (json.loads(seed.read_text()) if seed.exists() else {})
 records={};pending=[];calls=0;last=0;today=datetime.datetime.now(datetime.timezone.utc).date().isoformat()
 for r in rows:
     address=clean(r['address'],r['town']);town=r['town']; n=norm(address)
@@ -49,6 +51,7 @@ for r in rows:
         if not road or overlap<0.65:continue
         numbers=re.findall(r'\d+',address);house=re.findall(r'\d+',a.get('house_number',''))
         precision='address' if numbers and house and numbers[-1] in house else 'street'
+        # Only a actual road geometry is retained as a street-level estimate.
         if precision=='street':
             if m.get('addresstype')!='road' and m.get('class')!='highway':continue
             bounds=list(map(float,m.get('boundingbox',[0,0,0,0])))

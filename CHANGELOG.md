@@ -1,5 +1,13 @@
 # Changelog
 
+## 7.8 — 21 settembre 2026
+
+- Otto correzioni UX: età evolutiva con scelta, ricerca mobile anticipata, H1 coerente, provenienza tecnica separata dall’incertezza di gestione, menu snello, landmark emergenze, filtro Provincia, reset senza tecnicismi.
+- Mappa dei presidi, filtri condivisi, gruppi di servizi vicini/co-localizzati, collegamenti da risultati e dettagli.
+- Geografia additiva con precisione, fonti e copertura dichiarate: 55 indirizzi, 140 vie indicative, 237 non localizzati.
+- Leaflet locale, cartografia OSM su azione esplicita, nessuna localizzazione del dispositivo né geocodifica nel browser.
+- Noindex mantenuto; dati sanitari, multisede, download e vecchi URL preservati.
+
 ## 7.7.5 — 21 settembre 2026
 
 - Audit multisede/multiservizio avviato sui gestori delle strutture residenziali e semiresidenziali.
