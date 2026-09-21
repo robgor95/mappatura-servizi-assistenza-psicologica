@@ -1,0 +1,32 @@
+name: Map baseline audit
+on:
+  push:
+    branches: [ux-map-v7-8]
+    paths: ['.github/workflows/map-baseline.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bcda3c90cc241a848f67cb825bc8a10a742d6a65
+          persist-credentials: false
+      - name: Archive original repository and local Leaflet distribution
+        run: |
+          mkdir -p /tmp/map-audit/vendor
+          git archive HEAD --format=zip -o /tmp/map-audit/baseline.zip
+          curl --fail --location https://registry.npmjs.org/leaflet/-/leaflet-1.9.4.tgz -o /tmp/map-audit/vendor/leaflet.tgz
+          node - <<'JS'
+          const fs=require('fs'),A=require('./assets/servizi-data-v7-5-1.js');
+          const d=JSON.parse(fs.readFileSync('data/portal_data_v7_3.json')),p=JSON.parse(fs.readFileSync('data/privati_v7_5.json'));
+          console.log('adapter exports',Object.keys(A));
+          console.log('data shape',Object.keys(d));
+          JS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: map-baseline
+          path: /tmp/map-audit
+          retention-days: 7
