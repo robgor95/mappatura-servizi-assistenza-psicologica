@@ -1,0 +1,37 @@
+name: SEO preview noindex verification
+on:
+  push:
+    branches: [seo-ready-v7-7-4]
+    paths: ['.github/workflows/seo-preview-check.yml']
+permissions:
+  contents: read
+jobs:
+  live-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify Cloudflare preview remains non-indexable
+        run: |
+          set -euo pipefail
+          BASE="https://seo-ready-v7-7-4.mappatura-servizi-assistenza-psicologica.pages.dev"
+          for i in $(seq 1 12); do
+            if curl -fsS "$BASE/version.json?qa=seo774" | grep -q '"web_version": "7.7.4"'; then break; fi
+            sleep 5
+          done
+          curl -fsS "$BASE/version.json?qa=seo774" | grep -q '"indexing_enabled": false'
+          HEADERS="$(curl -fsSI "$BASE/?qa=seo774" | tr -d '\r')"
+          echo "$HEADERS" | grep -i 'x-robots-tag:.*noindex'
+          BODY="$(curl -fsS "$BASE/?qa=seo774")"
+          echo "$BODY" | grep -q 'content="noindex,nofollow,noarchive,nosnippet,noimageindex"'
+          echo "$BODY" | grep -q 'rel="canonical" href="https://mappatura-servizi-assistenza-psicologica.pages.dev/"'
+          echo "$BODY" | grep -q 'id="seo-website-jsonld"'
+          ROBOTS="$(curl -fsS "$BASE/robots.txt?qa=seo774")"
+          echo "$ROBOTS" | grep -q 'Allow: /'
+          if echo "$ROBOTS" | grep -q 'Disallow: /'; then exit 1; fi
+          if echo "$ROBOTS" | grep -q '^Sitemap:'; then exit 1; fi
+          SITEMAP="$(curl -fsS "$BASE/sitemap.xml?qa=seo774")"
+          echo "$SITEMAP" | grep -q '/servizi.html'
+          if echo "$SITEMAP" | grep -q '/archivio.html'; then exit 1; fi
+          curl -fsSI "$BASE/archivio.html?qa=seo774" | tr -d '\r' | grep -i 'x-robots-tag:.*noindex'
+          curl -fsSI "$BASE/downloads/guide/Guida_03_privato.pdf?qa=seo774" | tr -d '\r' | grep -i 'x-robots-tag:.*noindex'
+          echo "Cloudflare preview: SEO ready, indexing disabled."
