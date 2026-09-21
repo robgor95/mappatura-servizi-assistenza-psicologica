@@ -1,0 +1,71 @@
+{
+  "version": "7.5",
+  "checked_at": "2026-09-21",
+  "scope": "Repository main after V7.5 implementation",
+  "head_before_report": "c86d37efdf2d80f39ed2c897f5012f10da94896d",
+  "tests": {
+    "repository_tree": {
+      "passed": true,
+      "detail": "86 files before this report; all mandatory V7.5 paths present."
+    },
+    "legacy_preservation": {
+      "passed": true,
+      "detail": "Critical V7.3 dataset/XLSX/CSV SHAs and all five V7.4 guide HTML SHAs unchanged."
+    },
+    "json_validation": {
+      "passed": true,
+      "detail": "universita 17; scuole 13; helpline 19; centri_ascolto 23; privati 11; strutture_approfondite 168; version.json valid."
+    },
+    "csv_validation": {
+      "passed": true,
+      "detail": "Five V7.5 CSV files parsed with expected row counts and zero malformed row-widths."
+    },
+    "source_and_date": {
+      "passed": true,
+      "detail": "All records in the six V7.5 datasets have a non-empty source field and verification date; no duplicate IDs."
+    },
+    "html_structure": {
+      "passed": true,
+      "detail": "Modified core pages and all seven new V7.5 pages have main content, closing HTML and viewport metadata where applicable."
+    },
+    "internal_links": {
+      "passed": true,
+      "detail": "No missing repository-local href targets found in modified core pages or new V7.5 pages."
+    },
+    "js_syntax": {
+      "passed": true,
+      "detail": "assets/directory-v7-5.js compiles with JavaScript Function constructor."
+    },
+    "search_filters": {
+      "passed": true,
+      "detail": "V7.5 directory script includes dataset fetch, text input filter, select filters and reset behavior."
+    },
+    "mobile_360_390": {
+      "passed": true,
+      "detail": "Static responsive audit: inherited V7.4 stylesheet retains <=760px and <=380px rules; V7.5 stylesheet adds <=900px and <=760px one-column layouts and full-width download buttons. Live pixel rendering at 360/390 could not be executed in this environment because no network-capable browser is available."
+    },
+    "old_functions": {
+      "passed": true,
+      "detail": "V7.3 archive app files and V7.4 guide files preserved; existing studenti/ascolto/glossario pages augmented rather than replaced."
+    },
+    "downloads": {
+      "passed": true,
+      "detail": "All V7.5 download targets referenced by documenti.html exist in the repository tree."
+    },
+    "deployment_cloudflare": {
+      "passed": true,
+      "detail": "Cloudflare Pages GitHub check run for commit c86d37e completed with conclusion success and output 'Deployed successfully'."
+    },
+    "public_http_probe": {
+      "passed": false,
+      "detail": "The web retrieval tool blocks direct access to the pages.dev host; production HTTP content could not be independently fetched from this environment. Cloudflare's GitHub check confirms deployment success."
+    }
+  },
+  "known_limits": [
+    "School mapping is a documented sample/first autonomous census, not a complete registry of every Lazio school.",
+    "Private-centre mapping is more complete for Rome than for the other provinces.",
+    "No real-time appointment, waiting-list or bed availability checks were performed.",
+    "Some university services are verified but have incomplete operational details marked accordingly.",
+    "No independent clinical review was performed."
+  ]
+}
