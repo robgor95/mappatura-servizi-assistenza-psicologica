@@ -6,35 +6,27 @@ on:
 permissions:
   contents: read
 jobs:
-  baseline:
+  candidates:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 498195783ca07dff14dd4f3640e7e2fae3598e06
-          fetch-depth: 0
           persist-credentials: false
-      - name: Export exact baseline and hashes
-        shell: bash
+      - name: Collect cached preparation candidates
         run: |
-          set -euo pipefail
-          mkdir -p /tmp/audit-workbench
-          test "$(git rev-parse HEAD)" = 498195783ca07dff14dd4f3640e7e2fae3598e06
-          git archive --format=zip HEAD -o /tmp/audit-workbench/main-baseline.zip
-          git bundle create /tmp/audit-workbench/main-baseline.bundle HEAD
-          git ls-tree -r HEAD > /tmp/audit-workbench/git-tree.txt
-          python - <<'PY'
-          import pathlib, subprocess, hashlib, json
-          paths=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
-          rows={p:{'sha256':hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest(),'bytes':pathlib.Path(p).stat().st_size} for p in paths if p}
-          pathlib.Path('/tmp/audit-workbench/baseline-hashes.json').write_text(json.dumps({'baseline_commit':'498195783ca07dff14dd4f3640e7e2fae3598e06','files':rows},indent=2))
-          print('Baseline files:',len(rows))
-          PY
-          node tools/export-map-rows.cjs /tmp/audit-workbench/map-rows.json
+          mkdir -p /tmp/audit-candidates
+          node tools/export-map-rows.cjs /tmp/audit-candidates/map-rows.json
+          python tools/research-geography-v7-9.py /tmp/audit-candidates
+      - name: Archive exact working revision
+        if: always()
+        run: |
+          git archive --format=zip HEAD -o /tmp/audit-candidates/worktree.zip
+          git rev-parse HEAD > /tmp/audit-candidates/commit.txt
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: v7-9-immutable-baseline
-          path: /tmp/audit-workbench/
+          name: v7-9-research-candidates
+          path: /tmp/audit-candidates/
           retention-days: 7
           if-no-files-found: error
