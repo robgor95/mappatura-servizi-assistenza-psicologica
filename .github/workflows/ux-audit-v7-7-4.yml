@@ -1,0 +1,27 @@
+name: UX audit 7.7.4
+on:
+  push:
+    branches: [ux-audit-v7-7-4]
+    paths:
+      - 'tools/ux-audit-v7-7-4.mjs'
+      - '.github/workflows/ux-audit-v7-7-4.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install audit dependencies
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright @axe-core/playwright >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+      - name: Run production UX audit
+        run: node tools/ux-audit-v7-7-4.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ux-audit-v7-7-4
+          path: ux-audit-artifacts
+          retention-days: 7
