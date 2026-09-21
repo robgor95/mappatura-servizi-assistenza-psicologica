@@ -1,0 +1,54 @@
+name: Navigation preview visual check
+on:
+  push:
+    branches: [navigation-v7-7-3]
+    paths: ['.github/workflows/navigation-visual.yml']
+permissions:
+  contents: read
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install browser for development review
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Read deployed preview and capture layouts
+        run: |
+          mkdir -p qa-visual
+          python3 - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          import json
+          base='https://5cc10248.mappatura-servizi-assistenza-psicologica.pages.dev'
+          checks=[]
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              for width in [390,1440]:
+                  ctx=browser.new_context(viewport={'width':width,'height':844 if width==390 else 1000},reduced_motion='reduce')
+                  page=ctx.new_page()
+                  for name in ['index.html','studenti.html','documenti.html','servizi.html','guide/primo-percorso.html','404.html']:
+                      r=page.goto(base+'/'+name,wait_until='networkidle')
+                      assert page.locator('body').get_attribute('data-navigation-version')=='7.7.3'
+                      assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+                      checks.append({'page':name,'viewport':width,'status':r.status,'url':page.url,'navigation':'7.7.3'})
+                      page.screenshot(path='qa-visual/'+name.replace('/','-')+'-'+str(width)+'.png',full_page=name=='index.html')
+                  page.goto(base+'/index.html',wait_until='networkidle')
+                  if width==390:page.locator('#nav-toggle').click()
+                  page.locator('#nav-more summary').click()
+                  page.screenshot(path='qa-visual/menu-'+str(width)+'.png')
+                  ctx.close()
+              browser.close()
+          Path('qa-visual/deployment-preview.json').write_text(json.dumps(checks,indent=2))
+          print(json.dumps(checks,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: navigation-visual-preview
+          path: qa-visual/
+          retention-days: 7
