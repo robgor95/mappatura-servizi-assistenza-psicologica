@@ -1,0 +1,40 @@
+NOTE DI RILASCIO — V7.5 — 21/09/2026
+
+BASELINE PRESERVATO
+- Archivio V7.3 invariato: 295 nodi della rete pubblica e 115 moduli privati/non-ASL.
+- Tutti i CSV/JSON/XLSX/PDF V7.3 già presenti sono conservati.
+- Le 5 guide V7.4 e i relativi PDF restano disponibili.
+- Le pagine V7.4 studenti/ascolto/glossario restano accessibili e sono collegate alle nuove sezioni.
+
+NUOVI DATASET V7.5
+- Servizi psicologici universitari: 17 record.
+- Sportelli psicologici scolastici: 13 record.
+- Helpline e servizi telefonici: 19 record.
+- Centri e sportelli pubblici/territoriali di ascolto: 23 record.
+- Centri privati ambulatoriali: 11 record.
+- Approfondimento strutture: 168 record (115 moduli V7.3 + 53 centri diurni).
+- Schede di orientamento ai servizi: 15.
+
+METODO
+Ogni nuovo record ha almeno una fonte e una data di verifica. Sono preferite fonti ufficiali e primarie.
+Le informazioni amministrative sanitarie sono separate in autorizzazione, accreditamento e contratto/convenzione SSN.
+Non sono stati dedotti dati mancanti dal nome della struttura. I valori non verificabili sono indicati come non documentati/da verificare.
+
+LIMITI
+- La mappatura scolastica è una ricognizione documentale, non l'anagrafe completa di tutte le scuole del Lazio.
+- Le fonti scolastiche di annualità precedenti sono marcate storico/da confermare e non presentate come attive nel 2026/27.
+- La ricognizione dei centri privati è iniziale e più densa su Roma; nessuna struttura è raccomandata o classificata.
+- Disponibilità, tempi di attesa e posti liberi non sono verificati in tempo reale.
+- Per alcune università il servizio è documentato ma alcuni dettagli operativi restano da completare.
+
+PAGINE
+/universita.html
+/scuole.html
+/helpline.html
+/centri-ascolto.html
+/privati.html
+/strutture-approfondite.html
+/orientamento-servizi.html
+
+DEPLOY
+Cloudflare Pages è collegato a main; ogni commit su main avvia il deploy di produzione.
