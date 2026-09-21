@@ -2,12 +2,12 @@
 (function(root){
 "use strict";
 const config = {
-  "version": "7.7",
+  "version": "7.7.2",
   "routes": {
     "university": {
-      "label": "Servizi universitari",
+      "label": "Università",
       "page": "/universita.html",
-      "description": "Counselling e supporto negli atenei. Verifica destinatari e modalità di accesso."
+      "description": "Supporto psicologico, counselling e ascolto collegati agli atenei del Lazio."
     },
     "school": {
       "label": "Sportelli scolastici",
@@ -155,20 +155,20 @@ const config = {
       }
     },
     "private": {
-      "label": "Mappatura delle attività private",
+      "label": "Strutture private",
       "page": "/privati.html",
-      "description": "Ricognizione descrittiva: nessuna classifica o garanzia di convenzione SSN."
+      "description": "Centri e servizi privati censiti, senza classifiche o raccomandazioni."
     },
     "private-db": {
-      "label": "Centri con attività privata",
+      "label": "Strutture private nella ricerca",
       "page": "/servizi.html",
-      "description": "Ricerca per territorio nelle schede di attività privata.",
+      "description": "Cerca strutture e servizi privati per territorio e attività.",
       "filters": {
         "origine": "privati"
       }
     },
     "private-child": {
-      "label": "Privato · ambito età evolutiva",
+      "label": "Privato per età evolutiva",
       "page": "/servizi.html",
       "description": "Schede con questo ambito indicizzato; verifica sempre destinatari e prestazioni.",
       "filters": {
@@ -187,9 +187,9 @@ const config = {
       "description": "Costi, esenzioni e gratuità dipendono dal servizio e dalle condizioni di accesso."
     },
     "private-guide": {
-      "label": "Come orientarsi nel privato",
+      "label": "Scegliere psicologo o psicoterapeuta",
       "page": "/guide/privato.html",
-      "description": "Qualifiche, costi e domande utili prima del primo colloquio."
+      "description": "Qualifiche, primo colloquio, costi, approcci e domande utili per orientarsi nel privato."
     },
     "hospital-guide": {
       "label": "Capire il ricovero",
@@ -248,6 +248,16 @@ const config = {
       "label": "Trova un servizio",
       "page": "/servizi.html",
       "description": "Ricerca libera, tipologie, territorio e filtri documentali."
+    },
+    "professional-choice": {
+      "label": "Come scegliere un professionista",
+      "page": "/guide/privato.html#qualifiche",
+      "description": "Differenze tra psicologo, psicoterapeuta e psichiatra e controlli da fare prima del primo colloquio."
+    },
+    "therapy-guide": {
+      "label": "Capire gli approcci psicoterapeutici",
+      "page": "/guide/privato.html#approcci",
+      "description": "Una spiegazione semplice dei principali orientamenti e delle domande da fare al professionista."
     }
   },
   "intents": [
@@ -622,6 +632,59 @@ const config = {
         "children",
         "csm",
         "university"
+      ]
+    },
+    {
+      "id": "professional-choice",
+      "priority": 88,
+      "keywords": [
+        "come scegliere psicologo",
+        "scegliere psicologo",
+        "come scegliere psicoterapeuta",
+        "scegliere psicoterapeuta",
+        "quale psicologo scegliere",
+        "quale psicoterapeuta scegliere",
+        "cercare psicologo privato",
+        "trovare psicoterapeuta",
+        "scegliere terapeuta",
+        "primo terapeuta"
+      ],
+      "routes": [
+        "professional-choice",
+        "private-guide",
+        "private"
+      ]
+    },
+    {
+      "id": "therapy-approaches",
+      "priority": 87,
+      "keywords": [
+        "approccio terapeutico",
+        "approcci terapeutici",
+        "approccio psicoterapeutico",
+        "approcci psicoterapeutici",
+        "cognitivo comportamentale",
+        "cognitivo-comportamentale",
+        "cbt",
+        "psicodinamico",
+        "psicodinamica",
+        "psicoanalitico",
+        "psicoanalitica",
+        "sistemico relazionale",
+        "sistemico-relazionale",
+        "terapia familiare",
+        "terapia di coppia",
+        "terapia di gruppo",
+        "umanistico",
+        "umanistica",
+        "gestalt",
+        "emdr",
+        "quale terapia",
+        "quale psicoterapia"
+      ],
+      "routes": [
+        "therapy-guide",
+        "private-guide"
       ]
     },
     {
