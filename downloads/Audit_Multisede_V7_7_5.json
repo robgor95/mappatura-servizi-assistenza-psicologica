@@ -1,0 +1,88 @@
+{
+  "version": "7.7.5",
+  "audited_at": "2026-09-21",
+  "baseline_commit": "cc57ad32efc5b7cfcd04de84689dcce9508fffe1",
+  "finding": "Il sistema di ricerca non elimina automaticamente le strutture dello stesso gestore. La lacuna riscontrata deriva da record mancanti nel dataset storico per alcuni enti multisede/multiservizio.",
+  "confirmed_additions": [
+    {
+      "ente": "Reverie",
+      "previously_visible": 1,
+      "now_expected": 4,
+      "added": [
+        "Comunità terapeutica Capena CTC 1",
+        "Comunità terapeutica Capena CTC 2",
+        "Centro Diurno Reverie"
+      ],
+      "existing": "Comunità terapeutica romana",
+      "evidence": [
+        "https://reverie.it/strutture/",
+        "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/",
+        "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/",
+        "https://reverie.it/strutture/il-centro-diurno/",
+        "https://reverie.it/wp-content/uploads/2023/04/Manuale-completo.pdf"
+      ]
+    },
+    {
+      "ente": "Nuovi Orizzonti",
+      "previously_visible": 1,
+      "now_expected": 2,
+      "added": [
+        "Comunità Casa Gioia – Marino"
+      ],
+      "existing": "Comunità di Piglio",
+      "evidence": [
+        "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf",
+        "https://www.regione.lazio.it/sites/default/files/decreti-commissario-ad-acta/Decr_U00488_18_12_2013_COMINUTA_CASA_GIOIA.pdf",
+        "https://www.nuoviorizzonti.org/wp-content/uploads/2024/12/Relazione-missione-ODV_2023.pdf"
+      ]
+    }
+  ],
+  "confirmed_multisite_pending": [
+    {
+      "ente": "Il Ponte – Centro di Solidarietà",
+      "finding": "Il gestore documenta una sede di accoglienza in Via Amba Aradam 25 e una sede comunità in Via Veneto 30/c a Civitavecchia.",
+      "reason_not_added_yet": "Il dettaglio amministrativo e di accreditamento per singola sede non è stato consolidato a sufficienza per creare due record sanitari separati senza rischio di duplicare un unico programma autorizzato.",
+      "evidence": [
+        "https://www.ilpontecivitavecchia.it/",
+        "https://www.ilpontecivitavecchia.it/wp-content/uploads/2020/01/IL_PONTE_CV_CARTA_SERVIZI.pdf"
+      ]
+    }
+  ],
+  "excluded_from_accredited_overlay": [
+    {
+      "ente": "Cooperate",
+      "service": "Centro specialistico semiresidenziale FEBO – Bracciano",
+      "reason": "Il gestore lo descrive come autorizzato ma in attesa di accreditamento; non viene aggiunto all'overlay delle strutture accreditate/convenzionate.",
+      "evidence": [
+        "https://www.cooperate.it/servizi/bracciano/prestazioni.html"
+      ]
+    }
+  ],
+  "single_site_checks": [
+    {
+      "ente": "Associazione Comunità Massimo",
+      "outcome": "Fonte del gestore consultata: sede legale e operativa coincidono ad Anzio.",
+      "evidence": [
+        "https://comunitamassimo.org/resources/carta-servizi-28-10-2019.pdf"
+      ]
+    },
+    {
+      "ente": "Comunità Psicoterapeutica Giacomo Cusmano",
+      "outcome": "Fonte corrente del gestore consultata: una sede accreditata ad Anguillara Sabazia.",
+      "evidence": [
+        "https://www.comunitacusmano.com/"
+      ]
+    }
+  ],
+  "model_rule": {
+    "hierarchy": [
+      "ente/gestore",
+      "struttura/sede",
+      "servizio/modulo"
+    ],
+    "address_deduplication": false,
+    "note": "Due servizi diversi nello stesso indirizzo non devono essere accorpati. CTC 2 e Centro Diurno Reverie condividono Via Morlupo 94 ma restano record separati."
+  },
+  "historical_data_changed": false,
+  "overlay_file": "data/multisede_v7_7_5.json"
+}
