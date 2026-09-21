@@ -1,0 +1,111 @@
+name: UX and map candidate verification
+on:
+  push:
+    branches: [ux-map-v7-8]
+    paths: ['.github/workflows/map-candidate.yml']
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: ux-map-candidate
+  cancel-in-progress: false
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode exact candidate and verify every modified file
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,base64,zlib,hashlib
+          parts=[Path('.map-release/part'+str(i)+'.b64').read_text().strip() for i in (1,2,3)]
+          # Remove two known duplicated transfer segments; SHA256 below is authoritative.
+          s=parts[1];a=s.find('ZDwwujg0ODsYP');b=s.find('ZDwwujg1ijg',a+1)
+          if a>=0 and b>a:s=s[:a]+s[b:]
+          parts[1]=s
+          parts[2]=parts[2].replace('BDV++rH6FT3++rH6FT3y','BDV++rH6FT3y')
+          expected=['edd71646c405f4cd2ce70c567ade9cdfcac3b95cb9828e80d2670868eea010d4','92f767cadd3ac5d210ad7802eddc39c67928360e40767517e1bd68c319b3048b','85e9f949091f1baa6adb279c7e462c160bea36e89be61ed1611682f44048cf79']
+          for i,(s,sha) in enumerate(zip(parts,expected)):
+              print('Part',i+1,'length',len(s),'sha',hashlib.sha256(s.encode()).hexdigest())
+              assert hashlib.sha256(s.encode()).hexdigest()==sha,('transfer part mismatch',i+1)
+          raw=base64.b64decode(''.join(parts));assert hashlib.sha256(raw).hexdigest()=='8c3634fce6911c80cd7b2c02da5d254401804076297086785b4f6b292088ffbf'
+          payload=json.loads(zlib.decompress(raw))
+          def safe(name):
+              p=Path(name);assert not p.is_absolute() and '..' not in p.parts and '.git' not in p.parts;return p
+          for name,delta in payload['delta'].items():
+              p=safe(name);old=p.read_text();assert hashlib.sha256(old.encode()).hexdigest()==delta['before'],name
+              for a,b,text in reversed(delta['ops']):old=old[:a]+text+old[b:]
+              assert hashlib.sha256(old.encode()).hexdigest()==delta['after'],name
+              p.write_text(old)
+          for name,text in payload['new'].items():
+              p=safe(name);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
+          Path('/tmp/map-vendor-hashes.json').write_text(json.dumps(payload['vendor_hashes']))
+          PY
+      - name: Recover saved geocoding evidence - no additional geocoding requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl --fail --location --retry 2 -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/robgor95/mappatura-servizi-assistenza-psicologica/actions/artifacts/10663792279/zip" -o /tmp/geography.zip
+          curl --fail --location --retry 2 https://registry.npmjs.org/leaflet/-/leaflet-1.9.4.tgz -o /tmp/leaflet.tgz
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile,tarfile,json,hashlib,copy
+          with zipfile.ZipFile('/tmp/geography.zip') as z:
+              geo=json.loads(z.read('presidi_geo_v7_8.json'))
+              Path('downloads/Geocoding_Cache_V7_8.json').write_bytes(z.read('geocoding-cache.json'))
+          p=copy.deepcopy(geo['records']['rete:NET-072'])
+          p.update(source_address='Via E. Fermi 15, Viterbo',source_town='Viterbo',method='Stesso comune, via Fermi e civico 15; abbreviazione E. risolta confrontando indirizzo completo del presidio TSMREE Viterbo. Posizione del civico, ingresso non verificato.',derived_from_key='rete:NET-072')
+          geo['records']['rete:VT-12']=p
+          geo['unlocated']=[x for x in geo['unlocated'] if x['key']!='rete:VT-12']
+          geo['stats'].update(address=55,unlocated=237,reviewed_address_aliases=1)
+          Path('data/presidi_geo_v7_8.json').write_text(json.dumps(geo,ensure_ascii=False,indent=2))
+          assert hashlib.sha256(Path('data/presidi_geo_v7_8.json').read_bytes()).hexdigest()=='b8e96c46c5f40c79c37d2aca78b2cd85f35416a18224ff1f5c78dc511f968e5e'
+          hashes=json.loads(Path('/tmp/map-vendor-hashes.json').read_text())
+          with tarfile.open('/tmp/leaflet.tgz') as t:
+              for path,sha in hashes.items():
+                  rel=path.removeprefix('assets/vendor/leaflet/')
+                  source='package/LICENSE' if rel=='LICENSE' else 'package/dist/'+rel
+                  raw=t.extractfile(source).read();assert hashlib.sha256(raw).hexdigest()==sha,path
+                  dest=Path(path);dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(raw)
+          print('Coordinates:',geo['stats'])
+          PY
+      - name: Install development-only browser checks
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+      - name: Data, routing, accessibility, responsive, privacy and map identity tests
+        run: |
+          node tools/test-menta-v7-7.cjs > /tmp/menta-regressions.json
+          node --check assets/map-v7-8.js
+          node --check assets/map-data-v7-8.js
+          node --check assets/servizi-v7-5-1.js
+          python3 -m http.server 8123 --bind 127.0.0.1 >/tmp/map-server.log 2>&1 &
+          SERVER=$!; trap 'kill $SERVER' EXIT
+          node tools/test-ux-map-v7-8.mjs
+          cp /tmp/ux-map-tests/report.json downloads/Verifiche_UX_Mappa_V7_8.json
+      - name: Commit only tested static files, remove temporary transfer and workflows
+        run: |
+          rm -rf .map-release
+          rm -f .github/workflows/map-baseline.yml .github/workflows/map-geocoding-once.yml .github/workflows/map-candidate.yml
+          git add -u
+          git add assets/map* assets/ux-map* assets/vendor data/presidi_geo_v7_8.json downloads/*V7_8* giovani.html mappa.html tools/export-map-rows.cjs tools/geocode-presidi-once.py tools/test-ux-map-v7-8.mjs
+          git diff --cached --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          EXPECTED=$(git rev-parse HEAD)
+          ACTUAL=$(git ls-remote origin refs/heads/ux-map-v7-8 | cut -f1)
+          test "$EXPECTED" = "$ACTUAL"
+          git commit -m 'feat: accessible UX refinements and optional presidi map with sourced geography'
+          git push origin HEAD:ux-map-v7-8
+          git archive HEAD --format=zip -o /tmp/map-candidate.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-map-candidate-evidence
+          path: |
+            /tmp/ux-map-tests
+            /tmp/menta-regressions.json
+            /tmp/map-candidate.zip
+          retention-days: 14
