@@ -21,14 +21,12 @@ jobs:
           from pathlib import Path
           import json,base64,zlib,hashlib
           parts=[Path('.map-release/part'+str(i)+'.b64').read_text().strip() for i in (1,2,3)]
-          # Remove two known duplicated transfer segments; SHA256 below is authoritative.
           s=parts[1];a=s.find('ZDwwujg0ODsYP');b=s.find('ZDwwujg1ijg',a+1)
           if a>=0 and b>a:s=s[:a]+s[b:]
           parts[1]=s
           parts[2]=parts[2].replace('BDV++rH6FT3++rH6FT3y','BDV++rH6FT3y')
           expected=['edd71646c405f4cd2ce70c567ade9cdfcac3b95cb9828e80d2670868eea010d4','92f767cadd3ac5d210ad7802eddc39c67928360e40767517e1bd68c319b3048b','85e9f949091f1baa6adb279c7e462c160bea36e89be61ed1611682f44048cf79']
           for i,(s,sha) in enumerate(zip(parts,expected)):
-              print('Part',i+1,'length',len(s),'sha',hashlib.sha256(s.encode()).hexdigest())
               assert hashlib.sha256(s.encode()).hexdigest()==sha,('transfer part mismatch',i+1)
           raw=base64.b64decode(''.join(parts));assert hashlib.sha256(raw).hexdigest()=='8c3634fce6911c80cd7b2c02da5d254401804076297086785b4f6b292088ffbf'
           payload=json.loads(zlib.decompress(raw))
@@ -43,6 +41,7 @@ jobs:
               p=safe(name);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
           Path('/tmp/map-vendor-hashes.json').write_text(json.dumps(payload['vendor_hashes']))
           PY
+          python3 .map-release/refinements.py
       - name: Recover saved geocoding evidence - no additional geocoding requests
         env:
           GH_TOKEN: ${{ github.token }}
