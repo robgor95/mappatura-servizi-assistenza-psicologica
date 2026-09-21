@@ -1,0 +1,32 @@
+name: Menta baseline audit
+on:
+  push:
+    branches: [menta-v7-7]
+    paths: ['.github/workflows/menta-audit.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: b52e4eb25f1226312e99fd9f82bd61a0bfacc876
+          persist-credentials: false
+      - name: Archive exact baseline, without changes
+        run: |
+          git rev-parse HEAD
+          git archive --format=zip HEAD -o /tmp/menta-baseline.zip
+          python3 - <<'PY'
+          import json, pathlib
+          for p in pathlib.Path('data').glob('*.json'):
+              d=json.loads(p.read_text())
+              print(p, {k:len(v) for k,v in d.items() if isinstance(v,(list,dict))} if isinstance(d,dict) else len(d))
+          print(pathlib.Path('version.json').read_text())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: menta-baseline
+          path: /tmp/menta-baseline.zip
+          retention-days: 3
