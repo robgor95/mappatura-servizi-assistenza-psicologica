@@ -1,9 +1,9 @@
 {
-  "web_version": "7.5.1",
+  "web_version": "7.6",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.5",
+  "data_extension_version": "7.6",
   "built_at": "2026-09-21",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -12,7 +12,7 @@
   "legacy_entrypoint": "archivio.html",
   "source_dates_unchanged": true,
   "counts": {
-    "public_network_nodes": 295,
+    "public_network_nodes": 296,
     "private_non_asl_modules_v7_3": 115,
     "university_records_v7_5": 17,
     "school_records_v7_5": 13,
@@ -21,7 +21,25 @@
     "private_centres_v7_5": 11,
     "structure_enrichment_records_v7_5": 168,
     "orientation_cards_v7_5": 15,
-    "search_records": 421
+    "search_records": 428,
+    "university_records_v7_6": 19,
+    "school_records_v7_6": 20,
+    "helplines_v7_6": 20,
+    "listening_centres_v7_6": 33,
+    "private_centres_v7_6": 17,
+    "structure_enrichment_records_v7_6": 169
   },
-  "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo."
+  "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
+  "research_status": "parziale_per_campo",
+  "deployment_checked_by_preparer": false,
+  "counts_current": {
+    "rete": 296,
+    "moduli": 115,
+    "privati": 17,
+    "scuole": 20,
+    "centri_ascolto": 33,
+    "universita": 19,
+    "helpline": 20,
+    "search": 428
+  }
 }

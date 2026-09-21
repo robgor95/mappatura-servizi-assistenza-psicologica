@@ -1,0 +1,668 @@
+{
+  "version_preparata": "7.6",
+  "data": "2026-09-21",
+  "stato": "preparata_localmente_non_pubblicata",
+  "repository": "robgor95/mappatura-servizi-assistenza-psicologica",
+  "branch": "main",
+  "ultimo_head_remoto_verificato": "662269db44b48e0c1ffb580ec79e0424a0a3c229",
+  "nuovo_commit": null,
+  "deployment_v76": "non eseguito: azioni di scrittura non disponibili nella sessione",
+  "ricerca": {
+    "fonti": 52,
+    "fonti_per_metodo": {
+      "pagina_ufficiale": 16,
+      "indice_ufficiale": 17,
+      "pagina_gestore": 17,
+      "pdf_testo_estratto_screenshot_non_disponibile": 1,
+      "pdf_testo_e_screenshot": 1
+    },
+    "record_pubblici_riesame_parziale": 85,
+    "moduli_riesame_parziale": 19,
+    "correzioni_record_scolastici": 5,
+    "campi_con_provenienza": 398,
+    "incongruenze_record_precedenti": 7,
+    "nuove_schede": 27,
+    "nuove_per_categoria": {
+      "rete": 1,
+      "moduli": 0,
+      "privati": 6,
+      "scuole": 7,
+      "centri_ascolto": 10,
+      "universita": 2,
+      "helpline": 1
+    },
+    "residuo_senza_riesame_v76": {
+      "rete_pubblica": 210,
+      "moduli": 96
+    },
+    "conferme_telefoniche": 0
+  },
+  "conteggi_attesi_dopo_applicazione": {
+    "ricerca_principale": 428,
+    "rete_pubblica": 296,
+    "moduli": 115,
+    "privati": 17,
+    "universita": 19,
+    "scuole": 20,
+    "centri_ascolto": 33,
+    "helpline": 20,
+    "approfondimenti": 169,
+    "registro_tutte_le_categorie": 520,
+    "unita": "schede, non strutture fisiche uniche"
+  },
+  "test": {
+    "core": {
+      "scope": "Real V7.3 source data + V7.6 research; no real V7.5 directory inputs in this suite",
+      "passed": 37,
+      "total": 37,
+      "results": [
+        {
+          "test": "Research schema and source references",
+          "passed": true
+        },
+        {
+          "test": "52 sources,27 additions",
+          "passed": true
+        },
+        {
+          "test": "Source input immutability",
+          "passed": true
+        },
+        {
+          "test": "295 original public nodes preserved",
+          "passed": true
+        },
+        {
+          "test": "115 original modules preserved",
+          "passed": true
+        },
+        {
+          "test": "296 public nodes and115modules",
+          "passed": true
+        },
+        {
+          "test": "85 partial public reviews",
+          "passed": true
+        },
+        {
+          "test": "19 partial module reviews",
+          "passed": true
+        },
+        {
+          "test": "210 public and96 modules not reviewed",
+          "passed": true
+        },
+        {
+          "test": "All original dates unchanged",
+          "passed": true
+        },
+        {
+          "test": "Public recheck subset not duplicated",
+          "passed": true
+        },
+        {
+          "test": "Each modified field contains previous value and sources",
+          "passed": true
+        },
+        {
+          "test": "Boccea conflicting Saturday hours remain explicit",
+          "passed": true
+        },
+        {
+          "test": "VVS conflicting beds are not silently reconciled",
+          "passed": true
+        },
+        {
+          "test": "New private residential channel kept distinct",
+          "passed": true
+        },
+        {
+          "test": "New private rows represent all5 provinces",
+          "passed": true
+        },
+        {
+          "test": "New school entries never claim renewal2026/27",
+          "passed": true
+        },
+        {
+          "test": "Missing source fails validation",
+          "passed": true
+        },
+        {
+          "test": "Duplicate source fails",
+          "passed": true
+        },
+        {
+          "test": "Duplicate original ID fails",
+          "passed": true
+        },
+        {
+          "test": "Missing reviewed record fails",
+          "passed": true
+        },
+        {
+          "test": "Duplicate new ID fails",
+          "passed": true
+        },
+        {
+          "test": "Search phrase centro di salute mentale ->CSM",
+          "passed": true
+        },
+        {
+          "test": "Search phrase centri di salute mentale ->CSM",
+          "passed": true
+        },
+        {
+          "test": "Search disorder alimentare ->DCA",
+          "passed": true
+        },
+        {
+          "test": "Search Sert ->SerD",
+          "passed": true
+        },
+        {
+          "test": "Search multiword AND",
+          "passed": true
+        },
+        {
+          "test": "Accents ignored",
+          "passed": true
+        },
+        {
+          "test": "Free not inferred from absence of price",
+          "passed": true
+        },
+        {
+          "test": "Unconfirmedfree not matched",
+          "passed": true
+        },
+        {
+          "test": "Documentedfree matched",
+          "passed": true
+        },
+        {
+          "test": "No diagnostic mapping for anxiety",
+          "passed": true
+        },
+        {
+          "test": "No unsafe source protocols",
+          "passed": true
+        },
+        {
+          "test": "CSV escaped separator quotes newline",
+          "passed": true
+        },
+        {
+          "test": "CSV formula injection prevented",
+          "passed": true
+        },
+        {
+          "test": "No conversion of declared beds to contracted beds",
+          "passed": true
+        },
+        {
+          "test": "All unchanged original fields remain present and equal",
+          "passed": true
+        }
+      ]
+    },
+    "installer": {
+      "scope": "Real V7.3 baseline, explicit synthetic V7.5 contract fixtures; not a full test of the remote checkout",
+      "passed": 31,
+      "total": 31,
+      "results": [
+        {
+          "test": "Expected 428 main records after application",
+          "passed": true
+        },
+        {
+          "test": "Expected 520 tracked records without double-counting derived views",
+          "passed": true
+        },
+        {
+          "test": "Expected 398 separately sourced field assertions",
+          "passed": true
+        },
+        {
+          "test": "Preserve every protected source/download/guide",
+          "passed": true
+        },
+        {
+          "test": "Every original file still exists after planning",
+          "passed": true
+        },
+        {
+          "test": "Four scripts load in adapter/core/amendment/UI order",
+          "passed": true
+        },
+        {
+          "test": "Dedicated renderer load order before execution",
+          "passed": true
+        },
+        {
+          "test": "Original public IDs conserved",
+          "passed": true
+        },
+        {
+          "test": "Original modules remain115",
+          "passed": true
+        },
+        {
+          "test": "Enrichment169 without new duplicate modules",
+          "passed": true
+        },
+        {
+          "test": "No lat/lon invented in canonical records",
+          "passed": true
+        },
+        {
+          "test": "52 sources all HTTPS and ISO dated",
+          "passed": true
+        },
+        {
+          "test": "Do not change indexing headers",
+          "passed": true
+        },
+        {
+          "test": "Do not rewrite old adapters/scripts",
+          "passed": true
+        },
+        {
+          "test": "JSON exports parse",
+          "passed": true
+        },
+        {
+          "test": "CSV widths and BOM valid",
+          "passed": true
+        },
+        {
+          "test": "Reject changed source ID",
+          "passed": true
+        },
+        {
+          "test": "Reject rewritten original verification date",
+          "passed": true
+        },
+        {
+          "test": "Reject unknown source",
+          "passed": true
+        },
+        {
+          "test": "Reject path traversal",
+          "passed": true
+        },
+        {
+          "test": "Reject absolute target",
+          "passed": true
+        },
+        {
+          "test": "Reject symlink descendant",
+          "passed": true
+        },
+        {
+          "test": "Dryrun CLI succeeds",
+          "passed": true
+        },
+        {
+          "test": "Dryrun writes nothing",
+          "passed": true
+        },
+        {
+          "test": "Apply CLI succeeds",
+          "passed": true
+        },
+        {
+          "test": "All protected files remain byte identical after applying",
+          "passed": true
+        },
+        {
+          "test": "All planned files match after applying",
+          "passed": true
+        },
+        {
+          "test": "Idempotent second apply",
+          "passed": true
+        },
+        {
+          "test": "Reject overwrite of modified installed files",
+          "passed": true
+        },
+        {
+          "test": "Reject unrelated newer version",
+          "passed": true
+        },
+        {
+          "test": "No Git changes or push commands inside installer",
+          "passed": true
+        }
+      ]
+    },
+    "browser": {
+      "scope": "Native Chromium in-memory NEW V7.6 components; real V7.3/research, synthetic V7.5 old-directory/stylesheet and old-adapter API contract fixtures. No full old UI or network/physical test.",
+      "viewports": [
+        360,
+        390,
+        1280
+      ],
+      "passed": 73,
+      "total": 73,
+      "javascript_errors": [],
+      "results": [
+        {
+          "test": "360: audit shows520 tracked records",
+          "passed": true
+        },
+        {
+          "test": "360: default partial109 not full520",
+          "passed": true
+        },
+        {
+          "test": "360: no horizontal overflow in audit",
+          "passed": true
+        },
+        {
+          "test": "360: real Boccea result found",
+          "passed": true
+        },
+        {
+          "test": "360: conflict and prior/current values visible",
+          "passed": true
+        },
+        {
+          "test": "360: expanded card does not overflow",
+          "passed": true
+        },
+        {
+          "test": "360: primary source links in expanded record",
+          "passed": true
+        },
+        {
+          "test": "360: reset shows whole register",
+          "passed": true
+        },
+        {
+          "test": "360: AND category/status filters19",
+          "passed": true
+        },
+        {
+          "test": "360: pagination next page",
+          "passed": true
+        },
+        {
+          "test": "360: empty state",
+          "passed": true
+        },
+        {
+          "test": "360: 27 new records filter",
+          "passed": true
+        },
+        {
+          "test": "360: seven new school entries",
+          "passed": true
+        },
+        {
+          "test": "360: school view has20 rows",
+          "passed": true
+        },
+        {
+          "test": "360: original periods corrected",
+          "passed": true
+        },
+        {
+          "test": "360: find new documented school",
+          "passed": true
+        },
+        {
+          "test": "360: new school not presented as2026/27active",
+          "passed": true
+        },
+        {
+          "test": "360: directory no overflow",
+          "passed": true
+        },
+        {
+          "test": "360: directory reset20",
+          "passed": true
+        },
+        {
+          "test": "360: directory empty visible",
+          "passed": true
+        },
+        {
+          "test": "360: explicit failure instead of false updated count",
+          "passed": true
+        },
+        {
+          "test": "390: audit shows520 tracked records",
+          "passed": true
+        },
+        {
+          "test": "390: default partial109 not full520",
+          "passed": true
+        },
+        {
+          "test": "390: no horizontal overflow in audit",
+          "passed": true
+        },
+        {
+          "test": "390: real Boccea result found",
+          "passed": true
+        },
+        {
+          "test": "390: conflict and prior/current values visible",
+          "passed": true
+        },
+        {
+          "test": "390: expanded card does not overflow",
+          "passed": true
+        },
+        {
+          "test": "390: primary source links in expanded record",
+          "passed": true
+        },
+        {
+          "test": "390: reset shows whole register",
+          "passed": true
+        },
+        {
+          "test": "390: AND category/status filters19",
+          "passed": true
+        },
+        {
+          "test": "390: pagination next page",
+          "passed": true
+        },
+        {
+          "test": "390: empty state",
+          "passed": true
+        },
+        {
+          "test": "390: 27 new records filter",
+          "passed": true
+        },
+        {
+          "test": "390: seven new school entries",
+          "passed": true
+        },
+        {
+          "test": "390: school view has20 rows",
+          "passed": true
+        },
+        {
+          "test": "390: original periods corrected",
+          "passed": true
+        },
+        {
+          "test": "390: find new documented school",
+          "passed": true
+        },
+        {
+          "test": "390: new school not presented as2026/27active",
+          "passed": true
+        },
+        {
+          "test": "390: directory no overflow",
+          "passed": true
+        },
+        {
+          "test": "390: directory reset20",
+          "passed": true
+        },
+        {
+          "test": "390: directory empty visible",
+          "passed": true
+        },
+        {
+          "test": "390: explicit failure instead of false updated count",
+          "passed": true
+        },
+        {
+          "test": "1280: audit shows520 tracked records",
+          "passed": true
+        },
+        {
+          "test": "1280: default partial109 not full520",
+          "passed": true
+        },
+        {
+          "test": "1280: no horizontal overflow in audit",
+          "passed": true
+        },
+        {
+          "test": "1280: real Boccea result found",
+          "passed": true
+        },
+        {
+          "test": "1280: conflict and prior/current values visible",
+          "passed": true
+        },
+        {
+          "test": "1280: expanded card does not overflow",
+          "passed": true
+        },
+        {
+          "test": "1280: primary source links in expanded record",
+          "passed": true
+        },
+        {
+          "test": "1280: reset shows whole register",
+          "passed": true
+        },
+        {
+          "test": "1280: AND category/status filters19",
+          "passed": true
+        },
+        {
+          "test": "1280: pagination next page",
+          "passed": true
+        },
+        {
+          "test": "1280: empty state",
+          "passed": true
+        },
+        {
+          "test": "1280: 27 new records filter",
+          "passed": true
+        },
+        {
+          "test": "1280: seven new school entries",
+          "passed": true
+        },
+        {
+          "test": "1280: school view has20 rows",
+          "passed": true
+        },
+        {
+          "test": "1280: original periods corrected",
+          "passed": true
+        },
+        {
+          "test": "1280: find new documented school",
+          "passed": true
+        },
+        {
+          "test": "1280: new school not presented as2026/27active",
+          "passed": true
+        },
+        {
+          "test": "1280: directory no overflow",
+          "passed": true
+        },
+        {
+          "test": "1280: directory reset20",
+          "passed": true
+        },
+        {
+          "test": "1280: directory empty visible",
+          "passed": true
+        },
+        {
+          "test": "1280: explicit failure instead of false updated count",
+          "passed": true
+        },
+        {
+          "test": "Extension keeps428 records on old API contract",
+          "passed": true
+        },
+        {
+          "test": "Extension does not mutate sourceD",
+          "passed": true
+        },
+        {
+          "test": "Extension public count no longer displays295 as current",
+          "passed": true
+        },
+        {
+          "test": "Extension private residential category not forcibly ambulatory",
+          "passed": true
+        },
+        {
+          "test": "Extension85public+19modulepartial filter AND",
+          "passed": true
+        },
+        {
+          "test": "Extension210public pending AND",
+          "passed": true
+        },
+        {
+          "test": "Extension old API receives regular filters",
+          "passed": true
+        },
+        {
+          "test": "Extension exposes source dates separately",
+          "passed": true
+        },
+        {
+          "test": "Extension adds three review options",
+          "passed": true
+        },
+        {
+          "test": "Extension export contains review provenance",
+          "passed": true
+        }
+      ]
+    },
+    "totale_superati": 141,
+    "totale_eseguiti": 141
+  },
+  "non_eseguito": {
+    "full_checkout_end_to_end": "Non eseguito: i test usano fixture dichiarate per i contenuti V7.5.1 non montati nel contenitore.",
+    "produzione_http": "Non collaudata la V7.6 sul dominio pubblico: non è stata pubblicata.",
+    "dispositivi_fisici": "Non eseguito",
+    "migrazione_v8_completa": "Non eseguita: prodotto un indice preliminare con provenienza.",
+    "geocodifica_mappa": "Non eseguita: coordinate non validate.",
+    "indicizzazione": "Non modificata; noindex/nofollow conservato.",
+    "revisione_clinica_indipendente": "Non effettuata"
+  },
+  "conservazione": {
+    "dataset_base_git_blob": "b180de852be5f0a61be64c272c60604784e0bf8b",
+    "file_remoti_modificati": [],
+    "istruzioni": "L’installer verifica SHA del baseline e hash di tutti i file protetti nel checkout prima e dopo le scritture; gli originali non sono sovrascritti."
+  },
+  "azione_necessaria": "Applicare il pacchetto fuori dal checkout tramite aggiorna_v7_6.py, verificare la copia locale, creare un commit e fare push su main; controllare il relativo check Cloudflare Pages.",
+  "deployment": {
+    "status": "commit creato; controllo Cloudflare separato",
+    "expected_branch": "main",
+    "manual_upload_required": false
+  }
+}
