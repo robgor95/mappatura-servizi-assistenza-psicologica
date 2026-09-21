@@ -12,7 +12,7 @@ let D,rows=[],filtered=[],state={},notices=[],returnKey='',timer,lastTyping=0,op
 const dialog=$('svc-dialog');
 function info(message){const target=dialog.open?$('svc-detail-feedback'):$('toast');if(target){target.textContent=message;target.hidden=false;}if(!dialog.open)setTimeout(()=>{$('toast').hidden=true;},6000);}
 function field(label,value,wide){return '<div'+(wide?' class="wide"':'')+'><dt>'+esc(label)+'</dt><dd>'+esc(A.nd(value))+'</dd></div>';}
-function sourceLinks(s){return s.length?'<ol class="svc-detail-sources">'+s.map(u=>'<li><a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(u)+'</a></li>').join('')+'</ol>':'<p>Nessun collegamento specifico registrato. Consulta i campi e il dataset di origine.</p>';}
+function sourceLinks(s){return s.length?'<ol class="svc-detail-sources">'+s.map(u=>'<li><a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(u)+'</a></li>').join('')+'</ol>':'<p>Nessuna fonte specifica è collegata a questo risultato. Consulta la pagina Metodo e fonti.</p>';}
 function setNotice(messages){$('svc-url-notice').textContent=messages.join(' ');$('svc-url-notice').hidden=!messages.length;}
 function serialize(s){const p=new URLSearchParams();A.filterKeys.concat(['ordine','pagina','scheda','tecnico']).forEach(k=>{if(s[k]&&!(k==='pagina'&&Number(s[k])===1)&&!(k==='ordine'&&s[k]==='nome'))p.set(k,s[k]);});return '/servizi.html'+(p.size?'?'+p.toString():'');}
 function urlFor(r){return serialize({...state,scheda:r.key});}
@@ -149,10 +149,10 @@ function wire(){
 async function getJSON(url){const controller=new AbortController(),t=setTimeout(()=>controller.abort(),18000);try{const r=await fetch(url,{signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(t);}}
 async function start(){
   const [base,extra]=await Promise.allSettled([getJSON('/data/portal_data_v7_3.json'),getJSON('/data/privati_v7_5.json')]);
-  if(base.status!=='fulfilled')throw new Error('Database principale non caricabile. Riprova o usa i download originali.');
+  if(base.status!=='fulfilled')throw new Error('I servizi non sono stati caricati. Riprova oppure usa i documenti disponibili.');
   D=base.value;rows=A.build(D,extra.status==='fulfilled'?extra.value:null);populate();wire();
-  $('svc-total').textContent=rows.length+' schede';
-  $('svc-breakdown').textContent=rows.filter(r=>r.origin==='rete').length+' nodi rete ASL · '+rows.filter(r=>r.origin==='moduli').length+' moduli non ASL · '+rows.filter(r=>r.origin==='privati').length+' schede di attività privata.';
+  $('svc-total').textContent=rows.length+' risultati';
+  $('svc-breakdown').textContent=rows.filter(r=>r.origin==='rete').length+' servizi pubblici / SSN · '+rows.filter(r=>r.origin==='moduli').length+' strutture non ASL · '+rows.filter(r=>r.origin==='privati').length+' strutture private.';
   if(extra.status==='fulfilled')$('svc-load-status').hidden=true;else{$('svc-load-status').textContent='Le strutture private non sono state caricate: stai consultando solo i '+rows.length+' risultati principali.';}
   $('svc-controls').disabled=false;state=stateFromURL();commit(state,false);
   if(state.tecnico&&$('svc-technical')){$('svc-technical').scrollIntoView({block:'start'});}
