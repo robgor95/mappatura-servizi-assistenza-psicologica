@@ -1,5 +1,16 @@
 # Changelog
 
+## 7.7.4 — 21 settembre 2026
+
+- Predisposizione SEO completa senza attivare l’indicizzazione.
+- Canonical, title, description, Open Graph e Twitter metadata uniformati sulle pagine utente.
+- Sitemap XML pronta ma non annunciata ai crawler finché il sito resta fuori dai risultati di ricerca.
+- Noindex mantenuto in HTML e rafforzato con X-Robots-Tag; robots.txt consente il crawl necessario a leggere noindex.
+- Dati strutturati WebSite/SearchAction predisposti in home.
+- Archivio legacy, 404, documenti tecnici, dataset, download e pagina qualità restano esclusi dall’indicizzazione anche per il futuro.
+- Aggiunto uno script controllato per abilitare/disabilitare l’indicizzazione in una futura release.
+- Nessuna modifica ai dataset sanitari o alla logica di Menta.
+
 ## 7.7.3 — 21 settembre 2026
 
 - Navigazione a quattro percorsi, Altro e menu mobile accessibile.

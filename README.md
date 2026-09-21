@@ -21,9 +21,9 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.7.3 — Navigazione semplificata
+## Versione corrente V7.7.4 — Navigazione semplificata
 
-La produzione usa **V7.7.3** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
+La produzione usa **V7.7.4** per l’interfaccia, **V7.6** per l’estensione documentale corrente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 
 Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. La V7.7.2 semplifica il linguaggio del frontend, sposta i dettagli di audit fuori dal percorso principale e amplia la guida al privato con scelta del professionista e approcci psicoterapeutici. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
 
@@ -33,6 +33,13 @@ Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi no
 - `assets/menta-v7-7.css`, `assets/menta-site-v7-7.js`, `assets/menta/`: stile e supporti contestuali.
 
 Non sono effettuate diagnosi, valutazioni del rischio o verifiche di disponibilità. Nessuna promessa automatica di gratuità o convenzione SSN.
+
+
+### Indicizzazione e SEO
+
+La struttura SEO è predisposta, ma **l’indicizzazione pubblica è disattivata**. Le pagine principali hanno title, description, canonical, metadata social e sitemap già pronti; noindex è applicato sia nell’HTML sia negli header HTTP. robots.txt consente il crawl per permettere ai motori di leggere il noindex, ma non pubblicizza la sitemap.
+
+Quando si deciderà di aprire il sito ai motori di ricerca, usare python tools/set-indexing.py --enable su un branch dedicato, verificare la preview e solo dopo portare la modifica su main. Dataset, download, pagine legacy e documentazione tecnica rimangono esclusi dall’indicizzazione.
 
 ### Verifica della versione corrente
 
