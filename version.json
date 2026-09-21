@@ -1,9 +1,21 @@
 {
-  "web_version": "7.4",
+  "web_version": "7.5",
   "guides_version": "7.4",
   "archive_version": "7.3",
+  "data_extension_version": "7.5",
   "built_at": "2026-09-21",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
-  "clinical_review": false
+  "clinical_review": false,
+  "counts": {
+    "public_network_nodes": 295,
+    "private_non_asl_modules_v7_3": 115,
+    "university_records_v7_5": 17,
+    "school_records_v7_5": 13,
+    "helplines_v7_5": 19,
+    "listening_centres_v7_5": 23,
+    "private_centres_v7_5": 11,
+    "structure_enrichment_records_v7_5": 168,
+    "orientation_cards_v7_5": 15
+  }
 }
