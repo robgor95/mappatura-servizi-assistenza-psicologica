@@ -1,0 +1,788 @@
+{
+  "groups": [
+    {
+      "coordinates": [
+        41.9070769,
+        12.4644242
+      ],
+      "service_keys": [
+        "rete:R1-02",
+        "rete:R1-20",
+        "rete:R1-22",
+        "rete:PUB72-R1-002"
+      ],
+      "source_addresses": [
+        "Via Plinio, 31"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9055958,
+        12.5033258
+      ],
+      "service_keys": [
+        "rete:R1-03",
+        "rete:R1-14",
+        "rete:PUB72-R1-001"
+      ],
+      "source_addresses": [
+        "Via Palestro, 39"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9248469,
+        12.5175108
+      ],
+      "service_keys": [
+        "rete:R1-04",
+        "rete:R1-21",
+        "rete:NET-014",
+        "rete:PUB72-R1-011"
+      ],
+      "source_addresses": [
+        "Via Sabrata, 12"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9105267,
+        12.5259107
+      ],
+      "service_keys": [
+        "rete:R1-05",
+        "rete:NET-011"
+      ],
+      "source_addresses": [
+        "Via Boemondo, 21"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9313901,
+        12.538742
+      ],
+      "service_keys": [
+        "rete:R1-06",
+        "rete:PUB72-R1-013"
+      ],
+      "source_addresses": [
+        "Via Monte Tomatico, 9"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9240749,
+        12.4145619
+      ],
+      "service_keys": [
+        "rete:R1-10",
+        "rete:NET-012",
+        "rete:PUB72-R1-021"
+      ],
+      "source_addresses": [
+        "Via Pietro Gasparri, 21",
+        "Via Pietro Gasparri, 23"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.9398857,
+        12.4649811
+      ],
+      "service_keys": [
+        "rete:R1-12",
+        "rete:PUB72-R1-022",
+        "rete:PUB72-R1-025"
+      ],
+      "source_addresses": [
+        "Via Antonino Di Giorgio, 19"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9408977,
+        12.4196005
+      ],
+      "service_keys": [
+        "rete:R1-18",
+        "rete:NET-007",
+        "rete:NET-009"
+      ],
+      "source_addresses": [
+        "Piazza Santa Maria della Pietà, 5",
+        "Piazza Santa Maria della Pietà, 5 - Pad. 14"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.885699,
+        12.5151361
+      ],
+      "service_keys": [
+        "rete:R2-01",
+        "rete:R2-06"
+      ],
+      "source_addresses": [
+        "Via Monza 2, Roma",
+        "Via Monza 2, terzo piano, Roma"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.8816933,
+        12.5393881
+      ],
+      "service_keys": [
+        "rete:R2-03",
+        "rete:NET-022",
+        "rete:PUB72-R2-002"
+      ],
+      "source_addresses": [
+        "Via Casilina 395, Roma",
+        "Via Casilina, 395"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.8536819,
+        12.5692721
+      ],
+      "service_keys": [
+        "rete:R2-07",
+        "rete:PUB72-R2-005"
+      ],
+      "source_addresses": [
+        "Piazza di Cinecittà 11, terzo piano, Roma",
+        "Piazza di Cinecittà, 11"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.8138718,
+        12.4740125
+      ],
+      "service_keys": [
+        "rete:R2-09",
+        "rete:PUB72-R2-008"
+      ],
+      "source_addresses": [
+        "Via Orio Vergani 1, Roma",
+        "Via Orio Vergani, 1"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.848628,
+        12.5234751
+      ],
+      "service_keys": [
+        "rete:R2-14",
+        "rete:R2-16"
+      ],
+      "source_addresses": [
+        "Via Appia Antica, 220"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.7882863,
+        12.3622826
+      ],
+      "service_keys": [
+        "rete:R3-03",
+        "rete:NET-029"
+      ],
+      "source_addresses": [
+        "Via Poggio di Acilia, 62",
+        "Via del Poggio di Acilia, 62"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.7740782,
+        12.2349864
+      ],
+      "service_keys": [
+        "rete:R3-04",
+        "rete:PUB72-R3-003"
+      ],
+      "source_addresses": [
+        "Largo dello Spinarello, 12/14"
+      ],
+      "municipalities": [
+        "Fiumicino"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.7381821,
+        12.2708597
+      ],
+      "service_keys": [
+        "rete:R3-07",
+        "rete:R3-10",
+        "rete:NET-028"
+      ],
+      "source_addresses": [
+        "Via Tagaste, 2/4",
+        "Via Tagaste, 6"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.8810775,
+        12.4599115
+      ],
+      "service_keys": [
+        "rete:R3-11",
+        "rete:NET-031"
+      ],
+      "source_addresses": [
+        "Via Arturo Colautti, 28",
+        "Via Colautti"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        42.1023127,
+        12.175879
+      ],
+      "service_keys": [
+        "rete:R4-04",
+        "rete:NET-036"
+      ],
+      "source_addresses": [
+        "Via Trento 18, Bracciano"
+      ],
+      "municipalities": [
+        "Bracciano"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.7294877,
+        13.0005798
+      ],
+      "service_keys": [
+        "rete:R5-01",
+        "rete:R5-06",
+        "rete:NET-048"
+      ],
+      "source_addresses": [
+        "Via degli Esplosivi 9/b, Colleferro",
+        "Via degli Esplosivi, 9/b"
+      ],
+      "municipalities": [
+        "Colleferro"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.9622363,
+        12.8018449
+      ],
+      "service_keys": [
+        "rete:R5-05",
+        "rete:NET-045"
+      ],
+      "source_addresses": [
+        "Via Domenico Giuliani 4, Tivoli",
+        "Via Domenico Giuliani, 4"
+      ],
+      "municipalities": [
+        "Tivoli"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.839073,
+        12.8885082
+      ],
+      "service_keys": [
+        "rete:R5-11",
+        "rete:NET-047"
+      ],
+      "source_addresses": [
+        "Via Porta San Martino, 46",
+        "Via Porta San Martino, snc"
+      ],
+      "municipalities": [
+        "Palestrina"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.7234645,
+        12.6758277
+      ],
+      "service_keys": [
+        "rete:R6-12",
+        "rete:NET-059"
+      ],
+      "source_addresses": [
+        "Via delle Cerquette, 2"
+      ],
+      "municipalities": [
+        "Ariccia"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        42.5432761,
+        12.0315399
+      ],
+      "service_keys": [
+        "rete:VT-06",
+        "rete:NET-069"
+      ],
+      "source_addresses": [
+        "Via Dante Alighieri 100, Montefiascone",
+        "Via Dante Alighieri, 100"
+      ],
+      "municipalities": [
+        "Montefiascone"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        42.2498808,
+        11.7604967
+      ],
+      "service_keys": [
+        "rete:VT-07",
+        "rete:NET-070",
+        "rete:PUB72-VT-001"
+      ],
+      "source_addresses": [
+        "Via Suor Serafina Giudici",
+        "Via Suor Serafina Giudici, Tarquinia",
+        "Viale Suor Serafina Giudici"
+      ],
+      "municipalities": [
+        "Tarquinia"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        42.4098964,
+        12.1091818
+      ],
+      "service_keys": [
+        "rete:VT-12",
+        "rete:NET-072"
+      ],
+      "source_addresses": [
+        "Via E. Fermi 15, Viterbo",
+        "Via Enrico Fermi, 15"
+      ],
+      "municipalities": [
+        "Viterbo"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.491158,
+        13.8346887
+      ],
+      "service_keys": [
+        "rete:FR-07",
+        "rete:FR-09",
+        "rete:NET-081"
+      ],
+      "source_addresses": [
+        "Via E. De Nicola 265, Cassino",
+        "Via E. De Nicola, 265",
+        "Via Enrico De Nicola, 265"
+      ],
+      "municipalities": [
+        "Cassino"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.5878119,
+        12.6501724
+      ],
+      "service_keys": [
+        "rete:LT-02",
+        "rete:LT-11",
+        "rete:NET-090"
+      ],
+      "source_addresses": [
+        "Via Giustiniano snc, Aprilia",
+        "Via Giustiniano, Aprilia",
+        "Via Giustiniano, snc"
+      ],
+      "municipalities": [
+        "Aprilia"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.4794942,
+        13.1678811
+      ],
+      "service_keys": [
+        "rete:LT-07",
+        "rete:LT-13"
+      ],
+      "source_addresses": [
+        "Via Torretta Rocchigiana, Priverno",
+        "Via Torretta Rocchigiana, snc"
+      ],
+      "municipalities": [
+        "Priverno"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.2892363,
+        13.2525439
+      ],
+      "service_keys": [
+        "rete:LT-08",
+        "rete:NET-087"
+      ],
+      "source_addresses": [
+        "Via Don Orione 8, Terracina",
+        "Via Don Orione, 8"
+      ],
+      "municipalities": [
+        "Terracina"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.9601303,
+        12.8020302
+      ],
+      "service_keys": [
+        "rete:NET-041",
+        "rete:NET-049"
+      ],
+      "source_addresses": [
+        "Via Antonio Parrozzani, 3"
+      ],
+      "municipalities": [
+        "Tivoli"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.849157,
+        12.4128857
+      ],
+      "service_keys": [
+        "rete:NET-027",
+        "rete:PUB72-R3-002"
+      ],
+      "source_addresses": [
+        "Via Marino Mazzacurati, 23",
+        "Via Mazzacurati, 23"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.2528307,
+        13.7513856
+      ],
+      "service_keys": [
+        "rete:NET-088",
+        "rete:NET-094"
+      ],
+      "source_addresses": [
+        "Via Fontana di Voza"
+      ],
+      "municipalities": [
+        "Minturno"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.8917464,
+        12.2848456
+      ],
+      "service_keys": [
+        "rete:PUB72-R1-019",
+        "rete:PUB72-R1-020"
+      ],
+      "source_addresses": [
+        "Via Gaetano Sodini, 24",
+        "Via Gaetano Sodini, 52"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.863167,
+        12.4496303
+      ],
+      "service_keys": [
+        "moduli:MOD-090",
+        "moduli:MOD-089",
+        "moduli:MOD-088"
+      ],
+      "source_addresses": [
+        "Via Bernardino Ramazzini, 31"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.296023,
+        13.7803507
+      ],
+      "service_keys": [
+        "moduli:MOD-043",
+        "moduli:MOD-042",
+        "moduli:MOD-047"
+      ],
+      "source_addresses": [
+        "Via Cerri Aprano"
+      ],
+      "municipalities": [
+        "Santi Cosma e Damiano"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.8816172,
+        12.3980344
+      ],
+      "service_keys": [
+        "moduli:MOD-005",
+        "moduli:MOD-003",
+        "moduli:MOD-002",
+        "moduli:MOD-004",
+        "moduli:MOD-001"
+      ],
+      "source_addresses": [
+        "Via dei Bevilacqua, 43"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.8561613,
+        12.4527739
+      ],
+      "service_keys": [
+        "moduli:MOD-008",
+        "moduli:MOD-007",
+        "moduli:MOD-006",
+        "moduli:MOD-009"
+      ],
+      "source_addresses": [
+        "Viale Prospero Colonna, 46"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.8792702,
+        12.4525982
+      ],
+      "service_keys": [
+        "moduli:MOD-011",
+        "moduli:MOD-010",
+        "moduli:MOD-012"
+      ],
+      "source_addresses": [
+        "Via Sesto Celere, 16/18/20"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9402369,
+        12.433746
+      ],
+      "service_keys": [
+        "moduli:MOD-021",
+        "moduli:MOD-020",
+        "moduli:MOD-019",
+        "privati:PRI76-001"
+      ],
+      "source_addresses": [
+        "Via del Forte Trionfale 36, Roma",
+        "Via del Forte Trionfale, 36"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione."
+    },
+    {
+      "coordinates": [
+        41.7137958,
+        12.690639
+      ],
+      "service_keys": [
+        "moduli:MOD-015",
+        "moduli:MOD-018",
+        "moduli:MOD-016",
+        "moduli:MOD-017",
+        "moduli:MOD-014"
+      ],
+      "source_addresses": [
+        "Via della Madonnina, 1"
+      ],
+      "municipalities": [
+        "Genzano di Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        41.9874436,
+        12.4042662
+      ],
+      "service_keys": [
+        "moduli:MOD-100",
+        "moduli:MOD-099"
+      ],
+      "source_addresses": [
+        "Via della Cappelletta della Giustiniana, 119"
+      ],
+      "municipalities": [
+        "Roma"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        42.1414454,
+        12.5405146
+      ],
+      "service_keys": [
+        "moduli:MS775-REV-CTC2",
+        "moduli:MS775-REV-CD"
+      ],
+      "source_addresses": [
+        "Via Morlupo, 94"
+      ],
+      "municipalities": [
+        "Capena"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    },
+    {
+      "coordinates": [
+        42.0791764,
+        11.8163926
+      ],
+      "service_keys": [
+        "moduli:V79-PONTE-RES",
+        "moduli:V79-PONTE-COCCINELLA"
+      ],
+      "source_addresses": [
+        "Via Veneto, 30/c"
+      ],
+      "municipalities": [
+        "Civitavecchia"
+      ],
+      "interpretation": "Indirizzo condiviso; servizi distinti."
+    }
+  ],
+  "policy": "I gruppi di via possono contenere civici diversi: approssimazione esplicita, non verifica della sede condivisa."
+}

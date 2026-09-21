@@ -1,0 +1,4043 @@
+{
+  "version": "7.9",
+  "date": "2026-09-22",
+  "baseline_commit": "498195783ca07dff14dd4f3640e7e2fae3598e06",
+  "summary": {
+    "cases_screened": 12,
+    "cases_with_sources_acquired": 11,
+    "private_operator_groups_with_sources": 10,
+    "public_operator_samples": 1,
+    "unverified_attempts": 1,
+    "multisite_cases": 9,
+    "single_site_multiservice_cases": 2,
+    "new_distinct_services": 8,
+    "new_physical_addresses_documented": 5,
+    "new_modules_with_building_unresolved": 2,
+    "cases_with_pending_items": 11,
+    "existing_records_partially_reviewed": 47,
+    "new_records": 8,
+    "all_services_documentarily_reverified": false,
+    "fields": {
+      "indirizzo": {
+        "reviewed": 33,
+        "text_changed": 26,
+        "service_keys": [
+          "rete:NET-002",
+          "rete:R5-02",
+          "rete:NET-043",
+          "rete:NET-045",
+          "rete:NET-046",
+          "rete:NET-047",
+          "rete:NET-048",
+          "rete:NET-040",
+          "rete:NET-041",
+          "rete:NET-042",
+          "moduli:MOD-106",
+          "moduli:MS775-REV-CTC1",
+          "moduli:MS775-REV-CTC2",
+          "moduli:MS775-REV-CD",
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-045",
+          "moduli:MOD-046",
+          "moduli:MOD-109",
+          "moduli:MOD-108",
+          "moduli:MOD-010",
+          "moduli:MOD-011",
+          "moduli:MOD-012",
+          "moduli:MOD-083",
+          "moduli:MOD-084",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028"
+        ],
+        "normalized_value_changed": 21
+      },
+      "sede_dettaglio": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "rete:NET-002"
+        ]
+      },
+      "telefono": {
+        "reviewed": 40,
+        "text_changed": 38,
+        "service_keys": [
+          "rete:NET-002",
+          "rete:R5-02",
+          "rete:NET-043",
+          "rete:NET-045",
+          "rete:NET-047",
+          "rete:NET-048",
+          "rete:NET-040",
+          "rete:NET-041",
+          "rete:NET-042",
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-038",
+          "moduli:MOD-039",
+          "moduli:MOD-040",
+          "moduli:MOD-041",
+          "moduli:MOD-042",
+          "moduli:MOD-043",
+          "moduli:MOD-044",
+          "moduli:MOD-045",
+          "moduli:MOD-046",
+          "moduli:MOD-047",
+          "moduli:MOD-109",
+          "moduli:MOD-108",
+          "moduli:MOD-010",
+          "moduli:MOD-011",
+          "moduli:MOD-012",
+          "moduli:MOD-083",
+          "moduli:MOD-084",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028",
+          "moduli:MOD-111",
+          "moduli:MOD-112",
+          "moduli:MOD-113",
+          "moduli:MOD-114"
+        ],
+        "normalized_value_changed": 25
+      },
+      "stato_servizio": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "rete:NET-002"
+        ]
+      },
+      "email": {
+        "reviewed": 40,
+        "text_changed": 17,
+        "service_keys": [
+          "rete:R5-02",
+          "rete:NET-043",
+          "rete:NET-045",
+          "rete:NET-046",
+          "rete:NET-047",
+          "rete:NET-048",
+          "rete:NET-040",
+          "rete:NET-041",
+          "rete:NET-042",
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-038",
+          "moduli:MOD-039",
+          "moduli:MOD-040",
+          "moduli:MOD-041",
+          "moduli:MOD-042",
+          "moduli:MOD-043",
+          "moduli:MOD-044",
+          "moduli:MOD-045",
+          "moduli:MOD-046",
+          "moduli:MOD-047",
+          "moduli:MOD-109",
+          "moduli:MOD-108",
+          "moduli:MOD-010",
+          "moduli:MOD-011",
+          "moduli:MOD-012",
+          "moduli:MOD-083",
+          "moduli:MOD-084",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028",
+          "moduli:MOD-111",
+          "moduli:MOD-112",
+          "moduli:MOD-113",
+          "moduli:MOD-114"
+        ],
+        "normalized_value_changed": 17
+      },
+      "orari": {
+        "reviewed": 4,
+        "text_changed": 4,
+        "service_keys": [
+          "rete:R5-02",
+          "rete:NET-043",
+          "rete:NET-047",
+          "rete:NET-048"
+        ]
+      },
+      "accesso": {
+        "reviewed": 3,
+        "text_changed": 3,
+        "service_keys": [
+          "rete:R5-02",
+          "rete:NET-043",
+          "rete:NET-047"
+        ]
+      },
+      "costi": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "rete:R5-02"
+        ]
+      },
+      "accessibilita": {
+        "reviewed": 2,
+        "text_changed": 2,
+        "service_keys": [
+          "rete:NET-045",
+          "rete:NET-047"
+        ]
+      },
+      "note_contatti": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "rete:NET-046"
+        ]
+      },
+      "ente_id": {
+        "reviewed": 18,
+        "text_changed": 18,
+        "service_keys": [
+          "moduli:MOD-106",
+          "moduli:MS775-REV-CTC1",
+          "moduli:MS775-REV-CTC2",
+          "moduli:MS775-REV-CD",
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-109",
+          "moduli:MOD-108",
+          "moduli:MOD-010",
+          "moduli:MOD-011",
+          "moduli:MOD-012",
+          "moduli:MOD-083",
+          "moduli:MOD-084",
+          "moduli:MOD-111",
+          "moduli:MOD-112",
+          "moduli:MOD-113",
+          "moduli:MOD-114"
+        ]
+      },
+      "struttura_id": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "service_keys": [
+          "moduli:MOD-106",
+          "moduli:MS775-REV-CTC1",
+          "moduli:MS775-REV-CTC2",
+          "moduli:MS775-REV-CD",
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-109",
+          "moduli:MOD-108",
+          "moduli:MOD-010",
+          "moduli:MOD-011",
+          "moduli:MOD-012",
+          "moduli:MOD-083",
+          "moduli:MOD-084",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028"
+        ]
+      },
+      "servizio_id": {
+        "reviewed": 35,
+        "text_changed": 35,
+        "service_keys": [
+          "moduli:MOD-106",
+          "moduli:MS775-REV-CTC1",
+          "moduli:MS775-REV-CTC2",
+          "moduli:MS775-REV-CD",
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-038",
+          "moduli:MOD-039",
+          "moduli:MOD-040",
+          "moduli:MOD-041",
+          "moduli:MOD-042",
+          "moduli:MOD-043",
+          "moduli:MOD-044",
+          "moduli:MOD-045",
+          "moduli:MOD-046",
+          "moduli:MOD-047",
+          "moduli:MOD-109",
+          "moduli:MOD-108",
+          "moduli:MOD-010",
+          "moduli:MOD-011",
+          "moduli:MOD-012",
+          "moduli:MOD-083",
+          "moduli:MOD-084",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028",
+          "moduli:MOD-111",
+          "moduli:MOD-112",
+          "moduli:MOD-113",
+          "moduli:MOD-114"
+        ]
+      },
+      "gestore": {
+        "reviewed": 4,
+        "text_changed": 4,
+        "service_keys": [
+          "moduli:MOD-094",
+          "moduli:MOD-095",
+          "moduli:MOD-097",
+          "moduli:MOD-109"
+        ]
+      },
+      "ente_gruppo": {
+        "reviewed": 17,
+        "text_changed": 17,
+        "service_keys": [
+          "moduli:MOD-038",
+          "moduli:MOD-039",
+          "moduli:MOD-040",
+          "moduli:MOD-041",
+          "moduli:MOD-042",
+          "moduli:MOD-043",
+          "moduli:MOD-044",
+          "moduli:MOD-045",
+          "moduli:MOD-046",
+          "moduli:MOD-047",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028"
+        ]
+      },
+      "nota_indirizzo": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-038"
+        ]
+      },
+      "denominazione": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "destinatari": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "ssn_evidence_v79": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "posti_autorizzati": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "posti_accreditati": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "posti_contrattualizzati": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "posti_dichiarati": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "contratto_ssn_stato": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "accreditamento_stato": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "nota_rapporto_ssn": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-109"
+        ]
+      },
+      "comune": {
+        "reviewed": 2,
+        "text_changed": 0,
+        "service_keys": [
+          "moduli:MOD-083",
+          "moduli:MOD-084"
+        ]
+      },
+      "email_sede_documentata": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-107"
+        ]
+      },
+      "telefono_sede_documentato": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "service_keys": [
+          "moduli:MOD-107"
+        ]
+      },
+      "nota_contatti": {
+        "reviewed": 2,
+        "text_changed": 2,
+        "service_keys": [
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA"
+        ]
+      }
+    },
+    "source_count": 34,
+    "actual_calls": 0,
+    "site_visits": 0,
+    "closures_or_transfers_proven": 0,
+    "address_correction_not_transfer": [
+      "rete:NET-002"
+    ],
+    "positive_new_ssn_contracts_proven": 0
+  },
+  "operator_audits": [
+    {
+      "operator": "ASL Roma 5 – campione DSM",
+      "service_keys": [
+        "rete:R5-02",
+        "rete:NET-040",
+        "rete:NET-041",
+        "rete:NET-042",
+        "rete:NET-043",
+        "rete:NET-045",
+        "rete:NET-046",
+        "rete:NET-047",
+        "rete:NET-048",
+        "rete:V79-R5-CALVINO",
+        "rete:V79-R5-GIOVAGNOLI"
+      ],
+      "documented_sites_in_scope": null,
+      "documented_services_in_scope": 11,
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/"
+      ],
+      "outcome": "Aggiornati 9 servizi esistenti e aggiunte 2 residenze distinte.",
+      "pending": [
+        "Telefono CD Subiaco da chiarire",
+        "CD Monterotondo non consolidato."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Reverie",
+      "service_keys": [
+        "moduli:MOD-106",
+        "moduli:MS775-REV-CTC1",
+        "moduli:MS775-REV-CTC2",
+        "moduli:MS775-REV-CD"
+      ],
+      "documented_sites_in_scope": 3,
+      "documented_services_in_scope": 4,
+      "sources": [
+        "https://reverie.it/strutture/"
+      ],
+      "outcome": "Quattro servizi conservati; CTC2 e CD condividono la sede.",
+      "pending": [
+        "Contratto/budget per singolo modulo e ingresso fisico non verificati."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Gesti-Var",
+      "service_keys": [
+        "moduli:MOD-094",
+        "moduli:MOD-095",
+        "moduli:MOD-097",
+        "moduli:V79-GV-LICIA"
+      ],
+      "documented_sites_in_scope": 3,
+      "documented_services_in_scope": 4,
+      "sources": [
+        "https://gestivar.it/le-strutture/"
+      ],
+      "outcome": "Tre moduli esistenti ricondotti al gestore e una nuova sede/servizio autorizzata secondo il gestore.",
+      "pending": [
+        "Accreditamento e contratto Villa Licia non consolidati."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Comunità Insieme – gruppo Anelli",
+      "service_keys": [
+        "moduli:MOD-038",
+        "moduli:MOD-039",
+        "moduli:MOD-040",
+        "moduli:MOD-041",
+        "moduli:MOD-042",
+        "moduli:MOD-043",
+        "moduli:MOD-044",
+        "moduli:MOD-045",
+        "moduli:MOD-046",
+        "moduli:MOD-047",
+        "moduli:V79-INS-VENERE",
+        "moduli:V79-INS-MARTE"
+      ],
+      "documented_sites_in_scope": null,
+      "documented_services_in_scope": 12,
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/",
+        "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+      ],
+      "outcome": "Inventario dei 10 moduli precedenti; aggiunti Venere e Marte senza dedurre convenzione.",
+      "pending": [
+        "Civico Abaton 2/36 in conflitto.",
+        "Titolare amministrativo, posti e contratto dei nuovi moduli non consolidati."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Il Ponte / Le Ali del Ponte",
+      "service_keys": [
+        "moduli:MOD-109",
+        "moduli:V79-PONTE-RES",
+        "moduli:V79-PONTE-COCCINELLA"
+      ],
+      "documented_sites_in_scope": 2,
+      "documented_services_in_scope": 3,
+      "sources": [
+        "https://www.alidelponte.com/servizi",
+        "https://www.ilpontecivitavecchia.it/",
+        "https://www.alidelponte.com/"
+      ],
+      "outcome": "Chiuso lo split fisico/funzionale: accoglienza, comunità e Coccinella. Via Isonzo/La Formica non aggiunta alla mappa sanitaria residenziale.",
+      "pending": [
+        "Accreditamento e contratti distinti per unità restano pendenti."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Cooperate / Fratello Sole",
+      "service_keys": [
+        "moduli:MOD-108",
+        "moduli:V79-COOPERATE-FEBO"
+      ],
+      "documented_sites_in_scope": 2,
+      "documented_services_in_scope": 2,
+      "sources": [
+        "https://www.cooperate.it/home.html",
+        "https://www.cooperate.it/servizi/bracciano.html"
+      ],
+      "outcome": "Aggiornati recapiti della comunità e aggiunto FEBO come struttura non ASL con rapporto SSN non documentato.",
+      "pending": [
+        "Esito corrente dell’accreditamento FEBO e costi da verificare."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Villa Letizia",
+      "service_keys": [
+        "moduli:MOD-010",
+        "moduli:MOD-011",
+        "moduli:MOD-012"
+      ],
+      "documented_sites_in_scope": 1,
+      "documented_services_in_scope": 3,
+      "sources": [
+        "https://www.villaletizia.org/"
+      ],
+      "outcome": "Confermati tre moduli distinti; recuperato indirizzo della comunità per adolescenti.",
+      "pending": [
+        "Contratto corrente dei singoli moduli non nuovamente acquisito."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Maieusis",
+      "service_keys": [
+        "moduli:MOD-083",
+        "moduli:MOD-084"
+      ],
+      "documented_sites_in_scope": 2,
+      "documented_services_in_scope": 2,
+      "sources": [
+        "https://www.maieusis.org/contatti/"
+      ],
+      "outcome": "Verificate entrambe le sedi e i recapiti specifici.",
+      "pending": [],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Colle Cesarano / Kormed",
+      "service_keys": [
+        "moduli:MOD-022",
+        "moduli:MOD-023",
+        "moduli:MOD-024",
+        "moduli:MOD-025",
+        "moduli:MOD-026",
+        "moduli:MOD-027",
+        "moduli:MOD-028"
+      ],
+      "documented_sites_in_scope": 1,
+      "documented_services_in_scope": 7,
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "outcome": "Sette moduli preservati, aggiornamento contatti e indirizzo comune.",
+      "pending": [
+        "Dotazione e contratto per modulo da consolidare su provvedimenti correnti."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Nuovi Orizzonti",
+      "service_keys": [
+        "moduli:MOD-107",
+        "moduli:MS775-NO-CASAGIOIA"
+      ],
+      "documented_sites_in_scope": 2,
+      "documented_services_in_scope": 2,
+      "sources": [
+        "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+      ],
+      "outcome": "Documentate Piglio e Marino nella carta servizi. Cittadella Cielo/Frosinone non automaticamente inserita come ulteriore comunità sanitaria.",
+      "pending": [
+        "Ricognizione di ulteriori sedi Lazio non conclusiva; carta servizi giugno 2021.",
+        "Contatti Piglio discordanti e contratto Casa Gioia da riconfermare."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Comunità Mondo Nuovo",
+      "service_keys": [
+        "moduli:MOD-111",
+        "moduli:MOD-112",
+        "moduli:MOD-113",
+        "moduli:MOD-114"
+      ],
+      "documented_sites_in_scope": 4,
+      "documented_services_in_scope": 4,
+      "sources": [
+        "https://comunitamondonuovo.it/category/centri-accreditati/"
+      ],
+      "outcome": "Quattro comunità Lazio esistenti riconosciute nel repertorio del gestore; aggiornati contatti generali.",
+      "pending": [
+        "Civici/chilometriche e recapiti specifici delle sedi da consolidare."
+      ],
+      "checked_at": "2026-09-22"
+    },
+    {
+      "operator": "Italian Hospital Group",
+      "service_keys": [
+        "moduli:MOD-071",
+        "moduli:MOD-072",
+        "moduli:MOD-073",
+        "moduli:MOD-074",
+        "moduli:MOD-075",
+        "moduli:MOD-076",
+        "moduli:MOD-077",
+        "moduli:MOD-078",
+        "moduli:MOD-079",
+        "moduli:MOD-080",
+        "moduli:MOD-081",
+        "moduli:MOD-082"
+      ],
+      "documented_sites_in_scope": null,
+      "documented_services_in_scope": 12,
+      "sources": [
+        "https://italianhospitalgroup.it/"
+      ],
+      "outcome": "Tentata verifica del sito del gestore, accesso non riuscito; nessun dato operativo inventato.",
+      "pending": [
+        "Indirizzi delle unità Villa Adriana, Castel Madama, Villanova, Villaggio Adriano e Canterano non consolidati."
+      ],
+      "checked_at": "2026-09-22"
+    }
+  ],
+  "revisions": [
+    {
+      "service_key": "rete:NET-002",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri"
+      ],
+      "fields": {
+        "indirizzo": "Via Giovanni Martinotti, 20",
+        "sede_dettaglio": "Ospedale San Filippo Neri, padiglione A, piano terra",
+        "telefono": "06 60102408 (medicheria); 06 60102947 (coordinamento infermieristico)",
+        "stato_servizio": "Indirizzo corretto: il precedente riferimento dipartimentale non era la sede del reparto. Nessun trasferimento dedotto."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Piazza Santa Maria della Pietà, 5 - Pad. 26",
+          "changed": true
+        },
+        "sede_dettaglio": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "+39 06 6010.2947",
+          "changed": true
+        },
+        "stato_servizio": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Correzione di localizzazione, non evidenza di un trasferimento.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:R5-02",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+      ],
+      "fields": {
+        "indirizzo": "Via Colleferro, 71",
+        "telefono": "0774 779186",
+        "email": "csm.guidonia@aslroma5.it",
+        "orari": "Lunedì–venerdì 08:00–20:00; sabato e prefestivi 08:00–14:00.",
+        "accesso": "Primo accesso diretto o su invio del medico. Accoglienza e valutazione della priorità; visite programmate secondo indicazioni del CSM, con impegnativa e CUP quando richiesti.",
+        "costi": "Accoglienza iniziale gratuita secondo la ASL; eventuali prestazioni successive soggette alle condizioni indicate dal servizio. Non si deduce gratuità dell’intero percorso."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Colleferro 71, Guidonia",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0774 779186",
+          "changed": false
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "csm.guidonia@aslroma5.it",
+          "changed": false
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Lun–ven 08–20; sab e prefestivi 08–14",
+          "changed": true
+        },
+        "accesso": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Contattare il CSM competente per territorio",
+          "changed": true
+        },
+        "costi": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riesame per campo; nessuna verifica telefonica.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-043",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/"
+      ],
+      "fields": {
+        "indirizzo": "Piazza Leone Bernardini, 13",
+        "email": "cd.guidonia@aslroma5.it",
+        "telefono": "0774 341381",
+        "orari": "Lunedì, mercoledì, venerdì 08:00–14:30; martedì e giovedì 08:00–17:30.",
+        "accesso": "Inserimento su progetto terapeutico-riabilitativo individualizzato concordato fra CSM, centro diurno e persona interessata."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "accesso": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Collegato alle UOC CSM territoriali",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-045",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/"
+      ],
+      "fields": {
+        "indirizzo": "Via Domenico Giuliani, 4",
+        "email": "cd.tivoli@aslroma5.it",
+        "telefono": "0774 3164864; 0774 3164865",
+        "accessibilita": "La ASL descrive servoscala e bagno per persone con disabilità; fruibilità concreta da confermare con il servizio."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "accessibilita": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-046",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-subiaco/"
+      ],
+      "fields": {
+        "indirizzo": "Via Repubblica, snc",
+        "email": "cd.subiaco@aslroma5.it",
+        "note_contatti": "Telefono non aggiornato: la pagina riporta numerazioni che coincidono con Tivoli e stringhe abbreviate; possibile incongruenza da chiarire con la ASL."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-subiaco/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-subiaco/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "note_contatti": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-subiaco/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Telefono non aggiornato: la pagina riporta numerazioni che coincidono con Tivoli e stringhe abbreviate; possibile incongruenza da chiarire con la ASL.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-047",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+      ],
+      "fields": {
+        "indirizzo": "Via Porta San Martino, snc",
+        "email": "cd.palestrina@aslroma5.it",
+        "telefono": "06 95322633; 06 95322634",
+        "orari": "Lunedì–venerdì 08:00–15:12 (orario riportato dalla ASL).",
+        "accesso": "Utenti adulti in carico al CSM, su progetto terapeutico individualizzato.",
+        "accessibilita": "La ASL descrive locali al piano terra e bagni per persone con disabilità; fruibilità concreta da confermare."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "accesso": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Collegato alle UOC CSM territoriali",
+          "changed": true
+        },
+        "accessibilita": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-048",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/"
+      ],
+      "fields": {
+        "indirizzo": "Via degli Esplosivi, 9/b",
+        "email": "cd.colleferro@aslroma5.it",
+        "telefono": "06 97097711; 06 97097712; 06 97097724",
+        "orari": "Lunedì, mercoledì, venerdì 08:00–14:00; martedì e giovedì 08:00–17:30."
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-040",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-monterotondo/"
+      ],
+      "fields": {
+        "indirizzo": "Via Roberto Faravelli, 27",
+        "telefono": "06 90075845; 06 90075851",
+        "email": "spdc.monterotondo@aslroma5.it"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-monterotondo/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-monterotondo/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-monterotondo/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "I recapiti sono del reparto; gli orari di visita non sono usati come orari di apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-041",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-tivoli/"
+      ],
+      "fields": {
+        "indirizzo": "Via Antonio Parrozzani, 3",
+        "telefono": "0774 3164362",
+        "email": "spdc.tivoli@aslroma5.it"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-tivoli/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "I recapiti sono del reparto; gli orari di visita non sono usati come orari di apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "rete:NET-042",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-colleferro/"
+      ],
+      "fields": {
+        "indirizzo": "Piazza Aldo Moro, 1",
+        "telefono": "06 97223390",
+        "email": "spdc.colleferro@aslroma5.it"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-colleferro/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "I recapiti sono del reparto; gli orari di visita non sono usati come orari di apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-106",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://reverie.it/strutture/comunita-terapeutica-romana/"
+      ],
+      "fields": {
+        "indirizzo": "Via Moncenisio, 20",
+        "ente_id": "REVERIE",
+        "struttura_id": "REV-ROMA",
+        "servizio_id": "MOD-106"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://reverie.it/strutture/comunita-terapeutica-romana/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Moncenisio, 20",
+          "changed": false
+        },
+        "ente_id": {
+          "sources": [
+            "https://reverie.it/strutture/comunita-terapeutica-romana/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://reverie.it/strutture/comunita-terapeutica-romana/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://reverie.it/strutture/comunita-terapeutica-romana/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riconferma documentale sede e separazione dei servizi; non è verifica del contratto né dell’ingresso.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MS775-REV-CTC1",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/"
+      ],
+      "fields": {
+        "indirizzo": "Via Passo Cavallone, 4",
+        "ente_id": "REVERIE",
+        "struttura_id": "REV-CTC1",
+        "servizio_id": "MS775-REV-CTC1"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Passo Cavallone, 4",
+          "changed": false
+        },
+        "ente_id": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV",
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV-CAPENA-CTC1",
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV-CAPENA-CTC1-SRTR",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riconferma documentale sede e separazione dei servizi; non è verifica del contratto né dell’ingresso.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MS775-REV-CTC2",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/"
+      ],
+      "fields": {
+        "indirizzo": "Via Morlupo, 94",
+        "ente_id": "REVERIE",
+        "struttura_id": "REV-MORLUPO94",
+        "servizio_id": "MS775-REV-CTC2"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Morlupo, 94",
+          "changed": false
+        },
+        "ente_id": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV",
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV-CAPENA-CTC2",
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-2/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV-CAPENA-CTC2-SRTR",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riconferma documentale sede e separazione dei servizi; non è verifica del contratto né dell’ingresso.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MS775-REV-CD",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://reverie.it/strutture/il-centro-diurno/"
+      ],
+      "fields": {
+        "indirizzo": "Via Morlupo, 94",
+        "ente_id": "REVERIE",
+        "struttura_id": "REV-MORLUPO94",
+        "servizio_id": "MS775-REV-CD"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://reverie.it/strutture/il-centro-diurno/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Morlupo, 94",
+          "changed": false
+        },
+        "ente_id": {
+          "sources": [
+            "https://reverie.it/strutture/il-centro-diurno/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV",
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://reverie.it/strutture/il-centro-diurno/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV-CAPENA-MORLUPO94",
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://reverie.it/strutture/il-centro-diurno/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "REV-CAPENA-MORLUPO94-CD",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riconferma documentale sede e separazione dei servizi; non è verifica del contratto né dell’ingresso.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-094",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://gestivar.it/le-strutture/",
+        "https://gestivar.it/contatti/"
+      ],
+      "fields": {
+        "indirizzo": "Via San Francesco, 2/a",
+        "telefono": "0776 567403; 0776 567405",
+        "email": "dir.san.borgosantommaso@gestivar.it",
+        "gestore": "Gesti-Var S.r.l.",
+        "ente_id": "GESTI-VAR",
+        "struttura_id": "BORGO-SAN-TOMMASO",
+        "servizio_id": "MOD-094"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via San Francesco, 2/A",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0776 567403",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "dir.san.borgosantommaso@gestivar.it",
+          "changed": false
+        },
+        "gestore": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Gestore da consolidare",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti condivisi fra i moduli di Borgo San Tommaso. Il footer abbrevia il civico in 2; intestazione 2/a.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-095",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://gestivar.it/le-strutture/",
+        "https://gestivar.it/contatti/"
+      ],
+      "fields": {
+        "indirizzo": "Via San Francesco, 2/a",
+        "telefono": "0776 567403; 0776 567405",
+        "email": "dir.san.borgosantommaso@gestivar.it",
+        "gestore": "Gesti-Var S.r.l.",
+        "ente_id": "GESTI-VAR",
+        "struttura_id": "BORGO-SAN-TOMMASO",
+        "servizio_id": "MOD-095"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via San Francesco, 2/A",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0776 567403",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "dir.san.borgosantommaso@gestivar.it",
+          "changed": false
+        },
+        "gestore": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Gestore da consolidare",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti condivisi fra i moduli di Borgo San Tommaso. Il footer abbrevia il civico in 2; intestazione 2/a.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-097",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://gestivar.it/le-strutture/",
+        "https://gestivar.it/contatti/"
+      ],
+      "fields": {
+        "indirizzo": "Via Montello, 22",
+        "telefono": "0776 567264",
+        "email": "dir.san.montello@gestivar.it",
+        "gestore": "Gesti-Var S.r.l.",
+        "ente_id": "GESTI-VAR",
+        "struttura_id": "MONTELLO",
+        "servizio_id": "MOD-097"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Montello, 22",
+          "changed": false
+        },
+        "telefono": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0776 567264",
+          "changed": false
+        },
+        "email": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "dir.san.montello@gestivar.it",
+          "changed": false
+        },
+        "gestore": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Gestore da consolidare",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://gestivar.it/le-strutture/",
+            "https://gestivar.it/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti condivisi fra i moduli di Borgo San Tommaso. Il footer abbrevia il civico in 2; intestazione 2/a.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-038",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-038",
+        "nota_indirizzo": "Conflitto: il riepilogo del gestore indica Via De Gasperi 2; il dato precedente indica 36. Civico da confermare; nessun nuovo pin preciso."
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897 / 3930673183",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-039",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-039"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-040",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-040"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-041",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-041"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-042",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-042"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-043",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-043"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-044",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-044"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-045",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-045",
+        "indirizzo": "Via Silvio Pellico, 7/9"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "indirizzo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Silvio Pellico,7",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-046",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-046",
+        "indirizzo": "Via Ausente, km 2.750"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "indirizzo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Cerri Aprano",
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-047",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "fields": {
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "ente_gruppo": "Comunità Insieme – Anelli; distinguere Insieme SAS e Progetto Insieme SRL per il singolo atto",
+        "servizio_id": "MOD-047"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0771736897",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "info@comunitainsieme.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Riesame dei recapiti generali e inventario multisede; titolare amministrativo del singolo modulo da verificare negli atti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-109",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.ilpontecivitavecchia.it/",
+        "https://www.alidelponte.com/servizi",
+        "https://www.alidelponte.com/"
+      ],
+      "fields": {
+        "denominazione": "Il Ponte / Le Ali del Ponte – Accoglienza residenziale",
+        "indirizzo": "Via Amba Aradam, 25",
+        "gestore": "Le Ali del Ponte Cooperativa Sociale (servizi descritti dal gestore); collegata all’Associazione Il Ponte",
+        "ente_id": "LE-ALI-DEL-PONTE",
+        "struttura_id": "PONTE-AMBA25",
+        "servizio_id": "PONTE-ACCOGLIENZA",
+        "telefono": "0766 35780; 0766 500685 (recapiti generali)",
+        "email": "segreteria@alidelponte.com",
+        "destinatari": "Giovani tra 16 e 22 anni con dipendenze, secondo il programma del gestore.",
+        "ssn_evidence_v79": "da-verificare",
+        "posti_autorizzati": "Non documentato per singola sede/fase",
+        "posti_accreditati": "Non documentato per singola sede/fase",
+        "posti_contrattualizzati": "Non documentato per singola sede/fase",
+        "posti_dichiarati": "Non documentato per singola sede/fase",
+        "contratto_ssn_stato": "Evidenze del programma conservate nello storico; attribuzione alla singola sede/fase e contratto corrente da verificare.",
+        "accreditamento_stato": "Evidenza del programma non automaticamente attribuibile alla singola sede/fase; da verificare.",
+        "nota_rapporto_ssn": "Il precedente dato aggregato di 24 posti e le evidenze amministrative del programma sono conservati nel confronto storico dell’audit, non attribuiti automaticamente alla sede di accoglienza. Non dimostrano contratti distinti per tutte le sedi e per Coccinella."
+      },
+      "field_evidence": {
+        "denominazione": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Il Ponte – Centro di Solidarietà",
+          "changed": true
+        },
+        "indirizzo": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Amba Aradam, 25",
+          "changed": false
+        },
+        "gestore": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Il Ponte – Centro di Solidarietà Onlus",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0766 35780",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "segreteria@ilpontecivitavecchia.it",
+          "changed": true
+        },
+        "destinatari": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Adulti; verificare criteri specifici",
+          "changed": true
+        },
+        "ssn_evidence_v79": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "posti_autorizzati": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "posti_accreditati": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "24",
+          "changed": true
+        },
+        "posti_contrattualizzati": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "posti_dichiarati": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "24",
+          "changed": true
+        },
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Rapporto pubblico 2026 documentato",
+          "changed": true
+        },
+        "accreditamento_stato": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Accreditata DCA U00121/2015",
+          "changed": true
+        },
+        "nota_rapporto_ssn": {
+          "sources": [
+            "https://www.ilpontecivitavecchia.it/",
+            "https://www.alidelponte.com/servizi",
+            "https://www.alidelponte.com/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Record storico conservato come fase/sede di accoglienza; nuove unità separate senza duplicarne i posti.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-108",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.cooperate.it/home.html"
+      ],
+      "fields": {
+        "telefono": "0766 570859",
+        "email": "c.t.lazio@fratellosole.com",
+        "indirizzo": "Via dei Normanni, 8/10",
+        "ente_id": "COOPERATE",
+        "struttura_id": "COOPERATE-SANTA-SEVERA",
+        "servizio_id": "FRATELLO-SOLE-RES"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.cooperate.it/home.html"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0766 571392 / 0766 570859",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.cooperate.it/home.html"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "amministrazione@cooperate.it",
+          "changed": true
+        },
+        "indirizzo": {
+          "sources": [
+            "https://www.cooperate.it/home.html"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via dei Normanni, 8-10 – Santa Severa",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.cooperate.it/home.html"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.cooperate.it/home.html"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.cooperate.it/home.html"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Contatti della comunità, distinti dalla sede amministrativa di Tolfa.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-010",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.villaletizia.org/"
+      ],
+      "fields": {
+        "indirizzo": "Via Sesto Celere, 16/18/20",
+        "telefono": "06 58331065 (recapito generale)",
+        "email": "info@resiletizia.it",
+        "ente_id": "VILLA-LETIZIA",
+        "struttura_id": "LETIZIA-SESTO-CELERE",
+        "servizio_id": "MOD-010"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Sesto Celere, 16–18–20",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Sito dichiara aggiornamento 08/09/2026; recapiti generali. Le tre unità non vengono fuse.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-011",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.villaletizia.org/"
+      ],
+      "fields": {
+        "indirizzo": "Via Sesto Celere, 16/18/20",
+        "telefono": "06 58331065 (recapito generale)",
+        "email": "info@resiletizia.it",
+        "ente_id": "VILLA-LETIZIA",
+        "struttura_id": "LETIZIA-SESTO-CELERE",
+        "servizio_id": "MOD-011"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Sesto Celere, 16–18–20",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Sito dichiara aggiornamento 08/09/2026; recapiti generali. Le tre unità non vengono fuse.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-012",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.villaletizia.org/"
+      ],
+      "fields": {
+        "indirizzo": "Via Sesto Celere, 16/18/20",
+        "telefono": "06 58331065 (recapito generale)",
+        "email": "info@resiletizia.it",
+        "ente_id": "VILLA-LETIZIA",
+        "struttura_id": "LETIZIA-SESTO-CELERE",
+        "servizio_id": "MOD-012"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.villaletizia.org/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Sito dichiara aggiornamento 08/09/2026; recapiti generali. Le tre unità non vengono fuse.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-083",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.maieusis.org/contatti/"
+      ],
+      "fields": {
+        "indirizzo": "Via Macchia Tonda, 8",
+        "comune": "Capena",
+        "telefono": "06 90389343 (sede); 06 36308629 (informazioni/prenotazioni)",
+        "email": "maieusis.ct@gmail.com",
+        "ente_id": "MAIEUSIS",
+        "struttura_id": "MAIEUSIS-CAPENA",
+        "servizio_id": "MOD-083"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Macchia Tonda, 8",
+          "changed": false
+        },
+        "comune": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Capena",
+          "changed": false
+        },
+        "telefono": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0690389343 / 069085495",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "maieusis.ct@gmail.com",
+          "changed": false
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Sedi residenziale e diurna mantenute distinte. Linea di prenotazione condivisa.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-084",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.maieusis.org/contatti/"
+      ],
+      "fields": {
+        "indirizzo": "Via Filippo Turati, 2/4",
+        "comune": "Fiano Romano",
+        "telefono": "0765 389943 (sede); 06 36308629 (informazioni/prenotazioni)",
+        "email": "maieusis.ct@gmail.com",
+        "ente_id": "MAIEUSIS",
+        "struttura_id": "MAIEUSIS-FIANO",
+        "servizio_id": "MOD-084"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Filippo Turati, 2–4",
+          "changed": true
+        },
+        "comune": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Fiano Romano",
+          "changed": false
+        },
+        "telefono": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0765389943",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "maieusis.ct@gmail.com",
+          "changed": false
+        },
+        "ente_id": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Sedi residenziale e diurna mantenute distinte. Linea di prenotazione condivisa.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-022",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-022"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-023",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-023"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-024",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-024"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-025",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-025"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-026",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-026"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-027",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-027"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-028",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/"
+      ],
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "telefono": "0774 50011 (centralino della struttura)",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "ente_gruppo": "Kormed – Colle Cesarano",
+        "struttura_id": "COLLE-CESARANO-TIVOLI",
+        "servizio_id": "MOD-028"
+      },
+      "field_evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "Via Maremmana Inferiore, 102 — Villa Adriana",
+          "changed": true
+        },
+        "telefono": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "07745001430 (accettazione) / 077450011 (centralino)",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "accettazionesanitaria@collecesarano.com",
+          "changed": false
+        },
+        "ente_gruppo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "struttura_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": "official",
+      "note": "Recapiti della sede condivisi; capienza totale non ripartita arbitrariamente fra moduli; orari visite non usati come apertura.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-107",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+      ],
+      "fields": {
+        "email_sede_documentata": "piglio@nuoviorizzonti.org",
+        "telefono_sede_documentato": "0775 501075 (carta servizi giugno 2021; da riconfermare)",
+        "nota_contatti": "La carta servizi caricata nel percorso 2025 è datata giugno 2021. I recapiti correnti del record non sono sostituiti automaticamente con quelli del documento."
+      },
+      "field_evidence": {
+        "email_sede_documentata": {
+          "sources": [
+            "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "telefono_sede_documentato": {
+          "sources": [
+            "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "nota_contatti": {
+          "sources": [
+            "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Nessuna promozione temporale del documento dal nome della cartella.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MS775-NO-CASAGIOIA",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+      ],
+      "fields": {
+        "nota_contatti": "Recapito e indirizzo presenti nella carta servizi giugno 2021; il percorso URL 2025 non è la data di revisione del documento."
+      },
+      "field_evidence": {
+        "nota_contatti": {
+          "sources": [
+            "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/CartaDeiServizi.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Sede già presente conservata; rapporto contrattuale corrente non dedotto.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-111",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://comunitamondonuovo.it/category/centri-accreditati/"
+      ],
+      "fields": {
+        "telefono": "0766 31818 (recapito generale del gestore)",
+        "email": "info@mondonuovo.org",
+        "ente_id": "MONDO-NUOVO",
+        "servizio_id": "MOD-111"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0766 31818",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "villasergetto@mondonuovo.org",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Contatti generali non confusi con recapiti specifici della singola comunità.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-112",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://comunitamondonuovo.it/category/centri-accreditati/"
+      ],
+      "fields": {
+        "telefono": "0766 31818 (recapito generale del gestore)",
+        "email": "info@mondonuovo.org",
+        "ente_id": "MONDO-NUOVO",
+        "servizio_id": "MOD-112"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0766 31818",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "villaparadiso@mondonuovo.org",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Contatti generali non confusi con recapiti specifici della singola comunità.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-113",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://comunitamondonuovo.it/category/centri-accreditati/"
+      ],
+      "fields": {
+        "telefono": "0766 31818 (recapito generale del gestore)",
+        "email": "info@mondonuovo.org",
+        "ente_id": "MONDO-NUOVO",
+        "servizio_id": "MOD-113"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0766 31818",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "villaciulepi@mondonuovo.org",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Contatti generali non confusi con recapiti specifici della singola comunità.",
+      "scope": "riesame parziale dei soli campi elencati"
+    },
+    {
+      "service_key": "moduli:MOD-114",
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://comunitamondonuovo.it/category/centri-accreditati/"
+      ],
+      "fields": {
+        "telefono": "0766 31818 (recapito generale del gestore)",
+        "email": "info@mondonuovo.org",
+        "ente_id": "MONDO-NUOVO",
+        "servizio_id": "MOD-114"
+      },
+      "field_evidence": {
+        "telefono": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "0766 31818",
+          "changed": true
+        },
+        "email": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": "collesperanza@mondonuovo.org",
+          "changed": true
+        },
+        "ente_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        },
+        "servizio_id": {
+          "sources": [
+            "https://comunitamondonuovo.it/category/centri-accreditati/"
+          ],
+          "checked_at": "2026-09-22",
+          "previous_value": null,
+          "changed": true
+        }
+      },
+      "address_evidence": null,
+      "note": "Contatti generali non confusi con recapiti specifici della singola comunità.",
+      "scope": "riesame parziale dei soli campi elencati"
+    }
+  ],
+  "additions": [
+    {
+      "service_key": "rete:V79-R5-CALVINO",
+      "origin": "rete",
+      "record": {
+        "id": "V79-R5-CALVINO",
+        "nome": "SRSR Calvino",
+        "denominazione": "SRSR Calvino",
+        "struttura": "SRSR Calvino",
+        "ente_id": "ASL-ROMA-5",
+        "struttura_id": "R5-SRSR-CALVINO",
+        "servizio_id": "V79-R5-CALVINO",
+        "gestore": "ASL Roma 5",
+        "indirizzo": "Via Calvino, 2",
+        "sede": "Via Calvino, 2",
+        "comune": "Monterotondo",
+        "provincia": "RM",
+        "asl": "Roma 5",
+        "asl_territoriale": "Roma 5",
+        "tipo": "SRSR",
+        "tipologia_modulo": "SRSR",
+        "regime": "Residenziale",
+        "ambito": "Psichiatria",
+        "telefono": "06 90625579 (riferimento CSM, durante il suo orario di apertura)",
+        "email": "Non documentato",
+        "orari": "Residenza sempre aperta; il numero indicato risponde durante l’orario del CSM, non è una linea di emergenza.",
+        "accesso": "Inserimento riservato a utenti del CSM, autorizzato dal responsabile del CSM previa relazione.",
+        "prenotazione": "Non documentato",
+        "destinatari": "Utenti di genere femminile in carico al CSM di Monterotondo, in condizioni stabilizzate e con progetto di semiautonomia.",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Non documentato",
+        "accreditamento_stato": "Non documentato",
+        "contratto_ssn_stato": "Non documentato",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "rete-asl",
+        "servizi": "Programma residenziale socio-riabilitativo a bassa intensità assistenziale e semiautonomia.",
+        "note": "La ASL precisa che non vi è personale dedicato alla residenza: supervisione giornaliera del personale CSM. Non è un servizio con assistenza continuativa 24 ore.",
+        "fonti_v79": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-calvino/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-calvino/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "rete:V79-R5-GIOVAGNOLI",
+      "origin": "rete",
+      "record": {
+        "id": "V79-R5-GIOVAGNOLI",
+        "nome": "SRSR Giovagnoli",
+        "denominazione": "SRSR Giovagnoli",
+        "struttura": "SRSR Giovagnoli",
+        "ente_id": "ASL-ROMA-5",
+        "struttura_id": "R5-SRSR-GIOVAGNOLI",
+        "servizio_id": "V79-R5-GIOVAGNOLI",
+        "gestore": "ASL Roma 5",
+        "indirizzo": "Via Giovagnoli, 27",
+        "sede": "Via Giovagnoli, 27",
+        "comune": "Monterotondo",
+        "provincia": "RM",
+        "asl": "Roma 5",
+        "asl_territoriale": "Roma 5",
+        "tipo": "SRSR",
+        "tipologia_modulo": "SRSR",
+        "regime": "Residenziale",
+        "ambito": "Psichiatria",
+        "telefono": "06 90625579 (riferimento CSM, durante il suo orario di apertura)",
+        "email": "Non documentato",
+        "orari": "Residenza sempre aperta; il numero indicato risponde durante l’orario del CSM, non è una linea di emergenza.",
+        "accesso": "Inserimento riservato a utenti del CSM, autorizzato dal responsabile del CSM previa relazione.",
+        "prenotazione": "Non documentato",
+        "destinatari": "Utenti di genere maschile in carico al CSM di Monterotondo, in condizioni stabilizzate e con progetto di semiautonomia.",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Non documentato",
+        "accreditamento_stato": "Non documentato",
+        "contratto_ssn_stato": "Non documentato",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "rete-asl",
+        "servizi": "Programma residenziale socio-riabilitativo a bassa intensità assistenziale e semiautonomia.",
+        "note": "La ASL precisa che non vi è personale dedicato alla residenza: supervisione giornaliera del personale CSM. Non è un servizio con assistenza continuativa 24 ore.",
+        "fonti_v79": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-giovagnoli/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-giovagnoli/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "moduli:V79-GV-LICIA",
+      "origin": "moduli",
+      "record": {
+        "id": "V79-GV-LICIA",
+        "nome": "Villa Licia – microstruttura residenziale di mantenimento",
+        "denominazione": "Villa Licia – microstruttura residenziale di mantenimento",
+        "struttura": "Villa Licia – microstruttura residenziale di mantenimento",
+        "ente_id": "GESTI-VAR",
+        "struttura_id": "GV-VILLA-LICIA",
+        "servizio_id": "V79-GV-LICIA",
+        "gestore": "Gesti-Var S.r.l.",
+        "indirizzo": "Via Enrico Toti, 73",
+        "sede": "Via Enrico Toti, 73",
+        "comune": "Itri",
+        "provincia": "LT",
+        "asl": "Latina",
+        "asl_territoriale": "Latina",
+        "tipo": "SRSR di mantenimento",
+        "tipologia_modulo": "SRSR di mantenimento",
+        "regime": "Residenziale",
+        "ambito": "Psichiatria",
+        "telefono": "0771 1652157",
+        "email": "dir.san.villalicia@gestivar.it",
+        "orari": "Non documentato",
+        "accesso": "Non documentato",
+        "prenotazione": "Non documentato",
+        "destinatari": "Non documentato",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Il gestore cita autorizzazione G09889 del 24/07/2024; testo del provvedimento non acquisito in questo riesame.",
+        "accreditamento_stato": "Il gestore indica in fase di accreditamento; esito successivo da verificare.",
+        "contratto_ssn_stato": "Non documentato; nessuna convenzione dedotta dal gestore delle altre sedi.",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "da-verificare",
+        "id_modulo": "V79-GV-LICIA",
+        "posti_dichiarati": "10",
+        "fonti_v79": "https://gestivar.it/le-strutture/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://gestivar.it/le-strutture/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "moduli:V79-INS-VENERE",
+      "origin": "moduli",
+      "record": {
+        "id": "V79-INS-VENERE",
+        "nome": "Comunità Insieme – SRSR Venere",
+        "denominazione": "Comunità Insieme – SRSR Venere",
+        "struttura": "Comunità Insieme – SRSR Venere",
+        "ente_id": "Comunità Insieme – Anelli (titolare del modulo da verificare)",
+        "struttura_id": "INS-VENERE",
+        "servizio_id": "V79-INS-VENERE",
+        "gestore": "Comunità Insieme – Anelli (titolare del modulo da verificare)",
+        "indirizzo": "Via Ausente – località Cerri Aprano",
+        "sede": "Via Ausente – località Cerri Aprano",
+        "comune": "Santi Cosma e Damiano",
+        "provincia": "LT",
+        "asl": "Latina",
+        "asl_territoriale": "Latina",
+        "tipo": "SRSR",
+        "tipologia_modulo": "SRSR",
+        "regime": "Residenziale",
+        "ambito": "Psichiatria",
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "orari": "Non documentato",
+        "accesso": "Progetto condiviso con i servizi territoriali; modalità pratiche di invio e ammissione da confermare.",
+        "prenotazione": "Non documentato",
+        "destinatari": "Non documentato",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Il gestore cita un provvedimento regionale del 09/01/2020; riferimento numerico pubblicato da consolidare sull’atto.",
+        "accreditamento_stato": "Non documentato",
+        "contratto_ssn_stato": "Non documentato",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "da-verificare",
+        "id_modulo": "V79-INS-VENERE",
+        "servizi": "Residenzialità socio-riabilitativa, progetti personalizzati e reinserimento sociale in raccordo con i servizi territoriali.",
+        "note": "Venere e Marte sono due servizi distinti. Condivisione dello stesso edificio non verificata; civico non documentato. Pagina del gestore con aggiornamento indicato 09/05/2022.",
+        "fonti_v79": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "moduli:V79-INS-MARTE",
+      "origin": "moduli",
+      "record": {
+        "id": "V79-INS-MARTE",
+        "nome": "Comunità Insieme – SRSR Marte",
+        "denominazione": "Comunità Insieme – SRSR Marte",
+        "struttura": "Comunità Insieme – SRSR Marte",
+        "ente_id": "Comunità Insieme – Anelli (titolare del modulo da verificare)",
+        "struttura_id": "INS-MARTE",
+        "servizio_id": "V79-INS-MARTE",
+        "gestore": "Comunità Insieme – Anelli (titolare del modulo da verificare)",
+        "indirizzo": "Via Ausente – località Cerri Aprano",
+        "sede": "Via Ausente – località Cerri Aprano",
+        "comune": "Santi Cosma e Damiano",
+        "provincia": "LT",
+        "asl": "Latina",
+        "asl_territoriale": "Latina",
+        "tipo": "SRSR",
+        "tipologia_modulo": "SRSR",
+        "regime": "Residenziale",
+        "ambito": "Psichiatria",
+        "telefono": "0771 736897 (informazioni del gruppo)",
+        "email": "info@comunitainsieme.com",
+        "orari": "Non documentato",
+        "accesso": "Progetto condiviso con i servizi territoriali; modalità pratiche di invio e ammissione da confermare.",
+        "prenotazione": "Non documentato",
+        "destinatari": "Non documentato",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Il gestore cita un provvedimento regionale del 09/01/2020; riferimento numerico pubblicato da consolidare sull’atto.",
+        "accreditamento_stato": "Non documentato",
+        "contratto_ssn_stato": "Non documentato",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "da-verificare",
+        "id_modulo": "V79-INS-MARTE",
+        "servizi": "Residenzialità socio-riabilitativa, progetti personalizzati e reinserimento sociale in raccordo con i servizi territoriali.",
+        "note": "Venere e Marte sono due servizi distinti. Condivisione dello stesso edificio non verificata; civico non documentato. Pagina del gestore con aggiornamento indicato 09/05/2022.",
+        "fonti_v79": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "moduli:V79-PONTE-RES",
+      "origin": "moduli",
+      "record": {
+        "id": "V79-PONTE-RES",
+        "nome": "Il Ponte / Le Ali del Ponte – Comunità residenziale",
+        "denominazione": "Il Ponte / Le Ali del Ponte – Comunità residenziale",
+        "struttura": "Il Ponte / Le Ali del Ponte – Comunità residenziale",
+        "ente_id": "LE-ALI-DEL-PONTE",
+        "struttura_id": "PONTE-VENETO30C",
+        "servizio_id": "V79-PONTE-RES",
+        "gestore": "Le Ali del Ponte Cooperativa Sociale",
+        "indirizzo": "Via Veneto, 30/c",
+        "sede": "Via Veneto, 30/c",
+        "comune": "Civitavecchia",
+        "provincia": "RM",
+        "asl": "Roma 4",
+        "asl_territoriale": "Roma 4",
+        "tipo": "Comunità terapeutico-riabilitativa",
+        "tipologia_modulo": "Comunità terapeutico-riabilitativa",
+        "regime": "Residenziale",
+        "ambito": "Dipendenze",
+        "telefono": "0766 35780; 0766 500685 (recapiti generali)",
+        "email": "segreteria@alidelponte.com",
+        "orari": "Non documentato",
+        "accesso": "Non documentato",
+        "prenotazione": "Non documentato",
+        "destinatari": "Giovani tra 16 e 22 anni con dipendenze, secondo il programma del gestore.",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Non documentato",
+        "accreditamento_stato": "Non documentato",
+        "contratto_ssn_stato": "Non documentato",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "da-verificare",
+        "id_modulo": "V79-PONTE-RES",
+        "servizi": "Comunità residenziale",
+        "note": "Sede e servizio distinti documentati; dettaglio amministrativo/accreditamento e contratto corrente per questa unità non consolidati. I dati di attività 2020 non sono posti autorizzati né disponibilità attuale.",
+        "fonti_v79": "https://www.alidelponte.com/servizi | https://www.ilpontecivitavecchia.it/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.alidelponte.com/servizi",
+        "https://www.ilpontecivitavecchia.it/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "moduli:V79-PONTE-COCCINELLA",
+      "origin": "moduli",
+      "record": {
+        "id": "V79-PONTE-COCCINELLA",
+        "nome": "Il Ponte / Le Ali del Ponte – Coccinella – comunità madri e bambini",
+        "denominazione": "Il Ponte / Le Ali del Ponte – Coccinella – comunità madri e bambini",
+        "struttura": "Il Ponte / Le Ali del Ponte – Coccinella – comunità madri e bambini",
+        "ente_id": "LE-ALI-DEL-PONTE",
+        "struttura_id": "PONTE-VENETO30C",
+        "servizio_id": "V79-PONTE-COCCINELLA",
+        "gestore": "Le Ali del Ponte Cooperativa Sociale",
+        "indirizzo": "Via Veneto, 30/c",
+        "sede": "Via Veneto, 30/c",
+        "comune": "Civitavecchia",
+        "provincia": "RM",
+        "asl": "Roma 4",
+        "asl_territoriale": "Roma 4",
+        "tipo": "Comunità terapeutico-riabilitativa",
+        "tipologia_modulo": "Comunità terapeutico-riabilitativa",
+        "regime": "Residenziale",
+        "ambito": "Dipendenze",
+        "telefono": "0766 35780; 0766 500685 (recapiti generali)",
+        "email": "segreteria@alidelponte.com",
+        "orari": "Non documentato",
+        "accesso": "Non documentato",
+        "prenotazione": "Non documentato",
+        "destinatari": "Donne madri con figli in situazioni di rischio, anche con problematiche di dipendenza, secondo il gestore.",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Non documentato",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Non documentato",
+        "accreditamento_stato": "Non documentato",
+        "contratto_ssn_stato": "Non documentato",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Il gestore descrive invii da servizi di diverse regioni per Coccinella; ammissibilità, autorizzazione e copertura del singolo inserimento da verificare.",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "da-verificare",
+        "id_modulo": "V79-PONTE-COCCINELLA",
+        "servizi": "Coccinella – comunità madri e bambini",
+        "note": "Sede e servizio distinti documentati; dettaglio amministrativo/accreditamento e contratto corrente per questa unità non consolidati. I dati di attività 2020 non sono posti autorizzati né disponibilità attuale.",
+        "fonti_v79": "https://www.alidelponte.com/servizi | https://www.ilpontecivitavecchia.it/"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.alidelponte.com/servizi",
+        "https://www.ilpontecivitavecchia.it/"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    },
+    {
+      "service_key": "moduli:V79-COOPERATE-FEBO",
+      "origin": "moduli",
+      "record": {
+        "id": "V79-COOPERATE-FEBO",
+        "nome": "FEBO – Centro specialistico semiresidenziale",
+        "denominazione": "FEBO – Centro specialistico semiresidenziale",
+        "struttura": "FEBO – Centro specialistico semiresidenziale",
+        "ente_id": "COOPERATE",
+        "struttura_id": "COOPERATE-FEBO",
+        "servizio_id": "V79-COOPERATE-FEBO",
+        "gestore": "Cooperate Cooperativa Sociale",
+        "indirizzo": "Piazza Don Cesolini, 19",
+        "sede": "Piazza Don Cesolini, 19",
+        "comune": "Bracciano",
+        "provincia": "RM",
+        "asl": "Roma 4",
+        "asl_territoriale": "Roma 4",
+        "tipo": "Centro specialistico semiresidenziale dipendenze",
+        "tipologia_modulo": "Centro specialistico semiresidenziale dipendenze",
+        "regime": "Semiresidenziale",
+        "ambito": "Dipendenze",
+        "telefono": "06 99802432",
+        "email": "febo@fratellosole.com",
+        "orari": "Non documentato",
+        "accesso": "Contattare il centro per valutazione e raccordo con i servizi territoriali; il gestore contempla anche persone non già in carico.",
+        "prenotazione": "Non documentato",
+        "destinatari": "Adulti con problemi di dipendenza, anche con comorbilità psichiatrica; valutazione della struttura.",
+        "criteri_ammissione": "Non documentato",
+        "costi": "Da verificare: il progetto gratuito descritto dal gestore riporta una proroga fino al 31/12/2019, non prova gratuità corrente.",
+        "gratuita": "Non documentato",
+        "autorizzazione_stato": "Il gestore cita autorizzazione G08710 del 21/06/2017.",
+        "accreditamento_stato": "Il sito del gestore indica in attesa di accreditamento; provvedimento successivo non acquisito.",
+        "contratto_ssn_stato": "Non documentato. Non classificato come convenzionato.",
+        "contratto_periodo": "Non documentato",
+        "posti_autorizzati": "Non documentato",
+        "posti_accreditati": "Non documentato",
+        "posti_contrattualizzati": "Non documentato",
+        "posti_disponibili": "Non documentato",
+        "accessibilita": "Non documentato",
+        "mobilita_intraregionale": "Non documentato",
+        "accesso_extraregionale": "Non documentato",
+        "stato_servizio": "Sede descritta nelle fonti consultate; operatività non confermata telefonicamente",
+        "verifica_documentale": "2026-09-22",
+        "ssn_evidence_v79": "da-verificare",
+        "id_modulo": "V79-COOPERATE-FEBO",
+        "ambiti_secondari": "Comorbilità psichiatrica indicata dal gestore",
+        "fonti_v79": "https://www.cooperate.it/servizi/bracciano.html | https://www.cooperate.it/home.html | https://www.cooperate.it/servizi/bracciano/centro_specialistico_semiresidenziale.html"
+      },
+      "checked_at": "2026-09-22",
+      "sources": [
+        "https://www.cooperate.it/servizi/bracciano.html",
+        "https://www.cooperate.it/home.html",
+        "https://www.cooperate.it/servizi/bracciano/centro_specialistico_semiresidenziale.html"
+      ],
+      "address_evidence": "official",
+      "scope": "Nuovo servizio distinto; campi non provati esplicitamente non documentati"
+    }
+  ],
+  "pending_conflicts": [
+    {
+      "service_key": "moduli:MOD-038",
+      "field": "indirizzo",
+      "reason": "Civico De Gasperi 2 nel sito contro 36 nel dato precedente; nessun pin preciso nuovo."
+    },
+    {
+      "service_key": "rete:NET-046",
+      "field": "telefono",
+      "reason": "Numeri della pagina del CD Subiaco sovrapponibili a Tivoli e forma abbreviata; non sostituiti."
+    }
+  ],
+  "directory_policy": {
+    "universita": "Nessun pin aggiunto: sedi di erogazione e appuntamenti da distinguere da sede legale.",
+    "scuole": "Nessun pin aggiunto: destinatari e disponibilità annuale da riconfermare.",
+    "centri_ascolto": "Restano separati; La Formica/Via Isonzo candidato non confluito nella mappa residenziale.",
+    "helpline": "Nessun pin: servizio prevalentemente telefonico."
+  }
+}

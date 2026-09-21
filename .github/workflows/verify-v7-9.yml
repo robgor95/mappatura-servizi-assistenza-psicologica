@@ -1,0 +1,70 @@
+name: V7.9 release verification
+on:
+  pull_request:
+    branches: [main]
+    paths: [.github/workflows/verify-v7-9.yml]
+  push:
+    branches: [main]
+    paths: [.github/workflows/verify-v7-9.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v79-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Check release and preserve source bytes
+        run: |
+          mkdir -p /tmp/v79-verification
+          python - <<'PY'
+          import json,pathlib,hashlib,subprocess
+          R=pathlib.Path('.');v=json.loads((R/'version.json').read_text());assert v['web_version']=='7.9';assert v['indexing_enabled'] is False
+          a=json.loads((R/'downloads/Audit_Iniziale_V7_9.json').read_text())
+          for p in a['protected_paths']:assert hashlib.sha256((R/p).read_bytes()).hexdigest()==a['baseline_files'][p]['sha256'],p
+          q=json.loads((R/'downloads/Verifiche_V7_9.json').read_text());assert all(c['passed'] for c in q['data_checks']);assert q['browser']['passed']==q['browser']['total']==18
+          pathlib.Path('/tmp/v79-verification/commit.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD']).decode())
+          PY
+          python -m py_compile tools/verify-production-v7-9.py
+          node tools/export-audit-rows-v7-9.cjs /tmp/v79-verification/runtime-rows.json
+          npm install --prefix /tmp/v79-node playwright @axe-core/playwright
+          ln -s /tmp/v79-node/node_modules node_modules
+          /tmp/v79-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Verify pull-request runtime locally
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v79-verification/http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          QA_OUT=/tmp/v79-verification node tools/test-ui-v7-9.mjs
+      - name: Verify exact Cloudflare production bytes and noindex
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/v79-verification
+        run: python tools/verify-production-v7-9.py
+      - name: Recheck browser behavior on actual production
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/v79-verification
+        run: node tools/test-ui-v7-9.mjs
+      - name: Record exact tested tree and changed-file manifest
+        if: always()
+        run: |
+          git rev-parse HEAD > /tmp/v79-verification/commit.txt
+          git diff --name-status 498195783ca07dff14dd4f3640e7e2fae3598e06 HEAD > /tmp/v79-verification/changed-files.txt
+          git archive --format=zip HEAD -o /tmp/v79-verification/repository.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-9-${{ github.event_name }}-verification
+          path: /tmp/v79-verification/
+          retention-days: 30
+          if-no-files-found: error
