@@ -1,0 +1,35 @@
+name: Frontend 7.7.2 verification
+on:
+  push:
+    branches: [frontend-userfriendly-v7-7-2]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deterministic Menta and data integrity suite
+        run: node tools/test-menta-v7-7.cjs
+      - name: User-facing frontend assertions
+        run: |
+          node <<'NODE'
+          const fs=require('node:fs'),assert=require('node:assert/strict');
+          const service=fs.readFileSync('servizi.html','utf8');
+          const legacy=fs.readFileSync('archivio.html','utf8');
+          const guide=fs.readFileSync('guide/privato.html','utf8');
+          const university=fs.readFileSync('universita.html','utf8');
+          const privati=fs.readFileSync('privati.html','utf8');
+          const js=fs.readFileSync('assets/servizi-v7-5-1.js','utf8');
+          assert.equal(service,legacy,'legacy entrypoint must stay aligned');
+          assert(!service.includes('class="svc-technical"'),'technical audit panel must not be in user search');
+          for(const id of ['svc-titolarita','svc-autorizzazione','svc-accreditamento','svc-ssn','svc-riesame','svc-mobilita','svc-posti'])assert(!service.includes('id="'+id+'"'),id+' should not be user-facing');
+          for(const label of ['Servizio pubblico / SSN','Struttura convenzionata o non ASL','Struttura privata'])assert(service.includes(label),label+' missing');
+          assert(js.includes("if($('svc-tech-view'))"),'legacy technical URL guard missing');
+          assert(js.includes("state.tecnico&&$('svc-technical')"),'legacy technical scroll guard missing');
+          for(const s of ['id="approcci"','Cognitivo e cognitivo-comportamentale','Psicodinamico e psicoanalitico','Sistemico-relazionale','EMDR e altri metodi specifici'])assert(guide.includes(s),s+' missing from guide');
+          assert(university.includes('Università e supporto psicologico'));
+          assert(privati.includes('<h1>Strutture private</h1>'));
+          console.log('frontend assertions: ok');
+          NODE
