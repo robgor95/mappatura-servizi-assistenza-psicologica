@@ -1,0 +1,58 @@
+name: Navigation candidate verification
+on:
+  push:
+    branches: [navigation-v7-7-3]
+    paths:
+      - '.github/workflows/navigation-candidate.yml'
+      - 'tools/apply-navigation-v7-7-3.py'
+      - 'tools/test-navigation-v7-7-3.py'
+permissions:
+  contents: write
+concurrency:
+  group: navigation-candidate
+  cancel-in-progress: false
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install development-only checks
+        run: |
+          python3 -m pip install beautifulsoup4==4.13.4 playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+          npm install --prefix /tmp/nav-qa axe-core@4.10.3
+      - name: Build static HTML from audited production
+        run: |
+          python3 tools/apply-navigation-v7-7-3.py
+          mkdir -p .qa-navigation
+          node tools/test-menta-v7-7.cjs > .qa-navigation/node-report.json
+      - name: Browser navigation, mobile, accessibility, integrity and privacy
+        env:
+          AXE_PATH: /tmp/nav-qa/node_modules/axe-core/axe.min.js
+        run: python3 tools/test-navigation-v7-7-3.py
+      - name: Keep report and commit tested candidate only
+        run: |
+          cp .qa-navigation/report.json downloads/Verifiche_Navigazione_V7_7_3.json
+          git fetch origin main navigation-v7-7-3
+          test "$(git rev-parse origin/main)" = '1979f0d51ed6d2203be6c02605bee313ac5cd91e'
+          test "$(git rev-parse origin/navigation-v7-7-3)" = '${{ github.sha }}'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '*.html' 'guide/*.html' assets/navigation-v7-7-3.css assets/navigation-v7-7-3.js assets/site-v7-4.js version.json README.md CHANGELOG.md downloads/Audit_Navigazione_V7_7_3.json downloads/Note_Rilascio_V7_7_3.txt downloads/Verifiche_Navigazione_V7_7_3.json
+          git diff --cached --quiet || git commit -m 'feat: simplify navigation, home and secondary resources'
+          git push origin HEAD:navigation-v7-7-3
+      - name: Archive candidate and browser evidence
+        if: always()
+        run: |
+          zip -qr /tmp/navigation-candidate.zip . -x '.git/*' '.qa-navigation/*'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: navigation-candidate-evidence
+          path: |
+            /tmp/navigation-candidate.zip
+            .qa-navigation/
+          retention-days: 7
