@@ -1,0 +1,71 @@
+name: Verify production multisite 7.7.5
+on:
+  push:
+    branches: [verify-production-multisede-v7-7-5]
+    paths: ['.github/workflows/verify-production-multisede-v7-7-5.yml']
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install browser
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+      - name: Verify public production data and UI
+        run: |
+          node <<'NODE'
+          const {chromium}=require('playwright');
+          const assert=require('assert');
+          const BASE='https://mappatura-servizi-assistenza-psicologica.pages.dev';
+          (async()=>{
+            // Wait for the exact production version after merge.
+            for(let i=0;i<12;i++){
+              const r=await fetch(BASE+'/version.json?qa=ms775-'+Date.now(),{cache:'no-store'});
+              if(r.ok){
+                const v=await r.json();
+                if(v.web_version==='7.7.5') break;
+              }
+              if(i===11) throw new Error('production did not reach 7.7.5');
+              await new Promise(r=>setTimeout(r,5000));
+            }
+            const v=await (await fetch(BASE+'/version.json?qa=ms775-final',{cache:'no-store'})).json();
+            assert.equal(v.web_version,'7.7.5');
+            assert.equal(v.counts_current.search,432);
+            assert.equal(v.counts_current.moduli,119);
+            assert.equal(v.counts_current.multisite_overlay,4);
+            assert.equal(v.indexing_enabled,false,'SEO noindex state must remain unchanged');
+
+            const b=await chromium.launch({headless:true});
+            const p=await b.newPage({viewport:{width:390,height:844}});
+            async function search(q,expected,names){
+              await p.goto(BASE+'/servizi.html?q='+encodeURIComponent(q)+'&qa=ms775',{waitUntil:'networkidle'});
+              await p.locator('#svc-controls:not([disabled])').waitFor();
+              await p.waitForFunction(()=>document.querySelectorAll('#svc-list .svc-card').length>0);
+              const cards=await p.locator('#svc-list .svc-card h3').allTextContents();
+              assert.equal(cards.length,expected,q+' -> '+JSON.stringify(cards));
+              for(const n of names)assert(cards.some(x=>x.includes(n)),q+' missing '+n);
+              return cards;
+            }
+            await search('Reverie',4,['Comunità terapeutica romana','Capena CTC 1','Capena CTC 2','Centro Diurno']);
+            await search('Nuovi Orizzonti',2,['Comunità di Piglio','Casa Gioia']);
+            await search('Via Morlupo 94',2,['Capena CTC 2','Centro Diurno']);
+
+            await p.goto(BASE+'/strutture-approfondite.html?qa=ms775',{waitUntil:'networkidle'});
+            await p.locator('#directory-search').fill('Reverie');
+            await p.waitForFunction(()=>document.querySelector('#result-count')?.textContent.startsWith('4 di '));
+            assert.equal(await p.locator('#directory-grid .directory-card').count(),4);
+            await p.locator('[data-reset]').click();
+            await p.waitForFunction(()=>document.querySelector('#result-count')?.textContent.startsWith('173 di 173'));
+
+            const html=await (await fetch(BASE+'/?qa=ms775-noindex',{cache:'no-store'})).text();
+            assert(html.includes('noindex,nofollow,noarchive,nosnippet,noimageindex'));
+            const headers=await fetch(BASE+'/?qa=ms775-head',{cache:'no-store'});
+            assert(/noindex/i.test(headers.headers.get('x-robots-tag')||''));
+            await b.close();
+            console.log('production multisite 7.7.5: verified');
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
