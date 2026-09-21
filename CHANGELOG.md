@@ -1,5 +1,15 @@
 # Changelog
 
+## 7.7.5 — 21 settembre 2026
+
+- Audit multisede/multiservizio avviato sui gestori delle strutture residenziali e semiresidenziali.
+- Confermato che la ricerca supporta più strutture dello stesso gestore: la lacuna era nei dati, non nel rendering.
+- Aggiunte come overlay corrente tre unità Reverie a Capena (CTC 1, CTC 2, Centro Diurno) e Casa Gioia di Nuovi Orizzonti a Marino.
+- CTC 2 e Centro Diurno condividono Via Morlupo 94 ma restano risultati separati perché sono servizi distinti.
+- Il Ponte è segnalato come multisede da consolidare; FEBO/Cooperate è escluso dall’overlay accreditato perché indicato dal gestore come in attesa di accreditamento.
+- Dataset storici V7.3/V7.5/V7.6 invariati; le nuove unità sono in `data/multisede_v7_7_5.json`.
+- Ricerca corrente: 432 risultati; directory strutture: 173 risultati.
+
 ## 7.7.4 — 21 settembre 2026
 
 - Predisposizione SEO completa senza attivare l’indicizzazione.
