@@ -20,3 +20,12 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 ## Struttura
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
+
+## Versione V7.5
+
+La V7.5 aggiunge dataset e pagine statiche separate per servizi universitari, sportelli scolastici, helpline, centri/sportelli pubblici di ascolto, centri privati e approfondimento di comunità/STPIT/centri diurni. I dataset V7.3 e le guide V7.4 sono preservati.
+
+- Web: V7.5
+- Guide: V7.4 (preservate)
+- Archivio storico: V7.3 (preservato)
+- Verifica nuovi dataset: 2026-09-21
