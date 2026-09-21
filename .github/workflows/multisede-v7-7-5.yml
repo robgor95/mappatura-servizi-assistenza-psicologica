@@ -29,6 +29,7 @@ jobs:
           const base=JSON.parse(fs.readFileSync('data/portal_data_v7_3.json','utf8'));
           const priv=JSON.parse(fs.readFileSync('data/privati_v7_5.json','utf8'));
           const add=JSON.parse(fs.readFileSync('data/multisede_v7_7_5.json','utf8'));
+          const rev=JSON.parse(fs.readFileSync('data/revisioni_v7_6.json','utf8'));
           assert.equal(add.records.length,4);
           const baseIds=new Set(base.moduli.map(r=>String(r.id_modulo||r.id||'')));
           const ids=add.records.map(r=>String(r.id_modulo||r.id||''));
@@ -41,12 +42,21 @@ jobs:
           const morlupo=add.records.filter(r=>String(r.indirizzo).toLowerCase().includes('morlupo'));
           assert.equal(morlupo.length,2,'same-address CTC2 and Centro Diurno must both remain');
           assert.notEqual(morlupo[0].servizio_id,morlupo[1].servizio_id);
-          assert.equal(base.rete_asl.length+all.length+(priv.records||[]).length,432);
+          const n=rev.nuovi_record||{};
+          const current={
+            rete:base.rete_asl.length+(n.rete||[]).length,
+            moduli:all.length+(n.moduli||[]).length,
+            privati:(priv.records||[]).length+(n.privati||[]).length
+          };
+          assert.equal(current.rete+current.moduli+current.privati,432);
           const v=JSON.parse(fs.readFileSync('version.json','utf8'));
           assert.equal(v.web_version,'7.7.5');
           assert.equal(v.counts_current.search,432);
           assert.equal(v.counts_current.multisite_overlay,4);
-          console.log({rete:base.rete_asl.length,moduli:all.length,privati:(priv.records||[]).length,total:432});
+          assert.equal(v.counts_current.rete,current.rete);
+          assert.equal(v.counts_current.moduli,current.moduli);
+          assert.equal(v.counts_current.privati,current.privati);
+          console.log({...current,total:current.rete+current.moduli+current.privati,raw:{rete:base.rete_asl.length,moduli:base.moduli.length,privati:(priv.records||[]).length},v76:{rete:(n.rete||[]).length,moduli:(n.moduli||[]).length,privati:(n.privati||[]).length}});
           NODE
           git fetch origin main --quiet
           git diff --exit-code origin/main -- data/portal_data_v7_3.json data/strutture_approfondite_v7_5.json data/revisioni_v7_6.json data/privati_v7_5.json
