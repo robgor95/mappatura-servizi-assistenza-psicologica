@@ -4,21 +4,19 @@ Repository del portale pubblico **Mappatura servizi di assistenza psicologica ne
 
 Sito di produzione: https://mappatura-servizi-assistenza-psicologica.pages.dev/
 
+## Deploy
+
+Il progetto Cloudflare Pages è collegato direttamente a questo repository GitHub.
+
+- Repository: `robgor95/mappatura-servizi-assistenza-psicologica`
+- Branch di produzione: `main`
+- Deploy automatici: abilitati
+- Framework: nessuno; sito statico HTML/CSS/JavaScript
+
+Ogni push su `main` avvia automaticamente un nuovo deployment di produzione su Cloudflare Pages.
+
+Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository per il deploy ordinario.
+
 ## Struttura
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
-
-## Deploy
-
-Il progetto Cloudflare Pages esistente è un progetto **Direct Upload**. Il deploy continuo viene quindi eseguito da GitHub Actions tramite Wrangler sul progetto:
-
-`mappatura-servizi-assistenza-psicologica`
-
-Sono richiesti due repository secret:
-
-- `CLOUDFLARE_ACCOUNT_ID`
-- `CLOUDFLARE_API_TOKEN`
-
-Il token Cloudflare deve avere il permesso **Account / Cloudflare Pages / Edit**.
-
-Il workflow non tenta il deploy se `index.html` non è presente.
