@@ -73,7 +73,7 @@ try{
     const options=await linkTexts(page,'#menta-options a');
     await screenshot(page,'menta-csm-viterbo-390',false);
     if(options[0]){
-      await Promise.all([page.waitForURL(/servizi\.html/),page.locator('#menta-options a').first().click()]);
+      await Promise.all([page.waitForURL(/\/servizi(?:\.html)?(?:[?#]|$)/),page.locator('#menta-options a').first().click()]);
       await page.locator('#svc-list .svc-card').first().waitFor({state:'visible'});
       const count=(await page.locator('#svc-count').innerText()).trim();
       const cards=await page.locator('#svc-list .svc-card').count();
@@ -116,7 +116,7 @@ try{
     const {ctx,page}=await newPage(browser,390,844);
     await page.goto(BASE+'/',{waitUntil:'networkidle'});
     const card=page.locator('.home-situations-grid a').filter({hasText:'Studenti e università'});
-    await Promise.all([page.waitForURL(/studenti\.html/),card.click()]);
+    await Promise.all([page.waitForURL(/\/studenti(?:\.html)?(?:[?#]|$)/),card.click()]);
     const studentLinks=await linkTexts(page,'main a');
     const primary=studentLinks.filter(x=>/universit|scuol/i.test(x.text)).slice(0,10);
     await screenshot(page,'studenti-390',false);
@@ -129,7 +129,7 @@ try{
     const {ctx,page}=await newPage(browser,390,844);
     await page.goto(BASE+'/',{waitUntil:'networkidle'});
     const card=page.locator('.home-situations-grid a').filter({hasText:'Psicologo o psicoterapeuta privato'});
-    await Promise.all([page.waitForURL(/guide\/privato\.html/),card.click()]);
+    await Promise.all([page.waitForURL(/\/guide\/privato(?:\.html)?(?:[?#]|$)/),card.click()]);
     const headings=await page.locator('main h1, main h2, main h3').evaluateAll(es=>es.slice(0,20).map(e=>(e.textContent||'').trim()));
     report.scenarios.push({id:'private-professional',goal:'Capire come scegliere uno psicologo/psicoterapeuta privato',interactions:1,page_url:page.url(),first_headings:headings});
     await screenshot(page,'guide-privato-390',false);
