@@ -30,6 +30,45 @@ jobs:
           npm install --prefix /tmp/v79-node playwright @axe-core/playwright
           ln -s /tmp/v79-node/node_modules node_modules
           /tmp/v79-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Apply reviewed compatibility and test corrections to current builders
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/build-frontend-v7-9.py');s=p.read_text().replace("for p in ['servizi.html','mappa.html']:","for p in ['servizi.html','archivio.html','mappa.html']:");p.write_text(s)
+          p=Path('tools/prepare-audit-v7-9.py');s=p.read_text();needle="assert len({x['service_key'] for x in revisions})==len(revisions)"
+          code="""# Canonical IDs connect additions to existing modules; legal names stay in gestore.
+          operator_ids={'Gesti-Var S.r.l.':'GESTI-VAR','Le Ali del Ponte Cooperativa Sociale':'LE-ALI-DEL-PONTE','Cooperate Cooperativa Sociale':'COOPERATE','ASL Roma 5':'ASL-ROMA-5'}
+          for entry in additions:
+           raw=entry['record'];raw['ente_id']=operator_ids.get(raw['ente_id'],raw['ente_id'])
+          """
+          if 'operator_ids=' not in s:s=s.replace(needle,code+needle)
+          p.write_text(s)
+          p=Path('tools/prepare-release-v7-9.py');s=p.read_text().replace("'servizi.html','mappa.html','strutture-approfondite.html','documenti.html'","'servizi.html','archivio.html','mappa.html','strutture-approfondite.html','documenti.html'").replace("p.locator('[data-open]').first().click()","p.locator('#svc-list a[data-open]').first().click()")
+          code="""# Independent checks of geometry and documented operator identity.
+          from shapely.geometry import shape,Point
+          region=shape(read('downloads/Lazio_Boundary_OSM_V7_9.geojson'))
+          check('All published pins lie in cached Lazio polygon',all(region.covers(Point(p['lng'],p['lat'])) for p in g['records'].values() if p['lat'] is not None))
+          check('Il Ponte shared site retains both service identities',all(g['records']['moduli:V79-PONTE-RES'][k]==g['records']['moduli:V79-PONTE-COCCINELLA'][k] for k in ['lat','lng']))
+          check('Additions reuse documented operator identity',all(by[new]['raw']['ente_id']==by[old]['raw']['ente_id'] for new,old in [('moduli:V79-PONTE-RES','moduli:MOD-109'),('moduli:V79-COOPERATE-FEBO','moduli:MOD-108'),('moduli:V79-GV-LICIA','moduli:MOD-094')]))
+          groups=collections.defaultdict(list)
+          for key,p in g['records'].items():
+           if p['lat'] is not None:groups[(p['lat'],p['lng'])].append(key)
+          shared=[]
+          for pos,keys in groups.items():
+           if len(keys)<2:continue
+           addresses=sorted({g['records'][k]['source_address'] for k in keys});towns=sorted({g['records'][k]['comune'] for k in keys})
+           shared.append({'coordinates':list(pos),'service_keys':keys,'source_addresses':addresses,'municipalities':towns,'interpretation':'Coincidenza cartografica; indirizzi diversi non provano lo stesso edificio. Nessuna deduplicazione.' if len(addresses)>1 else 'Indirizzo condiviso; servizi distinti.'})
+          check('No coordinate shared across inconsistent municipalities',all(len(x['municipalities'])==1 for x in shared))
+          out('downloads/Coordinate_Condivise_V7_9.json',{'groups':shared,'policy':'I gruppi di via possono contenere civici diversi: approssimazione esplicita, non verifica della sede condivisa.'})
+          """
+          if 'Independent checks of geometry' not in s:s=s.replace('fields={}',code+'fields={}')
+          extra=""" await test('Il Ponte shared address retains two services in one popup',async()=>{
+           await p.goto(BASE+'/mappa.html?q=Le+Ali+del+Ponte+Veneto',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();assert.equal(await p.locator('#map-list>li').count(),2);await p.locator('#map-activate').click();await p.waitForTimeout(450);assert.equal(await p.locator('.presidio-marker').count(),1);await p.locator('.presidio-marker').click();assert.equal(await p.locator('.map-popup-item').count(),2);assert.match(await p.locator('.leaflet-popup-content').innerText(),/Coccinella/);assert.match(await p.locator('.leaflet-popup-content').innerText(),/Comunità residenziale/);await shot(p,'ponte-popup-390');
+           });
+          """
+          if 'Il Ponte shared address retains two' not in s:s=s.replace(" await test('Search text stays local and missing audit has a visible warning'",extra+" await test('Search text stays local and missing audit has a visible warning'")
+          p.write_text(s)
+          PY
       - name: Generate current overlays and validate all browser scenarios
         run: |
           set -euo pipefail
@@ -57,11 +96,11 @@ jobs:
           python - <<'PY'
           import json,pathlib,subprocess
           report=json.loads(pathlib.Path('/tmp/v79-tests/report.json').read_text());assert report['passed']==report['total']
-          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','mappa.html','strutture-approfondite.html','documenti.html'}
+          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','documenti.html'}
           changed=subprocess.check_output(['git','diff','--name-only']).decode().splitlines()
           assert all(p in allowed or 'v7-9' in p or 'V7_9' in p or 'v7_9' in p for p in changed),changed
           PY
-          git add README.md CHANGELOG.md version.json servizi.html mappa.html strutture-approfondite.html documenti.html assets/*v7-9.js data/*v7_9.json downloads/*V7_9* tools/test-ui-v7-9.mjs
+          git add README.md CHANGELOG.md version.json servizi.html archivio.html mappa.html strutture-approfondite.html documenti.html assets/*v7-9.js data/*v7_9.json downloads/*V7_9* tools/test-ui-v7-9.mjs tools/prepare-audit-v7-9.py tools/prepare-release-v7-9.py tools/build-frontend-v7-9.py
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           if ! git diff --cached --quiet; then
