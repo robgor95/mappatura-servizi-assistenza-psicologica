@@ -1,0 +1,68 @@
+name: Verify production UX and map
+on:
+  push:
+    branches: [verify-ux-map-v7-8]
+    paths: ['.github/workflows/verify-ux-map-production.yml']
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ea630f7e5c93247addf8f3bdf411cb6adf6b3b05
+          persist-credentials: false
+      - name: Verify actual production content and noindex headers
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request,urlopen
+          from urllib.error import HTTPError
+          from datetime import datetime,timezone
+          import hashlib,json,time
+          base='https://mappatura-servizi-assistenza-psicologica.pages.dev'
+          def get(path):
+              req=Request(base+'/'+path,headers={'User-Agent':'Lazio-release-QA/7.8','Cache-Control':'no-cache'})
+              try:
+                  with urlopen(req,timeout=25) as r:return r.status,r.read(),dict((k.lower(),v) for k,v in r.headers.items())
+              except HTTPError as e:return e.code,e.read(),dict((k.lower(),v) for k,v in e.headers.items())
+          for attempt in range(12):
+              status,raw,h=get('version.json?verify=map78')
+              if status==200 and json.loads(raw).get('web_version')=='7.8':break
+              time.sleep(5)
+          else:raise RuntimeError('Production version not updated')
+          v=json.loads(raw);assert v['indexing_enabled'] is False
+          paths=json.loads(Path('downloads/Audit_UX_Mappa_V7_8.json').read_text())['pages']
+          paths+=['assets/map-v7-8.css','assets/map-v7-8.js','assets/map-data-v7-8.js','assets/ux-map-v7-8.css','assets/vendor/leaflet/leaflet.js','data/presidi_geo_v7_8.json','data/multisede_v7_7_5.json','data/portal_data_v7_3.json','downloads/guide/Guida_03_privato.pdf']
+          checks=[]
+          for p in paths:
+              status,raw,h=get(p)
+              assert status==200,(p,status)
+              assert raw==Path(p).read_bytes(),('deployed bytes differ',p)
+              assert 'noindex' in h.get('x-robots-tag',''),('missing noindex',p,h)
+              checks.append({'path':p,'same_bytes':True,'noindex':True})
+          status,raw,h=get('map-release-nonexistent-page-78');assert status==404 and b'page-404' in raw
+          checks.append({'path':'custom404','status':404})
+          status,raw,h=get('robots.txt');assert b'\nSitemap:' not in raw
+          checks.append({'path':'robots.txt','sitemap_not_announced':True})
+          report={'version':'7.8','commit':'ea630f7e5c93247addf8f3bdf411cb6adf6b3b05','checked_at':datetime.now(timezone.utc).isoformat(),'production':base,'passed':len(checks),'total':len(checks),'indexing_enabled':False,'checks':checks}
+          Path('/tmp/production-http.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+          PY
+      - name: Browser scenarios on production - simulated tiles, no scraping
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/production-browser
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx playwright install --with-deps chromium
+          node tools/test-ux-map-v7-8.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-map-production-verification
+          path: |
+            /tmp/production-http.json
+            /tmp/production-browser
+          retention-days: 14
