@@ -162,7 +162,86 @@ sitemap.append("</urlset>")
 )
 
 headers = (ROOT/"_headers").read_text(encoding="utf-8")
-headers = re.sub(r'(?m)^  X-Robots-Tag:.*
+
+# Keep exactly one global noindex header while preserving unrelated cache/security rules.
+_lines = headers.splitlines()
+_out = []
+_in_global = False
+_global_robot = False
+for line in _lines:
+    if line.startswith("/") and not line.startswith("  "):
+        if _in_global and not _global_robot:
+            _out.append("  X-Robots-Tag: " + ROBOTS_OFF)
+            _global_robot = True
+        _in_global = (line.strip() == "/*")
+        _global_robot = False
+        _out.append(line)
+        continue
+    if _in_global and line.strip().lower().startswith("x-robots-tag:"):
+        if not _global_robot:
+            _out.append("  X-Robots-Tag: " + ROBOTS_OFF)
+            _global_robot = True
+        continue
+    _out.append(line)
+if _in_global and not _global_robot:
+    _out.append("  X-Robots-Tag: " + ROBOTS_OFF)
+headers = "\n".join(_out).rstrip()
+
+def remove_header_blocks(text, markers):
+    lines = text.splitlines()
+    out = []
+    skip = False
+    for line in lines:
+        if line.startswith("/") and not line.startswith("  "):
+            skip = line.strip() in markers
+            if skip:
+                continue
+        if skip:
+            continue
+        out.append(line)
+    return "\n".join(out).rstrip()
+
+cache_overrides = r'''
+/assets/site-v7-4.js
+  Cache-Control: no-cache, must-revalidate
+/assets/directory-v7-5.js
+  Cache-Control: no-cache, must-revalidate
+/assets/servizi-v7-5-1.js
+  Cache-Control: no-cache, must-revalidate
+'''.strip()
+
+extra = r'''
+/downloads/*
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex, nofollow, noarchive
+/data/*
+  Cache-Control: no-cache
+  X-Robots-Tag: noindex, nofollow, noarchive
+/offline/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+/archivio.html
+  X-Robots-Tag: noindex, follow
+/interfaccia-precedente.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+/404.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+/documenti.html
+  X-Robots-Tag: noindex, follow
+/qualita-dati.html
+  X-Robots-Tag: noindex, follow
+/privacy.html
+  X-Robots-Tag: noindex, follow
+'''.strip()
+
+markers = {
+    "/assets/site-v7-4.js", "/assets/directory-v7-5.js", "/assets/servizi-v7-5-1.js",
+    "/downloads/*", "/data/*", "/offline/*", "/archivio.html", "/interfaccia-precedente.html",
+    "/404.html", "/documenti.html", "/qualita-dati.html", "/privacy.html"
+}
+headers = remove_header_blocks(headers, markers)
+headers = headers.rstrip() + "\n\n" + cache_overrides + "\n\n" + extra + "\n"
+(ROOT/"_headers").write_text(headers, encoding="utf-8")
+
 vp = ROOT/"version.json"
 v = json.loads(vp.read_text(encoding="utf-8"))
 v["web_version"] = "7.7.4"
