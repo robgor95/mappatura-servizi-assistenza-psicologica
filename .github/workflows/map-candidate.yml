@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Decode exact candidate and verify every modified file
+      - name: Decode exact candidate and apply tested refinements
         run: |
           python3 - <<'PY'
           from pathlib import Path
