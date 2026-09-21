@@ -5,28 +5,94 @@ on:
     paths: [.github/workflows/audit-v7-9-workbench.yml]
 permissions:
   contents: read
+  actions: read
 jobs:
   candidates:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Collect cached preparation candidates
+      - name: Resume exact cache and add documented addresses
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p /tmp/audit-candidates
-          node tools/export-map-rows.cjs /tmp/audit-candidates/map-rows.json
+          gh api repos/robgor95/mappatura-servizi-assistenza-psicologica/actions/artifacts/10668797479/zip > /tmp/research.zip
+          unzip -qo /tmp/research.zip -d /tmp/audit-candidates
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('/tmp/audit-candidates/map-rows.json');rows=json.loads(p.read_text());by={r['key']:r for r in rows}
+          fixes={
+          'rete:NET-002':['Via Giovanni Martinotti, 20','Roma'],
+          'rete:NET-043':['Piazza Leone Bernardini, 13','Guidonia Montecelio'],
+          'rete:NET-045':['Via Domenico Giuliani, 4','Tivoli'],
+          'rete:NET-046':['Via Repubblica, snc','Subiaco'],
+          'rete:NET-047':['Via Porta San Martino, snc','Palestrina'],
+          'rete:NET-048':['Via degli Esplosivi, 9/b','Colleferro'],
+          'rete:NET-040':['Via Roberto Faravelli, 27','Monterotondo'],
+          'rete:NET-041':['Via Antonio Parrozzani, 3','Tivoli'],
+          'rete:NET-042':['Piazza Aldo Moro, 1','Colleferro'],
+          'moduli:MOD-010':['Via Sesto Celere, 16/18/20','Roma'],
+          'moduli:MOD-011':['Via Sesto Celere, 16/18/20','Roma'],
+          'moduli:MOD-012':['Via Sesto Celere, 16/18/20','Roma'],
+          'moduli:MOD-045':['Via Silvio Pellico, 7/9','Spigno Saturnia'],
+          'moduli:MOD-046':['Via Ausente, km 2.750','Santi Cosma e Damiano'],
+          'moduli:MOD-083':['Via Macchia Tonda, 8','Capena'],
+          'moduli:MOD-084':['Via Filippo Turati, 2/4','Fiano Romano'],
+          'moduli:MOD-094':['Via San Francesco, 2/a','Roccasecca'],
+          'moduli:MOD-095':['Via San Francesco, 2/a','Roccasecca'],
+          'moduli:MOD-097':['Via Montello, 22','Roccasecca'],
+          'moduli:MOD-106':['Via Moncenisio, 20','Roma'],
+          'moduli:MOD-108':['Via dei Normanni, 8/10','Santa Marinella'],
+          'moduli:MOD-109':['Via Amba Aradam, 25','Civitavecchia'],
+          'moduli:V79-PONTE-RES':['Via Veneto, 30/c','Civitavecchia'],
+          'moduli:V79-PONTE-COCCINELLA':['Via Veneto, 30/c','Civitavecchia'],
+          'moduli:V79-COOPERATE-FEBO':['Piazza Don Cesolini, 19','Bracciano'],
+          'moduli:V79-GV-LICIA':['Via Enrico Toti, 73','Itri'],
+          'moduli:V79-INS-VENERE':['Via Ausente - località Cerri Aprano','Santi Cosma e Damiano'],
+          'moduli:V79-INS-MARTE':['Via Ausente - località Cerri Aprano','Santi Cosma e Damiano'],
+          'rete:V79-R5-CALVINO':['Via Calvino, 2','Monterotondo'],
+          'rete:V79-R5-GIOVAGNOLI':['Via Giovagnoli, 27','Monterotondo']}
+          for k,(a,t) in fixes.items():
+           if k not in by:by[k]={'key':k,'name':k,'type':'da definire','territory':'Lazio'};rows.append(by[k])
+           by[k].update(address=a,town=t)
+          for i in range(22,29):by['moduli:MOD-%03d'%i]['address']='Via Maremmana Inferiore, 102'
+          rows.sort(key=lambda r:0 if r['key'] in fixes else 1);p.write_text(json.dumps(rows,ensure_ascii=False))
+          s=pathlib.Path('tools/research-geography-v7-9.py');txt=s.read_text().replace('calls>=240','calls>=300').replace("if p and p['precision']=='address': continue","if p and p['precision']=='address' and p['source_address']==r['address']: continue").replace("if not a or re.search(","if norm(a) in ['nd','non documentato'] or not a or re.search(")
+          s.write_text(txt)
+          PY
           python tools/research-geography-v7-9.py /tmp/audit-candidates
-      - name: Archive exact working revision
-        if: always()
+      - name: Cache Lazio boundary and selected official documents
         run: |
-          git archive --format=zip HEAD -o /tmp/audit-candidates/worktree.zip
-          git rev-parse HEAD > /tmp/audit-candidates/commit.txt
+          python - <<'PY'
+          from urllib.request import Request,urlopen
+          from urllib.parse import urlencode
+          from pathlib import Path
+          import json,time,hashlib,datetime
+          O=Path('/tmp/audit-candidates');S=O/'official-snapshots';idx=json.loads((S/'index.json').read_text())
+          sources=['https://www.villaletizia.org/uploads/csvm25.pdf','https://reverie.it/wp-content/uploads/2023/04/Manuale-completo.pdf','https://gestivar.it/le-strutture/','https://www.comunitainsieme.com/strutture/','https://www.alidelponte.com/servizi']
+          for u in sources:
+           try:
+            with urlopen(Request(u,headers={'User-Agent':'LazioServiceAudit/7.9 (documentary verification)'}),timeout=30) as r:body=r.read(16000000);ct=r.headers.get('Content-Type','')
+            name=hashlib.sha256(u.encode()).hexdigest()[:16]+('.pdf' if 'pdf' in ct else '.html');(S/name).write_bytes(body);idx.append({'url':u,'file':name,'sha256':hashlib.sha256(body).hexdigest(),'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat()})
+           except Exception as e:idx.append({'url':u,'error':str(e)})
+           time.sleep(1.4)
+          (S/'index.json').write_text(json.dumps(idx,indent=2))
+          u='https://nominatim.openstreetmap.org/search?'+urlencode({'q':'Lazio, Italia','format':'jsonv2','limit':1,'polygon_geojson':1,'addressdetails':1})
+          try:
+           with urlopen(Request(u,headers={'User-Agent':'LazioPresidiAudit/7.9 (one-time regional boundary; https://github.com/robgor95/mappatura-servizi-assistenza-psicologica)'}),timeout=60) as r:body=r.read()
+           (O/'lazio-boundary-response.json').write_bytes(body)
+          except Exception as e:(O/'boundary-error.txt').write_text(str(e))
+          PY
+          npm install --prefix /tmp/axe-audit axe-core
+          cp /tmp/axe-audit/node_modules/axe-core/axe.min.js /tmp/audit-candidates/axe.min.js
+          cp /tmp/axe-audit/node_modules/axe-core/LICENSE /tmp/audit-candidates/axe-LICENSE
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: v7-9-research-candidates
+          name: v7-9-research-completed
           path: /tmp/audit-candidates/
           retention-days: 7
           if-no-files-found: error
