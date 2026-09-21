@@ -1,0 +1,62 @@
+name: Verify production navigation
+on:
+  push:
+    branches: [verify-production-v7-7-3]
+    paths: ['.github/workflows/check-production-navigation.yml']
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: e3f506105736ba4554960aa17c0d82088d06394c
+          persist-credentials: false
+      - name: Verify public production URL, not cached search results
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError
+          import hashlib,json,time
+          base='https://mappatura-servizi-assistenza-psicologica.pages.dev'
+          def get(path):
+              req=Request(base+'/'+path,headers={'User-Agent':'Navigation-release-QA/7.7.3','Cache-Control':'no-cache'})
+              try:
+                  with urlopen(req,timeout=25) as r:return r.status,r.read(),r.geturl()
+              except HTTPError as e:return e.code,e.read(),e.url
+          for attempt in range(8):
+              status,content,_=get('version.json?verify=nav773')
+              if status==200 and json.loads(content).get('web_version')=='7.7.3':break
+              time.sleep(10)
+          else:raise RuntimeError('Production has not served the new version')
+          audit=json.loads(Path('downloads/Audit_Navigazione_V7_7_3.json').read_text())
+          checks=[]
+          for path in audit['pages']:
+              status,body,url=get(path)
+              assert status==200,(path,status)
+              assert b'data-navigation-version="7.7.3"' in body,path
+              assert hashlib.sha256(body).digest()==hashlib.sha256(Path(path).read_bytes()).digest(),('production differs from tested HTML',path)
+              checks.append({'path':path,'status':status,'matches_tested_html':True})
+          for path in ['assets/navigation-v7-7-3.css','assets/navigation-v7-7-3.js','assets/menta-config-v7-7.js','data/portal_data_v7_3.json','data/revisioni_v7_6.json','downloads/guide/Guida_03_privato.pdf','downloads/Guide_Percorsi_Cura_Lazio_V7_4.pdf']:
+              status,body,url=get(path)
+              assert status==200 and body==Path(path).read_bytes(),path
+              checks.append({'path':path,'status':status,'matches_repository_bytes':True})
+          status,body,url=get('archivio.html?view=stpit')
+          assert status==200 and b'data-navigation-version="7.7.3"' in body
+          checks.append({'path':'archivio.html?view=stpit','status':status})
+          status,body,url=get('qa-navigation-page-not-found-773')
+          assert status==404 and b'page-404' in body and b'site-navigation' in body
+          checks.append({'path':'qa-navigation-page-not-found-773','status':status,'custom_404':True})
+          report={'version':'7.7.3','production_commit':'e3f506105736ba4554960aa17c0d82088d06394c','production_url':base,'passed':len(checks),'total':len(checks),'checks':checks}
+          Path('production-report.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: production-navigation-report
+          path: production-report.json
+          retention-days: 7
