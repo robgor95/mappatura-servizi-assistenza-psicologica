@@ -42,6 +42,14 @@
     update();
   }
 
+  document.querySelectorAll('.svc-empty, #empty-result').forEach(empty => {
+    const figure = empty.querySelector('.menta-figure');
+    if (!figure) return;
+    const update = () => setFigureState(figure, empty.hidden ? 'ambient' : 'empty');
+    new MutationObserver(update).observe(empty, {attributes:true,attributeFilter:['hidden','class']});
+    update();
+  });
+
   document.querySelectorAll('[data-menta-retry]').forEach(button => {
     button.addEventListener('click', () => location.reload());
   });
