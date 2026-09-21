@@ -1,0 +1,8 @@
+Menta 7.7.1 — aggiornamento dell'interfaccia
+
+- Menta usa micro-animazioni contestuali locali, senza API, backend o dipendenze esterne.
+- Stati visivi: attesa, ascolto, ricerca, scelta, risultato, nessun risultato, emergenza ed errore.
+- prefers-reduced-motion disattiva tutte le animazioni della mascotte.
+- Pagina 404 e errore di caricamento del database includono Menta con comportamento contestuale.
+- I riferimenti di versione non necessari sono stati rimossi dalla UI pubblica; restano nei file tecnici per tracciabilità.
+- Dataset, fonti, date di verifica, filtri e URL precedenti non sono modificati.
