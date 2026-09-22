@@ -1,0 +1,1443 @@
+{
+  "version": "7.9.1",
+  "checked_at": "2026-09-22",
+  "sources": [
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+      "retrieved_at": "2026-09-22T11:58:36Z",
+      "sha256": "fabc8226b24febff2b7cd83a53db1cef47fe6ef608378be2947d545622d767c2",
+      "bytes": 1090907,
+      "status": 200,
+      "reviewed_pages": [
+        8
+      ],
+      "source_period": "Elenco 2025–2026, pubblicato luglio 2026"
+    },
+    {
+      "url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "retrieved_at": "2026-09-22T11:50:31Z",
+      "sha256": "b347b1f81d7de598c46c7bf0f3dbc1cf67fd2ddb9ca0731386eaedbc37f0ac72",
+      "bytes": 192792,
+      "status": 200
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villa-adriana",
+      "retrieved_at": "2026-09-22T11:50:17Z",
+      "sha256": "bc6cf619f89d29447b3677b9ebd90b0f78e7368ec021c190248b8128ea8efde6",
+      "bytes": 297510,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:28Z",
+      "sha256": "d87543bb986a497907a0c2bbcaa39a1fb6942cf0584e0c1abe2d673b2027c90e",
+      "bytes": 249550,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:27Z",
+      "sha256": "c7e71a52c476987af1ac784b496af7350130afab49859c4d41e7eccdff617d10",
+      "bytes": 249558,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-3.pdf",
+      "retrieved_at": "2026-09-22T11:55:25Z",
+      "sha256": "5d53d0262dfa9947520f7841bb5cbaf94e8fe3c79071a1e3af68042f58daeabe",
+      "bytes": 249539,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-4.pdf",
+      "retrieved_at": "2026-09-22T11:55:23Z",
+      "sha256": "77a684750a8e611ef9befaef0e38e6c72023110e37b09ae3b39ce4ebdae467ea",
+      "bytes": 249554,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/castel-madama",
+      "retrieved_at": "2026-09-22T11:50:25Z",
+      "sha256": "69d4252c14fb1bf256aac453a7dc95d446d64a220bbb81a8d3591891d22780e5",
+      "bytes": 309520,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Castel-Madama-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:35Z",
+      "sha256": "9e447a69643670322fb289ec6521c34d555a14ac5ec87af2259b89c4db3345ef",
+      "bytes": 249571,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Castel-Madama-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:33Z",
+      "sha256": "8555c132d0e33bb5914048dc403909771f9a31eade6c089ae3a84cbc1eab90c8",
+      "bytes": 249569,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villanova",
+      "retrieved_at": "2026-09-22T11:50:20Z",
+      "sha256": "f3465a2603c1c87ef2d3ae994136397de5d51302e646fa9695481268cbf54ff9",
+      "bytes": 299441,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villanova-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:16Z",
+      "sha256": "a3ccd9abebe07c0ee530ebb31847bf221e11ac3bb94234402867e9d10e9888c8",
+      "bytes": 249562,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villanova-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:18Z",
+      "sha256": "4ed4030d64a750e8f9bc847c5a6e2e842f2852c54d765d241682c0269bb35074",
+      "bytes": 249682,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villaggio-adriano",
+      "retrieved_at": "2026-09-22T11:50:23Z",
+      "sha256": "c49f9f85b28b9697e66e60b12777add2429bf8a6dc4ef65bc18f1e08e3c29864",
+      "bytes": 388312,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villaggio-Adriano-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:21Z",
+      "sha256": "00a3a8a804db8118a37745168ade38a76896495754e1704c1f65d1d960960b64",
+      "bytes": 249563,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villaggio-Adriano-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:19Z",
+      "sha256": "c63e28fc8ebaf7a9823ff0b8b8f31b0b6fd39fbf5b362f68ee348b6f428b91f1",
+      "bytes": 249559,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/rocca-canterano",
+      "retrieved_at": "2026-09-22T11:50:29Z",
+      "sha256": "2e669792979665c852f224842a44fee4a86ef637cfe47732e60109d3a69ad5d5",
+      "bytes": 374309,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Rocca-Canterano-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:31Z",
+      "sha256": "0ef453c7e627ea427b8d72df188dbcfc1c76e29439aa01ea577aa70ffa282d9d",
+      "bytes": 249569,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Rocca-Canterano-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:30Z",
+      "sha256": "815337a93d4b789fe8174ad7f6e9e5cb57be7c68afb1087b538dcf82585ec9cd",
+      "bytes": 249566,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        9,
+        13,
+        22,
+        23,
+        36
+      ],
+      "source_period": "Contratto 01/08/2025–31/12/2026"
+    },
+    {
+      "url": "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/",
+      "retrieved_at": "2026-09-22T11:50:29Z",
+      "sha256": "9d58b16b95f673d3ebbd86bbe019c2764cda65ffc5c92051ce192a255857e147",
+      "bytes": 303566,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Maddalena.pdf",
+      "retrieved_at": "2026-09-22T11:59:10Z",
+      "sha256": "3fd5ede3e21a354b46f97d9f8e20e981a6b1109e297b4df13f6d7c8b33f49434",
+      "bytes": 249581,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        13
+      ]
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/La-Staffa.pdf",
+      "retrieved_at": "2026-09-22T11:59:06Z",
+      "sha256": "109ce78a93abf2cb18723f349495cbc500fc4d37baa04b720a8771244b28385e",
+      "bytes": 249712,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        13
+      ]
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Rosaurora.pdf",
+      "retrieved_at": "2026-09-22T11:59:02Z",
+      "sha256": "e5e776685d6e97922624d7634e30d096263fe06eff3433a2027ab77250fe193e",
+      "bytes": 249630,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        13
+      ]
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Comunita-Francesco.pdf",
+      "retrieved_at": "2026-09-22T11:58:39Z",
+      "sha256": "2306580e1c783fe61d967c10282a280f00ce2812aa2a0bacb0e59b365a542eb3",
+      "bytes": 249572,
+      "status": 200,
+      "reviewed_pages": [
+        2,
+        13
+      ]
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villa-pia",
+      "retrieved_at": "2026-09-22T11:50:32Z",
+      "sha256": "aa4724767d4407c30452b7d2d473f71fdf722563f2459a3ab4c3255d21b9e021",
+      "bytes": 393097,
+      "status": 200
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/Bilancio-sociale-ODV_2025.pdf",
+      "retrieved_at": "2026-09-22T11:50:31Z",
+      "sha256": "06a9716686268bb5b8b393bbb8b7716c62e6b4e2e198b1a057f21d8b7a4288f7",
+      "bytes": 446402,
+      "status": 200,
+      "reviewed_pages": [
+        1,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "source_period": "Esercizio 2025; pubblicazione indicata agosto 2026"
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/contatti/",
+      "retrieved_at": "2026-09-22T11:50:23Z",
+      "sha256": "4ac4b5ace6f7223a33694f20683998baa941fb992ae1e1391f4ddf397d195c6a",
+      "bytes": 532923,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma3.it/asl-roma-3-dal-15-aprile-chiude-spdc-al-san-camillo-forlanini/",
+      "retrieved_at": "2026-09-22T11:52:33Z",
+      "sha256": "0fe09d49a0e1da9ee69cfb79c91231bd17b4647a81fdaf333af5c91652bae011",
+      "bytes": 132120,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-di-salute-mentale-plinio",
+      "retrieved_at": "2026-09-22T11:50:34Z",
+      "sha256": "50c3897e553bb05f978815000b5a81c4c2cf98f587cf7066d0223acfe59052ff",
+      "bytes": 134669,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-palestro",
+      "retrieved_at": "2026-09-22T11:50:36Z",
+      "sha256": "21ac21e7797241895d0aa3933374a1cbcfa0b59f910d3b78d763ed33b6f1f047",
+      "bytes": 133320,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-di-salute-mentale-sabrata",
+      "retrieved_at": "2026-09-22T11:50:37Z",
+      "sha256": "001a4583f1b40034d9d4463029afbe2b8e749aecd3ee73567ed9ff0c73af3d6b",
+      "bytes": 130770,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-boemondo",
+      "retrieved_at": "2026-09-22T11:50:39Z",
+      "sha256": "2c9ac8dbb7e805631027339256c079f9ceed4b1af1d6a5acc57011541ebff683",
+      "bytes": 131707,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-monte-tomatico",
+      "retrieved_at": "2026-09-22T11:50:40Z",
+      "sha256": "8e923a1b9a94a9688bf49bb62b214a28001b3da953b92033d2517d4256f84996",
+      "bytes": 131496,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-farulli",
+      "retrieved_at": "2026-09-22T11:50:42Z",
+      "sha256": "f79f36ff10d77903f182345598f52136b58d36c070f3a3bdbd9c82dce4bf2de9",
+      "bytes": 130984,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+      "retrieved_at": "2026-09-22T11:50:43Z",
+      "sha256": "c6473152ebc482d1c0bd03a2b44dcc606e616644cc29f9211be38e9a07e28d59",
+      "bytes": 127602,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+      "retrieved_at": "2026-09-22T11:50:45Z",
+      "sha256": "c0b288221ec393a46ec440bc24c34736f557fa2f1cb7a0219a1d166c58995e2e",
+      "bytes": 127909,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-gasparri",
+      "retrieved_at": "2026-09-22T11:50:46Z",
+      "sha256": "5479e2a064fd1bebc4562c8d3667d81cc845badd1931cbe2b002d9d85c1558fa",
+      "bytes": 133019,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-ventura",
+      "retrieved_at": "2026-09-22T11:50:48Z",
+      "sha256": "0efb0ecc5ad4fe08264694f244d15562f99ea8b289520457a6778c35f205576b",
+      "bytes": 131212,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-di-giorgio",
+      "retrieved_at": "2026-09-22T11:50:49Z",
+      "sha256": "45dd5efff50d1169edb4c70f2387a032eb8b6eb160f47aed54840a4bf7e94d45",
+      "bytes": 132478,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-via-dei-riari",
+      "retrieved_at": "2026-09-22T11:50:51Z",
+      "sha256": "b418bd011877ed8edab082f15bddfcc6560f1a153bf70f682361ea577fcd65d9",
+      "bytes": 139741,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-via-dei-frentani",
+      "retrieved_at": "2026-09-22T11:50:52Z",
+      "sha256": "73de841fe0bf089cd005164d7e11fc6be010ae463bcc1ea4350c73bf131a27b2",
+      "bytes": 136919,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+      "retrieved_at": "2026-09-22T11:50:54Z",
+      "sha256": "fe46558366db05add206e17096b71937feee1d2a5c061d9a7837f1fcd85a8e36",
+      "bytes": 137526,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-via-montesacro",
+      "retrieved_at": "2026-09-22T11:50:55Z",
+      "sha256": "133a5fe0a895939a8eafc254ec897e9e7193f78ad00e95df4e472003adffc296",
+      "bytes": 137641,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/servizio-dipendenze-marcigliana-serd",
+      "retrieved_at": "2026-09-22T11:50:56Z",
+      "sha256": "5aecd35cc5a19c25d9e5721c71529207e9e9960d232d4262268abc3c555d2645",
+      "bytes": 130168,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-s-maria-della-pieta",
+      "retrieved_at": "2026-09-22T11:50:58Z",
+      "sha256": "7a16795047ad5fa4d3b9ef19c963c6346957e3bfcaaf5df5a666f380f0f13d4e",
+      "bytes": 135942,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+      "retrieved_at": "2026-09-22T11:50:59Z",
+      "sha256": "4419fc90d8e95bec923090fae8de3d61244df793c4e35820ff405c3263ed35f4",
+      "bytes": 130174,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/ambulatorio-plinio-p-i-p-s-m-polo-ovest",
+      "retrieved_at": "2026-09-22T11:51:00Z",
+      "sha256": "698469b0cc98735282df76c4fda64b818434f3ff9e12fdede1ab9a99b8194d14",
+      "bytes": 134901,
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/ambulatorio-sabrata-p-i-p-s-m-polo-est",
+      "retrieved_at": "2026-09-22T11:51:02Z",
+      "sha256": "17d67ed46cb80fcbe7ff4c9b037f9f8c35484f2a1d78a0a1b25898bdd5ce5ef4",
+      "bytes": 129142,
+      "status": 200
+    }
+  ],
+  "research_attempts": [
+    {
+      "url": "https://gabbianotirreno.it/",
+      "retrieved_at": "2026-09-22T11:50:12Z",
+      "status": 200,
+      "sha256": "3bad15ff5205626ef657568216c6a05782528c210f1905f0a196750404bdef57"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villa-adriana",
+      "retrieved_at": "2026-09-22T11:50:17Z",
+      "status": 200,
+      "sha256": "bc6cf619f89d29447b3677b9ebd90b0f78e7368ec021c190248b8128ea8efde6"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villanova",
+      "retrieved_at": "2026-09-22T11:50:20Z",
+      "status": 200,
+      "sha256": "f3465a2603c1c87ef2d3ae994136397de5d51302e646fa9695481268cbf54ff9"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villaggio-adriano",
+      "retrieved_at": "2026-09-22T11:50:23Z",
+      "status": 200,
+      "sha256": "c49f9f85b28b9697e66e60b12777add2429bf8a6dc4ef65bc18f1e08e3c29864"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/castel-madama",
+      "retrieved_at": "2026-09-22T11:50:25Z",
+      "status": 200,
+      "sha256": "69d4252c14fb1bf256aac453a7dc95d446d64a220bbb81a8d3591891d22780e5"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/rocca-canterano",
+      "retrieved_at": "2026-09-22T11:50:29Z",
+      "status": 200,
+      "sha256": "2e669792979665c852f224842a44fee4a86ef637cfe47732e60109d3a69ad5d5"
+    },
+    {
+      "url": "https://gabbianotirreno.it/strutture/villa-pia",
+      "retrieved_at": "2026-09-22T11:50:32Z",
+      "status": 200,
+      "sha256": "aa4724767d4407c30452b7d2d473f71fdf722563f2459a3ab4c3255d21b9e021"
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/contatti/",
+      "retrieved_at": "2026-09-22T11:50:23Z",
+      "status": 200,
+      "sha256": "4ac4b5ace6f7223a33694f20683998baa941fb992ae1e1391f4ddf397d195c6a"
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/trasparenza/",
+      "retrieved_at": "2026-09-22T11:50:29Z",
+      "status": 200,
+      "sha256": "49d80a10f8ed3c67ef276852add4786e406cfb3e9fdfe71b9b5627a89b5bfbc6"
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/Bilancio-sociale-ODV_2025.pdf",
+      "retrieved_at": "2026-09-22T11:50:31Z",
+      "status": 200,
+      "sha256": "06a9716686268bb5b8b393bbb8b7716c62e6b4e2e198b1a057f21d8b7a4288f7"
+    },
+    {
+      "url": "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/",
+      "retrieved_at": "2026-09-22T11:50:29Z",
+      "status": 200,
+      "sha256": "9d58b16b95f673d3ebbd86bbe019c2764cda65ffc5c92051ce192a255857e147"
+    },
+    {
+      "url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "retrieved_at": "2026-09-22T11:50:31Z",
+      "status": 200,
+      "sha256": "b347b1f81d7de598c46c7bf0f3dbc1cf67fd2ddb9ca0731386eaedbc37f0ac72"
+    },
+    {
+      "url": "https://www.cooperate.it/servizi/bracciano.html",
+      "retrieved_at": "2026-09-22T11:50:31Z",
+      "status": 200,
+      "sha256": "bc2584a00dd000cb4eed4e4fe0efd7b2a50322bef5ae90736990e11642763451"
+    },
+    {
+      "url": "https://reverie.it/strutture/",
+      "retrieved_at": "2026-09-22T11:50:32Z",
+      "status": 200,
+      "sha256": "de49497acf180f6776f85748c79dd4429acc6ee3a6e62f63594abcb6be9fcc96"
+    },
+    {
+      "url": "https://www.comunitainsieme.com/strutture/",
+      "retrieved_at": "2026-09-22T11:50:32Z",
+      "status": 200,
+      "sha256": "fc245d854a98c0fa33552cb8583ee2ee10564f9f214d47c202a778044ec12c96"
+    },
+    {
+      "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+      "retrieved_at": "2026-09-22T11:50:33Z",
+      "status": 200,
+      "sha256": "a532e74c238a184d9dd142fb4c63483de562cc1c8e4638636e27e4bb2b3ba431"
+    },
+    {
+      "url": "https://www.aslroma1.it/salute-mentale",
+      "retrieved_at": "2026-09-22T11:50:33Z",
+      "status": 200,
+      "sha256": "5c817a5ae66aefdefaeae31ec196b652214168ee5c282a0095a47ae781093241"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-di-salute-mentale-plinio",
+      "retrieved_at": "2026-09-22T11:50:34Z",
+      "status": 200,
+      "sha256": "50c3897e553bb05f978815000b5a81c4c2cf98f587cf7066d0223acfe59052ff"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-palestro",
+      "retrieved_at": "2026-09-22T11:50:36Z",
+      "status": 200,
+      "sha256": "21ac21e7797241895d0aa3933374a1cbcfa0b59f910d3b78d763ed33b6f1f047"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-di-salute-mentale-sabrata",
+      "retrieved_at": "2026-09-22T11:50:37Z",
+      "status": 200,
+      "sha256": "001a4583f1b40034d9d4463029afbe2b8e749aecd3ee73567ed9ff0c73af3d6b"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-boemondo",
+      "retrieved_at": "2026-09-22T11:50:39Z",
+      "status": 200,
+      "sha256": "2c9ac8dbb7e805631027339256c079f9ceed4b1af1d6a5acc57011541ebff683"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-monte-tomatico",
+      "retrieved_at": "2026-09-22T11:50:40Z",
+      "status": 200,
+      "sha256": "8e923a1b9a94a9688bf49bb62b214a28001b3da953b92033d2517d4256f84996"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-farulli",
+      "retrieved_at": "2026-09-22T11:50:42Z",
+      "status": 200,
+      "sha256": "f79f36ff10d77903f182345598f52136b58d36c070f3a3bdbd9c82dce4bf2de9"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+      "retrieved_at": "2026-09-22T11:50:43Z",
+      "status": 200,
+      "sha256": "c6473152ebc482d1c0bd03a2b44dcc606e616644cc29f9211be38e9a07e28d59"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+      "retrieved_at": "2026-09-22T11:50:45Z",
+      "status": 200,
+      "sha256": "c0b288221ec393a46ec440bc24c34736f557fa2f1cb7a0219a1d166c58995e2e"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-gasparri",
+      "retrieved_at": "2026-09-22T11:50:46Z",
+      "status": 200,
+      "sha256": "5479e2a064fd1bebc4562c8d3667d81cc845badd1931cbe2b002d9d85c1558fa"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-ventura",
+      "retrieved_at": "2026-09-22T11:50:48Z",
+      "status": 200,
+      "sha256": "0efb0ecc5ad4fe08264694f244d15562f99ea8b289520457a6778c35f205576b"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-di-giorgio",
+      "retrieved_at": "2026-09-22T11:50:49Z",
+      "status": 200,
+      "sha256": "45dd5efff50d1169edb4c70f2387a032eb8b6eb160f47aed54840a4bf7e94d45"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-via-dei-riari",
+      "retrieved_at": "2026-09-22T11:50:51Z",
+      "status": 200,
+      "sha256": "b418bd011877ed8edab082f15bddfcc6560f1a153bf70f682361ea577fcd65d9"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-via-dei-frentani",
+      "retrieved_at": "2026-09-22T11:50:52Z",
+      "status": 200,
+      "sha256": "73de841fe0bf089cd005164d7e11fc6be010ae463bcc1ea4350c73bf131a27b2"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+      "retrieved_at": "2026-09-22T11:50:54Z",
+      "status": 200,
+      "sha256": "fe46558366db05add206e17096b71937feee1d2a5c061d9a7837f1fcd85a8e36"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-via-montesacro",
+      "retrieved_at": "2026-09-22T11:50:55Z",
+      "status": 200,
+      "sha256": "133a5fe0a895939a8eafc254ec897e9e7193f78ad00e95df4e472003adffc296"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/servizio-dipendenze-marcigliana-serd",
+      "retrieved_at": "2026-09-22T11:50:56Z",
+      "status": 200,
+      "sha256": "5aecd35cc5a19c25d9e5721c71529207e9e9960d232d4262268abc3c555d2645"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-s-maria-della-pieta",
+      "retrieved_at": "2026-09-22T11:50:58Z",
+      "status": 200,
+      "sha256": "7a16795047ad5fa4d3b9ef19c963c6346957e3bfcaaf5df5a666f380f0f13d4e"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+      "retrieved_at": "2026-09-22T11:50:59Z",
+      "status": 200,
+      "sha256": "4419fc90d8e95bec923090fae8de3d61244df793c4e35820ff405c3263ed35f4"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/ambulatorio-plinio-p-i-p-s-m-polo-ovest",
+      "retrieved_at": "2026-09-22T11:51:00Z",
+      "status": 200,
+      "sha256": "698469b0cc98735282df76c4fda64b818434f3ff9e12fdede1ab9a99b8194d14"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/ambulatorio-sabrata-p-i-p-s-m-polo-est",
+      "retrieved_at": "2026-09-22T11:51:02Z",
+      "status": 200,
+      "sha256": "17d67ed46cb80fcbe7ff4c9b037f9f8c35484f2a1d78a0a1b25898bdd5ce5ef4"
+    },
+    {
+      "url": "https://www.aslroma1.it/sportello-ascolto",
+      "retrieved_at": "2026-09-22T11:51:03Z",
+      "status": 200,
+      "sha256": "ebe459625ff1c41f764643ddab43f56df2b75c347481133d6c06c166c09a9c6a"
+    },
+    {
+      "url": "https://www.aslroma2.it/index.php/organizzazione/dipartimenti/dip-di-salute-mentale",
+      "retrieved_at": "2026-09-22T11:50:59Z",
+      "status": 200,
+      "sha256": "f207aac725d5682e9fa0889de6ee242fcfd62c6a2163fffa40e3f855e9cb5ef3"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/",
+      "retrieved_at": "2026-09-22T11:51:00Z",
+      "status": 200,
+      "sha256": "e860f15b8b69d8f933c1b4bc37e4d4482042fdd33d1aef134d673e003b9c7cb7"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-x/",
+      "retrieved_at": "2026-09-22T11:51:02Z",
+      "status": 200,
+      "sha256": "d2fe49ba553689c7699f3871a7544406d270c6839f245ce76d0c5c6ea3f11ad6"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-comune-di-fiumicino/",
+      "retrieved_at": "2026-09-22T11:51:04Z",
+      "status": 200,
+      "sha256": "5092c7d1c1906a472d83d9d23b537349c3a6d20188832795a2c5b0111699e7bb"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+      "retrieved_at": "2026-09-22T11:51:05Z",
+      "status": 200,
+      "sha256": "317691e1c46db221b42dabe45eb1e0088db2f6883e186ad3df1fb359282dcc74"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+      "retrieved_at": "2026-09-22T11:51:07Z",
+      "status": 200,
+      "sha256": "482f4b71364b2a9eaabe8f78505124b226d076f4fb95d618e167a0b6c08643c6"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-e-dipendenze-ser-d/",
+      "retrieved_at": "2026-09-22T11:51:08Z",
+      "status": 200,
+      "sha256": "a285102b9729e3fb3d10a06fc66a3f04c804194173ffa8263016a95c4f36bddf"
+    },
+    {
+      "url": "https://www.aslroma3.it/ser-d-servizio-trattamento-delle-dipendenze/",
+      "retrieved_at": "2026-09-22T11:51:10Z",
+      "status": 200,
+      "sha256": "184b162525392d21b299a8f9322691398970b91792312947515c17436af0c8b1"
+    },
+    {
+      "url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-salute-mentale",
+      "retrieved_at": "2026-09-22T11:51:05Z",
+      "status": 200,
+      "sha256": "c55defafc4cb65378cbc18693c2f4d78b7e000b9f64ebc2a68bb32f0f3f37c15"
+    },
+    {
+      "url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+      "retrieved_at": "2026-09-22T11:51:07Z",
+      "status": 200,
+      "sha256": "1a06ef6e7e54ab77ba5db6b9be7205df57c96c13c1a733c9d4baf8f68ac4b29d"
+    },
+    {
+      "url": "https://www.aslroma4.it/strutture-sanitarie/ser-d-servizio-per-le-dipendenze",
+      "retrieved_at": "2026-09-22T11:51:08Z",
+      "status": 200,
+      "sha256": "e28d02b078c20be4d2a3ff2c3125d3f7d781a2388698d4f7672268e05f59d5fb"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/",
+      "retrieved_at": "2026-09-22T11:51:08Z",
+      "status": 200,
+      "sha256": "6a60323bc3724aa21253d8b1b68157d9ecc4afbe6318eb3e563b53dbb8570eb3"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-guidonia/",
+      "retrieved_at": "2026-09-22T11:51:10Z",
+      "status": 200,
+      "sha256": "2edbe4ac7acbee37821166e6ac41b7d1d01503800d6caf6ead437bc0db9c9ff9"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uos-csm-di-monterotondo/",
+      "retrieved_at": "2026-09-22T11:51:12Z",
+      "status": 200,
+      "sha256": "7bc9ef5031b40fcdc750bd246c7fe3fe7fbb3409fcb66cc8710462f3a509c1d3"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/uos-csm-di-subiaco/",
+      "retrieved_at": "2026-09-22T11:51:14Z",
+      "status": 200,
+      "sha256": "de9d793779e21411186709ec0e24bb96da4aaac46f9b5d5ba32658fdef0cf00f"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/uos-csm-di-tivoli/",
+      "retrieved_at": "2026-09-22T11:51:16Z",
+      "status": 200,
+      "sha256": "2675be894a55d4b7898d09e5ead22c5b105d4e8a44ab792be50f16d754ebfa41"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/uos-csm-di-colleferro/",
+      "retrieved_at": "2026-09-22T11:51:18Z",
+      "status": 200,
+      "sha256": "2045aa4b447bf0c4e92ba92d0e7b26a470963b58258339e63a1a837895248567"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/uos-csm-di-palestrina/",
+      "retrieved_at": "2026-09-22T11:51:20Z",
+      "status": 200,
+      "sha256": "12ab1223e0779168e13b9bb47e128d74ae8d75cecd382ee81c81065e98469279"
+    },
+    {
+      "url": "https://www.aslroma5.it/gioco-dazzardo-e-altre-dipendenze-comportamentali/",
+      "retrieved_at": "2026-09-22T11:51:22Z",
+      "status": 200,
+      "sha256": "7f47277f9750ba820b735469629941c24f299aa639ad4002f2821f174ec428f7"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-monterotondo/",
+      "retrieved_at": "2026-09-22T11:51:25Z",
+      "status": 200,
+      "sha256": "8f703c6c53737851b643bda5a7ef269d03f34dfa6456266ebe49ff72fccddad9"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-tivoli-guidonia/",
+      "retrieved_at": "2026-09-22T11:51:27Z",
+      "status": 200,
+      "sha256": "11efed5870efb0d07d6159c286ebbff50fbd7a7b71af8035e0af07c4f4b5e864"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/",
+      "retrieved_at": "2026-09-22T11:51:29Z",
+      "status": 200,
+      "sha256": "c91dc9edaefd38f941822f9014bd6248ac09eb5854e944e88afd5bf248f73f3b"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-palestrina/",
+      "retrieved_at": "2026-09-22T11:51:31Z",
+      "status": 200,
+      "sha256": "53af876a0403c4fec3ce07a38173725465e69ff0e4f43e3860af3a9b9a922485"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/",
+      "retrieved_at": "2026-09-22T11:51:33Z",
+      "status": 200,
+      "sha256": "bb4efca454c1fadd32c8058c040b83c3631b3f0c45b09e5157c144d042648656"
+    },
+    {
+      "url": "https://www.aslroma6.it/",
+      "retrieved_at": "2026-09-22T11:51:27Z",
+      "error": "HTTPSConnectionPool(host='www.aslroma6.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1075c63e30>, 'Connection to www.aslroma6.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale",
+      "retrieved_at": "2026-09-22T11:51:29Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1075ee34a0>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+      "retrieved_at": "2026-09-22T11:51:50Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1075e3f890>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2",
+      "retrieved_at": "2026-09-22T11:52:11Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f10882f8c50>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze",
+      "retrieved_at": "2026-09-22T11:52:31Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f10765720c0>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/guida-ai-servizi/disturbo-da-gioco-dazzardo",
+      "retrieved_at": "2026-09-22T11:52:52Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /guida-ai-servizi/disturbo-da-gioco-dazzardo (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f10841eefc0>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-tutela-e-promozione-della-salute-mentale/uoc-patologia-da-dipendenza/alcologia-e-patologie-correlate/",
+      "retrieved_at": "2026-09-22T11:53:13Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-tutela-e-promozione-della-salute-mentale/uoc-patologia-da-dipendenza/alcologia-e-patologie-correlate/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1076571490>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://asl.vt.it/index.php/dsm-dipartimento-di-salute-mentale",
+      "retrieved_at": "2026-09-22T11:52:11Z",
+      "status": 200,
+      "sha256": "c2414f7aac43bc719e0d01869205e80175468d77b52926f6c6382c62a41df18d"
+    },
+    {
+      "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+      "retrieved_at": "2026-09-22T11:52:12Z",
+      "status": 200,
+      "sha256": "71f969dd2116db32ccb07f0cdfc06e6a986e2b90d5cb5ab477039a54162bd403"
+    },
+    {
+      "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+      "retrieved_at": "2026-09-22T11:52:13Z",
+      "status": 200,
+      "sha256": "65ca4a38b128078423a4f1342e051c18dd5a26fd250fb268fddc70099a74574f"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+      "retrieved_at": "2026-09-22T11:52:14Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/uos-csm-sora/",
+      "retrieved_at": "2026-09-22T11:52:15Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/uos-csm-sora/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-cassino/",
+      "retrieved_at": "2026-09-22T11:52:16Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-cassino/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+      "retrieved_at": "2026-09-22T11:52:17Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/",
+      "retrieved_at": "2026-09-22T11:52:18Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-sora/",
+      "retrieved_at": "2026-09-22T11:52:19Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-sora/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm",
+      "retrieved_at": "2026-09-22T11:52:20Z",
+      "status": 200,
+      "sha256": "58c1afa770db4b589dafce71f5a84c4571003159497f0d1a23575f43fbdc47ff"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-santo-spirito",
+      "retrieved_at": "2026-09-22T11:52:21Z",
+      "status": 200,
+      "sha256": "d3769aed7eb94f79ee9207d6b70534d9e22fc94afa11679aec145be50506a5e9"
+    },
+    {
+      "url": "https://www.aslroma1.it/azienda-dipartimentieri/dipartimento-integrato-di-salute-mentale",
+      "retrieved_at": "2026-09-22T11:52:24Z",
+      "status": 200,
+      "sha256": "2307fe952ee8f6e1f220ee8f0a2962c3a3cae8e8e449d01d1da9a5616808cd60"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-ospedalieri/reparti/spdc-san-filippo-neri",
+      "retrieved_at": "2026-09-22T11:52:26Z",
+      "status": 200,
+      "sha256": "ee1eb7208e30773a6d2e86340acb9e11a6dfff25ea68f836406ae0e1d56bb115"
+    },
+    {
+      "url": "https://www.aslroma1.it/servizi-tsmree-tutela-salute-mentale-e-riabilitazione-dell-eta-evolutiva",
+      "retrieved_at": "2026-09-22T11:52:28Z",
+      "status": 200,
+      "sha256": "1551cc972bdefa68b697635609772dfeba154b9d36abd2a95815f82d5fd159ae"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/ambulatorio-disturbi-comportamento-alimentare",
+      "retrieved_at": "2026-09-22T11:52:30Z",
+      "status": 200,
+      "sha256": "de7ce781ce495bb61380c367340fc32bd357d2db543873b8efccc293e92b1ee0"
+    },
+    {
+      "url": "https://www.aslroma2.it/index.php/uosd-disturbi-del-comportamento-alimentare",
+      "retrieved_at": "2026-09-22T11:52:31Z",
+      "status": 200,
+      "sha256": "1b32f013e50504d2632db97413c830042771b376faeb66dfc1848ebd5530f5e9"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-servizio-psichiatrico-di-diagnosi-e-cura-s-p-d-c-ospedale-grassi/",
+      "retrieved_at": "2026-09-22T11:52:32Z",
+      "status": 200,
+      "sha256": "9ca063ff36f489ebd5b07726f2c48ada4e48effdd36d24b331ef59b6b0a90d93"
+    },
+    {
+      "url": "https://www.aslroma3.it/asl-roma-3-dal-15-aprile-chiude-spdc-al-san-camillo-forlanini/",
+      "retrieved_at": "2026-09-22T11:52:33Z",
+      "status": 200,
+      "sha256": "0fe09d49a0e1da9ee69cfb79c91231bd17b4647a81fdaf333af5c91652bae011"
+    },
+    {
+      "url": "https://www.aslroma3.it/servizi-dalla-a-alla-z/t/tsmree-tutela-salute-mentale-e-riabilitazione-in-eta-evolutiva/",
+      "retrieved_at": "2026-09-22T11:52:35Z",
+      "status": 200,
+      "sha256": "5ba2a0331f877cb396eccca48edf80b022381e32eb500e4ae4415eb2fdfce648"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/",
+      "retrieved_at": "2026-09-22T11:52:35Z",
+      "status": 200,
+      "sha256": "c29b3ab3bbb53dc607088f11eacbee23057a390c79b3dc1e714f682f880f059c"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-monterotondo/",
+      "retrieved_at": "2026-09-22T11:52:37Z",
+      "status": 200,
+      "sha256": "19e41b2fc8bf622f545b34a8cb813c532bdaf3f450ae6911b8726f6a113b5ad6"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-tivoli/",
+      "retrieved_at": "2026-09-22T11:52:39Z",
+      "status": 200,
+      "sha256": "0069768a5b0e7457b59d6b1d099366eadbccfd664ba7c3839d7d401832fd9450"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-gli-spdc/uoc-spdc-colleferro/",
+      "retrieved_at": "2026-09-22T11:52:41Z",
+      "status": 200,
+      "sha256": "39a5e12a7eae9a2ba98f465aa6a27a343f82bd3af4e9280d6c00e6aa2936f5ff"
+    },
+    {
+      "url": "https://www.aslroma5.it/disturbi-alimentari/",
+      "retrieved_at": "2026-09-22T11:52:42Z",
+      "status": 200,
+      "sha256": "f26136c1ed245a8135827bf0943e02b639d678e3329b96248b40925683456c92"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-guidonia/",
+      "retrieved_at": "2026-09-22T11:52:44Z",
+      "status": 200,
+      "sha256": "2d32f700d25e4b3ed5f15d161e8608fdef0eef7d34112cf06d5189e2b8b116bc"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/",
+      "retrieved_at": "2026-09-22T11:52:46Z",
+      "status": 200,
+      "sha256": "aa69512f7caaf45d85cbed232c81b50cb200fba02f04ea02092b2b8b1b67ff8c"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-servizio-psichiatrico-di-diagnosi-e-cura-spdc",
+      "retrieved_at": "2026-09-22T11:53:33Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-servizio-psichiatrico-di-diagnosi-e-cura-spdc (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1076e54200>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.rieti.it/",
+      "retrieved_at": "2026-09-22T11:53:54Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1075d4ce00>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.asl.vt.it/spdc-servizio-psichiatrico-diagnosi-e-cura",
+      "retrieved_at": "2026-09-22T11:52:52Z",
+      "status": 200,
+      "sha256": "c63e35c886205e4783d844f9bb9a6ac2ff8bb0c39351e0b30a41c3beceb7a54d"
+    },
+    {
+      "url": "https://asl.vt.it/tsmree-tutela-salute-mentale-e-riabilitazione-dell-eta-evolutiva",
+      "retrieved_at": "2026-09-22T11:52:54Z",
+      "status": 200,
+      "sha256": "ee3b6a4bf31d03ba34947e8737e6d998d49e1fb4b7622859e8106e4a93264ccd"
+    },
+    {
+      "url": "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+      "retrieved_at": "2026-09-22T11:52:55Z",
+      "status": 200,
+      "sha256": "84a0e60637c3fe35b8feb41fe6dc93dd8fe9de2dad371419a216048c5032c6e5"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/",
+      "retrieved_at": "2026-09-22T11:52:56Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+      "retrieved_at": "2026-09-22T11:52:57Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-xi-e-xii-municipio/",
+      "retrieved_at": "2026-09-22T11:52:57Z",
+      "status": 200,
+      "sha256": "7bae28cad3fa77dddcf5c946d504e666561775c797119992909b6ea8057c6eb0"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-municipio-x-e-comune-di-fiumicino/",
+      "retrieved_at": "2026-09-22T11:52:59Z",
+      "status": 200,
+      "sha256": "2c06e57f135597f6e3030eb3ba5a68c4713541cd337f04799024a9be7491a606"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%202/lista_presidi",
+      "retrieved_at": "2026-09-22T11:53:00Z",
+      "status": 200,
+      "sha256": "e8edfe608e3138ef0cfb8e7c1c885b8b62e81bb50275e974c07ceb17867a1659"
+    },
+    {
+      "url": "https://www.aslroma1.it/",
+      "retrieved_at": "2026-09-22T11:53:02Z",
+      "status": 200,
+      "sha256": "251cd0255bf6f1ab56228e4b42179fc183feb93af7abb16bfa3520fb90964151"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%2014/lista_presidi",
+      "retrieved_at": "2026-09-22T11:53:03Z",
+      "status": 200,
+      "sha256": "b08f224b73dde56f45b8966fd45b3951f7f32de5613f83c0a8b7589165f82935"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/centro-diurno-di-guidonia/",
+      "retrieved_at": "2026-09-22T11:53:05Z",
+      "status": 200,
+      "sha256": "4671993ab78cddc084db9692ccc38cfeda23dfeb1a66f45918fd23642eef8461"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-tivoli/",
+      "retrieved_at": "2026-09-22T11:53:07Z",
+      "status": 200,
+      "sha256": "a66da13e0382084f21ec3aeecce12dbcb96d7128cc1b107ff2969a9aa74d32be"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-subiaco-e-tivoli/centro-diurno-di-subiaco/",
+      "retrieved_at": "2026-09-22T11:53:09Z",
+      "status": 200,
+      "sha256": "818125a1e6fe3210a231a1c36f5ea6caa6367173c4d9d9353810d9ec739d675b"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-palestrina/",
+      "retrieved_at": "2026-09-22T11:53:10Z",
+      "status": 200,
+      "sha256": "17a07d04b47669188f57160492deb346d98cad5feac816a574aea831f08232fd"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uoc-csm-di-colleferro-e-palestrina/centro-diurno-di-colleferro/",
+      "retrieved_at": "2026-09-22T11:53:12Z",
+      "status": 200,
+      "sha256": "0235ac018e6384dfd5dbf137bc458432708a29fad441310fde2f2a7ec096d488"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche",
+      "retrieved_at": "2026-09-22T11:54:15Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1075e0c740>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://asl.vt.it/centro-diurno-dsm",
+      "retrieved_at": "2026-09-22T11:53:14Z",
+      "status": 200,
+      "sha256": "e941993206f3c777ae7cbf047b59e2a3e7345b635d8ca7f7072f0c86d604e693"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/",
+      "retrieved_at": "2026-09-22T11:53:15Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+      "retrieved_at": "2026-09-22T11:53:16Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%201/lista_presidi",
+      "retrieved_at": "2026-09-22T11:53:16Z",
+      "status": 200,
+      "sha256": "95f175fe8c319b9d056e09138a7305cbd112927a2f0673d2af80a73c87cbe00c"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%203/lista_presidi",
+      "retrieved_at": "2026-09-22T11:53:18Z",
+      "status": 200,
+      "sha256": "87600a66a5919deb361156af658f025b49f973e51b8bc90081623e30deb5824d"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%2013/lista_presidi",
+      "retrieved_at": "2026-09-22T11:53:19Z",
+      "status": 200,
+      "sha256": "7ed407feb258ebfef99a44eb444ae6467762e52d6a89acbeee8f0c2e55666616"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%2015/lista_presidi",
+      "retrieved_at": "2026-09-22T11:53:21Z",
+      "status": 200,
+      "sha256": "48b6b2ea35a557de72723c4665208ee737d970cc0fe488a433c62029a177a534"
+    },
+    {
+      "url": "https://www.aslroma2.it/index.php/centri-diurni?id=31&view=page",
+      "retrieved_at": "2026-09-22T11:53:23Z",
+      "status": 200,
+      "sha256": "836baa163d9de937691251e35c2f6b219a95d454975d533207c1d6a87c0fdd12"
+    },
+    {
+      "url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+      "retrieved_at": "2026-09-22T11:53:25Z",
+      "status": 200,
+      "sha256": "76e9bbf66905924dffe61b2adb0e87904e4fc5daa1e9511e3c6021084d10751c"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uosd-residenzialita-in-salute-mentale/",
+      "retrieved_at": "2026-09-22T11:53:26Z",
+      "status": 200,
+      "sha256": "165212d0d6814d769f895bb91d86fc8b212d05c514fe9e0d45f41f11309d9540"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-strutture-riabilitative-salute-mentale-e-rems",
+      "retrieved_at": "2026-09-22T11:54:35Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-strutture-riabilitative-salute-mentale-e-rems (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f10765b6870>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative",
+      "retrieved_at": "2026-09-22T11:53:33Z",
+      "status": 200,
+      "sha256": "a96475142eed8a1b361c370afa451ab27d658ad054a9fbe30c7142d6fc1cfc9b"
+    },
+    {
+      "url": "https://www.ausl.latina.it/problemi-psicologici/31-azienda/449-dsm",
+      "retrieved_at": "2026-09-22T11:53:34Z",
+      "status": 200,
+      "sha256": "2372ea114a4860663259d7e0fc9fcfb47755205221a838703fff32f37ea5da75"
+    },
+    {
+      "url": "https://asl.vt.it/strutture-private-accreditate",
+      "retrieved_at": "2026-09-22T11:53:35Z",
+      "status": 200,
+      "sha256": "1733e76716c49b5ee5b064b55264915ff012c47a7896877c0c18ea0a54fb6b7a"
+    },
+    {
+      "url": "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate",
+      "retrieved_at": "2026-09-22T11:53:37Z",
+      "status": 200,
+      "sha256": "9efa585dcbba7186d7f4c28551a9e8185a1808a6b72f6e8fc39e2a8c66367b40"
+    },
+    {
+      "url": "https://www.asl.rieti.it/associazioni-asl-rieti",
+      "retrieved_at": "2026-09-22T11:54:55Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /associazioni-asl-rieti (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f10765b4500>, 'Connection to www.asl.rieti.it timed out. (connect timeout=20)'))"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-calvino/",
+      "retrieved_at": "2026-09-22T11:53:54Z",
+      "status": 200,
+      "sha256": "06aca7e8c3de2caec430a67eb4981992362b412c570ae1f6675436bc56de4927"
+    },
+    {
+      "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/srsr-giovagnoli/",
+      "retrieved_at": "2026-09-22T11:53:56Z",
+      "status": 200,
+      "sha256": "6a368a44fe9b64142d08f0ad3234c15902e816b7d216d628c0166e093fbf6fa2"
+    },
+    {
+      "url": "https://www.nuoviorizzonti.org/wp-content/uploads/2025/01/Relazione-missione-ODV_2025.pdf",
+      "retrieved_at": "2026-09-22T11:55:16Z",
+      "status": 200,
+      "sha256": "29db71f5bf89d6fc1ea83e300ad865548e60b06937a1291c009d403c53b860fb"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villanova-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:18Z",
+      "status": 200,
+      "sha256": "4ed4030d64a750e8f9bc847c5a6e2e842f2852c54d765d241682c0269bb35074"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villanova-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:16Z",
+      "status": 200,
+      "sha256": "a3ccd9abebe07c0ee530ebb31847bf221e11ac3bb94234402867e9d10e9888c8"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villaggio-Adriano-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:19Z",
+      "status": 200,
+      "sha256": "c63e28fc8ebaf7a9823ff0b8b8f31b0b6fd39fbf5b362f68ee348b6f428b91f1"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villaggio-Adriano-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:21Z",
+      "status": 200,
+      "sha256": "00a3a8a804db8118a37745168ade38a76896495754e1704c1f65d1d960960b64"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-4.pdf",
+      "retrieved_at": "2026-09-22T11:55:23Z",
+      "status": 200,
+      "sha256": "77a684750a8e611ef9befaef0e38e6c72023110e37b09ae3b39ce4ebdae467ea"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-3.pdf",
+      "retrieved_at": "2026-09-22T11:55:25Z",
+      "status": 200,
+      "sha256": "5d53d0262dfa9947520f7841bb5cbaf94e8fe3c79071a1e3af68042f58daeabe"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:27Z",
+      "status": 200,
+      "sha256": "c7e71a52c476987af1ac784b496af7350130afab49859c4d41e7eccdff617d10"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Villa-Adriana-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:28Z",
+      "status": 200,
+      "sha256": "d87543bb986a497907a0c2bbcaa39a1fb6942cf0584e0c1abe2d673b2027c90e"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Rocca-Canterano-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:30Z",
+      "status": 200,
+      "sha256": "815337a93d4b789fe8174ad7f6e9e5cb57be7c68afb1087b538dcf82585ec9cd"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Rocca-Canterano-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:31Z",
+      "status": 200,
+      "sha256": "0ef453c7e627ea427b8d72df188dbcfc1c76e29439aa01ea577aa70ffa282d9d"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Castel-Madama-2.pdf",
+      "retrieved_at": "2026-09-22T11:55:33Z",
+      "status": 200,
+      "sha256": "8555c132d0e33bb5914048dc403909771f9a31eade6c089ae3a84cbc1eab90c8"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Gabbiano-Tirreno-Castel-Madama-1.pdf",
+      "retrieved_at": "2026-09-22T11:55:35Z",
+      "status": 200,
+      "sha256": "9e447a69643670322fb289ec6521c34d555a14ac5ec87af2259b89c4db3345ef"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+      "retrieved_at": "2026-09-22T11:58:36Z",
+      "status": 200,
+      "sha256": "fabc8226b24febff2b7cd83a53db1cef47fe6ef608378be2947d545622d767c2"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Comunita-Francesco.pdf",
+      "retrieved_at": "2026-09-22T11:58:39Z",
+      "status": 200,
+      "sha256": "2306580e1c783fe61d967c10282a280f00ce2812aa2a0bacb0e59b365a542eb3"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Comunita-Francesco-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:58:42Z",
+      "status": 200,
+      "sha256": "f6198cfda406ab0267c8270e95e0ff34aee436a864f76dee189b9c6010be266f"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf",
+      "retrieved_at": "2026-09-22T11:58:44Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:58:47Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf",
+      "retrieved_at": "2026-09-22T11:58:49Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:58:51Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf",
+      "retrieved_at": "2026-09-22T11:58:53Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:58:56Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Psichiatria-Colle-Cesarano.pdf",
+      "retrieved_at": "2026-09-22T11:58:58Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Psichiatria-Colle-Cesarano-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:59:00Z",
+      "status": 200,
+      "sha256": "bb4dbb90d6dacdc5e0670e46fad784de03468bd2e40e36ce1d37de14f4bb939d"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Rosaurora.pdf",
+      "retrieved_at": "2026-09-22T11:59:02Z",
+      "status": 200,
+      "sha256": "e5e776685d6e97922624d7634e30d096263fe06eff3433a2027ab77250fe193e"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Rosaurora-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:59:04Z",
+      "status": 200,
+      "sha256": "30aaa7339e5a6fdb0e3d8701b887e1599d0266fa381ce5265590d14b2ec76454"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/La-Staffa.pdf",
+      "retrieved_at": "2026-09-22T11:59:06Z",
+      "status": 200,
+      "sha256": "109ce78a93abf2cb18723f349495cbc500fc4d37baa04b720a8771244b28385e"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/La-Staffa-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:59:08Z",
+      "status": 200,
+      "sha256": "be7ac4e1cbb90b8bf322e149e92ef6d80057d16c6bdb9e36919f37bb8694f987"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Maddalena.pdf",
+      "retrieved_at": "2026-09-22T11:59:10Z",
+      "status": 200,
+      "sha256": "3fd5ede3e21a354b46f97d9f8e20e981a6b1109e297b4df13f6d7c8b33f49434"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Maddalena-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:59:12Z",
+      "status": 200,
+      "sha256": "12f25bd254877b0b870c028ac2cccfd1cf413065b5307839ced0746a06052890"
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf",
+      "retrieved_at": "2026-09-22T11:59:14Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:59:16Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf",
+      "retrieved_at": "2026-09-22T11:59:18Z",
+      "status": 200
+    },
+    {
+      "url": "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa-integrazione.pdf",
+      "retrieved_at": "2026-09-22T11:59:21Z",
+      "status": 200
+    }
+  ],
+  "raw_source_artifacts": [
+    10692995886,
+    10692715958
+  ],
+  "raw_documents_republished": false
+}

@@ -1,0 +1,933 @@
+{
+  "version": "7.9.1",
+  "baseline_commit": "937713935c693dbbe50109e6738063cc0395e192",
+  "baseline_tree": "d175c350163ae13c56a7883d6a10d025f72accc7",
+  "checked_at": "2026-09-22",
+  "mutable_paths": [
+    "README.md",
+    "CHANGELOG.md",
+    "version.json",
+    "servizi.html",
+    "archivio.html",
+    "mappa.html",
+    "strutture-approfondite.html",
+    "documenti.html"
+  ],
+  "protected_paths": [
+    ".github/workflows/verify-v7-9.yml",
+    "404.html",
+    "ISTRUZIONI_CLOUDFLARE.txt",
+    "MANIFEST_SHA256_WEB.txt",
+    "_headers",
+    "ascolto.html",
+    "assets/app-v7-3.css",
+    "assets/app-v7-3.js",
+    "assets/app-v7-4.js",
+    "assets/archive-v7-4.css",
+    "assets/audit-data-v7-9.js",
+    "assets/directory-v7-5.js",
+    "assets/directory-v7-9.js",
+    "assets/favicon.svg",
+    "assets/map-data-v7-8.js",
+    "assets/map-data-v7-9.js",
+    "assets/map-v7-8.css",
+    "assets/map-v7-8.js",
+    "assets/map-v7-9.js",
+    "assets/menta-config-v7-7.js",
+    "assets/menta-core-v7-7.js",
+    "assets/menta-site-v7-7.js",
+    "assets/menta-ui-v7-7.js",
+    "assets/menta-v7-7.css",
+    "assets/menta/README.md",
+    "assets/menta/accessori.svg",
+    "assets/menta/menta-base.webp",
+    "assets/navigation-v7-7-3.css",
+    "assets/navigation-v7-7-3.js",
+    "assets/servizi-data-v7-5-1.js",
+    "assets/servizi-v7-5-1.css",
+    "assets/servizi-v7-5-1.js",
+    "assets/servizi-v7-9.js",
+    "assets/site-v7-4.css",
+    "assets/site-v7-4.js",
+    "assets/site-v7-5.css",
+    "assets/ux-map-v7-8.css",
+    "assets/vendor/leaflet/LICENSE",
+    "assets/vendor/leaflet/images/layers-2x.png",
+    "assets/vendor/leaflet/images/layers.png",
+    "assets/vendor/leaflet/images/marker-icon-2x.png",
+    "assets/vendor/leaflet/images/marker-icon.png",
+    "assets/vendor/leaflet/images/marker-shadow.png",
+    "assets/vendor/leaflet/leaflet.css",
+    "assets/vendor/leaflet/leaflet.js",
+    "centri-ascolto.html",
+    "data/audit_operativo_v7_9.json",
+    "data/centri_ascolto_v7_5.json",
+    "data/contenuti_v7_4.json",
+    "data/fonti_guide_v7_4.json",
+    "data/helpline_v7_5.json",
+    "data/integrazioni_v7_5.json",
+    "data/multisede_v7_7_5.json",
+    "data/portal_data_v7_3.json",
+    "data/presidi_geo_v7_8.json",
+    "data/presidi_geo_v7_9.json",
+    "data/privati_v7_5.json",
+    "data/revisioni_v7_6.json",
+    "data/sportelli_scolastici_v7_5.json",
+    "data/strutture_approfondite_v7_5.json",
+    "data/universita_v7_5.json",
+    "downloads/Accesso_Extraregionale_V7_3.csv",
+    "downloads/Audit_Iniziale_V7_9.json",
+    "downloads/Audit_Menta_V7_7.json",
+    "downloads/Audit_Multisede_V7_7_5.json",
+    "downloads/Audit_Multisede_V7_9.md",
+    "downloads/Audit_Navigazione_V7_7_3.json",
+    "downloads/Audit_Operativo_V7_9.json",
+    "downloads/Audit_Qualita_Dati_V7_3.csv",
+    "downloads/Audit_Rete_Moduli_V7_6.csv",
+    "downloads/Audit_UX_Mappa_V7_8.json",
+    "downloads/Centri_Privati_V7_5.csv",
+    "downloads/Centri_Sportelli_Ascolto_V7_5.csv",
+    "downloads/Coda_Geografia_V7_9.csv",
+    "downloads/Convenzionate_Dipendenze_V7_3.csv",
+    "downloads/Convenzionate_Doppia_Diagnosi_V7_3.csv",
+    "downloads/Convenzionate_Psichiatriche_V7_3.csv",
+    "downloads/Coordinate_Condivise_V7_9.json",
+    "downloads/Da_Verificare_2026_V7_3.csv",
+    "downloads/Dataset_Integrazioni_V7_5.json",
+    "downloads/Dataset_Lazio_V7_3.json",
+    "downloads/Fonti_Master_V7_3.csv",
+    "downloads/Fonti_V7_6.csv",
+    "downloads/Fonti_Verificate_V7_9.json",
+    "downloads/Geocoding_Cache_V7_8.json",
+    "downloads/Geocoding_Cache_V7_9.json",
+    "downloads/Guide_Percorsi_Cura_Lazio_V7_4.pdf",
+    "downloads/Helpline_V7_5.csv",
+    "downloads/Inventario_Multisede_V7_9.json",
+    "downloads/LEGGIMI_V7_3.txt",
+    "downloads/Lazio_Boundary_OSM_V7_9.geojson",
+    "downloads/Manifest_Originale_V7_3.txt",
+    "downloads/Mappatura_Lazio_V7_3.xlsx",
+    "downloads/Matrice_Copertura_Pubblica_V7_3.csv",
+    "downloads/Matrice_Copertura_V7_3.csv",
+    "downloads/Note_Rilascio_V7_4.txt",
+    "downloads/Note_Rilascio_V7_5.txt",
+    "downloads/Note_Rilascio_V7_5_1.txt",
+    "downloads/Note_Rilascio_V7_6.md",
+    "downloads/Note_Rilascio_V7_7.txt",
+    "downloads/Note_Rilascio_V7_7_1.txt",
+    "downloads/Note_Rilascio_V7_7_2.txt",
+    "downloads/Note_Rilascio_V7_7_3.txt",
+    "downloads/Note_Rilascio_V7_7_4.txt",
+    "downloads/Note_Rilascio_V7_7_5.txt",
+    "downloads/Note_Rilascio_V7_8.txt",
+    "downloads/Nuove_Schede_V7_6.csv",
+    "downloads/Release_Notes_V7_9.md",
+    "downloads/Report_Geografia_V7_9.md",
+    "downloads/Rete_ASL_V7_3.csv",
+    "downloads/Riepilogo_Navigazione_V7_7_3.json",
+    "downloads/Rubrica_Ascolto_V7_4.csv",
+    "downloads/STPIT_V7_3.csv",
+    "downloads/Sportelli_Scolastici_V7_5.csv",
+    "downloads/Stato_Amministrativo_Moduli_V7_3.csv",
+    "downloads/Storico_Completo_V7_3.csv",
+    "downloads/Strutture_Pubbliche_Ricontrollate_V7_3.csv",
+    "downloads/Tutti_Moduli_V7_3.csv",
+    "downloads/Universita_Ascolto_V7_4.csv",
+    "downloads/Universita_Servizi_Psicologici_V7_5.csv",
+    "downloads/Variazioni_Per_Campo_V7_6.csv",
+    "downloads/Verifiche_Menta_V7_7.json",
+    "downloads/Verifiche_Navigazione_V7_7_3.json",
+    "downloads/Verifiche_Preparazione_V7_6.json",
+    "downloads/Verifiche_Rete_Pubblica_V7_3.csv",
+    "downloads/Verifiche_UI_V7_5_1.json",
+    "downloads/Verifiche_UX_Mappa_V7_8.json",
+    "downloads/Verifiche_V7_4.json",
+    "downloads/Verifiche_V7_5.json",
+    "downloads/Verifiche_V7_9.json",
+    "downloads/Verifiche_Web_2026_V7_3.csv",
+    "downloads/guide/Guida_01_primo-percorso.pdf",
+    "downloads/guide/Guida_02_pubblico.pdf",
+    "downloads/guide/Guida_03_privato.pdf",
+    "downloads/guide/Guida_04_ricovero.pdf",
+    "downloads/guide/Guida_05_riabilitazione.pdf",
+    "giovani.html",
+    "glossario.html",
+    "guide/index.html",
+    "guide/primo-percorso.html",
+    "guide/privato.html",
+    "guide/pubblico.html",
+    "guide/riabilitazione.html",
+    "guide/ricovero.html",
+    "helpline.html",
+    "index.html",
+    "interfaccia-precedente.html",
+    "metodo.html",
+    "offline/Portale_Lazio_V7_3_Offline.html",
+    "orientamento-servizi.html",
+    "privacy.html",
+    "privati.html",
+    "qualita-dati.html",
+    "robots.txt",
+    "scuole.html",
+    "sitemap.xml",
+    "studenti.html",
+    "tools/apply-navigation-v7-7-3.py",
+    "tools/apply-seo-v7-7-4.py",
+    "tools/build-frontend-v7-9.py",
+    "tools/build-geography-v7-9.py",
+    "tools/export-audit-rows-v7-9.cjs",
+    "tools/export-map-rows.cjs",
+    "tools/geocode-presidi-once.py",
+    "tools/prepare-audit-v7-9.py",
+    "tools/prepare-release-v7-9.py",
+    "tools/research-geography-v7-9.py",
+    "tools/set-indexing.py",
+    "tools/test-menta-browser-v7-7.py",
+    "tools/test-menta-v7-7.cjs",
+    "tools/test-navigation-v7-7-3.py",
+    "tools/test-servizi-v7-5-1.cjs",
+    "tools/test-ui-v7-9.mjs",
+    "tools/test-ux-map-v7-8.mjs",
+    "tools/verify-production-v7-9.py",
+    "universita.html"
+  ],
+  "baseline_files": {
+    ".github/workflows/verify-v7-9.yml": {
+      "sha256": "5f402847099be9ddaf64282d1786f5643f6cfdb5f886175f30e0e549126b91e4",
+      "bytes": 3189
+    },
+    "404.html": {
+      "sha256": "af92ead2f0b4b52ba0ad1114f3b887335a18301c7c8b8afea3fe10ccbe49131d",
+      "bytes": 5216
+    },
+    "CHANGELOG.md": {
+      "sha256": "2ebde335bae305dedc41550e3ff78f52f5f09da11ade87054a981eff3bfb486a",
+      "bytes": 7328
+    },
+    "ISTRUZIONI_CLOUDFLARE.txt": {
+      "sha256": "d7c1446dd10c440fa0557c89667b59fddf5e63eb930cd8142cf611d949cb3319",
+      "bytes": 625
+    },
+    "MANIFEST_SHA256_WEB.txt": {
+      "sha256": "e69b820d034d5f80a33c25e47f8e11219d54ee3aabb1d7d08bc4af1f701b7b71",
+      "bytes": 5782
+    },
+    "README.md": {
+      "sha256": "c6996d8e95c5ee453d4c5d722f93a28de99233ae15974cdf723f403674fecf0c",
+      "bytes": 10656
+    },
+    "_headers": {
+      "sha256": "ac5a38ce555bf7023f22b447b8cb562ac567ecf0a58068cfc59daa9ee5674035",
+      "bytes": 1314
+    },
+    "archivio.html": {
+      "sha256": "4db77f068478bba1b37949b05ef85976ff643fb5372c5d8a4d6c6bed228b6926",
+      "bytes": 15595
+    },
+    "ascolto.html": {
+      "sha256": "7d0dface82740cb8715b70366578f8202f578b01c59f2575e04d639bedddc690",
+      "bytes": 23628
+    },
+    "assets/app-v7-3.css": {
+      "sha256": "46615925bc08e68b78ab4d491a6a76aba28b415dfefc3ad35d6d694f6cd10607",
+      "bytes": 6245
+    },
+    "assets/app-v7-3.js": {
+      "sha256": "e491b303049159f1099974cbd124f0aabfd9f0f5d01be2feba715b3c433bca83",
+      "bytes": 17514
+    },
+    "assets/app-v7-4.js": {
+      "sha256": "80e383281d2762728b855f930f7c961e629fe16a74c3bafafcc7400ef2b437c7",
+      "bytes": 23795
+    },
+    "assets/archive-v7-4.css": {
+      "sha256": "951cbe8556e92a5b6a03b486c85477a739bc4cc23d92191752ec42e1fe0a0c21",
+      "bytes": 2795
+    },
+    "assets/audit-data-v7-9.js": {
+      "sha256": "22c9037f8d8fb60bb4c5bab18c5c03cab1669fe123acef6642333dbd41236ff8",
+      "bytes": 5282
+    },
+    "assets/directory-v7-5.js": {
+      "sha256": "7e3192bf44838b7fdb9f6ab21cb2152bc37552e6f43bcbe9717835373400bac6",
+      "bytes": 6365
+    },
+    "assets/directory-v7-9.js": {
+      "sha256": "233416511be3f9011ad057ed7fb364b5bff40dc59586d2a2ccfd24c3282a46a6",
+      "bytes": 6614
+    },
+    "assets/favicon.svg": {
+      "sha256": "25d15162702032e72dfaea0ed47a5c73f51478aab394992a36be8904310a8d0c",
+      "bytes": 168
+    },
+    "assets/map-data-v7-8.js": {
+      "sha256": "04941810c62a3c69f47b94cc14e47db14b891d1b0df6a218bf40f0ba7a22a64d",
+      "bytes": 2994
+    },
+    "assets/map-data-v7-9.js": {
+      "sha256": "c9e26977014b6115f8ad585ad5bba3ebcc7f6d9ce13b3c9c7a3c0b21d7000ecc",
+      "bytes": 3541
+    },
+    "assets/map-v7-8.css": {
+      "sha256": "317df1ed2cd0adc9e43094fdaaeab224de57f498a365bbeae35cc2effd0838e6",
+      "bytes": 5595
+    },
+    "assets/map-v7-8.js": {
+      "sha256": "5c5f9ff2a49b3f16e1e9b921237b6cba6a4ec1cf48691e88edc4f0dca54aeedf",
+      "bytes": 11355
+    },
+    "assets/map-v7-9.js": {
+      "sha256": "7943d6eb023a45b0e16fa12ae113fe560a97cc819b19e4010291f3c758da42b5",
+      "bytes": 11527
+    },
+    "assets/menta-config-v7-7.js": {
+      "sha256": "b6a6ae72b3e9f24e5189bb0a7e116d41024296a10781942cf0937be30672ce5c",
+      "bytes": 41160
+    },
+    "assets/menta-core-v7-7.js": {
+      "sha256": "d26ae4d931b138f0e5d2b4013a3b6826d3169f7e27bc066b7691ebf7af049208",
+      "bytes": 4780
+    },
+    "assets/menta-site-v7-7.js": {
+      "sha256": "f1e04d45318419117076b9d07813da83ebb4b0cbae964c2770703c1ecd71477c",
+      "bytes": 2225
+    },
+    "assets/menta-ui-v7-7.js": {
+      "sha256": "e32ae9c8157f2bc6d645ccd1e42356bb1727da76c22d7dfd90acdab6b56970f4",
+      "bytes": 5365
+    },
+    "assets/menta-v7-7.css": {
+      "sha256": "e6228836103aa8a77e635dc465330b18c49b1e4b67ef594146c30bd076e8e7f1",
+      "bytes": 14116
+    },
+    "assets/menta/README.md": {
+      "sha256": "ebe84d534ea4f6b59ad5c130c103ee3becf8bd2f2b9372773a7b2bfefedda3e7",
+      "bytes": 741
+    },
+    "assets/menta/accessori.svg": {
+      "sha256": "ea67dc90922d05f6e0f0734f72df4b7e8d2e6c284d05060a6388be711a005055",
+      "bytes": 3691
+    },
+    "assets/menta/menta-base.webp": {
+      "sha256": "318765384c5bc5255b28eb79eeb4e67a71a1454377540f68c0a241f18e617ade",
+      "bytes": 18182
+    },
+    "assets/navigation-v7-7-3.css": {
+      "sha256": "51baa1704a570f2aea17a0a95be26b5cf4e554661db33c3d1d56c56b029d6e8d",
+      "bytes": 8764
+    },
+    "assets/navigation-v7-7-3.js": {
+      "sha256": "b9e0daba33a64ac1d9c5c26e2e18810b5834b608cd29a087525330303567211b",
+      "bytes": 2447
+    },
+    "assets/servizi-data-v7-5-1.js": {
+      "sha256": "59491eb2d84e60a9b1d84b8ac921902da63ae6fb2fcb4d242427fa5d973fae09",
+      "bytes": 137365
+    },
+    "assets/servizi-v7-5-1.css": {
+      "sha256": "828354a98164a09154f2176fa91cdb77e80829b4187e77cc81a3629732be798d",
+      "bytes": 13082
+    },
+    "assets/servizi-v7-5-1.js": {
+      "sha256": "fccd4c009cb26014cbc74e9f2bdd2f9547e72e18bda388b8e911fec5f3dce5fa",
+      "bytes": 24575
+    },
+    "assets/servizi-v7-9.js": {
+      "sha256": "3b83df826ef09bdc56eb215306a8c2702105f5816fa131630169d17a9d75e9b6",
+      "bytes": 26484
+    },
+    "assets/site-v7-4.css": {
+      "sha256": "e0202ef57b7ae3e8804bb6d92708974758993e95d397e1fed94bd7eb30eab8c2",
+      "bytes": 17242
+    },
+    "assets/site-v7-4.js": {
+      "sha256": "b0fe5711ef86a831664d48cab0d9ee2477dd65cbad45c92bbad6aecf23cc7e45",
+      "bytes": 5876
+    },
+    "assets/site-v7-5.css": {
+      "sha256": "2c88053a943a1ffad6b672e2b10d73de503771a97d74ee3fc9b69a0bd73f1dbb",
+      "bytes": 1632
+    },
+    "assets/ux-map-v7-8.css": {
+      "sha256": "1162eb8965dfffea086de109576363f27ea724328fcd28a0f55aadee2cadb814",
+      "bytes": 2111
+    },
+    "assets/vendor/leaflet/LICENSE": {
+      "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+      "bytes": 1395
+    },
+    "assets/vendor/leaflet/images/layers-2x.png": {
+      "sha256": "066daca850d8ffbef007af00b06eac0015728dee279c51f3cb6c716df7c42edf",
+      "bytes": 1259
+    },
+    "assets/vendor/leaflet/images/layers.png": {
+      "sha256": "1dbbe9d028e292f36fcba8f8b3a28d5e8932754fc2215b9ac69e4cdecf5107c6",
+      "bytes": 696
+    },
+    "assets/vendor/leaflet/images/marker-icon-2x.png": {
+      "sha256": "00179c4c1ee830d3a108412ae0d294f55776cfeb085c60129a39aa6fc4ae2528",
+      "bytes": 2464
+    },
+    "assets/vendor/leaflet/images/marker-icon.png": {
+      "sha256": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437",
+      "bytes": 1466
+    },
+    "assets/vendor/leaflet/images/marker-shadow.png": {
+      "sha256": "264f5c640339f042dd729062cfc04c17f8ea0f29882b538e3848ed8f10edb4da",
+      "bytes": 618
+    },
+    "assets/vendor/leaflet/leaflet.css": {
+      "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+      "bytes": 14806
+    },
+    "assets/vendor/leaflet/leaflet.js": {
+      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+      "bytes": 147552
+    },
+    "centri-ascolto.html": {
+      "sha256": "0ab30fe3182e4de38f7e4513af3fc622989c00cd77e42d154ca0482f354e0718",
+      "bytes": 8660
+    },
+    "data/audit_operativo_v7_9.json": {
+      "sha256": "b1a05469af1ab201667b93abf804d196edfa2cf300e9f31841587d853cbf6d1e",
+      "bytes": 140098
+    },
+    "data/centri_ascolto_v7_5.json": {
+      "sha256": "c6acab8eaae08102d1472caaf69a887af58a4bb7653b0ec05c9fa2e32f3c3416",
+      "bytes": 18784
+    },
+    "data/contenuti_v7_4.json": {
+      "sha256": "9179f719b99c1a4ccf5647adee2afff6ede54149cdbdcbc1bf32e72283f7c985",
+      "bytes": 77061
+    },
+    "data/fonti_guide_v7_4.json": {
+      "sha256": "6e26782b5c78822c32082ad6495e8eb7660bd1a69c46847a54b4ac7484b59515",
+      "bytes": 14293
+    },
+    "data/helpline_v7_5.json": {
+      "sha256": "bac8b747c2939493d8187c7e4638b62090ba5d200a1483619328cbc07ea18116",
+      "bytes": 16283
+    },
+    "data/integrazioni_v7_5.json": {
+      "sha256": "f97d6997caa417b42051762ad65639d498e0c90f6ae4dbd7fabc9c53cdb7d372",
+      "bytes": 724
+    },
+    "data/multisede_v7_7_5.json": {
+      "sha256": "83f7aa7c998b93d3ea5c26ae953de3d76042b2711d359f9bdf7fff4fc938e573",
+      "bytes": 12061
+    },
+    "data/portal_data_v7_3.json": {
+      "sha256": "3360a38954f77e259343c80bb96bf816a5aee77438af0f408dc58c618eca1bbd",
+      "bytes": 1186516
+    },
+    "data/presidi_geo_v7_8.json": {
+      "sha256": "b8e96c46c5f40c79c37d2aca78b2cd85f35416a18224ff1f5c78dc511f968e5e",
+      "bytes": 123685
+    },
+    "data/presidi_geo_v7_9.json": {
+      "sha256": "5d3417813474a93d295fb1af3f56feab55ee86b4d3fb02d24805e0e0456b9933",
+      "bytes": 545516
+    },
+    "data/privati_v7_5.json": {
+      "sha256": "2867228f185a72519d4717f7473f75e10a0acd68e2594f341e10f26a7a422745",
+      "bytes": 12946
+    },
+    "data/revisioni_v7_6.json": {
+      "sha256": "2682bbd2fa9845823276cb557c270bca270f32d890d9a0f671f9d6e1a48de8cc",
+      "bytes": 173730
+    },
+    "data/sportelli_scolastici_v7_5.json": {
+      "sha256": "2427462dccea53a5e294bd67c3e1e2ea0d13bff6f3fdd0549c399d965e5f8637",
+      "bytes": 12755
+    },
+    "data/strutture_approfondite_v7_5.json": {
+      "sha256": "f13479fcc14837700326fbb3a996df379af81360479043be65324d3093544436",
+      "bytes": 503180
+    },
+    "data/universita_v7_5.json": {
+      "sha256": "c62c41ce465faa54fa0663571d101099734421b86bab63d274319bac238420e6",
+      "bytes": 18068
+    },
+    "documenti.html": {
+      "sha256": "bb8f8905f1e1e2dd615ad956af17f965bc302cabb3b1931cb463adbb0eefc289",
+      "bytes": 12829
+    },
+    "downloads/Accesso_Extraregionale_V7_3.csv": {
+      "sha256": "5df8c2d9301b3a85caf7cbe83e00cf8bd4bc2dc8b772b30203192d500391d2f2",
+      "bytes": 362613
+    },
+    "downloads/Audit_Iniziale_V7_9.json": {
+      "sha256": "c2d4ea28fb611e4b05067928511683d813dafa68290b2540f40132fa59a3aba4",
+      "bytes": 29382
+    },
+    "downloads/Audit_Menta_V7_7.json": {
+      "sha256": "fd56df5e2f5a16dd59533a6d44f7de86e387ccea3e68e534af186cb2edfa8856",
+      "bytes": 14054
+    },
+    "downloads/Audit_Multisede_V7_7_5.json": {
+      "sha256": "eb37944e67e8d81e6940b6e3d340318e920f29b2a1e2189d97cc6c0a063b9e37",
+      "bytes": 3674
+    },
+    "downloads/Audit_Multisede_V7_9.md": {
+      "sha256": "b2f73181227731cc812996be69501d67326f68132bdb9b3882de660bc5ccddf5",
+      "bytes": 13275
+    },
+    "downloads/Audit_Navigazione_V7_7_3.json": {
+      "sha256": "1f8dcd21162209edf707e0be7164c27adbf2484c0bc2ad63379cf102e2edd628",
+      "bytes": 8708
+    },
+    "downloads/Audit_Operativo_V7_9.json": {
+      "sha256": "0e717afe6ddba716a27da4144319e2a2dbcf22e5e98c61054aade8dbd43e7d47",
+      "bytes": 142100
+    },
+    "downloads/Audit_Qualita_Dati_V7_3.csv": {
+      "sha256": "7946170db7380c616ddfabf7215495bd28b9dcad5b2a2d9f11f100cf08b04392",
+      "bytes": 241
+    },
+    "downloads/Audit_Rete_Moduli_V7_6.csv": {
+      "sha256": "285e10464c8b45f7ae90cd3c8e3cdb1f77c56e74e9486f4c663fccc5d9753f3d",
+      "bytes": 66328
+    },
+    "downloads/Audit_UX_Mappa_V7_8.json": {
+      "sha256": "e08c9e86bfb843b37110bd24772b6a068e55451e54ce6db8b85b7fce4a1e571e",
+      "bytes": 9099
+    },
+    "downloads/Centri_Privati_V7_5.csv": {
+      "sha256": "b8a3d5732c7ebb7e56a5d5a55829347e04f43b1bc1b61303dc2fac99567882d5",
+      "bytes": 8067
+    },
+    "downloads/Centri_Sportelli_Ascolto_V7_5.csv": {
+      "sha256": "3e0c1d2a8b066fcabd309691b68b69bb54bf1303723d58b9efc104c2777cb890",
+      "bytes": 10797
+    },
+    "downloads/Coda_Geografia_V7_9.csv": {
+      "sha256": "58b8e318ee3345674b9b6cc1107ee88cc87d298f00c22b28f714cc1075d40a53",
+      "bytes": 49459
+    },
+    "downloads/Convenzionate_Dipendenze_V7_3.csv": {
+      "sha256": "52c4ef8eaff3518fc93ac697c07b703a60d5cb523638b8b9e484f628263aaf1b",
+      "bytes": 38862
+    },
+    "downloads/Convenzionate_Doppia_Diagnosi_V7_3.csv": {
+      "sha256": "80e2294de452993670380522dd9cd1f14e6ead0537911ba6f6c006d0929346b8",
+      "bytes": 14726
+    },
+    "downloads/Convenzionate_Psichiatriche_V7_3.csv": {
+      "sha256": "15c0bc6bbb7ba909d343b3bac2f8f08863574920672a6f2f7043ee7550e93697",
+      "bytes": 174176
+    },
+    "downloads/Coordinate_Condivise_V7_9.json": {
+      "sha256": "b6f505e310818359207ecf868c9bc60a3213836f5e39d5405ce49120aa72a968",
+      "bytes": 18348
+    },
+    "downloads/Da_Verificare_2026_V7_3.csv": {
+      "sha256": "df13c7ba846d2e0f981bc697edc8eec49538ba483913b0cfb4a3adefbda2d4a2",
+      "bytes": 115960
+    },
+    "downloads/Dataset_Integrazioni_V7_5.json": {
+      "sha256": "478b22c64486e67c6423499714617fe9d1edac2a7e55931bf1e9b49aa95336b1",
+      "bytes": 82167
+    },
+    "downloads/Dataset_Lazio_V7_3.json": {
+      "sha256": "bcf42774d7fb55d120cd89e9d991033f57f64f2cb1b81664267779a6160fcc09",
+      "bytes": 4407841
+    },
+    "downloads/Fonti_Master_V7_3.csv": {
+      "sha256": "81a4df08e5d852c5c8c637a7c8a1583855283e2430362b28885e176ba40ba9b1",
+      "bytes": 67219
+    },
+    "downloads/Fonti_V7_6.csv": {
+      "sha256": "8e50efd0327d16a535af3d560208f34badcc8309ab07d3dac68ae9226b4b8b85",
+      "bytes": 12408
+    },
+    "downloads/Fonti_Verificate_V7_9.json": {
+      "sha256": "0f0d3fe5399b9df9621baca890bffcd14cd0f89fa117d4aa6cb02dc86d1f49a6",
+      "bytes": 13043
+    },
+    "downloads/Geocoding_Cache_V7_8.json": {
+      "sha256": "73d353737df5a20819bc53eac3cb32cc557029602d918fb9d27eef8b29811a38",
+      "bytes": 343867
+    },
+    "downloads/Geocoding_Cache_V7_9.json": {
+      "sha256": "ea1b2536740d828c562b5f903c9d23e1bea9853976e2c0190711ec0e25843080",
+      "bytes": 749106
+    },
+    "downloads/Guide_Percorsi_Cura_Lazio_V7_4.pdf": {
+      "sha256": "2d50217cd6a02cc43fca18227e9c70aafcfabbb586f5bcb3a45f2c03fb67cda0",
+      "bytes": 227835
+    },
+    "downloads/Helpline_V7_5.csv": {
+      "sha256": "2cd13f4f28ddad271f02a5f8217692af442c82528247704c037ef14cb963a495",
+      "bytes": 8850
+    },
+    "downloads/Inventario_Multisede_V7_9.json": {
+      "sha256": "29f4ee3b4dff3785894ede1170de3440bf03a6bd673fe8d200fb6cf598313ddd",
+      "bytes": 89115
+    },
+    "downloads/LEGGIMI_V7_3.txt": {
+      "sha256": "9c7206e0916c0a352e896fecbdf03da5bd96e9a8e994718495b7cf33a66fc015",
+      "bytes": 647
+    },
+    "downloads/Lazio_Boundary_OSM_V7_9.geojson": {
+      "sha256": "e072ffb1fbe8ab5512691306c216563d61939944ca184fb52f91399f5b3f9bf2",
+      "bytes": 705052
+    },
+    "downloads/Manifest_Originale_V7_3.txt": {
+      "sha256": "abcfcc487617f7bec041e0d4b4ffe7ac0f66dbbf41287bf334585b66bcab0c97",
+      "bytes": 2858
+    },
+    "downloads/Mappatura_Lazio_V7_3.xlsx": {
+      "sha256": "76354e85c9f848df585e3bf92c89d681f9e53584c56d46308dfd63989ff45f5f",
+      "bytes": 232061
+    },
+    "downloads/Matrice_Copertura_Pubblica_V7_3.csv": {
+      "sha256": "1b559d7677226732564fb8137defbf39176ee37f40991f29cfa0890c2fe78b09",
+      "bytes": 7819
+    },
+    "downloads/Matrice_Copertura_V7_3.csv": {
+      "sha256": "c6eb491866ff7d0da7c825f3e70a71bf9462472803b2db0956b681a4cde4ca92",
+      "bytes": 638
+    },
+    "downloads/Note_Rilascio_V7_4.txt": {
+      "sha256": "7a214507f2706a8fcfe463ba5393521c36dfc63a75cefbd1be752edb413d0c52",
+      "bytes": 3982
+    },
+    "downloads/Note_Rilascio_V7_5.txt": {
+      "sha256": "426cf6edb41a07376ef7fe71fa1977f2691215265c295108de7ceeea380f120a",
+      "bytes": 1922
+    },
+    "downloads/Note_Rilascio_V7_5_1.txt": {
+      "sha256": "73ddbdccbfbe5b89171ba439ecc5a314a4696ca68bb0fbb3ad979603bac2b36f",
+      "bytes": 3975
+    },
+    "downloads/Note_Rilascio_V7_6.md": {
+      "sha256": "b5f2797f02e1d792f26257a1c5553152a2935e461ce2bef97c34dd15ee4bfb8c",
+      "bytes": 526
+    },
+    "downloads/Note_Rilascio_V7_7.txt": {
+      "sha256": "d406e96faaca98789ccedaca3fc428ca58acde4c2fe7c0fef5a614a099b74a73",
+      "bytes": 4151
+    },
+    "downloads/Note_Rilascio_V7_7_1.txt": {
+      "sha256": "18cc7b2fdf9e3e590b0ac035f6a673fa9be3e633e40b6bd769897e0dce310af4",
+      "bytes": 612
+    },
+    "downloads/Note_Rilascio_V7_7_2.txt": {
+      "sha256": "d3cb31e9b34695f600f4e1e55b9447c51cd5a5cb83132a3c41489289a3b55740",
+      "bytes": 1492
+    },
+    "downloads/Note_Rilascio_V7_7_3.txt": {
+      "sha256": "e3b196a29baef3353b19d96d95c1bb9a9186ff17a8cd818b81d14bfc878ce7eb",
+      "bytes": 945
+    },
+    "downloads/Note_Rilascio_V7_7_4.txt": {
+      "sha256": "5872eea356ada60028ccff46cddc6f45b64c3a922f8c89218dab7e6bceddc440",
+      "bytes": 1081
+    },
+    "downloads/Note_Rilascio_V7_7_5.txt": {
+      "sha256": "8af0c17bb06763a3b20d13a6558b76b453f230e4b66a43d085f07357b6d674a9",
+      "bytes": 1151
+    },
+    "downloads/Note_Rilascio_V7_8.txt": {
+      "sha256": "91ecac4745763a8c7cd01cf2c4938f97fb29b17675fbd677777602c76b3fc427",
+      "bytes": 780
+    },
+    "downloads/Nuove_Schede_V7_6.csv": {
+      "sha256": "739716257f82789fee0a4faa78f1ce62c245dbb4ba4307e077a010d063eebdd4",
+      "bytes": 40371
+    },
+    "downloads/Release_Notes_V7_9.md": {
+      "sha256": "d042525808172f9a3f70972fc0bd7e7c55428c14feff2a53a1b89cd2996eeb69",
+      "bytes": 1112
+    },
+    "downloads/Report_Geografia_V7_9.md": {
+      "sha256": "a287db314a9188fc3e65e3a031d1713c593a182c09d925a887333ee7bb190625",
+      "bytes": 3529
+    },
+    "downloads/Rete_ASL_V7_3.csv": {
+      "sha256": "16a141b2b51d5df7cd86be78ab7ba2ed05ef0cb36a9dd86b0681598dba9ecfd7",
+      "bytes": 270970
+    },
+    "downloads/Riepilogo_Navigazione_V7_7_3.json": {
+      "sha256": "ce6f5e267fad9f0d077d9afecbdaa23eeba5dabee922362be1693304ee13db09",
+      "bytes": 1731
+    },
+    "downloads/Rubrica_Ascolto_V7_4.csv": {
+      "sha256": "254fedae789343faff899371e5048d21f7c7aa5760f97555e741591576e9a19f",
+      "bytes": 5146
+    },
+    "downloads/STPIT_V7_3.csv": {
+      "sha256": "762b3e7a884595171fbb00a63852a002035c67aed18d423d350c039872cf39f9",
+      "bytes": 24505
+    },
+    "downloads/Sportelli_Scolastici_V7_5.csv": {
+      "sha256": "30f768e57874b8d964977888ad89c43c5f1c17376bd0d5a081fd1fc26a0d38fe",
+      "bytes": 6678
+    },
+    "downloads/Stato_Amministrativo_Moduli_V7_3.csv": {
+      "sha256": "5df8c2d9301b3a85caf7cbe83e00cf8bd4bc2dc8b772b30203192d500391d2f2",
+      "bytes": 362613
+    },
+    "downloads/Storico_Completo_V7_3.csv": {
+      "sha256": "49a91721993179fb2e83e100982536214450b4acfad3ef887e89d91076b9b79a",
+      "bytes": 27192
+    },
+    "downloads/Strutture_Pubbliche_Ricontrollate_V7_3.csv": {
+      "sha256": "6ef642e9a07fb5dfa9dff73bdd9d1abf4eade4d75aa6b7be503f80f462f0158c",
+      "bytes": 67917
+    },
+    "downloads/Tutti_Moduli_V7_3.csv": {
+      "sha256": "5df8c2d9301b3a85caf7cbe83e00cf8bd4bc2dc8b772b30203192d500391d2f2",
+      "bytes": 362613
+    },
+    "downloads/Universita_Ascolto_V7_4.csv": {
+      "sha256": "7aedcab81e414989729312756615f0ce5500d249aedee12a85e0cf81499ba7ca",
+      "bytes": 3666
+    },
+    "downloads/Universita_Servizi_Psicologici_V7_5.csv": {
+      "sha256": "936ceff241eafcff2f6c1fe936e79c9785e4972f4814cc53193e3209012e3cba",
+      "bytes": 10303
+    },
+    "downloads/Variazioni_Per_Campo_V7_6.csv": {
+      "sha256": "f09789c1c02d3aa7b3f8b4534542b76a313f3c8352ca725bd8c19dd1e3e837ea",
+      "bytes": 156090
+    },
+    "downloads/Verifiche_Menta_V7_7.json": {
+      "sha256": "9f316636640d947afd443a75838bab5d6bafa1507ab68d69b1da9c6b6151dedd",
+      "bytes": 3536
+    },
+    "downloads/Verifiche_Navigazione_V7_7_3.json": {
+      "sha256": "ab2a4607fcd5e4234c7f0f7d9a0fc566117bbe1398816f9efee04d3f208d0f06",
+      "bytes": 54531
+    },
+    "downloads/Verifiche_Preparazione_V7_6.json": {
+      "sha256": "3ef34fdc624f8674a51e3c30f159178815bbc5ad35a4e37901141f5dbb906d90",
+      "bytes": 18018
+    },
+    "downloads/Verifiche_Rete_Pubblica_V7_3.csv": {
+      "sha256": "6f1e45d1a6299627d64fd73b4786e1e5837a272fb8ecb736fa7df77fcd5101cb",
+      "bytes": 12963
+    },
+    "downloads/Verifiche_UI_V7_5_1.json": {
+      "sha256": "38684c0de8ed05be9a843a877a7c9dde06975fa5061a809e0f69a25e5e4669f5",
+      "bytes": 3849
+    },
+    "downloads/Verifiche_UX_Mappa_V7_8.json": {
+      "sha256": "34fe9699fac61cc7e6e4ea371e300fa97d227a4f4860e9054461091362687767",
+      "bytes": 2279
+    },
+    "downloads/Verifiche_V7_4.json": {
+      "sha256": "c552460bcdb462de370c195a43839717150f5d1d3a2e23f84aefe9b12346e49b",
+      "bytes": 16756
+    },
+    "downloads/Verifiche_V7_5.json": {
+      "sha256": "01c1718c20372be111e3d9871b14e4346ad56fb874ac99f5f59455e2d78972e4",
+      "bytes": 3348
+    },
+    "downloads/Verifiche_V7_9.json": {
+      "sha256": "2485862d5ade1e18ac2e362747cb8b63f11fec505d5cd61ce12dbda26511a654",
+      "bytes": 4927
+    },
+    "downloads/Verifiche_Web_2026_V7_3.csv": {
+      "sha256": "03fe9231f5a5f7f424df840ed6f7963ce316bdf7dc28de547b771aae5db568c5",
+      "bytes": 31642
+    },
+    "downloads/guide/Guida_01_primo-percorso.pdf": {
+      "sha256": "fcc24c90d5a2a7abf1f4889f9bd8665dac33a98ae90cddb903e4076662fedb05",
+      "bytes": 37956
+    },
+    "downloads/guide/Guida_02_pubblico.pdf": {
+      "sha256": "3ef52e709894db11b2ed9ebda5539d3cda8a48316f4888e21a883cd5ad950294",
+      "bytes": 33648
+    },
+    "downloads/guide/Guida_03_privato.pdf": {
+      "sha256": "bb2aec39709228ae7476ad3b0b1ed68d15e5f845fec842f5cede676dd377d505",
+      "bytes": 29279
+    },
+    "downloads/guide/Guida_04_ricovero.pdf": {
+      "sha256": "75a6150fc20be92efdfae2a9ec59274c7407e701b8379cf527fc08cfc4d1da91",
+      "bytes": 32607
+    },
+    "downloads/guide/Guida_05_riabilitazione.pdf": {
+      "sha256": "3847cde8863092a8aaf414a8ecaa9be8ec757465d104db879b827adefc492224",
+      "bytes": 28981
+    },
+    "giovani.html": {
+      "sha256": "52d90becebf4c66f555851372664b9c96f00ed342bac06b511c870681037cd5b",
+      "bytes": 6959
+    },
+    "glossario.html": {
+      "sha256": "39634bde7a2ffd54e768b3df7cbfaa57e1cc91c880c4c387753eef65c6701377",
+      "bytes": 10807
+    },
+    "guide/index.html": {
+      "sha256": "79ba065e369afb3ab421e3f77703f6f2ec3b6e8cb9f253d737602b4f73b421ad",
+      "bytes": 7981
+    },
+    "guide/primo-percorso.html": {
+      "sha256": "7da7aa103c6f417430da70d4cdc0e17c487a44f90c1eaa560f5658620c34ac8d",
+      "bytes": 25776
+    },
+    "guide/privato.html": {
+      "sha256": "e88d59535eeb7d26227fef7f28125fb2393348eb2e94e93fb277128ad9f0ace3",
+      "bytes": 20493
+    },
+    "guide/pubblico.html": {
+      "sha256": "92298123ef1885c2df57838043ffb938700bdfbd64ec3571563754ca777f7b60",
+      "bytes": 24083
+    },
+    "guide/riabilitazione.html": {
+      "sha256": "9ca9210a96e8dfaab9fe71e3ef86ff163c72d386808058f2ab89a36e9a66c1e1",
+      "bytes": 20062
+    },
+    "guide/ricovero.html": {
+      "sha256": "f20525e2a45da9e72354a152c7a0b77c694c156d2511aef0d335928b395c2bb8",
+      "bytes": 21630
+    },
+    "helpline.html": {
+      "sha256": "2c212a2bf7ac48fa8c723a8470fa383faebdf7a2d0b1d8bc9560db43deb95154",
+      "bytes": 8635
+    },
+    "index.html": {
+      "sha256": "2580bf9b4ff07c3e49c549912e1ea2060200697ab0231984f72d3de45e94dddb",
+      "bytes": 15292
+    },
+    "interfaccia-precedente.html": {
+      "sha256": "a26fc47eb7b1d28266bb9104832ebee7f647be433ec8f4f17c3bf0b3608ba6b7",
+      "bytes": 8234
+    },
+    "mappa.html": {
+      "sha256": "ba3dd1b63d11f0f31ef1e1ed12085a026c38921d83dc0507d819aa9466511762",
+      "bytes": 11160
+    },
+    "metodo.html": {
+      "sha256": "5c5e8a0d3b97468f998185c195e2743aaaf86cc9e24df03814e127c5a3828e7b",
+      "bytes": 27485
+    },
+    "offline/Portale_Lazio_V7_3_Offline.html": {
+      "sha256": "7bea4cc0680c866d53facfb3a8fe199e7ac2502c8b45da190cefaf62f7a99700",
+      "bytes": 1216868
+    },
+    "orientamento-servizi.html": {
+      "sha256": "5f9d9ac7c620fae891a689e1800dfa68df4f1c0b4531322e5d63a0877be59d2c",
+      "bytes": 30622
+    },
+    "privacy.html": {
+      "sha256": "adeadfae9f548b3a5c9fe864aa0a899d158727fe8c7ba131bbfc0b2a65dc64b2",
+      "bytes": 9148
+    },
+    "privati.html": {
+      "sha256": "4aaa57abf13d07068d3715d7cc5850360c2213c56f6849c6ff7606b08617ef43",
+      "bytes": 8878
+    },
+    "qualita-dati.html": {
+      "sha256": "6b6e0977920ef95ff873f2b3d450bc7e0e9e6789dbe1fe6151ed49c54395152d",
+      "bytes": 128601
+    },
+    "robots.txt": {
+      "sha256": "5de3e2b4313a4dc0ad6a4c56ab98ee748ad42c6d233987ac42974980244c58e9",
+      "bytes": 197
+    },
+    "scuole.html": {
+      "sha256": "5ae55649d9ad66bd1fcaaa5e6d3f4a8b8a5b99a2159ccc07aa650514e91675d8",
+      "bytes": 8840
+    },
+    "servizi.html": {
+      "sha256": "016a39e8865efd8d6b3175d6ff27300f72bfbffce6c9760723a926038d456d8d",
+      "bytes": 16681
+    },
+    "sitemap.xml": {
+      "sha256": "f523400d6e339f7389024c2012d11bf3b5bee1bf5323f590352048099a5ab42a",
+      "bytes": 2994
+    },
+    "strutture-approfondite.html": {
+      "sha256": "b72c5dcf6ec0647ca91530f05e6f5324b5c529e06225729ae9cad8cb47ff0d8d",
+      "bytes": 10092
+    },
+    "studenti.html": {
+      "sha256": "cb3d61e75ec68ba7b83ecead1ab38e6a49010076c87b3742aedf41d936439ac3",
+      "bytes": 20006
+    },
+    "tools/apply-navigation-v7-7-3.py": {
+      "sha256": "1bf08992f4649cab56344ddd863d1d4f48bee089c7aeb00351e93421b54599c6",
+      "bytes": 31330
+    },
+    "tools/apply-seo-v7-7-4.py": {
+      "sha256": "04c0289e906fd51b205162e3040704fa21506f6c804c07be4bb949411c3003a9",
+      "bytes": 15565
+    },
+    "tools/build-frontend-v7-9.py": {
+      "sha256": "adb35226993e77c8659696311af3718e8125439a24605c92fc88fc63961f2c18",
+      "bytes": 10735
+    },
+    "tools/build-geography-v7-9.py": {
+      "sha256": "6792d0cfd8d47eb57871acee9edf4cb56e50f8096508fae94c3261fedccdb75b",
+      "bytes": 12140
+    },
+    "tools/export-audit-rows-v7-9.cjs": {
+      "sha256": "97a3359f83322bbe9d0a63a6d32131ff0e2cf71819c70b9468ab08f7fa5fa349",
+      "bytes": 909
+    },
+    "tools/export-map-rows.cjs": {
+      "sha256": "96687b71369e7fadcdc1418a4daaa1a594217ab067183859b62835492b9bf8e8",
+      "bytes": 962
+    },
+    "tools/geocode-presidi-once.py": {
+      "sha256": "cfbcecac239e4575fa430ef6465554e801cdee345dc90a721839ee3d1f34f9d7",
+      "bytes": 5470
+    },
+    "tools/prepare-audit-v7-9.py": {
+      "sha256": "3ea5d76936a1b57bc866d8d5bbac9cc288f3c18760aa18cecb52b4ffe7c10b53",
+      "bytes": 24016
+    },
+    "tools/prepare-release-v7-9.py": {
+      "sha256": "e658b2146cf6457453f154d67dc635919b1de191ae27f8928f8d34a75f7e3a7b",
+      "bytes": 19711
+    },
+    "tools/research-geography-v7-9.py": {
+      "sha256": "0fc157dcd4a69c80ba8c82c717fbd8edc89037d52521bbb709242c8b3298dcee",
+      "bytes": 4731
+    },
+    "tools/set-indexing.py": {
+      "sha256": "d5d774c79366eee3698a18d1c9344dc61e5c59f44b9afd23bbdca4922a7bb31f",
+      "bytes": 3772
+    },
+    "tools/test-menta-browser-v7-7.py": {
+      "sha256": "8ca6ccefe114ba83c0cfda1394c20407d52d5d50211182160bb2c94651300b3e",
+      "bytes": 14488
+    },
+    "tools/test-menta-v7-7.cjs": {
+      "sha256": "a8b10a5d1805fd2acffde05a99665596aa82297c2f1404ba7c69da04ec78753c",
+      "bytes": 8369
+    },
+    "tools/test-navigation-v7-7-3.py": {
+      "sha256": "1d5641db91d65126ff9e21a2082c1f32559958e9c7ec4631b058254038c7646b",
+      "bytes": 15383
+    },
+    "tools/test-servizi-v7-5-1.cjs": {
+      "sha256": "a028e50eed2d523fffaa050bd7b5e3553b9c21edede3d85eec16b49b905ac978",
+      "bytes": 5593
+    },
+    "tools/test-ui-v7-9.mjs": {
+      "sha256": "94e22a2f0646a154228498ed2ec0206a194ad2594185a9be0439895acaa73259",
+      "bytes": 14757
+    },
+    "tools/test-ux-map-v7-8.mjs": {
+      "sha256": "821d5b37c33c203ff29c2aefc222ba6aa2978667a7de4d563a050c6fcbf35954",
+      "bytes": 11716
+    },
+    "tools/verify-production-v7-9.py": {
+      "sha256": "f9634d7afe4f89329bca6235b259e42073e336676cce278b86c8d4e9252003ae",
+      "bytes": 4290
+    },
+    "universita.html": {
+      "sha256": "64a5a6bcf4cf34e19668aebc90572a05f4b74fd01565476c8e83b1b0ef6d3832",
+      "bytes": 8997
+    },
+    "version.json": {
+      "sha256": "741cb19b1f8f47555ee7fc23f540d0610a641a3e429004a02158a01a5c66f97b",
+      "bytes": 5557
+    }
+  },
+  "mismatches": []
+}

@@ -1,0 +1,1063 @@
+{
+  "summary": {
+    "services_before": 440,
+    "services_after": 442,
+    "located_before": 236,
+    "located_after": 307,
+    "address_after": 63,
+    "street_after": 227,
+    "building_after": 17,
+    "quality_counts": {
+      "D": 133,
+      "A": 25,
+      "C": 282,
+      "E": 2
+    },
+    "unlocated_after": 135,
+    "newly_located_previous_204": 69,
+    "new_services_located": 2,
+    "street_to_address": 0,
+    "retired_old_points": 0,
+    "entrances_verified": 0,
+    "new_geocoding_api_requests": 0
+  },
+  "decisions": [
+    {
+      "service_key": "rete:R1-03",
+      "action": "documentary_upgrade_only",
+      "precision": "address",
+      "source_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-palestro",
+      "note": "Coordinate precedenti invariate; ora indirizzo documentato nella fonte specifica."
+    },
+    {
+      "service_key": "rete:R1-05",
+      "action": "documentary_upgrade_only",
+      "precision": "address",
+      "source_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-via-boemondo",
+      "note": "Coordinate precedenti invariate; ora indirizzo documentato nella fonte specifica."
+    },
+    {
+      "service_key": "rete:R1-08",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R1-11",
+      "action": "upgraded",
+      "previous_precision": "street",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/27620679",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 424 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R1-11",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Previous point invalidated by changed address/municipality"
+      ]
+    },
+    {
+      "service_key": "rete:R1-12",
+      "action": "documentary_upgrade_only",
+      "precision": "address",
+      "source_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-di-giorgio",
+      "note": "Coordinate precedenti invariate; ora indirizzo documentato nella fonte specifica."
+    },
+    {
+      "service_key": "rete:R1-14",
+      "action": "upgraded",
+      "previous_precision": "address",
+      "precision": "address",
+      "source_url": "https://www.openstreetmap.org/node/4805847550",
+      "method": "Corrispondenza offline OSM: via, comune e civico/suffisso esatti; nessuna interpolazione",
+      "note": "Coordinate del civico/edificio cartografico, non dell’ingresso sanitario."
+    },
+    {
+      "service_key": "rete:R1-14",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Previous point invalidated by changed address/municipality"
+      ]
+    },
+    {
+      "service_key": "rete:R1-15",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R1-16",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/1395290904",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 285 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R1-19",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R1-20",
+      "action": "documentary_upgrade_only",
+      "precision": "address",
+      "source_url": "https://www.aslroma1.it/presidi-territoriali/ambulatorio-plinio-p-i-p-s-m-polo-ovest",
+      "note": "Coordinate precedenti invariate; ora indirizzo documentato nella fonte specifica."
+    },
+    {
+      "service_key": "rete:R2-01",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-03",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-05",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-06",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-07",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-14",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-15",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R2-16",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R3-02",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:R3-05",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R3-08",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres",
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R4-06",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/182945361",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 370 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R4-08",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R5-03",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/115603829",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 639 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R5-04",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/153586017",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 387 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R5-08",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/237583301",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 372 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R5-09",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/104998870",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 474 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R6-03",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:R6-06",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/90061207",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2483 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:R6-12",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:VT-05",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/96972318",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 96 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:VT-13",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:VT-14",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/278454727",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 491 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:VT-17",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:VT-19",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/176011650",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 399 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:VT-21",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/101394905",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 173 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:VT-23",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/278454727",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 491 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:FR-02",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/838630957",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2255 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:FR-08",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/40690843",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1737 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:NET-002",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-008",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:NET-017",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/23036615",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-018",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/299911839",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-021",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-022",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-023",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:NET-024",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-033",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/relation/12948721",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-041",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-042",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-049",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-050",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/66450025",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 76 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:NET-054",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/655734059",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-059",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-061",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/655734059",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-062",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/24981934",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-066",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/442731711",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-072",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:NET-084",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/232973552",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-091",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/58401584",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-092",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.openstreetmap.org/way/1423072811",
+      "method": "Riesame manuale del nome del complesso ospedaliero nel dataset e del comune; geometria OSM offline",
+      "note": "Punto rappresentativo del complesso ospedaliero. Reparto, ingresso e operatività corrente non verificati da questa localizzazione."
+    },
+    {
+      "service_key": "rete:NET-038",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/77511586",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1998 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:NET-015",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:NET-046",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/153586017",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 387 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:NET-063",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/69294684",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2167 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:NET-078",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:PUB72-R1-006",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/28523892",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1196 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:PUB72-R1-018",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "rete:PUB72-R1-023",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/140852128",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 930 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:PUB72-R2-001",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/122293122",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2170 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:PUB72-R2-002",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:PUB72-R2-005",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "rete:PUB72-R2-012",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/122293122",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2170 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:PUB72-RI-001",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/69294684",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2167 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "rete:PUB72-VT-003",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/232334951",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 180 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-038",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/72878166",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1695 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-091",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-064",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/151071456",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1136 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-013",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-025",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-026",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-027",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-028",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-024",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-023",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-069",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/65573732",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 105 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-058",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-090",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-089",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-088",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-065",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/151071456",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1136 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-067",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/284331191",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 401 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-107",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/192327068",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2173 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-063",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/1157887711",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1369 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-068",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/522446336",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 674 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-071",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/81524404",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 296 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-072",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/81524404",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 296 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-073",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/81524404",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 296 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-074",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/81524404",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 296 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-061",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-062",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/90049874",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 1888 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-066",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-079",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/193387585",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 184 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-080",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/193387585",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 184 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-077",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/37184342",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 251 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-078",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/37184342",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 251 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-049",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/24058984",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 871 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-056",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-115",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-055",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/34051305",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2240 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-054",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "moduli:MOD-101",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/101446574",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2259 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-037",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "address",
+      "source_url": "https://www.openstreetmap.org/node/5397011008",
+      "method": "Corrispondenza offline OSM: via, comune e civico/suffisso esatti; nessuna interpolazione",
+      "note": "Coordinate del civico/edificio cartografico, non dell’ingresso sanitario."
+    },
+    {
+      "service_key": "moduli:MOD-036",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "address",
+      "source_url": "https://www.openstreetmap.org/node/5397011008",
+      "method": "Corrispondenza offline OSM: via, comune e civico/suffisso esatti; nessuna interpolazione",
+      "note": "Coordinate del civico/edificio cartografico, non dell’ingresso sanitario."
+    },
+    {
+      "service_key": "moduli:MOD-035",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "address",
+      "source_url": "https://www.openstreetmap.org/node/5397011008",
+      "method": "Corrispondenza offline OSM: via, comune e civico/suffisso esatti; nessuna interpolazione",
+      "note": "Coordinate del civico/edificio cartografico, non dell’ingresso sanitario."
+    },
+    {
+      "service_key": "moduli:MOD-102",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/101446574",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2259 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:MOD-022",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "building",
+      "source_url": "https://www.kormed.it/strutture/colle-cesarano/",
+      "method": "Coordinate del complesso pubblicate dal gestore in JSON-LD; indirizzo confrontato con elenco ASL",
+      "note": "Posizione del complesso Colle Cesarano, condivisa da più servizi. Non localizza i singoli moduli né gli ingressi."
+    },
+    {
+      "service_key": "moduli:MOD-034",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "address",
+      "source_url": "https://www.openstreetmap.org/node/5397011008",
+      "method": "Corrispondenza offline OSM: via, comune e civico/suffisso esatti; nessuna interpolazione",
+      "note": "Coordinate del civico/edificio cartografico, non dell’ingresso sanitario."
+    },
+    {
+      "service_key": "privati:PRI-010",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "address",
+      "source_url": "https://www.openstreetmap.org/node/4869726879",
+      "method": "Corrispondenza offline OSM: via, comune e civico/suffisso esatti; nessuna interpolazione",
+      "note": "Coordinate del civico/edificio cartografico, non dell’ingresso sanitario."
+    },
+    {
+      "service_key": "privati:PRI-011",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Street too long for a new unambiguous pin (>2.5 km)"
+      ]
+    },
+    {
+      "service_key": "privati:PRI76-004",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/122529610",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 109 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "privati:PRI76-005",
+      "action": "newly_located",
+      "previous_precision": "none",
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/34995159",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 616 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "privati:PRI76-006",
+      "action": "rejected_candidate",
+      "reasons": [
+        "Ambiguous same-number candidates beyond 80 metres"
+      ]
+    },
+    {
+      "service_key": "moduli:V791-GABBIANO-VILLAPIA-RES",
+      "action": "newly_located",
+      "previous_precision": null,
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/27336187",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2362 m); civico e ingresso non localizzati."
+    },
+    {
+      "service_key": "moduli:V791-GABBIANO-VILLAPIA-CD",
+      "action": "newly_located",
+      "previous_precision": null,
+      "precision": "street",
+      "source_url": "https://www.openstreetmap.org/way/27336187",
+      "method": "Corrispondenza offline del nome della via nel poligono comunale; punto su tratto cartografico",
+      "note": "Posizione soltanto indicativa sulla via (estensione cartografica circa 2362 m); civico e ingresso non localizzati."
+    }
+  ],
+  "retired": []
+}

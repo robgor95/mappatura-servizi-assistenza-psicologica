@@ -1,0 +1,4367 @@
+{
+  "manifest": {
+    "url": "https://download.openstreetmap.fr/extracts/europe/italy/lazio-latest.osm.pbf",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "retrieved_at": "2026-09-22T11:55:37Z",
+    "last_modified": "Mon, 21 Sep 2026 01:49:14 GMT",
+    "sha256": "3303ec8829fd62b15b4aa22057c27992d2307677f2ae1ccecd257a48ebeb3920",
+    "bytes": 126630538,
+    "features": 243469,
+    "boundaries": 398
+  },
+  "queries_to_nominatim": 0,
+  "selected_features": {
+    "https://www.openstreetmap.org/way/27620679": {
+      "osm_type": "way",
+      "osm_id": 27620679,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via Gioacchino Ventura"
+      },
+      "lat": 41.91384646963848,
+      "lng": 12.425150721702668,
+      "bounds": [
+        12.4234071,
+        41.9124214,
+        12.4271717,
+        41.915
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/node/4805847550": {
+      "osm_type": "node",
+      "osm_id": 4805847550,
+      "tags": {
+        "addr:city": "Roma",
+        "addr:country": "IT",
+        "addr:housenumber": "6",
+        "addr:postcode": "00185",
+        "addr:street": "Via dei Frentani"
+      },
+      "lat": 41.9006201,
+      "lng": 12.5094309,
+      "kind": "node"
+    },
+    "https://www.openstreetmap.org/way/1395290904": {
+      "osm_type": "way",
+      "osm_id": 1395290904,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via di Monte Sacro",
+        "oneway": "yes"
+      },
+      "lat": 41.932122813444344,
+      "lng": 12.534519490751553,
+      "bounds": [
+        12.5337362,
+        41.9315446,
+        12.5353353,
+        41.9327396
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/26943788": {
+      "osm_type": "way",
+      "osm_id": 26943788,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via di Monte Sacro",
+        "oneway": "yes"
+      },
+      "lat": 41.933259391753666,
+      "lng": 12.533676904268814,
+      "bounds": [
+        12.5336742,
+        41.9327396,
+        12.5337362,
+        41.9337882
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/182945361": {
+      "osm_type": "way",
+      "osm_id": 182945361,
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "Viale Mario Villotti",
+        "oneway": "yes"
+      },
+      "lat": 42.098085839152226,
+      "lng": 11.807757995676456,
+      "bounds": [
+        11.8065966,
+        42.0975606,
+        11.8089348,
+        42.0985737
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/182945362": {
+      "osm_type": "way",
+      "osm_id": 182945362,
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "Viale Mario Villotti",
+        "oneway": "yes"
+      },
+      "lat": 42.098145688823685,
+      "lng": 11.807724667355096,
+      "bounds": [
+        11.8065966,
+        42.0975606,
+        11.8088818,
+        42.0986712
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/183155640": {
+      "osm_type": "way",
+      "osm_id": 183155640,
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "Viale Mario Villotti"
+      },
+      "lat": 42.09718281747985,
+      "lng": 11.8058824511487,
+      "bounds": [
+        11.8051105,
+        42.0969552,
+        11.8065966,
+        42.0975606
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/115603829": {
+      "osm_type": "way",
+      "osm_id": 115603829,
+      "tags": {
+        "highway": "residential",
+        "name": "Via dell'Aeronautica"
+      },
+      "lat": 42.05964936210088,
+      "lng": 12.5942147453025,
+      "bounds": [
+        12.5903413,
+        42.0585688,
+        12.5963519,
+        42.062169
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/153586017": {
+      "osm_type": "way",
+      "osm_id": 153586017,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Viale della Repubblica"
+      },
+      "lat": 41.92646802616209,
+      "lng": 13.092410124032419,
+      "bounds": [
+        13.090761,
+        41.9258184,
+        13.0945416,
+        41.9268261
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1330712371": {
+      "osm_type": "way",
+      "osm_id": 1330712371,
+      "tags": {
+        "highway": "secondary",
+        "maxspeed": "50",
+        "maxspeed:conditional": "60 @ (23:00-05:00)",
+        "name": "Viale della Repubblica",
+        "ref": "SP40b",
+        "source:maxspeed": "PL:urban",
+        "surface": "asphalt"
+      },
+      "lat": 41.925569232557976,
+      "lng": 13.092441992899928,
+      "bounds": [
+        13.0912119,
+        41.9247876,
+        13.0934639,
+        41.9258184
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/237583301": {
+      "osm_type": "way",
+      "osm_id": 237583301,
+      "tags": {
+        "highway": "residential",
+        "name": "Via dell'Artigianato"
+      },
+      "lat": 42.05861803748459,
+      "lng": 12.586005930366708,
+      "bounds": [
+        12.5851556,
+        42.0580571,
+        12.5868759,
+        42.059149
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/319796444": {
+      "osm_type": "way",
+      "osm_id": 319796444,
+      "tags": {
+        "highway": "residential",
+        "name": "Via dell'Artigianato"
+      },
+      "lat": 42.0596865707113,
+      "lng": 12.587725816875547,
+      "bounds": [
+        12.5868759,
+        42.059149,
+        12.5885869,
+        42.0602062
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/104998870": {
+      "osm_type": "way",
+      "osm_id": 104998870,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Via dei Pioppi"
+      },
+      "lat": 41.955571679159775,
+      "lng": 12.697698470054766,
+      "bounds": [
+        12.696815,
+        41.9537279,
+        12.6997871,
+        41.9559467
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/104998837": {
+      "osm_type": "way",
+      "osm_id": 104998837,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Via dei Pioppi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.95242746352677,
+      "lng": 12.697513373373043,
+      "bounds": [
+        12.697448,
+        41.9522958,
+        12.6975964,
+        41.9525687
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/104998859": {
+      "osm_type": "way",
+      "osm_id": 104998859,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Via dei Pioppi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.952445064301365,
+      "lng": 12.69736632892967,
+      "bounds": [
+        12.6972694,
+        41.9523331,
+        12.697448,
+        41.9525687
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/90061207": {
+      "osm_type": "way",
+      "osm_id": 90061207,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.82744226097041,
+      "lng": 12.66528180090223,
+      "bounds": [
+        12.6616493,
+        41.8255092,
+        12.6689968,
+        41.8294606
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/23709127": {
+      "osm_type": "way",
+      "osm_id": 23709127,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.80960448696928,
+      "lng": 12.672610902906754,
+      "bounds": [
+        12.6726,
+        41.8094886,
+        12.6726872,
+        41.8097432
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/312148749": {
+      "osm_type": "way",
+      "osm_id": 312148749,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.815603049296804,
+      "lng": 12.674438756032226,
+      "bounds": [
+        12.6742834,
+        41.815073,
+        12.6747099,
+        41.8161684
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/312148750": {
+      "osm_type": "way",
+      "osm_id": 312148750,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.82952010520508,
+      "lng": 12.66165558128314,
+      "bounds": [
+        12.6616493,
+        41.8294606,
+        12.661671,
+        41.829578
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/23756819": {
+      "osm_type": "way",
+      "osm_id": 23756819,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.809798799999996,
+      "lng": 12.6725171,
+      "bounds": [
+        12.6724264,
+        41.8097622,
+        12.6726078,
+        41.8098354
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/90061206": {
+      "osm_type": "way",
+      "osm_id": 90061206,
+      "tags": {
+        "bridge": "yes",
+        "cycleway:both": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.82544475,
+      "lng": 12.6690887,
+      "bounds": [
+        12.6689968,
+        41.8253803,
+        12.6691806,
+        41.8255092
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1171026135": {
+      "osm_type": "way",
+      "osm_id": 1171026135,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.81640695389394,
+      "lng": 12.6742834,
+      "bounds": [
+        12.6742834,
+        41.81632,
+        12.6742843,
+        41.8164939
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1171026136": {
+      "osm_type": "way",
+      "osm_id": 1171026136,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.8162442,
+      "lng": 12.6742834,
+      "bounds": [
+        12.6742834,
+        41.8161684,
+        12.6742834,
+        41.81632
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1171026138": {
+      "osm_type": "way",
+      "osm_id": 1171026138,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.817720669892594,
+      "lng": 12.67430725668433,
+      "bounds": [
+        12.6741113,
+        41.8164939,
+        12.6743103,
+        41.8189112
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1314846738": {
+      "osm_type": "way",
+      "osm_id": 1314846738,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.8097893,
+      "lng": 12.6726045,
+      "bounds": [
+        12.6726012,
+        41.8097432,
+        12.6726078,
+        41.8098354
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/243915553": {
+      "osm_type": "way",
+      "osm_id": 243915553,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Enrico Fermi",
+        "surface": "asphalt"
+      },
+      "lat": 41.82712768089358,
+      "lng": 12.664815638917517,
+      "bounds": [
+        12.664163,
+        41.8271056,
+        12.6654924,
+        41.8273389
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/54105077": {
+      "osm_type": "way",
+      "osm_id": 54105077,
+      "tags": {
+        "highway": "tertiary",
+        "lane_markings": "yes",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.81179522689432,
+      "lng": 12.674551264770365,
+      "bounds": [
+        12.6726078,
+        41.8098354,
+        12.6748112,
+        41.815073
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186905053": {
+      "osm_type": "way",
+      "osm_id": 186905053,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.8097048352831,
+      "lng": 12.67239903685157,
+      "bounds": [
+        12.672399,
+        41.8096463,
+        12.6724264,
+        41.8097622
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186905054": {
+      "osm_type": "way",
+      "osm_id": 186905054,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.809684203783235,
+      "lng": 12.672517922557338,
+      "bounds": [
+        12.6724234,
+        41.8096463,
+        12.6726012,
+        41.8097432
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186906170": {
+      "osm_type": "way",
+      "osm_id": 186906170,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.81936274408775,
+      "lng": 12.673554085663712,
+      "bounds": [
+        12.6733405,
+        41.8193457,
+        12.673795,
+        41.8194831
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186906171": {
+      "osm_type": "way",
+      "osm_id": 186906171,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.81903433107722,
+      "lng": 12.674000335004765,
+      "bounds": [
+        12.6738543,
+        41.8189112,
+        12.6741113,
+        41.819113
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186906173": {
+      "osm_type": "way",
+      "osm_id": 186906173,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.8225141659987,
+      "lng": 12.671430180591138,
+      "bounds": [
+        12.6692677,
+        41.8194831,
+        12.6733405,
+        41.8253211
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186906174": {
+      "osm_type": "way",
+      "osm_id": 186906174,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.81903057474992,
+      "lng": 12.674083298787513,
+      "bounds": [
+        12.6740772,
+        41.8189112,
+        12.6741113,
+        41.8191528
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186906175": {
+      "osm_type": "way",
+      "osm_id": 186906175,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.81932470268176,
+      "lng": 12.673535494533118,
+      "bounds": [
+        12.6733405,
+        41.8191846,
+        12.6737448,
+        41.8194831
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/186962909": {
+      "osm_type": "way",
+      "osm_id": 186962909,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "oneway": "yes",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.80973839990398,
+      "lng": 12.672365782926946,
+      "bounds": [
+        12.6723044,
+        41.8097167,
+        12.6724264,
+        41.8097622
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/207172153": {
+      "osm_type": "way",
+      "osm_id": 207172153,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Enrico Fermi",
+        "ref": "SP65b",
+        "surface": "asphalt"
+      },
+      "lat": 41.82535042955109,
+      "lng": 12.669223965695284,
+      "bounds": [
+        12.6691806,
+        41.8253211,
+        12.6692677,
+        41.8253803
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/96972318": {
+      "osm_type": "way",
+      "osm_id": 96972318,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Castrense"
+      },
+      "lat": 42.3497352,
+      "lng": 11.611183350000001,
+      "bounds": [
+        11.6107152,
+        42.3497029,
+        11.6116515,
+        42.3497675
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1121976253": {
+      "osm_type": "way",
+      "osm_id": 1121976253,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Castrense",
+        "oneway": "yes"
+      },
+      "lat": 42.34971929249695,
+      "lng": 11.610602725335145,
+      "bounds": [
+        11.6104926,
+        42.3497029,
+        11.6107152,
+        42.3497493
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/278454727": {
+      "osm_type": "way",
+      "osm_id": 278454727,
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Via Francesco Petrarca",
+        "oneway": "no"
+      },
+      "lat": 42.30010061230614,
+      "lng": 12.412535779800534,
+      "bounds": [
+        12.4103609,
+        42.2988465,
+        12.4147884,
+        42.3011493
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1385796094": {
+      "osm_type": "way",
+      "osm_id": 1385796094,
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Via Francesco Petrarca",
+        "oneway": "no"
+      },
+      "lat": 42.30120141822815,
+      "lng": 12.415137483077022,
+      "bounds": [
+        12.4149328,
+        42.301178,
+        12.415342,
+        42.3012262
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1385796095": {
+      "osm_type": "way",
+      "osm_id": 1385796095,
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Via Francesco Petrarca",
+        "oneway": "no"
+      },
+      "lat": 42.3011705,
+      "lng": 12.4148897,
+      "bounds": [
+        12.4148466,
+        42.301163,
+        12.4149328,
+        42.301178
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1385796096": {
+      "osm_type": "way",
+      "osm_id": 1385796096,
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Via Francesco Petrarca",
+        "oneway": "no"
+      },
+      "lat": 42.30115615,
+      "lng": 12.414817500000002,
+      "bounds": [
+        12.4147884,
+        42.3011493,
+        12.4148466,
+        42.301163
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/176011650": {
+      "osm_type": "way",
+      "osm_id": 176011650,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Donatori di Sangue"
+      },
+      "lat": 42.37856793773073,
+      "lng": 12.278441380468239,
+      "bounds": [
+        12.2774443,
+        42.3769461,
+        12.2784877,
+        42.3804521
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/101394905": {
+      "osm_type": "way",
+      "osm_id": 101394905,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via Igea",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban",
+        "surface": "asphalt"
+      },
+      "lat": 42.25023805,
+      "lng": 11.75944441476507,
+      "bounds": [
+        11.7584198,
+        42.2498914,
+        11.7600068,
+        42.2505928
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/299280827": {
+      "osm_type": "way",
+      "osm_id": 299280827,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via Igea",
+        "oneway": "no",
+        "source:maxspeed": "IT:urban",
+        "surface": "asphalt"
+      },
+      "lat": 42.250748124125224,
+      "lng": 11.758957595155268,
+      "bounds": [
+        11.7589018,
+        42.2505928,
+        11.759021,
+        42.2509063
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/381109010": {
+      "osm_type": "way",
+      "osm_id": 381109010,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Igea",
+        "oneway": "no",
+        "surface": "asphalt"
+      },
+      "lat": 42.25031090858244,
+      "lng": 11.759135826180765,
+      "bounds": [
+        11.759021,
+        42.2500286,
+        11.7592496,
+        42.2505928
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/838630957": {
+      "osm_type": "way",
+      "osm_id": 838630957,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.64114200522622,
+      "lng": 13.308249000477014,
+      "bounds": [
+        13.3031378,
+        41.6403446,
+        13.3135185,
+        41.6427144
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/168589064": {
+      "osm_type": "way",
+      "osm_id": 168589064,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.642443334470286,
+      "lng": 13.30424953542439,
+      "bounds": [
+        13.3042494,
+        41.6422461,
+        13.3042945,
+        41.6426465
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/40487747": {
+      "osm_type": "way",
+      "osm_id": 40487747,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.635975444149445,
+      "lng": 13.324920077306624,
+      "bounds": [
+        13.3227146,
+        41.6353735,
+        13.3270842,
+        41.6364111
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/163952629": {
+      "osm_type": "way",
+      "osm_id": 163952629,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.643785478771186,
+      "lng": 13.304791806499562,
+      "bounds": [
+        13.3042696,
+        41.6426465,
+        13.305204,
+        41.6449663
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1545032671": {
+      "osm_type": "way",
+      "osm_id": 1545032671,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.6366397,
+      "lng": 13.32208545,
+      "bounds": [
+        13.3219079,
+        41.6365547,
+        13.322263,
+        41.6367247
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1545032672": {
+      "osm_type": "way",
+      "osm_id": 1545032672,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.636904110125876,
+      "lng": 13.321534297207107,
+      "bounds": [
+        13.3211616,
+        41.6367247,
+        13.3219079,
+        41.6370854
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1545032673": {
+      "osm_type": "way",
+      "osm_id": 1545032673,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.636439749999994,
+      "lng": 13.3226072,
+      "bounds": [
+        13.3224998,
+        41.6364111,
+        13.3227146,
+        41.6364684
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1545032674": {
+      "osm_type": "way",
+      "osm_id": 1545032674,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.636506919172916,
+      "lng": 13.322379684528062,
+      "bounds": [
+        13.322263,
+        41.6364684,
+        13.3224998,
+        41.6365547
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/185747429": {
+      "osm_type": "way",
+      "osm_id": 185747429,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.63946629954864,
+      "lng": 13.316525745608166,
+      "bounds": [
+        13.3163472,
+        41.6392865,
+        13.3167235,
+        41.6396628
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/185747470": {
+      "osm_type": "way",
+      "osm_id": 185747470,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.6399282,
+      "lng": 13.315663,
+      "bounds": [
+        13.3155883,
+        41.6398965,
+        13.3157377,
+        41.6399599
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1066860112": {
+      "osm_type": "way",
+      "osm_id": 1066860112,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.638434955618244,
+      "lng": 13.31804601375078,
+      "bounds": [
+        13.3167235,
+        41.6378435,
+        13.319506,
+        41.6392865
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1066860116": {
+      "osm_type": "way",
+      "osm_id": 1066860116,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.6398943,
+      "lng": 13.3156717,
+      "bounds": [
+        13.3155883,
+        41.6398287,
+        13.3157551,
+        41.6399599
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1066860117": {
+      "osm_type": "way",
+      "osm_id": 1066860117,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.63943193728892,
+      "lng": 13.316431379854672,
+      "bounds": [
+        13.316147,
+        41.6392865,
+        13.3167235,
+        41.6395919
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1066860947": {
+      "osm_type": "way",
+      "osm_id": 1066860947,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.64025051312664,
+      "lng": 13.315112344150956,
+      "bounds": [
+        13.3146606,
+        41.6399599,
+        13.3155883,
+        41.640579
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1066860950": {
+      "osm_type": "way",
+      "osm_id": 1066860950,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.640702380508785,
+      "lng": 13.314487145151311,
+      "bounds": [
+        13.3142944,
+        41.640579,
+        13.3146606,
+        41.640792
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1231903063": {
+      "osm_type": "way",
+      "osm_id": 1231903063,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.6372718,
+      "lng": 13.32076685,
+      "bounds": [
+        13.3204632,
+        41.6371284,
+        13.3210705,
+        41.6374152
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1147840056": {
+      "osm_type": "way",
+      "osm_id": 1147840056,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.63774147360501,
+      "lng": 13.3197153083026,
+      "bounds": [
+        13.319506,
+        41.6376509,
+        13.3199304,
+        41.6378435
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1147840057": {
+      "osm_type": "way",
+      "osm_id": 1147840057,
+      "tags": {
+        "highway": "tertiary",
+        "junction": "roundabout",
+        "name": "Via Armando Fabi",
+        "surface": "asphalt"
+      },
+      "lat": 41.63753425041626,
+      "lng": 13.320197330990784,
+      "bounds": [
+        13.3199304,
+        41.6374152,
+        13.3204632,
+        41.6376509
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1168491400": {
+      "osm_type": "way",
+      "osm_id": 1168491400,
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "layer": "1",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.6397853,
+      "lng": 13.315825799999999,
+      "bounds": [
+        13.3157551,
+        41.6397419,
+        13.3158965,
+        41.6398287
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/838630954": {
+      "osm_type": "way",
+      "osm_id": 838630954,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.63727979417058,
+      "lng": 13.32082418723294,
+      "bounds": [
+        13.3206017,
+        41.6371284,
+        13.3210705,
+        41.6374573
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/838630956": {
+      "osm_type": "way",
+      "osm_id": 838630956,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.63780232183176,
+      "lng": 13.319698949131173,
+      "bounds": [
+        13.319506,
+        41.6377821,
+        13.3198945,
+        41.6378435
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/838630958": {
+      "osm_type": "way",
+      "osm_id": 838630958,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.637106868911914,
+      "lng": 13.321116035341694,
+      "bounds": [
+        13.3210705,
+        41.6370854,
+        13.3211616,
+        41.6371284
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1168491397": {
+      "osm_type": "way",
+      "osm_id": 1168491397,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.639827999999994,
+      "lng": 13.31600345,
+      "bounds": [
+        13.3159177,
+        41.6398271,
+        13.3160892,
+        41.6398289
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1168491398": {
+      "osm_type": "way",
+      "osm_id": 1168491398,
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "layer": "1",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.639862699999995,
+      "lng": 13.3158277,
+      "bounds": [
+        13.3157377,
+        41.6398289,
+        13.3159177,
+        41.6398965
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1168491399": {
+      "osm_type": "way",
+      "osm_id": 1168491399,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.63971005,
+      "lng": 13.31595995,
+      "bounds": [
+        13.3158965,
+        41.6396782,
+        13.3160234,
+        41.6397419
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/168589061": {
+      "osm_type": "way",
+      "osm_id": 168589061,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.64244089258077,
+      "lng": 13.304164421585654,
+      "bounds": [
+        13.3040695,
+        41.6424031,
+        13.3042499,
+        41.642497
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/168589062": {
+      "osm_type": "way",
+      "osm_id": 168589062,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.642490046524735,
+      "lng": 13.304093365018142,
+      "bounds": [
+        13.3040695,
+        41.6424031,
+        13.3041295,
+        41.6425729
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/168589063": {
+      "osm_type": "way",
+      "osm_id": 168589063,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Armando Fabi",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.64255802899441,
+      "lng": 13.304058727532487,
+      "bounds": [
+        13.3038303,
+        41.6425282,
+        13.3042696,
+        41.6426465
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/40690843": {
+      "osm_type": "way",
+      "osm_id": 40690843,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "ref": "SP99"
+      },
+      "lat": 41.46651724929459,
+      "lng": 13.661395270489013,
+      "bounds": [
+        13.6551681,
+        41.460159,
+        13.6658326,
+        41.471525
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116057": {
+      "osm_type": "way",
+      "osm_id": 267116057,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "ref": "SP99"
+      },
+      "lat": 41.45957790380999,
+      "lng": 13.665912806549903,
+      "bounds": [
+        13.6659055,
+        41.4594221,
+        13.6659359,
+        41.4597349
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116059": {
+      "osm_type": "way",
+      "osm_id": 267116059,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.4597872,
+      "lng": 13.665842099999999,
+      "bounds": [
+        13.6657787,
+        41.4597349,
+        13.6659055,
+        41.4598395
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116061": {
+      "osm_type": "way",
+      "osm_id": 267116061,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.45981195,
+      "lng": 13.66590855,
+      "bounds": [
+        13.6659055,
+        41.4597349,
+        13.6659116,
+        41.459889
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116529": {
+      "osm_type": "way",
+      "osm_id": 267116529,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.459381300000004,
+      "lng": 13.6659638,
+      "bounds": [
+        13.6659359,
+        41.4593405,
+        13.6659917,
+        41.4594221
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116533": {
+      "osm_type": "way",
+      "osm_id": 267116533,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "ref": "SP99",
+        "surface": "asphalt"
+      },
+      "lat": 41.45924103902528,
+      "lng": 13.667112364405998,
+      "bounds": [
+        13.6661797,
+        41.4591794,
+        13.6680333,
+        41.4592627
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116534": {
+      "osm_type": "way",
+      "osm_id": 267116534,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.459284749999995,
+      "lng": 13.6660999,
+      "bounds": [
+        13.6660201,
+        41.4592627,
+        13.6661797,
+        41.4593068
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116535": {
+      "osm_type": "way",
+      "osm_id": 267116535,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.45938435,
+      "lng": 13.66591495,
+      "bounds": [
+        13.665894,
+        41.4593466,
+        13.6659359,
+        41.4594221
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116537": {
+      "osm_type": "way",
+      "osm_id": 267116537,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.45925685,
+      "lng": 13.66609195,
+      "bounds": [
+        13.6660042,
+        41.459251,
+        13.6661797,
+        41.4592627
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116054": {
+      "osm_type": "way",
+      "osm_id": 267116054,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.4600617,
+      "lng": 13.6658679,
+      "bounds": [
+        13.6658326,
+        41.4599644,
+        13.6659032,
+        41.460159
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/267116055": {
+      "osm_type": "way",
+      "osm_id": 267116055,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Via San Giovanni Battista",
+        "oneway": "yes",
+        "ref": "SP99"
+      },
+      "lat": 41.460081599999995,
+      "lng": 13.6658177,
+      "bounds": [
+        13.6658028,
+        41.4600042,
+        13.6658326,
+        41.460159
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/23036615": {
+      "osm_type": "way",
+      "osm_id": 23036615,
+      "tags": {
+        "addr:city": "Roma",
+        "addr:housename": "Ospedale Sandro Pertini",
+        "addr:housenumber": "385",
+        "addr:postcode": "00157",
+        "addr:street": "via dei Monti Tiburtini",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Ospedale Sandro Pertini",
+        "operator": "ASL Roma B",
+        "phone": "+39 06 41431",
+        "website": "http://www.aslromab.it/cittadini/ospedali/pertini/index.php"
+      },
+      "lat": 41.9205448,
+      "lng": 12.54034537549829,
+      "bounds": [
+        12.537486,
+        41.9183208,
+        12.5434264,
+        41.9228327
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/299911839": {
+      "osm_type": "way",
+      "osm_id": 299911839,
+      "tags": {
+        "addr:city": "Roma",
+        "addr:housenumber": "10",
+        "addr:postcode": "00144",
+        "addr:street": "Piazzale dell'Umanesimo",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Ospedale Sant'Eugenio",
+        "name:it": "Sant'Eugenio",
+        "wikidata": "Q19678501"
+      },
+      "lat": 41.821253,
+      "lng": 12.472258125563634,
+      "bounds": [
+        12.4704522,
+        41.8202298,
+        12.4742972,
+        41.8223983
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/relation/12948721": {
+      "osm_type": "relation",
+      "osm_id": 12948721,
+      "tags": {
+        "addr:city": "Civitavecchia",
+        "addr:housenumber": "1",
+        "addr:postcode": "00053",
+        "addr:street": "Largo Donatori del Sangue",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Ospedale \"San Paolo\"",
+        "operator": "Regione Lazio",
+        "operator:type": "public",
+        "website": "https://www.aslroma4.it/strutture-sanitarie/ospedale-san-paolo-civitavecchia"
+      },
+      "lat": 42.0981586,
+      "lng": 11.809758756268684,
+      "bounds": [
+        11.8085717,
+        42.0971227,
+        11.8110424,
+        42.0989757
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/66450025": {
+      "osm_type": "way",
+      "osm_id": 66450025,
+      "tags": {
+        "highway": "residential",
+        "name": "Piazzale Salvo D'Acquisto"
+      },
+      "lat": 42.06876867246295,
+      "lng": 12.763298086335684,
+      "bounds": [
+        12.7630879,
+        42.0684686,
+        12.7636677,
+        42.0689419
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/158190149": {
+      "osm_type": "way",
+      "osm_id": 158190149,
+      "tags": {
+        "highway": "residential",
+        "name": "Piazzale Salvo D'Acquisto"
+      },
+      "lat": 42.06869948513594,
+      "lng": 12.763486435127472,
+      "bounds": [
+        12.7632226,
+        42.0684686,
+        12.7637531,
+        42.0689271
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/655734059": {
+      "osm_type": "way",
+      "osm_id": 655734059,
+      "tags": {
+        "addr:city": "Ariccia",
+        "addr:postcode": "00072",
+        "addr:street": "Via Nettunense",
+        "amenity": "hospital",
+        "check_date": "2025-07-27",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Nuovo Ospedale dei Castelli Romani",
+        "phone": "+39 06 93278888",
+        "website": "http://ospedaledeicastelliromani.it/"
+      },
+      "lat": 41.677132900000004,
+      "lng": 12.64825789707388,
+      "bounds": [
+        12.6454179,
+        41.6752919,
+        12.6512612,
+        41.6794146
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/24981934": {
+      "osm_type": "way",
+      "osm_id": 24981934,
+      "tags": {
+        "addr:city": "Rieti",
+        "addr:postcode": "02100",
+        "addr:state": "Lazio",
+        "addr:street": "Kennedy",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Ospedale provinciale Camillo de Lellis",
+        "operator": "Sistema Sanitario Nazionale",
+        "phone": "+39 0746 2781",
+        "website": "https://www.asl.rieti.it/"
+      },
+      "lat": 42.4225381,
+      "lng": 12.907995399073897,
+      "bounds": [
+        12.9059462,
+        42.4211699,
+        12.9099204,
+        42.4240119
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/442731711": {
+      "osm_type": "way",
+      "osm_id": 442731711,
+      "tags": {
+        "addr:city": "Viterbo",
+        "addr:country": "IT",
+        "addr:postcode": "01100",
+        "addr:street": "Strada Sammartinese",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "fax": "+39 0761 3381",
+        "name": "Ospedale Santa Rosa",
+        "old_name": "Ospedale Belcolle",
+        "operator": "ASL Viterbo",
+        "phone": "+39 0761 3391",
+        "website": "http://www.asl.vt.it"
+      },
+      "lat": 42.39327405,
+      "lng": 12.123857563686409,
+      "bounds": [
+        12.1213692,
+        42.3911094,
+        12.1259822,
+        42.3952429
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/232973552": {
+      "osm_type": "way",
+      "osm_id": 232973552,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2022-11-01",
+        "entrance:wheelchair": "yes",
+        "healthcare": "hospital",
+        "name": "Ospedale Santa Maria Goretti",
+        "name:etymology:wikidata": "Q234697",
+        "opening_hours": "24/7",
+        "operator:type": "public",
+        "phone": "+39 0773 6551",
+        "website": "https://www.ausl.latina.it/gs-serviziospedalieri/gs-presidionord/gs-goretti",
+        "wheelchair": "yes"
+      },
+      "lat": 41.4612896,
+      "lng": 12.909283729036535,
+      "bounds": [
+        12.9076382,
+        41.4600454,
+        12.9111998,
+        41.4624908
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/58401584": {
+      "osm_type": "way",
+      "osm_id": 58401584,
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "name": "San Giovanni di Dio",
+        "wheelchair": "yes"
+      },
+      "lat": 41.3612577,
+      "lng": 13.415198572471372,
+      "bounds": [
+        13.4147969,
+        41.360648,
+        13.4160968,
+        41.3618662
+      ],
+      "kind": "building"
+    },
+    "https://www.openstreetmap.org/way/1423072811": {
+      "osm_type": "way",
+      "osm_id": 1423072811,
+      "tags": {
+        "addr:city": "Gaeta",
+        "addr:postcode": "04024",
+        "addr:street": "Salita dei Cappuccini",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "vaccination;general",
+        "name": "Ospedale \"Luigi di Liegro\" Gaeta",
+        "operator": "ASL Latina",
+        "operator:type": "public",
+        "phone": "+3907717791",
+        "website": "http://www.asl.latina.it/index.php/presidi-ospedalieri"
+      },
+      "lat": 41.22146005,
+      "lng": 13.566742431386388,
+      "bounds": [
+        13.5662805,
+        41.2208362,
+        13.5672122,
+        41.2221465
+      ],
+      "kind": "site"
+    },
+    "https://www.openstreetmap.org/way/77511586": {
+      "osm_type": "way",
+      "osm_id": 77511586,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Via di Fra' Giovanni",
+        "surface": "asphalt"
+      },
+      "lat": 42.07694043548538,
+      "lng": 12.194360162315418,
+      "bounds": [
+        12.1899839,
+        42.0675136,
+        12.1945334,
+        42.0851894
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/69294684": {
+      "osm_type": "way",
+      "osm_id": 69294684,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Tavola d'Argento"
+      },
+      "lat": 42.420213268239614,
+      "lng": 12.88751278872029,
+      "bounds": [
+        12.8845746,
+        42.4109136,
+        12.8894907,
+        42.4300903
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/28523892": {
+      "osm_type": "way",
+      "osm_id": 28523892,
+      "tags": {
+        "access": "no",
+        "bus": "yes",
+        "highway": "service",
+        "lanes:psv": "2",
+        "name": "Viale delle Milizie",
+        "psv": "yes",
+        "taxi": "yes"
+      },
+      "lat": 41.91243096556625,
+      "lng": 12.463084664110065,
+      "bounds": [
+        12.4609363,
+        41.9119034,
+        12.4652325,
+        41.9129605
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/109167758": {
+      "osm_type": "way",
+      "osm_id": 109167758,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.911317800000006,
+      "lng": 12.4580227,
+      "bounds": [
+        12.4579434,
+        41.9112986,
+        12.458102,
+        41.911337
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1281443905": {
+      "osm_type": "way",
+      "osm_id": 1281443905,
+      "tags": {
+        "highway": "residential",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "source:maxspeed": "sign"
+      },
+      "lat": 41.910846927749624,
+      "lng": 12.456944199294346,
+      "bounds": [
+        12.4569389,
+        41.9107701,
+        12.4569469,
+        41.9109239
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/104624557": {
+      "osm_type": "way",
+      "osm_id": 104624557,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91067115672197,
+      "lng": 12.45537079242851,
+      "bounds": [
+        12.4548776,
+        41.9105506,
+        12.4558636,
+        41.9107933
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/210580607": {
+      "osm_type": "way",
+      "osm_id": 210580607,
+      "tags": {
+        "highway": "unclassified",
+        "lanes": "2",
+        "name": "Viale delle Milizie"
+      },
+      "lat": 41.911241337128004,
+      "lng": 12.45866728825628,
+      "bounds": [
+        12.4586473,
+        41.911194,
+        12.4586871,
+        41.9112886
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/202304098": {
+      "osm_type": "way",
+      "osm_id": 202304098,
+      "tags": {
+        "cycleway:right": "separate",
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91342214553339,
+      "lng": 12.467349255086852,
+      "bounds": [
+        12.4672347,
+        41.9133832,
+        12.4674645,
+        41.913459
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/201512868": {
+      "osm_type": "way",
+      "osm_id": 201512868,
+      "tags": {
+        "cycleway:right": "separate",
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.9116222966505,
+      "lng": 12.459554547730752,
+      "bounds": [
+        12.4583036,
+        41.9113086,
+        12.4608057,
+        41.9119352
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/201512869": {
+      "osm_type": "way",
+      "osm_id": 201512869,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.9120115,
+      "lng": 12.46081075,
+      "bounds": [
+        12.4607105,
+        41.9119858,
+        12.460911,
+        41.9120372
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/86975386": {
+      "osm_type": "way",
+      "osm_id": 86975386,
+      "tags": {
+        "cycleway:right": "separate",
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91314245465559,
+      "lng": 12.46624997653033,
+      "bounds": [
+        12.4652653,
+        41.9129015,
+        12.4672347,
+        41.9133832
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/86975387": {
+      "osm_type": "way",
+      "osm_id": 86975387,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.91355448065918,
+      "lng": 12.467138364466274,
+      "bounds": [
+        12.4658128,
+        41.9132301,
+        12.4684644,
+        41.9138767
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/201512870": {
+      "osm_type": "way",
+      "osm_id": 201512870,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91090141362707,
+      "lng": 12.45630393536124,
+      "bounds": [
+        12.4558636,
+        41.9107933,
+        12.4566675,
+        41.9109785
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/201512871": {
+      "osm_type": "way",
+      "osm_id": 201512871,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      },
+      "lat": 41.911831796690024,
+      "lng": 12.460093475182505,
+      "bounds": [
+        12.4594761,
+        41.9116792,
+        12.4607105,
+        41.9119858
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/201512877": {
+      "osm_type": "way",
+      "osm_id": 201512877,
+      "tags": {
+        "highway": "residential",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "source:maxspeed": "sign"
+      },
+      "lat": 41.910528244377126,
+      "lng": 12.455941558442236,
+      "bounds": [
+        12.4549407,
+        41.9102852,
+        12.4569427,
+        41.9107701
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/234154644": {
+      "osm_type": "way",
+      "osm_id": 234154644,
+      "tags": {
+        "access": "no",
+        "bus": "yes",
+        "construction": "service",
+        "highway": "construction",
+        "name": "Viale delle Milizie",
+        "psv": "yes",
+        "taxi": "yes"
+      },
+      "lat": 41.911190067995996,
+      "lng": 12.458167266951303,
+      "bounds": [
+        12.4581065,
+        41.9111113,
+        12.4582528,
+        41.9112423
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/48958720": {
+      "osm_type": "way",
+      "osm_id": 48958720,
+      "tags": {
+        "access": "no",
+        "bus": "yes",
+        "highway": "service",
+        "lanes:psv": "2",
+        "name": "Viale delle Milizie",
+        "psv": "yes",
+        "taxi": "yes"
+      },
+      "lat": 41.91157360683488,
+      "lng": 12.459594340541841,
+      "bounds": [
+        12.4582528,
+        41.9112423,
+        12.4609363,
+        41.9119034
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/248901238": {
+      "osm_type": "way",
+      "osm_id": 248901238,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.912633388498485,
+      "lng": 12.463371628179816,
+      "bounds": [
+        12.4630853,
+        41.9125622,
+        12.4636581,
+        41.912704
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/100006593": {
+      "osm_type": "way",
+      "osm_id": 100006593,
+      "tags": {
+        "access": "no",
+        "bus": "yes",
+        "highway": "service",
+        "lanes:psv": "2",
+        "name": "Viale delle Milizie",
+        "psv": "yes",
+        "taxi": "yes"
+      },
+      "lat": 41.91337274602955,
+      "lng": 12.466852015539011,
+      "bounds": [
+        12.4652325,
+        41.9129605,
+        12.4684636,
+        41.9138119
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/187233987": {
+      "osm_type": "way",
+      "osm_id": 187233987,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.91204040526444,
+      "lng": 12.462092091936418,
+      "bounds": [
+        12.4609964,
+        41.9117695,
+        12.4631881,
+        41.91231
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/187233988": {
+      "osm_type": "way",
+      "osm_id": 187233988,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.911950950000005,
+      "lng": 12.4608714,
+      "bounds": [
+        12.4608057,
+        41.9119352,
+        12.4609371,
+        41.9119667
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/187233989": {
+      "osm_type": "way",
+      "osm_id": 187233989,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91212465723588,
+      "lng": 12.462055956088518,
+      "bounds": [
+        12.46096,
+        41.9118482,
+        12.4631542,
+        41.9123918
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/187233990": {
+      "osm_type": "way",
+      "osm_id": 187233990,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91152637792871,
+      "lng": 12.459629982301145,
+      "bounds": [
+        12.4583003,
+        41.9112033,
+        12.46096,
+        41.9118482
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/248901714": {
+      "osm_type": "way",
+      "osm_id": 248901714,
+      "tags": {
+        "highway": "residential",
+        "name": "Viale delle Milizie",
+        "oneway": "yes"
+      },
+      "lat": 41.911788,
+      "lng": 12.460068549999999,
+      "bounds": [
+        12.4600488,
+        41.9117455,
+        12.4600883,
+        41.9118305
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/248907103": {
+      "osm_type": "way",
+      "osm_id": 248907103,
+      "tags": {
+        "highway": "residential",
+        "name": "Viale delle Milizie",
+        "oneway": "yes"
+      },
+      "lat": 41.91150519999999,
+      "lng": 12.45893575,
+      "bounds": [
+        12.4589219,
+        41.9114715,
+        12.4589496,
+        41.9115389
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/189749278": {
+      "osm_type": "way",
+      "osm_id": 189749278,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes"
+      },
+      "lat": 41.91120004027191,
+      "lng": 12.458196756084416,
+      "bounds": [
+        12.458093,
+        41.9111966,
+        12.4583003,
+        41.9112082
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1376774506": {
+      "osm_type": "way",
+      "osm_id": 1376774506,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      },
+      "lat": 41.911531238540434,
+      "lng": 12.458891254161749,
+      "bounds": [
+        12.458306,
+        41.9113849,
+        12.4594761,
+        41.9116792
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183807": {
+      "osm_type": "way",
+      "osm_id": 161183807,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91264809735555,
+      "lng": 12.464209408099027,
+      "bounds": [
+        12.4631542,
+        41.9123918,
+        12.4652653,
+        41.9129015
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183808": {
+      "osm_type": "way",
+      "osm_id": 161183808,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.913226200172105,
+      "lng": 12.466090462243846,
+      "bounds": [
+        12.4652067,
+        41.9130035,
+        12.4669799,
+        41.9134148
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183810": {
+      "osm_type": "way",
+      "osm_id": 161183810,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.912892619486804,
+      "lng": 12.464409974389774,
+      "bounds": [
+        12.4636581,
+        41.912704,
+        12.465164,
+        41.9130724
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/54618836": {
+      "osm_type": "way",
+      "osm_id": 54618836,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      },
+      "lat": 41.91143106171299,
+      "lng": 12.459638009452558,
+      "bounds": [
+        12.4582774,
+        41.911102,
+        12.4609964,
+        41.9117695
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183811": {
+      "osm_type": "way",
+      "osm_id": 161183811,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.91256879878844,
+      "lng": 12.464247570070734,
+      "bounds": [
+        12.4631881,
+        41.91231,
+        12.4653077,
+        41.9128248
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183813": {
+      "osm_type": "way",
+      "osm_id": 161183813,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "lat": 41.91315115013141,
+      "lng": 12.465488424012273,
+      "bounds": [
+        12.465164,
+        41.9130724,
+        12.4658128,
+        41.9132301
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183816": {
+      "osm_type": "way",
+      "osm_id": 161183816,
+      "tags": {
+        "cycleway:right": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.912231793955534,
+      "lng": 12.462024685153523,
+      "bounds": [
+        12.4609371,
+        41.9119667,
+        12.4631128,
+        41.9124947
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183817": {
+      "osm_type": "way",
+      "osm_id": 161183817,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91343331563929,
+      "lng": 12.467222533387224,
+      "bounds": [
+        12.4669799,
+        41.9134148,
+        12.4674645,
+        41.913459
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183819": {
+      "osm_type": "way",
+      "osm_id": 161183819,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.912752807717865,
+      "lng": 12.464158846755229,
+      "bounds": [
+        12.4631128,
+        41.9124947,
+        12.4652067,
+        41.9130035
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183820": {
+      "osm_type": "way",
+      "osm_id": 161183820,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "sett"
+      },
+      "lat": 41.91320754215,
+      "lng": 12.466885788528678,
+      "bounds": [
+        12.4653077,
+        41.9128248,
+        12.4684597,
+        41.913607
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/28523867": {
+      "osm_type": "way",
+      "osm_id": 28523867,
+      "tags": {
+        "cycleway:right": "separate",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91358635074766,
+      "lng": 12.467963024062826,
+      "bounds": [
+        12.4674645,
+        41.913459,
+        12.4684617,
+        41.9137131
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/161183821": {
+      "osm_type": "way",
+      "osm_id": 161183821,
+      "tags": {
+        "cycleway:both": "separate",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      },
+      "lat": 41.91230002309831,
+      "lng": 12.461998072012872,
+      "bounds": [
+        12.460911,
+        41.9120372,
+        12.4630853,
+        41.9125622
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/219168682": {
+      "osm_type": "way",
+      "osm_id": 219168682,
+      "tags": {
+        "highway": "residential",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "source:maxspeed": "sign"
+      },
+      "lat": 41.91089079542323,
+      "lng": 12.457430890185362,
+      "bounds": [
+        12.4569427,
+        41.9107701,
+        12.4579202,
+        41.9110052
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/169506735": {
+      "osm_type": "way",
+      "osm_id": 169506735,
+      "tags": {
+        "access": "no",
+        "highway": "service",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "source:maxspeed": "sign"
+      },
+      "lat": 41.91122478584916,
+      "lng": 12.458173002331238,
+      "bounds": [
+        12.458093,
+        41.9112082,
+        12.4582528,
+        41.9112423
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/189749276": {
+      "osm_type": "way",
+      "osm_id": 189749276,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes"
+      },
+      "lat": 41.91136095,
+      "lng": 12.458204,
+      "bounds": [
+        12.458102,
+        41.911337,
+        12.458306,
+        41.9113849
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/189749277": {
+      "osm_type": "way",
+      "osm_id": 189749277,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "source:maxspeed": "sign",
+        "surface": "asphalt"
+      },
+      "lat": 41.9111759,
+      "lng": 12.457963450000001,
+      "bounds": [
+        12.4578339,
+        41.9111436,
+        12.458093,
+        41.9112082
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/189749279": {
+      "osm_type": "way",
+      "osm_id": 189749279,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "source:maxspeed": "sign",
+        "surface": "asphalt"
+      },
+      "lat": 41.910784229471545,
+      "lng": 12.456371261306236,
+      "bounds": [
+        12.4549104,
+        41.9104177,
+        12.4578339,
+        41.9111436
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/189749281": {
+      "osm_type": "way",
+      "osm_id": 189749281,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      },
+      "lat": 41.91117447751455,
+      "lng": 12.457435588097738,
+      "bounds": [
+        12.4569286,
+        41.9110471,
+        12.4579434,
+        41.9112986
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/109167757": {
+      "osm_type": "way",
+      "osm_id": 109167757,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Milizie",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.91126923723523,
+      "lng": 12.45819310202099,
+      "bounds": [
+        12.458093,
+        41.9112082,
+        12.4583036,
+        41.9113086
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/140852128": {
+      "osm_type": "way",
+      "osm_id": 140852128,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Galline Bianche",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban",
+        "surface": "asphalt"
+      },
+      "lat": 41.99722792559444,
+      "lng": 12.489684214312327,
+      "bounds": [
+        12.4849537,
+        41.9963247,
+        12.4940689,
+        41.9984034
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/51033613": {
+      "osm_type": "way",
+      "osm_id": 51033613,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Galline Bianche",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.99871915866064,
+      "lng": 12.494877124433179,
+      "bounds": [
+        12.4943,
+        41.9984058,
+        12.4955379,
+        41.9987777
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/51033614": {
+      "osm_type": "way",
+      "osm_id": 51033614,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Galline Bianche",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.998608206789854,
+      "lng": 12.493849017190968,
+      "bounds": [
+        12.493556,
+        41.9984034,
+        12.4940607,
+        41.9986834
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/51032349": {
+      "osm_type": "way",
+      "osm_id": 51032349,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Galline Bianche",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban",
+        "surface": "asphalt"
+      },
+      "lat": 41.99706390748996,
+      "lng": 12.490078660102776,
+      "bounds": [
+        12.4855625,
+        41.996029,
+        12.4943,
+        41.9984058
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/51032369": {
+      "osm_type": "way",
+      "osm_id": 51032369,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Galline Bianche",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.99857891944627,
+      "lng": 12.494068096521124,
+      "bounds": [
+        12.4940607,
+        41.9984034,
+        12.4940928,
+        41.9987523
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/190850048": {
+      "osm_type": "way",
+      "osm_id": 190850048,
+      "tags": {
+        "highway": "residential",
+        "name": "Vicolo delle Galline Bianche"
+      },
+      "lat": 41.99726379911697,
+      "lng": 12.493824446581385,
+      "bounds": [
+        12.4937596,
+        41.9968891,
+        12.4938816,
+        41.9976363
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/129252070": {
+      "osm_type": "way",
+      "osm_id": 129252070,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Viale delle Galline Bianche",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.998602248893796,
+      "lng": 12.494327075464035,
+      "bounds": [
+        12.4942252,
+        41.9984058,
+        12.4943284,
+        41.9987643
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/289959061": {
+      "osm_type": "way",
+      "osm_id": 289959061,
+      "tags": {
+        "highway": "service",
+        "name": "Viale delle Galline Bianche"
+      },
+      "lat": 41.997566199999994,
+      "lng": 12.49316325,
+      "bounds": [
+        12.4931339,
+        41.9975282,
+        12.4931926,
+        41.9976042
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/289959062": {
+      "osm_type": "way",
+      "osm_id": 289959062,
+      "tags": {
+        "highway": "service",
+        "name": "Viale delle Galline Bianche"
+      },
+      "lat": 41.99767966723101,
+      "lng": 12.493338325907926,
+      "bounds": [
+        12.4926948,
+        41.9974419,
+        12.4938593,
+        41.9980717
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/122293122": {
+      "osm_type": "way",
+      "osm_id": 122293122,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via della Rustica",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.9123202461018,
+      "lng": 12.607087386859963,
+      "bounds": [
+        12.6037764,
+        41.9116668,
+        12.6100835,
+        41.9138651
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/73063465": {
+      "osm_type": "way",
+      "osm_id": 73063465,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via della Rustica",
+        "oneway": "yes",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.904861264602125,
+      "lng": 12.594324291971628,
+      "bounds": [
+        12.5936863,
+        41.9044111,
+        12.5950202,
+        41.9052279
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/201924362": {
+      "osm_type": "way",
+      "osm_id": 201924362,
+      "tags": {
+        "highway": "services",
+        "name": "La Rustica",
+        "toilets": "yes"
+      },
+      "lat": 41.9161642,
+      "lng": 12.602656974820851,
+      "bounds": [
+        12.6021829,
+        41.9158547,
+        12.6037586,
+        41.9165637
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/197461078": {
+      "osm_type": "way",
+      "osm_id": 197461078,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via della Rustica",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.90979903072256,
+      "lng": 12.600227284005113,
+      "bounds": [
+        12.5991611,
+        41.9090238,
+        12.6009053,
+        41.9109428
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/100985782": {
+      "osm_type": "way",
+      "osm_id": 100985782,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via della Rustica",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.906313975875506,
+      "lng": 12.596910533137585,
+      "bounds": [
+        12.5950202,
+        41.9052279,
+        12.598648,
+        41.9075997
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/137236231": {
+      "osm_type": "way",
+      "osm_id": 137236231,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via della Rustica",
+        "source:maxspeed": "IT:urban",
+        "surface": "asphalt"
+      },
+      "lat": 41.91133883054115,
+      "lng": 12.602330797339155,
+      "bounds": [
+        12.6009053,
+        41.9109428,
+        12.6037764,
+        41.9116668
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/50265994": {
+      "osm_type": "way",
+      "osm_id": 50265994,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via della Rustica",
+        "source:maxspeed": "IT:urban"
+      },
+      "lat": 41.91402950000413,
+      "lng": 12.612235428057653,
+      "bounds": [
+        12.6103175,
+        41.9137819,
+        12.6141662,
+        41.9141374
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/202269103": {
+      "osm_type": "way",
+      "osm_id": 202269103,
+      "tags": {
+        "highway": "service",
+        "name": "Via della Rustica"
+      },
+      "lat": 41.912166150000004,
+      "lng": 12.6059548,
+      "bounds": [
+        12.6059079,
+        41.9120701,
+        12.6060017,
+        41.9122622
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/202269104": {
+      "osm_type": "way",
+      "osm_id": 202269104,
+      "tags": {
+        "highway": "service",
+        "name": "Via della Rustica"
+      },
+      "lat": 41.91225913335808,
+      "lng": 12.605895170167598,
+      "bounds": [
+        12.60546,
+        41.911961,
+        12.6064523,
+        41.9123661
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/232334951": {
+      "osm_type": "way",
+      "osm_id": 232334951,
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Via Enrico Minio",
+        "oneway": "no"
+      },
+      "lat": 42.29821690484023,
+      "lng": 12.40951716201411,
+      "bounds": [
+        12.4089912,
+        42.2974583,
+        12.4102434,
+        42.2987773
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/72878166": {
+      "osm_type": "way",
+      "osm_id": 72878166,
+      "tags": {
+        "highway": "residential",
+        "name": "Via A. De Gasperi",
+        "surface": "asphalt"
+      },
+      "lat": 41.29892009272641,
+      "lng": 13.829787226741843,
+      "bounds": [
+        13.8234104,
+        41.2949975,
+        13.8362041,
+        41.3068979
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/151071456": {
+      "osm_type": "way",
+      "osm_id": 151071456,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "name": "Via Cardinal Pietro Parente",
+        "parking:both": "no",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.82088830118836,
+      "lng": 12.81828061906597,
+      "bounds": [
+        12.814316,
+        41.8191644,
+        12.8217527,
+        41.8236535
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/198742458": {
+      "osm_type": "way",
+      "osm_id": 198742458,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "maxweight": "8",
+        "name": "Via Cardinal Pietro Parente",
+        "parking:both": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.82442970461857,
+      "lng": 12.823517984681354,
+      "bounds": [
+        12.8217527,
+        41.8236535,
+        12.825242,
+        41.8253237
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/65573732": {
+      "osm_type": "way",
+      "osm_id": 65573732,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "name": "Via Cavour",
+        "surface": "asphalt"
+      },
+      "lat": 41.77269223881918,
+      "lng": 12.920977888740433,
+      "bounds": [
+        12.9208848,
+        41.7720592,
+        12.9214282,
+        41.7729161
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/284331191": {
+      "osm_type": "way",
+      "osm_id": 284331191,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Francesco d'Assisi"
+      },
+      "lat": 41.96616883545741,
+      "lng": 12.769646896950269,
+      "bounds": [
+        12.7670608,
+        41.9655732,
+        12.7697181,
+        41.9685946
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/192327068": {
+      "osm_type": "way",
+      "osm_id": 192327068,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Via Prenestina",
+        "ref": "SR155",
+        "surface": "asphalt",
+        "wikidata": "Q3974772",
+        "wikipedia": "it:Strada statale 155 di Fiuggi"
+      },
+      "lat": 41.82665348337811,
+      "lng": 13.134522802223517,
+      "bounds": [
+        13.1195934,
+        41.8162447,
+        13.1390294,
+        41.8291986
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1314889053": {
+      "osm_type": "way",
+      "osm_id": 1314889053,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Via Prenestina",
+        "ref": "SR155",
+        "surface": "asphalt",
+        "wikidata": "Q3974772",
+        "wikipedia": "it:Strada statale 155 di Fiuggi"
+      },
+      "lat": 41.816171049999994,
+      "lng": 13.13698035,
+      "bounds": [
+        13.1369371,
+        41.8161528,
+        13.1370236,
+        41.8161893
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1314889056": {
+      "osm_type": "way",
+      "osm_id": 1314889056,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Via Prenestina",
+        "ref": "SR155",
+        "surface": "asphalt",
+        "wikidata": "Q3974772",
+        "wikipedia": "it:Strada statale 155 di Fiuggi"
+      },
+      "lat": 41.81610415,
+      "lng": 13.13679705,
+      "bounds": [
+        13.1367182,
+        41.8160769,
+        13.1368759,
+        41.8161314
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1314889057": {
+      "osm_type": "way",
+      "osm_id": 1314889057,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Via Prenestina",
+        "ref": "SR155",
+        "surface": "asphalt",
+        "wikidata": "Q3974772",
+        "wikipedia": "it:Strada statale 155 di Fiuggi"
+      },
+      "lat": 41.8161421,
+      "lng": 13.1369065,
+      "bounds": [
+        13.1368759,
+        41.8161314,
+        13.1369371,
+        41.8161528
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1314889058": {
+      "osm_type": "way",
+      "osm_id": 1314889058,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Via Prenestina",
+        "ref": "SR155",
+        "surface": "asphalt",
+        "wikidata": "Q3974772",
+        "wikipedia": "it:Strada statale 155 di Fiuggi"
+      },
+      "lat": 41.816216999999995,
+      "lng": 13.13705595,
+      "bounds": [
+        13.1370236,
+        41.8161893,
+        13.1370883,
+        41.8162447
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1157887711": {
+      "osm_type": "way",
+      "osm_id": 1157887711,
+      "tags": {
+        "highway": "service",
+        "name": "Via Agrolatino",
+        "service": "driveway",
+        "surface": "unpaved"
+      },
+      "lat": 41.79078539320499,
+      "lng": 12.872020749783294,
+      "bounds": [
+        12.8707302,
+        41.7899528,
+        12.8735459,
+        41.7912222
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/775535688": {
+      "osm_type": "way",
+      "osm_id": 775535688,
+      "tags": {
+        "highway": "track",
+        "name": "Via Agrolatino"
+      },
+      "lat": 41.79296630416852,
+      "lng": 12.872367830403148,
+      "bounds": [
+        12.8719404,
+        41.7919866,
+        12.8730091,
+        41.7936496
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1444284090": {
+      "osm_type": "way",
+      "osm_id": 1444284090,
+      "tags": {
+        "highway": "service",
+        "name": "Via Agrolatino",
+        "service": "driveway"
+      },
+      "lat": 41.796412950000004,
+      "lng": 12.86498075,
+      "bounds": [
+        12.8644645,
+        41.7954977,
+        12.865497,
+        41.7973282
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1444284096": {
+      "osm_type": "way",
+      "osm_id": 1444284096,
+      "tags": {
+        "highway": "service",
+        "name": "Via Agrolatino",
+        "service": "driveway"
+      },
+      "lat": 41.79207119674281,
+      "lng": 12.873723610368623,
+      "bounds": [
+        12.8726922,
+        41.7911694,
+        12.8739522,
+        41.7923888
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1192815098": {
+      "osm_type": "way",
+      "osm_id": 1192815098,
+      "tags": {
+        "highway": "service",
+        "name": "Via Agrolatino"
+      },
+      "lat": 41.796913924627425,
+      "lng": 12.862181873246229,
+      "bounds": [
+        12.8620011,
+        41.7966474,
+        12.862324,
+        41.7972031
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/288001587": {
+      "osm_type": "way",
+      "osm_id": 288001587,
+      "tags": {
+        "highway": "service",
+        "name": "Via Agrolatino"
+      },
+      "lat": 41.79652487447244,
+      "lng": 12.861022483861248,
+      "bounds": [
+        12.8607358,
+        41.7960797,
+        12.8613233,
+        41.7969605
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/522446336": {
+      "osm_type": "way",
+      "osm_id": 522446336,
+      "tags": {
+        "highway": "unclassified",
+        "name": "via Mainello"
+      },
+      "lat": 41.865342775469266,
+      "lng": 12.799845110425064,
+      "bounds": [
+        12.7979223,
+        41.8630076,
+        12.8014708,
+        41.8675171
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/522446338": {
+      "osm_type": "way",
+      "osm_id": 522446338,
+      "tags": {
+        "highway": "unclassified",
+        "name": "via Mainello"
+      },
+      "lat": 41.866968227743214,
+      "lng": 12.797006217809479,
+      "bounds": [
+        12.7960274,
+        41.8665119,
+        12.7979772,
+        41.8674551
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/81524404": {
+      "osm_type": "way",
+      "osm_id": 81524404,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Sardegna",
+        "oneway": "yes"
+      },
+      "lat": 41.95452847972236,
+      "lng": 12.769824135517608,
+      "bounds": [
+        12.7691135,
+        41.9532785,
+        12.7704737,
+        41.9557444
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/90049874": {
+      "osm_type": "way",
+      "osm_id": 90049874,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Colle Ristretti"
+      },
+      "lat": 41.83869361457092,
+      "lng": 12.81359176232715,
+      "bounds": [
+        12.8112346,
+        41.8298546,
+        12.814543,
+        41.8463478
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/405558001": {
+      "osm_type": "way",
+      "osm_id": 405558001,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Colle Ristretti",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.8297707,
+      "lng": 12.8117327,
+      "bounds": [
+        12.8117297,
+        41.8296868,
+        12.8117357,
+        41.8298546
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/90051693": {
+      "osm_type": "way",
+      "osm_id": 90051693,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "layer": "-1",
+        "name": "Via Colle Ristretti",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      },
+      "lat": 41.82960285,
+      "lng": 12.81174315,
+      "bounds": [
+        12.8117357,
+        41.8295189,
+        12.8117506,
+        41.8296868
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/193387585": {
+      "osm_type": "way",
+      "osm_id": 193387585,
+      "tags": {
+        "highway": "residential",
+        "name": "Via del Canopo"
+      },
+      "lat": 41.941841787692276,
+      "lng": 12.757332854401076,
+      "bounds": [
+        12.7569591,
+        41.941081,
+        12.7574392,
+        41.9426974
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/37184342": {
+      "osm_type": "way",
+      "osm_id": 37184342,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Emilio Cialdini"
+      },
+      "lat": 41.963436257623584,
+      "lng": 12.752753648729042,
+      "bounds": [
+        12.7519902,
+        41.9624571,
+        12.7535026,
+        41.9644194
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/24058984": {
+      "osm_type": "way",
+      "osm_id": 24058984,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Via dell'Oratorio di Santa Rita",
+        "oneway": "no",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.45765748234513,
+      "lng": 12.625788081763732,
+      "bounds": [
+        12.6212635,
+        41.4571434,
+        12.6306631,
+        41.4593555
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/83130578": {
+      "osm_type": "way",
+      "osm_id": 83130578,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Via dell'Oratorio di Santa Rita",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.45743454158774,
+      "lng": 12.630759225589903,
+      "bounds": [
+        12.6306631,
+        41.4574342,
+        12.6308562,
+        41.4574481
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/83130596": {
+      "osm_type": "way",
+      "osm_id": 83130596,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Via dell'Oratorio di Santa Rita",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.45738495725267,
+      "lng": 12.630735523077071,
+      "bounds": [
+        12.6306631,
+        41.4573603,
+        12.630829,
+        41.4574481
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/24058998": {
+      "osm_type": "way",
+      "osm_id": 24058998,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Via dell'Oratorio di Santa Rita",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 41.456977764381854,
+      "lng": 12.631106917376293,
+      "bounds": [
+        12.6309228,
+        41.4566404,
+        12.6311095,
+        41.4572984
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/34051305": {
+      "osm_type": "way",
+      "osm_id": 34051305,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Strada della Palanzana",
+        "surface": "asphalt"
+      },
+      "lat": 42.41590907137369,
+      "lng": 12.133719707425454,
+      "bounds": [
+        12.122443,
+        42.4099034,
+        12.1426917,
+        42.4189468
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/668837829": {
+      "osm_type": "way",
+      "osm_id": 668837829,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Strada della Palanzana"
+      },
+      "lat": 42.4098068,
+      "lng": 12.142746500000001,
+      "bounds": [
+        12.1426917,
+        42.4097102,
+        12.1428013,
+        42.4099034
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/934787941": {
+      "osm_type": "way",
+      "osm_id": 934787941,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "name": "Strada della Palanzana",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 42.41955963569959,
+      "lng": 12.119753123398846,
+      "bounds": [
+        12.1197527,
+        42.4194794,
+        12.1197647,
+        42.4196391
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/934787942": {
+      "osm_type": "way",
+      "osm_id": 934787942,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "name": "Strada della Palanzana",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "lat": 42.41959994976676,
+      "lng": 12.11967226052728,
+      "bounds": [
+        12.1195764,
+        42.4195702,
+        12.1197647,
+        42.4196391
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/33742379": {
+      "osm_type": "way",
+      "osm_id": 33742379,
+      "tags": {
+        "highway": "residential",
+        "name": "Strada della Palanzana",
+        "surface": "asphalt"
+      },
+      "lat": 42.41942224661851,
+      "lng": 12.120976619603967,
+      "bounds": [
+        12.1197647,
+        42.4189324,
+        12.122443,
+        42.419986
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/101446574": {
+      "osm_type": "way",
+      "osm_id": 101446574,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Via per la Stazione d'Aquino",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "lat": 41.52240940323705,
+      "lng": 13.697137139185603,
+      "bounds": [
+        13.6950525,
+        41.5109612,
+        13.7037992,
+        41.5302357
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/node/5397011008": {
+      "osm_type": "node",
+      "osm_id": 5397011008,
+      "tags": {
+        "addr:housenumber": "21",
+        "addr:street": "Via Francesco Baracca",
+        "amenity": "social_facility",
+        "healthcare": "laboratory",
+        "name": "Casa di Cura \"Villa Rosa\"",
+        "operator": "Suore Ospedaliere del Sacro Cuore di Gesù",
+        "phone": "+39 0761 33781",
+        "social_facility": "nursing_home",
+        "social_facility:for": "senior",
+        "website": "https://viterbo.ospedaliere.it/"
+      },
+      "lat": 42.4262877,
+      "lng": 12.107493,
+      "kind": "node"
+    },
+    "https://www.openstreetmap.org/node/4869726879": {
+      "osm_type": "node",
+      "osm_id": 4869726879,
+      "tags": {
+        "addr:city": "Roma",
+        "addr:housenumber": "305",
+        "addr:postcode": "00186",
+        "addr:street": "Corso Vittorio Emanuele II",
+        "source": "mapillary"
+      },
+      "lat": 41.8993716,
+      "lng": 12.4668912,
+      "kind": "node"
+    },
+    "https://www.openstreetmap.org/way/122529610": {
+      "osm_type": "way",
+      "osm_id": 122529610,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Custoza",
+        "surface": "asphalt"
+      },
+      "lat": 41.474086306303626,
+      "lng": 12.907662796692836,
+      "bounds": [
+        12.9070818,
+        41.4738596,
+        12.9082441,
+        41.4743138
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/34995159": {
+      "osm_type": "way",
+      "osm_id": 34995159,
+      "tags": {
+        "highway": "residential",
+        "name": "Via Nuova",
+        "oneway": "yes"
+      },
+      "lat": 42.40494101709561,
+      "lng": 12.867207356452553,
+      "bounds": [
+        12.8635744,
+        42.404297,
+        12.8708854,
+        42.4052343
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/27336187": {
+      "osm_type": "way",
+      "osm_id": 27336187,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "80",
+        "name": "Via Pantano",
+        "ref": "SP28b",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.98400546889763,
+      "lng": 12.727314941864607,
+      "bounds": [
+        12.7251539,
+        41.9828962,
+        12.7294747,
+        41.9851089
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1158374502": {
+      "osm_type": "way",
+      "osm_id": 1158374502,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "oneway": "yes"
+      },
+      "lat": 41.98646479524082,
+      "lng": 12.719197118176224,
+      "bounds": [
+        12.7191095,
+        41.9863574,
+        12.7192288,
+        41.9865383
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1158374503": {
+      "osm_type": "way",
+      "osm_id": 1158374503,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "oneway": "yes"
+      },
+      "lat": 41.986447999999996,
+      "lng": 12.719371500000001,
+      "bounds": [
+        12.7193077,
+        41.9864256,
+        12.7194353,
+        41.9864704
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1158374504": {
+      "osm_type": "way",
+      "osm_id": 1158374504,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "oneway": "yes"
+      },
+      "lat": 41.9862537213081,
+      "lng": 12.719782032529453,
+      "bounds": [
+        12.7196958,
+        41.9861475,
+        12.7199223,
+        41.9862691
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1158374505": {
+      "osm_type": "way",
+      "osm_id": 1158374505,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "oneway": "yes"
+      },
+      "lat": 41.9863104,
+      "lng": 12.7197817,
+      "bounds": [
+        12.7196411,
+        41.9862631,
+        12.7199223,
+        41.9863577
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1158374506": {
+      "osm_type": "way",
+      "osm_id": 1158374506,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "oneway": "yes"
+      },
+      "lat": 41.986504570035336,
+      "lng": 12.719208676164747,
+      "bounds": [
+        12.7191095,
+        41.9864704,
+        12.7193077,
+        41.9865383
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/102225140": {
+      "osm_type": "way",
+      "osm_id": 102225140,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano"
+      },
+      "lat": 41.986099667185364,
+      "lng": 12.720452707052589,
+      "bounds": [
+        12.7199223,
+        41.9859815,
+        12.7209927,
+        41.9862631
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/218422467": {
+      "osm_type": "way",
+      "osm_id": 218422467,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "surface": "asphalt"
+      },
+      "lat": 41.978182000000004,
+      "lng": 12.742457949999999,
+      "bounds": [
+        12.7423864,
+        41.9781632,
+        12.7425295,
+        41.9782008
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/1482551032": {
+      "osm_type": "way",
+      "osm_id": 1482551032,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Via Pantano",
+        "ref": "SP28b",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "lat": 41.9853238057522,
+      "lng": 12.72453726023232,
+      "bounds": [
+        12.7239085,
+        41.9851089,
+        12.7251539,
+        41.9855004
+      ],
+      "kind": "road"
+    },
+    "https://www.openstreetmap.org/way/103180876": {
+      "osm_type": "way",
+      "osm_id": 103180876,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Via Pantano"
+      },
+      "lat": 41.98691612945937,
+      "lng": 12.71797029688418,
+      "bounds": [
+        12.7168399,
+        41.9865383,
+        12.7191095,
+        41.9873196
+      ],
+      "kind": "road"
+    }
+  },
+  "municipalities_checked": [
+    "Acquapendente",
+    "Alatri",
+    "Albano Laziale",
+    "Amatrice",
+    "Anagni",
+    "Anguillara Sabazia",
+    "Antrodoco",
+    "Anzio",
+    "Aprilia",
+    "Ariccia",
+    "Atina",
+    "Ausonia",
+    "Bagnoregio",
+    "Belmonte Castello",
+    "Bracciano",
+    "Campagnano di Roma",
+    "Canino",
+    "Capena",
+    "Capranica",
+    "Cassino",
+    "Castel Madama",
+    "Castelforte",
+    "Castrocielo",
+    "Ceccano",
+    "Ceprano",
+    "Ciampino",
+    "Cisterna di Latina",
+    "Civita Castellana",
+    "Civitavecchia",
+    "Colleferro",
+    "Da consolidare",
+    "Fabrica di Roma",
+    "Fara in Sabina",
+    "Ferentino",
+    "Fiamignano",
+    "Fiano Romano",
+    "Fiumicino",
+    "Fondi",
+    "Formia",
+    "Frascati",
+    "Frosinone",
+    "Gaeta",
+    "Gallicano nel Lazio",
+    "Genzano di Roma",
+    "Guidonia Montecelio",
+    "Isola del Liri",
+    "Itri",
+    "Labico",
+    "Ladispoli",
+    "Latina",
+    "Leonessa",
+    "Magliano Sabina",
+    "Marino",
+    "Minturno",
+    "Montalto di Castro",
+    "Monte Romano",
+    "Montefiascone",
+    "Monterotondo",
+    "Morlupo",
+    "Nepi",
+    "Olevano Romano",
+    "Orte",
+    "Palestrina",
+    "Palombara Sabina",
+    "Piglio",
+    "Poggio Mirteto",
+    "Poggio Moiano / Osteria Nuova",
+    "Pomezia",
+    "Pontecorvo",
+    "Priverno",
+    "Rieti",
+    "Rocca Canterano",
+    "Rocca Priora",
+    "Roccasecca",
+    "Roma",
+    "Ronciglione",
+    "Sabaudia",
+    "San Cesareo",
+    "Santa Marinella",
+    "Santi Cosma e Damiano",
+    "Sant’Elia Fiumerapido",
+    "Sezze",
+    "Sora",
+    "Soriano nel Cimino",
+    "Spigno Saturnia",
+    "Subiaco",
+    "Tarquinia",
+    "Terracina",
+    "Tivoli",
+    "Torricella in Sabina",
+    "Trivigliano",
+    "Tuscania",
+    "Valentano",
+    "Valmontone",
+    "Velletri",
+    "Veroli",
+    "Vetralla",
+    "Vignanello",
+    "Viterbo",
+    "Zagarolo"
+  ]
+}

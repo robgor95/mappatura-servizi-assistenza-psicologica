@@ -1,3 +1,9 @@
+## 7.9.1 — 2026-09-22
+
+442 servizi, 307 localizzati, 135 senza pin. 51 revisioni per campo, due servizi Villa Pia, contratti per singola unità IHG/Gabbiano e ASL Roma 5. Nessuna riscrittura degli overlay precedenti.
+
+Report: `downloads/Release_Notes_V7_9_1.md`; test: `tools/test-ui-v7-9-1.mjs`; integrità e dati: `tools/prepare-release-v7-9-1.py`. Il sito resta statico e noindex. Le sezioni seguenti documentano versioni precedenti.
+
 ## V7.9 — geografia e audit operativo
 
 440 servizi (+8); 236 localizzati, 204 senza pin. 47 schede precedenti riesaminate solo per i campi documentati. 11 casi di gestore con riscontri, IHG pendente. Cinque nuovi indirizzi fisici documentati; Venere/Marte sono due servizi ulteriori ma il loro edificio esatto non è consolidato.
