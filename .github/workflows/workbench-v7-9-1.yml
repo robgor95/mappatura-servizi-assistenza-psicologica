@@ -23,6 +23,16 @@ jobs:
           test "$(gh api repos/$GITHUB_REPOSITORY/git/ref/heads/main --jq .object.sha)" = 937713935c693dbbe50109e6738063cc0395e192
           mkdir -p /tmp/v791-tests /tmp/research-v791 /tmp/contracts-v791
           python .release-v791/restore.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/test-ui-v7-9-1.mjs');s=p.read_text()
+          # Search is intentionally token-based. Use the actual site address to
+          # distinguish Villa Pia from Villa Maria Pia and therapy descriptions.
+          assert s.count("/mappa.html?q=Villa+Pia'")==1
+          assert s.count("fill('Villa Pia')")==1
+          s=s.replace('/mappa.html?q=Villa+Pia\'', '/mappa.html?q=Villa+Pia+Pantano\'').replace("fill('Villa Pia')","fill('Villa Pia Pantano')").replace('1442','1440')
+          p.write_text(s)
+          PY
           gh api repos/$GITHUB_REPOSITORY/actions/artifacts/10692995886/zip > /tmp/research-v791.zip
           gh api repos/$GITHUB_REPOSITORY/actions/artifacts/10692715958/zip > /tmp/contracts-v791.zip
           unzip -qo /tmp/research-v791.zip -d /tmp/research-v791
