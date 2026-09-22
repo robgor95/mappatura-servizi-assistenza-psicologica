@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const root=process.cwd(),ctx={URL,URLSearchParams};ctx.window=ctx;vm.createContext(ctx);
+const root=process.cwd(),ctx={URL,URLSearchParams,document:{readyState:'complete',getElementById:()=>null,querySelectorAll:()=>[],addEventListener:()=>{}}};ctx.window=ctx;vm.createContext(ctx);
 function run(p){vm.runInContext(fs.readFileSync(p,'utf8'),ctx,{filename:p});}
 run('assets/servizi-data-v7-5-1.js');
 for(const n of ['audit-data-v7-9','audit-data-v7-9-1','audit-data-v7-9-2','audit-data-v7-9-3'])run('assets/'+n+'.js');
