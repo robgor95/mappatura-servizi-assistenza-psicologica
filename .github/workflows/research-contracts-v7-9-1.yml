@@ -1,0 +1,43 @@
+name: V7.9.1 unit contract sources
+on:
+  push:
+    branches: [geografia-operativita-v7-9-1]
+    paths: [.github/workflows/research-contracts-v7-9-1.yml]
+permissions:
+  contents: read
+jobs:
+  documents:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Cache a finite set of official documents
+        run: |
+          python -m pip install requests beautifulsoup4
+          python - <<'PY'
+          import requests,pathlib,hashlib,json,time,unicodedata,urllib.parse
+          from bs4 import BeautifulSoup
+          out=pathlib.Path('/tmp/contracts-v791');out.mkdir()
+          ua={'User-Agent':'LazioServicesDocumentaryAudit/7.9.1 (+https://github.com/robgor95/mappatura-servizi-assistenza-psicologica)'}
+          page='https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/'
+          r=requests.get(page,headers=ua,timeout=30);r.raise_for_status()
+          names=['Strutture Private Accreditate','Al Colle','Al Colle - integrazione','Insieme','Insieme - integrazione','Operiamo Assieme','Operiamo Assieme - integrazione','Psichiatria Colle Cesarano','Psichiatria Colle Cesarano - integrazione','Rosaurora','Rosaurora - integrazione','La Staffa','La Staffa - integrazione','Villa Maddalena','Villa Maddalena - integrazione','Villa Letizia','Villa Letizia - integrazione','Villa Elisa','Villa Elisa - integrazione','Comunità Francesco','Comunità Francesco - integrazione']
+          norm=lambda s:unicodedata.normalize('NFC',s).strip()
+          links=[(norm(a.get_text(' ',strip=True)),urllib.parse.urljoin(page,a['href'])) for a in BeautifulSoup(r.content,'html.parser').select('a[href]') if norm(a.get_text(' ',strip=True)) in names]
+          index=[]
+          for title,u in dict(links).items():
+           info={'title':title,'url':u,'retrieved_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
+           try:
+            r=requests.get(u,headers=ua,timeout=40);info['status']=r.status_code
+            if r.status_code==200 and r.content.startswith(b'%PDF'):
+             name=hashlib.sha256(u.encode()).hexdigest()[:20]+'.pdf';(out/name).write_bytes(r.content);info.update(file=name,bytes=len(r.content),sha256=hashlib.sha256(r.content).hexdigest())
+           except Exception as e:info['error']=str(e)
+           index.append(info);time.sleep(.4)
+          (out/'source-index.json').write_text(json.dumps(index,ensure_ascii=False,indent=2));print('Acquired',sum('file' in i for i in index),'of',len(index))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-9-1-unit-contracts
+          path: /tmp/contracts-v791/
+          retention-days: 14
+          if-no-files-found: error
