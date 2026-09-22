@@ -1,0 +1,456 @@
+{
+  "version": "7.9.3",
+  "baseline_commit": "e6bd577501939141624ce02aad18d6c956796ddb",
+  "checked_at": "2026-09-22",
+  "scope": "Overlay operativo additivo successivo a V7.9.2; nessuna riscrittura dei dataset storici.",
+  "revisions": [
+    {
+      "service_key": "rete:R1-08",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "accesso": "Accesso diretto per il primo contatto tramite il Punto Unico di Accesso (PUA) distrettuale.",
+        "orari": "Lunedì, martedì, mercoledì, giovedì, venerdì e sabato 08:00–20:00 secondo la scheda del presidio.",
+        "trasporto_pubblico": "Linea ATAC 46.",
+        "nota_accesso_v793": "La scheda ufficiale indica accesso diretto tramite PUA; non equivale a pronto soccorso né a disponibilità immediata."
+      },
+      "evidence": {
+        "accesso": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "trasporto_pubblico": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_accesso_v793": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea"
+      ],
+      "note": "Aggiornati accesso, orari e trasporto dalla scheda ASL Roma 1 aggiornata il 12/08/2026.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:R1-09",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "accesso": "Accesso diretto per il primo contatto tramite il Punto Unico di Accesso (PUA) distrettuale.",
+        "orari": "Accesso libero lunedì–venerdì 08:00–14:00; attività con accesso programmato lunedì 14:00–20:00 e mercoledì 14:00–17:00.",
+        "trasporto_pubblico": "Linea ATAC 916; Metro A, fermata Cornelia.",
+        "nota_accesso_v793": "Orari distinti tra accesso libero e attività programmate; verificare eventuali variazioni direttamente con il servizio."
+      },
+      "evidence": {
+        "accesso": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "trasporto_pubblico": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_accesso_v793": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv"
+      ],
+      "note": "Aggiornati accesso, orari e trasporto dalla scheda ufficiale del CSM.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:R1-15",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "telefono": "+39 06 6010.5383",
+        "email": "uosdip.est2@aslroma1.it",
+        "accesso": "Prestazioni gratuite e senza richiesta del medico curante; accesso secondo i criteri territoriali e clinico-organizzativi pubblicati dal SerD.",
+        "criteri_ammissione": "La scheda ufficiale indica accesso riservato ai residenti nel Municipio 2 per specifici percorsi; contempla inoltre assistenza a persone STP/ENI con disturbo da uso di oppioidi secondo le condizioni riportate.",
+        "orari": "Servizio: lun 08:00–15:30; mar 08:00–15:30; mer 08:00–16:00; gio 08:00–14:30; ven 08:00–14:30; sabato, domenica e festivi chiuso.",
+        "trasporto_pubblico": "Linee ATAC 60, 66, 82, N66, N90; Metro B.",
+        "nota_accesso_v793": "I criteri completi dipendono dal percorso; la sintesi non sostituisce la verifica con il SerD."
+      },
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "accesso": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "criteri_ammissione": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "trasporto_pubblico": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_accesso_v793": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+      ],
+      "note": "Riesame della scheda ASL Roma 1 aggiornata il 16/09/2026.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:R1-19",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "telefono": "06 6010.5609",
+        "accesso": "Accesso tramite PUA di Via Cassia 472, martedì e giovedì 08:30–12:30.",
+        "orari": "Martedì e giovedì 08:30–12:30.",
+        "destinatari": "Residenti del Distretto 15 fino ai 30 anni con bisogni complessi nelle aree di salute mentale indicate dalla scheda ufficiale.",
+        "trasporto_pubblico": "Linee ATAC 201, 223, 226, 301.",
+        "nota_accesso_v793": "Il Polo integra più servizi; l'accesso al singolo percorso viene definito dopo la presa in carico/valutazione."
+      },
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "accesso": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "destinatari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "trasporto_pubblico": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_accesso_v793": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+      ],
+      "note": "Riesame di accesso, destinatari, orari, trasporto e contatto.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:RI-03",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "accessibilita": "Inventario immobili ASL: per il Poliambulatorio di Via Finocchieto 1 è indicato 'sì' alla voce accessibilità/abbattimento barriere architettoniche. È un dato dell'edificio, non una verifica del percorso interno al CSM.",
+        "nota_indirizzo": "La pagina del servizio usa Via Finocchieto snc; l'inventario immobili ASL identifica il Poliambulatorio come Via Finocchieto 1."
+      },
+      "evidence": {
+        "accessibilita": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "note": "Aggiunta evidenza edilizia dell'immobile senza trasformarla in verifica dell'ingresso del singolo servizio.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:RI-06",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "accessibilita": "Inventario immobili ASL: per il Poliambulatorio di Via Finocchieto 1 è indicato 'sì' alla voce accessibilità/abbattimento barriere architettoniche. È un dato dell'edificio, non una verifica del percorso interno al SerD.",
+        "nota_indirizzo": "La pagina del servizio usa Via Finocchieto snc; l'inventario immobili ASL identifica il Poliambulatorio come Via Finocchieto 1."
+      },
+      "evidence": {
+        "accessibilita": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "note": "Il SerD è indicato nella sede di Poggio Mirteto; l'accessibilità è riferita all'immobile condiviso.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:RI-12",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "accessibilita": "Inventario immobili ASL: per l'Ospedale di Vocabolo Filoni 1 è indicato 'sì' alla voce accessibilità/abbattimento barriere architettoniche. Non è una verifica dell'ingresso specifico dell'ambulatorio CSM.",
+        "nota_accesso_v793": "L'evidenza riguarda l'edificio ospitante, non il tragitto fino al singolo ambulatorio."
+      },
+      "evidence": {
+        "accessibilita": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_accesso_v793": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "note": "Aggiunta evidenza sull'accessibilità dell'edificio ospitante.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "rete:RI-10",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "nota_indirizzo": "Conflitto tra fonti ASL da non risolvere automaticamente: la pagina CSM Distretto 1 riporta Via F. Grifoni 26; l'elenco Ambulatori corrente colloca 'CUP, Ambulatorio CSM, Consultorio Pediatrico e PASS Amatrice' presso Ex Istituto Omnicomprensivo, frazione Villa S. Cipriano. Sede fisica da riconfermare prima di creare un pin."
+      },
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+            "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "note": "Conflitto di sede conservato esplicitamente; nessuna correzione arbitraria dell'indirizzo.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "moduli:MOD-061",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "budget_2026_stato": "La Regione Lazio risulta aver adottato il 30/12/2025 un provvedimento sul livello massimo di finanziamento 2026 per l'assistenza psichiatrica privata accreditata; la quota/budget 2026 della singola struttura non è stata acquisita in questo riesame.",
+        "nota_budget_2026": "Il livello regionale/aziendale non va interpretato come budget unitario della struttura. Rimane necessaria la deliberazione/assegnazione specifica della ASL."
+      },
+      "evidence": {
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_budget_2026": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+      ],
+      "note": "Precisato il contesto 2026 senza attribuire un importo unitario non documentato.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "moduli:MOD-062",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "budget_2026_stato": "La Regione Lazio risulta aver adottato il 30/12/2025 un provvedimento sul livello massimo di finanziamento 2026 per l'assistenza psichiatrica privata accreditata; la quota/budget 2026 della singola struttura non è stata acquisita in questo riesame.",
+        "nota_budget_2026": "Il livello regionale/aziendale non va interpretato come budget unitario della struttura. Rimane necessaria la deliberazione/assegnazione specifica della ASL."
+      },
+      "evidence": {
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_budget_2026": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+      ],
+      "note": "Precisato il contesto 2026 senza attribuire un importo unitario non documentato.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "moduli:MOD-063",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "budget_2026_stato": "La Regione Lazio risulta aver adottato il 30/12/2025 un provvedimento sul livello massimo di finanziamento 2026 per l'assistenza psichiatrica privata accreditata; la quota/budget 2026 della singola struttura non è stata acquisita in questo riesame.",
+        "nota_budget_2026": "Il livello regionale/aziendale non va interpretato come budget unitario della struttura. Rimane necessaria la deliberazione/assegnazione specifica della ASL."
+      },
+      "evidence": {
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_budget_2026": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+      ],
+      "note": "Precisato il contesto 2026 senza attribuire un importo unitario non documentato.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "moduli:MOD-064",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "budget_2026_stato": "La Regione Lazio risulta aver adottato il 30/12/2025 un provvedimento sul livello massimo di finanziamento 2026 per l'assistenza psichiatrica privata accreditata; la quota/budget 2026 della singola struttura non è stata acquisita in questo riesame.",
+        "nota_budget_2026": "Il livello regionale/aziendale non va interpretato come budget unitario della struttura. Rimane necessaria la deliberazione/assegnazione specifica della ASL."
+      },
+      "evidence": {
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_budget_2026": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+      ],
+      "note": "Precisato il contesto 2026 senza attribuire un importo unitario non documentato.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    },
+    {
+      "service_key": "moduli:MOD-065",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "budget_2026_stato": "La Regione Lazio risulta aver adottato il 30/12/2025 un provvedimento sul livello massimo di finanziamento 2026 per l'assistenza psichiatrica privata accreditata; la quota/budget 2026 della singola struttura non è stata acquisita in questo riesame.",
+        "nota_budget_2026": "Il livello regionale/aziendale non va interpretato come budget unitario della struttura. Rimane necessaria la deliberazione/assegnazione specifica della ASL."
+      },
+      "evidence": {
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        },
+        "nota_budget_2026": {
+          "sources": [
+            "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+          ],
+          "checked_at": "2026-09-22"
+        }
+      },
+      "sources": [
+        "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+      ],
+      "note": "Precisato il contesto 2026 senza attribuire un importo unitario non documentato.",
+      "scope": "Riesame documentale per campo; nessuna telefonata, sopralluogo, verifica del percorso interno o disponibilità in tempo reale."
+    }
+  ],
+  "additions": [],
+  "summary": {
+    "records_reexamined": 13,
+    "roma1_operational_records": 4,
+    "rieti_accessibility_or_address_records": 4,
+    "roma5_budget_context_records": 5,
+    "unit_2026_budgets_acquired": 0,
+    "physical_entrances_verified": 0,
+    "telephone_calls": 0,
+    "site_visits": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "version": "7.9.3",
+  "baseline_commit": "e6bd577501939141624ce02aad18d6c956796ddb",
+  "checked_at": "2026-09-22",
+  "summary": {
+    "records_reexamined": 13,
+    "roma1_operational_records": 4,
+    "rieti_accessibility_records": 3,
+    "rieti_address_conflicts_added": 1,
+    "roma5_budget_context_records": 5,
+    "new_services": 0,
+    "new_geographic_points": 0,
+    "physical_entrances_verified": 0,
+    "unit_2026_budgets_acquired": 0,
+    "telephone_calls": 0,
+    "site_visits": 0
+  },
+  "findings": [
+    {
+      "case": "ASL Roma 1",
+      "outcome": "CSM Boccea, CSM Innocenzo IV, SerD Nomentana e Polo Cassia: accesso/orari/trasporto e contatti riesaminati dalle schede ufficiali correnti.",
+      "pending": "Accessibilità fisica e ingressi specifici non verificati."
+    },
+    {
+      "case": "ASL Rieti",
+      "outcome": "Via Finocchieto 1 (Poggio Mirteto) e Vocabolo Filoni 1 (Magliano Sabina): inventario immobili indica abbattimento barriere architettoniche; informazione attribuita all'edificio e non al singolo ambulatorio.",
+      "pending": "Percorso interno e ingresso del servizio non verificati."
+    },
+    {
+      "case": "Ambulatorio CSM Amatrice",
+      "outcome": "Esplicitato conflitto tra Via F. Grifoni 26 e la sede Ex Istituto Omnicomprensivo, frazione Villa S. Cipriano, riportata dall'elenco Ambulatori ASL.",
+      "pending": "Sede fisica da riconfermare; nessun pin creato."
+    },
+    {
+      "case": "Cinque strutture ASL Roma 5",
+      "outcome": "Documentata l'esistenza di un provvedimento regionale del 30/12/2025 sul livello massimo di finanziamento 2026 per l'assistenza psichiatrica privata accreditata.",
+      "pending": "Quota/budget 2026 della singola struttura non acquisita; nessun importo unitario attribuito."
+    }
+  ],
+  "geography": {
+    "services": 442,
+    "localized": 309,
+    "unlocated": 133,
+    "address": 64,
+    "street": 228,
+    "building": 17,
+    "entrances_verified": 0,
+    "changed": false
+  },
+  "sources": [
+    "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+    "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+    "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+    "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+    "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+    "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/",
+    "https://www.regione.lazio.it/sites/default/files/2026-02/Estrazione-provvedimenti-2025-27022026.pdf"
+  ]
+}
