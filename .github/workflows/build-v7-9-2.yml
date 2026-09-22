@@ -24,17 +24,6 @@ jobs:
           git fetch origin main
           test "$(git rev-parse origin/main)" = 9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01
           base64 -d .release-v792/build-v7-9-2.py.gz.b64 | gzip -d > tools/build-v7-9-2.py
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('tools/build-v7-9-2.py');s=p.read_text()
-          old="""for p in ['servizi.html','archivio.html','mappa.html','strutture-approfondite.html']:
- insert_after(p,'<script defer src="/assets/audit-data-v7-9-1.js"></script>','/assets/audit-data-v7-9-2.js')"""
-          new="""for p in ['servizi.html','archivio.html','mappa.html']:
- insert_after(p,'<script defer src="/assets/audit-data-v7-9-1.js"></script>','/assets/audit-data-v7-9-2.js')
-insert_after('strutture-approfondite.html','<script src="/assets/audit-data-v7-9-1.js"></script>','/assets/audit-data-v7-9-2.js')"""
-          assert old in s
-          p.write_text(s.replace(old,new))
-          PY
           mkdir -p /tmp/v792 /tmp/v792names
           gh api repos/${GITHUB_REPOSITORY}/actions/artifacts/10717505051/zip > /tmp/v792.zip
           gh api repos/${GITHUB_REPOSITORY}/actions/artifacts/10717475700/zip > /tmp/v792names.zip
@@ -45,6 +34,7 @@ insert_after('strutture-approfondite.html','<script src="/assets/audit-data-v7-9
         run: |
           set -euo pipefail
           python tools/build-v7-9-2.py /tmp/v792 /tmp/v792names /tmp/current-v791.json
+          python -c 'from pathlib import Path;p=Path("strutture-approfondite.html");s=p.read_text();old="<script src=\"/assets/audit-data-v7-9-1.js\"></script>";new=old+"<script src=\"/assets/audit-data-v7-9-2.js\"></script>";assert old in s;p.write_text(s.replace(old,new,1))'
           for f in assets/audit-data-v7-9-2.js assets/map-data-v7-9-2.js assets/servizi-v7-9-2.js assets/directory-v7-9-2.js assets/menta-config-v7-9-2.js assets/menta-core-v7-9-2.js; do node --check "$f"; done
           node --check tools/export-current-v7-9-2.cjs
           node tools/export-current-v7-9-2.cjs /tmp/current-v792.json
@@ -125,6 +115,6 @@ insert_after('strutture-approfondite.html','<script src="/assets/audit-data-v7-9
           git diff --check
           git config user.name robgor95
           git config user.email 73424454+robgor95@users.noreply.github.com
-          git add README.md CHANGELOG.md version.json index.html servizi.html archivio.html mappa.html strutture-approfondite.html             assets/audit-data-v7-9-2.js assets/map-data-v7-9-2.js assets/servizi-v7-9-2.js assets/directory-v7-9-2.js assets/menta-config-v7-9-2.js assets/menta-core-v7-9-2.js             data/audit_operativo_v7_9_2.json data/presidi_geo_v7_9_2.json downloads/*V7_9_2*             tools/build-v7-9-2.py tools/export-current-v7-9-2.cjs tools/test-v7-9-2.cjs
+          git add README.md CHANGELOG.md version.json index.html servizi.html archivio.html mappa.html strutture-approfondite.html             assets/audit-data-v7-9-2.js assets/map-data-v7-9-2.js assets/servizi-v7-9-2.js assets/directory-v7-9-2.js assets/menta-config-v7-9-2.js assets/menta-core-v7-9-2.js             data/audit_operativo_v7_9_2.json data/presidi_geo_v7_9_2.json downloads/*V7_9_2*             tools/export-current-v7-9-2.cjs tools/test-v7-9-2.cjs
           git commit -m "feat: V7.9.2 close contracts, sync Menta and extend verified geography"
           git push origin HEAD:audit-v7-9-2
