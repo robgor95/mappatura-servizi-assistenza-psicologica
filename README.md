@@ -1,3 +1,7 @@
+## Versione corrente V7.9.3
+
+Riesame operativo additivo: quattro presidi ASL Roma 1 aggiornati per accesso/orari/trasporto, tre sedi ASL Rieti con evidenza edilizia sull’accessibilità, un conflitto di sede Rieti reso esplicito e contesto del finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti. Geografia invariata: 442 servizi, 309 localizzati, 133 senza pin. Indicizzazione ancora disattivata.
+
 ## Versione corrente V7.9.2
 
 V7.9.2: cinque contratti individuali Roma 5 acquisiti, FEBO ricontrollato senza promozione, ricognizione Nuovi Orizzonti consolidata, Menta sincronizzata e geografia conservativa ulteriormente ampliata.
