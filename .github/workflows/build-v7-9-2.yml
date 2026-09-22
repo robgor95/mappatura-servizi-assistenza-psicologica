@@ -86,11 +86,12 @@ jobs:
           npm install --prefix /tmp/v792-node playwright @axe-core/playwright
           ln -s /tmp/v792-node/node_modules node_modules
           /tmp/v792-node/node_modules/.bin/playwright install --with-deps chromium
-          cp tools/test-ui-v7-9-1.mjs /tmp/test-ui-v792.mjs
-          sed -i 's/307 localizzati/309 localizzati/g; s/points:307/points:309/g; s/135 senza posizione/133 senza posizione/g; s/442 \/ 307 \/ 135/442 \/ 309 \/ 133/g' /tmp/test-ui-v792.mjs
+          cp tools/test-ui-v7-9-1.mjs tools/test-ui-v792-temp.mjs
+          sed -i 's/307 localizzati/309 localizzati/g; s/points:307/points:309/g; s/135 senza posizione/133 senza posizione/g; s/442 \/ 307 \/ 135/442 \/ 309 \/ 133/g' tools/test-ui-v792-temp.mjs
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/v792-http.log 2>&1 &
           PID=$!; trap 'kill $PID || true' EXIT
-          QA_OUT=/tmp/v792-tests NODE_PATH=/tmp/v792-node/node_modules node /tmp/test-ui-v792.mjs
+          QA_OUT=/tmp/v792-tests node tools/test-ui-v792-temp.mjs
+          rm tools/test-ui-v792-temp.mjs
       - name: Record verification and commit candidate
         shell: bash
         run: |
