@@ -1,9 +1,9 @@
 {
-  "web_version": "7.9.1",
+  "web_version": "7.9.2",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.9.1",
+  "data_extension_version": "7.9.2",
   "built_at": "2026-09-22",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -46,18 +46,18 @@
     "audit_additions": 8,
     "audit_7_9_1_additions": 2
   },
-  "menta_version": "7.7.2",
+  "menta_version": "7.9.2",
   "menta": {
-    "intents": 31,
+    "intents": 36,
     "keyword_assignments": 282,
     "unique_keywords": 276,
     "emergency_assignments": 38,
     "unique_emergency_keywords": 37,
     "destination_pages": 17,
-    "routes": 39,
-    "towns": 93
+    "routes": 44,
+    "towns": 100
   },
-  "release_note": "Ulteriore geografia offline; IHG/Gabbiano e contratti per unità, Nuovi Orizzonti e 51 revisioni per campo. Due servizi Villa Pia aggiunti. Dati incompleti espliciti.",
+  "release_note": "V7.9.2: cinque contratti individuali Roma 5 acquisiti, FEBO ricontrollato senza promozione, ricognizione Nuovi Orizzonti consolidata, Menta sincronizzata e geografia conservativa ulteriormente ampliata.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -105,22 +105,22 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.9.1",
+  "map_version": "7.9.2",
   "ux_version": "7.8",
   "map": {
     "services": 442,
-    "localized": 307,
-    "address_geocoded": 63,
-    "street_approximate": 227,
-    "unlocated": 135,
+    "localized": 309,
+    "address_geocoded": 64,
+    "street_approximate": 228,
+    "unlocated": 133,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 133,
-      "A": 25,
-      "C": 282,
+      "D": 131,
+      "A": 26,
+      "C": 283,
       "E": 2
     },
     "entrances_verified": 0,
@@ -151,8 +151,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.9.1",
-  "baseline_commit": "937713935c693dbbe50109e6738063cc0395e192",
+  "audit_version": "7.9.2",
+  "baseline_commit": "9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -160,5 +160,9 @@
   "v7_9_1_verification": {
     "local_report": "downloads/Verifiche_V7_9_1.json",
     "production_evidence": "Verificata separatamente sul commit di merge: non riutilizzare gli esiti delle versioni precedenti."
+  },
+  "v7_9_2_verification": {
+    "local_report": "downloads/Verifiche_V7_9_2.json",
+    "production_evidence": "da registrare dal workflow successivo al merge"
   }
 }

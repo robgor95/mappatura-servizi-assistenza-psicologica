@@ -1,0 +1,111 @@
+name: V7.9.2 release verification
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/verify-v7-9-2.yml
+      - index.html
+      - servizi.html
+      - archivio.html
+      - mappa.html
+      - strutture-approfondite.html
+      - version.json
+      - assets/audit-data-v7-9-2.js
+      - assets/map-data-v7-9-2.js
+      - assets/servizi-v7-9-2.js
+      - assets/directory-v7-9-2.js
+      - assets/menta-config-v7-9-2.js
+      - assets/menta-core-v7-9-2.js
+      - data/audit_operativo_v7_9_2.json
+      - data/presidi_geo_v7_9_2.json
+      - downloads/*V7_9_2*
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/verify-v7-9-2.yml
+      - index.html
+      - servizi.html
+      - archivio.html
+      - mappa.html
+      - strutture-approfondite.html
+      - version.json
+      - assets/audit-data-v7-9-2.js
+      - assets/map-data-v7-9-2.js
+      - assets/servizi-v7-9-2.js
+      - assets/directory-v7-9-2.js
+      - assets/menta-config-v7-9-2.js
+      - assets/menta-core-v7-9-2.js
+      - data/audit_operativo_v7_9_2.json
+      - data/presidi_geo_v7_9_2.json
+      - downloads/*V7_9_2*
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v792-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Check release, data and historical preservation
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/v792-verification
+          node tools/export-current-v7-9-2.cjs /tmp/current-v792.json
+          node tools/test-v7-9-2.cjs
+          python -m py_compile tools/verify-production-v7-9-2.py
+          python - <<'PY'
+          import json,pathlib,subprocess
+          v=json.loads(pathlib.Path('version.json').read_text())
+          assert v['web_version']=='7.9.2' and v['indexing_enabled'] is False
+          assert v['counts_current']['search']==442
+          assert v['map']['localized']==309 and v['map']['unlocated']==133
+          base='9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01'
+          allowed={'README.md','CHANGELOG.md','version.json','index.html','servizi.html','archivio.html','mappa.html','strutture-approfondite.html'}
+          changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
+          bad=[]
+          for p in changed:
+              existed=subprocess.run(['git','cat-file','-e',base+':'+p],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
+              if existed and p not in allowed: bad.append(p)
+          assert not bad,bad
+          PY
+          npm install --prefix /tmp/v792-node playwright @axe-core/playwright
+          ln -s /tmp/v792-node/node_modules node_modules
+          /tmp/v792-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Verify pull-request runtime locally
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v792-verification/http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          QA_OUT=/tmp/v792-verification node tools/test-ui-v7-9-2.mjs
+      - name: Verify exact Cloudflare production bytes and noindex
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/v792-verification
+        run: python tools/verify-production-v7-9-2.py
+      - name: Recheck browser behavior on actual production
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/v792-verification
+        run: node tools/test-ui-v7-9-2.mjs
+      - name: Record exact tested tree
+        if: always()
+        run: |
+          git rev-parse HEAD > /tmp/v792-verification/commit.txt
+          git diff --name-status 9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01 HEAD > /tmp/v792-verification/changed-files.txt
+          git archive --format=zip HEAD -o /tmp/v792-verification/repository.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-9-2-${{ github.event_name }}-verification
+          path: /tmp/v792-verification/
+          retention-days: 30
+          if-no-files-found: error

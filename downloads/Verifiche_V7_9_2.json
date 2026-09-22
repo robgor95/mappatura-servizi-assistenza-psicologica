@@ -1,0 +1,166 @@
+{
+  "version": "7.9.2",
+  "baseline_commit": "9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01",
+  "data_checks": "passed",
+  "browser": {
+    "version": "7.9.2",
+    "tested_at": "2026-09-22T20:25:44.984Z",
+    "base": "http://127.0.0.1:8123",
+    "osm_tiles": "mocked; no external map-tile requests during automated checks",
+    "tests": [
+      {
+        "name": "All baseline data and historical downloads retain exact bytes",
+        "passed": true
+      },
+      {
+        "name": "26 current pages expose emergency landmark; simple menu and noindex retained",
+        "passed": true
+      },
+      {
+        "name": "Mobile service search is inside first screen; management keeps uncertainty without V4",
+        "passed": true
+      },
+      {
+        "name": "Youth choice exposes four distinct non-diagnostic routes",
+        "passed": true
+      },
+      {
+        "name": "Map starts with all 442 services, honest geographic coverage, no external requests until activation",
+        "passed": true
+      },
+      {
+        "name": "Map and directory preserve all Reverie units including an unlocated one",
+        "passed": true
+      },
+      {
+        "name": "Shared address keeps two service identities in one marker and popup",
+        "passed": true
+      },
+      {
+        "name": "Selected Viterbo service opens exact corresponding location and links back to its own details",
+        "passed": true
+      },
+      {
+        "name": "Legacy service URL and empty reset remain functional",
+        "passed": true
+      },
+      {
+        "name": "Menta ambiguity/emergency still work without input transmission",
+        "passed": true
+      },
+      {
+        "name": "Mobile navigation: keyboard focus and Escape close the disclosures",
+        "passed": true
+      },
+      {
+        "name": "No horizontal overflow at 360, 390, 768 and 1440 pixels; map and responsive search",
+        "passed": true
+      },
+      {
+        "name": "Missing geography shows an honest fallback, not fabricated map pins",
+        "passed": true
+      },
+      {
+        "name": "Tile failure leaves the service list available",
+        "passed": true
+      },
+      {
+        "name": "Current operational fields and correct unknown SSN labels",
+        "passed": true
+      },
+      {
+        "name": "Il Ponte shared address retains two services in one popup",
+        "passed": true
+      },
+      {
+        "name": "Search text stays local and missing audit has a visible warning",
+        "passed": true
+      },
+      {
+        "name": "All 176 V7.9 protected files still have exact baseline bytes",
+        "passed": true
+      },
+      {
+        "name": "Current map exposes the exact 442 / 309 / 133 service counts and uncertainty",
+        "passed": true
+      },
+      {
+        "name": "Gabbiano preserves twelve contracted legacy modules and two distinct Villa Pia services",
+        "passed": true
+      },
+      {
+        "name": "Villa Pia day and residential modules share one popup without hiding capacity conflict",
+        "passed": true
+      },
+      {
+        "name": "Suspended San Camillo inpatient ward has visible warning before opening details",
+        "passed": true
+      },
+      {
+        "name": "Frentani current address remains accessible through the legacy stable service ID",
+        "passed": true
+      },
+      {
+        "name": "Nuovi Orizzonti admissions contact is identified as central, not as the local community",
+        "passed": true
+      },
+      {
+        "name": "Current structure directory loads the new layer and retains all source provenance",
+        "passed": true
+      },
+      {
+        "name": "No uncaught JavaScript errors in scenarios",
+        "passed": true
+      }
+    ],
+    "passed": 26,
+    "total": 26,
+    "screens": [
+      "servizi-390.png",
+      "giovani-390.png",
+      "mappa-consenso-390.png",
+      "mappa-stesso-indirizzo-390.png",
+      "home-390.png",
+      "index-1440.png",
+      "servizi-1440.png",
+      "mappa-1440.png",
+      "giovani-1440.png",
+      "universita-1440.png",
+      "scuole-1440.png",
+      "strutture-approfondite-1440.png",
+      "centri-ascolto-1440.png",
+      "febo-dettagli-390.png",
+      "ponte-popup-390.png",
+      "gabbiano-contratto-390.png",
+      "villa-pia-popup-390.png",
+      "villa-pia-capienza-390.png",
+      "san-camillo-stato-390.png"
+    ]
+  },
+  "geography": {
+    "services": 442,
+    "localized_before": 307,
+    "localized_after": 309,
+    "address_after": 64,
+    "street_after": 228,
+    "building_after": 17,
+    "unlocated_after": 133,
+    "newly_localized": 2,
+    "newly_localized_keys": [
+      "rete:R3-08",
+      "moduli:MOD-115"
+    ],
+    "entrances_verified": 0,
+    "nominatim_requests_first_pass": 99,
+    "nominatim_requests_named_pass": 45,
+    "quality_counts": {
+      "D": 131,
+      "A": 26,
+      "C": 283,
+      "E": 2
+    }
+  },
+  "production": "not implied; verify after merge",
+  "voiceover": "not executed on Linux",
+  "note": "Il blocco browser riporta la suite V7.9.2; la verifica PR rigenererà evidenza separata prima del merge."
+}
