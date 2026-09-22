@@ -158,12 +158,14 @@ function wire(){
 }
 async function getJSON(url){const controller=new AbortController(),t=setTimeout(()=>controller.abort(),18000);try{const r=await fetch(url,{signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(t);}}
 async function start(){
-  const [base,extra,multisite,audit,current]=await Promise.allSettled([
+  const [base,extra,multisite,audit,current,current2,current3]=await Promise.allSettled([
     getJSON('/data/portal_data_v7_3.json'),
     getJSON('/data/privati_v7_5.json'),
     getJSON('/data/multisede_v7_7_5.json'),
     getJSON('/data/audit_operativo_v7_9.json'),
-    getJSON('/data/audit_operativo_v7_9_1.json')
+    getJSON('/data/audit_operativo_v7_9_1.json'),
+    getJSON('/data/audit_operativo_v7_9_2.json'),
+    getJSON('/data/audit_operativo_v7_9_3.json')
   ]);
   if(base.status!=='fulfilled')throw new Error('I servizi non sono stati caricati. Riprova oppure usa i documenti disponibili.');
   D=JSON.parse(JSON.stringify(base.value));
@@ -173,16 +175,20 @@ async function start(){
   }
   if(audit.status==='fulfilled')window.LazioAudit79.set(audit.value);
   if(current.status==='fulfilled')window.LazioAudit791.set(current.value);
+  if(current2.status==='fulfilled')window.LazioAudit792.set(current2.value);
+  if(current3.status==='fulfilled')window.LazioAudit793.set(current3.value);
   rows=A.build(D,extra.status==='fulfilled'?extra.value:null);populate();wire();
   $('svc-total').textContent=rows.length+' risultati';
   $('svc-breakdown').textContent=rows.filter(r=>r.origin==='rete').length+' servizi pubblici / SSN · '+rows.filter(r=>r.origin==='moduli').length+' strutture non ASL · '+rows.filter(r=>r.origin==='privati').length+' strutture private.';
-  if(extra.status==='fulfilled'&&multisite.status==='fulfilled'&&audit.status==='fulfilled'&&current.status==='fulfilled')$('svc-load-status').hidden=true;
+  if(extra.status==='fulfilled'&&multisite.status==='fulfilled'&&audit.status==='fulfilled'&&current.status==='fulfilled'&&current2.status==='fulfilled'&&current3.status==='fulfilled')$('svc-load-status').hidden=true;
   else{
     const missing=[];
     if(extra.status!=='fulfilled')missing.push('le strutture private');
     if(multisite.status!=='fulfilled')missing.push('le integrazioni multisede');
     if(audit.status!=='fulfilled')missing.push('le correzioni operative V7.9 (dati precedenti da riconfermare)');
     if(current.status!=='fulfilled')missing.push('le correzioni operative V7.9.1 (dati precedenti da riconfermare)');
+    if(current2.status!=='fulfilled')missing.push('le correzioni operative V7.9.2 (dati precedenti da riconfermare)');
+    if(current3.status!=='fulfilled')missing.push('le correzioni operative V7.9.3 (dati precedenti da riconfermare)');
     $('svc-load-status').textContent='Non sono state caricate '+missing.join(' e ')+': la ricerca resta disponibile sui dati caricati.';
   }
   $('svc-controls').disabled=false;state=stateFromURL();commit(state,false);
