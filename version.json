@@ -1,9 +1,9 @@
 {
-  "web_version": "7.9.2",
+  "web_version": "7.9.3",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.9.2",
+  "data_extension_version": "7.9.3",
   "built_at": "2026-09-22",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -57,7 +57,7 @@
     "routes": 44,
     "towns": 100
   },
-  "release_note": "V7.9.2: cinque contratti individuali Roma 5 acquisiti, FEBO ricontrollato senza promozione, ricognizione Nuovi Orizzonti consolidata, Menta sincronizzata e geografia conservativa ulteriormente ampliata.",
+  "release_note": "V7.9.3: accesso e trasporto aggiornati per quattro presidi ASL Roma 1, accessibilità edilizia documentata per tre sedi ASL Rieti, un conflitto di sede Rieti esplicitato e contesto di finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -151,8 +151,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.9.2",
-  "baseline_commit": "9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01",
+  "audit_version": "7.9.3",
+  "baseline_commit": "e6bd577501939141624ce02aad18d6c956796ddb",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -163,6 +163,10 @@
   },
   "v7_9_2_verification": {
     "local_report": "downloads/Verifiche_V7_9_2.json",
-    "production_evidence": "da registrare dal workflow successivo al merge"
+    "production_evidence": "Cloudflare Pages e verifica produzione sul commit e6bd577501939141624ce02aad18d6c956796ddb; workflow 35790233146 concluso con successo."
+  },
+  "v7_9_3_verification": {
+    "local_report": "downloads/Verifiche_V7_9_3.json",
+    "production_evidence": "da verificare separatamente dopo il merge; non riutilizzare l'esito V7.9.2"
   }
 }
