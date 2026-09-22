@@ -1,7 +1,7 @@
 {
   "version": "7.9.3",
   "baseline_commit": "e6bd577501939141624ce02aad18d6c956796ddb",
-  "candidate_status": "in_verifica_pr",
+  "candidate_status": "superato",
   "checked_at": "2026-09-22",
   "data_scope": {
     "services": 442,
@@ -21,7 +21,25 @@
     "noindex e conteggi mappa invariati",
     "suite browser completa e axe"
   ],
-  "pr_evidence": "In attesa del workflow sull'head finale della PR #13.",
-  "production_evidence": "Non ancora applicabile; verifica separata solo dopo merge.",
-  "voiceover": "Non eseguito; ambiente Linux. Axe e tastiera non equivalgono a certificazione VoiceOver."
+  "pr_evidence": {
+    "workflow_run": 35793762318,
+    "tested_commit": "2fcfc475f375410c1013253fa3f9f6f0d7282bb6",
+    "data_checks": {
+      "passed": 9,
+      "total": 9
+    },
+    "browser_checks": {
+      "passed": 28,
+      "total": 28
+    },
+    "tested_at": "2026-09-22T22:44:33.920Z",
+    "osm_tiles": "mocked; no external map-tile requests during automated checks",
+    "note": "Head funzionale completo superato. La successiva modifica del solo report viene nuovamente verificata dalla stessa workflow prima del merge."
+  },
+  "production_evidence": "Non ancora applicabile al momento di questo report; verifica separata automatica dopo il merge.",
+  "voiceover": "Non eseguito; ambiente Linux. Axe e tastiera non equivalgono a certificazione VoiceOver.",
+  "regression_fix": {
+    "issue": "Il bootstrap di servizi/archivio V7.9.2 caricava gli adapter ma non i JSON operativi V7.9.2.",
+    "resolution": "La V7.9.3 carica in ordine gli overlay V7.9, V7.9.1, V7.9.2 e V7.9.3; test browser confermato."
+  }
 }
