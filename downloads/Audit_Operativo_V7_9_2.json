@@ -1,0 +1,61 @@
+{
+  "version": "7.9.2",
+  "baseline_commit": "9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01",
+  "geography": {
+    "services": 442,
+    "localized_before": 307,
+    "localized_after": 309,
+    "address_after": 64,
+    "street_after": 228,
+    "building_after": 17,
+    "unlocated_after": 133,
+    "newly_localized": 2,
+    "newly_localized_keys": [
+      "rete:R3-08",
+      "moduli:MOD-115"
+    ],
+    "entrances_verified": 0,
+    "nominatim_requests_first_pass": 99,
+    "nominatim_requests_named_pass": 45,
+    "quality_counts": {
+      "D": 131,
+      "A": 26,
+      "C": 283,
+      "E": 2
+    }
+  },
+  "operational": {
+    "records_reexamined": 8,
+    "individual_contracts_newly_acquired": 5,
+    "unit_2026_budget_addenda_acquired": 0,
+    "febo_accreditation_promoted": false,
+    "nuovi_orizzonti_lazio_health_sites_documented": 2
+  },
+  "menta": {
+    "towns": 100,
+    "intents": 36,
+    "routes": 44,
+    "new_towns": [
+      "Gallicano nel Lazio",
+      "Itri",
+      "Labico",
+      "Rocca Canterano",
+      "San Cesareo",
+      "Valmontone",
+      "Zagarolo"
+    ],
+    "provider_routes": [
+      "gabbiano-current",
+      "reverie-current",
+      "nuovi-orizzonti-current",
+      "ponte-current",
+      "villa-pia-current"
+    ]
+  },
+  "limits": [
+    "Nessun ingresso fisico verificato",
+    "Budget unitari 2026 non acquisiti per i cinque contratti",
+    "Nessuna telefonata o sopralluogo",
+    "Geografia directory separate non ampliata"
+  ]
+}

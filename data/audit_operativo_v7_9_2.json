@@ -1,0 +1,415 @@
+{
+  "version": "7.9.2",
+  "baseline_commit": "9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01",
+  "checked_at": "2026-09-22",
+  "scope": "Overlay additivo successivo a V7.9.1; dati storici immutati.",
+  "revisions": [
+    {
+      "service_key": "moduli:MOD-061",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "contratto_ssn_stato": "Accordo/contratto individuale ex art. 8-quinquies acquisito dalla ASL Roma 5.",
+        "contratto_periodo": "Disciplina contrattuale documentata dal 01/01/2025 al 31/12/2026; il corrispettivo 2026 è rinviato a separato atto/budget.",
+        "budget_2026_stato": "Separato atto/budget 2026 non acquisito in V7.9.2.",
+        "ssn_evidence_v792": "indicata",
+        "rapporto_ssn": "Accreditamento e contratto individuale 2025–2026 documentati; budget/corrispettivo specifico 2026 da acquisire."
+      },
+      "previous_values": {
+        "contratto_ssn_stato": "Contratto segnalato nell’indice ASL; documento individuale non acquisito in V7.9.1.",
+        "contratto_periodo": "2025-2026",
+        "budget_2026_stato": "Pagina ASL aggiornata 16/07/2026 pubblica contratto e integrazioni; capienza/budget puntuale nel singolo allegato",
+        "ssn_evidence_v792": null,
+        "rapporto_ssn": "Struttura accreditata presente nell’elenco ASL; contratto individuale corrente non acquisito, da riconfermare."
+      },
+      "evidence": {
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "abc010bf2bb8276f227ce8d63ca67d9d09d9a90291c3e33c3670641b6b8df651"
+        },
+        "contratto_periodo": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "abc010bf2bb8276f227ce8d63ca67d9d09d9a90291c3e33c3670641b6b8df651"
+        },
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "abc010bf2bb8276f227ce8d63ca67d9d09d9a90291c3e33c3670641b6b8df651"
+        },
+        "ssn_evidence_v792": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "abc010bf2bb8276f227ce8d63ca67d9d09d9a90291c3e33c3670641b6b8df651"
+        },
+        "rapporto_ssn": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "abc010bf2bb8276f227ce8d63ca67d9d09d9a90291c3e33c3670641b6b8df651"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Elisa.pdf"
+      ],
+      "note": "Il contratto corrente è acquisito; non equivale a disponibilità di posto né prova accesso extraregionale automatico.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-062",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "contratto_ssn_stato": "Accordo/contratto individuale ex art. 8-quinquies acquisito dalla ASL Roma 5.",
+        "contratto_periodo": "Disciplina contrattuale documentata dal 01/01/2025 al 31/12/2026; il corrispettivo 2026 è rinviato a separato atto/budget.",
+        "budget_2026_stato": "Separato atto/budget 2026 non acquisito in V7.9.2.",
+        "ssn_evidence_v792": "indicata",
+        "rapporto_ssn": "Accreditamento e contratto individuale 2025–2026 documentati; budget/corrispettivo specifico 2026 da acquisire."
+      },
+      "previous_values": {
+        "contratto_ssn_stato": "Contratto segnalato nell’indice ASL; documento individuale non acquisito in V7.9.1.",
+        "contratto_periodo": "2025-2026",
+        "budget_2026_stato": "Pagina ASL aggiornata 16/07/2026 pubblica contratto e integrazioni; capienza/budget puntuale nel singolo allegato",
+        "ssn_evidence_v792": null,
+        "rapporto_ssn": "Struttura accreditata presente nell’elenco ASL; contratto individuale corrente non acquisito, da riconfermare."
+      },
+      "evidence": {
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "de9db9ce07da8435b5f3c1e6694cd3f5845fa0c35b7ff103593267e3223f96aa"
+        },
+        "contratto_periodo": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "de9db9ce07da8435b5f3c1e6694cd3f5845fa0c35b7ff103593267e3223f96aa"
+        },
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "de9db9ce07da8435b5f3c1e6694cd3f5845fa0c35b7ff103593267e3223f96aa"
+        },
+        "ssn_evidence_v792": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "de9db9ce07da8435b5f3c1e6694cd3f5845fa0c35b7ff103593267e3223f96aa"
+        },
+        "rapporto_ssn": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "de9db9ce07da8435b5f3c1e6694cd3f5845fa0c35b7ff103593267e3223f96aa"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Letizia.pdf"
+      ],
+      "note": "Il contratto corrente è acquisito; non equivale a disponibilità di posto né prova accesso extraregionale automatico.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-063",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "contratto_ssn_stato": "Accordo/contratto individuale ex art. 8-quinquies acquisito dalla ASL Roma 5.",
+        "contratto_periodo": "Disciplina contrattuale documentata dal 01/01/2025 al 31/12/2026; il corrispettivo 2026 è rinviato a separato atto/budget.",
+        "budget_2026_stato": "Separato atto/budget 2026 non acquisito in V7.9.2.",
+        "ssn_evidence_v792": "indicata",
+        "rapporto_ssn": "Accreditamento e contratto individuale 2025–2026 documentati; budget/corrispettivo specifico 2026 da acquisire."
+      },
+      "previous_values": {
+        "contratto_ssn_stato": "Contratto segnalato nell’indice ASL; documento individuale non acquisito in V7.9.1.",
+        "contratto_periodo": "2025-2026",
+        "budget_2026_stato": "Pagina ASL aggiornata 16/07/2026 pubblica contratto e integrazioni; capienza/budget puntuale nel singolo allegato",
+        "ssn_evidence_v792": null,
+        "rapporto_ssn": "Struttura accreditata presente nell’elenco ASL; contratto individuale corrente non acquisito, da riconfermare."
+      },
+      "evidence": {
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "75b0d2c148e1a60995923850e2941ec87ea890964f473c4108edd1ccf2b4b0e4"
+        },
+        "contratto_periodo": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "75b0d2c148e1a60995923850e2941ec87ea890964f473c4108edd1ccf2b4b0e4"
+        },
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "75b0d2c148e1a60995923850e2941ec87ea890964f473c4108edd1ccf2b4b0e4"
+        },
+        "ssn_evidence_v792": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "75b0d2c148e1a60995923850e2941ec87ea890964f473c4108edd1ccf2b4b0e4"
+        },
+        "rapporto_ssn": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "75b0d2c148e1a60995923850e2941ec87ea890964f473c4108edd1ccf2b4b0e4"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Operiamo-Assieme.pdf"
+      ],
+      "note": "Il contratto corrente è acquisito; non equivale a disponibilità di posto né prova accesso extraregionale automatico.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-064",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "contratto_ssn_stato": "Accordo/contratto individuale ex art. 8-quinquies acquisito dalla ASL Roma 5.",
+        "contratto_periodo": "Disciplina contrattuale documentata dal 01/01/2025 al 31/12/2026; il corrispettivo 2026 è rinviato a separato atto/budget.",
+        "budget_2026_stato": "Separato atto/budget 2026 non acquisito in V7.9.2.",
+        "ssn_evidence_v792": "indicata",
+        "rapporto_ssn": "Accreditamento e contratto individuale 2025–2026 documentati; budget/corrispettivo specifico 2026 da acquisire."
+      },
+      "previous_values": {
+        "contratto_ssn_stato": "Contratto segnalato nell’indice ASL; documento individuale non acquisito in V7.9.1.",
+        "contratto_periodo": "2025-2026",
+        "budget_2026_stato": "Pagina ASL aggiornata 16/07/2026 pubblica contratto e integrazioni; capienza/budget puntuale nel singolo allegato",
+        "ssn_evidence_v792": null,
+        "rapporto_ssn": "Struttura accreditata presente nell’elenco ASL; contratto individuale corrente non acquisito, da riconfermare."
+      },
+      "evidence": {
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "3938fa30336d34441b9db45c5c8e116de342d8909ad9f6cd1bda305978d93864"
+        },
+        "contratto_periodo": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "3938fa30336d34441b9db45c5c8e116de342d8909ad9f6cd1bda305978d93864"
+        },
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "3938fa30336d34441b9db45c5c8e116de342d8909ad9f6cd1bda305978d93864"
+        },
+        "ssn_evidence_v792": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "3938fa30336d34441b9db45c5c8e116de342d8909ad9f6cd1bda305978d93864"
+        },
+        "rapporto_ssn": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "3938fa30336d34441b9db45c5c8e116de342d8909ad9f6cd1bda305978d93864"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Al-Colle.pdf"
+      ],
+      "note": "Il contratto corrente è acquisito; non equivale a disponibilità di posto né prova accesso extraregionale automatico.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-065",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "contratto_ssn_stato": "Accordo/contratto individuale ex art. 8-quinquies acquisito dalla ASL Roma 5.",
+        "contratto_periodo": "Disciplina contrattuale documentata dal 01/01/2025 al 31/12/2026; il corrispettivo 2026 è rinviato a separato atto/budget.",
+        "budget_2026_stato": "Separato atto/budget 2026 non acquisito in V7.9.2.",
+        "ssn_evidence_v792": "indicata",
+        "rapporto_ssn": "Accreditamento e contratto individuale 2025–2026 documentati; budget/corrispettivo specifico 2026 da acquisire."
+      },
+      "previous_values": {
+        "contratto_ssn_stato": "Contratto segnalato nell’indice ASL; documento individuale non acquisito in V7.9.1.",
+        "contratto_periodo": "2025-2026",
+        "budget_2026_stato": "Pagina ASL aggiornata 16/07/2026 pubblica contratto e integrazioni; capienza/budget puntuale nel singolo allegato",
+        "ssn_evidence_v792": null,
+        "rapporto_ssn": "Struttura accreditata presente nell’elenco ASL; contratto individuale corrente non acquisito, da riconfermare."
+      },
+      "evidence": {
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "57bd7019e80a41e99da645fc8da9b482e35d2c250e60a7f6d8f996b0fb216680"
+        },
+        "contratto_periodo": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "57bd7019e80a41e99da645fc8da9b482e35d2c250e60a7f6d8f996b0fb216680"
+        },
+        "budget_2026_stato": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "57bd7019e80a41e99da645fc8da9b482e35d2c250e60a7f6d8f996b0fb216680"
+        },
+        "ssn_evidence_v792": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "57bd7019e80a41e99da645fc8da9b482e35d2c250e60a7f6d8f996b0fb216680"
+        },
+        "rapporto_ssn": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "57bd7019e80a41e99da645fc8da9b482e35d2c250e60a7f6d8f996b0fb216680"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Insieme.pdf"
+      ],
+      "note": "Il contratto corrente è acquisito; non equivale a disponibilità di posto né prova accesso extraregionale automatico.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:V79-COOPERATE-FEBO",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "accreditamento_stato": "Il gestore continua a descrivere FEBO come autorizzato e in attesa di accreditamento; nessun atto successivo acquisito.",
+        "contratto_ssn_stato": "Non documentato; V7.9.2 non classifica FEBO come struttura convenzionata.",
+        "ssn_evidence_v792": "da-verificare",
+        "nota_rapporto_ssn": "Autorizzazione, accreditamento e contratto SSN restano distinti; la pagina corrente non documenta accreditamento acquisito."
+      },
+      "previous_values": {
+        "accreditamento_stato": "Il sito del gestore indica in attesa di accreditamento; provvedimento successivo non acquisito.",
+        "contratto_ssn_stato": "Non documentato. Non classificato come convenzionato.",
+        "ssn_evidence_v792": null,
+        "nota_rapporto_ssn": null
+      },
+      "evidence": {
+        "accreditamento_stato": {
+          "sources": [
+            "https://www.cooperate.it/servizi/bracciano/prestazioni.html"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "32e0f0db01bd0b3ca6bde8cfaf3c4cd1ecbbea7bde3db42183ac08a65268adae"
+        },
+        "contratto_ssn_stato": {
+          "sources": [
+            "https://www.cooperate.it/servizi/bracciano/prestazioni.html"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "32e0f0db01bd0b3ca6bde8cfaf3c4cd1ecbbea7bde3db42183ac08a65268adae"
+        },
+        "ssn_evidence_v792": {
+          "sources": [
+            "https://www.cooperate.it/servizi/bracciano/prestazioni.html"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "32e0f0db01bd0b3ca6bde8cfaf3c4cd1ecbbea7bde3db42183ac08a65268adae"
+        },
+        "nota_rapporto_ssn": {
+          "sources": [
+            "https://www.cooperate.it/servizi/bracciano/prestazioni.html"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "32e0f0db01bd0b3ca6bde8cfaf3c4cd1ecbbea7bde3db42183ac08a65268adae"
+        }
+      },
+      "sources": [
+        "https://www.cooperate.it/servizi/bracciano/prestazioni.html"
+      ],
+      "note": "Stato corrente ricontrollato sul sito del gestore; nessuna promozione amministrativa presunta.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-107",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "note_v792": "Ricognizione sedi Lazio V7.9.2: le comunità residenziali sanitarie documentate nel Lazio restano Piglio e Marino. Altre sedi sociali/operative dell’ente non sono state trasformate automaticamente in comunità sanitarie o accreditate."
+      },
+      "previous_values": {
+        "note_v792": null
+      },
+      "evidence": {
+        "note_v792": {
+          "sources": [
+            "https://www.nuoviorizzonti.org/trasparenza/"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "49d80a10f8ed3c67ef276852add4786e406cfb3e9fdfe71b9b5627a89b5bfbc6"
+        }
+      },
+      "sources": [
+        "https://www.nuoviorizzonti.org/trasparenza/"
+      ],
+      "note": "Conclusione di inventario, non nuova verifica contrattuale della singola sede.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    },
+    {
+      "service_key": "moduli:MS775-NO-CASAGIOIA",
+      "checked_at": "2026-09-22",
+      "fields": {
+        "note_v792": "Ricognizione sedi Lazio V7.9.2: le comunità residenziali sanitarie documentate nel Lazio restano Piglio e Marino. Altre sedi sociali/operative dell’ente non sono state trasformate automaticamente in comunità sanitarie o accreditate."
+      },
+      "previous_values": {
+        "note_v792": null
+      },
+      "evidence": {
+        "note_v792": {
+          "sources": [
+            "https://www.nuoviorizzonti.org/trasparenza/"
+          ],
+          "checked_at": "2026-09-22",
+          "sha256": "49d80a10f8ed3c67ef276852add4786e406cfb3e9fdfe71b9b5627a89b5bfbc6"
+        }
+      },
+      "sources": [
+        "https://www.nuoviorizzonti.org/trasparenza/"
+      ],
+      "note": "Conclusione di inventario, non nuova verifica contrattuale della singola sede.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica disponibilità."
+    }
+  ],
+  "additions": [],
+  "summary": {
+    "records_reexamined": 8,
+    "individual_contracts_newly_acquired": 5,
+    "unit_2026_budget_addenda_acquired": 0,
+    "febo_accreditation_promoted": false,
+    "nuovi_orizzonti_lazio_health_sites_documented": 2
+  }
+}
