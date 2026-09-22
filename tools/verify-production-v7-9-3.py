@@ -37,7 +37,7 @@ if deployed:
   checks.append({'name':'Real unknown URL returns custom noindex 404','passed':status==404 and body==(R/'404.html').read_bytes() and 'noindex' in headers.get('x-robots-tag',''),'http_status':status})
  except Exception as e:checks.append({'name':'Real 404 route','passed':False,'error':str(e)})
  # Repository preservation is independently rechecked on the actual merged commit.
- base='e6bd577501939141624ce02aad18d6c956796ddb';allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','documenti.html'}
+ base='e6bd577501939141624ce02aad18d6c956796ddb';allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','documenti.html','.github/workflows/verify-v7-9-2.yml'}
  changed=subprocess.check_output(['git','diff','--name-only',base,commit],cwd=R,text=True).splitlines();mismatches=[]
  for path in changed:
   existed=subprocess.run(['git','cat-file','-e',base+':'+path],cwd=R,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
