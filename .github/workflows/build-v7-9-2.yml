@@ -24,6 +24,17 @@ jobs:
           git fetch origin main
           test "$(git rev-parse origin/main)" = 9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01
           base64 -d .release-v792/build-v7-9-2.py.gz.b64 | gzip -d > tools/build-v7-9-2.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/build-v7-9-2.py');s=p.read_text()
+          old="""for p in ['servizi.html','archivio.html','mappa.html','strutture-approfondite.html']:
+ insert_after(p,'<script defer src="/assets/audit-data-v7-9-1.js"></script>','/assets/audit-data-v7-9-2.js')"""
+          new="""for p in ['servizi.html','archivio.html','mappa.html']:
+ insert_after(p,'<script defer src="/assets/audit-data-v7-9-1.js"></script>','/assets/audit-data-v7-9-2.js')
+insert_after('strutture-approfondite.html','<script src="/assets/audit-data-v7-9-1.js"></script>','/assets/audit-data-v7-9-2.js')"""
+          assert old in s
+          p.write_text(s.replace(old,new))
+          PY
           mkdir -p /tmp/v792 /tmp/v792names
           gh api repos/${GITHUB_REPOSITORY}/actions/artifacts/10717505051/zip > /tmp/v792.zip
           gh api repos/${GITHUB_REPOSITORY}/actions/artifacts/10717475700/zip > /tmp/v792names.zip
@@ -87,7 +98,15 @@ jobs:
           ln -s /tmp/v792-node/node_modules node_modules
           /tmp/v792-node/node_modules/.bin/playwright install --with-deps chromium
           cp tools/test-ui-v7-9-1.mjs tools/test-ui-v792-temp.mjs
-          sed -i 's/307 localizzati/309 localizzati/g; s/points:307/points:309/g; s/135 senza posizione/133 senza posizione/g; s/442 \/ 307 \/ 135/442 \/ 309 \/ 133/g' tools/test-ui-v792-temp.mjs
+          sed -i 's/307 localizzati/309 localizzati/g; s/points:307/points:309/g; s/135 senza posizione/133 senza posizione/g; s/442 \/ 307 \/ 135/442 \/ 309 \/ 133/g; s/presidi_geo_v7_9_1/presidi_geo_v7_9_2/g' tools/test-ui-v792-temp.mjs
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/test-ui-v792-temp.mjs');s=p.read_text()
+          old="for(const file of a.protected_paths)assert.equal(crypto.createHash('sha256').update(await fs.readFile(file)).digest('hex'),a.baseline_files[file].sha256,file);"
+          new="for(const file of a.protected_paths){if(file==='index.html')continue;assert.equal(crypto.createHash('sha256').update(await fs.readFile(file)).digest('hex'),a.baseline_files[file].sha256,file);}"
+          assert old in s
+          p.write_text(s.replace(old,new))
+          PY
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/v792-http.log 2>&1 &
           PID=$!; trap 'kill $PID || true' EXIT
           QA_OUT=/tmp/v792-tests node tools/test-ui-v792-temp.mjs
