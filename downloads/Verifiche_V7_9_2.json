@@ -3,7 +3,7 @@
   "baseline_commit": "9d2efa56e454ce6b9285bc8e767f6e94f4eb8f01",
   "data_checks": "passed",
   "browser": {
-    "version": "7.9.1",
+    "version": "7.9.2",
     "tested_at": "2026-09-22T20:25:44.984Z",
     "base": "http://127.0.0.1:8123",
     "osm_tiles": "mocked; no external map-tile requests during automated checks",
@@ -161,5 +161,6 @@
     }
   },
   "production": "not implied; verify after merge",
-  "voiceover": "not executed on Linux"
+  "voiceover": "not executed on Linux",
+  "note": "Il blocco browser riporta la suite V7.9.2; la verifica PR rigenererà evidenza separata prima del merge."
 }
