@@ -1,9 +1,9 @@
 {
-  "web_version": "7.9",
+  "web_version": "7.9.1",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.9",
+  "data_extension_version": "7.9.1",
   "built_at": "2026-09-22",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -34,16 +34,17 @@
   "deployment_checked_by_preparer": true,
   "counts_current": {
     "rete": 298,
-    "moduli": 125,
+    "moduli": 127,
     "privati": 17,
     "scuole": 20,
     "centri_ascolto": 33,
     "universita": 19,
     "helpline": 20,
-    "search": 440,
+    "search": 442,
     "multisite_overlay": 4,
-    "structure_directory": 181,
-    "audit_additions": 8
+    "structure_directory": 183,
+    "audit_additions": 8,
+    "audit_7_9_1_additions": 2
   },
   "menta_version": "7.7.2",
   "menta": {
@@ -56,7 +57,7 @@
     "routes": 39,
     "towns": 93
   },
-  "release_note": "Geografia ampliata con incertezza esplicita; audit documentale parziale, 47 revisioni e 8 servizi distinti. Storici preservati; noindex invariato.",
+  "release_note": "Ulteriore geografia offline; IHG/Gabbiano e contratti per unità, Nuovi Orizzonti e 51 revisioni per campo. Due servizi Villa Pia aggiunti. Dati incompleti espliciti.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -104,24 +105,26 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.9",
+  "map_version": "7.9.1",
   "ux_version": "7.8",
   "map": {
-    "services": 440,
-    "localized": 236,
-    "address_geocoded": 58,
-    "street_approximate": 178,
-    "unlocated": 204,
+    "services": 442,
+    "localized": 307,
+    "address_geocoded": 63,
+    "street_approximate": 227,
+    "unlocated": 135,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 204,
-      "A": 13,
-      "C": 223
+      "D": 133,
+      "A": 25,
+      "C": 282,
+      "E": 2
     },
-    "entrances_verified": 0
+    "entrances_verified": 0,
+    "building_approximate": 17
   },
   "ux_map_deployment_verification": {
     "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
@@ -148,10 +151,14 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.9",
-  "baseline_commit": "498195783ca07dff14dd4f3640e7e2fae3598e06",
+  "audit_version": "7.9.1",
+  "baseline_commit": "937713935c693dbbe50109e6738063cc0395e192",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
+  },
+  "v7_9_1_verification": {
+    "local_report": "downloads/Verifiche_V7_9_1.json",
+    "production_evidence": "Verificata separatamente sul commit di merge: non riutilizzare gli esiti delle versioni precedenti."
   }
 }

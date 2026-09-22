@@ -1,0 +1,657 @@
+{
+  "version": "7.9.1",
+  "groups": [
+    {
+      "lat": 41.907077,
+      "lng": 12.464424,
+      "services": [
+        "rete:R1-02",
+        "rete:R1-20",
+        "rete:R1-22",
+        "rete:PUB72-R1-002"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.905596,
+      "lng": 12.503326,
+      "services": [
+        "rete:R1-03",
+        "rete:PUB72-R1-001"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.924847,
+      "lng": 12.517511,
+      "services": [
+        "rete:R1-04",
+        "rete:R1-21",
+        "rete:NET-014",
+        "rete:PUB72-R1-011"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.910527,
+      "lng": 12.525911,
+      "services": [
+        "rete:R1-05",
+        "rete:NET-011"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.93139,
+      "lng": 12.538742,
+      "services": [
+        "rete:R1-06",
+        "rete:PUB72-R1-013"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.924075,
+      "lng": 12.414562,
+      "services": [
+        "rete:R1-10",
+        "rete:NET-012",
+        "rete:PUB72-R1-021"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.939886,
+      "lng": 12.464981,
+      "services": [
+        "rete:R1-12",
+        "rete:PUB72-R1-022",
+        "rete:PUB72-R1-025"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.940898,
+      "lng": 12.4196,
+      "services": [
+        "rete:R1-18",
+        "rete:NET-007",
+        "rete:NET-009"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.885699,
+      "lng": 12.515136,
+      "services": [
+        "rete:R2-01",
+        "rete:R2-06"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.881693,
+      "lng": 12.539388,
+      "services": [
+        "rete:R2-03",
+        "rete:NET-022",
+        "rete:PUB72-R2-002"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.853682,
+      "lng": 12.569272,
+      "services": [
+        "rete:R2-07",
+        "rete:PUB72-R2-005"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.813872,
+      "lng": 12.474013,
+      "services": [
+        "rete:R2-09",
+        "rete:PUB72-R2-008"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.848628,
+      "lng": 12.523475,
+      "services": [
+        "rete:R2-14",
+        "rete:R2-16"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.788286,
+      "lng": 12.362283,
+      "services": [
+        "rete:R3-03",
+        "rete:NET-029"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.774078,
+      "lng": 12.234986,
+      "services": [
+        "rete:R3-04",
+        "rete:PUB72-R3-003"
+      ],
+      "towns": [
+        "Fiumicino"
+      ]
+    },
+    {
+      "lat": 41.738182,
+      "lng": 12.27086,
+      "services": [
+        "rete:R3-07",
+        "rete:R3-10",
+        "rete:NET-028"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.881078,
+      "lng": 12.459912,
+      "services": [
+        "rete:R3-11",
+        "rete:NET-031"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 42.102313,
+      "lng": 12.175879,
+      "services": [
+        "rete:R4-04",
+        "rete:NET-036"
+      ],
+      "towns": [
+        "Bracciano"
+      ]
+    },
+    {
+      "lat": 41.729488,
+      "lng": 13.00058,
+      "services": [
+        "rete:R5-01",
+        "rete:R5-06",
+        "rete:NET-048"
+      ],
+      "towns": [
+        "Colleferro"
+      ]
+    },
+    {
+      "lat": 41.926468,
+      "lng": 13.09241,
+      "services": [
+        "rete:R5-04",
+        "rete:NET-046"
+      ],
+      "towns": [
+        "Subiaco"
+      ]
+    },
+    {
+      "lat": 41.962236,
+      "lng": 12.801845,
+      "services": [
+        "rete:R5-05",
+        "rete:NET-045"
+      ],
+      "towns": [
+        "Tivoli"
+      ]
+    },
+    {
+      "lat": 41.839073,
+      "lng": 12.888508,
+      "services": [
+        "rete:R5-11",
+        "rete:NET-047"
+      ],
+      "towns": [
+        "Palestrina"
+      ]
+    },
+    {
+      "lat": 41.723464,
+      "lng": 12.675828,
+      "services": [
+        "rete:R6-12",
+        "rete:NET-059"
+      ],
+      "towns": [
+        "Ariccia"
+      ]
+    },
+    {
+      "lat": 42.543276,
+      "lng": 12.03154,
+      "services": [
+        "rete:VT-06",
+        "rete:NET-069"
+      ],
+      "towns": [
+        "Montefiascone"
+      ]
+    },
+    {
+      "lat": 42.249881,
+      "lng": 11.760497,
+      "services": [
+        "rete:VT-07",
+        "rete:NET-070",
+        "rete:PUB72-VT-001"
+      ],
+      "towns": [
+        "Tarquinia"
+      ]
+    },
+    {
+      "lat": 42.409896,
+      "lng": 12.109182,
+      "services": [
+        "rete:VT-12",
+        "rete:NET-072"
+      ],
+      "towns": [
+        "Viterbo"
+      ]
+    },
+    {
+      "lat": 42.300101,
+      "lng": 12.412536,
+      "services": [
+        "rete:VT-14",
+        "rete:VT-23"
+      ],
+      "towns": [
+        "Civita Castellana"
+      ]
+    },
+    {
+      "lat": 41.491158,
+      "lng": 13.834689,
+      "services": [
+        "rete:FR-07",
+        "rete:FR-09",
+        "rete:NET-081"
+      ],
+      "towns": [
+        "Cassino"
+      ]
+    },
+    {
+      "lat": 41.587812,
+      "lng": 12.650172,
+      "services": [
+        "rete:LT-02",
+        "rete:LT-11",
+        "rete:NET-090"
+      ],
+      "towns": [
+        "Aprilia"
+      ]
+    },
+    {
+      "lat": 41.479494,
+      "lng": 13.167881,
+      "services": [
+        "rete:LT-07",
+        "rete:LT-13"
+      ],
+      "towns": [
+        "Priverno"
+      ]
+    },
+    {
+      "lat": 41.289236,
+      "lng": 13.252544,
+      "services": [
+        "rete:LT-08",
+        "rete:NET-087"
+      ],
+      "towns": [
+        "Terracina"
+      ]
+    },
+    {
+      "lat": 41.96013,
+      "lng": 12.80203,
+      "services": [
+        "rete:NET-041",
+        "rete:NET-049"
+      ],
+      "towns": [
+        "Tivoli"
+      ]
+    },
+    {
+      "lat": 41.677133,
+      "lng": 12.648258,
+      "services": [
+        "rete:NET-054",
+        "rete:NET-061"
+      ],
+      "towns": [
+        "Ariccia"
+      ]
+    },
+    {
+      "lat": 41.849157,
+      "lng": 12.412886,
+      "services": [
+        "rete:NET-027",
+        "rete:PUB72-R3-002"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 42.420213,
+      "lng": 12.887513,
+      "services": [
+        "rete:NET-063",
+        "rete:PUB72-RI-001"
+      ],
+      "towns": [
+        "Rieti"
+      ]
+    },
+    {
+      "lat": 41.252831,
+      "lng": 13.751386,
+      "services": [
+        "rete:NET-088",
+        "rete:NET-094"
+      ],
+      "towns": [
+        "Minturno"
+      ]
+    },
+    {
+      "lat": 41.891746,
+      "lng": 12.284846,
+      "services": [
+        "rete:PUB72-R1-019",
+        "rete:PUB72-R1-020"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.91232,
+      "lng": 12.607087,
+      "services": [
+        "rete:PUB72-R2-001",
+        "rete:PUB72-R2-012"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.820888,
+      "lng": 12.818281,
+      "services": [
+        "moduli:MOD-064",
+        "moduli:MOD-065"
+      ],
+      "towns": [
+        "San Cesareo"
+      ]
+    },
+    {
+      "lat": 41.947857,
+      "lng": 12.7605,
+      "services": [
+        "moduli:MOD-025",
+        "moduli:MOD-026",
+        "moduli:MOD-027",
+        "moduli:MOD-028",
+        "moduli:MOD-024",
+        "moduli:MOD-023",
+        "moduli:MOD-022"
+      ],
+      "towns": [
+        "Tivoli"
+      ]
+    },
+    {
+      "lat": 41.863167,
+      "lng": 12.44963,
+      "services": [
+        "moduli:MOD-090",
+        "moduli:MOD-089",
+        "moduli:MOD-088"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.296023,
+      "lng": 13.780351,
+      "services": [
+        "moduli:MOD-043",
+        "moduli:MOD-042",
+        "moduli:MOD-047"
+      ],
+      "towns": [
+        "Santi Cosma e Damiano"
+      ]
+    },
+    {
+      "lat": 41.954528,
+      "lng": 12.769824,
+      "services": [
+        "moduli:MOD-071",
+        "moduli:MOD-072",
+        "moduli:MOD-073",
+        "moduli:MOD-074"
+      ],
+      "towns": [
+        "Tivoli"
+      ]
+    },
+    {
+      "lat": 41.881617,
+      "lng": 12.398034,
+      "services": [
+        "moduli:MOD-005",
+        "moduli:MOD-003",
+        "moduli:MOD-002",
+        "moduli:MOD-004",
+        "moduli:MOD-001"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.856161,
+      "lng": 12.452774,
+      "services": [
+        "moduli:MOD-008",
+        "moduli:MOD-007",
+        "moduli:MOD-006",
+        "moduli:MOD-009"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.87927,
+      "lng": 12.452598,
+      "services": [
+        "moduli:MOD-011",
+        "moduli:MOD-010",
+        "moduli:MOD-012"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.940237,
+      "lng": 12.433746,
+      "services": [
+        "moduli:MOD-021",
+        "moduli:MOD-020",
+        "moduli:MOD-019",
+        "privati:PRI76-001"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.713796,
+      "lng": 12.690639,
+      "services": [
+        "moduli:MOD-015",
+        "moduli:MOD-018",
+        "moduli:MOD-016",
+        "moduli:MOD-017",
+        "moduli:MOD-014"
+      ],
+      "towns": [
+        "Genzano di Roma"
+      ]
+    },
+    {
+      "lat": 41.941842,
+      "lng": 12.757333,
+      "services": [
+        "moduli:MOD-079",
+        "moduli:MOD-080"
+      ],
+      "towns": [
+        "Tivoli"
+      ]
+    },
+    {
+      "lat": 41.963436,
+      "lng": 12.752754,
+      "services": [
+        "moduli:MOD-077",
+        "moduli:MOD-078"
+      ],
+      "towns": [
+        "Guidonia Montecelio"
+      ]
+    },
+    {
+      "lat": 41.987444,
+      "lng": 12.404266,
+      "services": [
+        "moduli:MOD-100",
+        "moduli:MOD-099"
+      ],
+      "towns": [
+        "Roma"
+      ]
+    },
+    {
+      "lat": 41.522409,
+      "lng": 13.697137,
+      "services": [
+        "moduli:MOD-101",
+        "moduli:MOD-102"
+      ],
+      "towns": [
+        "Castrocielo"
+      ]
+    },
+    {
+      "lat": 42.426288,
+      "lng": 12.107493,
+      "services": [
+        "moduli:MOD-037",
+        "moduli:MOD-036",
+        "moduli:MOD-035",
+        "moduli:MOD-034"
+      ],
+      "towns": [
+        "Viterbo"
+      ]
+    },
+    {
+      "lat": 42.141445,
+      "lng": 12.540515,
+      "services": [
+        "moduli:MS775-REV-CTC2",
+        "moduli:MS775-REV-CD"
+      ],
+      "towns": [
+        "Capena"
+      ]
+    },
+    {
+      "lat": 42.079176,
+      "lng": 11.816393,
+      "services": [
+        "moduli:V79-PONTE-RES",
+        "moduli:V79-PONTE-COCCINELLA"
+      ],
+      "towns": [
+        "Civitavecchia"
+      ]
+    },
+    {
+      "lat": 41.984005,
+      "lng": 12.727315,
+      "services": [
+        "moduli:V791-GABBIANO-VILLAPIA-RES",
+        "moduli:V791-GABBIANO-VILLAPIA-CD"
+      ],
+      "towns": [
+        "Guidonia Montecelio"
+      ]
+    }
+  ],
+  "rule": "Raggruppamento solo visivo; nessuna deduplicazione dei servizi."
+}

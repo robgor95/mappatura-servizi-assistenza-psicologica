@@ -1,0 +1,852 @@
+{
+  "version": "7.9.1",
+  "baseline_commit": "937713935c693dbbe50109e6738063cc0395e192",
+  "checked_at": "2026-09-22",
+  "summary": {
+    "existing_records_partially_reviewed": 51,
+    "new_services": 2,
+    "new_physical_sites": 1,
+    "new_ssn_contracts_acquired_for_existing_units": 16,
+    "contracts_not_retrieved_for_other_units": 5,
+    "current_2026_budget_addenda_acquired": 0,
+    "proven_closures": 0,
+    "documented_temporary_inpatient_suspension": 1,
+    "updated_site_address_with_previous_temporary_address_retained": 1,
+    "telephone_calls": 0,
+    "site_visits": 0,
+    "beds_available_checked": 0,
+    "field_counts": {
+      "denominazione": {
+        "reviewed": 13,
+        "text_changed": 13,
+        "normalized_changed": 13,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-063"
+        ]
+      },
+      "gestore": {
+        "reviewed": 16,
+        "text_changed": 16,
+        "normalized_changed": 16,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "gestore_precedente": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "ente_id": {
+        "reviewed": 16,
+        "text_changed": 16,
+        "normalized_changed": 16,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "struttura_id": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "servizio_id": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "codice_nsis": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "accreditamento_stato": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "contratto_ssn_stato": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "contratto_periodo": {
+        "reviewed": 16,
+        "text_changed": 16,
+        "normalized_changed": 16,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "rapporto_ssn": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "ssn_evidence_v791": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "pec_amministrativa": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "accesso_extraregionale": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "indirizzo": {
+        "reviewed": 48,
+        "text_changed": 26,
+        "normalized_changed": 25,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028",
+          "rete:R1-02",
+          "rete:R1-03",
+          "rete:R1-04",
+          "rete:R1-05",
+          "rete:R1-06",
+          "rete:R1-07",
+          "rete:R1-08",
+          "rete:R1-09",
+          "rete:R1-10",
+          "rete:R1-11",
+          "rete:R1-12",
+          "rete:R1-13",
+          "rete:R1-14",
+          "rete:R1-15",
+          "rete:R1-16",
+          "rete:R1-17",
+          "rete:R1-18",
+          "rete:R1-19",
+          "rete:R1-20",
+          "rete:R1-21"
+        ]
+      },
+      "comune": {
+        "reviewed": 28,
+        "text_changed": 11,
+        "normalized_changed": 11,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069",
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028"
+        ]
+      },
+      "provincia": {
+        "reviewed": 21,
+        "text_changed": 0,
+        "normalized_changed": 0,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "asl": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "tipo": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "posti_accreditati": {
+        "reviewed": 21,
+        "text_changed": 21,
+        "normalized_changed": 21,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065",
+          "moduli:MOD-066",
+          "moduli:MOD-067",
+          "moduli:MOD-068",
+          "moduli:MOD-069"
+        ]
+      },
+      "sede_dettaglio": {
+        "reviewed": 12,
+        "text_changed": 12,
+        "normalized_changed": 12,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082"
+        ]
+      },
+      "telefono": {
+        "reviewed": 24,
+        "text_changed": 24,
+        "normalized_changed": 14,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA",
+          "rete:R1-03",
+          "rete:R1-04",
+          "rete:R1-05",
+          "rete:R1-06",
+          "rete:R1-07",
+          "rete:R1-08",
+          "rete:R1-09",
+          "rete:R1-11",
+          "rete:R1-14",
+          "rete:R1-19"
+        ]
+      },
+      "sito_ufficiale": {
+        "reviewed": 15,
+        "text_changed": 15,
+        "normalized_changed": 15,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA",
+          "rete:R1-14"
+        ]
+      },
+      "accesso": {
+        "reviewed": 17,
+        "text_changed": 17,
+        "normalized_changed": 17,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA",
+          "rete:NET-025",
+          "rete:R1-14",
+          "rete:R1-19"
+        ]
+      },
+      "destinatari": {
+        "reviewed": 14,
+        "text_changed": 14,
+        "normalized_changed": 14,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "rete:R1-14",
+          "rete:R1-19"
+        ]
+      },
+      "note_contatti": {
+        "reviewed": 14,
+        "text_changed": 14,
+        "normalized_changed": 14,
+        "keys": [
+          "moduli:MOD-071",
+          "moduli:MOD-072",
+          "moduli:MOD-073",
+          "moduli:MOD-074",
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "moduli:MOD-077",
+          "moduli:MOD-078",
+          "moduli:MOD-079",
+          "moduli:MOD-080",
+          "moduli:MOD-081",
+          "moduli:MOD-082",
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA"
+        ]
+      },
+      "nota_indirizzo": {
+        "reviewed": 3,
+        "text_changed": 3,
+        "normalized_changed": 3,
+        "keys": [
+          "moduli:MOD-075",
+          "moduli:MOD-076",
+          "rete:R1-14"
+        ]
+      },
+      "nota_rapporto_ssn": {
+        "reviewed": 5,
+        "text_changed": 5,
+        "normalized_changed": 5,
+        "keys": [
+          "moduli:MOD-061",
+          "moduli:MOD-062",
+          "moduli:MOD-063",
+          "moduli:MOD-064",
+          "moduli:MOD-065"
+        ]
+      },
+      "nota_posti": {
+        "reviewed": 7,
+        "text_changed": 7,
+        "normalized_changed": 7,
+        "keys": [
+          "moduli:MOD-022",
+          "moduli:MOD-023",
+          "moduli:MOD-024",
+          "moduli:MOD-025",
+          "moduli:MOD-026",
+          "moduli:MOD-027",
+          "moduli:MOD-028"
+        ]
+      },
+      "orari": {
+        "reviewed": 5,
+        "text_changed": 5,
+        "normalized_changed": 5,
+        "keys": [
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA",
+          "rete:NET-025",
+          "rete:R1-14",
+          "rete:R1-19"
+        ]
+      },
+      "nota_rete_v791": {
+        "reviewed": 2,
+        "text_changed": 2,
+        "normalized_changed": 2,
+        "keys": [
+          "moduli:MOD-107",
+          "moduli:MS775-NO-CASAGIOIA"
+        ]
+      },
+      "stato_servizio": {
+        "reviewed": 2,
+        "text_changed": 2,
+        "normalized_changed": 2,
+        "keys": [
+          "rete:NET-025",
+          "rete:R1-14"
+        ]
+      },
+      "nota_stato": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "normalized_changed": 1,
+        "keys": [
+          "rete:NET-025"
+        ]
+      },
+      "nome": {
+        "reviewed": 1,
+        "text_changed": 1,
+        "normalized_changed": 1,
+        "keys": [
+          "rete:R1-14"
+        ]
+      },
+      "email": {
+        "reviewed": 1,
+        "text_changed": 0,
+        "normalized_changed": 0,
+        "keys": [
+          "rete:R1-14"
+        ]
+      }
+    },
+    "source_documents_used": 48
+  },
+  "cases": [
+    {
+      "case": "IHG / Gabbiano Tirreno",
+      "sites": 5,
+      "modules": 12,
+      "outcome": "Gestore, indirizzi, contatti, accreditamento e contratto individuale 2025–2026 acquisiti.",
+      "pending": "Budget 2026 separato e condizioni extra-regionali; coordinate per Castel Madama/Rocca Canterano."
+    },
+    {
+      "case": "Villa Pia / rete Gabbiano",
+      "sites": 1,
+      "new_modules": 2,
+      "outcome": "Residenziale e centro diurno DCA distinti, via Pantano 35 concorde.",
+      "pending": "Titolarità individuale, contratto SSN e capienza diurna 20 dichiarati/40 accreditati."
+    },
+    {
+      "case": "Nuovi Orizzonti",
+      "health_sites_in_document": 2,
+      "other_lazio_locations_in_document": 3,
+      "outcome": "Bilancio sociale 2025: Piglio e Marino sanitari; Frosinone, Terracina e Roma non aggiunti come comunità accreditate. Recapito centrale accoglienza aggiornato.",
+      "pending": "Modalità fisiche delle sedi sociali e atti SSN per sede non nuovamente riesaminati."
+    },
+    {
+      "case": "ASL Roma 5: nove schede senza indirizzo",
+      "services": 9,
+      "outcome": "Indirizzi/capienze da tabella 2025–2026; quattro contratti individuali acquisiti.",
+      "pending": "Cinque PDF non acquisiti e condizioni operative ancora incomplete."
+    },
+    {
+      "case": "Colle Cesarano",
+      "services": 7,
+      "sites": 1,
+      "outcome": "Civico 102 e coordinate del complesso da gestore, sette identità conservate.",
+      "pending": "70 posti H24 aggregati nell’elenco contro 60 nella precedente ripartizione: nessun modulo inventato."
+    },
+    {
+      "case": "ASL Roma 1",
+      "services": 20,
+      "outcome": "Confronto con pagine specifiche; nuovi recapiti e sede Frentani; civico Innocenzo IV 16/B.",
+      "pending": "Altri campi e ingresso fisico non verificati."
+    },
+    {
+      "case": "San Camillo Forlanini",
+      "services": 1,
+      "outcome": "Sospensione ricoveri dal 15/04/2026 nell’avviso del 10/04/2026, attività DH distinta.",
+      "pending": "Riapertura non documentata, stato corrente da riconfermare."
+    }
+  ],
+  "geography": {
+    "services_before": 440,
+    "services_after": 442,
+    "located_before": 236,
+    "located_after": 307,
+    "address_after": 63,
+    "street_after": 227,
+    "building_after": 17,
+    "quality_counts": {
+      "D": 133,
+      "A": 25,
+      "C": 282,
+      "E": 2
+    },
+    "unlocated_after": 135,
+    "newly_located_previous_204": 69,
+    "new_services_located": 2,
+    "street_to_address": 0,
+    "retired_old_points": 0,
+    "entrances_verified": 0,
+    "new_geocoding_api_requests": 0,
+    "address_before": 58,
+    "street_before": 178,
+    "building_before": 0,
+    "unlocated_before": 204,
+    "coordinate_corrections": 1,
+    "coordinate_correction_keys": [
+      "rete:R1-14"
+    ],
+    "rejected_candidate_services": 50,
+    "rejected_still_unlocated": 23,
+    "documentary_upgrades_without_coordinate_change": 4,
+    "shared_coordinate_groups": 56,
+    "new_nominatim_queries": 0,
+    "regional_osm_extracts_downloaded": 1
+  },
+  "scope": "Riesame per campo, non certificazione completa o nuova rilevazione telefonica."
+}
