@@ -137,7 +137,7 @@ try{
  });
   await test('V7.9.3 exposes current SerD Nomentana access and transport without changing map counts',async()=>{
     await p.goto(BASE+'/servizi.html?scheda=rete%3AR1-15',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();const t=await p.locator('#svc-detail').innerText();assert.match(t,/Riesame operativo V7\.9\.3/);assert.match(t,/Metro B/);assert.match(t,/prestazioni gratuite/i);assert.match(t,/Municipio 2/);await p.keyboard.press('Escape');
-    await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();assert.match(await p.locator('#map-count').innerText(),/442/);assert.match(await p.locator('#map-partial').innerText(),/309/);assert.match(await p.locator('#map-partial').innerText(),/133/);
+    await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();const mapText=await p.locator('#map-count').innerText();assert.match(mapText,/442 servizi/);assert.match(mapText,/309 localizzati/);assert.match(mapText,/133 senza posizione/);
   });
   await test('V7.9.3 keeps Rieti building accessibility qualified and Amatrice conflict visible',async()=>{
     await p.goto(BASE+'/servizi.html?scheda=rete%3ARI-03',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();let t=await p.locator('#svc-detail').innerText();assert.match(t,/barriere architettoniche/i);assert.match(t,/non una verifica/i);await p.keyboard.press('Escape');
