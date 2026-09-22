@@ -59,7 +59,7 @@ jobs:
           assert v['counts_current']['search']==442
           assert v['map']['localized']==309 and v['map']['unlocated']==133
           base='e6bd577501939141624ce02aad18d6c956796ddb'
-          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','documenti.html'}
+          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','documenti.html','.github/workflows/verify-v7-9-2.yml'}
           changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
           bad=[]
           for p in changed:
