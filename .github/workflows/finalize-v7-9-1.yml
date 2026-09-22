@@ -1,0 +1,92 @@
+name: V7.9.1 final candidate
+on:
+  push:
+    branches: [geografia-operativita-v7-9-1]
+    paths: [.github/workflows/finalize-v7-9-1.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      QA_OUT: /tmp/v791-final-tests
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore only allowed files from the checksum-verified passing candidate
+        run: |
+          set -euo pipefail
+          test "$(gh api repos/$GITHUB_REPOSITORY/git/ref/heads/main --jq .object.sha)" = 937713935c693dbbe50109e6738063cc0395e192
+          mkdir -p /tmp/v791-final-tests
+          gh api repos/$GITHUB_REPOSITORY/actions/artifacts/10695356573/zip > /tmp/v791-passing.zip
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile,hashlib,io,fnmatch,json
+          raw=Path('/tmp/v791-passing.zip').read_bytes()
+          assert hashlib.sha256(raw).hexdigest()=='a62e7685e31872142389600e349d6afee0b1d71effefd4d9e4b26e01308b0502'
+          outer=zipfile.ZipFile(io.BytesIO(raw));report=json.loads(outer.read('tests/report.json'))
+          assert report['passed']==report['total']==26
+          z=zipfile.ZipFile(io.BytesIO(outer.read('repository.zip')))
+          mutable={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','documenti.html'}
+          patterns=['assets/*v7-9-1.js','data/*v7_9_1.json','downloads/*V7_9_1*','tools/*v7-9-1.py','tools/*v7-9-1.cjs','tools/*v7-9-1.mjs']
+          installed=[]
+          for n in z.namelist():
+           if n in mutable or any(fnmatch.fnmatch(n,p) for p in patterns):
+            assert not n.startswith('/') and '..' not in Path(n).parts
+            Path(n).parent.mkdir(parents=True,exist_ok=True);Path(n).write_bytes(z.read(n));installed.append(n)
+          assert len(installed)>=30
+          # Empty JavaScript lines contained indentation only. Preserve all data
+          # bytes, including valid CRLF CSV records; normalize code whitespace.
+          p=Path('assets/map-v7-9-1.js');p.write_text('\n'.join(x.rstrip() for x in p.read_text().splitlines())+'\n')
+          p=Path('tools/build-current-v7-9-1.py');s=p.read_text();old="def write(p,t):(R/p).write_text(t,encoding='utf-8')";assert old in s
+          s=s.replace(old,"def write(p,t):(R/p).write_text('\\n'.join(x.rstrip() for x in t.splitlines())+'\\n',encoding='utf-8')");p.write_text(s)
+          a=json.loads(Path('downloads/Audit_Iniziale_V7_9_1.json').read_text())
+          for n in a['protected_paths']:assert hashlib.sha256(Path(n).read_bytes()).hexdigest()==a['baseline_files'][n]['sha256'],n
+          Path('/tmp/v791-final-tests/restored-files.json').write_text(json.dumps(installed,indent=2))
+          print('Restored',len(installed),'allowed files; protected baseline unchanged.')
+          PY
+          python -m pip install shapely
+          npm install --prefix /tmp/v791-node playwright @axe-core/playwright
+          ln -s /tmp/v791-node/node_modules node_modules
+          /tmp/v791-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Recheck the exact final candidate
+        run: |
+          set -euo pipefail
+          for f in assets/*v7-9-1.js tools/*v7-9-1.cjs tools/*v7-9-1.mjs; do node --check "$f"; done
+          python tools/prepare-release-v7-9-1.py
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v791-final-tests/http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          node tools/test-ui-v7-9-1.mjs
+          python tools/prepare-release-v7-9-1.py
+      - name: Commit passing additions on the work branch only
+        run: |
+          set -euo pipefail
+          test "$(gh api repos/$GITHUB_REPOSITORY/git/ref/heads/main --jq .object.sha)" = 937713935c693dbbe50109e6738063cc0395e192
+          test "$(gh api repos/$GITHUB_REPOSITORY/git/ref/heads/geografia-operativita-v7-9-1 --jq .object.sha)" = "$GITHUB_SHA"
+          git add README.md CHANGELOG.md version.json servizi.html archivio.html mappa.html strutture-approfondite.html documenti.html assets/*v7-9-1.js data/*v7_9_1.json downloads/*V7_9_1* tools/*v7-9-1.py tools/*v7-9-1.cjs tools/*v7-9-1.mjs
+          git rm -r .release-v791
+          git -c core.whitespace=cr-at-eol diff --cached --check
+          git config user.name 'robgor95'
+          git config user.email '73424454+robgor95@users.noreply.github.com'
+          git commit -m 'feat: V7.9.1 unit-specific evidence, service states and offline geographic expansion'
+          git push origin HEAD:geografia-operativita-v7-9-1
+      - name: Export actual final tree and evidence
+        if: always()
+        run: |
+          mkdir -p /tmp/v791-delivery
+          cp -r /tmp/v791-final-tests /tmp/v791-delivery/tests || true
+          git rev-parse HEAD > /tmp/v791-delivery/commit.txt
+          git diff --name-status 937713935c693dbbe50109e6738063cc0395e192 HEAD > /tmp/v791-delivery/changed-files.txt
+          git archive --format=zip HEAD -o /tmp/v791-delivery/repository.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-9-1-final-candidate
+          path: /tmp/v791-delivery/
+          retention-days: 30
+          if-no-files-found: error
