@@ -1,3 +1,16 @@
+## 7.10 — 2026-09-23
+
+- Creato uno strato separato di supporto territoriale senza modificare i 442 servizi clinici.
+- Importato il master regionale corrente di 135 Consultori Familiari.
+- Trascritti 47 PUA/punti di accesso da fonti istituzionali acquisite, con copertura dichiarata non esaustiva dove manca la rubrica corrente.
+- Integrati PIS/emergenza sociale documentati: RM 4.3, RM 5.1, RM 6.4, LT2, FR B e Sala Operativa Sociale di Roma, mantenendo le diverse modalità di accesso.
+- Aggiunta la pagina “Ho bisogno di aiuto adesso” con 112/118, 116117, 1522, 114 e rinvio ai PIS territoriali.
+- TSMREE/NPIA e DCA/DNA restano nel database clinico specialistico per evitare duplicazioni.
+- CAV collegati alla mappa pubblica regionale; zero indirizzi di Case Rifugio pubblicati.
+- Menta aggiornata con intenti PUA, PIS, fragilità sociale e Case della Comunità.
+- Ricerca territoriale solo client-side/same-origin; nessun tracking, geolocalizzazione o geocoder live.
+- Indicizzazione ancora disattivata.
+
 ## 7.9.3 — 2026-09-22
 
 Riesame operativo additivo: quattro presidi ASL Roma 1 aggiornati per accesso/orari/trasporto, tre sedi ASL Rieti con evidenza edilizia sull’accessibilità, un conflitto di sede Rieti reso esplicito e contesto del finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti. Geografia invariata: 442 servizi, 309 localizzati, 133 senza pin. Indicizzazione ancora disattivata.

@@ -1,0 +1,19 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const d=JSON.parse(fs.readFileSync('data/supporto_territoriale_v7_10.json','utf8'));
+const v=JSON.parse(fs.readFileSync('version.json','utf8'));
+const m=require('../assets/menta-config-v7-10.js');
+const tests=[];function check(name,fn){try{fn();tests.push({name,passed:true});}catch(e){tests.push({name,passed:false,error:e.message});}}
+check('version and clinical search count stay stable',()=>{assert.equal(v.web_version,'7.10');assert.equal(v.counts_current.search,442);assert.equal(v.map.services,442);assert.equal(v.map.localized,309);assert.equal(v.map.unlocated,133);assert.equal(v.indexing_enabled,false);});
+check('regional consultori master has exactly 135 unique rows',()=>{assert.equal(d.consultori_master.length,135);assert.equal(new Set(d.consultori_master.map(x=>x.id)).size,135);});
+check('consultori ASL distribution matches regional master',()=>{const got=Object.fromEntries(Object.entries(d.consultori_master.reduce((a,r)=>(a[r.asl]=(a[r.asl]||0)+1,a),{})).sort());assert.deepEqual(got,{'ASL Frosinone':19,'ASL Latina':11,'ASL Rieti':6,'ASL Roma 1':12,'ASL Roma 2':22,'ASL Roma 3':11,'ASL Roma 4':11,'ASL Roma 5':12,'ASL Roma 6':14,'ASL Viterbo':17});});
+check('47 documented PUA points remain unique',()=>{assert.equal(d.pua_sites.length,47);assert.equal(new Set(d.pua_sites.map(x=>x.id)).size,47);});
+check('social emergency layer has six distinct records',()=>{assert.equal(d.pis_services.length,6);assert.equal(new Set(d.pis_services.map(x=>x.id)).size,6);});
+check('RM4.3 PIS exact public number and H24 evidence',()=>{const r=d.pis_services.find(x=>x.id==='PIS-RM43');assert.equal(r.phone,'800 56 23 22');assert.match(r.hours,/24 ore/);assert.match(r.territory,/Bracciano/);});
+check('Frosinone PIS does not invent a public activation number',()=>{const r=d.pis_services.find(x=>x.id==='PIS-FRB');assert.equal(r.phone,null);assert.match(r.access,/riservata/);assert.equal(r.info_phone,'0775 1693523');});
+check('no protected refuge address is published',()=>{const rows=[...d.consultori_master,...d.pua_sites,...d.pis_services];assert.equal(rows.filter(r=>/casa rifugio|rifugio/i.test(String(r.address||''))).length,0);assert.equal(v.support_layer.protected_refuge_addresses_published,0);});
+check('all document sources are HTTPS',()=>{for(const r of [...d.consultori_master,...d.pua_sites,...d.pis_services])assert.match(r.source_url,/^https:\/\//);for(const s of d.sources)assert.match(s.url,/^https:\/\//);});
+check('Menta has PUA PIS and territorial support routes',()=>{assert.equal(m.version,'7.10');assert.equal(m.routes.pua.page,'/supporto-territoriale.html');assert.equal(m.routes.pis.page,'/supporto-territoriale.html');assert(m.intents.some(x=>x.id==='territorial-support'));});
+check('support JS has no tracking, device location or live geocoder',()=>{const s=fs.readFileSync('assets/supporto-v7-10.js','utf8');assert(!/geolocation|sendBeacon|localStorage|sessionStorage|XMLHttpRequest|nominatim|googleapis|mapbox/i.test(s));assert.match(s,/fetch\('\/data\/supporto_territoriale_v7_10\.json'/);});
+check('new pages explicitly keep noindex',()=>{for(const p of ['supporto-territoriale.html','aiuto-adesso.html'])assert.match(fs.readFileSync(p,'utf8'),/name="robots" content="noindex,nofollow/);});
+const report={version:'7.10',tests,passed:tests.filter(x=>x.passed).length,total:tests.length};console.log(JSON.stringify(report,null,2));if(report.passed!==report.total)process.exitCode=1;

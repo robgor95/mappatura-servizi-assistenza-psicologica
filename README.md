@@ -1,3 +1,9 @@
+## Versione corrente V7.10
+
+Nuovo strato complementare per accesso e supporto territoriale: 135 consultori nel master regionale, 47 sedi/punti PUA documentati e 6 servizi/linee di emergenza sociale. Aggiunte le pagine `supporto-territoriale.html` e `aiuto-adesso.html`, con Menta aggiornata. I 442 servizi clinici e la geografia V7.9.2 restano invariati. Le Case Rifugio non sono geolocalizzate e l'indicizzazione resta disattivata.
+
+Checkpoint pre-estensione: branch `v7.9.3-stable-before-social-services` → `2ad2126b5c972ce49956607e368fc45b3fc4f7e6`.
+
 ## Versione corrente V7.9.3
 
 Riesame operativo additivo: quattro presidi ASL Roma 1 aggiornati per accesso/orari/trasporto, tre sedi ASL Rieti con evidenza edilizia sull’accessibilità, un conflitto di sede Rieti reso esplicito e contesto del finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti. Geografia invariata: 442 servizi, 309 localizzati, 133 senza pin. Indicizzazione ancora disattivata.

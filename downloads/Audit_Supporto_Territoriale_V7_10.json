@@ -1,0 +1,93 @@
+{
+  "version": "7.10",
+  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
+  "checked_at": "2026-09-23",
+  "clinical_database": {
+    "search_records_before": 442,
+    "search_records_after": 442,
+    "changed": false,
+    "map_services": 442,
+    "map_localized": 309,
+    "map_unlocated": 133
+  },
+  "support_layer": {
+    "consultori_master": 135,
+    "pua_sites_documented": 47,
+    "social_emergency_services_documented": 6,
+    "numbers": 5,
+    "pathways": 8
+  },
+  "consultori_by_asl": {
+    "ASL Frosinone": 19,
+    "ASL Latina": 11,
+    "ASL Rieti": 6,
+    "ASL Roma 1": 12,
+    "ASL Roma 2": 22,
+    "ASL Roma 3": 11,
+    "ASL Roma 4": 11,
+    "ASL Roma 5": 12,
+    "ASL Roma 6": 14,
+    "ASL Viterbo": 17
+  },
+  "safeguards": {
+    "protected_refuge_addresses_published": 0,
+    "device_geolocation": false,
+    "live_geocoding": false,
+    "tracking": false,
+    "client_search": "same-origin/local filtering",
+    "indexing_enabled": false
+  },
+  "coverage": {
+    "consultori_master": "completo rispetto alla fonte regionale del 12/06/2026",
+    "pua": "parziale per sedi documentate; gap espliciti nel dataset",
+    "pis": "parziale per servizi territoriali documentati; nessun numero esteso per analogia",
+    "cav": "mappa pubblica regionale collegata; Case Rifugio escluse",
+    "tsmree_dca": "collegamento al database clinico; nessuna duplicazione"
+  },
+  "checkpoint": {
+    "branch": "v7.9.3-stable-before-social-services",
+    "commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6"
+  },
+  "gaps": [
+    {
+      "category": "PUA",
+      "area": "ASL Roma 4",
+      "status": "Da completare con singole sedi correnti: disponibile documentazione aziendale 2026, ma non tutte le sedi sono state trascritte in questo rilascio."
+    },
+    {
+      "category": "PUA",
+      "area": "ASL Roma 5",
+      "status": "Da completare con singole sedi correnti da pagine aziendali/Case della Comunità."
+    },
+    {
+      "category": "PUA",
+      "area": "ASL Roma 6",
+      "status": "Pomezia/Ardea verificati; altri distretti da completare."
+    },
+    {
+      "category": "PUA",
+      "area": "ASL Frosinone",
+      "status": "Funzione PUA regionale confermata; inventario puntuale corrente da completare."
+    },
+    {
+      "category": "PUA",
+      "area": "ASL Latina",
+      "status": "Inventario puntuale corrente da completare separando sedi distrettuali e comunali."
+    },
+    {
+      "category": "PUA",
+      "area": "ASL Rieti",
+      "status": "Inventario puntuale corrente da completare."
+    },
+    {
+      "category": "PIS",
+      "area": "Lazio",
+      "status": "Non è stata acquisita una singola rubrica regionale pubblica corrente: sono pubblicati soltanto i numeri territoriali documentati. Nessun numero viene esteso ad altri distretti per analogia."
+    },
+    {
+      "category": "Case della Comunità",
+      "area": "Lazio",
+      "status": "Collegate come contesto di accesso; non sono trattate automaticamente come servizi psicologici."
+    }
+  ]
+}
