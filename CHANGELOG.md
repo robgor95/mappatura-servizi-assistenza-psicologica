@@ -1,3 +1,7 @@
+## 7.9.4 — 2026-09-23
+
+V7.9.4: aggiunto Il Colle H24 a Colle Cesarano, riconciliati i 70 posti H24, localizzati cinque servizi a livello di complesso ospedaliero e completato un audit multisede mirato senza deduzioni amministrative.
+
 ## 7.9.3 — 2026-09-22
 
 Riesame operativo additivo: quattro presidi ASL Roma 1 aggiornati per accesso/orari/trasporto, tre sedi ASL Rieti con evidenza edilizia sull’accessibilità, un conflitto di sede Rieti reso esplicito e contesto del finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti. Geografia invariata: 442 servizi, 309 localizzati, 133 senza pin. Indicizzazione ancora disattivata.

@@ -1,0 +1,67 @@
+{
+  "version": "7.9.4",
+  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
+  "checked_at": "2026-09-23",
+  "summary": {
+    "records_reexamined": 10,
+    "new_services": 1,
+    "new_colle_cesarano_h24_modules": 1,
+    "colle_h24_capacity_reconciled": 70,
+    "multisite_managers_systematically_audited": 2,
+    "new_health_sites_from_multisite_audit": 0,
+    "physical_entrances_verified": 0,
+    "telephone_calls": 0,
+    "site_visits": 0,
+    "unit_2026_budgets_acquired": 0
+  },
+  "findings": [
+    {
+      "case": "Colle Cesarano",
+      "outcome": "Individuato e aggiunto Il Colle/Nucleo 1 SRSR H24 da 10 posti; totale H24 riconciliato a 70 senza fondere i moduli.",
+      "pending": "Budget/corrispettivo unitario 2026 del Nucleo 1 non acquisito."
+    },
+    {
+      "case": "Abaton/Progetto Insieme Castelforte",
+      "outcome": "Esplicitato conflitto civico 2 / 36 / 48–50.",
+      "pending": "Civico fisico corrente da riconfermare."
+    },
+    {
+      "case": "Comunità Insieme e Le Ali del Ponte",
+      "outcome": "Audit sistematico multisede completato senza nuove sedi sanitarie da aggiungere.",
+      "pending": "Contratti/perimetri amministrativi per singola unità restano separati."
+    },
+    {
+      "case": "SPDC/CSM ospedalieri",
+      "outcome": "Aggiornate sedi/contatti e localizzati cinque servizi a livello di complesso ospedaliero.",
+      "pending": "Ingressi specifici non verificati; Formia resta senza pin."
+    }
+  ],
+  "geography": {
+    "services_before": 442,
+    "services_after": 443,
+    "located_before": 309,
+    "located_after": 315,
+    "address_after": 64,
+    "street_after": 228,
+    "building_after": 23,
+    "unlocated_after": 128,
+    "quality_counts": {
+      "D": 126,
+      "A": 27,
+      "C": 288,
+      "E": 2
+    },
+    "newly_localized_existing": [
+      "rete:NET-019",
+      "rete:FR-03",
+      "rete:NET-075",
+      "rete:NET-076",
+      "rete:RI-12"
+    ],
+    "new_service_localized": [
+      "moduli:V794-CESARANO-ILCOLLE-H24"
+    ],
+    "entrances_verified": 0,
+    "nominatim_requests_targeted": 18
+  }
+}

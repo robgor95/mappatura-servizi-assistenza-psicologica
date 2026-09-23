@@ -1,10 +1,10 @@
 {
-  "web_version": "7.9.3",
+  "web_version": "7.9.4",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.9.3",
-  "built_at": "2026-09-22",
+  "data_extension_version": "7.9.4",
+  "built_at": "2026-09-23",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
   "clinical_review": false,
@@ -34,17 +34,18 @@
   "deployment_checked_by_preparer": true,
   "counts_current": {
     "rete": 298,
-    "moduli": 127,
+    "moduli": 128,
     "privati": 17,
     "scuole": 20,
     "centri_ascolto": 33,
     "universita": 19,
     "helpline": 20,
-    "search": 442,
+    "search": 443,
     "multisite_overlay": 4,
-    "structure_directory": 183,
+    "structure_directory": 184,
     "audit_additions": 8,
-    "audit_7_9_1_additions": 2
+    "audit_7_9_1_additions": 2,
+    "audit_7_9_4_additions": 1
   },
   "menta_version": "7.9.2",
   "menta": {
@@ -57,7 +58,7 @@
     "routes": 44,
     "towns": 100
   },
-  "release_note": "V7.9.3: accesso e trasporto aggiornati per quattro presidi ASL Roma 1, accessibilità edilizia documentata per tre sedi ASL Rieti, un conflitto di sede Rieti esplicitato e contesto di finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti.",
+  "release_note": "V7.9.4: aggiunto Il Colle H24 a Colle Cesarano, riconciliati i 70 posti H24, localizzati cinque servizi a livello di complesso ospedaliero e completato un audit multisede mirato senza deduzioni amministrative.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -105,26 +106,26 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.9.2",
+  "map_version": "7.9.4",
   "ux_version": "7.8",
   "map": {
-    "services": 442,
-    "localized": 309,
+    "services": 443,
+    "localized": 315,
     "address_geocoded": 64,
     "street_approximate": 228,
-    "unlocated": 133,
+    "unlocated": 128,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 131,
-      "A": 26,
-      "C": 283,
+      "D": 126,
+      "A": 27,
+      "C": 288,
       "E": 2
     },
     "entrances_verified": 0,
-    "building_approximate": 17
+    "building_approximate": 23
   },
   "ux_map_deployment_verification": {
     "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
@@ -151,8 +152,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.9.3",
-  "baseline_commit": "e6bd577501939141624ce02aad18d6c956796ddb",
+  "audit_version": "7.9.4",
+  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -167,6 +168,10 @@
   },
   "v7_9_3_verification": {
     "local_report": "downloads/Verifiche_V7_9_3.json",
-    "production_evidence": "da verificare separatamente dopo il merge; non riutilizzare l'esito V7.9.2"
+    "production_evidence": "Cloudflare e produzione verificati sul commit 2ad2126b5c972ce49956607e368fc45b3fc4f7e6; workflow 35794344771: HTTP 48/48, browser 28/28."
+  },
+  "v7_9_4_verification": {
+    "local_report": "downloads/Verifiche_V7_9_4.json",
+    "production_evidence": "da verificare separatamente dopo merge"
   }
 }
