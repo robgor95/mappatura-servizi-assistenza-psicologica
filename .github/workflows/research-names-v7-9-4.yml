@@ -1,0 +1,24 @@
+name: V7.9.4 named facility research
+on:
+  push:
+    branches: [audit-v7-9-4]
+    paths:
+      - tools/research-names-v7-9-4.py
+      - .github/workflows/research-names-v7-9-4.yml
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python tools/research-names-v7-9-4.py /tmp/v794-names
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v7-9-4-named-facilities
+          path: /tmp/v794-names/
+          retention-days: 14
+          if-no-files-found: error
