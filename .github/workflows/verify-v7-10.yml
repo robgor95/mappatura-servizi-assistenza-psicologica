@@ -1,0 +1,104 @@
+name: V7.10 support layer verification
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/verify-v7-10.yml
+      - index.html
+      - supporto-territoriale.html
+      - aiuto-adesso.html
+      - ascolto.html
+      - centri-ascolto.html
+      - documenti.html
+      - sitemap.xml
+      - version.json
+      - assets/supporto-v7-10.*
+      - assets/menta-config-v7-10.js
+      - data/supporto_territoriale_v7_10.json
+      - downloads/*V7_10*
+      - tools/*v7-10*
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/verify-v7-10.yml
+      - index.html
+      - supporto-territoriale.html
+      - aiuto-adesso.html
+      - ascolto.html
+      - centri-ascolto.html
+      - documenti.html
+      - sitemap.xml
+      - version.json
+      - assets/supporto-v7-10.*
+      - assets/menta-config-v7-10.js
+      - data/supporto_territoriale_v7_10.json
+      - downloads/*V7_10*
+      - tools/*v7-10*
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v710-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Data, privacy and preservation checks
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/v710-verification
+          node tools/test-v7-10.cjs | tee /tmp/v710-verification/data-tests.json
+          node --check assets/supporto-v7-10.js
+          node --check assets/menta-config-v7-10.js
+          node --check tools/test-ui-v7-10.mjs
+          python -m py_compile tools/verify-production-v7-10.py
+          python - <<'PY'
+          import subprocess
+          base='2ad2126b5c972ce49956607e368fc45b3fc4f7e6'
+          allowed={'README.md','CHANGELOG.md','index.html','ascolto.html','centri-ascolto.html','documenti.html','sitemap.xml','version.json','.github/workflows/verify-v7-9-3.yml'}
+          changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
+          bad=[]
+          for p in changed:
+              existed=subprocess.run(['git','cat-file','-e',base+':'+p],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
+              if existed and p not in allowed: bad.append(p)
+          assert not bad,bad
+          PY
+          npm install --prefix /tmp/v710-node playwright @axe-core/playwright
+          ln -s /tmp/v710-node/node_modules node_modules
+          /tmp/v710-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Browser verification on pull request
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v710-verification/http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10.mjs
+      - name: Verify Cloudflare production bytes and noindex
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/v710-verification
+        run: python tools/verify-production-v7-10.py
+      - name: Browser verification on production
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/v710-verification
+        run: node tools/test-ui-v7-10.mjs
+      - name: Record tested tree
+        if: always()
+        run: |
+          git rev-parse HEAD > /tmp/v710-verification/commit.txt
+          git diff --name-status 2ad2126b5c972ce49956607e368fc45b3fc4f7e6 HEAD > /tmp/v710-verification/changed-files.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-10-${{ github.event_name }}-verification
+          path: /tmp/v710-verification/
+          retention-days: 30
+          if-no-files-found: error

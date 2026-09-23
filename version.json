@@ -1,10 +1,10 @@
 {
-  "web_version": "7.9.3",
+  "web_version": "7.10",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.9.3",
-  "built_at": "2026-09-22",
+  "data_extension_version": "7.10",
+  "built_at": "2026-09-23",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
   "clinical_review": false,
@@ -44,20 +44,23 @@
     "multisite_overlay": 4,
     "structure_directory": 183,
     "audit_additions": 8,
-    "audit_7_9_1_additions": 2
+    "audit_7_9_1_additions": 2,
+    "support_consultori": 135,
+    "support_pua": 47,
+    "support_social_emergency": 6
   },
-  "menta_version": "7.9.2",
+  "menta_version": "7.10",
   "menta": {
-    "intents": 36,
-    "keyword_assignments": 282,
-    "unique_keywords": 276,
+    "intents": 40,
+    "keyword_assignments": 323,
+    "unique_keywords": 323,
     "emergency_assignments": 38,
     "unique_emergency_keywords": 37,
-    "destination_pages": 17,
-    "routes": 44,
+    "destination_pages": 22,
+    "routes": 48,
     "towns": 100
   },
-  "release_note": "V7.9.3: accesso e trasporto aggiornati per quattro presidi ASL Roma 1, accessibilità edilizia documentata per tre sedi ASL Rieti, un conflitto di sede Rieti esplicitato e contesto di finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti.",
+  "release_note": "V7.10: nuovo strato separato di supporto territoriale con master regionale di 135 consultori, 47 sedi/punti PUA documentati, 6 servizi/linee di emergenza sociale, pagina Aiuto adesso e nuovi percorsi Menta; i 442 servizi clinici e la geografia V7.9.2 restano invariati.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -152,7 +155,7 @@
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
   "audit_version": "7.9.3",
-  "baseline_commit": "e6bd577501939141624ce02aad18d6c956796ddb",
+  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -168,5 +171,30 @@
   "v7_9_3_verification": {
     "local_report": "downloads/Verifiche_V7_9_3.json",
     "production_evidence": "da verificare separatamente dopo il merge; non riutilizzare l'esito V7.9.2"
+  },
+  "support_version": "7.10",
+  "support_layer": {
+    "checked_at": "2026-09-23",
+    "clinical_search_unchanged": 442,
+    "consultori_master": 135,
+    "pua_sites_documented": 47,
+    "social_emergency_services_documented": 6,
+    "numbers": 5,
+    "pathways": 8,
+    "complete": {
+      "consultori_master": true,
+      "pua_sites": false,
+      "pis": false,
+      "cav_public_map_link": true
+    },
+    "protected_refuge_addresses_published": 0,
+    "device_geolocation": false,
+    "tracking": false,
+    "live_geocoding": false,
+    "note": "I PUA/PIS sono pubblicati solo dove una fonte corrente è stata acquisita; assenza dall'elenco non implica assenza del servizio."
+  },
+  "v7_10_verification": {
+    "local_report": "downloads/Audit_Supporto_Territoriale_V7_10.json",
+    "production_evidence": "da verificare separatamente dopo il merge; non riutilizzare esiti V7.9.x"
   }
 }

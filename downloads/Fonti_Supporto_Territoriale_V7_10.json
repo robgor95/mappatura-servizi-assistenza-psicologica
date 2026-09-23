@@ -1,0 +1,83 @@
+{
+  "version": "7.10",
+  "checked_at": "2026-09-23",
+  "count": 19,
+  "sources": [
+    {
+      "url": "https://114.it/",
+      "https": true
+    },
+    {
+      "url": "https://asl.vt.it/pua-punto-unico-di-accesso",
+      "https": true
+    },
+    {
+      "url": "https://comunicazione.regione.lazio.it/112/",
+      "https": true
+    },
+    {
+      "url": "https://distrettosociosanitariorm4punto3.it/servizi/servizi/sottocategoria/3-accesso/tipologia/8-pronto-intervento-sociale/articolo/3-8-40-pronto-intervento-sociale",
+      "https": true
+    },
+    {
+      "url": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "https": true
+    },
+    {
+      "url": "https://salutelazio.it/it/servizi/consultori-familiari",
+      "https": true
+    },
+    {
+      "url": "https://www.1522.eu/",
+      "https": true
+    },
+    {
+      "url": "https://www.aslroma1.it/punto-unico-accesso",
+      "https": true
+    },
+    {
+      "url": "https://www.aslroma2.it/index.php/servizi-5d/punto-unico-di-accesso-pua-2",
+      "https": true
+    },
+    {
+      "url": "https://www.aslroma3.it/pua-punto-unico-di-accesso/",
+      "https": true
+    },
+    {
+      "url": "https://www.comune.latina.it/home/servizi/servizio/Servizio-132.html",
+      "https": true
+    },
+    {
+      "url": "https://www.comune.pomezia.rm.it/it/page/servizi-del-distretto",
+      "https": true
+    },
+    {
+      "url": "https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF38628",
+      "https": true
+    },
+    {
+      "url": "https://www.distrettosocialefrosinone.it/pronto-intervento-sociale/",
+      "https": true
+    },
+    {
+      "url": "https://www.folias.it/site/pronto-intervento-sociale-p-i-s/",
+      "https": true
+    },
+    {
+      "url": "https://www.regione.lazio.it/cittadini/sociale-famiglie/piani-sociali-di-zona",
+      "https": true
+    },
+    {
+      "url": "https://www.regione.lazio.it/notizie/dipendenze-e-disturbi-della-nutrizione-e-dellalimentazione-potenziati-i-servizi-e-gli-ambulatori",
+      "https": true
+    },
+    {
+      "url": "https://www.regione.lazio.it/notizie/salute-attivo-in-tutta-la-regione-il-numero-116117",
+      "https": true
+    },
+    {
+      "url": "https://www.salutelazio.it/",
+      "https": true
+    }
+  ]
+}
