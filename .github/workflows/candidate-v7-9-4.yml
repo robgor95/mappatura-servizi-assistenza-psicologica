@@ -1,0 +1,56 @@
+name: V7.9.4 candidate checks
+on:
+  push:
+    branches: [audit-v7-9-4]
+    paths:
+      - tools/test-v7-9-4.cjs
+      - tools/test-ui-v7-9-4.mjs
+      - data/audit_operativo_v7_9_4.json
+      - data/presidi_geo_v7_9_4.json
+      - assets/audit-data-v7-9-4.js
+      - assets/servizi-v7-9-4.js
+      - assets/map-data-v7-9-4.js
+      - assets/directory-v7-9-4.js
+      - servizi.html
+      - archivio.html
+      - mappa.html
+      - strutture-approfondite.html
+      - version.json
+      - .github/workflows/candidate-v7-9-4.yml
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Data and syntax
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/v794-candidate
+          node tools/export-current-v7-9-4.cjs /tmp/current-v794.json
+          node tools/test-v7-9-4.cjs | tee /tmp/v794-candidate/data-tests.json
+          node --check assets/audit-data-v7-9-4.js
+          node --check assets/servizi-v7-9-4.js
+          node --check assets/map-data-v7-9-4.js
+          node --check assets/directory-v7-9-4.js
+          node --check tools/test-ui-v7-9-4.mjs
+          npm install --prefix /tmp/v794-node playwright @axe-core/playwright
+          ln -s /tmp/v794-node/node_modules node_modules
+          /tmp/v794-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Browser regression
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v794-candidate/http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          QA_OUT=/tmp/v794-candidate node tools/test-ui-v7-9-4.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-9-4-candidate
+          path: /tmp/v794-candidate/
+          retention-days: 14
+          if-no-files-found: error
