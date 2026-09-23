@@ -1,31 +1,5 @@
-name: V7.9.3 release verification
+name: V7.9.3 historical verification (manual)
 on:
-  pull_request:
-    branches: [main]
-    paths:
-      - .github/workflows/verify-v7-9-3.yml
-      - servizi.html
-      - archivio.html
-      - documenti.html
-      - version.json
-      - assets/audit-data-v7-9-3.js
-      - assets/servizi-v7-9-3.js
-      - data/audit_operativo_v7_9_3.json
-      - downloads/*V7_9_3*
-      - tools/*v7-9-3*
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/verify-v7-9-3.yml
-      - servizi.html
-      - archivio.html
-      - documenti.html
-      - version.json
-      - assets/audit-data-v7-9-3.js
-      - assets/servizi-v7-9-3.js
-      - data/audit_operativo_v7_9_3.json
-      - downloads/*V7_9_3*
-      - tools/*v7-9-3*
   workflow_dispatch:
 permissions:
   contents: read
