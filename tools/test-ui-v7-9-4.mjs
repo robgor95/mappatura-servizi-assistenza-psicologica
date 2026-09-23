@@ -158,7 +158,7 @@ try{
   await test('Abaton conflict and multisite audit remain visible without invented sites',async()=>{
     await p.goto(BASE+'/servizi.html?scheda=moduli%3AMOD-038',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();let t=await p.locator('#svc-detail').innerText();assert.match(t,/De Gasperi 2/);assert.match(t,/48\/50/);assert.match(t,/nove strutture sanitarie/i);await p.keyboard.press('Escape');
     await p.goto(BASE+'/servizi.html?scheda=moduli%3AMOD-109',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();t=await p.locator('#svc-detail').innerText();assert.match(t,/Via Isonzo 34/);assert.match(t,/non viene promossa/i);await p.keyboard.press('Escape');
-    await p.goto(BASE+'/strutture-approfondite.html',{waitUntil:'networkidle'});assert.match(await p.locator('#result-count').innerText(),/184/);await p.locator('#directory-search').fill('Il Colle Nucleo 1');await p.waitForTimeout(350);assert.equal(await p.locator('.directory-card').count(),1);
+    await p.goto(BASE+'/strutture-approfondite.html',{waitUntil:'networkidle'});assert.match(await p.locator('#result-count').innerText(),/184/);await p.locator('#directory-search').fill('V794-CESARANO-ILCOLLE-H24');await p.waitForTimeout(350);assert.equal(await p.locator('.directory-card').count(),1);
   });
   await test('No uncaught JavaScript errors in scenarios' ,async()=>assert.deepEqual(errors,[]));
 }finally{await c.close();await browser.close();}
