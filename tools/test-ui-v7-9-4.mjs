@@ -112,7 +112,7 @@ try{
   const a=JSON.parse(await fs.readFile('downloads/Audit_Iniziale_V7_9_1.json','utf8'));assert.equal(a.protected_paths.length,176);for(const file of a.protected_paths){if(file==='index.html')continue;assert.equal(crypto.createHash('sha256').update(await fs.readFile(file)).digest('hex'),a.baseline_files[file].sha256,file);}
  });
  await test('Current map exposes the exact 443 / 315 / 128 service counts and uncertainty',async()=>{
-  await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();const text=await p.locator('#map-count').innerText();assert.match(text,/443 servizi/);assert.match(text,/309 localizzati/);assert.match(text,/133 senza posizione/);
+  await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();const text=await p.locator('#map-count').innerText();assert.match(text,/443 servizi/);assert.match(text,/315 localizzati/);assert.match(text,/128 senza posizione/);
   const d=await p.evaluate(async()=>{const x=await LazioMapData.load();return {count:x.rows.length,points:x.rows.filter(r=>LazioMapData.position(r,x.geo)).length};});assert.deepEqual(d,{count:443,points:315});
  });
  await test('Gabbiano preserves twelve contracted legacy modules and two distinct Villa Pia services',async()=>{
@@ -137,7 +137,7 @@ try{
  });
   await test('V7.9.3 exposes current SerD Nomentana access and transport without changing map counts',async()=>{
     await p.goto(BASE+'/servizi.html?scheda=rete%3AR1-15',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();const t=await p.locator('#svc-detail').innerText();assert.match(t,/Riesame operativo V7\.9\.3/);assert.match(t,/Metro B/);assert.match(t,/prestazioni gratuite/i);assert.match(t,/Municipio 2/);await p.keyboard.press('Escape');
-    await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();const mapText=await p.locator('#map-count').innerText();assert.match(mapText,/443 servizi/);assert.match(mapText,/309 localizzati/);assert.match(mapText,/133 senza posizione/);
+    await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-controls:not([disabled])').waitFor();const mapText=await p.locator('#map-count').innerText();assert.match(mapText,/443 servizi/);assert.match(mapText,/315 localizzati/);assert.match(mapText,/128 senza posizione/);
   });
   await test('V7.9.3 keeps Rieti building accessibility qualified and Amatrice conflict visible',async()=>{
     await p.goto(BASE+'/servizi.html?scheda=rete%3ARI-03',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();let t=await p.locator('#svc-detail').innerText();assert.match(t,/barriere architettoniche/i);assert.match(t,/non una verifica/i);await p.keyboard.press('Escape');
