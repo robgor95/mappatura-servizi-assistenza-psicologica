@@ -37,7 +37,7 @@ revisions.append(rev('moduli:MOD-038',{
 },[abaton,abaton_region,insieme],'Conservate tutte le varianti documentali; nessuna scelta arbitraria del civico.'))
 
 revisions.append(rev('moduli:MOD-109',{
- 'nota_multisede_v794':'Audit multisede Le Ali del Ponte: le sedi residenziali sanitarie documentate sono già rappresentate da servizi distinti tra Via Amba Aradam 25 e Via Veneto 30/C. Via Isonzo 34/La Formica non viene promossa automaticamente a comunità sanitaria residenziale.',
+ 'nota_multisede_v794':'Audit multisede Le Ali del Ponte: le sedi residenziali sanitarie documentate risultano già rappresentate da servizi distinti. Via Isonzo 34/La Formica non viene promossa automaticamente a comunità sanitaria residenziale.',
  'accesso_extraregionale':'Il gestore dichiara convenzioni con Regione Lazio e regioni invianti per alcuni programmi; condizioni economiche e autorizzazione dell’invio extraregionale vanno confermate caso per caso con servizio inviante e struttura.'
 },[ponte],'Dichiarazione del gestore distinta da un contratto unitario corrente con ogni regione.'))
 
@@ -84,7 +84,7 @@ new_record={
 'rapporto_ssn':'Rapporto SSN documentato a livello della struttura Colle Cesarano; condizioni economiche 2026 della singola unità da consolidare.',
 'budget_2026_stato':'Budget/corrispettivo unitario 2026 del Nucleo 1 non acquisito.',
 'accesso_extraregionale':'Da verificare con servizio inviante, ASL e struttura.',
-'nota_indirizzo':'Stesso complesso di Via Maremmana Inferiore 102 degli altri moduli Colle Cesarano. Il punto mappa rappresenta il complesso, non l’ingresso del Nucleo 1.',
+'nota_indirizzo':'Stesso complesso di Via Maremmana Inferiore 102 degli altri moduli Colle Cesarano. Il punto mappa rappresenta il complesso; ingresso specifico del Nucleo 1 non verificato.',
 'ultima_verifica':DATE,'fonti':' | '.join([asl5_list,colle_budget,colle_contract,colle_manager])
 }
 addition={'service_key':'moduli:V794-CESARANO-ILCOLLE-H24','origin':'moduli','record':new_record,
