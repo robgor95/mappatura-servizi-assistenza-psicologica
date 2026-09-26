@@ -1,0 +1,303 @@
+{
+  "version": "7.11.2",
+  "baseline_commit": "2c119884969b77e9f5635af6802c04fbf20f7e8a",
+  "checked_at": "2026-09-26",
+  "additions": [],
+  "method": "Overlay additivo e strettamente geografico. Nessuna modifica a identità, classificazioni sanitarie, accreditamento, rapporto SSN, posti, accesso o orari.",
+  "revisions": [
+    {
+      "service_key": "rete:R1-08",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto cartografico; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione cartografica C senza modificare l'indirizzo documentato o altri dati clinico-amministrativi.",
+      "fields": {
+        "nota_geografia_v7112": "Coordinate pubblicate da ASL Roma 1 per la COT allo stesso indirizzo Via di Boccea 271. Il punto identifica il presidio/complesso all'indirizzo, non l'ingresso del CSM né risolve i conflitti sugli orari."
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+        "https://www.aslroma1.it/uploads/files/56_11_Model_form_Mappa_BOCCEA.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+          "source_date": null,
+          "basis": "Fonte dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.aslroma1.it/uploads/files/56_11_Model_form_Mappa_BOCCEA.pdf",
+          "source_date": null,
+          "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7112": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+            "https://www.aslroma1.it/uploads/files/56_11_Model_form_Mappa_BOCCEA.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+              "source_date": null,
+              "basis": "Fonte dell'indirizzo/servizio."
+            },
+            {
+              "url": "https://www.aslroma1.it/uploads/files/56_11_Model_form_Mappa_BOCCEA.pdf",
+              "source_date": null,
+              "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale del medesimo indirizzo/presidio; precisione e limiti riportati nella nota."
+        }
+      }
+    },
+    {
+      "service_key": "rete:R1-19",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto cartografico; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione cartografica C senza modificare l'indirizzo documentato o altri dati clinico-amministrativi.",
+      "fields": {
+        "nota_geografia_v7112": "Coordinate pubblicate da ASL Roma 1 per la COT Cassia allo stesso indirizzo Via Cassia 472. Il punto identifica il presidio condiviso, non l'ingresso del singolo servizio."
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+        "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+          "source_date": null,
+          "basis": "Fonte dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf",
+          "source_date": null,
+          "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7112": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+            "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+              "source_date": null,
+              "basis": "Fonte dell'indirizzo/servizio."
+            },
+            {
+              "url": "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf",
+              "source_date": null,
+              "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale del medesimo indirizzo/presidio; precisione e limiti riportati nella nota."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-008",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto cartografico; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione cartografica C senza modificare l'indirizzo documentato o altri dati clinico-amministrativi.",
+      "fields": {
+        "nota_geografia_v7112": "TSMREE Cassia è documentato da ASL Roma 1 a Via Cassia 472. Le coordinate sono quelle pubblicate per la COT nello stesso presidio: localizzazione del complesso, non dell'ingresso TSMREE."
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/servizio-tutela-salute-mentale-e-riabilitazione-eta-evolutiva-via-cassia",
+        "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/servizio-tutela-salute-mentale-e-riabilitazione-eta-evolutiva-via-cassia",
+          "source_date": null,
+          "basis": "Fonte dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf",
+          "source_date": null,
+          "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7112": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/servizio-tutela-salute-mentale-e-riabilitazione-eta-evolutiva-via-cassia",
+            "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/servizio-tutela-salute-mentale-e-riabilitazione-eta-evolutiva-via-cassia",
+              "source_date": null,
+              "basis": "Fonte dell'indirizzo/servizio."
+            },
+            {
+              "url": "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf",
+              "source_date": null,
+              "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale del medesimo indirizzo/presidio; precisione e limiti riportati nella nota."
+        }
+      }
+    },
+    {
+      "service_key": "rete:FR-05",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto cartografico; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione cartografica C senza modificare l'indirizzo documentato o altri dati clinico-amministrativi.",
+      "fields": {
+        "nota_geografia_v7112": "ARPA Lazio pubblica coordinate per Borgo Santa Lucia 52 a Ceccano. Il punto è usato come riferimento dell'indirizzo condiviso; non certifica edificio, reparto o ingresso del CSM."
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+        "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+          "source_date": null,
+          "basis": "Fonte dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+          "source_date": null,
+          "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7112": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+            "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+              "source_date": null,
+              "basis": "Fonte dell'indirizzo/servizio."
+            },
+            {
+              "url": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+              "source_date": null,
+              "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale del medesimo indirizzo/presidio; precisione e limiti riportati nella nota."
+        }
+      }
+    },
+    {
+      "service_key": "rete:PUB72-FR-003",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto cartografico; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione cartografica C senza modificare l'indirizzo documentato o altri dati clinico-amministrativi.",
+      "fields": {
+        "nota_geografia_v7112": "La scheda documenta Borgo Santa Lucia 52; ARPA Lazio pubblica coordinate per lo stesso indirizzo. Il punto è indicativo e non identifica ingresso o unità fisica della SRTRe."
+      },
+      "sources": [
+        "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+        "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+          "source_date": null,
+          "basis": "Fonte dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+          "source_date": null,
+          "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7112": {
+          "sources": [
+            "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+            "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+              "source_date": null,
+              "basis": "Fonte dell'indirizzo/servizio."
+            },
+            {
+              "url": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+              "source_date": null,
+              "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale del medesimo indirizzo/presidio; precisione e limiti riportati nella nota."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-058",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto cartografico; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione cartografica C senza modificare l'indirizzo documentato o altri dati clinico-amministrativi.",
+      "fields": {
+        "nota_geografia_v7112": "Roma Capitale pubblica il punto del Ce.I.S. Don Mario Picchi a Via Appia Nuova 1251, indirizzo della Comunità Santa Maria. Localizzazione del complesso, non dell'ingresso della comunità."
+      },
+      "sources": [
+        "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+        "https://www.comune.roma.it/web-resources/cms/documents/PPC2024_1_InformazioneGenerale_Allegati.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+          "source_date": null,
+          "basis": "Fonte dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.comune.roma.it/web-resources/cms/documents/PPC2024_1_InformazioneGenerale_Allegati.pdf",
+          "source_date": null,
+          "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7112": {
+          "sources": [
+            "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+            "https://www.comune.roma.it/web-resources/cms/documents/PPC2024_1_InformazioneGenerale_Allegati.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+              "source_date": null,
+              "basis": "Fonte dell'indirizzo/servizio."
+            },
+            {
+              "url": "https://www.comune.roma.it/web-resources/cms/documents/PPC2024_1_InformazioneGenerale_Allegati.pdf",
+              "source_date": null,
+              "basis": "Fonte pubblica delle coordinate allo stesso indirizzo o presidio; non prova dell'ingresso del servizio."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale del medesimo indirizzo/presidio; precisione e limiti riportati nella nota."
+        }
+      }
+    }
+  ]
+}
