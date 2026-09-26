@@ -35,3 +35,7 @@
   X-Robots-Tag: noindex, follow
 /privacy.html
   X-Robots-Tag: noindex, follow
+
+
+/assets/menta/menta-base-v7-10-1.webp
+  Cache-Control: public, max-age=31536000, immutable

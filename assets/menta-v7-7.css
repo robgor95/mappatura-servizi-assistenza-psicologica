@@ -80,3 +80,39 @@ input,select{border-color:#7c9589;border-radius:12px}input::placeholder{color:#6
 .svc-detail-sources{padding-left:1.2rem}
 .svc-detail-sources a{word-break:break-word}
 @media(max-width:650px){.approach-grid{grid-template-columns:1fr}.approach-grid article{padding:15px}}
+
+
+/* V7.10.1 · Menta visual asset refresh. Layout and routing logic stay unchanged. */
+.menta-figure>img{
+  aspect-ratio:600/618;
+  object-fit:contain;
+  transform-origin:50% 62%;
+  filter:drop-shadow(0 8px 14px rgba(22,78,71,.13));
+}
+.menta-welcome{max-width:300px}
+.menta-welcome:before{
+  inset:30% 2% 8%;
+  background:linear-gradient(145deg,#dcefc9,#daeceb 62%,#e9e1f5);
+  opacity:.9;
+}
+@media(min-width:1100px){
+  .menta-home{grid-template-columns:minmax(0,1fr) 310px}
+}
+@media(max-width:900px){
+  .menta-welcome{max-width:220px}
+}
+@media(max-width:650px){
+  .menta-welcome{right:10px;top:18px;width:88px;max-width:88px}
+  .menta-home .eyebrow{max-width:calc(100% - 82px)}
+  .menta-home h1{max-width:calc(100% - 82px)}
+}
+@media(prefers-reduced-motion:no-preference){
+  .menta-figure[data-state="idle"],
+  .menta-figure[data-state="ambient"],
+  .menta-figure[data-state="listening"],
+  .menta-figure[data-state="searching"],
+  .menta-figure[data-state="choice"]{will-change:transform}
+}
+@media(forced-colors:active){
+  .menta-figure>img{filter:none}
+}
