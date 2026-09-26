@@ -1,3 +1,13 @@
+## 7.11.5 — 2026-09-26
+
+- Sesto ciclo geografico sulla baseline V7.11.4.
+- Aggiunti 6 punti indicativi C riusando localizzazioni stradali già validate per la stessa via e comune.
+- Copertura: 365 localizzati e 78 senza pin; 443 servizi clinici invariati.
+- Cinque servizi di Frosinone sono localizzati solo a livello di Via Armando Fabi.
+- TSMREE Frascati è localizzato solo a livello di Via Enrico Fermi.
+- UOSD Disturbi Nutrizione e Alimentazione Frosinone resta senza pin per conflitto di sede.
+- Zero ingressi fisici verificati; Menta, studenti, supporto territoriale e noindex invariati.
+
 ## 7.11.4 — 2026-09-26
 
 - Quinto ciclo geografico sulla baseline V7.11.3.
