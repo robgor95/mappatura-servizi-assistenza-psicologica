@@ -1,9 +1,5 @@
-name: V7.11.1 targeted geography and conflicts verification
+name: V7.11.1 historical verification (manual)
 on:
-  pull_request:
-    branches: [main]
-  push:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,0 +1,32 @@
+{
+  "version": "7.11.2",
+  "baseline_commit": "2c119884969b77e9f5635af6802c04fbf20f7e8a",
+  "checked_at": "2026-09-26",
+  "summary": {
+    "services": 443,
+    "located_before": 344,
+    "located_after": 350,
+    "unlocated_before": 99,
+    "unlocated_after": 93,
+    "new_locations": 6,
+    "distinct_new_coordinates": 4,
+    "quality_after": {
+      "A": 28,
+      "C": 322,
+      "D": 91,
+      "E": 2
+    },
+    "entrances_verified": 0
+  },
+  "localized_keys": [
+    "rete:R1-08",
+    "rete:R1-19",
+    "rete:NET-008",
+    "rete:FR-05",
+    "rete:PUB72-FR-003",
+    "moduli:MOD-058"
+  ],
+  "records_reviewed": 6,
+  "complete": false,
+  "caveat": "Le coordinate identificano indirizzo/presidio, non necessariamente edificio o ingresso del singolo servizio."
+}

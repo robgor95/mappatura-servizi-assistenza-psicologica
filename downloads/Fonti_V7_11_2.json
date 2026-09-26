@@ -1,0 +1,56 @@
+{
+  "version": "7.11.2",
+  "checked_at": "2026-09-26",
+  "baseline_commit": "2c119884969b77e9f5635af6802c04fbf20f7e8a",
+  "methodology": "Solo fonti pubbliche già riferibili al servizio/indirizzo; coordinate di un presidio o punto allo stesso indirizzo non sono trattate come ingresso fisico.",
+  "records": {
+    "rete:R1-08": {
+      "address_source": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+      "coordinate_source": "https://www.aslroma1.it/uploads/files/56_11_Model_form_Mappa_BOCCEA.pdf",
+      "lat": 41.9033611,
+      "lng": 12.41575,
+      "precision": "building",
+      "note": "Coordinate pubblicate da ASL Roma 1 per la COT allo stesso indirizzo Via di Boccea 271. Il punto identifica il presidio/complesso all'indirizzo, non l'ingresso del CSM né risolve i conflitti sugli orari."
+    },
+    "rete:R1-19": {
+      "address_source": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+      "coordinate_source": "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf",
+      "lat": 41.9578056,
+      "lng": 12.4555833,
+      "precision": "building",
+      "note": "Coordinate pubblicate da ASL Roma 1 per la COT Cassia allo stesso indirizzo Via Cassia 472. Il punto identifica il presidio condiviso, non l'ingresso del singolo servizio."
+    },
+    "rete:NET-008": {
+      "address_source": "https://www.aslroma1.it/presidi-territoriali/servizio-tutela-salute-mentale-e-riabilitazione-eta-evolutiva-via-cassia",
+      "coordinate_source": "https://www.aslroma1.it/uploads/files/00_55_Model_form_Mappa_CASSIA.pdf",
+      "lat": 41.9578056,
+      "lng": 12.4555833,
+      "precision": "building",
+      "note": "TSMREE Cassia è documentato da ASL Roma 1 a Via Cassia 472. Le coordinate sono quelle pubblicate per la COT nello stesso presidio: localizzazione del complesso, non dell'ingresso TSMREE."
+    },
+    "rete:FR-05": {
+      "address_source": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+      "coordinate_source": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+      "lat": 41.57122,
+      "lng": 13.33937,
+      "precision": "approximate",
+      "note": "ARPA Lazio pubblica coordinate per Borgo Santa Lucia 52 a Ceccano. Il punto è usato come riferimento dell'indirizzo condiviso; non certifica edificio, reparto o ingresso del CSM."
+    },
+    "rete:PUB72-FR-003": {
+      "address_source": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+      "coordinate_source": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+      "lat": 41.57122,
+      "lng": 13.33937,
+      "precision": "approximate",
+      "note": "La scheda documenta Borgo Santa Lucia 52; ARPA Lazio pubblica coordinate per lo stesso indirizzo. Il punto è indicativo e non identifica ingresso o unità fisica della SRTRe."
+    },
+    "moduli:MOD-058": {
+      "address_source": "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+      "coordinate_source": "https://www.comune.roma.it/web-resources/cms/documents/PPC2024_1_InformazioneGenerale_Allegati.pdf",
+      "lat": 41.82083,
+      "lng": 12.56644,
+      "precision": "building",
+      "note": "Roma Capitale pubblica il punto del Ce.I.S. Don Mario Picchi a Via Appia Nuova 1251, indirizzo della Comunità Santa Maria. Localizzazione del complesso, non dell'ingresso della comunità."
+    }
+  }
+}
