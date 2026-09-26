@@ -1,9 +1,9 @@
 {
-  "web_version": "7.11.3",
+  "web_version": "7.11.4",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.11.3",
+  "data_extension_version": "7.11.4",
   "built_at": "2026-09-26",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.11.3: quarto ciclo geografico con 3 localizzazioni C e un indirizzo regionale acquisito senza pin; 443 servizi, 353 localizzati e 90 senza pin. Zero ingressi verificati; Menta, studenti e supporto territoriale invariati.",
+  "release_note": "V7.11.4: quinto ciclo geografico con 6 localizzazioni C da mappe incorporate nelle pagine ufficiali ASL Viterbo; 443 servizi, 359 localizzati e 84 senza pin. Acquisito Via Enrico Fermi 15 per DSM e Ambulatorio DNA Viterbo; zero ingressi verificati.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -109,26 +109,26 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.11.3",
+  "map_version": "7.11.4",
   "ux_version": "7.8",
   "map": {
     "services": 443,
-    "localized": 353,
-    "address_geocoded": 65,
-    "street_approximate": 235,
-    "unlocated": 90,
+    "localized": 359,
+    "address_geocoded": 66,
+    "street_approximate": 237,
+    "unlocated": 84,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 88,
+      "D": 82,
       "A": 28,
-      "C": 325,
+      "C": 331,
       "E": 2
     },
     "entrances_verified": 0,
-    "building_approximate": 48
+    "building_approximate": 50
   },
   "ux_map_deployment_verification": {
     "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
@@ -155,8 +155,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.11.3",
-  "baseline_commit": "703db950a93270da3a59aab786d4940baad058af",
+  "audit_version": "7.11.4",
+  "baseline_commit": "4c80b37a32088b156551df19a95097ea8bc9ea8e",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -279,6 +279,19 @@
     "new_locations": 3,
     "address_updates_without_pin": 1,
     "remaining_unlocated": 90,
+    "complete": false
+  },
+  "v7_11_4_verification": {
+    "workflow": ".github/workflows/verify-v7-11-4.yml",
+    "baseline_commit": "4c80b37a32088b156551df19a95097ea8bc9ea8e",
+    "scope": "Test dati, provenienza, browser e byte Cloudflare del commit pubblicato."
+  },
+  "v7_11_4_audit": {
+    "report": "downloads/Audit_Geografia_Operativo_V7_11_4.json",
+    "initial_queue": 90,
+    "new_locations": 6,
+    "address_updates": 2,
+    "remaining_unlocated": 84,
     "complete": false
   }
 }

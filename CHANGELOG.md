@@ -1,3 +1,12 @@
+## 7.11.4 — 2026-09-26
+
+- Quinto ciclo geografico sulla baseline V7.11.3.
+- Aggiunte 6 localizzazioni indicative C da mappe incorporate nelle pagine ufficiali ASL Viterbo.
+- Copertura: 359 localizzati e 84 senza pin; 443 servizi clinici invariati.
+- Acquisito Via Enrico Fermi 15 per DSM Viterbo e Ambulatorio DNA Viterbo.
+- Nuovi punti per Canino, Tuscania, Capranica e Fabrica di Roma.
+- Zero ingressi fisici verificati; Menta, studenti, supporto territoriale e noindex invariati.
+
 ## 7.11.3 — 2026-09-26
 
 - Quarto ciclo geografico sulla baseline V7.11.2.

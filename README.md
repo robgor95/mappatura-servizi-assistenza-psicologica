@@ -1,3 +1,9 @@
+## Versione corrente candidata V7.11.4
+
+Quinto ciclo geografico: 443 servizi clinici, 359 localizzati e 84 senza pin. Sei nuove posizioni C derivano dalle mappe incorporate nella pagina ufficiale ASL Viterbo dedicata ai CSM; per DSM e Ambulatorio DNA viene acquisito Via Enrico Fermi 15. Nessun ingresso fisico viene dichiarato verificato.
+
+Checkpoint pre-release: `checkpoint-v7-11-3-before-v7114-2026-09-26` → `4c80b37a32088b156551df19a95097ea8bc9ea8e`.
+
 ## Versione corrente candidata V7.11.3
 
 Quarto ciclo geografico: 443 servizi clinici, 353 localizzati e 90 senza pin. Tre nuove posizioni C sono state aggiunte solo con indirizzo istituzionale documentato; per il SerD interno della Casa Circondariale di Rieti è stato acquisito l'indirizzo regionale senza assegnare un pin. Zero ingressi fisici verificati.
