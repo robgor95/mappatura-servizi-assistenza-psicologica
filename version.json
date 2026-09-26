@@ -1,9 +1,9 @@
 {
-  "web_version": "7.10",
+  "web_version": "7.10.2",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.10",
+  "data_extension_version": "7.10.2",
   "built_at": "2026-09-26",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -34,20 +34,21 @@
   "deployment_checked_by_preparer": true,
   "counts_current": {
     "rete": 298,
-    "moduli": 127,
+    "moduli": 128,
     "privati": 17,
     "scuole": 20,
     "centri_ascolto": 33,
     "universita": 19,
     "helpline": 20,
-    "search": 442,
+    "search": 443,
     "multisite_overlay": 4,
-    "structure_directory": 183,
+    "structure_directory": 184,
     "audit_additions": 8,
     "audit_7_9_1_additions": 2,
     "support_consultori": 135,
     "support_pua": 47,
-    "support_social_emergency": 6
+    "support_social_emergency": 6,
+    "audit_7_9_4_additions": 1
   },
   "menta_version": "7.10",
   "menta": {
@@ -60,7 +61,7 @@
     "routes": 48,
     "towns": 100
   },
-  "release_note": "V7.10.1 visual refresh: Menta usa un nuovo asset WebP trasparente e versionato, con resa responsive più nitida e cache immutabile; animazioni, accessibilità, routing e i 442 servizi clinici restano invariati.",
+  "release_note": "V7.10.2: recupero selettivo della V7.9.4 sulla baseline V7.10.1: 443 servizi clinici, 315 localizzati, 128 senza pin, nuovo Il Colle H24 a Colle Cesarano e audit multisede mirato; supporto territoriale V7.10 e Menta V7.10.1 invariati.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -108,26 +109,26 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.9.2",
+  "map_version": "7.9.4",
   "ux_version": "7.8",
   "map": {
-    "services": 442,
-    "localized": 309,
+    "services": 443,
+    "localized": 315,
     "address_geocoded": 64,
     "street_approximate": 228,
-    "unlocated": 133,
+    "unlocated": 128,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 131,
-      "A": 26,
-      "C": 283,
+      "D": 126,
+      "A": 27,
+      "C": 288,
       "E": 2
     },
     "entrances_verified": 0,
-    "building_approximate": 17
+    "building_approximate": 23
   },
   "ux_map_deployment_verification": {
     "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
@@ -154,7 +155,7 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.9.3",
+  "audit_version": "7.9.4",
   "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
@@ -175,7 +176,7 @@
   "support_version": "7.10",
   "support_layer": {
     "checked_at": "2026-09-23",
-    "clinical_search_unchanged": 442,
+    "clinical_search_unchanged": 443,
     "consultori_master": 135,
     "pua_sites_documented": 47,
     "social_emergency_services_documented": 6,
@@ -191,11 +192,11 @@
     "device_geolocation": false,
     "tracking": false,
     "live_geocoding": false,
-    "note": "I PUA/PIS sono pubblicati solo dove una fonte corrente è stata acquisita; assenza dall'elenco non implica assenza del servizio."
+    "note": "Lo strato di supporto resta separato dai 443 servizi clinici correnti. I PUA/PIS sono pubblicati solo dove una fonte corrente è stata acquisita; assenza dall’elenco non implica assenza del servizio."
   },
   "v7_10_verification": {
     "local_report": "downloads/Audit_Supporto_Territoriale_V7_10.json",
-    "production_evidence": "da verificare separatamente dopo il merge; non riutilizzare esiti V7.9.x"
+    "production_evidence": "Cloudflare e produzione ricontrollati sul commit 021f5fc240137a6d8c3c8974e109441eb71ebba6; workflow 36249711404 concluso con successo."
   },
   "menta_asset_version": "7.10.1",
   "menta_asset": {
@@ -208,5 +209,9 @@
     "sha256": "a58f528ada6712acc3d2cb9396ff1398b064f53aa4742f1243fb1723b3cea7df",
     "previous_asset": "assets/menta/menta-base.webp",
     "behavior": "CSS/JS states unchanged; reduced-motion preserved"
+  },
+  "v7_9_4_verification": {
+    "local_report": "downloads/Verifiche_V7_9_4.json",
+    "production_evidence": "da verificare separatamente dopo il merge V7.10.2; non riutilizzare l'esito candidato della vecchia PR #14"
   }
 }
