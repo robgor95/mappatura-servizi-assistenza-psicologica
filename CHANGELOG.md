@@ -1,3 +1,13 @@
+## 7.10.2 — 2026-09-26
+
+- Recuperato selettivamente il lavoro V7.9.4 sulla baseline V7.10.1, senza unire la vecchia PR incompatibile.
+- Servizi clinici: 443; moduli: 128; directory strutture: 184.
+- Geografia: 315 servizi localizzati e 128 senza pin; nessun ingresso fisico dichiarato verificato.
+- Aggiunto Il Colle / Nucleo 1 SRSR H24 a Colle Cesarano e riconciliato il totale H24 documentato a 70 posti per i moduli interessati.
+- Integrate cinque localizzazioni a livello di complesso ospedaliero e mantenuti espliciti i limiti di precisione.
+- Recuperato l'audit multisede mirato senza dedurre nuove sedi sanitarie non documentate.
+- V7.10 supporto territoriale e Menta V7.10.1 restano invariati; indicizzazione ancora disattivata.
+
 ## 7.10.1 — 2026-09-26
 
 - Aggiornata la mascotte Menta con un asset WebP trasparente e versionato, ottimizzato per la resa responsive.

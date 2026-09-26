@@ -1,8 +1,10 @@
-## Versione corrente V7.10
+## Versione corrente V7.10.2
 
-Nuovo strato complementare per accesso e supporto territoriale: 135 consultori nel master regionale, 47 sedi/punti PUA documentati e 6 servizi/linee di emergenza sociale. Aggiunte le pagine `supporto-territoriale.html` e `aiuto-adesso.html`, con Menta aggiornata. I 442 servizi clinici e la geografia V7.9.2 restano invariati. Le Case Rifugio non sono geolocalizzate e l'indicizzazione resta disattivata.
+V7.10.2 mantiene lo strato di supporto territoriale V7.10 e recupera in modo selettivo il lavoro dati V7.9.4 sulla baseline corrente: 443 servizi clinici, 128 moduli, 184 record nella directory strutture, 315 servizi localizzati e 128 senza pin. È stato aggiunto Il Colle / Nucleo 1 SRSR H24 a Colle Cesarano e sono state integrate cinque localizzazioni a livello di complesso ospedaliero, senza dichiarare ingressi verificati.
 
-Checkpoint pre-estensione: branch `v7.9.3-stable-before-social-services` → `2ad2126b5c972ce49956607e368fc45b3fc4f7e6`.
+Lo strato V7.10 resta separato: 135 consultori, 47 sedi/punti PUA documentati e 6 servizi/linee di emergenza sociale. Menta V7.10 e il refresh grafico V7.10.1 restano invariati. Le Case Rifugio non sono geolocalizzate e l'indicizzazione resta disattivata.
+
+Checkpoint prima del recupero V7.9.4: branch `checkpoint-v7-10-1-before-v794-recovery-2026-09-26` → `021f5fc240137a6d8c3c8974e109441eb71ebba6`.
 
 ## Versione corrente V7.9.3
 
