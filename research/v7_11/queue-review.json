@@ -1,0 +1,2884 @@
+[
+  {
+    "key": "rete:R1-01",
+    "name": "DSM Roma 1 — riferimento organizzativo",
+    "town": "Roma",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [
+      "https://www.aslroma1.it/salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R1-08",
+    "name": "CSM Boccea",
+    "town": "Roma",
+    "address": "Via di Boccea, 271",
+    "sources": [
+      "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R1-09",
+    "name": "CSM Innocenzo IV",
+    "town": "Roma",
+    "address": "Via Innocenzo IV, 16/B",
+    "sources": [
+      "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R1-15",
+    "name": "SerD Nomentana",
+    "town": "Roma",
+    "address": "Via Nomentana, 2/B",
+    "sources": [
+      "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R1-19",
+    "name": "Polo Integrato Salute Mentale Cassia",
+    "town": "Roma",
+    "address": "Via Cassia, 472",
+    "sources": [
+      "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R2-10",
+    "name": "SerD Distretto 4 — ospitato altrove",
+    "town": "Roma",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R3-05",
+    "name": "CSM Municipio XI — Portuense",
+    "town": "Roma",
+    "address": "Via Portuense, 571",
+    "sources": [
+      "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+        "lat": 41.8554176,
+        "lng": 12.4451558,
+        "context": "Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558\">Via Portuense, 571 – 00148 – ROMA</a></p><p>Telefono <span id=\"ctl00_main_Telefono\">06 56485804</s"
+      },
+      {
+        "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+        "lat": 41.8619841,
+        "lng": 12.4552434,
+        "context": "Roma+RM/@41.8619841,12.4530547,17z/data=!3m1!4b1!4m5!3m4!1s0x13258abb559ddaab:0x2f031f8af0ae9c54!8m2!3d41.8619841!4d12.4552434\">Via Alessandro Brisse, 20 –  00149 – ROMA</a></p><p><strong>COME ARRIVARE</strong></p><p>IN AUTO: "
+      },
+      {
+        "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+        "lat": 41.850745,
+        "lng": 12.412992,
+        "context": "+Roma+RM/@41.850745,12.4104171,17z/data=!3m1!4b1!4m6!3m5!1s0x1325f51642cd6cd7:0x6599c2f9d0a0c6f2!8m2!3d41.850745!4d12.412992!16s%2Fg%2F11crwwz12d?entry=ttu\">Via Marino Mazzacurati, 23 – 00148 – ROMA</a></p><p><strong>COME AR"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R4-02",
+    "name": "CSM Distretto 1 — Civitavecchia",
+    "town": "Civitavecchia",
+    "address": "Via delle Azalee, traversa Viale G. Bianconi, Civitavecchia",
+    "sources": [
+      "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+        "lat": 42.07576099414168,
+        "lng": 11.813756488150585,
+        "context": "-addon-content\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.3700370047554!2d11.813756488150585!3d42.07576099414168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDA0JzMyLjciTiAxMcKwNDgnNTEuNSJF!"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R4-05",
+    "name": "CSM Distretto 4 — Morlupo",
+    "town": "Morlupo",
+    "address": "Via Roncacci 78, Morlupo",
+    "sources": [
+      "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+        "lat": 42.07576099414168,
+        "lng": 11.813756488150585,
+        "context": "-addon-content\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.3700370047554!2d11.813756488150585!3d42.07576099414168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDA0JzMyLjciTiAxMcKwNDgnNTEuNSJF!"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R4-08",
+    "name": "SerD Capena",
+    "town": "Capena",
+    "address": "Via Tiberina, km 15.500",
+    "sources": [
+      "https://www.aslroma4.it/strutture-sanitarie/ser-d-servizio-per-le-dipendenze"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R5-10",
+    "name": "SerD Colleferro",
+    "town": "Colleferro",
+    "address": "Largo Oberdan, snc",
+    "sources": [
+      "https://www.aslroma5.it/gioco-dazzardo-e-altre-dipendenze-comportamentali/",
+      "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R5-12",
+    "name": "SerD Subiaco",
+    "town": "Subiaco",
+    "address": "Contrada Colle Cisterna, snc",
+    "sources": [
+      "https://www.aslroma5.it/gioco-dazzardo-e-altre-dipendenze-comportamentali/",
+      "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R6-02",
+    "name": "CSM Anzio/Nettuno",
+    "town": "Anzio",
+    "address": "Villa Albani, ingresso Viale Mencacci / Via Aldobrandini, 32",
+    "sources": [
+      "https://conteinrete.it/vademecum/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R6-03",
+    "name": "CSM Pomezia",
+    "town": "Pomezia",
+    "address": "Via del Mare, km 19",
+    "sources": [
+      "https://conteinrete.it/vademecum/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:R6-05",
+    "name": "CSM Ciampino",
+    "town": "Ciampino",
+    "address": "Via F. Baracca, 17/19",
+    "sources": [
+      "https://conteinrete.it/vademecum/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-01",
+    "name": "DSM Rieti — riferimento organizzativo",
+    "town": "Rieti",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-02",
+    "name": "CSM Rieti — Distretto 1",
+    "town": "Rieti",
+    "address": "Via Salaria per Roma 36, Rieti",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-03",
+    "name": "CSM Poggio Mirteto — Distretto 2",
+    "town": "Poggio Mirteto",
+    "address": "Via Finocchieto, snc",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-04",
+    "name": "CSM Cicolano — Peschieta di Fiamignano",
+    "town": "Fiamignano",
+    "address": "Via Don Agostino Gismondi 2, Peschieta di Fiamignano",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-05",
+    "name": "SerD Rieti",
+    "town": "Rieti",
+    "address": "Via Salaria per Roma, 36",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze",
+      "https://www.asl.rieti.it/guida-ai-servizi/disturbo-da-gioco-dazzardo"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-06",
+    "name": "SerD Poggio Mirteto",
+    "town": "Poggio Mirteto",
+    "address": "Via Finocchieto, snc",
+    "sources": [
+      "https://www.asl.rieti.it/guida-ai-servizi/disturbo-da-gioco-dazzardo"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-07",
+    "name": "Alcologia e patologie correlate Rieti",
+    "town": "Rieti",
+    "address": "Via Salaria per Roma, 36",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-tutela-e-promozione-della-salute-mentale/uoc-patologia-da-dipendenza/alcologia-e-patologie-correlate/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-08",
+    "name": "Ambulatorio CSM Leonessa",
+    "town": "Leonessa",
+    "address": "Via del Corso snc, Leonessa",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-09",
+    "name": "Ambulatorio CSM Antrodoco",
+    "town": "Antrodoco",
+    "address": "Piazza Martiri della Libertà, Antrodoco",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-10",
+    "name": "Ambulatorio CSM Amatrice",
+    "town": "Amatrice",
+    "address": "Via F. Grifoni, 26",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:RI-13",
+    "name": "Ambulatorio CSM Osteria Nuova",
+    "town": "Poggio Moiano / Osteria Nuova",
+    "address": "Viale Europa, 13",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "E"
+  },
+  {
+    "key": "rete:RI-14",
+    "name": "SerD interno Casa Circondariale Rieti Nuovo Complesso",
+    "town": "Rieti",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-01",
+    "name": "DSM Viterbo — segreteria",
+    "town": "Viterbo",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [
+      "https://asl.vt.it/index.php/dsm-dipartimento-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-03",
+    "name": "CSM / ambulatorio Bagnoregio",
+    "town": "Bagnoregio",
+    "address": "Via Fratelli Agosti 6, Bagnoregio",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-04",
+    "name": "CSM / ambulatorio Canino",
+    "town": "Canino",
+    "address": "Via Bachelet, Canino",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-08",
+    "name": "CSM / ambulatorio Tuscania",
+    "town": "Tuscania",
+    "address": "Piazza F. Basile, Tuscania",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-09",
+    "name": "CSM / ambulatorio Valentano",
+    "town": "Valentano",
+    "address": "Via delle Mura Castellane 28, Valentano",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-10",
+    "name": "CSM / ambulatorio Orte",
+    "town": "Orte",
+    "address": "Via A. Gramsci 41, Orte",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-13",
+    "name": "CSM / ambulatorio Capranica",
+    "town": "Capranica",
+    "address": "Strada Cassia km 53.900, Capranica",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-15",
+    "name": "CSM / ambulatorio Fabrica di Roma",
+    "town": "Fabrica di Roma",
+    "address": "Vicolo della Pace 2, Fabrica di Roma",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-17",
+    "name": "CSM / ambulatorio Ronciglione",
+    "town": "Ronciglione",
+    "address": "Via Ospedale Sant’Anna 17, Ronciglione",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-18",
+    "name": "CSM / ambulatorio Vetralla",
+    "town": "Vetralla",
+    "address": "Via Gilberto Pietrella 5, Vetralla",
+    "sources": [
+      "https://asl.vt.it/csm-centro-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:VT-22",
+    "name": "SerD Viterbo",
+    "town": "Viterbo",
+    "address": "Via M. M. Romiti, 86",
+    "sources": [
+      "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+        "lat": 42.53986183171972,
+        "lng": 12.031310815728444,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.7266123913732!2d12.031310815728444!3d42.53986183171972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328d57df99ac599%3A0x9569a549b29535df!2sVia%20d"
+      },
+      {
+        "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+        "lat": 42.249658733812225,
+        "lng": 11.756580331926973,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.7563630605374!2d11.756580331926973!3d42.249658733812225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a14eb68fd%3A0x60230d63db2fa2e4!2sOspedal"
+      },
+      {
+        "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+        "lat": 42.41125413985927,
+        "lng": 12.108014615725626,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.774147749841!2d12.108014615725626!3d42.41125413985927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d038afc209f%3A0xdef649a8fd290e57!2sVia%20M"
+      },
+      {
+        "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+        "lat": 42.41838193940865,
+        "lng": 12.098737215725782,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.4393645657537!2d12.098737215725782!3d42.41838193940865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2ce2259b50f9%3A0x92d43e0af6434469!2sVia%20S"
+      },
+      {
+        "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-01",
+    "name": "DSM Frosinone — riferimento organizzativo",
+    "town": "Frosinone",
+    "address": "Via A. Fabi, Palazzina P",
+    "sources": [
+      "https://mentiattive.aslfrosinone.it/il-progetto/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-05",
+    "name": "CSM Ceccano",
+    "town": "Ceccano",
+    "address": "Borgo Santa Lucia, 52",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-10",
+    "name": "SerD Ceccano",
+    "town": "Ceccano",
+    "address": "Borgo Santa Lucia",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-11",
+    "name": "SerD Frosinone",
+    "town": "Frosinone",
+    "address": "Via A. Fabi, Palazzina P",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-13",
+    "name": "Punto di erogazione CSM Ceprano",
+    "town": "Ceprano",
+    "address": "Viale Regina Margherita — ex Ospedale Civico",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-14",
+    "name": "Punto CSM / PEP Ferentino",
+    "town": "Ferentino",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:FR-15",
+    "name": "Punto CSM / PEP Veroli",
+    "town": "Veroli",
+    "address": "ND — non documentato nelle fonti consultate",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:LT-01",
+    "name": "Direzione DSM Latina",
+    "town": "Latina",
+    "address": "Viale Le Corbusier, Centro commerciale, scala C, Latina",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:LT-03",
+    "name": "CSM Cisterna di Latina",
+    "town": "Cisterna di Latina",
+    "address": "Via G. Falcone snc, Cisterna di Latina",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:LT-04",
+    "name": "CSM Latina",
+    "town": "Latina",
+    "address": "Viale Le Corbusier, scala F, Latina. Piano/interno da confermare: nel testo n. 23, nella tabella secondo piano n. 36.",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:LT-06",
+    "name": "CSM Monti Lepini — Sezze",
+    "town": "Sezze",
+    "address": "Via S. Bartolomeo 1, Sezze",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:LT-10",
+    "name": "CSM Formia",
+    "town": "Formia",
+    "address": "Via Lavagna 43, Formia",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:LT-15",
+    "name": "SerD Formia",
+    "town": "Formia",
+    "address": "Via Appia lato Napoli, Formia",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-008",
+    "name": "TSMREE Cassia",
+    "town": "Roma",
+    "address": "Via Cassia, 472",
+    "sources": [
+      "https://www.aslroma1.it/servizi-tsmree-tutela-salute-mentale-e-riabilitazione-dell-eta-evolutiva"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-023",
+    "name": "TSMREE Torrenova",
+    "town": "Roma",
+    "address": "Via di Torrenova, 20",
+    "sources": [
+      "https://www.aslroma2.it/index.php/organizzazione/dipartimenti/dip-di-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-052",
+    "name": "NPIA Subiaco",
+    "town": "Subiaco",
+    "address": "Largo Giuseppe Mazzini, snc",
+    "sources": [
+      "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-053",
+    "name": "NPIA Olevano Romano",
+    "town": "Olevano Romano",
+    "address": "Piazzale San Francesco d'Assisi, 103",
+    "sources": [
+      "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-055",
+    "name": "SPDC P.O. H1",
+    "town": "Frascati",
+    "address": "Ospedale San Sebastiano",
+    "sources": [
+      "https://regione.lazio.it/urp/sintesi-concorsi-bur/sintesi-del-bollettino-ufficiale-n-106-del-27122022"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-057",
+    "name": "TSMREE Frascati",
+    "town": "Frascati",
+    "address": "Via E. Fermi, snc",
+    "sources": [
+      "https://conteinrete.it/vademecum/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-065",
+    "name": "Ambulatorio Disturbi Nutrizione e Alimentazione Rieti",
+    "town": "Rieti",
+    "address": "Palazzo Dosi Delfini, Piazza Vittorio Emanuele II, 17",
+    "sources": [
+      "https://www.asl.rieti.it/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-073",
+    "name": "Ambulatorio DNA Viterbo",
+    "town": "Viterbo",
+    "address": "Non documentato",
+    "sources": [
+      "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-074",
+    "name": "SPDC Frosinone-Alatri",
+    "town": "Alatri",
+    "address": "Non documentato",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-082",
+    "name": "UOSD Disturbi Nutrizione e Alimentazione",
+    "town": "Frosinone",
+    "address": "Via Armando Fabi - Palazzina L",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-085",
+    "name": "SPDC Formia - Ospedale Dono Svizzero",
+    "town": "Formia",
+    "address": "Ospedale Dono Svizzero, Via Appia lato Napoli",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-030",
+    "name": "Centro Diurno Monteverde",
+    "town": "Roma",
+    "address": "Via Crescenzo dal Monte, 13",
+    "sources": [
+      "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+      "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-xi-e-xii-municipio/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+        "lat": 41.8554176,
+        "lng": 12.4451558,
+        "context": "Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558\">Via Portuense, 571 – 00148 – ROMA</a></p><p>Telefono <span id=\"ctl00_main_Telefono\">06 56485804</s"
+      },
+      {
+        "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+        "lat": 41.8354881,
+        "lng": 12.4293964,
+        "context": "Roma+RM/@41.8354881,12.4272077,17z/data=!3m1!4b1!4m5!3m4!1s0x1325f4d7d53ad303:0x9280f6fa56690539!8m2!3d41.8354881!4d12.4293964\" data-wplink-url-error=\"true\">via Crescenzo dal Monte 13 – 00153 – ROMA</a></p><p><strong>CONTATTI<"
+      },
+      {
+        "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-xi-e-xii-municipio/",
+        "lat": 41.8554176,
+        "lng": 12.4451558,
+        "context": "Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558\">Via Portuense, 571 – 00148 – ROMA</a></p><p>Telefono <span id=\"ctl00_main_Telefono\">06 56485804</s"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-037",
+    "name": "Centro Diurno Riabilitativo Distretto 4",
+    "town": "Campagnano di Roma",
+    "address": "Via B. Lesen 9–11, Campagnano di Roma",
+    "sources": [
+      "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-salute-mentale",
+      "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-salute-mentale",
+        "lat": 42.096103959619576,
+        "lng": 12.170582451332661,
+        "context": "-addon-content\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.530685209377!2d12.170582451332661!3d42.096103959619576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f4c7ca6752609%3A0xf745e152621597cf!2sOspedal"
+      },
+      {
+        "url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+        "lat": 42.07576099414168,
+        "lng": 11.813756488150585,
+        "context": "-addon-content\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.3700370047554!2d11.813756488150585!3d42.07576099414168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDA0JzMyLjciTiAxMcKwNDgnNTEuNSJF!"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-015",
+    "name": "SRSR Nomentana",
+    "town": "Roma",
+    "address": "Via Nomentana, 54",
+    "sources": [
+      "https://www.aslroma1.it/presidi-territoriali/Distretto%202/lista_presidi",
+      "https://www.aslroma1.it/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-044",
+    "name": "Centro Diurno Monterotondo",
+    "town": "Monterotondo",
+    "address": "Non documentato",
+    "sources": [
+      "https://www.aslroma5.it/amministrazione-trasparente/organigramma-dipartimento-di-prevenzione-e-dsmdp-2025/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-056",
+    "name": "Centro Diurno Pomezia",
+    "town": "Pomezia",
+    "address": "Casa della Comunità HUB Pomezia",
+    "sources": [
+      "https://www.regione.lazio.it/notizie/sanita-inaugurata-la-casa-della-comunita-di-pomezia"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-064",
+    "name": "Centro Diurno Cicolano",
+    "town": "Fiamignano",
+    "address": "Via Don Agostino Gismondi 2, Peschieta di Fiamignano",
+    "sources": [
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+      "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-077",
+    "name": "Centro Diurno Orizzonti Aperti",
+    "town": "Frosinone",
+    "address": "Viale Mazzini, Distretto Sanitario, Frosinone",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-078",
+    "name": "Centro Diurno Oltre il Muro",
+    "town": "Ceccano",
+    "address": "Via Marano snc, Ceccano",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-083",
+    "name": "UOC Residenzialità e Semiresidenzialità",
+    "town": "Frosinone",
+    "address": "Via Fabi, snc - Palazzina M",
+    "sources": [
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+      "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:NET-093",
+    "name": "Comunità Terapeutica Santa Fecitola",
+    "town": "Latina",
+    "address": "Via Tor Tre Ponti, Latina",
+    "sources": [
+      "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-R1-018",
+    "name": "Centro Diurno Valle Aurelia",
+    "town": "Roma",
+    "address": "Via di Valle Aurelia, 257",
+    "sources": [
+      "https://www.aslroma1.it/presidi-territoriali/Distretto%2013/lista_presidi"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-R2-009",
+    "name": "SRTRe Sillani – Il Ponte e l’Albero",
+    "town": "Roma",
+    "address": "Via T. Sillani, 7",
+    "sources": [
+      "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-RI-002",
+    "name": "Centro Diurno Psichiatrico Melograno – Poggio Mirteto",
+    "town": "Poggio Mirteto",
+    "address": "Via Formello loc. Sant’Antonio, 2/A",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-VT-002",
+    "name": "Centro Diurno DSM Viterbo",
+    "town": "Viterbo",
+    "address": "Via M. Romiti, 54",
+    "sources": [
+      "https://asl.vt.it/centro-diurno-dsm"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/centro-diurno-dsm",
+        "lat": 42.536077131959736,
+        "lng": 12.029246315728486,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.9047924674996!2d12.029246315728486!3d42.536077131959736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328d57ea402b5af%3A0xab4fea9b754569e5!2sVia%20D"
+      },
+      {
+        "url": "https://asl.vt.it/centro-diurno-dsm",
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "url": "https://asl.vt.it/centro-diurno-dsm",
+        "lat": 42.410927739879796,
+        "lng": 12.107928915725537,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.789477227476!2d12.107928915725537!3d42.410927739879796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d038dafbe9f%3A0x4dd6eb490ac09586!2sVia%20M"
+      },
+      {
+        "url": "https://asl.vt.it/centro-diurno-dsm",
+        "lat": 42.296798147086456,
+        "lng": 12.406345715723035,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.1437449995515!2d12.406345715723035!3d42.296798147086456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da4b130b421%3A0xfa6550be45e4ba74!2sViale%2"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-VT-004",
+    "name": "SRSR H24 Villa San Giuseppe",
+    "town": "Montefiascone",
+    "address": "Loc. Le Mosse",
+    "sources": [
+      "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative",
+        "lat": 42.52891793012514,
+        "lng": 12.016676096525241,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d183.7651128636368!2d12.016676096525241!3d42.52891793012514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678355445198!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "url": "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative",
+        "lat": 42.415300975005195,
+        "lng": 12.100246858260228,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1472.7920394624527!2d12.100246858260228!3d42.415300975005195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d1dc20ae4e3%3A0xee3715b83297c057!2sPiazza%"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-FR-001",
+    "name": "SRTRe Franco Basaglia",
+    "town": "Frosinone",
+    "address": "Via A. Fabi, snc",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-FR-002",
+    "name": "SRTRe Romolo Priori",
+    "town": "Frosinone",
+    "address": "Via A. Fabi, snc – Palazzina M",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "rete:PUB72-FR-003",
+    "name": "SRTRe Maxwell Jones",
+    "town": "Ceccano",
+    "address": "Borgo Santa Lucia, 52",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-091",
+    "name": "Agatos – Comunità Francesco Giugliarelli",
+    "town": "Viterbo",
+    "address": "Via Strada Cimina, 16/A",
+    "sources": [
+      "https://asl.vt.it/strutture-private-accreditate"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-046",
+    "name": "Alberto Pezzi",
+    "town": "Santi Cosma e Damiano",
+    "address": "Via Ausente, km 2.750",
+    "sources": [
+      "https://www.comunitainsieme.com/strutture/",
+      "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-094",
+    "name": "Borgo San Tommaso",
+    "town": "Roccasecca",
+    "address": "Via San Francesco, 2/a",
+    "sources": [
+      "https://gestivar.it/le-strutture/",
+      "https://gestivar.it/contatti/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-081",
+    "name": "Gabbiano Tirreno – Rocca Canterano 1 (già IHG)",
+    "town": "Rocca Canterano",
+    "address": "Via della Maddalena, 2",
+    "sources": [
+      "https://gabbianotirreno.it/strutture/rocca-canterano",
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-082",
+    "name": "Gabbiano Tirreno – Rocca Canterano 2 (già IHG)",
+    "town": "Rocca Canterano",
+    "address": "Via della Maddalena, 2",
+    "sources": [
+      "https://gabbianotirreno.it/strutture/rocca-canterano",
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-013",
+    "name": "Casa Siloè",
+    "town": "Roma",
+    "address": "Via Portuense, 251",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-075",
+    "name": "Gabbiano Tirreno – Castel Madama 1 (già IHG)",
+    "town": "Castel Madama",
+    "address": "Strada Provinciale, 40/A",
+    "sources": [
+      "https://gabbianotirreno.it/strutture/castel-madama",
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-076",
+    "name": "Gabbiano Tirreno – Castel Madama 2 (già IHG)",
+    "town": "Castel Madama",
+    "address": "Strada Provinciale, 40/A",
+    "sources": [
+      "https://gabbianotirreno.it/strutture/castel-madama",
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-058",
+    "name": "Comunità Santa Maria / Capannelle",
+    "town": "Roma",
+    "address": "Via Appia Nuova,1251",
+    "sources": [
+      "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+      "https://www.ceisroma.it/la-gratuita-di-tutti-i-servizi-e-il-nostro-personale/",
+      "https://aslroma2.it/index.php/62-cittadini/servizi/medicina-protesica/139-medicina-protesica"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-070",
+    "name": "Il Colle",
+    "town": "Da consolidare",
+    "address": "Non documentato",
+    "sources": [
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "E"
+  },
+  {
+    "key": "moduli:MOD-051",
+    "name": "In Dialogo — Il Casale",
+    "town": "Trivigliano",
+    "address": "Contrada Malle snc",
+    "sources": [
+      "https://www.actalazio.it/in-dialogo/",
+      "https://comunitaindialogo.it/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-045",
+    "name": "Insieme Spigno",
+    "town": "Spigno Saturnia",
+    "address": "Via Silvio Pellico, 7/9",
+    "sources": [
+      "https://www.comunitainsieme.com/strutture/",
+      "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-040",
+    "name": "Insieme1 Luna",
+    "town": "Formia",
+    "address": "Via Penitro a Monte snc",
+    "sources": [
+      "https://www.comunitainsieme.com/strutture/",
+      "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-039",
+    "name": "Insieme1 Sole",
+    "town": "Formia",
+    "address": "Via Penitro a Monte snc",
+    "sources": [
+      "https://www.comunitainsieme.com/strutture/",
+      "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-041",
+    "name": "Insieme2",
+    "town": "Santi Cosma e Damiano",
+    "address": "Via Ausente km2.750",
+    "sources": [
+      "https://www.comunitainsieme.com/strutture/",
+      "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-087",
+    "name": "IO Centro ETS",
+    "town": "Roma",
+    "address": "Roma - sede da confermare nel contratto",
+    "sources": [
+      "https://aslroma2.it/index.php/62-cittadini/servizi/medicina-protesica/139-medicina-protesica",
+      "https://www.iocentro.it/index.php/2019/03/15/comunita-terapeutica/",
+      "https://www.iocentro.it/index.php/2019/03/15/liste-di-attesa/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-083",
+    "name": "Maieusis — Residenza terapeutica",
+    "town": "Capena",
+    "address": "Via Macchia Tonda, 8",
+    "sources": [
+      "https://www.maieusis.org/la-comunita-maieusis/",
+      "https://www.maieusis.org/il-modello-maieusis/informazioni-per-linserimento/",
+      "https://www.maieusis.org/contatti/"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-085",
+    "name": "Villa Belvedere",
+    "town": "Torricella in Sabina",
+    "address": "Via Salaria km 64",
+    "sources": [
+      "https://www.strutturapsichiatricavillabelvedere.com/",
+      "https://www.asl.rieti.it/trasparency-e-privacy/amministrazione-trasparente/strutture-sanitarie-private-accreditate"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-061",
+    "name": "Villa Elisa",
+    "town": "Guidonia Montecelio",
+    "address": "Via Tiburtina Valeria, 258",
+    "sources": [
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-066",
+    "name": "Villa Maddalena",
+    "town": "Castel Madama",
+    "address": "Via Sant’Anna, 26",
+    "sources": [
+      "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-105",
+    "name": "Aquilone Azzurro – La Gatta",
+    "town": "Santa Marinella",
+    "address": "Lungomare G. Marconi, 96",
+    "sources": [
+      "https://www.cooperativasocialeaquiloneazzurro.it/strutture/",
+      "https://www.cooperativasocialeaquiloneazzurro.it/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-095",
+    "name": "Borgo San Tommaso",
+    "town": "Roccasecca",
+    "address": "Via San Francesco, 2/a",
+    "sources": [
+      "https://gestivar.it/le-strutture/",
+      "https://gestivar.it/contatti/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-056",
+    "name": "Campus Calisto Felli",
+    "town": "Viterbo",
+    "address": "Via Acquabianca,11/B",
+    "sources": [
+      "https://ceis.viterbo.it/comunita-doppia-diagnosi/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-052",
+    "name": "Exodus Cassino",
+    "town": "Cassino",
+    "address": "Via San Domenico Vertelle,23",
+    "sources": [
+      "https://www.actalazio.it/exodus-cassino/",
+      "https://www.exodus.it/sedi-exodus/cassino.html"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+        "lat": 41.5049802,
+        "lng": 13.8371348,
+        "context": "               <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.9674489705235!2d13.8371348!3d41.5049802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133abc6f6e82dac7%3A0xb90dbbb5ada9f756!2sVia+San"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-053",
+    "name": "Exodus Cassino",
+    "town": "Cassino",
+    "address": "Via San Domenico Vertelle,23",
+    "sources": [
+      "https://www.actalazio.it/exodus-cassino/",
+      "https://www.exodus.it/sedi-exodus/cassino.html"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+        "lat": 41.5049802,
+        "lng": 13.8371348,
+        "context": "               <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.9674489705235!2d13.8371348!3d41.5049802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133abc6f6e82dac7%3A0xb90dbbb5ada9f756!2sVia+San"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-092",
+    "name": "Gli Oleandri",
+    "town": "Sant’Elia Fiumerapido",
+    "address": "Via Tascitara, 9",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-044",
+    "name": "Insieme Ausonia",
+    "town": "Ausonia",
+    "address": "Contrada Orfanotrofio, località Faiano",
+    "sources": [
+      "https://www.comunitainsieme.com/strutture/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-093",
+    "name": "Le Palme",
+    "town": "Sant’Elia Fiumerapido",
+    "address": "Via Tascitara, 9",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-114",
+    "name": "Mondo Nuovo – Colle Speranza",
+    "town": "Tarquinia",
+    "address": "S.S. Aurelia bis Km 3,841",
+    "sources": [
+      "https://comunitamondonuovo.it/",
+      "https://comunitamondonuovo.it/category/centri-accreditati/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [
+      {
+        "url": "https://comunitamondonuovo.it/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      },
+      {
+        "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-113",
+    "name": "Mondo Nuovo – Villa Ciulepi",
+    "town": "Monte Romano",
+    "address": "S.S. Aurelia bis Km 10,900",
+    "sources": [
+      "https://comunitamondonuovo.it/",
+      "https://comunitamondonuovo.it/category/centri-accreditati/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [
+      {
+        "url": "https://comunitamondonuovo.it/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      },
+      {
+        "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-112",
+    "name": "Mondo Nuovo – Villa Paradiso",
+    "town": "Tarquinia",
+    "address": "S.P. Litoranea Km 1,750",
+    "sources": [
+      "https://comunitamondonuovo.it/",
+      "https://comunitamondonuovo.it/category/centri-accreditati/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [
+      {
+        "url": "https://comunitamondonuovo.it/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      },
+      {
+        "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-111",
+    "name": "Mondo Nuovo – Villa Sergetto",
+    "town": "Civitavecchia",
+    "address": "S.P. Braccianese Claudia Km 69,300",
+    "sources": [
+      "https://comunitamondonuovo.it/",
+      "https://comunitamondonuovo.it/category/centri-accreditati/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [
+      {
+        "url": "https://comunitamondonuovo.it/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      },
+      {
+        "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-033",
+    "name": "Samadi",
+    "town": "Roma",
+    "address": "Via di Grottarossa, km2.200",
+    "sources": [
+      "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero",
+      "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale",
+      "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-032",
+    "name": "Samadi",
+    "town": "Roma",
+    "address": "Via di Grottarossa, km2.200",
+    "sources": [
+      "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero",
+      "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale",
+      "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-031",
+    "name": "Samadi",
+    "town": "Roma",
+    "address": "Via di Grottarossa, km2.200",
+    "sources": [
+      "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero",
+      "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale",
+      "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-059",
+    "name": "San Carlo e Villa Santa Francesca Romana",
+    "town": "Marino",
+    "address": "Non documentato",
+    "sources": [
+      "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/",
+      "https://www.ceisroma.it/la-gratuita-di-tutti-i-servizi-e-il-nostro-personale/",
+      "https://www.ceisroma.it/info-trasparenza/"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-096",
+    "name": "San Nicola – Belmonte",
+    "town": "Belmonte Castello",
+    "address": "Via Pozzi, 20",
+    "sources": [],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-054",
+    "name": "Santa Maria della Quercia",
+    "town": "Viterbo",
+    "address": "Via Acquabianca,7",
+    "sources": [
+      "https://ceis.viterbo.it/comunita-terapeutica/",
+      "https://www.actalazio.it/"
+    ],
+    "successful_sources": 2,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-098",
+    "name": "Villa Lucrezia – Il Castello Incantato",
+    "town": "Castrocielo",
+    "address": "Via Casilina, 35",
+    "sources": [
+      "https://www.cooperativailcastelloincantato.it/portfolio_category/strutture/",
+      "https://www.cooperativailcastelloincantato.it/contatti/",
+      "https://www.cooperativailcastelloincantato.it/la-cooperativa/amministrazione-trasparente/"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MOD-030",
+    "name": "Samadi",
+    "town": "Roma",
+    "address": "Via di Grottarossa, km2.200",
+    "sources": [
+      "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero",
+      "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale",
+      "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali"
+    ],
+    "successful_sources": 3,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:MS775-REV-CTC1",
+    "name": "Reverie – Comunità terapeutica Capena CTC 1",
+    "town": "Capena",
+    "address": "Via Passo Cavallone, 4",
+    "sources": [
+      "https://reverie.it/strutture/",
+      "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/"
+    ],
+    "successful_sources": 0,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "privati:PRI-003",
+    "name": "Centro Medico Santagostino – Roma Via Goito",
+    "town": "Roma",
+    "address": "Roma, Via Goito",
+    "sources": [
+      "https://www.santagostino.it/it/news/percorso-disturbi-del-comportamento-alimentare-dca-ora-anche-a-roma"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "privati:PRI-004",
+    "name": "Qrare Centro Medico",
+    "town": "Roma",
+    "address": "Roma; indirizzo puntuale da verificare sul sito in prenotazione",
+    "sources": [
+      "https://www.qrare.it/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [
+      {
+        "url": "https://www.qrare.it/",
+        "lat": 41.9123576,
+        "lng": 12.5151966,
+        "context": "Roma+RM/@41.9123616,12.5126217,17z/data=!3m1!4b1!4m6!3m5!1s0x132f6171b51c62cb:0xca5d1a2a0d613f85!8m2!3d41.9123576!4d12.5151966!16s%2Fg%2F11c1_415_9?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D\" target=\"_blank\">Vedi indi"
+      }
+    ],
+    "review": "manual_required",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "privati:PRI-005",
+    "name": "Centro ADHD Roma",
+    "town": "Roma",
+    "address": "Roma; sede puntuale da verificare al contatto",
+    "sources": [
+      "https://www.adhdroma.com/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "privati:PRI-011",
+    "name": "Fondazione Santa Lucia IRCCS – Ambulatorio di Neuropsicologia (accesso privato)",
+    "town": "Roma",
+    "address": "Via Ardeatina 306, Roma",
+    "sources": [
+      "https://www.hsantalucia.it/neuropsicologia"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "privati:PRI76-003",
+    "name": "AIRRI Medical – Poliambulatorio Viterbo",
+    "town": "Viterbo",
+    "address": "Via C. Cattaneo 46/T, Viterbo",
+    "sources": [
+      "https://www.airrimedical.it/it/ambulatori-viterbo/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:V79-INS-VENERE",
+    "name": "Comunità Insieme – SRSR Venere",
+    "town": "Santi Cosma e Damiano",
+    "address": "Via Ausente – località Cerri Aprano",
+    "sources": [
+      "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  },
+  {
+    "key": "moduli:V79-INS-MARTE",
+    "name": "Comunità Insieme – SRSR Marte",
+    "town": "Santi Cosma e Damiano",
+    "address": "Via Ausente – località Cerri Aprano",
+    "sources": [
+      "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/"
+    ],
+    "successful_sources": 1,
+    "candidate_coordinates": [],
+    "review": "no_coordinate_evidence_from_selected_html",
+    "baseline_quality": "D"
+  }
+]
