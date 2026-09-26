@@ -1,0 +1,33 @@
+{
+  "version": "7.11.5",
+  "baseline_commit": "bdfeb28907ae15defc04ddc6092283a8f832abe0",
+  "checked_at": "2026-09-26",
+  "summary": {
+    "services": 443,
+    "located_before": 359,
+    "located_after": 365,
+    "unlocated_before": 84,
+    "unlocated_after": 78,
+    "new_locations": 6,
+    "quality_after": {
+      "A": 28,
+      "C": 337,
+      "D": 76,
+      "E": 2
+    },
+    "entrances_verified": 0
+  },
+  "localized_keys": [
+    "rete:FR-01",
+    "rete:FR-11",
+    "rete:NET-083",
+    "rete:PUB72-FR-001",
+    "rete:PUB72-FR-002",
+    "rete:NET-057"
+  ],
+  "deliberately_unlocated": [
+    "rete:NET-082"
+  ],
+  "complete": false,
+  "caveat": "Tutti i nuovi marker sono punti stradali indicativi; non identificano civico, edificio, palazzina o ingresso."
+}
