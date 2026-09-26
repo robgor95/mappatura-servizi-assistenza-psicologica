@@ -1,153 +1,19 @@
-name: V7.10.3 consolidated verification
+name: V7.10.3 historical verification (manual)
 on:
-  pull_request:
-    branches: [main]
-    paths:
-      - .github/workflows/verify-v7-10.yml
-      - index.html
-      - '**/*.html'
-      - _headers
-      - assets/menta-v7-7.css
-      - assets/menta/**
-      - supporto-territoriale.html
-      - aiuto-adesso.html
-      - ascolto.html
-      - centri-ascolto.html
-      - documenti.html
-      - sitemap.xml
-      - version.json
-      - assets/supporto-v7-10.*
-      - assets/menta-config-v7-10.js
-      - assets/audit-data-v7-9-4.js
-      - assets/servizi-v7-9-4.js
-      - assets/map-data-v7-9-4.js
-      - assets/directory-v7-9-4.js
-      - data/audit_operativo_v7_9_4.json
-      - data/presidi_geo_v7_9_4.json
-      - data/supporto_territoriale_v7_10.json
-      - downloads/*V7_9_4*
-      - tools/*v7-10-2*
-      - tools/*v7-10-3*
-      - assets/studenti-v7-10-3.css
-      - downloads/*V7_10*
-      - tools/*v7-10*
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/verify-v7-10.yml
-      - index.html
-      - '**/*.html'
-      - _headers
-      - assets/menta-v7-7.css
-      - assets/menta/**
-      - supporto-territoriale.html
-      - aiuto-adesso.html
-      - ascolto.html
-      - centri-ascolto.html
-      - documenti.html
-      - sitemap.xml
-      - version.json
-      - assets/supporto-v7-10.*
-      - assets/menta-config-v7-10.js
-      - assets/audit-data-v7-9-4.js
-      - assets/servizi-v7-9-4.js
-      - assets/map-data-v7-9-4.js
-      - assets/directory-v7-9-4.js
-      - data/audit_operativo_v7_9_4.json
-      - data/presidi_geo_v7_9_4.json
-      - data/supporto_territoriale_v7_10.json
-      - downloads/*V7_9_4*
-      - tools/*v7-10-2*
-      - tools/*v7-10-3*
-      - assets/studenti-v7-10-3.css
-      - downloads/*V7_10*
-      - tools/*v7-10*
   workflow_dispatch:
 permissions:
   contents: read
-concurrency:
-  group: v7103-verify-${{ github.ref }}
-  cancel-in-progress: false
 jobs:
-  verify:
+  historical:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: 85808c6fad9dec32098558e466a3997a18b95d22
           persist-credentials: false
-          fetch-depth: 0
-      - name: Data, privacy and preservation checks
+      - name: Check the fixed historical V7.10.3 snapshot, not current production
         run: |
-          set -euo pipefail
-          mkdir -p /tmp/v710-verification
-          node tools/test-v7-10.cjs | tee /tmp/v710-verification/support-tests.json
-          node tools/test-v7-10-2.cjs | tee /tmp/v710-verification/data-tests.json
-          node tools/test-v7-10-3.cjs | tee /tmp/v710-verification/student-tests.json
-          node --check assets/supporto-v7-10.js
-          node --check assets/menta-config-v7-10.js
-          node --check assets/audit-data-v7-9-4.js
-          node --check assets/servizi-v7-9-4.js
-          node --check assets/map-data-v7-9-4.js
-          node --check assets/directory-v7-9-4.js
-          node --check tools/test-ui-v7-10.mjs
-          node --check tools/test-ui-v7-10-2.mjs
-          node --check tools/test-ui-v7-10-3.mjs
-          python -m py_compile tools/verify-production-v7-10.py
-          python - <<'PY'
-          import subprocess
-          base='2ad2126b5c972ce49956607e368fc45b3fc4f7e6'
-          allowed={
-              'README.md','CHANGELOG.md','index.html','ascolto.html','centri-ascolto.html','documenti.html',
-              'sitemap.xml','version.json','_headers','.github/workflows/verify-v7-9-3.yml',
-              '404.html','archivio.html','giovani.html','glossario.html','helpline.html','mappa.html','metodo.html',
-              'orientamento-servizi.html','privati.html','qualita-dati.html','scuole.html','servizi.html',
-              'strutture-approfondite.html','studenti.html','universita.html',
-              'guide/index.html','guide/primo-percorso.html','guide/privato.html','guide/pubblico.html',
-              'guide/riabilitazione.html','guide/ricovero.html','assets/menta-v7-7.css','assets/menta/README.md'
-          }
-          changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
-          bad=[]
-          for p in changed:
-              existed=subprocess.run(['git','cat-file','-e',base+':'+p],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
-              if existed and p not in allowed: bad.append(p)
-          assert not bad,bad
-          PY
-          npm install --prefix /tmp/v710-node playwright @axe-core/playwright
-          ln -s /tmp/v710-node/node_modules node_modules
-          /tmp/v710-node/node_modules/.bin/playwright install --with-deps chromium
-      - name: Browser verification on pull request
-        if: github.event_name == 'pull_request'
-        run: |
-          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v710-verification/http.log 2>&1 &
-          PID=$!
-          trap 'kill $PID || true' EXIT
-          QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10.mjs
-          QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10-2.mjs
-          QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10-3.mjs
-      - name: Verify Cloudflare production bytes and noindex
-        if: github.event_name != 'pull_request'
-        env:
-          QA_OUT: /tmp/v710-verification
-        run: python tools/verify-production-v7-10.py
-      - name: Browser verification on production
-        if: github.event_name != 'pull_request'
-        env:
-          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
-          QA_OUT: /tmp/v710-verification
-        run: |
-          node tools/test-ui-v7-10.mjs
-          node tools/test-ui-v7-10-2.mjs
-          node tools/test-ui-v7-10-3.mjs
-      - name: Record tested tree
-        if: always()
-        run: |
-          git rev-parse HEAD > /tmp/v710-verification/commit.txt
-          git diff --name-status 2ad2126b5c972ce49956607e368fc45b3fc4f7e6 HEAD > /tmp/v710-verification/changed-files.txt
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: v7-10-3-${{ github.event_name }}-verification
-          path: /tmp/v710-verification/
-          retention-days: 30
-          if-no-files-found: error
+          node tools/test-v7-10.cjs
+          node tools/test-v7-10-2.cjs
+          node tools/test-v7-10-3.cjs
