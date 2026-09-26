@@ -1,4 +1,4 @@
-/* Menta V7.10: configurazione locale e deterministica; nessun testo viene trasmesso. */
+/* Menta V7.10.3: configurazione locale e deterministica; nessun testo viene trasmesso. */
 (function(root){
 "use strict";
 const config = {
