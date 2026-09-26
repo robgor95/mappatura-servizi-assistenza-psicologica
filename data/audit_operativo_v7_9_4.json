@@ -1,0 +1,402 @@
+{
+  "version": "7.9.4",
+  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
+  "checked_at": "2026-09-23",
+  "scope": "Overlay additivo successivo a V7.9.3; dati storici immutati.",
+  "revisions": [
+    {
+      "service_key": "moduli:MOD-026",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "nota_posti": "La capacità H24 complessiva di 70 posti è ora riconciliata: A1 20 + A2 20 + B4 20 + Il Colle/Nucleo 1 10. È capienza documentata, non disponibilità in tempo reale."
+      },
+      "evidence": {
+        "nota_posti": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf"
+      ],
+      "note": "Riconciliata la precedente discrepanza H24 senza fondere i quattro moduli.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-027",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "nota_posti": "La capacità H24 complessiva di 70 posti è ora riconciliata: A1 20 + A2 20 + B4 20 + Il Colle/Nucleo 1 10. È capienza documentata, non disponibilità in tempo reale."
+      },
+      "evidence": {
+        "nota_posti": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf"
+      ],
+      "note": "Riconciliata la precedente discrepanza H24 senza fondere i quattro moduli.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-028",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "nota_posti": "La capacità H24 complessiva di 70 posti è ora riconciliata: A1 20 + A2 20 + B4 20 + Il Colle/Nucleo 1 10. È capienza documentata, non disponibilità in tempo reale."
+      },
+      "evidence": {
+        "nota_posti": {
+          "sources": [
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf"
+      ],
+      "note": "Riconciliata la precedente discrepanza H24 senza fondere i quattro moduli.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-038",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "nota_indirizzo": "Conflitto documentale aperto sul civico di Castelforte: la pagina corrente del gestore indica Via De Gasperi 2; documentazione precedente riportava 36; il DCA regionale U00166/2019 identifica Via A. De Gasperi 48/50 (già civico 36). Il civico fisico corrente della struttura va riconfermato prima di modificare la sede o creare un nuovo pin.",
+        "nota_multisede_v794": "Audit sistematico Comunità Insieme: le nove strutture sanitarie residenziali elencate dal gestore risultano rappresentate nel database attraverso moduli/sedi distinti; nessuna sede sanitaria aggiuntiva viene dedotta."
+      },
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.comunitainsieme.com/s-r-t-r-progetto-insieme-castelforte/",
+            "https://www.regione.lazio.it/sites/default/files/decreti-commissario-ad-acta/SAN_DCA_U00166_15_05_2019.pdf",
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "nota_multisede_v794": {
+          "sources": [
+            "https://www.comunitainsieme.com/s-r-t-r-progetto-insieme-castelforte/",
+            "https://www.regione.lazio.it/sites/default/files/decreti-commissario-ad-acta/SAN_DCA_U00166_15_05_2019.pdf",
+            "https://www.comunitainsieme.com/strutture/"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.comunitainsieme.com/s-r-t-r-progetto-insieme-castelforte/",
+        "https://www.regione.lazio.it/sites/default/files/decreti-commissario-ad-acta/SAN_DCA_U00166_15_05_2019.pdf",
+        "https://www.comunitainsieme.com/strutture/"
+      ],
+      "note": "Conservate tutte le varianti documentali; nessuna scelta arbitraria del civico.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "moduli:MOD-109",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "nota_multisede_v794": "Audit multisede Le Ali del Ponte: le sedi residenziali sanitarie documentate risultano già rappresentate da servizi distinti. Via Isonzo 34/La Formica non viene promossa automaticamente a comunità sanitaria residenziale.",
+        "accesso_extraregionale": "Il gestore dichiara convenzioni con Regione Lazio e regioni invianti per alcuni programmi; condizioni economiche e autorizzazione dell’invio extraregionale vanno confermate caso per caso con servizio inviante e struttura."
+      },
+      "evidence": {
+        "nota_multisede_v794": {
+          "sources": [
+            "https://www.alidelponte.com/servizi"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "accesso_extraregionale": {
+          "sources": [
+            "https://www.alidelponte.com/servizi"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.alidelponte.com/servizi"
+      ],
+      "note": "Dichiarazione del gestore distinta da un contratto unitario corrente con ogni regione.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "rete:NET-019",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "indirizzo": "Via Santo Stefano Rotondo, 5",
+        "sede_dettaglio": "Presso Azienda Ospedaliera San Giovanni Addolorata",
+        "telefono": "06 7705 4311",
+        "email": "UOC.spdc.sg@aslroma2.it",
+        "nota_indirizzo": "Coordinate V7.9.4 riferite al complesso ospedaliero San Giovanni/Addolorata; reparto e ingresso specifico non verificati."
+      },
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/dipartimenti-aziendali-ose/salute-mentale-ose/uoc-spdc-ose"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "sede_dettaglio": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/dipartimenti-aziendali-ose/salute-mentale-ose/uoc-spdc-ose"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "telefono": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/dipartimenti-aziendali-ose/salute-mentale-ose/uoc-spdc-ose"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "email": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/dipartimenti-aziendali-ose/salute-mentale-ose/uoc-spdc-ose"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/dipartimenti-aziendali-ose/salute-mentale-ose/uoc-spdc-ose"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.aslroma2.it/index.php/dipartimenti-aziendali-ose/salute-mentale-ose/uoc-spdc-ose"
+      ],
+      "note": "Sede e recapiti aggiornati dalla pagina ufficiale ASL Roma 2.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "rete:FR-03",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "indirizzo": "Ospedale San Benedetto, Località Chiappitto",
+        "nota_indirizzo": "CSM Alatri presso il complesso dell’Ospedale San Benedetto. Coordinate V7.9.4 riferite al complesso ospedaliero; ingresso del CSM non verificato."
+      },
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/"
+      ],
+      "note": "Normalizzata la sede ospedaliera documentata senza dedurre un ingresso.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "rete:NET-075",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "indirizzo": "Ospedale Santa Scolastica, Via San Pasquale, piano terra",
+        "telefono": "0776 3929217",
+        "email": "spdc.hcaso@aslfrosinone.it",
+        "nota_indirizzo": "Coordinate V7.9.4 riferite al complesso Ospedale Santa Scolastica; reparto al piano terra da fonte ASL, ingresso specifico non verificato."
+      },
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "telefono": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "email": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+      ],
+      "note": "Sede Cassino e recapiti aggiornati dalla UOC SPDC Cassino-Sora.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "rete:NET-076",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "indirizzo": "Ospedale SS. Trinità, Località San Marciano",
+        "telefono": "0776 8294144",
+        "email": "spdc.hcaso@aslfrosinone.it",
+        "nota_indirizzo": "Coordinate V7.9.4 riferite al complesso Ospedale SS. Trinità; reparto e ingresso specifico non verificati."
+      },
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "telefono": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "email": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-cassino-sora/"
+      ],
+      "note": "Sede Sora e recapiti aggiornati dalla UOC SPDC Cassino-Sora.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    },
+    {
+      "service_key": "rete:NET-085",
+      "checked_at": "2026-09-23",
+      "fields": {
+        "indirizzo": "Ospedale Dono Svizzero, Via Appia lato Napoli",
+        "telefono": "0771 779090 / 0771 779085",
+        "email": "spdc.formia@ausl.latina.it",
+        "orari": "H24",
+        "nota_indirizzo": "Sede ospedaliera documentata; civico e ingresso del reparto non localizzati in modo univoco, quindi nessun nuovo pin V7.9.4."
+      },
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "telefono": {
+          "sources": [
+            "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "email": {
+          "sources": [
+            "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "orari": {
+          "sources": [
+            "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+          ],
+          "checked_at": "2026-09-23"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+          ],
+          "checked_at": "2026-09-23"
+        }
+      },
+      "sources": [
+        "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+      ],
+      "note": "Sede e contatti aggiornati; geografia lasciata aperta per assenza di corrispondenza univoca.",
+      "scope": "Riesame documentale dei soli campi indicati; nessuna telefonata, sopralluogo o verifica di disponibilità."
+    }
+  ],
+  "additions": [
+    {
+      "service_key": "moduli:V794-CESARANO-ILCOLLE-H24",
+      "origin": "moduli",
+      "record": {
+        "id": "V794-CESARANO-ILCOLLE-H24",
+        "id_modulo": "V794-CESARANO-ILCOLLE-H24",
+        "denominazione": "Colle Cesarano – Il Colle – SRSR H24 Nucleo 1",
+        "gestore": "GERESS S.r.l.",
+        "ente_id": "GERESS-COLLE-CESARANO",
+        "struttura_id": "COLLE-CESARANO-MAREMMANA102",
+        "servizio_id": "V794-CESARANO-ILCOLLE-H24",
+        "comune": "Tivoli",
+        "provincia": "RM",
+        "asl": "Roma 5",
+        "asl_territoriale": "ASL Roma 5",
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "tipo": "SRSR",
+        "modulo": "SRSR H24",
+        "tipologia": "SRSR H24",
+        "ambito": "Psichiatria",
+        "regime": "Residenziale",
+        "telefono": "0774 50011",
+        "email": "accettazionesanitaria@collecesarano.com",
+        "sito_ufficiale": "https://www.korian.it/strutture/colle-cesarano/documenti/",
+        "posti_accreditati": "10",
+        "posti_dichiarati": "10",
+        "nota_posti": "Nucleo 1 “Il Colle”: 10 posti H24 documentati nella tabella ASL Roma 5. La capacità H24 complessiva del complesso è così riconciliata a 70 posti; nessuna disponibilità attuale è stata rilevata.",
+        "autorizzazione_stato": "Unità ricondotta alla struttura Colle Cesarano/Geress negli atti ASL; atto unitario di autorizzazione non isolato in V7.9.4.",
+        "accreditamento_stato": "10 posti H24 documentati negli atti/elenco ASL Roma 5 riferiti al complesso Colle Cesarano.",
+        "contratto_ssn_stato": "Contratto 2025–2026 documentato per Colle Cesarano/Geress a livello struttura; non equivale a budget unitario 2026 del Nucleo 1.",
+        "contratto_periodo": "01/01/2025–31/12/2026; corrispettivo 2026 rinviato a specifico atto/budget.",
+        "ssn_evidence_v794": "indicata",
+        "rapporto_ssn": "Rapporto SSN documentato a livello della struttura Colle Cesarano; condizioni economiche 2026 della singola unità da consolidare.",
+        "budget_2026_stato": "Budget/corrispettivo unitario 2026 del Nucleo 1 non acquisito.",
+        "accesso_extraregionale": "Da verificare con servizio inviante, ASL e struttura.",
+        "nota_indirizzo": "Stesso complesso di Via Maremmana Inferiore 102 degli altri moduli Colle Cesarano. Il punto mappa rappresenta il complesso; ingresso specifico del Nucleo 1 non verificato.",
+        "ultima_verifica": "2026-09-23",
+        "fonti": "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf | https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf | https://www.aslroma5.it/wp-content/uploads/2026/07/Psichiatria-Colle-Cesarano.pdf | https://www.korian.it/strutture/colle-cesarano/documenti/"
+      },
+      "checked_at": "2026-09-23",
+      "sources": [
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Delibera-n.-110-del-30.01.2025-BUDGET-PSICHIATRICHE.pdf",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Psichiatria-Colle-Cesarano.pdf",
+        "https://www.korian.it/strutture/colle-cesarano/documenti/"
+      ],
+      "note": "Nuovo modulo distinto: 10 posti H24. Non è disponibilità in tempo reale.",
+      "scope": "Nuovo servizio documentato negli atti ASL; nessun sopralluogo o verifica dei posti liberi."
+    }
+  ],
+  "summary": {
+    "records_reexamined": 10,
+    "new_services": 1,
+    "new_colle_cesarano_h24_modules": 1,
+    "colle_h24_capacity_reconciled": 70,
+    "multisite_managers_systematically_audited": 2,
+    "new_health_sites_from_multisite_audit": 0,
+    "physical_entrances_verified": 0,
+    "telephone_calls": 0,
+    "site_visits": 0,
+    "unit_2026_budgets_acquired": 0
+  }
+}
