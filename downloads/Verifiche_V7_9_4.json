@@ -1,0 +1,42 @@
+{
+  "version": "7.9.4",
+  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
+  "checked_at": "2026-09-23",
+  "candidate_status": "superato",
+  "data_scope": {
+    "services": 443,
+    "modules": 128,
+    "structure_directory": 184,
+    "localized": 315,
+    "unlocated": 128,
+    "building_approximate": 23,
+    "physical_entrances_verified": 0
+  },
+  "pr_candidate_evidence": {
+    "workflow_run": 35805695074,
+    "tested_commit": "1216a0dcc76135cfa594b1cfee80f8307af691cd",
+    "data_checks": {
+      "passed": 9,
+      "total": 9
+    },
+    "browser_checks": {
+      "passed": 32,
+      "total": 32
+    },
+    "tested_at": "2026-09-23T01:20:49.047Z",
+    "osm_tiles": "mocked; no external map-tile requests during automated checks",
+    "note": "Candidato funzionale superato. Il verificatore PR V7.9.4 ricontrollerà l'head finale dopo la sola pulizia/documentazione."
+  },
+  "key_checks": [
+    "443 servizi unici e 184 record nella directory strutture",
+    "Colle Cesarano: 8 servizi distinti; H24 20+20+20+10=70",
+    "nuovo Nucleo 1 Il Colle: 10 posti, budget unitario 2026 non acquisito",
+    "cinque servizi esistenti localizzati solo a livello di complesso ospedaliero",
+    "315 localizzati / 128 senza pin / 0 ingressi verificati",
+    "conflitto Abaton 2 / 36 / 48-50 lasciato esplicito",
+    "audit multisede Comunità Insieme e Le Ali del Ponte senza sedi sanitarie inventate",
+    "ricerca locale; nessuna geocodifica live o tracking"
+  ],
+  "production_evidence": "Da produrre automaticamente sul commit di merge.",
+  "voiceover": "Non eseguito; ambiente Linux. Axe e test tastiera non equivalgono a certificazione VoiceOver."
+}
