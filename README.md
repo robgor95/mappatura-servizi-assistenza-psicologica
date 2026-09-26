@@ -1,3 +1,9 @@
+## Versione corrente candidata V7.11.5
+
+Sesto ciclo geografico: 443 servizi clinici, 365 localizzati e 78 senza pin. Sei nuovi marker C riutilizzano punti stradali già presenti per la stessa via e comune, senza dedurre civici, palazzine o ingressi. Il DNA Frosinone resta intenzionalmente senza pin per conflitto di sede.
+
+Checkpoint pre-release: `checkpoint-v7-11-4-before-v7115-2026-09-26` → `bdfeb28907ae15defc04ddc6092283a8f832abe0`.
+
 ## Versione corrente candidata V7.11.4
 
 Quinto ciclo geografico: 443 servizi clinici, 359 localizzati e 84 senza pin. Sei nuove posizioni C derivano dalle mappe incorporate nella pagina ufficiale ASL Viterbo dedicata ai CSM; per DSM e Ambulatorio DNA viene acquisito Via Enrico Fermi 15. Nessun ingresso fisico viene dichiarato verificato.
