@@ -1,3 +1,12 @@
+## 7.11.6 — 2026-09-27
+
+- Settimo ciclo geografico sulla baseline V7.11.5.
+- Aggiunte 5 localizzazioni indicative C.
+- Copertura: 370 localizzati e 73 senza pin; 443 servizi clinici invariati.
+- CSM Rieti, SerD Rieti e Alcologia Rieti trattati come servizi distinti nello stesso presidio di Via Salaria per Roma 36.
+- SRSR Venere e Marte localizzate solo a livello di area/via in località Cerri Aprano.
+- Zero ingressi fisici verificati; Menta, studenti, supporto territoriale e noindex invariati.
+
 ## 7.11.5 — 2026-09-26
 
 - Sesto ciclo geografico sulla baseline V7.11.4.

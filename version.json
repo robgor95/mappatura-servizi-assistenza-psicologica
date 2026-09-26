@@ -1,10 +1,10 @@
 {
-  "web_version": "7.11.5",
+  "web_version": "7.11.6",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.11.5",
-  "built_at": "2026-09-26",
+  "data_extension_version": "7.11.6",
+  "built_at": "2026-09-27",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
   "clinical_review": false,
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.11.5: sesto ciclo geografico con 6 nuovi punti C riusando coordinate stradali già presenti per la stessa via e comune; 443 servizi, 365 localizzati e 78 senza pin. DNA Frosinone resta senza pin per conflitto di sede.",
+  "release_note": "V7.11.6: settimo ciclo geografico con 5 nuove localizzazioni C; 443 servizi, 370 localizzati e 73 senza pin. Via Salaria per Roma 36 a Rieti trattata come presidio condiviso; Venere/Marte localizzate solo a livello di area/via a Cerri Aprano.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -109,22 +109,22 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.11.5",
+  "map_version": "7.11.6",
   "ux_version": "7.8",
   "map": {
     "services": 443,
-    "localized": 365,
+    "localized": 370,
     "address_geocoded": 66,
-    "street_approximate": 243,
-    "unlocated": 78,
+    "street_approximate": 245,
+    "unlocated": 73,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 76,
+      "D": 71,
       "A": 28,
-      "C": 337,
+      "C": 342,
       "E": 2
     },
     "entrances_verified": 0,
@@ -155,8 +155,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.11.5",
-  "baseline_commit": "bdfeb28907ae15defc04ddc6092283a8f832abe0",
+  "audit_version": "7.11.6",
+  "baseline_commit": "df133596b413d542c0f9b5ea356c13be811e8932",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -304,6 +304,18 @@
     "initial_queue": 84,
     "new_locations": 6,
     "remaining_unlocated": 78,
+    "complete": false
+  },
+  "v7_11_6_verification": {
+    "workflow": ".github/workflows/verify-v7-11-6.yml",
+    "baseline_commit": "df133596b413d542c0f9b5ea356c13be811e8932",
+    "scope": "Test dati, provenienza, browser e byte Cloudflare del commit pubblicato."
+  },
+  "v7_11_6_audit": {
+    "report": "downloads/Audit_Geografia_Operativo_V7_11_6.json",
+    "initial_queue": 78,
+    "new_locations": 5,
+    "remaining_unlocated": 73,
     "complete": false
   }
 }

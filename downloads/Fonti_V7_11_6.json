@@ -1,0 +1,50 @@
+{
+  "version": "7.11.6",
+  "checked_at": "2026-09-27",
+  "baseline_commit": "df133596b413d542c0f9b5ea356c13be811e8932",
+  "methodology": "Tre coordinate secondarie a Via Salaria 36 sono corroborate da fonti ASL dello stesso indirizzo; Venere/Marte riusano un punto stradale già presente per Cerri Aprano. Nessuna geocodifica live.",
+  "records": {
+    "rete:RI-02": {
+      "address_source": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+      "coordinate_source": "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/rieti/azienda/3053521",
+      "lat": 42.40369,
+      "lng": 12.87154,
+      "precision": "approximate",
+      "note": "ASL Rieti documenta il CSM in Via Salaria per Roma 36. La coordinata proviene da una directory cartografica secondaria riferita allo stesso CSM e indirizzo; punto indicativo, non ingresso fisico verificato."
+    },
+    "rete:RI-05": {
+      "address_source": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze",
+      "coordinate_source": "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/rieti/azienda/3053521",
+      "lat": 42.40369,
+      "lng": 12.87154,
+      "precision": "approximate",
+      "note": "ASL Rieti documenta il SerD in Via Salaria per Roma 36, nello stesso immobile del CSM. Si usa la coordinata secondaria riferita al CSM allo stesso indirizzo solo come punto del presidio; non identifica l'ingresso del SerD."
+    },
+    "rete:RI-07": {
+      "address_source": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/uosd-attivita-terapeutiche-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze",
+      "coordinate_source": "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/rieti/azienda/3053521",
+      "lat": 42.40369,
+      "lng": 12.87154,
+      "precision": "approximate",
+      "note": "ASL Rieti documenta le attività alcologiche in Via Salaria per Roma 36. Si usa la coordinata secondaria dello stesso presidio/indirizzo; il marker non identifica piano, ambulatorio o ingresso."
+    },
+    "moduli:V79-INS-VENERE": {
+      "address_source": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/",
+      "coordinate_source": "https://www.openstreetmap.org/way/108380704",
+      "shared_coordinate_from": "moduli:MOD-042",
+      "lat": 41.296023,
+      "lng": 13.7803507,
+      "precision": "street",
+      "note": "Il gestore colloca SRSR Venere in Via Ausente, località Cerri Aprano. Si riusa il punto stradale già presente su Via Cerri Aprano nello stesso comune: localizzazione di area/via, non edificio o ingresso."
+    },
+    "moduli:V79-INS-MARTE": {
+      "address_source": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/",
+      "coordinate_source": "https://www.openstreetmap.org/way/108380704",
+      "shared_coordinate_from": "moduli:MOD-042",
+      "lat": 41.296023,
+      "lng": 13.7803507,
+      "precision": "street",
+      "note": "Il gestore colloca SRSR Marte in Via Ausente, località Cerri Aprano. Si riusa il punto stradale già presente su Via Cerri Aprano nello stesso comune: localizzazione di area/via, non edificio o ingresso."
+    }
+  }
+}
