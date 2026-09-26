@@ -6,7 +6,7 @@ import json,hashlib,re,time,subprocess,datetime,os
 R=Path(__file__).resolve().parents[1];O=Path(os.environ.get('QA_OUT','/tmp/v7103-production'));O.mkdir(parents=True,exist_ok=True)
 origin='https://mappatura-servizi-assistenza-psicologica.pages.dev';commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip()
 def fetch(path):
- req=Request(origin+'/'+path+'?verify_v7103='+commit,headers={'User-Agent':'LazioReleaseVerification/7.10.2','Cache-Control':'no-cache'})
+ req=Request(origin+'/'+path+'?verify_v7103='+commit,headers={'User-Agent':'LazioReleaseVerification/7.10.3','Cache-Control':'no-cache'})
  try:
   with urlopen(req,timeout=30) as r:return r.status,{k.lower():v for k,v in r.headers.items()},r.read(),r.url
  except HTTPError as e:return e.code,{k.lower():v for k,v in e.headers.items()},e.read(),e.url
@@ -27,6 +27,6 @@ if deployed:
    checks.append({'path':p,'passed':s==200 and same and noindex and meta,'status':s,'exact_bytes':same,'x_robots':h.get('x-robots-tag'),'meta_noindex':meta,'sha256':sha(b)})
   except Exception as e:checks.append({'path':p,'passed':False,'error':str(e)})
  v=json.loads(expected);checks.append({'name':'recovered clinical count and map are coherent','passed':v['counts_current']['search']==443 and v['map']['services']==443 and v['map']['localized']==315 and v['map']['unlocated']==128 and v['support_layer']['clinical_search_unchanged']==443});checks.append({'name':'indexing remains disabled','passed':v['indexing_enabled'] is False and 'Sitemap:' not in (R/'robots.txt').read_text()})
-report={'version':'7.10.2','checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'commit':commit,'origin':origin,'checks':checks,'passed':sum(1 for x in checks if x['passed']),'total':len(checks)}
+report={'version':'7.10.3','checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'commit':commit,'origin':origin,'checks':checks,'passed':sum(1 for x in checks if x['passed']),'total':len(checks)}
 (O/'production-http.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n');print(json.dumps({'commit':commit,'passed':report['passed'],'total':report['total'],'failures':[x for x in checks if not x['passed']]},ensure_ascii=False))
 if report['passed']!=report['total']:raise SystemExit(1)
