@@ -1,0 +1,1022 @@
+{
+  "version": "7.11.1",
+  "baseline_commit": "791f21cf12724ff3441492d39b6d77b4bcb36589",
+  "checked_at": "2026-09-26",
+  "revisions": [
+    {
+      "service_key": "rete:R6-02",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Localizzato il complesso Villa Albani ad Anzio, non il padiglione del CSM né gli ingressi di Viale Mencacci o Via Aldobrandini. Non confondere con Villa Albani a Roma."
+      },
+      "sources": [
+        "https://conteinrete.it/vademecum/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://conteinrete.it/vademecum/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://conteinrete.it/vademecum/",
+              "source_date": null,
+              "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:R6-03",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Presidio CSM nominativo ASL Roma6 presso Via del Mare km19, con recapito cartografico coerente. Non è la Casa della Comunità di Via dei Castelli Romani, né un ingresso verificato."
+      },
+      "sources": [
+        "https://conteinrete.it/vademecum/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://conteinrete.it/vademecum/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://conteinrete.it/vademecum/",
+              "source_date": null,
+              "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-03",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+          "source_date": null,
+          "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+              "source_date": null,
+              "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-06",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+          "source_date": null,
+          "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+              "source_date": null,
+              "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-052",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano."
+      },
+      "sources": [
+        "https://www.exodus.it/sedi-exodus/cassino.html"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+          "source_date": null,
+          "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.exodus.it/sedi-exodus/cassino.html"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+              "source_date": null,
+              "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-053",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano."
+      },
+      "sources": [
+        "https://www.exodus.it/sedi-exodus/cassino.html"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+          "source_date": null,
+          "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.exodus.it/sedi-exodus/cassino.html"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+              "source_date": null,
+              "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-094",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato."
+      },
+      "sources": [
+        "https://gestivar.it/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://gestivar.it/contatti/",
+          "source_date": null,
+          "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://gestivar.it/contatti/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://gestivar.it/contatti/",
+              "source_date": null,
+              "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-095",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato."
+      },
+      "sources": [
+        "https://gestivar.it/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://gestivar.it/contatti/",
+          "source_date": null,
+          "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://gestivar.it/contatti/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://gestivar.it/contatti/",
+              "source_date": null,
+              "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:R6-05",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Solo Via Francesco Baracca a Ciampino (circa 275 m); il civico 17/19 e l’ingresso del CSM non sono stati localizzati."
+      },
+      "sources": [
+        "https://conteinrete.it/vademecum/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://conteinrete.it/vademecum/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://conteinrete.it/vademecum/",
+              "source_date": null,
+              "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-22",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 86. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio."
+      },
+      "sources": [
+        "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo"
+      ],
+      "source_documents": [
+        {
+          "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+          "source_date": "2025-06-04",
+          "basis": "Indirizzo Viterbo Via M.M.Romiti86 e recapiti del servizio; la data originaria resta distinta dalla consultazione."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo"
+          ],
+          "source_documents": [
+            {
+              "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+              "source_date": "2025-06-04",
+              "basis": "Indirizzo Viterbo Via M.M.Romiti86 e recapiti del servizio; la data originaria resta distinta dalla consultazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:PUB72-VT-002",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 54. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio."
+      },
+      "sources": [
+        "https://asl.vt.it/centro-diurno-dsm"
+      ],
+      "source_documents": [
+        {
+          "url": "https://asl.vt.it/centro-diurno-dsm",
+          "source_date": "2023-09-07",
+          "basis": "Indirizzo Centro Diurno ViaM.Romiti54; distinto dal SerD al civico86 della stessa via."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://asl.vt.it/centro-diurno-dsm"
+          ],
+          "source_documents": [
+            {
+              "url": "https://asl.vt.it/centro-diurno-dsm",
+              "source_date": "2023-09-07",
+              "basis": "Indirizzo Centro Diurno ViaM.Romiti54; distinto dal SerD al civico86 della stessa via."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-030",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Solo la breve via a Monteverde (circa 273 m): la fonte ASL scrive Crescenzo dal Monte, la cartografia Crescenzo del Monte. Il civico 13 non è verificato. Escluso il collegamento incoerente della pagina verso Catacombe di Generosa."
+      },
+      "sources": [
+        "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+          "source_date": null,
+          "basis": "Testo del blocco Centro Diurno Monteverde; non usati gli href che rinviano a Catacombe di Generosa."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+              "source_date": null,
+              "basis": "Testo del blocco Centro Diurno Monteverde; non usati gli href che rinviano a Catacombe di Generosa."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:PUB72-R2-009",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Solo Via Tomaso Sillani a Roma (circa 92 m), coerente con il riferimento al Laurentino38. Civico7, struttura e ingresso non verificati."
+      },
+      "sources": [
+        "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+          "source_date": null,
+          "basis": "SRTRe Sillani, ViaT.Sillani7, Settimo ponte Laurentino38; confrontata con ViaTomasoSillani a Roma, non con quella di altro comune."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+              "source_date": null,
+              "basis": "SRTRe Sillani, ViaT.Sillani7, Settimo ponte Laurentino38; confrontata con ViaTomasoSillani a Roma, non con quella di altro comune."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "privati:PRI-003",
+      "origin": "privati",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Localizzazione cartografica indicativa aggiunta senza modificare identità, indirizzo documentato, gestione, rapporto SSN o posti.",
+      "fields": {
+        "nota_geografia_v7111": "Solo Via Goito a Roma (circa 440 m); non una localizzazione del civico 58 o dell’ingresso del centro."
+      },
+      "sources": [
+        "https://www.santagostino.it/it/sedi/rm-via-goito"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.santagostino.it/it/sedi/rm-via-goito",
+          "source_date": null,
+          "basis": "Indirizzo ViaGoito58 del gestore; solo la via è localizzata in questo ciclo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.santagostino.it/it/sedi/rm-via-goito"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.santagostino.it/it/sedi/rm-via-goito",
+              "source_date": null,
+              "basis": "Indirizzo ViaGoito58 del gestore; solo la via è localizzata in questo ciclo."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:R1-08",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "conflitto_documentale",
+      "note": "Incongruenza tra due pagine ASL; nessuna telefonata effettuata. Nessun nuovo pin sulla lunga Via di Boccea.",
+      "fields": {
+        "orari": "Fonti ASL discordanti per il sabato: la scheda Boccea (12/08/2026) indica lunedì–sabato 08:00–20:00; la rubrica Salute Mentale (19/06/2026) indica lunedì–venerdì 08:00–20:00 e sabato 08:00–14:00. Confermare telefonicamente prima di un accesso il sabato pomeriggio.",
+        "nota_contatti_v7111": "Non è stato verificato quale orario sia effettivamente applicato. Il contatto del presidio resta 06 6010 5125."
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+          "source_date": "2026-08-12",
+          "basis": "Pagina del presidio; il sabato riporta8–20."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ],
+      "evidence": {
+        "orari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+            "https://www.aslroma1.it/salute-mentale"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+              "source_date": "2026-08-12",
+              "basis": "Pagina del presidio; il sabato riporta8–20."
+            },
+            {
+              "url": "https://www.aslroma1.it/salute-mentale",
+              "source_date": "2026-06-19",
+              "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+            "https://www.aslroma1.it/salute-mentale"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+              "source_date": "2026-08-12",
+              "basis": "Pagina del presidio; il sabato riporta8–20."
+            },
+            {
+              "url": "https://www.aslroma1.it/salute-mentale",
+              "source_date": "2026-06-19",
+              "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:R1-09",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "conflitto_documentale",
+      "note": "Conflitto civico e distinzione orario generale/accesso libero: nessun dato reso certo in assenza di conferma.",
+      "fields": {
+        "nota_indirizzo": "Conflitto tra fonti ASL: la pagina Innocenzo IV (09/09/2024) riporta Via Innocenzo IV 16/B; la rubrica Salute Mentale (19/06/2026) riporta 16/d. Il civico della scheda è conservato come dato precedente, non risolto né confermato come ingresso corrente. Chiedere alla sede; nessun pin assegnato.",
+        "orari": "Fonti ASL non allineate: la scheda del presidio (09/09/2024) distingue accesso libero lun–ven 08:00–14:00 e programmato lun 14:00–20:00, mer 14:00–17:00; la rubrica generale (19/06/2026) indica lun–ven 08:00–20:00, sab 08:00–14:00. Verificare orario e modalità al contatto.",
+        "nota_contatti_v7111": "Recapito comune alle fonti: 06 6010 6090. Non presumere che tutto l’orario generale sia dedicato all’accesso libero."
+      },
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+          "source_date": "2024-09-09",
+          "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ],
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+            "https://www.aslroma1.it/salute-mentale"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+              "source_date": "2024-09-09",
+              "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+            },
+            {
+              "url": "https://www.aslroma1.it/salute-mentale",
+              "source_date": "2026-06-19",
+              "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+            "https://www.aslroma1.it/salute-mentale"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+              "source_date": "2024-09-09",
+              "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+            },
+            {
+              "url": "https://www.aslroma1.it/salute-mentale",
+              "source_date": "2026-06-19",
+              "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+            "https://www.aslroma1.it/salute-mentale"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+              "source_date": "2024-09-09",
+              "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+            },
+            {
+              "url": "https://www.aslroma1.it/salute-mentale",
+              "source_date": "2026-06-19",
+              "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-082",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "conflitto_documentale",
+      "note": "Nessuna deduzione di trasferimento definitivo da informazioni incompatibili nella stessa pagina.",
+      "fields": {
+        "nota_indirizzo": "La stessa pagina ASL, aggiornata il 07/08/2026, indica Via Armando Fabi, Palazzina L nelle sezioni accoglienza/ubicazione, ma mantiene Viale Mazzini, ex ospedale/Distretto B nel blocco contatti. Non è documentato quale sezione sia stata riallineata: sede operativa da confermare; nessun pin assegnato.",
+        "nota_contatti_v7111": "Prima di recarsi al centro DNA, confermare la sede usando il recapito della struttura. Una data recente della pagina non elimina la discordanza interna."
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+          "source_date": "2026-08-07",
+          "basis": "Contrasto interno alla stessa pagina: ubicazione/accoglienza FabiPalazzinaL contro contatti VialeMazzini/exospedale."
+        }
+      ],
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+              "source_date": "2026-08-07",
+              "basis": "Contrasto interno alla stessa pagina: ubicazione/accoglienza FabiPalazzinaL contro contatti VialeMazzini/exospedale."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+              "source_date": "2026-08-07",
+              "basis": "Contrasto interno alla stessa pagina: ubicazione/accoglienza FabiPalazzinaL contro contatti VialeMazzini/exospedale."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:V79-GV-LICIA",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "collegamento_cartografico_scartato",
+      "note": "Il collegamento del gestore è discordante con il comune e la sede descritti. Punto cartografico precedente conservato, non promosso a ingresso verificato.",
+      "fields": {
+        "nota_geografia_v7111": "Il collegamento “indicazioni stradali” del blocco Villa Licia (Via Enrico Toti 73, Itri) rinvia alla medesima destinazione Gesti-Var di Montello, a Roccasecca. Il link è stato scartato: non viene usato per spostare la localizzazione precedente di Itri. Confermare ingresso e percorso con la struttura."
+      },
+      "sources": [
+        "https://gestivar.it/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://gestivar.it/contatti/",
+          "source_date": null,
+          "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://gestivar.it/contatti/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://gestivar.it/contatti/",
+              "source_date": null,
+              "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-083",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "precisazione_documentale",
+      "note": "Separazione tra residenza, centro diurno e sede legale conservata; la nuova consultazione non rende corrente la data 2022 della pagina.",
+      "fields": {
+        "nota_geografia_v7111": "La residenza indicata nella sezione specifica è in Via Macchia Tonda 8 a Capena; il centro diurno è in Via Filippo Turati 2/4 a Fiano Romano. Non usare il recapito generico a fondo pagina per localizzare la residenza. Posizione ancora da verificare."
+      },
+      "sources": [
+        "https://www.maieusis.org/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.maieusis.org/contatti/",
+          "source_date": "2022-12-07",
+          "basis": "ResidenzaCapenaMacchiaTonda8 distinta dal CentroDiurnoFianoRomanoTurati2/4 e dalle indicazioni di sede in calce."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.maieusis.org/contatti/",
+              "source_date": "2022-12-07",
+              "basis": "ResidenzaCapenaMacchiaTonda8 distinta dal CentroDiurnoFianoRomanoTurati2/4 e dalle indicazioni di sede in calce."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-030",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "precisazione_documentale",
+      "note": "Quattro moduli distinti della stessa struttura: contatti comuni, nessun punto chilometrico inventato.",
+      "fields": {
+        "nota_contatti_v7111": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+        "nota_geografia_v7111": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ],
+      "evidence": {
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-031",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "precisazione_documentale",
+      "note": "Quattro moduli distinti della stessa struttura: contatti comuni, nessun punto chilometrico inventato.",
+      "fields": {
+        "nota_contatti_v7111": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+        "nota_geografia_v7111": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ],
+      "evidence": {
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-032",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "precisazione_documentale",
+      "note": "Quattro moduli distinti della stessa struttura: contatti comuni, nessun punto chilometrico inventato.",
+      "fields": {
+        "nota_contatti_v7111": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+        "nota_geografia_v7111": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ],
+      "evidence": {
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-033",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dei soli campi o delle note indicati, non nuova validazione integrale del servizio. Nessuna telefonata, ingresso, disponibilità o revisione clinica.",
+      "status": "precisazione_documentale",
+      "note": "Quattro moduli distinti della stessa struttura: contatti comuni, nessun punto chilometrico inventato.",
+      "fields": {
+        "nota_contatti_v7111": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+        "nota_geografia_v7111": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ],
+      "evidence": {
+        "nota_contatti_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        },
+        "nota_geografia_v7111": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_documents": [
+            {
+              "url": "https://www.ghcspa.com/samadi/contatti",
+              "source_date": null,
+              "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+            }
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Decisione documentale manuale; eventuale evidenza ereditata esplicitamente identificata nei documenti fonte."
+        }
+      }
+    }
+  ],
+  "additions": [],
+  "method": "Nuove localizzazioni indicative e segnalazione di conflitti; nessun trasferimento o orario di accesso dedotto da informazioni generiche."
+}

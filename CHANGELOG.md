@@ -1,3 +1,10 @@
+## 7.11.1 — 2026-09-26
+
+- Secondo ciclo mirato: 443 servizi invariati, 344 localizzati, 99 senza pin. Quattordici nuove localizzazioni C: 8 edifici/presidi e 6 brevi vie. Zero ingressi verificati.
+- Note o campi riesaminati su 23 schede: conflitti di orario, civici e collegamenti incongruenti esplicitati.
+- Raggruppamenti sulla mappa distinti dalla coincidenza fisica di sede.
+- Conservati dati/asset precedenti, Menta, studenti, supporto territoriale, noindex e classificazioni amministrative.
+
 ## 7.11 — 2026-09-26
 
 - Primo ciclo geografia: 443 servizi invariati, 330 localizzati e 113 senza pin; 15 nuovi punti, zero ingressi fisici verificati.
