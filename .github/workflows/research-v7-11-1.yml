@@ -1,0 +1,26 @@
+name: V7.11.1 read-only research workspace
+on:
+  push:
+    branches: [v7-11-1-geography-review]
+    paths: [.github/workflows/research-v7-11-1.yml]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Archive exact production baseline (no credentials or environment files)
+        run: |
+          mkdir -p /tmp/v7111-source
+          git archive --format=zip 791f21cf12724ff3441492d39b6d77b4bcb36589 -o /tmp/v7111-source/repository.zip
+          git rev-parse 791f21cf12724ff3441492d39b6d77b4bcb36589 > /tmp/v7111-source/baseline.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v7111-source-baseline
+          path: /tmp/v7111-source/
+          retention-days: 7
