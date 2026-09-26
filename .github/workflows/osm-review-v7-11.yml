@@ -1,0 +1,37 @@
+name: V7.11 offline OSM review
+on:
+  push:
+    branches: [v7-11-geography-audit]
+    paths: [.github/workflows/osm-review-v7-11.yml]
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python -m pip install requests osmium shapely
+      - name: Download one regional extract and parse offline
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import requests,json,hashlib,gzip,time
+          OUT=Path('/tmp/v711-osm');OUT.mkdir(parents=True,exist_ok=True)
+          UA='LazioServicesDocumentaryAudit/7.11 (+https://github.com/robgor95/mappatura-servizi-assistenza-psicologica)'
+          source=Path('tools/research-v7-9-1.py').read_text()
+          marker='# One regional ODbL extract; never request map tiles or geocode end-user input.'
+          assert source.count(marker)==1
+          code=marker+source.split(marker,1)[1]
+          old="or (t.get('highway') and t.get('name'))"
+          assert old in code
+          code=code.replace(old,old+" or (t.get('building') and t.get('name'))")
+          exec(compile(code,'offline-osm-v711','exec'),globals())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v711-offline-osm
+          path: /tmp/v711-osm/
+          retention-days: 7
