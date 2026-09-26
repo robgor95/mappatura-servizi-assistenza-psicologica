@@ -1,9 +1,5 @@
-name: V7.11.2 third geography cycle verification
+name: V7.11.2 historical verification (manual)
 on:
-  pull_request:
-    branches: [main]
-  push:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,0 +1,158 @@
+{
+  "version": "7.11.3",
+  "baseline_commit": "703db950a93270da3a59aab786d4940baad058af",
+  "checked_at": "2026-09-26",
+  "revisions": [
+    {
+      "service_key": "rete:FR-10",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7113": "Il SerD è documentato in Borgo Santa Lucia senza civico. Si riusa il punto indicativo già adottato per Borgo Santa Lucia 52: identifica l'area/presidio, non attribuisce al SerD il civico 52 né un ingresso."
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/",
+        "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/",
+          "source_date": null,
+          "basis": "Fonte istituzionale dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+          "source_date": null,
+          "basis": "Fonte della coordinata per lo stesso indirizzo/presidio; non prova dell'ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7113": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/",
+            "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale fra indirizzo istituzionale e coordinata coincidente; punto classificato C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-13",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7113": "ASL Rieti conferma la sede di Osteria Nuova a Viale Europa 13; la coordinata proviene da una directory cartografica secondaria dello stesso presidio. Punto solo indicativo, non ingresso del CSM."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-prevenzione/uoc-igiene-e-sanita-pubblica/distretto-2-sedi-di-osteria-nuova-e-poggio-mirteto",
+        "https://www.reteimprese.it/ospedali/poggio-moiano/azienda/502518"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-prevenzione/uoc-igiene-e-sanita-pubblica/distretto-2-sedi-di-osteria-nuova-e-poggio-mirteto",
+          "source_date": null,
+          "basis": "Fonte istituzionale dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.reteimprese.it/ospedali/poggio-moiano/azienda/502518",
+          "source_date": null,
+          "basis": "Fonte della coordinata per lo stesso indirizzo/presidio; non prova dell'ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7113": {
+          "sources": [
+            "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-prevenzione/uoc-igiene-e-sanita-pubblica/distretto-2-sedi-di-osteria-nuova-e-poggio-mirteto",
+            "https://www.reteimprese.it/ospedali/poggio-moiano/azienda/502518"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale fra indirizzo istituzionale e coordinata coincidente; punto classificato C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-18",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato del solo punto; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7113": "ASL Viterbo conferma CSM/ambulatorio a Via Gilberto Pietrella 5; la coordinata proviene da una directory cartografica secondaria riferita allo stesso servizio. Punto indicativo, non ingresso verificato."
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/vetralla/azienda/3136128"
+      ],
+      "source_documents": [
+        {
+          "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+          "source_date": null,
+          "basis": "Fonte istituzionale dell'indirizzo/servizio."
+        },
+        {
+          "url": "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/vetralla/azienda/3136128",
+          "source_date": null,
+          "basis": "Fonte della coordinata per lo stesso indirizzo/presidio; non prova dell'ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7113": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/vetralla/azienda/3136128"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale fra indirizzo istituzionale e coordinata coincidente; punto classificato C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-14",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame mirato dell'indirizzo della sede carceraria; nessun pin, ingresso, disponibilità o operatività verificati.",
+      "status": "indirizzo_documentato_non_localizzato",
+      "note": "Regione Lazio elenca il SerD/Casa Circondariale di Rieti in Viale Maestri del Lavoro 2. L'indirizzo viene acquisito ma il servizio resta senza pin in questa release.",
+      "fields": {
+        "indirizzo": "Viale Maestri del Lavoro, 2",
+        "nota_geografia_v7113": "Indirizzo della Casa Circondariale documentato da Regione Lazio; nessun punto cartografico promosso in V7.11.3."
+      },
+      "sources": [
+        "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659",
+          "source_date": "2024-06-26",
+          "basis": "Elenco regionale SerD: Casa Circondariale Rieti, Viale Maestri del Lavoro 2."
+        }
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Indirizzo esplicito nell'elenco regionale SerD."
+        },
+        "nota_geografia_v7113": {
+          "sources": [
+            "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Acquisizione indirizzo senza promuovere coordinate."
+        }
+      }
+    }
+  ],
+  "additions": [],
+  "method": "Overlay additivo. Tre pin C e una correzione di indirizzo; nessuna modifica a classificazioni amministrative, posti, accesso o contenuti clinici."
+}

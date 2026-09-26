@@ -1,0 +1,80 @@
+name: V7.11.3 fourth geography cycle verification
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v7113-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Data, provenance and preservation
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/v7113-verification/{new,support,students}
+          node tools/test-v7-11-3.cjs | tee /tmp/v7113-verification/data-tests.json
+          for f in assets/audit-data-v7-11-3.js assets/servizi-v7-11-3.js assets/map-data-v7-11-3.js assets/map-v7-11-3.js tools/test-ui-v7-11-3.mjs; do node --check "$f"; done
+          python -m py_compile tools/verify-production-v7-11-3.py
+          python - <<'PY'
+          import subprocess
+          base='703db950a93270da3a59aab786d4940baad058af'
+          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','mappa.html','documenti.html','.github/workflows/verify-v7-11-2.yml'}
+          changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
+          bad=[]
+          for p in changed:
+              existed=subprocess.run(['git','cat-file','-e',base+':'+p],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
+              if existed and p not in allowed:bad.append(p)
+          assert not bad,bad
+          PY
+      - name: Browser dependencies
+        run: |
+          npm install --prefix /tmp/v7113-node playwright @axe-core/playwright
+          ln -s /tmp/v7113-node/node_modules node_modules
+          /tmp/v7113-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Browser tests on candidate
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/v7113-verification/http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          QA_OUT=/tmp/v7113-verification/new node tools/test-ui-v7-11-3.mjs
+          QA_OUT=/tmp/v7113-verification/support node tools/test-ui-v7-10.mjs
+          QA_OUT=/tmp/v7113-verification/students node tools/test-ui-v7-10-3.mjs
+      - name: Exact Cloudflare production bytes
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/v7113-verification
+        run: python tools/verify-production-v7-11-3.py
+      - name: Browser tests on actual production
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+        run: |
+          set -euo pipefail
+          QA_OUT=/tmp/v7113-verification/new node tools/test-ui-v7-11-3.mjs
+          QA_OUT=/tmp/v7113-verification/support node tools/test-ui-v7-10.mjs
+          QA_OUT=/tmp/v7113-verification/students node tools/test-ui-v7-10-3.mjs
+      - name: Record exact tested commit
+        if: always()
+        run: |
+          git rev-parse HEAD > /tmp/v7113-verification/commit.txt
+          git diff --name-status 703db950a93270da3a59aab786d4940baad058af HEAD > /tmp/v7113-verification/changes.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-11-3-${{ github.event_name }}-verification
+          path: /tmp/v7113-verification/
+          retention-days: 30
+          if-no-files-found: error

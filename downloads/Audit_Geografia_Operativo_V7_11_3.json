@@ -1,0 +1,31 @@
+{
+  "version": "7.11.3",
+  "baseline_commit": "703db950a93270da3a59aab786d4940baad058af",
+  "checked_at": "2026-09-26",
+  "summary": {
+    "services": 443,
+    "located_before": 350,
+    "located_after": 353,
+    "unlocated_before": 93,
+    "unlocated_after": 90,
+    "new_locations": 3,
+    "address_updates_without_pin": 1,
+    "quality_after": {
+      "A": 28,
+      "C": 325,
+      "D": 88,
+      "E": 2
+    },
+    "entrances_verified": 0
+  },
+  "localized_keys": [
+    "rete:FR-10",
+    "rete:RI-13",
+    "rete:VT-18"
+  ],
+  "address_only_keys": [
+    "rete:RI-14"
+  ],
+  "complete": false,
+  "caveat": "Posizioni C indicative; coordinate secondarie non certificano l'ingresso del servizio."
+}

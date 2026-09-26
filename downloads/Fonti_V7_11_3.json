@@ -1,0 +1,34 @@
+{
+  "version": "7.11.3",
+  "checked_at": "2026-09-26",
+  "baseline_commit": "703db950a93270da3a59aab786d4940baad058af",
+  "methodology": "Coordinate secondarie accettate solo con indirizzo istituzionale coincidente; sempre qualità C. Un indirizzo regionale viene acquisito senza pin.",
+  "records": {
+    "rete:FR-10": {
+      "address_source": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/",
+      "coordinate_source": "https://www.arpalazio.it/documents/20124/55931/CECCANO_2023.pdf",
+      "lat": 41.57122,
+      "lng": 13.33937,
+      "note": "Il SerD è documentato in Borgo Santa Lucia senza civico. Si riusa il punto indicativo già adottato per Borgo Santa Lucia 52: identifica l'area/presidio, non attribuisce al SerD il civico 52 né un ingresso."
+    },
+    "rete:RI-13": {
+      "address_source": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-prevenzione/uoc-igiene-e-sanita-pubblica/distretto-2-sedi-di-osteria-nuova-e-poggio-mirteto",
+      "coordinate_source": "https://www.reteimprese.it/ospedali/poggio-moiano/azienda/502518",
+      "lat": 42.21068,
+      "lng": 12.82283,
+      "note": "ASL Rieti conferma la sede di Osteria Nuova a Viale Europa 13; la coordinata proviene da una directory cartografica secondaria dello stesso presidio. Punto solo indicativo, non ingresso del CSM."
+    },
+    "rete:VT-18": {
+      "address_source": "https://asl.vt.it/csm-centro-di-salute-mentale",
+      "coordinate_source": "https://www.reteimprese.it/psichiatria-neurologia-medici-specialisti/vetralla/azienda/3136128",
+      "lat": 42.30629,
+      "lng": 12.08113,
+      "note": "ASL Viterbo conferma CSM/ambulatorio a Via Gilberto Pietrella 5; la coordinata proviene da una directory cartografica secondaria riferita allo stesso servizio. Punto indicativo, non ingresso verificato."
+    },
+    "rete:RI-14": {
+      "address_source": "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659",
+      "coordinate_source": null,
+      "note": "Regione Lazio elenca il SerD/Casa Circondariale di Rieti in Viale Maestri del Lavoro 2. L'indirizzo viene acquisito ma il servizio resta senza pin in questa release."
+    }
+  }
+}
