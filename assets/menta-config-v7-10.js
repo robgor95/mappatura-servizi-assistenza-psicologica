@@ -2,8 +2,13 @@
 (function(root){
 "use strict";
 const config = {
-  "version": "7.10",
+  "version": "7.10.3",
   "routes": {
+    "students": {
+      "label": "Sei uno studente?",
+      "page": "/studenti.html",
+      "description": "Scegli tra supporto universitario, sportelli scolastici, servizi territoriali e ascolto."
+    },
     "university": {
       "label": "Università",
       "page": "/universita.html",
@@ -520,8 +525,7 @@ const config = {
         "studentə"
       ],
       "routes": [
-        "university",
-        "school"
+        "students"
       ]
     },
     {
