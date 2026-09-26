@@ -1,3 +1,12 @@
+## 7.10.3 — 2026-09-26
+
+- Aggiunto in home un ingresso ben visibile “Sei uno studente?” senza ampliare la navigazione primaria.
+- Trasformata `studenti.html` in un hub con quattro percorsi: università, scuola, servizi fuori dal contesto di studio e numeri/ascolto.
+- Mantenute separate le directory `universita.html` e `scuole.html`.
+- Menta invia le richieste generiche “studente/studentessa/studenti” all’hub; le richieste esplicite universitarie o scolastiche mantengono il percorso diretto.
+- Aggiunti stili responsive dedicati e test mobile/accessibilità.
+- Nessuna modifica ai 443 servizi clinici, alla geografia 315/128 o allo strato territoriale V7.10.
+
 ## 7.10.2 — 2026-09-26
 
 - Recuperato selettivamente il lavoro V7.9.4 sulla baseline V7.10.1, senza unire la vecchia PR incompatibile.
