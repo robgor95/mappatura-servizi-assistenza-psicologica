@@ -1,4 +1,14 @@
-# Versione corrente V7.11
+# Versione corrente V7.11.1
+
+**443 servizi, 344 localizzati, 99 senza pin**. Secondo ciclo mirato: 14 localizzazioni indicative C e precisazioni su 23 schede; nessun ingresso verificato e nessun censimento dichiarato completo.
+
+Report: `downloads/Report_Geografia_V7_11_1.md`; audit: `downloads/Audit_Geografia_Operativo_V7_11_1.json`; protezione: `downloads/Integrita_Baseline_V7_11_1.json`.
+
+Checkpoint: `checkpoint-v7-11-before-v7111-2026-09-26` → `791f21cf12724ff3441492d39b6d77b4bcb36589`.
+
+## Edizioni precedenti
+
+# Edizione precedente V7.11
 
 Primo ciclo geografia e audit per campo: **443 servizi clinici, 330 localizzati, 113 senza pin**. Quindici nuove localizzazioni documentali, trenta schede riesaminate e nessun ingresso fisico verificato. Il controllo degli URL delle 128 schede iniziali non equivale alla loro validazione completa.
 

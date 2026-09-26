@@ -1,0 +1,1211 @@
+{
+  "version": "7.11.1",
+  "sources": {
+    "vademecum": {
+      "url": "https://conteinrete.it/vademecum/",
+      "source_date": null,
+      "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+    },
+    "ri_csm2": {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2",
+      "source_date": null,
+      "basis": "Indirizzo e associazione al poliambulatorio già documentati nella baseline V7.11; nuova richiesta alla pagina non riuscita. Non è una riconferma corrente degli orari."
+    },
+    "ri_serd": {
+      "url": "https://www.asl.rieti.it/guida-ai-servizi/disturbo-da-gioco-dazzardo",
+      "source_date": null,
+      "basis": "Indirizzo già documentato nella baseline V7.11; accesso alla pagina non riuscito nel secondo ciclo. Non viene ricavata la sede dalla direzione di Rieti."
+    },
+    "ri_property": {
+      "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+      "source_date": null,
+      "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+    },
+    "gestivar": {
+      "url": "https://gestivar.it/contatti/",
+      "source_date": null,
+      "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+    },
+    "exodus": {
+      "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+      "source_date": null,
+      "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+    },
+    "vt_serd": {
+      "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+      "source_date": "2025-06-04",
+      "basis": "Indirizzo Viterbo Via M.M.Romiti86 e recapiti del servizio; la data originaria resta distinta dalla consultazione."
+    },
+    "vt_cd": {
+      "url": "https://asl.vt.it/centro-diurno-dsm",
+      "source_date": "2023-09-07",
+      "basis": "Indirizzo Centro Diurno ViaM.Romiti54; distinto dal SerD al civico86 della stessa via."
+    },
+    "r3_cd": {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+      "source_date": null,
+      "basis": "Testo del blocco Centro Diurno Monteverde; non usati gli href che rinviano a Catacombe di Generosa."
+    },
+    "r2_sillani": {
+      "url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+      "source_date": null,
+      "basis": "SRTRe Sillani, ViaT.Sillani7, Settimo ponte Laurentino38; confrontata con ViaTomasoSillani a Roma, non con quella di altro comune."
+    },
+    "santagostino": {
+      "url": "https://www.santagostino.it/it/sedi/rm-via-goito",
+      "source_date": null,
+      "basis": "Indirizzo ViaGoito58 del gestore; solo la via è localizzata in questo ciclo."
+    },
+    "boccea": {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+      "source_date": "2026-08-12",
+      "basis": "Pagina del presidio; il sabato riporta8–20."
+    },
+    "innocenzo": {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+      "source_date": "2024-09-09",
+      "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+    },
+    "rm1_dsm": {
+      "url": "https://www.aslroma1.it/salute-mentale",
+      "source_date": "2026-06-19",
+      "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+    },
+    "fr_dna": {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+      "source_date": "2026-08-07",
+      "basis": "Contrasto interno alla stessa pagina: ubicazione/accoglienza FabiPalazzinaL contro contatti VialeMazzini/exospedale."
+    },
+    "maieusis": {
+      "url": "https://www.maieusis.org/contatti/",
+      "source_date": "2022-12-07",
+      "basis": "ResidenzaCapenaMacchiaTonda8 distinta dal CentroDiurnoFianoRomanoTurati2/4 e dalle indicazioni di sede in calce."
+    },
+    "samadi": {
+      "url": "https://www.ghcspa.com/samadi/contatti",
+      "source_date": null,
+      "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+    }
+  },
+  "osm_extract": {
+    "url": "https://download.openstreetmap.fr/extracts/europe/italy/lazio-latest.osm.pbf",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "retrieved_at": "2026-09-26T17:34:19Z",
+    "last_modified": "Fri, 25 Sep 2026 01:45:47 GMT",
+    "bytes": 126680950,
+    "sha256": "2c551f007f7839163494048e93446c861d0bbb2e2bfce7b020557ef24e626fcc",
+    "features": 312905,
+    "boundaries": 398
+  },
+  "new_positions": [
+    {
+      "key": "rete:R6-02",
+      "lat": 41.4495745,
+      "lng": 12.6276277,
+      "quality": "C",
+      "precision": "building",
+      "source": "vademecum",
+      "source_url": "https://www.openstreetmap.org/way/30374430",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Localizzato il complesso Villa Albani ad Anzio, non il padiglione del CSM né gli ingressi di Viale Mencacci o Via Aldobrandini. Non confondere con Villa Albani a Roma.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 30374430,
+        "version": 8,
+        "tags": {
+          "amenity": "hospital",
+          "barrier": "wall",
+          "name": "Villa Albani"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6281723,
+                41.4512214
+              ],
+              [
+                12.6264685,
+                41.4509102
+              ],
+              [
+                12.6261209,
+                41.4508869
+              ],
+              [
+                12.6258377,
+                41.4508033
+              ],
+              [
+                12.6257774,
+                41.4507214
+              ],
+              [
+                12.6265682,
+                41.4485075
+              ],
+              [
+                12.6267132,
+                41.4482299
+              ],
+              [
+                12.6269449,
+                41.4479983
+              ],
+              [
+                12.6270192,
+                41.4479818
+              ],
+              [
+                12.6270656,
+                41.4479853
+              ],
+              [
+                12.6271909,
+                41.4480553
+              ],
+              [
+                12.6272281,
+                41.4481334
+              ],
+              [
+                12.6272711,
+                41.4482428
+              ],
+              [
+                12.6272968,
+                41.4483715
+              ],
+              [
+                12.6276935,
+                41.4486692
+              ],
+              [
+                12.6284797,
+                41.4490214
+              ],
+              [
+                12.6285522,
+                41.4490163
+              ],
+              [
+                12.6288003,
+                41.4491068
+              ],
+              [
+                12.6289652,
+                41.4491249
+              ],
+              [
+                12.6292795,
+                41.4492547
+              ],
+              [
+                12.6288573,
+                41.4498944
+              ],
+              [
+                12.6282968,
+                41.4511362
+              ],
+              [
+                12.6281723,
+                41.4512214
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.6257774,
+          41.4479818,
+          12.6292795,
+          41.4512214
+        ]
+      }
+    },
+    {
+      "key": "rete:R6-03",
+      "lat": 41.6447077,
+      "lng": 12.4843867,
+      "quality": "C",
+      "precision": "building",
+      "source": "vademecum",
+      "source_url": "https://www.openstreetmap.org/way/847875742",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Presidio CSM nominativo ASL Roma6 presso Via del Mare km19, con recapito cartografico coerente. Non è la Casa della Comunità di Via dei Castelli Romani, né un ingresso verificato.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 847875742,
+        "version": 2,
+        "tags": {
+          "amenity": "clinic",
+          "barrier": "fence",
+          "healthcare": "clinic",
+          "healthcare:speciality": "psychiatry",
+          "name": "ASL ROMA 6 Distretto H4 - Centro Salute Mentale",
+          "operator": "ASL ROMA 6",
+          "operator:type": "public",
+          "phone": "+39 06 9327 4664"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.4837252,
+                41.6451713
+              ],
+              [
+                12.4841744,
+                41.6452102
+              ],
+              [
+                12.4844681,
+                41.6452301
+              ],
+              [
+                12.484658,
+                41.6451291
+              ],
+              [
+                12.4852667,
+                41.6444969
+              ],
+              [
+                12.4854713,
+                41.6442138
+              ],
+              [
+                12.4839582,
+                41.6441396
+              ],
+              [
+                12.4835076,
+                41.6441332
+              ],
+              [
+                12.4834581,
+                41.6441864
+              ],
+              [
+                12.4835221,
+                41.6444863
+              ],
+              [
+                12.4835833,
+                41.6445252
+              ],
+              [
+                12.4837123,
+                41.6446614
+              ],
+              [
+                12.4837072,
+                41.644754
+              ],
+              [
+                12.483722,
+                41.6448271
+              ],
+              [
+                12.4837252,
+                41.6451713
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.4834581,
+          41.6441332,
+          12.4854713,
+          41.6452301
+        ]
+      }
+    },
+    {
+      "key": "rete:RI-03",
+      "lat": 42.2710955,
+      "lng": 12.6868045,
+      "quality": "C",
+      "precision": "building",
+      "source": "ri_property",
+      "source_url": "https://www.openstreetmap.org/way/312139216",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 312139216,
+        "version": 1,
+        "tags": {
+          "amenity": "hospital",
+          "name": "ASL"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6870417,
+                42.2705904
+              ],
+              [
+                12.6873152,
+                42.2708604
+              ],
+              [
+                12.6874654,
+                42.270912
+              ],
+              [
+                12.6875888,
+                42.2709834
+              ],
+              [
+                12.6876398,
+                42.2712077
+              ],
+              [
+                12.6877424,
+                42.2713468
+              ],
+              [
+                12.6877994,
+                42.2714155
+              ],
+              [
+                12.6877538,
+                42.2714794
+              ],
+              [
+                12.6875698,
+                42.2715854
+              ],
+              [
+                12.6874753,
+                42.2715842
+              ],
+              [
+                12.687363,
+                42.2715119
+              ],
+              [
+                12.6868631,
+                42.2717505
+              ],
+              [
+                12.6864951,
+                42.2717782
+              ],
+              [
+                12.6856011,
+                42.2712854
+              ],
+              [
+                12.6870417,
+                42.2705904
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.6856011,
+          42.2705904,
+          12.6877994,
+          42.2717782
+        ]
+      }
+    },
+    {
+      "key": "rete:RI-06",
+      "lat": 42.2710955,
+      "lng": 12.6868045,
+      "quality": "C",
+      "precision": "building",
+      "source": "ri_property",
+      "source_url": "https://www.openstreetmap.org/way/312139216",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 312139216,
+        "version": 1,
+        "tags": {
+          "amenity": "hospital",
+          "name": "ASL"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6870417,
+                42.2705904
+              ],
+              [
+                12.6873152,
+                42.2708604
+              ],
+              [
+                12.6874654,
+                42.270912
+              ],
+              [
+                12.6875888,
+                42.2709834
+              ],
+              [
+                12.6876398,
+                42.2712077
+              ],
+              [
+                12.6877424,
+                42.2713468
+              ],
+              [
+                12.6877994,
+                42.2714155
+              ],
+              [
+                12.6877538,
+                42.2714794
+              ],
+              [
+                12.6875698,
+                42.2715854
+              ],
+              [
+                12.6874753,
+                42.2715842
+              ],
+              [
+                12.687363,
+                42.2715119
+              ],
+              [
+                12.6868631,
+                42.2717505
+              ],
+              [
+                12.6864951,
+                42.2717782
+              ],
+              [
+                12.6856011,
+                42.2712854
+              ],
+              [
+                12.6870417,
+                42.2705904
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.6856011,
+          42.2705904,
+          12.6877994,
+          42.2717782
+        ]
+      }
+    },
+    {
+      "key": "moduli:MOD-052",
+      "lat": 41.5096222,
+      "lng": 13.8459947,
+      "quality": "C",
+      "precision": "building",
+      "source": "exodus",
+      "source_url": "https://www.openstreetmap.org/node/12095727365",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 12095727365,
+        "version": 1,
+        "tags": {
+          "healthcare": "counselling",
+          "name": "Fondazione Exodus"
+        }
+      }
+    },
+    {
+      "key": "moduli:MOD-053",
+      "lat": 41.5096222,
+      "lng": 13.8459947,
+      "quality": "C",
+      "precision": "building",
+      "source": "exodus",
+      "source_url": "https://www.openstreetmap.org/node/12095727365",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 12095727365,
+        "version": 1,
+        "tags": {
+          "healthcare": "counselling",
+          "name": "Fondazione Exodus"
+        }
+      }
+    },
+    {
+      "key": "moduli:MOD-094",
+      "lat": 41.551403,
+      "lng": 13.6725683,
+      "quality": "C",
+      "precision": "building",
+      "source": "gestivar",
+      "source_url": "https://gestivar.it/contatti/",
+      "method": "Destinazione indicazioni stradali pubblicata dal gestore nel blocco Borgo San Tommaso; parametri !3d/!4d, non centro della vista @.",
+      "note": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/XFiAH9WY3VmYZjk69",
+        "destination_url": "https://www.google.com/maps/place/Gesti+Var+Srl/@41.5516342,13.6703505,18z/data=!4m6!3m5!1s0x133ab1b75fbff349:0x2ad65b9207878023!8m2!3d41.551403!4d13.6725683!16s%2Fg%2F1hc49d5tr?authuser=0&entry=tts&g_ep=EgoyMDI1MDEyNi4wIPu8ASoASAFQAw%3D%3D",
+        "selector": "!3d41.551403!4d13.6725683",
+        "publisher_section": "Strutture > Borgo San Tommaso"
+      }
+    },
+    {
+      "key": "moduli:MOD-095",
+      "lat": 41.551403,
+      "lng": 13.6725683,
+      "quality": "C",
+      "precision": "building",
+      "source": "gestivar",
+      "source_url": "https://gestivar.it/contatti/",
+      "method": "Destinazione indicazioni stradali pubblicata dal gestore nel blocco Borgo San Tommaso; parametri !3d/!4d, non centro della vista @.",
+      "note": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/XFiAH9WY3VmYZjk69",
+        "destination_url": "https://www.google.com/maps/place/Gesti+Var+Srl/@41.5516342,13.6703505,18z/data=!4m6!3m5!1s0x133ab1b75fbff349:0x2ad65b9207878023!8m2!3d41.551403!4d13.6725683!16s%2Fg%2F1hc49d5tr?authuser=0&entry=tts&g_ep=EgoyMDI1MDEyNi4wIPu8ASoASAFQAw%3D%3D",
+        "selector": "!3d41.551403!4d13.6725683",
+        "publisher_section": "Strutture > Borgo San Tommaso"
+      }
+    },
+    {
+      "key": "rete:R6-05",
+      "lat": 41.8003382,
+      "lng": 12.5983616,
+      "quality": "C",
+      "precision": "street",
+      "source": "vademecum",
+      "source_url": "https://www.openstreetmap.org/way/27253047",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Francesco Baracca a Ciampino (circa 275 m); il civico 17/19 e l’ingresso del CSM non sono stati localizzati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 27253047,
+        "version": 11,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Francesco Baracca",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.6000159,
+              41.8003049
+            ],
+            [
+              12.599878,
+              41.8003065
+            ],
+            [
+              12.5983516,
+              41.8003384
+            ],
+            [
+              12.5977643,
+              41.8003511
+            ],
+            [
+              12.5976557,
+              41.8003535
+            ],
+            [
+              12.597511,
+              41.800358
+            ],
+            [
+              12.596708,
+              41.800387
+            ]
+          ]
+        },
+        "bounds": [
+          12.596708,
+          41.8003049,
+          12.6000159,
+          41.800387
+        ]
+      },
+      "street_length_m": 275,
+      "osm_way_ids": [
+        27253047
+      ]
+    },
+    {
+      "key": "rete:VT-22",
+      "lat": 42.4112379,
+      "lng": 12.1102153,
+      "quality": "C",
+      "precision": "street",
+      "source": "vt_serd",
+      "source_url": "https://www.openstreetmap.org/way/32593000",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 86. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 32593000,
+        "version": 12,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Maresciallo Mariano Romiti",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.1100287,
+              42.4131675
+            ],
+            [
+              12.110071,
+              42.4128189
+            ],
+            [
+              12.1100678,
+              42.4127789
+            ],
+            [
+              12.1100264,
+              42.4122577
+            ],
+            [
+              12.1100376,
+              42.4121249
+            ],
+            [
+              12.1100847,
+              42.4118551
+            ],
+            [
+              12.1101024,
+              42.411754
+            ],
+            [
+              12.1101943,
+              42.4113797
+            ],
+            [
+              12.110259,
+              42.4109431
+            ],
+            [
+              12.1102786,
+              42.4108113
+            ],
+            [
+              12.1104113,
+              42.410093
+            ],
+            [
+              12.1104523,
+              42.4098828
+            ],
+            [
+              12.1105275,
+              42.4093912
+            ],
+            [
+              12.110527,
+              42.4093577
+            ],
+            [
+              12.1105176,
+              42.4093106
+            ]
+          ]
+        },
+        "bounds": [
+          12.1100264,
+          42.4093106,
+          12.1105275,
+          42.4131675
+        ]
+      },
+      "street_length_m": 432,
+      "osm_way_ids": [
+        32593000
+      ]
+    },
+    {
+      "key": "rete:PUB72-VT-002",
+      "lat": 42.4112379,
+      "lng": 12.1102153,
+      "quality": "C",
+      "precision": "street",
+      "source": "vt_cd",
+      "source_url": "https://www.openstreetmap.org/way/32593000",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 54. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 32593000,
+        "version": 12,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Maresciallo Mariano Romiti",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.1100287,
+              42.4131675
+            ],
+            [
+              12.110071,
+              42.4128189
+            ],
+            [
+              12.1100678,
+              42.4127789
+            ],
+            [
+              12.1100264,
+              42.4122577
+            ],
+            [
+              12.1100376,
+              42.4121249
+            ],
+            [
+              12.1100847,
+              42.4118551
+            ],
+            [
+              12.1101024,
+              42.411754
+            ],
+            [
+              12.1101943,
+              42.4113797
+            ],
+            [
+              12.110259,
+              42.4109431
+            ],
+            [
+              12.1102786,
+              42.4108113
+            ],
+            [
+              12.1104113,
+              42.410093
+            ],
+            [
+              12.1104523,
+              42.4098828
+            ],
+            [
+              12.1105275,
+              42.4093912
+            ],
+            [
+              12.110527,
+              42.4093577
+            ],
+            [
+              12.1105176,
+              42.4093106
+            ]
+          ]
+        },
+        "bounds": [
+          12.1100264,
+          42.4093106,
+          12.1105275,
+          42.4131675
+        ]
+      },
+      "street_length_m": 432,
+      "osm_way_ids": [
+        32593000
+      ]
+    },
+    {
+      "key": "rete:NET-030",
+      "lat": 41.8740207,
+      "lng": 12.4668069,
+      "quality": "C",
+      "precision": "street",
+      "source": "r3_cd",
+      "source_url": "https://www.openstreetmap.org/way/23787351",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo la breve via a Monteverde (circa 273 m): la fonte ASL scrive Crescenzo dal Monte, la cartografia Crescenzo del Monte. Il civico 13 non è verificato. Escluso il collegamento incoerente della pagina verso Catacombe di Generosa.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 23787351,
+        "version": 15,
+        "tags": {
+          "highway": "footway",
+          "name": "Via Crescenzo del Monte",
+          "name:etymology:wikidata": "Q3697045",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [
+                12.4667048,
+                41.8745159
+              ],
+              [
+                12.4666956,
+                41.8746144
+              ],
+              [
+                12.4666787,
+                41.8748001
+              ],
+              [
+                12.4666698,
+                41.8749311
+              ],
+              [
+                12.4666674,
+                41.8749959
+              ],
+              [
+                12.4666696,
+                41.8750624
+              ],
+              [
+                12.4667305,
+                41.87554
+              ]
+            ],
+            [
+              [
+                12.4669218,
+                41.8742008
+              ],
+              [
+                12.4668364,
+                41.8740746
+              ],
+              [
+                12.4667786,
+                41.8739689
+              ],
+              [
+                12.4667542,
+                41.8739276
+              ],
+              [
+                12.4667377,
+                41.8738848
+              ],
+              [
+                12.4667282,
+                41.8738219
+              ],
+              [
+                12.4667277,
+                41.8737473
+              ],
+              [
+                12.4667342,
+                41.8736514
+              ],
+              [
+                12.4667507,
+                41.8735771
+              ],
+              [
+                12.4667836,
+                41.8735245
+              ],
+              [
+                12.4668223,
+                41.873489
+              ],
+              [
+                12.4669306,
+                41.8733927
+              ],
+              [
+                12.4670835,
+                41.8732717
+              ],
+              [
+                12.4672478,
+                41.8731667
+              ],
+              [
+                12.4672608,
+                41.8731584
+              ],
+              [
+                12.4672983,
+                41.8731517
+              ],
+              [
+                12.4673448,
+                41.8731533
+              ],
+              [
+                12.4673825,
+                41.8731604
+              ],
+              [
+                12.4675228,
+                41.8731896
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.4667277,
+          41.8731584,
+          12.4672608,
+          41.8742008
+        ]
+      },
+      "street_length_m": 273,
+      "osm_way_ids": [
+        23787351,
+        27856712,
+        1008075647
+      ]
+    },
+    {
+      "key": "rete:PUB72-R2-009",
+      "lat": 41.8127499,
+      "lng": 12.4725813,
+      "quality": "C",
+      "precision": "street",
+      "source": "r2_sillani",
+      "source_url": "https://www.openstreetmap.org/way/172283664",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Tomaso Sillani a Roma (circa 92 m), coerente con il riferimento al Laurentino38. Civico7, struttura e ingresso non verificati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 172283664,
+        "version": 5,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Tomaso Sillani",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.4722613,
+              41.8124126
+            ],
+            [
+              12.4728339,
+              41.8130163
+            ],
+            [
+              12.4729019,
+              41.8130869
+            ]
+          ]
+        },
+        "bounds": [
+          12.4722613,
+          41.8124126,
+          12.4729019,
+          41.8130869
+        ]
+      },
+      "street_length_m": 92,
+      "osm_way_ids": [
+        172283664
+      ]
+    },
+    {
+      "key": "privati:PRI-003",
+      "lat": 41.9060317,
+      "lng": 12.5004033,
+      "quality": "C",
+      "precision": "street",
+      "source": "santagostino",
+      "source_url": "https://www.openstreetmap.org/way/44098905",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Goito a Roma (circa 440 m); non una localizzazione del civico 58 o dell’ingresso del centro.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 44098905,
+        "version": 15,
+        "tags": {
+          "busway": "opposite_lane",
+          "cycleway:both": "no",
+          "highway": "residential",
+          "is_in:city": "Roma",
+          "lanes": "2",
+          "lanes:psv:backward": "1",
+          "lit": "yes",
+          "maxspeed": "50",
+          "name": "Via Goito",
+          "name:etymology:wikidata": "Q42945",
+          "oneway": "yes",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.5022078,
+              41.9045803
+            ],
+            [
+              12.5021162,
+              41.9046547
+            ],
+            [
+              12.5014601,
+              41.905198
+            ],
+            [
+              12.5014059,
+              41.9052418
+            ],
+            [
+              12.5006568,
+              41.9058307
+            ],
+            [
+              12.5006018,
+              41.905874
+            ],
+            [
+              12.5000706,
+              41.906296
+            ],
+            [
+              12.4999886,
+              41.9063613
+            ],
+            [
+              12.4998023,
+              41.9065149
+            ],
+            [
+              12.4989232,
+              41.9072401
+            ],
+            [
+              12.4989086,
+              41.9072538
+            ],
+            [
+              12.4988896,
+              41.9072736
+            ],
+            [
+              12.4988734,
+              41.9072934
+            ],
+            [
+              12.4988608,
+              41.9073188
+            ],
+            [
+              12.4988509,
+              41.9073443
+            ],
+            [
+              12.4988452,
+              41.9073638
+            ],
+            [
+              12.4988136,
+              41.9075668
+            ]
+          ]
+        },
+        "bounds": [
+          12.4999886,
+          41.9045803,
+          12.5022078,
+          41.9063613
+        ]
+      },
+      "street_length_m": 440,
+      "osm_way_ids": [
+        44098905,
+        52492239,
+        106769434
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "keys": [
+        "rete:NET-030"
+      ],
+      "reason": "Il testo indica Crescenzo dal Monte13 ma href associa Catacombe di Generosa5. Link escluso; localizzata soltanto la via su OSM.",
+      "source": "r3_cd"
+    },
+    {
+      "keys": [
+        "moduli:V79-GV-LICIA"
+      ],
+      "reason": "Il link di Villa Licia/Itri punta al comune di Roccasecca. Vecchio punto invariato.",
+      "source": "gestivar",
+      "rejected_target": {
+        "lat": 41.5446157,
+        "lng": 13.6583018
+      }
+    },
+    {
+      "keys": [
+        "rete:R1-09"
+      ],
+      "reason": "16/B e16/d in pagine ASL differenti: nessun ingresso scelto.",
+      "source": "rm1_dsm"
+    },
+    {
+      "keys": [
+        "rete:NET-082"
+      ],
+      "reason": "Fabi/L e VialeMazzini nella stessa pagina: nessun trasferimento inferito.",
+      "source": "fr_dna"
+    },
+    {
+      "keys": [
+        "moduli:MOD-083"
+      ],
+      "reason": "Non trasferire la residenza Capena sull’indirizzo del centro diurno FianoRomano.",
+      "source": "maieusis"
+    },
+    {
+      "keys": [
+        "moduli:MOD-052",
+        "moduli:MOD-053"
+      ],
+      "reason": "Scartato l’omonimo esercizio commerciale Exodus a Genzano; scelto solo il presidio nominativo FondazioneExodus nel comune di Cassino.",
+      "source": "exodus"
+    }
+  ],
+  "source_date_policy": "Date dichiarate dalle pagine distinte dalla consultazione. Evidenze Rieti ereditate dalla baseline e identificate come tali; non nuova verifica del PDF né degli orari.",
+  "license_note": "Oggetti e geometrie OpenStreetMap: ODbL-1.0, © OpenStreetMap contributors. Le altre evidenze sono attribuite alle singole fonti primarie; nessuna licenza viene attribuita a testi di terzi."
+}

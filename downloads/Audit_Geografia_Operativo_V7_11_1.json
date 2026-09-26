@@ -1,0 +1,2996 @@
+{
+  "version": "7.11.1",
+  "baseline_commit": "791f21cf12724ff3441492d39b6d77b4bcb36589",
+  "checked_at": "2026-09-26",
+  "scope": "Secondo ciclo mirato; il conteggio delle schede comprende precisazioni geografiche e conflitti, non 23 verifiche integrali di operatività.",
+  "summary": {
+    "services_before": 443,
+    "services_after": 443,
+    "located_before": 330,
+    "located_after": 344,
+    "unlocated_before": 113,
+    "unlocated_after": 99,
+    "address_after": 65,
+    "street_after": 235,
+    "building_after": 44,
+    "quality_counts": {
+      "D": 97,
+      "A": 28,
+      "C": 316,
+      "E": 2
+    },
+    "newly_localized_existing": [
+      "rete:R6-02",
+      "rete:R6-03",
+      "rete:RI-03",
+      "rete:RI-06",
+      "moduli:MOD-052",
+      "moduli:MOD-053",
+      "moduli:MOD-094",
+      "moduli:MOD-095",
+      "rete:R6-05",
+      "rete:VT-22",
+      "rete:PUB72-VT-002",
+      "rete:NET-030",
+      "rete:PUB72-R2-009",
+      "privati:PRI-003"
+    ],
+    "new_service_localized": [],
+    "entrances_verified": 0,
+    "nominatim_requests_this_release": 0
+  },
+  "records_with_targeted_decisions": 23,
+  "fields_or_notes_compared": 31,
+  "fields_or_notes_changed": 31,
+  "new_coordinates_distinct": 10,
+  "field_changes": [
+    {
+      "key": "rete:R6-02",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Localizzato il complesso Villa Albani ad Anzio, non il padiglione del CSM né gli ingressi di Viale Mencacci o Via Aldobrandini. Non confondere con Villa Albani a Roma.",
+      "changed": true,
+      "sources": [
+        "https://conteinrete.it/vademecum/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+        }
+      ]
+    },
+    {
+      "key": "rete:R6-03",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Presidio CSM nominativo ASL Roma6 presso Via del Mare km19, con recapito cartografico coerente. Non è la Casa della Comunità di Via dei Castelli Romani, né un ingresso verificato.",
+      "changed": true,
+      "sources": [
+        "https://conteinrete.it/vademecum/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+        }
+      ]
+    },
+    {
+      "key": "rete:RI-03",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "changed": true,
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+          "source_date": null,
+          "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+        }
+      ]
+    },
+    {
+      "key": "rete:RI-06",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "changed": true,
+      "sources": [
+        "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/23.06_all_2.1_ELENCO_DEFINITIVO_IMMOBILI_ASL.pdf",
+          "source_date": null,
+          "basis": "Associazione al Poliambulatorio di Via Finocchieto 1 già riscontrata nel precedente audit V7.9.3; numero non sostituito a snc nella scheda."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-052",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "changed": true,
+      "sources": [
+        "https://www.exodus.it/sedi-exodus/cassino.html"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+          "source_date": null,
+          "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-053",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "changed": true,
+      "sources": [
+        "https://www.exodus.it/sedi-exodus/cassino.html"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+          "source_date": null,
+          "basis": "Sede nominativa Cassino del gestore; localizzazione OSM del presidio non usata come verifica del civico23."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-094",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "changed": true,
+      "sources": [
+        "https://gestivar.it/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://gestivar.it/contatti/",
+          "source_date": null,
+          "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-095",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "changed": true,
+      "sources": [
+        "https://gestivar.it/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://gestivar.it/contatti/",
+          "source_date": null,
+          "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+        }
+      ]
+    },
+    {
+      "key": "rete:R6-05",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Solo Via Francesco Baracca a Ciampino (circa 275 m); il civico 17/19 e l’ingresso del CSM non sono stati localizzati.",
+      "changed": true,
+      "sources": [
+        "https://conteinrete.it/vademecum/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Vademecum della rete territoriale: indirizzi CSM Anzio, Pomezia, Ciampino."
+        }
+      ]
+    },
+    {
+      "key": "rete:VT-22",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 86. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "changed": true,
+      "sources": [
+        "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo"
+      ],
+      "source_documents": [
+        {
+          "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+          "source_date": "2025-06-04",
+          "basis": "Indirizzo Viterbo Via M.M.Romiti86 e recapiti del servizio; la data originaria resta distinta dalla consultazione."
+        }
+      ]
+    },
+    {
+      "key": "rete:PUB72-VT-002",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 54. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "changed": true,
+      "sources": [
+        "https://asl.vt.it/centro-diurno-dsm"
+      ],
+      "source_documents": [
+        {
+          "url": "https://asl.vt.it/centro-diurno-dsm",
+          "source_date": "2023-09-07",
+          "basis": "Indirizzo Centro Diurno ViaM.Romiti54; distinto dal SerD al civico86 della stessa via."
+        }
+      ]
+    },
+    {
+      "key": "rete:NET-030",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Solo la breve via a Monteverde (circa 273 m): la fonte ASL scrive Crescenzo dal Monte, la cartografia Crescenzo del Monte. Il civico 13 non è verificato. Escluso il collegamento incoerente della pagina verso Catacombe di Generosa.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+          "source_date": null,
+          "basis": "Testo del blocco Centro Diurno Monteverde; non usati gli href che rinviano a Catacombe di Generosa."
+        }
+      ]
+    },
+    {
+      "key": "rete:PUB72-R2-009",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Solo Via Tomaso Sillani a Roma (circa 92 m), coerente con il riferimento al Laurentino38. Civico7, struttura e ingresso non verificati.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+          "source_date": null,
+          "basis": "SRTRe Sillani, ViaT.Sillani7, Settimo ponte Laurentino38; confrontata con ViaTomasoSillani a Roma, non con quella di altro comune."
+        }
+      ]
+    },
+    {
+      "key": "privati:PRI-003",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Solo Via Goito a Roma (circa 440 m); non una localizzazione del civico 58 o dell’ingresso del centro.",
+      "changed": true,
+      "sources": [
+        "https://www.santagostino.it/it/sedi/rm-via-goito"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.santagostino.it/it/sedi/rm-via-goito",
+          "source_date": null,
+          "basis": "Indirizzo ViaGoito58 del gestore; solo la via è localizzata in questo ciclo."
+        }
+      ]
+    },
+    {
+      "key": "rete:R1-08",
+      "field": "orari",
+      "before": "Lunedì, martedì, mercoledì, giovedì, venerdì e sabato 08:00–20:00 secondo la scheda del presidio.",
+      "after": "Fonti ASL discordanti per il sabato: la scheda Boccea (12/08/2026) indica lunedì–sabato 08:00–20:00; la rubrica Salute Mentale (19/06/2026) indica lunedì–venerdì 08:00–20:00 e sabato 08:00–14:00. Confermare telefonicamente prima di un accesso il sabato pomeriggio.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+          "source_date": "2026-08-12",
+          "basis": "Pagina del presidio; il sabato riporta8–20."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ]
+    },
+    {
+      "key": "rete:R1-08",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "Non è stato verificato quale orario sia effettivamente applicato. Il contatto del presidio resta 06 6010 5125.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+          "source_date": "2026-08-12",
+          "basis": "Pagina del presidio; il sabato riporta8–20."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ]
+    },
+    {
+      "key": "rete:R1-09",
+      "field": "nota_indirizzo",
+      "before": null,
+      "after": "Conflitto tra fonti ASL: la pagina Innocenzo IV (09/09/2024) riporta Via Innocenzo IV 16/B; la rubrica Salute Mentale (19/06/2026) riporta 16/d. Il civico della scheda è conservato come dato precedente, non risolto né confermato come ingresso corrente. Chiedere alla sede; nessun pin assegnato.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+          "source_date": "2024-09-09",
+          "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ]
+    },
+    {
+      "key": "rete:R1-09",
+      "field": "orari",
+      "before": "Accesso libero lunedì–venerdì 08:00–14:00; attività con accesso programmato lunedì 14:00–20:00 e mercoledì 14:00–17:00.",
+      "after": "Fonti ASL non allineate: la scheda del presidio (09/09/2024) distingue accesso libero lun–ven 08:00–14:00 e programmato lun 14:00–20:00, mer 14:00–17:00; la rubrica generale (19/06/2026) indica lun–ven 08:00–20:00, sab 08:00–14:00. Verificare orario e modalità al contatto.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+          "source_date": "2024-09-09",
+          "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ]
+    },
+    {
+      "key": "rete:R1-09",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "Recapito comune alle fonti: 06 6010 6090. Non presumere che tutto l’orario generale sia dedicato all’accesso libero.",
+      "changed": true,
+      "sources": [
+        "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+        "https://www.aslroma1.it/salute-mentale"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+          "source_date": "2024-09-09",
+          "basis": "Pagina del presidio con civico16/B e distinzione accesso libero/programmato."
+        },
+        {
+          "url": "https://www.aslroma1.it/salute-mentale",
+          "source_date": "2026-06-19",
+          "basis": "Rubrica generale ASLRoma1: sabato8–14 a Boccea;16/d e orari generici diversi a InnocenzoIV."
+        }
+      ]
+    },
+    {
+      "key": "rete:NET-082",
+      "field": "nota_indirizzo",
+      "before": null,
+      "after": "La stessa pagina ASL, aggiornata il 07/08/2026, indica Via Armando Fabi, Palazzina L nelle sezioni accoglienza/ubicazione, ma mantiene Viale Mazzini, ex ospedale/Distretto B nel blocco contatti. Non è documentato quale sezione sia stata riallineata: sede operativa da confermare; nessun pin assegnato.",
+      "changed": true,
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+          "source_date": "2026-08-07",
+          "basis": "Contrasto interno alla stessa pagina: ubicazione/accoglienza FabiPalazzinaL contro contatti VialeMazzini/exospedale."
+        }
+      ]
+    },
+    {
+      "key": "rete:NET-082",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "Prima di recarsi al centro DNA, confermare la sede usando il recapito della struttura. Una data recente della pagina non elimina la discordanza interna.",
+      "changed": true,
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+          "source_date": "2026-08-07",
+          "basis": "Contrasto interno alla stessa pagina: ubicazione/accoglienza FabiPalazzinaL contro contatti VialeMazzini/exospedale."
+        }
+      ]
+    },
+    {
+      "key": "moduli:V79-GV-LICIA",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Il collegamento “indicazioni stradali” del blocco Villa Licia (Via Enrico Toti 73, Itri) rinvia alla medesima destinazione Gesti-Var di Montello, a Roccasecca. Il link è stato scartato: non viene usato per spostare la localizzazione precedente di Itri. Confermare ingresso e percorso con la struttura.",
+      "changed": true,
+      "sources": [
+        "https://gestivar.it/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://gestivar.it/contatti/",
+          "source_date": null,
+          "basis": "Blocco Strutture/Borgo San Tommaso e collegamento stradale specifico; Villa Licia ha un collegamento discordante, escluso."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-083",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "La residenza indicata nella sezione specifica è in Via Macchia Tonda 8 a Capena; il centro diurno è in Via Filippo Turati 2/4 a Fiano Romano. Non usare il recapito generico a fondo pagina per localizzare la residenza. Posizione ancora da verificare.",
+      "changed": true,
+      "sources": [
+        "https://www.maieusis.org/contatti/"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.maieusis.org/contatti/",
+          "source_date": "2022-12-07",
+          "basis": "ResidenzaCapenaMacchiaTonda8 distinta dal CentroDiurnoFianoRomanoTurati2/4 e dalle indicazioni di sede in calce."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-030",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-030",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-031",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-031",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-032",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-032",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-033",
+      "field": "nota_contatti_v7111",
+      "before": null,
+      "after": "La pagina Contatti di Samadi riporta lunedì–sabato 09:00–18:00. Questa fascia generale non equivale agli orari specifici di accettazione già censiti né all’assistenza residenziale: concordare telefonicamente l’appuntamento.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    },
+    {
+      "key": "moduli:MOD-033",
+      "field": "nota_geografia_v7111",
+      "before": null,
+      "after": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "changed": true,
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.ghcspa.com/samadi/contatti",
+          "source_date": null,
+          "basis": "La sezione Contatti indica lun–sab9–18; non è prova di orario dell’assistenza residenziale né sostituisce gli orari specifici di accettazione."
+        }
+      ]
+    }
+  ],
+  "new_positions": [
+    {
+      "key": "rete:R6-02",
+      "lat": 41.4495745,
+      "lng": 12.6276277,
+      "quality": "C",
+      "precision": "building",
+      "source": "vademecum",
+      "source_url": "https://www.openstreetmap.org/way/30374430",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Localizzato il complesso Villa Albani ad Anzio, non il padiglione del CSM né gli ingressi di Viale Mencacci o Via Aldobrandini. Non confondere con Villa Albani a Roma.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 30374430,
+        "version": 8,
+        "tags": {
+          "amenity": "hospital",
+          "barrier": "wall",
+          "name": "Villa Albani"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6281723,
+                41.4512214
+              ],
+              [
+                12.6264685,
+                41.4509102
+              ],
+              [
+                12.6261209,
+                41.4508869
+              ],
+              [
+                12.6258377,
+                41.4508033
+              ],
+              [
+                12.6257774,
+                41.4507214
+              ],
+              [
+                12.6265682,
+                41.4485075
+              ],
+              [
+                12.6267132,
+                41.4482299
+              ],
+              [
+                12.6269449,
+                41.4479983
+              ],
+              [
+                12.6270192,
+                41.4479818
+              ],
+              [
+                12.6270656,
+                41.4479853
+              ],
+              [
+                12.6271909,
+                41.4480553
+              ],
+              [
+                12.6272281,
+                41.4481334
+              ],
+              [
+                12.6272711,
+                41.4482428
+              ],
+              [
+                12.6272968,
+                41.4483715
+              ],
+              [
+                12.6276935,
+                41.4486692
+              ],
+              [
+                12.6284797,
+                41.4490214
+              ],
+              [
+                12.6285522,
+                41.4490163
+              ],
+              [
+                12.6288003,
+                41.4491068
+              ],
+              [
+                12.6289652,
+                41.4491249
+              ],
+              [
+                12.6292795,
+                41.4492547
+              ],
+              [
+                12.6288573,
+                41.4498944
+              ],
+              [
+                12.6282968,
+                41.4511362
+              ],
+              [
+                12.6281723,
+                41.4512214
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.6257774,
+          41.4479818,
+          12.6292795,
+          41.4512214
+        ]
+      }
+    },
+    {
+      "key": "rete:R6-03",
+      "lat": 41.6447077,
+      "lng": 12.4843867,
+      "quality": "C",
+      "precision": "building",
+      "source": "vademecum",
+      "source_url": "https://www.openstreetmap.org/way/847875742",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Presidio CSM nominativo ASL Roma6 presso Via del Mare km19, con recapito cartografico coerente. Non è la Casa della Comunità di Via dei Castelli Romani, né un ingresso verificato.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 847875742,
+        "version": 2,
+        "tags": {
+          "amenity": "clinic",
+          "barrier": "fence",
+          "healthcare": "clinic",
+          "healthcare:speciality": "psychiatry",
+          "name": "ASL ROMA 6 Distretto H4 - Centro Salute Mentale",
+          "operator": "ASL ROMA 6",
+          "operator:type": "public",
+          "phone": "+39 06 9327 4664"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.4837252,
+                41.6451713
+              ],
+              [
+                12.4841744,
+                41.6452102
+              ],
+              [
+                12.4844681,
+                41.6452301
+              ],
+              [
+                12.484658,
+                41.6451291
+              ],
+              [
+                12.4852667,
+                41.6444969
+              ],
+              [
+                12.4854713,
+                41.6442138
+              ],
+              [
+                12.4839582,
+                41.6441396
+              ],
+              [
+                12.4835076,
+                41.6441332
+              ],
+              [
+                12.4834581,
+                41.6441864
+              ],
+              [
+                12.4835221,
+                41.6444863
+              ],
+              [
+                12.4835833,
+                41.6445252
+              ],
+              [
+                12.4837123,
+                41.6446614
+              ],
+              [
+                12.4837072,
+                41.644754
+              ],
+              [
+                12.483722,
+                41.6448271
+              ],
+              [
+                12.4837252,
+                41.6451713
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.4834581,
+          41.6441332,
+          12.4854713,
+          41.6452301
+        ]
+      }
+    },
+    {
+      "key": "rete:RI-03",
+      "lat": 42.2710955,
+      "lng": 12.6868045,
+      "quality": "C",
+      "precision": "building",
+      "source": "ri_property",
+      "source_url": "https://www.openstreetmap.org/way/312139216",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 312139216,
+        "version": 1,
+        "tags": {
+          "amenity": "hospital",
+          "name": "ASL"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6870417,
+                42.2705904
+              ],
+              [
+                12.6873152,
+                42.2708604
+              ],
+              [
+                12.6874654,
+                42.270912
+              ],
+              [
+                12.6875888,
+                42.2709834
+              ],
+              [
+                12.6876398,
+                42.2712077
+              ],
+              [
+                12.6877424,
+                42.2713468
+              ],
+              [
+                12.6877994,
+                42.2714155
+              ],
+              [
+                12.6877538,
+                42.2714794
+              ],
+              [
+                12.6875698,
+                42.2715854
+              ],
+              [
+                12.6874753,
+                42.2715842
+              ],
+              [
+                12.687363,
+                42.2715119
+              ],
+              [
+                12.6868631,
+                42.2717505
+              ],
+              [
+                12.6864951,
+                42.2717782
+              ],
+              [
+                12.6856011,
+                42.2712854
+              ],
+              [
+                12.6870417,
+                42.2705904
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.6856011,
+          42.2705904,
+          12.6877994,
+          42.2717782
+        ]
+      }
+    },
+    {
+      "key": "rete:RI-06",
+      "lat": 42.2710955,
+      "lng": 12.6868045,
+      "quality": "C",
+      "precision": "building",
+      "source": "ri_property",
+      "source_url": "https://www.openstreetmap.org/way/312139216",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 312139216,
+        "version": 1,
+        "tags": {
+          "amenity": "hospital",
+          "name": "ASL"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                12.6870417,
+                42.2705904
+              ],
+              [
+                12.6873152,
+                42.2708604
+              ],
+              [
+                12.6874654,
+                42.270912
+              ],
+              [
+                12.6875888,
+                42.2709834
+              ],
+              [
+                12.6876398,
+                42.2712077
+              ],
+              [
+                12.6877424,
+                42.2713468
+              ],
+              [
+                12.6877994,
+                42.2714155
+              ],
+              [
+                12.6877538,
+                42.2714794
+              ],
+              [
+                12.6875698,
+                42.2715854
+              ],
+              [
+                12.6874753,
+                42.2715842
+              ],
+              [
+                12.687363,
+                42.2715119
+              ],
+              [
+                12.6868631,
+                42.2717505
+              ],
+              [
+                12.6864951,
+                42.2717782
+              ],
+              [
+                12.6856011,
+                42.2712854
+              ],
+              [
+                12.6870417,
+                42.2705904
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.6856011,
+          42.2705904,
+          12.6877994,
+          42.2717782
+        ]
+      }
+    },
+    {
+      "key": "moduli:MOD-052",
+      "lat": 41.5096222,
+      "lng": 13.8459947,
+      "quality": "C",
+      "precision": "building",
+      "source": "exodus",
+      "source_url": "https://www.openstreetmap.org/node/12095727365",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 12095727365,
+        "version": 1,
+        "tags": {
+          "healthcare": "counselling",
+          "name": "Fondazione Exodus"
+        }
+      }
+    },
+    {
+      "key": "moduli:MOD-053",
+      "lat": 41.5096222,
+      "lng": 13.8459947,
+      "quality": "C",
+      "precision": "building",
+      "source": "exodus",
+      "source_url": "https://www.openstreetmap.org/node/12095727365",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 12095727365,
+        "version": 1,
+        "tags": {
+          "healthcare": "counselling",
+          "name": "Fondazione Exodus"
+        }
+      }
+    },
+    {
+      "key": "moduli:MOD-094",
+      "lat": 41.551403,
+      "lng": 13.6725683,
+      "quality": "C",
+      "precision": "building",
+      "source": "gestivar",
+      "source_url": "https://gestivar.it/contatti/",
+      "method": "Destinazione indicazioni stradali pubblicata dal gestore nel blocco Borgo San Tommaso; parametri !3d/!4d, non centro della vista @.",
+      "note": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/XFiAH9WY3VmYZjk69",
+        "destination_url": "https://www.google.com/maps/place/Gesti+Var+Srl/@41.5516342,13.6703505,18z/data=!4m6!3m5!1s0x133ab1b75fbff349:0x2ad65b9207878023!8m2!3d41.551403!4d13.6725683!16s%2Fg%2F1hc49d5tr?authuser=0&entry=tts&g_ep=EgoyMDI1MDEyNi4wIPu8ASoASAFQAw%3D%3D",
+        "selector": "!3d41.551403!4d13.6725683",
+        "publisher_section": "Strutture > Borgo San Tommaso"
+      }
+    },
+    {
+      "key": "moduli:MOD-095",
+      "lat": 41.551403,
+      "lng": 13.6725683,
+      "quality": "C",
+      "precision": "building",
+      "source": "gestivar",
+      "source_url": "https://gestivar.it/contatti/",
+      "method": "Destinazione indicazioni stradali pubblicata dal gestore nel blocco Borgo San Tommaso; parametri !3d/!4d, non centro della vista @.",
+      "note": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/XFiAH9WY3VmYZjk69",
+        "destination_url": "https://www.google.com/maps/place/Gesti+Var+Srl/@41.5516342,13.6703505,18z/data=!4m6!3m5!1s0x133ab1b75fbff349:0x2ad65b9207878023!8m2!3d41.551403!4d13.6725683!16s%2Fg%2F1hc49d5tr?authuser=0&entry=tts&g_ep=EgoyMDI1MDEyNi4wIPu8ASoASAFQAw%3D%3D",
+        "selector": "!3d41.551403!4d13.6725683",
+        "publisher_section": "Strutture > Borgo San Tommaso"
+      }
+    },
+    {
+      "key": "rete:R6-05",
+      "lat": 41.8003382,
+      "lng": 12.5983616,
+      "quality": "C",
+      "precision": "street",
+      "source": "vademecum",
+      "source_url": "https://www.openstreetmap.org/way/27253047",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Francesco Baracca a Ciampino (circa 275 m); il civico 17/19 e l’ingresso del CSM non sono stati localizzati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 27253047,
+        "version": 11,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Francesco Baracca",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.6000159,
+              41.8003049
+            ],
+            [
+              12.599878,
+              41.8003065
+            ],
+            [
+              12.5983516,
+              41.8003384
+            ],
+            [
+              12.5977643,
+              41.8003511
+            ],
+            [
+              12.5976557,
+              41.8003535
+            ],
+            [
+              12.597511,
+              41.800358
+            ],
+            [
+              12.596708,
+              41.800387
+            ]
+          ]
+        },
+        "bounds": [
+          12.596708,
+          41.8003049,
+          12.6000159,
+          41.800387
+        ]
+      },
+      "street_length_m": 275,
+      "osm_way_ids": [
+        27253047
+      ]
+    },
+    {
+      "key": "rete:VT-22",
+      "lat": 42.4112379,
+      "lng": 12.1102153,
+      "quality": "C",
+      "precision": "street",
+      "source": "vt_serd",
+      "source_url": "https://www.openstreetmap.org/way/32593000",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 86. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 32593000,
+        "version": 12,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Maresciallo Mariano Romiti",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.1100287,
+              42.4131675
+            ],
+            [
+              12.110071,
+              42.4128189
+            ],
+            [
+              12.1100678,
+              42.4127789
+            ],
+            [
+              12.1100264,
+              42.4122577
+            ],
+            [
+              12.1100376,
+              42.4121249
+            ],
+            [
+              12.1100847,
+              42.4118551
+            ],
+            [
+              12.1101024,
+              42.411754
+            ],
+            [
+              12.1101943,
+              42.4113797
+            ],
+            [
+              12.110259,
+              42.4109431
+            ],
+            [
+              12.1102786,
+              42.4108113
+            ],
+            [
+              12.1104113,
+              42.410093
+            ],
+            [
+              12.1104523,
+              42.4098828
+            ],
+            [
+              12.1105275,
+              42.4093912
+            ],
+            [
+              12.110527,
+              42.4093577
+            ],
+            [
+              12.1105176,
+              42.4093106
+            ]
+          ]
+        },
+        "bounds": [
+          12.1100264,
+          42.4093106,
+          12.1105275,
+          42.4131675
+        ]
+      },
+      "street_length_m": 432,
+      "osm_way_ids": [
+        32593000
+      ]
+    },
+    {
+      "key": "rete:PUB72-VT-002",
+      "lat": 42.4112379,
+      "lng": 12.1102153,
+      "quality": "C",
+      "precision": "street",
+      "source": "vt_cd",
+      "source_url": "https://www.openstreetmap.org/way/32593000",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 54. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 32593000,
+        "version": 12,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Maresciallo Mariano Romiti",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.1100287,
+              42.4131675
+            ],
+            [
+              12.110071,
+              42.4128189
+            ],
+            [
+              12.1100678,
+              42.4127789
+            ],
+            [
+              12.1100264,
+              42.4122577
+            ],
+            [
+              12.1100376,
+              42.4121249
+            ],
+            [
+              12.1100847,
+              42.4118551
+            ],
+            [
+              12.1101024,
+              42.411754
+            ],
+            [
+              12.1101943,
+              42.4113797
+            ],
+            [
+              12.110259,
+              42.4109431
+            ],
+            [
+              12.1102786,
+              42.4108113
+            ],
+            [
+              12.1104113,
+              42.410093
+            ],
+            [
+              12.1104523,
+              42.4098828
+            ],
+            [
+              12.1105275,
+              42.4093912
+            ],
+            [
+              12.110527,
+              42.4093577
+            ],
+            [
+              12.1105176,
+              42.4093106
+            ]
+          ]
+        },
+        "bounds": [
+          12.1100264,
+          42.4093106,
+          12.1105275,
+          42.4131675
+        ]
+      },
+      "street_length_m": 432,
+      "osm_way_ids": [
+        32593000
+      ]
+    },
+    {
+      "key": "rete:NET-030",
+      "lat": 41.8740207,
+      "lng": 12.4668069,
+      "quality": "C",
+      "precision": "street",
+      "source": "r3_cd",
+      "source_url": "https://www.openstreetmap.org/way/23787351",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo la breve via a Monteverde (circa 273 m): la fonte ASL scrive Crescenzo dal Monte, la cartografia Crescenzo del Monte. Il civico 13 non è verificato. Escluso il collegamento incoerente della pagina verso Catacombe di Generosa.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 23787351,
+        "version": 15,
+        "tags": {
+          "highway": "footway",
+          "name": "Via Crescenzo del Monte",
+          "name:etymology:wikidata": "Q3697045",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [
+                12.4667048,
+                41.8745159
+              ],
+              [
+                12.4666956,
+                41.8746144
+              ],
+              [
+                12.4666787,
+                41.8748001
+              ],
+              [
+                12.4666698,
+                41.8749311
+              ],
+              [
+                12.4666674,
+                41.8749959
+              ],
+              [
+                12.4666696,
+                41.8750624
+              ],
+              [
+                12.4667305,
+                41.87554
+              ]
+            ],
+            [
+              [
+                12.4669218,
+                41.8742008
+              ],
+              [
+                12.4668364,
+                41.8740746
+              ],
+              [
+                12.4667786,
+                41.8739689
+              ],
+              [
+                12.4667542,
+                41.8739276
+              ],
+              [
+                12.4667377,
+                41.8738848
+              ],
+              [
+                12.4667282,
+                41.8738219
+              ],
+              [
+                12.4667277,
+                41.8737473
+              ],
+              [
+                12.4667342,
+                41.8736514
+              ],
+              [
+                12.4667507,
+                41.8735771
+              ],
+              [
+                12.4667836,
+                41.8735245
+              ],
+              [
+                12.4668223,
+                41.873489
+              ],
+              [
+                12.4669306,
+                41.8733927
+              ],
+              [
+                12.4670835,
+                41.8732717
+              ],
+              [
+                12.4672478,
+                41.8731667
+              ],
+              [
+                12.4672608,
+                41.8731584
+              ],
+              [
+                12.4672983,
+                41.8731517
+              ],
+              [
+                12.4673448,
+                41.8731533
+              ],
+              [
+                12.4673825,
+                41.8731604
+              ],
+              [
+                12.4675228,
+                41.8731896
+              ]
+            ]
+          ]
+        },
+        "bounds": [
+          12.4667277,
+          41.8731584,
+          12.4672608,
+          41.8742008
+        ]
+      },
+      "street_length_m": 273,
+      "osm_way_ids": [
+        23787351,
+        27856712,
+        1008075647
+      ]
+    },
+    {
+      "key": "rete:PUB72-R2-009",
+      "lat": 41.8127499,
+      "lng": 12.4725813,
+      "quality": "C",
+      "precision": "street",
+      "source": "r2_sillani",
+      "source_url": "https://www.openstreetmap.org/way/172283664",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Tomaso Sillani a Roma (circa 92 m), coerente con il riferimento al Laurentino38. Civico7, struttura e ingresso non verificati.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 172283664,
+        "version": 5,
+        "tags": {
+          "highway": "residential",
+          "lit": "yes",
+          "name": "Via Tomaso Sillani",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.4722613,
+              41.8124126
+            ],
+            [
+              12.4728339,
+              41.8130163
+            ],
+            [
+              12.4729019,
+              41.8130869
+            ]
+          ]
+        },
+        "bounds": [
+          12.4722613,
+          41.8124126,
+          12.4729019,
+          41.8130869
+        ]
+      },
+      "street_length_m": 92,
+      "osm_way_ids": [
+        172283664
+      ]
+    },
+    {
+      "key": "privati:PRI-003",
+      "lat": 41.9060317,
+      "lng": 12.5004033,
+      "quality": "C",
+      "precision": "street",
+      "source": "santagostino",
+      "source_url": "https://www.openstreetmap.org/way/44098905",
+      "method": "Associazione documentale manuale tra servizio, indirizzo e oggetto cartografico OSM nell’estratto regionale; non geocodifica live.",
+      "note": "Solo Via Goito a Roma (circa 440 m); non una localizzazione del civico 58 o dell’ingresso del centro.",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 44098905,
+        "version": 15,
+        "tags": {
+          "busway": "opposite_lane",
+          "cycleway:both": "no",
+          "highway": "residential",
+          "is_in:city": "Roma",
+          "lanes": "2",
+          "lanes:psv:backward": "1",
+          "lit": "yes",
+          "maxspeed": "50",
+          "name": "Via Goito",
+          "name:etymology:wikidata": "Q42945",
+          "oneway": "yes",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              12.5022078,
+              41.9045803
+            ],
+            [
+              12.5021162,
+              41.9046547
+            ],
+            [
+              12.5014601,
+              41.905198
+            ],
+            [
+              12.5014059,
+              41.9052418
+            ],
+            [
+              12.5006568,
+              41.9058307
+            ],
+            [
+              12.5006018,
+              41.905874
+            ],
+            [
+              12.5000706,
+              41.906296
+            ],
+            [
+              12.4999886,
+              41.9063613
+            ],
+            [
+              12.4998023,
+              41.9065149
+            ],
+            [
+              12.4989232,
+              41.9072401
+            ],
+            [
+              12.4989086,
+              41.9072538
+            ],
+            [
+              12.4988896,
+              41.9072736
+            ],
+            [
+              12.4988734,
+              41.9072934
+            ],
+            [
+              12.4988608,
+              41.9073188
+            ],
+            [
+              12.4988509,
+              41.9073443
+            ],
+            [
+              12.4988452,
+              41.9073638
+            ],
+            [
+              12.4988136,
+              41.9075668
+            ]
+          ]
+        },
+        "bounds": [
+          12.4999886,
+          41.9045803,
+          12.5022078,
+          41.9063613
+        ]
+      },
+      "street_length_m": 440,
+      "osm_way_ids": [
+        44098905,
+        52492239,
+        106769434
+      ]
+    }
+  ],
+  "queue_review": [
+    {
+      "key": "rete:R1-01",
+      "name": "DSM Roma 1 — riferimento organizzativo",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R1-08",
+      "name": "CSM Boccea",
+      "address": "Via di Boccea, 271",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R1-09",
+      "name": "CSM Innocenzo IV",
+      "address": "Via Innocenzo IV, 16/B",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "Conflitto tra fonti ASL: la pagina Innocenzo IV (09/09/2024) riporta Via Innocenzo IV 16/B; la rubrica Salute Mentale (19/06/2026) riporta 16/d. Il civico della scheda è conservato come dato precedente, non risolto né confermato come ingresso corrente. Chiedere alla sede; nessun pin assegnato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R1-15",
+      "name": "SerD Nomentana",
+      "address": "Via Nomentana, 2/B",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R1-19",
+      "name": "Polo Integrato Salute Mentale Cassia",
+      "address": "Via Cassia, 472",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R2-10",
+      "name": "SerD Distretto 4 — ospitato altrove",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R4-05",
+      "name": "CSM Distretto 4 — Morlupo",
+      "address": "Via Roncacci 78, Morlupo",
+      "town": "Morlupo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R4-08",
+      "name": "SerD Capena",
+      "address": "Via Tiberina, km 15.500",
+      "town": "Capena",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:R6-02",
+      "name": "CSM Anzio/Nettuno",
+      "address": "Villa Albani, ingresso Viale Mencacci / Via Aldobrandini, 32",
+      "town": "Anzio",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Localizzato il complesso Villa Albani ad Anzio, non il padiglione del CSM né gli ingressi di Viale Mencacci o Via Aldobrandini. Non confondere con Villa Albani a Roma.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:R6-03",
+      "name": "CSM Pomezia",
+      "address": "Via del Mare, km 19",
+      "town": "Pomezia",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Presidio CSM nominativo ASL Roma6 presso Via del Mare km19, con recapito cartografico coerente. Non è la Casa della Comunità di Via dei Castelli Romani, né un ingresso verificato.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:R6-05",
+      "name": "CSM Ciampino",
+      "address": "Via F. Baracca, 17/19",
+      "town": "Ciampino",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Solo Via Francesco Baracca a Ciampino (circa 275 m); il civico 17/19 e l’ingresso del CSM non sono stati localizzati.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:RI-01",
+      "name": "DSM Rieti — riferimento organizzativo",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Rieti",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-02",
+      "name": "CSM Rieti — Distretto 1",
+      "address": "Via Salaria per Roma 36, Rieti",
+      "town": "Rieti",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-03",
+      "name": "CSM Poggio Mirteto — Distretto 2",
+      "address": "Via Finocchieto, snc",
+      "town": "Poggio Mirteto",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:RI-04",
+      "name": "CSM Cicolano — Peschieta di Fiamignano",
+      "address": "Via Don Agostino Gismondi 2, Peschieta di Fiamignano",
+      "town": "Fiamignano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-05",
+      "name": "SerD Rieti",
+      "address": "Via Salaria per Roma, 36",
+      "town": "Rieti",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-06",
+      "name": "SerD Poggio Mirteto",
+      "address": "Via Finocchieto, snc",
+      "town": "Poggio Mirteto",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Punto indicativo nel poliambulatorio ASL a Poggio Mirteto presso la strada di Finocchieto. Associazione di sede derivata dalle evidenze della baseline; nessuna riconferma telefonica. CSM e SerD restano due servizi distinti; reparto, civico e ingresso non verificati.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:RI-07",
+      "name": "Alcologia e patologie correlate Rieti",
+      "address": "Via Salaria per Roma, 36",
+      "town": "Rieti",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-08",
+      "name": "Ambulatorio CSM Leonessa",
+      "address": "Via del Corso snc, Leonessa",
+      "town": "Leonessa",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-09",
+      "name": "Ambulatorio CSM Antrodoco",
+      "address": "Piazza Martiri della Libertà, Antrodoco",
+      "town": "Antrodoco",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-10",
+      "name": "Ambulatorio CSM Amatrice",
+      "address": "Via F. Grifoni, 26",
+      "town": "Amatrice",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-13",
+      "name": "Ambulatorio CSM Osteria Nuova",
+      "address": "Viale Europa, 13",
+      "town": "Poggio Moiano / Osteria Nuova",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:RI-14",
+      "name": "SerD interno Casa Circondariale Rieti Nuovo Complesso",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Rieti",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-01",
+      "name": "DSM Viterbo — segreteria",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Viterbo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-04",
+      "name": "CSM / ambulatorio Canino",
+      "address": "Via Bachelet, Canino",
+      "town": "Canino",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-08",
+      "name": "CSM / ambulatorio Tuscania",
+      "address": "Piazza F. Basile, Tuscania",
+      "town": "Tuscania",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-13",
+      "name": "CSM / ambulatorio Capranica",
+      "address": "Strada Cassia km 53.900, Capranica",
+      "town": "Capranica",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-15",
+      "name": "CSM / ambulatorio Fabrica di Roma",
+      "address": "Vicolo della Pace 2, Fabrica di Roma",
+      "town": "Fabrica di Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-18",
+      "name": "CSM / ambulatorio Vetralla",
+      "address": "Via Gilberto Pietrella 5, Vetralla",
+      "town": "Vetralla",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:VT-22",
+      "name": "SerD Viterbo",
+      "address": "Via M. M. Romiti, 86",
+      "town": "Viterbo",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 86. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:FR-01",
+      "name": "DSM Frosinone — riferimento organizzativo",
+      "address": "Via A. Fabi, Palazzina P",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:FR-05",
+      "name": "CSM Ceccano",
+      "address": "Borgo Santa Lucia, 52",
+      "town": "Ceccano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:FR-10",
+      "name": "SerD Ceccano",
+      "address": "Borgo Santa Lucia",
+      "town": "Ceccano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:FR-11",
+      "name": "SerD Frosinone",
+      "address": "Via A. Fabi, Palazzina P",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:FR-13",
+      "name": "Punto di erogazione CSM Ceprano",
+      "address": "Viale Regina Margherita — ex Ospedale Civico",
+      "town": "Ceprano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:FR-14",
+      "name": "Punto CSM / PEP Ferentino",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Ferentino",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:FR-15",
+      "name": "Punto CSM / PEP Veroli",
+      "address": "ND — non documentato nelle fonti consultate",
+      "town": "Veroli",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:LT-01",
+      "name": "Direzione DSM Latina",
+      "address": "Viale Le Corbusier, Centro commerciale, scala C, Latina",
+      "town": "Latina",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:LT-03",
+      "name": "CSM Cisterna di Latina",
+      "address": "Via G. Falcone snc, Cisterna di Latina",
+      "town": "Cisterna di Latina",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:LT-04",
+      "name": "CSM Latina",
+      "address": "Viale Le Corbusier, scala F, Latina. Piano/interno da confermare: nel testo n. 23, nella tabella secondo piano n. 36.",
+      "town": "Latina",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:LT-06",
+      "name": "CSM Monti Lepini — Sezze",
+      "address": "Via S. Bartolomeo 1, Sezze",
+      "town": "Sezze",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:LT-10",
+      "name": "CSM Formia",
+      "address": "Via Lavagna 43, Formia",
+      "town": "Formia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:LT-15",
+      "name": "SerD Formia",
+      "address": "Via Appia lato Napoli, Formia",
+      "town": "Formia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-008",
+      "name": "TSMREE Cassia",
+      "address": "Via Cassia, 472",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-023",
+      "name": "TSMREE Torrenova",
+      "address": "Via di Torrenova, 20",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-055",
+      "name": "SPDC P.O. H1",
+      "address": "Ospedale San Sebastiano",
+      "town": "Frascati",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-057",
+      "name": "TSMREE Frascati",
+      "address": "Via E. Fermi, snc",
+      "town": "Frascati",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-065",
+      "name": "Ambulatorio Disturbi Nutrizione e Alimentazione Rieti",
+      "address": "Palazzo Dosi Delfini, Piazza Vittorio Emanuele II, 17",
+      "town": "Rieti",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Conflitto fra indicazione precedente e avviso ASL datato; non selezionata automaticamente una sede attuale.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-073",
+      "name": "Ambulatorio DNA Viterbo",
+      "address": "Non documentato",
+      "town": "Viterbo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-074",
+      "name": "SPDC Frosinone-Alatri",
+      "address": "Non documentato",
+      "town": "Alatri",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-082",
+      "name": "UOSD Disturbi Nutrizione e Alimentazione",
+      "address": "Via Armando Fabi - Palazzina L",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "La stessa pagina ASL, aggiornata il 07/08/2026, indica Via Armando Fabi, Palazzina L nelle sezioni accoglienza/ubicazione, ma mantiene Viale Mazzini, ex ospedale/Distretto B nel blocco contatti. Non è documentato quale sezione sia stata riallineata: sede operativa da confermare; nessun pin assegnato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-030",
+      "name": "Centro Diurno Monteverde",
+      "address": "Via Crescenzo dal Monte, 13",
+      "town": "Roma",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Solo la breve via a Monteverde (circa 273 m): la fonte ASL scrive Crescenzo dal Monte, la cartografia Crescenzo del Monte. Il civico 13 non è verificato. Escluso il collegamento incoerente della pagina verso Catacombe di Generosa.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:NET-037",
+      "name": "Centro Diurno Riabilitativo Distretto 4",
+      "address": "Via B. Lesen 9–11, Campagnano di Roma",
+      "town": "Campagnano di Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-015",
+      "name": "SRSR Nomentana",
+      "address": "Via Nomentana, 54",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-044",
+      "name": "Centro Diurno Monterotondo",
+      "address": "Non documentato",
+      "town": "Monterotondo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-056",
+      "name": "Centro Diurno Pomezia",
+      "address": "Casa della Comunità HUB Pomezia",
+      "town": "Pomezia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-064",
+      "name": "Centro Diurno Cicolano",
+      "address": "Via Don Agostino Gismondi 2, Peschieta di Fiamignano",
+      "town": "Fiamignano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-077",
+      "name": "Centro Diurno Orizzonti Aperti",
+      "address": "Viale Mazzini, Distretto Sanitario, Frosinone",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-078",
+      "name": "Centro Diurno Oltre il Muro",
+      "address": "Via Marano snc, Ceccano",
+      "town": "Ceccano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-083",
+      "name": "UOC Residenzialità e Semiresidenzialità",
+      "address": "Via Fabi, snc - Palazzina M",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:NET-093",
+      "name": "Comunità Terapeutica Santa Fecitola",
+      "address": "Via Tor Tre Ponti, Latina",
+      "town": "Latina",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:PUB72-R1-018",
+      "name": "Centro Diurno Valle Aurelia",
+      "address": "Via di Valle Aurelia, 257",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:PUB72-R2-009",
+      "name": "SRTRe Sillani – Il Ponte e l’Albero",
+      "address": "Via T. Sillani, 7",
+      "town": "Roma",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Solo Via Tomaso Sillani a Roma (circa 92 m), coerente con il riferimento al Laurentino38. Civico7, struttura e ingresso non verificati.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:PUB72-RI-002",
+      "name": "Centro Diurno Psichiatrico Melograno – Poggio Mirteto",
+      "address": "Via Formello loc. Sant’Antonio, 2/A",
+      "town": "Poggio Mirteto",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:PUB72-VT-002",
+      "name": "Centro Diurno DSM Viterbo",
+      "address": "Via M. Romiti, 54",
+      "town": "Viterbo",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Solo Via Maresciallo Mariano Romiti a Viterbo (circa 432 m), non il civico 54. SerD e Centro Diurno DSM hanno civici diversi: il punto comune rappresenta la via, non una coabitazione nello stesso edificio.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "rete:PUB72-VT-004",
+      "name": "SRSR H24 Villa San Giuseppe",
+      "address": "Loc. Le Mosse",
+      "town": "Montefiascone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:PUB72-FR-001",
+      "name": "SRTRe Franco Basaglia",
+      "address": "Via A. Fabi, snc",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:PUB72-FR-002",
+      "name": "SRTRe Romolo Priori",
+      "address": "Via A. Fabi, snc – Palazzina M",
+      "town": "Frosinone",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "rete:PUB72-FR-003",
+      "name": "SRTRe Maxwell Jones",
+      "address": "Borgo Santa Lucia, 52",
+      "town": "Ceccano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-091",
+      "name": "Agatos – Comunità Francesco Giugliarelli",
+      "address": "Via Strada Cimina, 16/A",
+      "town": "Viterbo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-046",
+      "name": "Alberto Pezzi",
+      "address": "Via Ausente, km 2.750",
+      "town": "Santi Cosma e Damiano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-094",
+      "name": "Borgo San Tommaso",
+      "address": "Via San Francesco, 2/a",
+      "town": "Roccasecca",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "moduli:MOD-081",
+      "name": "Gabbiano Tirreno – Rocca Canterano 1 (già IHG)",
+      "address": "Via della Maddalena, 2",
+      "town": "Rocca Canterano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Il collegamento cartografico pubblicato dal gestore rinvia a «Falesia di Rocca Canterano», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-082",
+      "name": "Gabbiano Tirreno – Rocca Canterano 2 (già IHG)",
+      "address": "Via della Maddalena, 2",
+      "town": "Rocca Canterano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Il collegamento cartografico pubblicato dal gestore rinvia a «Falesia di Rocca Canterano», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-013",
+      "name": "Casa Siloè",
+      "address": "Via Portuense, 251",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-075",
+      "name": "Gabbiano Tirreno – Castel Madama 1 (già IHG)",
+      "address": "Strada Provinciale, 40/A",
+      "town": "Castel Madama",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Il collegamento cartografico pubblicato dal gestore rinvia a «Tabaccheria Senza Filtro», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-076",
+      "name": "Gabbiano Tirreno – Castel Madama 2 (già IHG)",
+      "address": "Strada Provinciale, 40/A",
+      "town": "Castel Madama",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Il collegamento cartografico pubblicato dal gestore rinvia a «Tabaccheria Senza Filtro», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-058",
+      "name": "Comunità Santa Maria / Capannelle",
+      "address": "Via Appia Nuova,1251",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-070",
+      "name": "Il Colle",
+      "address": "Non documentato",
+      "town": "Da consolidare",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-051",
+      "name": "In Dialogo — Il Casale",
+      "address": "Contrada Malle snc",
+      "town": "Trivigliano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-045",
+      "name": "Insieme Spigno",
+      "address": "Via Silvio Pellico, 7/9",
+      "town": "Spigno Saturnia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-040",
+      "name": "Insieme1 Luna",
+      "address": "Via Penitro a Monte snc",
+      "town": "Formia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-039",
+      "name": "Insieme1 Sole",
+      "address": "Via Penitro a Monte snc",
+      "town": "Formia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-041",
+      "name": "Insieme2",
+      "address": "Via Ausente km2.750",
+      "town": "Santi Cosma e Damiano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-083",
+      "name": "Maieusis — Residenza terapeutica",
+      "address": "Via Macchia Tonda, 8, Capena",
+      "town": "Capena",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "La residenza indicata nella sezione specifica è in Via Macchia Tonda 8 a Capena; il centro diurno è in Via Filippo Turati 2/4 a Fiano Romano. Non usare il recapito generico a fondo pagina per localizzare la residenza. Posizione ancora da verificare.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-085",
+      "name": "Villa Belvedere",
+      "address": "Via Salaria km 64",
+      "town": "Torricella in Sabina",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-061",
+      "name": "Villa Elisa",
+      "address": "Via Tiburtina Valeria, 258",
+      "town": "Guidonia Montecelio",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-066",
+      "name": "Villa Maddalena",
+      "address": "Via Sant’Anna, 26",
+      "town": "Castel Madama",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-105",
+      "name": "Aquilone Azzurro – La Gatta",
+      "address": "Lungomare G. Marconi, 96",
+      "town": "Santa Marinella",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-095",
+      "name": "Borgo San Tommaso",
+      "address": "Via San Francesco, 2/a",
+      "town": "Roccasecca",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Punto indicativo del complesso Borgo San Tommaso a Roccasecca. La sede amministrativa condivide questo indirizzo, ma la pagina collega espressamente anche la struttura. I due moduli restano separati; ingresso non verificato.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "moduli:MOD-056",
+      "name": "Campus Calisto Felli",
+      "address": "Via Acquabianca,11/B",
+      "town": "Viterbo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-052",
+      "name": "Exodus Cassino",
+      "address": "Via San Domenico Vertelle,23",
+      "town": "Cassino",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "moduli:MOD-053",
+      "name": "Exodus Cassino",
+      "address": "Via San Domenico Vertelle,23",
+      "town": "Cassino",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Presidio nominativo Fondazione Exodus nel comune di Cassino: localizzazione OSM indicativa, non verifica del civico 23 né dei singoli moduli. Escluso l’omonimo locale commerciale di Genzano.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "moduli:MOD-092",
+      "name": "Gli Oleandri",
+      "address": "Via Tascitara, 9",
+      "town": "Sant’Elia Fiumerapido",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-044",
+      "name": "Insieme Ausonia",
+      "address": "Contrada Orfanotrofio, località Faiano",
+      "town": "Ausonia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-093",
+      "name": "Le Palme",
+      "address": "Via Tascitara, 9",
+      "town": "Sant’Elia Fiumerapido",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-114",
+      "name": "Mondo Nuovo – Colle Speranza",
+      "address": "S.S. Aurelia bis Km 3,841",
+      "town": "Tarquinia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-113",
+      "name": "Mondo Nuovo – Villa Ciulepi",
+      "address": "S.S. Aurelia bis Km 10,900",
+      "town": "Monte Romano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-112",
+      "name": "Mondo Nuovo – Villa Paradiso",
+      "address": "S.P. Litoranea Km 1,750",
+      "town": "Tarquinia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-111",
+      "name": "Mondo Nuovo – Villa Sergetto",
+      "address": "S.P. Braccianese Claudia Km 69,300",
+      "town": "Civitavecchia",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-033",
+      "name": "Samadi",
+      "address": "Via di Grottarossa, km2.200",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-032",
+      "name": "Samadi",
+      "address": "Via di Grottarossa, km2.200",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-031",
+      "name": "Samadi",
+      "address": "Via di Grottarossa, km2.200",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-059",
+      "name": "San Carlo e Villa Santa Francesca Romana",
+      "address": "Non documentato",
+      "town": "Marino",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-096",
+      "name": "San Nicola – Belmonte",
+      "address": "Via Pozzi, 20",
+      "town": "Belmonte Castello",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-054",
+      "name": "Santa Maria della Quercia",
+      "address": "Via Acquabianca,7",
+      "town": "Viterbo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Street too long for a new unambiguous pin (>2.5 km)",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-098",
+      "name": "Villa Lucrezia – Il Castello Incantato",
+      "address": "Via Casilina, 35",
+      "town": "Castrocielo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MOD-030",
+      "name": "Samadi",
+      "address": "Via di Grottarossa, km2.200",
+      "town": "Roma",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": true,
+      "note": "Indirizzo pubblicato: Via di Grottarossa km 2.200, Roma. La sola progressiva chilometrica non consente di scegliere un punto certo lungo la via: nessun nuovo pin.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:MS775-REV-CTC1",
+      "name": "Reverie – Comunità terapeutica Capena CTC 1",
+      "address": "Via Passo Cavallone, 4",
+      "town": "Capena",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "privati:PRI-003",
+      "name": "Centro Medico Santagostino – Roma Via Goito",
+      "address": "Via Goito 58, 00185 Roma",
+      "town": "Roma",
+      "status": "localizzazione_indicativa",
+      "decision_in_this_release": true,
+      "note": "Solo Via Goito a Roma (circa 440 m); non una localizzazione del civico 58 o dell’ingresso del centro.",
+      "remaining_work": "Confermare civico e ingresso"
+    },
+    {
+      "key": "privati:PRI76-003",
+      "name": "AIRRI Medical – Poliambulatorio Viterbo",
+      "address": "Via Carlo Cattaneo 46/T, Viterbo",
+      "town": "Viterbo",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "La sede di Viterbo al 46/T resta distinta dalla sede legale romana. Nessun pin attribuito al civico 46/O o a una generica sede del gruppo.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:V79-INS-VENERE",
+      "name": "Comunità Insieme – SRSR Venere",
+      "address": "Via Ausente – località Cerri Aprano",
+      "town": "Santi Cosma e Damiano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    },
+    {
+      "key": "moduli:V79-INS-MARTE",
+      "name": "Comunità Insieme – SRSR Marte",
+      "address": "Via Ausente – località Cerri Aprano",
+      "town": "Santi Cosma e Damiano",
+      "status": "ancora_senza_pin",
+      "decision_in_this_release": false,
+      "note": "Indirizzo/civico da localizzare; nessun centroide comunale usato.",
+      "remaining_work": "Ulteriore riscontro puntuale: assenza di pin non equivale a chiusura del servizio."
+    }
+  ],
+  "reconnaissance": {
+    "initial_queue": 113,
+    "source_requests": 21,
+    "http_200": 14,
+    "failed_source_requests": 7,
+    "regional_extracts_downloaded": 1,
+    "nominatim_requests": 0,
+    "scope": "Ricerca mirata su un sottoinsieme e confronto offline dell’estratto OSM. Non validazione integrale di 113 sedi o delle precedenti posizioni C.",
+    "source_date_policy": "Data di consultazione distinta dalla data del documento; non verifica di apertura, disponibilità, risposta telefonica o ingresso."
+  },
+  "acquisition_log": [
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+      "retrieved_at": "2026-09-26T17:33:18Z",
+      "status": 200,
+      "final_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+      "sha256": "c6473152ebc482d1c0bd03a2b44dcc606e616644cc29f9211be38e9a07e28d59"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+      "retrieved_at": "2026-09-26T17:33:21Z",
+      "status": 200,
+      "final_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+      "sha256": "c0b288221ec393a46ec440bc24c34736f557fa2f1cb7a0219a1d166c58995e2e"
+    },
+    {
+      "url": "https://www.aslroma1.it/salute-mentale",
+      "retrieved_at": "2026-09-26T17:33:23Z",
+      "status": 200,
+      "final_url": "https://www.aslroma1.it/salute-mentale",
+      "sha256": "5c817a5ae66aefdefaeae31ec196b652214168ee5c282a0095a47ae781093241"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+      "retrieved_at": "2026-09-26T17:33:24Z",
+      "status": 200,
+      "final_url": "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+      "sha256": "fe46558366db05add206e17096b71937feee1d2a5c061d9a7837f1fcd85a8e36"
+    },
+    {
+      "url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+      "retrieved_at": "2026-09-26T17:33:26Z",
+      "status": 200,
+      "final_url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+      "sha256": "4419fc90d8e95bec923090fae8de3d61244df793c4e35820ff405c3263ed35f4"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+      "retrieved_at": "2026-09-26T17:33:28Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1 (Caused by ConnectTimeoutError(<urllib3.conne"
+    },
+    {
+      "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2",
+      "retrieved_at": "2026-09-26T17:33:36Z",
+      "error": "HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2 (Caused by ConnectTimeoutError(<urllib3.connection.HTT"
+    },
+    {
+      "url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+      "retrieved_at": "2026-09-26T17:33:43Z",
+      "status": 200,
+      "final_url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+      "sha256": "5cb4eed5bf730219a62986bed0e8e2dde7aa701ce6cf48b134373c6317fa5e3e"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+      "retrieved_at": "2026-09-26T17:33:46Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/ (Caused by SSLError(SSLCertVer"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+      "retrieved_at": "2026-09-26T17:33:48Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/ (Caused by SSLError(S"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+      "retrieved_at": "2026-09-26T17:33:50Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/ (Caused by SSLError(SSLCertVerifica"
+    },
+    {
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+      "retrieved_at": "2026-09-26T17:33:52Z",
+      "error": "HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/ (Caused by SSLError(SSLCertVerificatio"
+    },
+    {
+      "url": "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm",
+      "retrieved_at": "2026-09-26T17:33:54Z",
+      "status": 200,
+      "final_url": "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm",
+      "sha256": "c312aa3361c62f69bb872f083f1de4e1a5003b9a57d689543666b6343a3b3d62"
+    },
+    {
+      "url": "https://gestivar.it/contatti/",
+      "retrieved_at": "2026-09-26T17:33:56Z",
+      "status": 200,
+      "final_url": "https://gestivar.it/contatti/",
+      "sha256": "b5dfb3bb51e0ac98de55459a470c532f5426c35a670914f6393badc2e1d3dad5"
+    },
+    {
+      "url": "https://www.ghcspa.com/samadi/contatti",
+      "retrieved_at": "2026-09-26T17:34:01Z",
+      "status": 200,
+      "final_url": "https://www.ghcspa.com/samadi/contatti",
+      "sha256": "bee885ad72d1ead02596bce2d925d4e45f38434e2ef51b08116a45eae3426573"
+    },
+    {
+      "url": "https://www.maieusis.org/contatti/",
+      "retrieved_at": "2026-09-26T17:34:03Z",
+      "status": 200,
+      "final_url": "https://www.maieusis.org/contatti/",
+      "sha256": "a291fc47d6e1b0ff2e71d98a6e03d6bf64fc3dcfa291f2c809d6fad191ed728d"
+    },
+    {
+      "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+      "retrieved_at": "2026-09-26T17:34:06Z",
+      "status": 200,
+      "final_url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+      "sha256": "1ba1c1d735a50ec7f09729e9a37360b4c804ad6a05e1353345d764a5e0f415c3"
+    },
+    {
+      "url": "https://www.comunitainsieme.com/strutture/",
+      "retrieved_at": "2026-09-26T17:34:09Z",
+      "status": 200,
+      "final_url": "https://www.comunitainsieme.com/strutture/",
+      "sha256": "8df393e6df180460989c0b47efdb095ecad33faf400f86f621f42961d987ea37"
+    },
+    {
+      "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+      "retrieved_at": "2026-09-26T17:34:12Z",
+      "status": 200,
+      "final_url": "https://www.exodus.it/sedi-exodus/cassino.html",
+      "sha256": "80a9ded28b58a67287ea5684d3639a050c340033216c7f4d39597d74c8b484f6"
+    },
+    {
+      "url": "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/",
+      "retrieved_at": "2026-09-26T17:34:14Z",
+      "error": "HTTPSConnectionPool(host='reverie.it', port=443): Max retries exceeded with url: /strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certific"
+    },
+    {
+      "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+      "retrieved_at": "2026-09-26T17:34:16Z",
+      "status": 200,
+      "final_url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+      "sha256": "ed8ba55eaa7981d58a81f06d086bedaafa948049fc65f9418141cf06e4d7bfb6"
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "keys": [
+        "rete:NET-030"
+      ],
+      "reason": "Il testo indica Crescenzo dal Monte13 ma href associa Catacombe di Generosa5. Link escluso; localizzata soltanto la via su OSM.",
+      "source": "r3_cd"
+    },
+    {
+      "keys": [
+        "moduli:V79-GV-LICIA"
+      ],
+      "reason": "Il link di Villa Licia/Itri punta al comune di Roccasecca. Vecchio punto invariato.",
+      "source": "gestivar",
+      "rejected_target": {
+        "lat": 41.5446157,
+        "lng": 13.6583018
+      }
+    },
+    {
+      "keys": [
+        "rete:R1-09"
+      ],
+      "reason": "16/B e16/d in pagine ASL differenti: nessun ingresso scelto.",
+      "source": "rm1_dsm"
+    },
+    {
+      "keys": [
+        "rete:NET-082"
+      ],
+      "reason": "Fabi/L e VialeMazzini nella stessa pagina: nessun trasferimento inferito.",
+      "source": "fr_dna"
+    },
+    {
+      "keys": [
+        "moduli:MOD-083"
+      ],
+      "reason": "Non trasferire la residenza Capena sull’indirizzo del centro diurno FianoRomano.",
+      "source": "maieusis"
+    },
+    {
+      "keys": [
+        "moduli:MOD-052",
+        "moduli:MOD-053"
+      ],
+      "reason": "Scartato l’omonimo esercizio commerciale Exodus a Genzano; scelto solo il presidio nominativo FondazioneExodus nel comune di Cassino.",
+      "source": "exodus"
+    }
+  ],
+  "clinical_review": false,
+  "telephone_confirmation": false,
+  "physical_entrances_verified": 0,
+  "availability_checked": false,
+  "existing_C_records_rechecked_completely": false,
+  "complete": false
+}
