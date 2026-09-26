@@ -1,3 +1,9 @@
+## Versione corrente candidata V7.11.3
+
+Quarto ciclo geografico: 443 servizi clinici, 353 localizzati e 90 senza pin. Tre nuove posizioni C sono state aggiunte solo con indirizzo istituzionale documentato; per il SerD interno della Casa Circondariale di Rieti è stato acquisito l'indirizzo regionale senza assegnare un pin. Zero ingressi fisici verificati.
+
+Checkpoint pre-release: `checkpoint-v7-11-2-before-v7113-2026-09-26` → `703db950a93270da3a59aab786d4940baad058af`.
+
 ## Versione corrente candidata V7.11.2
 
 Terzo ciclo geografico: 443 servizi clinici, 350 localizzati e 93 senza pin. Sei nuovi punti C utilizzano coordinate pubblicate da enti pubblici per lo stesso indirizzo o presidio; non sono ingressi fisici verificati. I 344 punti V7.11.1 restano invariati. Menta V7.10.3, percorso studenti e supporto territoriale V7.10 non cambiano.
