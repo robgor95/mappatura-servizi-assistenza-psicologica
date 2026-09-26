@@ -1,9 +1,9 @@
 {
-  "web_version": "7.10.2",
+  "web_version": "7.10.3",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.10.2",
+  "data_extension_version": "7.10.3",
   "built_at": "2026-09-26",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -50,18 +50,18 @@
     "support_social_emergency": 6,
     "audit_7_9_4_additions": 1
   },
-  "menta_version": "7.10",
+  "menta_version": "7.10.3",
   "menta": {
     "intents": 40,
     "keyword_assignments": 323,
     "unique_keywords": 323,
     "emergency_assignments": 38,
     "unique_emergency_keywords": 37,
-    "destination_pages": 22,
-    "routes": 48,
+    "destination_pages": 23,
+    "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.10.2: recupero selettivo della V7.9.4 sulla baseline V7.10.1: 443 servizi clinici, 315 localizzati, 128 senza pin, nuovo Il Colle H24 a Colle Cesarano e audit multisede mirato; supporto territoriale V7.10 e Menta V7.10.1 invariati.",
+  "release_note": "V7.10.3: nuovo percorso visibile «Sei uno studente?» in home e pagina studenti trasformata in hub tra università, scuola, servizi territoriali e ascolto; Menta instrada le richieste studente generiche verso l’hub. Dati V7.10.2 invariati.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -213,5 +213,17 @@
   "v7_9_4_verification": {
     "local_report": "downloads/Verifiche_V7_9_4.json",
     "production_evidence": "da verificare separatamente dopo il merge V7.10.2; non riutilizzare l'esito candidato della vecchia PR #14"
+  },
+  "student_path_version": "7.10.3",
+  "student_path": {
+    "home_entry": true,
+    "hub": "studenti.html",
+    "routes": [
+      "universita.html",
+      "scuole.html",
+      "servizi.html",
+      "ascolto.html"
+    ],
+    "primary_navigation_unchanged": true
   }
 }
