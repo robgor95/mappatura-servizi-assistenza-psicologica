@@ -1,9 +1,9 @@
 {
-  "web_version": "7.11.4",
+  "web_version": "7.11.5",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.11.4",
+  "data_extension_version": "7.11.5",
   "built_at": "2026-09-26",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.11.4: quinto ciclo geografico con 6 localizzazioni C da mappe incorporate nelle pagine ufficiali ASL Viterbo; 443 servizi, 359 localizzati e 84 senza pin. Acquisito Via Enrico Fermi 15 per DSM e Ambulatorio DNA Viterbo; zero ingressi verificati.",
+  "release_note": "V7.11.5: sesto ciclo geografico con 6 nuovi punti C riusando coordinate stradali già presenti per la stessa via e comune; 443 servizi, 365 localizzati e 78 senza pin. DNA Frosinone resta senza pin per conflitto di sede.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -109,22 +109,22 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.11.4",
+  "map_version": "7.11.5",
   "ux_version": "7.8",
   "map": {
     "services": 443,
-    "localized": 359,
+    "localized": 365,
     "address_geocoded": 66,
-    "street_approximate": 237,
-    "unlocated": 84,
+    "street_approximate": 243,
+    "unlocated": 78,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 82,
+      "D": 76,
       "A": 28,
-      "C": 331,
+      "C": 337,
       "E": 2
     },
     "entrances_verified": 0,
@@ -155,8 +155,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.11.4",
-  "baseline_commit": "4c80b37a32088b156551df19a95097ea8bc9ea8e",
+  "audit_version": "7.11.5",
+  "baseline_commit": "bdfeb28907ae15defc04ddc6092283a8f832abe0",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -292,6 +292,18 @@
     "new_locations": 6,
     "address_updates": 2,
     "remaining_unlocated": 84,
+    "complete": false
+  },
+  "v7_11_5_verification": {
+    "workflow": ".github/workflows/verify-v7-11-5.yml",
+    "baseline_commit": "bdfeb28907ae15defc04ddc6092283a8f832abe0",
+    "scope": "Test dati, provenienza, browser e byte Cloudflare del commit pubblicato."
+  },
+  "v7_11_5_audit": {
+    "report": "downloads/Audit_Geografia_Operativo_V7_11_5.json",
+    "initial_queue": 84,
+    "new_locations": 6,
+    "remaining_unlocated": 78,
     "complete": false
   }
 }

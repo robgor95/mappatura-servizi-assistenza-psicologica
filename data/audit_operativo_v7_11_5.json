@@ -1,0 +1,231 @@
+{
+  "version": "7.11.5",
+  "baseline_commit": "bdfeb28907ae15defc04ddc6092283a8f832abe0",
+  "checked_at": "2026-09-26",
+  "revisions": [
+    {
+      "service_key": "rete:FR-01",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sola posizione sulla via; nessuna telefonata, disponibilità, edificio, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_stradale_indicativa",
+      "note": "Aggiunto punto C sulla via, riutilizzando una coordinata già presente e documentata nella stessa mappa.",
+      "fields": {
+        "nota_geografia_v7115": "La sede del DSM è documentata in Via A. Fabi, Palazzina P. Si riusa soltanto il punto stradale già validato per Via Armando Fabi: non identifica la Palazzina P né un ingresso."
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/",
+        "https://www.openstreetmap.org/way/838630957"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/",
+          "source_date": null,
+          "basis": "Fonte documentale dell'indirizzo del servizio."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/838630957",
+          "source_date": "2026-09-22",
+          "basis": "Punto stradale già validato nella baseline per la stessa via/comune; non prova di civico o ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7115": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/",
+            "https://www.openstreetmap.org/way/838630957"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Riutilizzo controllato di un punto stradale già presente per la stessa via e comune; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:FR-11",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sola posizione sulla via; nessuna telefonata, disponibilità, edificio, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_stradale_indicativa",
+      "note": "Aggiunto punto C sulla via, riutilizzando una coordinata già presente e documentata nella stessa mappa.",
+      "fields": {
+        "nota_geografia_v7115": "Il SerD Frosinone è documentato in Via A. Fabi, Palazzina P. Il marker riusa il punto stradale della via già presente: non localizza la palazzina o l'ingresso."
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+        "https://www.openstreetmap.org/way/838630957"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+          "source_date": null,
+          "basis": "Fonte documentale dell'indirizzo del servizio."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/838630957",
+          "source_date": "2026-09-22",
+          "basis": "Punto stradale già validato nella baseline per la stessa via/comune; non prova di civico o ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7115": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+            "https://www.openstreetmap.org/way/838630957"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Riutilizzo controllato di un punto stradale già presente per la stessa via e comune; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-083",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sola posizione sulla via; nessuna telefonata, disponibilità, edificio, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_stradale_indicativa",
+      "note": "Aggiunto punto C sulla via, riutilizzando una coordinata già presente e documentata nella stessa mappa.",
+      "fields": {
+        "nota_geografia_v7115": "La UOC Residenzialità e Semiresidenzialità è documentata in Via Fabi, Palazzina M. Il marker è solo sulla via e non certifica la Palazzina M o l'ingresso."
+      },
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+        "https://www.openstreetmap.org/way/838630957"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+          "source_date": null,
+          "basis": "Fonte documentale dell'indirizzo del servizio."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/838630957",
+          "source_date": "2026-09-22",
+          "basis": "Punto stradale già validato nella baseline per la stessa via/comune; non prova di civico o ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7115": {
+          "sources": [
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+            "https://www.openstreetmap.org/way/838630957"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Riutilizzo controllato di un punto stradale già presente per la stessa via e comune; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:PUB72-FR-001",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sola posizione sulla via; nessuna telefonata, disponibilità, edificio, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_stradale_indicativa",
+      "note": "Aggiunto punto C sulla via, riutilizzando una coordinata già presente e documentata nella stessa mappa.",
+      "fields": {
+        "nota_geografia_v7115": "La SRTRe Franco Basaglia è documentata in Via A. Fabi snc. Il punto riusa la localizzazione stradale già esistente della via; nessun edificio o ingresso viene dedotto."
+      },
+      "sources": [
+        "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+        "https://www.openstreetmap.org/way/838630957"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+          "source_date": null,
+          "basis": "Fonte documentale dell'indirizzo del servizio."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/838630957",
+          "source_date": "2026-09-22",
+          "basis": "Punto stradale già validato nella baseline per la stessa via/comune; non prova di civico o ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7115": {
+          "sources": [
+            "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+            "https://www.openstreetmap.org/way/838630957"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Riutilizzo controllato di un punto stradale già presente per la stessa via e comune; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:PUB72-FR-002",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sola posizione sulla via; nessuna telefonata, disponibilità, edificio, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_stradale_indicativa",
+      "note": "Aggiunto punto C sulla via, riutilizzando una coordinata già presente e documentata nella stessa mappa.",
+      "fields": {
+        "nota_geografia_v7115": "La SRTRe Romolo Priori è documentata in Via A. Fabi, Palazzina M. Il punto è soltanto stradale e non identifica la Palazzina M o l'ingresso."
+      },
+      "sources": [
+        "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+        "https://www.openstreetmap.org/way/838630957"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+          "source_date": null,
+          "basis": "Fonte documentale dell'indirizzo del servizio."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/838630957",
+          "source_date": "2026-09-22",
+          "basis": "Punto stradale già validato nella baseline per la stessa via/comune; non prova di civico o ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7115": {
+          "sources": [
+            "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+            "https://www.openstreetmap.org/way/838630957"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Riutilizzo controllato di un punto stradale già presente per la stessa via e comune; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-057",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sola posizione sulla via; nessuna telefonata, disponibilità, edificio, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_stradale_indicativa",
+      "note": "Aggiunto punto C sulla via, riutilizzando una coordinata già presente e documentata nella stessa mappa.",
+      "fields": {
+        "nota_geografia_v7115": "TSMREE Frascati è documentato in Via E. Fermi snc. Si riusa il punto stradale già presente per Via Enrico Fermi a Frascati; non identifica un civico o un ingresso."
+      },
+      "sources": [
+        "https://conteinrete.it/vademecum/",
+        "https://www.openstreetmap.org/way/90061207"
+      ],
+      "source_documents": [
+        {
+          "url": "https://conteinrete.it/vademecum/",
+          "source_date": null,
+          "basis": "Fonte documentale dell'indirizzo del servizio."
+        },
+        {
+          "url": "https://www.openstreetmap.org/way/90061207",
+          "source_date": "2026-09-22",
+          "basis": "Punto stradale già validato nella baseline per la stessa via/comune; non prova di civico o ingresso."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7115": {
+          "sources": [
+            "https://conteinrete.it/vademecum/",
+            "https://www.openstreetmap.org/way/90061207"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Riutilizzo controllato di un punto stradale già presente per la stessa via e comune; qualità C."
+        }
+      }
+    }
+  ],
+  "additions": [],
+  "method": "Overlay additivo esclusivamente geografico: sei nuovi punti C sulla via. Nessuna modifica a indirizzi, contatti, classificazioni amministrative, posti o contenuti clinici."
+}
