@@ -1,0 +1,38 @@
+name: V7.11 one-off source reconnaissance
+on:
+  push:
+    branches: [v7-11-geography-audit]
+    paths: [tools/research-v7-11.py, .github/workflows/research-v7-11.yml]
+permissions:
+  contents: write
+concurrency:
+  group: v711-one-off-research
+  cancel-in-progress: false
+jobs:
+  research:
+    if: github.ref == 'refs/heads/v7-11-geography-audit'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: v7-11-geography-audit
+      - name: Dependencies
+        run: python -m pip install requests beautifulsoup4
+      - name: Acquire public source evidence without changing production
+        run: python tools/research-v7-11.py
+      - name: Commit cached research to the isolated branch
+        run: |
+          git config user.name 'Lazio audit build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/v7_11
+          if ! git diff --cached --quiet; then
+            git commit -m 'V7.11: cache source reconnaissance; candidates require manual review'
+            git push origin HEAD:v7-11-geography-audit
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v711-source-reconnaissance
+          path: research/v7_11/
+          retention-days: 30
