@@ -1,3 +1,12 @@
+## 7.11.2 — 2026-09-26
+
+- Terzo ciclo geografico sulla baseline V7.11.1.
+- Aggiunte 6 localizzazioni indicative C: CSM Boccea; Polo Integrato e TSMREE Cassia; CSM Ceccano e SRTRe Maxwell Jones; Comunità Santa Maria/Capannelle.
+- Copertura: 350 servizi localizzati, 93 senza pin; 443 servizi clinici invariati.
+- Coordinate pubblicate da ASL Roma 1, ARPA Lazio e Roma Capitale per lo stesso indirizzo/presidio; nessun ingresso del singolo servizio dichiarato verificato.
+- Nessuna modifica a Menta, percorso studenti, supporto territoriale, classificazioni SSN/accreditamento o capacità.
+- Indicizzazione ancora disattivata.
+
 ## 7.11.1 — 2026-09-26
 
 - Secondo ciclo mirato: 443 servizi invariati, 344 localizzati, 99 senza pin. Quattordici nuove localizzazioni C: 8 edifici/presidi e 6 brevi vie. Zero ingressi verificati.
