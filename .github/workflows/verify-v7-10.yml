@@ -1,4 +1,4 @@
-name: V7.10.2 consolidated verification
+name: V7.10.3 consolidated verification
 on:
   pull_request:
     branches: [main]
@@ -27,6 +27,8 @@ on:
       - data/supporto_territoriale_v7_10.json
       - downloads/*V7_9_4*
       - tools/*v7-10-2*
+      - tools/*v7-10-3*
+      - assets/studenti-v7-10-3.css
       - downloads/*V7_10*
       - tools/*v7-10*
   push:
@@ -56,13 +58,15 @@ on:
       - data/supporto_territoriale_v7_10.json
       - downloads/*V7_9_4*
       - tools/*v7-10-2*
+      - tools/*v7-10-3*
+      - assets/studenti-v7-10-3.css
       - downloads/*V7_10*
       - tools/*v7-10*
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: v7102-verify-${{ github.ref }}
+  group: v7103-verify-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   verify:
@@ -79,6 +83,7 @@ jobs:
           mkdir -p /tmp/v710-verification
           node tools/test-v7-10.cjs | tee /tmp/v710-verification/support-tests.json
           node tools/test-v7-10-2.cjs | tee /tmp/v710-verification/data-tests.json
+          node tools/test-v7-10-3.cjs | tee /tmp/v710-verification/student-tests.json
           node --check assets/supporto-v7-10.js
           node --check assets/menta-config-v7-10.js
           node --check assets/audit-data-v7-9-4.js
@@ -87,6 +92,7 @@ jobs:
           node --check assets/directory-v7-9-4.js
           node --check tools/test-ui-v7-10.mjs
           node --check tools/test-ui-v7-10-2.mjs
+          node --check tools/test-ui-v7-10-3.mjs
           python -m py_compile tools/verify-production-v7-10.py
           python - <<'PY'
           import subprocess
@@ -118,6 +124,7 @@ jobs:
           trap 'kill $PID || true' EXIT
           QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10.mjs
           QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10-2.mjs
+          QA_OUT=/tmp/v710-verification node tools/test-ui-v7-10-3.mjs
       - name: Verify Cloudflare production bytes and noindex
         if: github.event_name != 'pull_request'
         env:
@@ -131,6 +138,7 @@ jobs:
         run: |
           node tools/test-ui-v7-10.mjs
           node tools/test-ui-v7-10-2.mjs
+          node tools/test-ui-v7-10-3.mjs
       - name: Record tested tree
         if: always()
         run: |
@@ -139,7 +147,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: v7-10-2-${{ github.event_name }}-verification
+          name: v7-10-3-${{ github.event_name }}-verification
           path: /tmp/v710-verification/
           retention-days: 30
           if-no-files-found: error
