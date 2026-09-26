@@ -1,12 +1,12 @@
-"""Read-only V7.10.2 production verification after Cloudflare deployment."""
+"""Read-only V7.10.3 production verification after Cloudflare deployment."""
 from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.error import HTTPError
 import json,hashlib,re,time,subprocess,datetime,os
-R=Path(__file__).resolve().parents[1];O=Path(os.environ.get('QA_OUT','/tmp/v7102-production'));O.mkdir(parents=True,exist_ok=True)
+R=Path(__file__).resolve().parents[1];O=Path(os.environ.get('QA_OUT','/tmp/v7103-production'));O.mkdir(parents=True,exist_ok=True)
 origin='https://mappatura-servizi-assistenza-psicologica.pages.dev';commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip()
 def fetch(path):
- req=Request(origin+'/'+path+'?verify_v7102='+commit,headers={'User-Agent':'LazioReleaseVerification/7.10.2','Cache-Control':'no-cache'})
+ req=Request(origin+'/'+path+'?verify_v7103='+commit,headers={'User-Agent':'LazioReleaseVerification/7.10.2','Cache-Control':'no-cache'})
  try:
   with urlopen(req,timeout=30) as r:return r.status,{k.lower():v for k,v in r.headers.items()},r.read(),r.url
  except HTTPError as e:return e.code,{k.lower():v for k,v in e.headers.items()},e.read(),e.url
@@ -18,8 +18,8 @@ for _ in range(48):
   if s==200 and b==expected:deployed=True;break
  except Exception:pass
  time.sleep(10)
-checks.append({'name':'exact V7.10.2 manifest deployed','passed':deployed})
-paths=['index.html','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','documenti.html','supporto-territoriale.html','aiuto-adesso.html','ascolto.html','centri-ascolto.html','version.json','data/supporto_territoriale_v7_10.json','data/audit_operativo_v7_9_4.json','data/presidi_geo_v7_9_4.json','assets/supporto-v7-10.js','assets/supporto-v7-10.css','assets/menta-config-v7-10.js','assets/audit-data-v7-9-4.js','assets/servizi-v7-9-4.js','assets/map-data-v7-9-4.js','assets/directory-v7-9-4.js','downloads/Release_Notes_V7_10.md','downloads/Audit_Supporto_Territoriale_V7_10.json','downloads/Release_Notes_V7_9_4.md','downloads/Audit_Operativo_V7_9_4.json','downloads/Report_Geografia_V7_9_4.md']
+checks.append({'name':'exact V7.10.3 manifest deployed','passed':deployed})
+paths=['index.html','studenti.html','universita.html','scuole.html','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','documenti.html','supporto-territoriale.html','aiuto-adesso.html','ascolto.html','centri-ascolto.html','version.json','data/supporto_territoriale_v7_10.json','data/audit_operativo_v7_9_4.json','data/presidi_geo_v7_9_4.json','assets/supporto-v7-10.js','assets/supporto-v7-10.css','assets/menta-config-v7-10.js','assets/studenti-v7-10-3.css','assets/audit-data-v7-9-4.js','assets/servizi-v7-9-4.js','assets/map-data-v7-9-4.js','assets/directory-v7-9-4.js','downloads/Release_Notes_V7_10.md','downloads/Audit_Supporto_Territoriale_V7_10.json','downloads/Release_Notes_V7_9_4.md','downloads/Audit_Operativo_V7_9_4.json','downloads/Report_Geografia_V7_9_4.md']
 if deployed:
  for p in paths:
   try:
