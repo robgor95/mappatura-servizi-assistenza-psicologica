@@ -1,0 +1,263 @@
+{
+  "version": "7.11.4",
+  "baseline_commit": "4c80b37a32088b156551df19a95097ea8bc9ea8e",
+  "checked_at": "2026-09-26",
+  "revisions": [
+    {
+      "service_key": "rete:VT-01",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sede; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con provenienza dalla pagina ufficiale ASL Viterbo e limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7114": "Il Dipartimento di Salute Mentale è documentato presso la Cittadella della Salute di Viterbo in Via Enrico Fermi 15; la pagina ASL dei CSM incorpora la mappa dello stesso indirizzo. Punto del complesso, non ingresso della segreteria.",
+        "indirizzo": "Via Enrico Fermi, 15"
+      },
+      "sources": [
+        "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+          "source_date": "2025-03-31",
+          "basis": "Pagina ASL Viterbo che documenta la sede o l'indirizzo."
+        },
+        {
+          "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit",
+          "source_date": null,
+          "basis": "Mappa incorporata nella pagina ufficiale ASL; coordinate del punto visualizzato per la sede/indirizzo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7114": {
+          "sources": [
+            "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale con la mappa incorporata nella pagina ufficiale; qualità C."
+        },
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Indirizzo esplicito nella pagina ASL Viterbo."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-073",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sede; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con provenienza dalla pagina ufficiale ASL Viterbo e limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7114": "ASL Viterbo colloca l'Ambulatorio DNA presso il Dipartimento di Salute Mentale, Cittadella della Salute, Via Enrico Fermi 15, 2° piano. Il punto è del complesso all'indirizzo, non dell'ingresso dell'ambulatorio.",
+        "indirizzo": "Via Enrico Fermi, 15"
+      },
+      "sources": [
+        "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+          "source_date": "2025-03-31",
+          "basis": "Pagina ASL Viterbo che documenta la sede o l'indirizzo."
+        },
+        {
+          "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit",
+          "source_date": null,
+          "basis": "Mappa incorporata nella pagina ufficiale ASL; coordinate del punto visualizzato per la sede/indirizzo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7114": {
+          "sources": [
+            "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale con la mappa incorporata nella pagina ufficiale; qualità C."
+        },
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.8488310862817%212d12.106888715725605%213d42.409663939959806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd%212sVia+Enrico+Fermi%2C+15%2C+01100+Viterbo+VT%215e0%213m2%211sit%212sit%214v1678272100015%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Indirizzo esplicito nella pagina ASL Viterbo."
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-04",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sede; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con provenienza dalla pagina ufficiale ASL Viterbo e limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7114": "La pagina ASL Viterbo indica l'ambulatorio di Canino in Via Bachelet e incorpora una mappa centrata sulla stessa via. Nessun civico è documentato: il punto resta indicativo sulla via."
+      },
+      "sources": [
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2942.919237445163%212d11.757058415726958%213d42.47200633601667%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x1328dc362039d715%3A0x9399e85424afaafa%212sVia+Bachelet%2C+01011+Canino+VT%215e0%213m2%211sit%212sit%214v1678288906807%215m2%211sit%212sit"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+          "source_date": "2026-08-04",
+          "basis": "Pagina ASL Viterbo che documenta la sede o l'indirizzo."
+        },
+        {
+          "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2942.919237445163%212d11.757058415726958%213d42.47200633601667%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x1328dc362039d715%3A0x9399e85424afaafa%212sVia+Bachelet%2C+01011+Canino+VT%215e0%213m2%211sit%212sit%214v1678288906807%215m2%211sit%212sit",
+          "source_date": null,
+          "basis": "Mappa incorporata nella pagina ufficiale ASL; coordinate del punto visualizzato per la sede/indirizzo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7114": {
+          "sources": [
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2942.919237445163%212d11.757058415726958%213d42.47200633601667%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x1328dc362039d715%3A0x9399e85424afaafa%212sVia+Bachelet%2C+01011+Canino+VT%215e0%213m2%211sit%212sit%214v1678288906807%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale con la mappa incorporata nella pagina ufficiale; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-08",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sede; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con provenienza dalla pagina ufficiale ASL Viterbo e limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7114": "La pagina ASL Viterbo indica l'ambulatorio di Tuscania in Piazza F. Basile e incorpora la mappa della stessa piazza. Punto indicativo, non ingresso verificato."
+      },
+      "sources": [
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.511982354455%212d11.872833476480455%213d42.41683593151219%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x1328dabc8f905743%3A0x388bbd8b80635b8e%212sPiazza+Franco+Basile%2C+01017+Tuscania+VT%215e0%213m2%211sit%212sit%214v1744804582293%215m2%211sit%212sit"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+          "source_date": "2026-08-04",
+          "basis": "Pagina ASL Viterbo che documenta la sede o l'indirizzo."
+        },
+        {
+          "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.511982354455%212d11.872833476480455%213d42.41683593151219%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x1328dabc8f905743%3A0x388bbd8b80635b8e%212sPiazza+Franco+Basile%2C+01017+Tuscania+VT%215e0%213m2%211sit%212sit%214v1744804582293%215m2%211sit%212sit",
+          "source_date": null,
+          "basis": "Mappa incorporata nella pagina ufficiale ASL; coordinate del punto visualizzato per la sede/indirizzo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7114": {
+          "sources": [
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2945.511982354455%212d11.872833476480455%213d42.41683593151219%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x1328dabc8f905743%3A0x388bbd8b80635b8e%212sPiazza+Franco+Basile%2C+01017+Tuscania+VT%215e0%213m2%211sit%212sit%214v1744804582293%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale con la mappa incorporata nella pagina ufficiale; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-13",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sede; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con provenienza dalla pagina ufficiale ASL Viterbo e limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7114": "ASL Viterbo documenta la sede di Capranica a Strada Cassia km 53.900 e incorpora una mappa nello stesso blocco del servizio. Punto indicativo della sede lungo la Cassia; ingresso non verificato."
+      },
+      "sources": [
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.google.com/maps/embed?pb=%211m14%211m12%211m3%211d1476.5193485256668%212d12.185057149504%213d42.25634616134696%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%215e0%213m2%211sit%212sit%214v1678349637617%215m2%211sit%212sit"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+          "source_date": "2026-08-04",
+          "basis": "Pagina ASL Viterbo che documenta la sede o l'indirizzo."
+        },
+        {
+          "url": "https://www.google.com/maps/embed?pb=%211m14%211m12%211m3%211d1476.5193485256668%212d12.185057149504%213d42.25634616134696%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%215e0%213m2%211sit%212sit%214v1678349637617%215m2%211sit%212sit",
+          "source_date": null,
+          "basis": "Mappa incorporata nella pagina ufficiale ASL; coordinate del punto visualizzato per la sede/indirizzo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7114": {
+          "sources": [
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m14%211m12%211m3%211d1476.5193485256668%212d12.185057149504%213d42.25634616134696%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%215e0%213m2%211sit%212sit%214v1678349637617%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale con la mappa incorporata nella pagina ufficiale; qualità C."
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-15",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame geografico mirato della sede; nessuna telefonata, disponibilità, ingresso fisico o revisione clinica.",
+      "status": "localizzazione_indicativa",
+      "note": "Aggiunta localizzazione C con provenienza dalla pagina ufficiale ASL Viterbo e limite di precisione esplicito.",
+      "fields": {
+        "nota_geografia_v7114": "ASL Viterbo documenta Vicolo della Pace 2 e incorpora una mappa riferita allo stesso civico. Il punto identifica l'indirizzo, ma non certifica l'ingresso fisico dell'ambulatorio."
+      },
+      "sources": [
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+        "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2949.3868794607856%212d12.294401715723888%213d42.334274344721806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f3ae117462dbf%3A0x9a07f96834f164a1%212sVicolo+della+Pace%2C+2%2C+01034+Fabrica+di+Roma+VT%215e0%213m2%211sit%212sit%214v1678350158003%215m2%211sit%212sit"
+      ],
+      "source_documents": [
+        {
+          "url": "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+          "source_date": "2026-08-04",
+          "basis": "Pagina ASL Viterbo che documenta la sede o l'indirizzo."
+        },
+        {
+          "url": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2949.3868794607856%212d12.294401715723888%213d42.334274344721806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f3ae117462dbf%3A0x9a07f96834f164a1%212sVicolo+della+Pace%2C+2%2C+01034+Fabrica+di+Roma+VT%215e0%213m2%211sit%212sit%214v1678350158003%215m2%211sit%212sit",
+          "source_date": null,
+          "basis": "Mappa incorporata nella pagina ufficiale ASL; coordinate del punto visualizzato per la sede/indirizzo."
+        }
+      ],
+      "evidence": {
+        "nota_geografia_v7114": {
+          "sources": [
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.asl.vt.it/csm-centro-di-salute-mentale",
+            "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2949.3868794607856%212d12.294401715723888%213d42.334274344721806%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x132f3ae117462dbf%3A0x9a07f96834f164a1%212sVicolo+della+Pace%2C+2%2C+01034+Fabrica+di+Roma+VT%215e0%213m2%211sit%212sit%214v1678350158003%215m2%211sit%212sit"
+          ],
+          "checked_at": "2026-09-26",
+          "basis": "Associazione manuale con la mappa incorporata nella pagina ufficiale; qualità C."
+        }
+      }
+    }
+  ],
+  "additions": [],
+  "method": "Overlay additivo: sei localizzazioni C e due acquisizioni di indirizzo. Nessuna modifica a classificazioni SSN/accreditamento, posti, accesso o contenuti clinici."
+}
