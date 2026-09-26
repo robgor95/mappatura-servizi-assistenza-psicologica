@@ -1,0 +1,25 @@
+/* V7.10.3 · student pathway: a visible entry point without changing the primary navigation. */
+.student-entry{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:28px;align-items:center;margin:8px 0 34px;padding:26px 30px;border:1px solid #d8d3eb;border-radius:24px;background:linear-gradient(120deg,#f8f6fc 0%,#fff 58%,#edf7f1 100%);box-shadow:0 8px 28px #153d3608}
+.student-entry h2{margin:0 0 8px;font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.15;letter-spacing:-.03em}
+.student-entry p:not(.eyebrow){margin:0;color:var(--muted);max-width:58ch;line-height:1.65}
+.student-entry-actions{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-top:18px}
+.student-entry-actions>a:not(.button){font-weight:700;min-height:44px;display:inline-flex;align-items:center}
+.student-entry .student-menta{width:145px;justify-self:center;filter:drop-shadow(0 10px 20px #163e3814)}
+.student-path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 22px}
+.student-path-card{display:flex;flex-direction:column;gap:8px;min-height:150px;padding:20px;border:1px solid #d5e1d9;border-radius:18px;background:#fff;text-decoration:none;color:var(--ink);box-shadow:0 5px 18px #153d3607}
+.student-path-card:hover{border-color:#77a992;background:#f6fbf7}
+.student-path-card strong{font-size:1.05rem;line-height:1.35}
+.student-path-card span{font-size:.88rem;line-height:1.55;color:var(--muted)}
+.student-path-card .student-path-cue{margin-top:auto;padding-top:8px;color:#12594f;font-weight:750;font-size:.82rem}
+.student-path-note{font-size:.84rem;color:var(--muted);line-height:1.6;margin-top:8px}
+@media(max-width:650px){
+  .student-entry{grid-template-columns:minmax(0,1fr) 82px;gap:12px;padding:20px 16px;margin:2px 0 26px}
+  .student-entry h2{font-size:1.55rem}
+  .student-entry .student-menta{width:78px;align-self:start;margin-top:8px}
+  .student-entry-actions{grid-column:1/-1;display:grid;gap:8px;margin-top:6px}
+  .student-entry-actions .button{width:100%}
+  .student-entry-actions>a:not(.button){justify-content:center}
+  .student-path-grid{grid-template-columns:1fr;gap:10px}
+  .student-path-card{min-height:0;padding:16px}
+}
+@media(prefers-reduced-motion:reduce){.student-entry .student-menta{filter:none}}

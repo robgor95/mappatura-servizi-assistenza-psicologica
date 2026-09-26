@@ -1,6 +1,8 @@
-## Versione corrente V7.10.2
+## Versione corrente V7.10.3
 
-V7.10.2 mantiene lo strato di supporto territoriale V7.10 e recupera in modo selettivo il lavoro dati V7.9.4 sulla baseline corrente: 443 servizi clinici, 128 moduli, 184 record nella directory strutture, 315 servizi localizzati e 128 senza pin. È stato aggiunto Il Colle / Nucleo 1 SRSR H24 a Colle Cesarano e sono state integrate cinque localizzazioni a livello di complesso ospedaliero, senza dichiarare ingressi verificati.
+V7.10.3 aggiunge un ingresso dedicato “Sei uno studente?” nella home e trasforma `studenti.html` in un hub tra università, scuola, servizi territoriali e ascolto. Menta invia le richieste generiche relative agli studenti a questo hub, mentre richieste esplicite sull’università o sulla scuola continuano ad aprire direttamente le rispettive directory.
+
+La baseline dati resta quella consolidata in V7.10.2: 443 servizi clinici, 128 moduli, 184 record nella directory strutture, 315 servizi localizzati e 128 senza pin. È stato aggiunto Il Colle / Nucleo 1 SRSR H24 a Colle Cesarano e sono state integrate cinque localizzazioni a livello di complesso ospedaliero, senza dichiarare ingressi verificati.
 
 Lo strato V7.10 resta separato: 135 consultori, 47 sedi/punti PUA documentati e 6 servizi/linee di emergenza sociale. Menta V7.10 e il refresh grafico V7.10.1 restano invariati. Le Case Rifugio non sono geolocalizzate e l'indicizzazione resta disattivata.
 
