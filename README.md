@@ -1,3 +1,9 @@
+## Versione corrente candidata V7.11.6
+
+Settimo ciclo geografico: 443 servizi clinici, 370 localizzati e 73 senza pin. Cinque nuovi marker C: tre servizi distinti nello stesso presidio di Via Salaria per Roma 36 a Rieti e due strutture Venere/Marte localizzate soltanto a livello di area/via a Cerri Aprano. Nessun ingresso fisico viene dichiarato verificato.
+
+Checkpoint pre-release: `checkpoint-v7-11-5-before-v7116-2026-09-27` → `df133596b413d542c0f9b5ea356c13be811e8932`.
+
 ## Versione corrente candidata V7.11.5
 
 Sesto ciclo geografico: 443 servizi clinici, 365 localizzati e 78 senza pin. Sei nuovi marker C riutilizzano punti stradali già presenti per la stessa via e comune, senza dedurre civici, palazzine o ingressi. Il DNA Frosinone resta intenzionalmente senza pin per conflitto di sede.
