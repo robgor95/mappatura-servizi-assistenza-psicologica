@@ -1,3 +1,9 @@
+## Versione corrente candidata V7.11.2
+
+Terzo ciclo geografico: 443 servizi clinici, 350 localizzati e 93 senza pin. Sei nuovi punti C utilizzano coordinate pubblicate da enti pubblici per lo stesso indirizzo o presidio; non sono ingressi fisici verificati. I 344 punti V7.11.1 restano invariati. Menta V7.10.3, percorso studenti e supporto territoriale V7.10 non cambiano.
+
+Checkpoint pre-release: `checkpoint-v7-11-1-before-v7112-2026-09-26` → `2c119884969b77e9f5635af6802c04fbf20f7e8a`.
+
 # Versione corrente V7.11.1
 
 **443 servizi, 344 localizzati, 99 senza pin**. Secondo ciclo mirato: 14 localizzazioni indicative C e precisazioni su 23 schede; nessun ingresso verificato e nessun censimento dichiarato completo.
