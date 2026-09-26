@@ -1,3 +1,11 @@
+## 7.11 — 2026-09-26
+
+- Primo ciclo geografia: 443 servizi invariati, 330 localizzati e 113 senza pin; 15 nuovi punti, zero ingressi fisici verificati.
+- 30 riesami operativi per campi selezionati; ricognizione degli URL distinta dalla validazione di sede.
+- Contatti e indirizzi privati sincronizzati fra ricerca e directory; classificazioni amministrative invariate.
+- Scartate destinazioni cartografiche incoerenti; incertezze conservate.
+- Menta, studenti, supporto territoriale e noindex invariati.
+
 ## 7.10.3 — 2026-09-26
 
 - Aggiunto in home un ingresso ben visibile “Sei uno studente?” senza ampliare la navigazione primaria.

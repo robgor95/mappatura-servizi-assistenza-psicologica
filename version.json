@@ -1,9 +1,9 @@
 {
-  "web_version": "7.10.3",
+  "web_version": "7.11",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.10.3",
+  "data_extension_version": "7.11",
   "built_at": "2026-09-26",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.10.3: nuovo percorso visibile «Sei uno studente?» in home e pagina studenti trasformata in hub tra università, scuola, servizi territoriali e ascolto; Menta instrada le richieste studente generiche verso l’hub. Dati V7.10.2 invariati.",
+  "release_note": "V7.11: 15 nuove localizzazioni documentali e 30 riesami per campo; 443 servizi, 330 localizzati e 113 senza pin. Nessun ingresso fisico verificato; Menta, studenti e supporto territoriale invariati.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -109,26 +109,26 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.9.4",
+  "map_version": "7.11",
   "ux_version": "7.8",
   "map": {
     "services": 443,
-    "localized": 315,
-    "address_geocoded": 64,
-    "street_approximate": 228,
-    "unlocated": 128,
+    "localized": 330,
+    "address_geocoded": 65,
+    "street_approximate": 229,
+    "unlocated": 113,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 126,
-      "A": 27,
-      "C": 288,
+      "D": 111,
+      "A": 28,
+      "C": 302,
       "E": 2
     },
     "entrances_verified": 0,
-    "building_approximate": 23
+    "building_approximate": 36
   },
   "ux_map_deployment_verification": {
     "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
@@ -155,8 +155,8 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.9.4",
-  "baseline_commit": "2ad2126b5c972ce49956607e368fc45b3fc4f7e6",
+  "audit_version": "7.11",
+  "baseline_commit": "85808c6fad9dec32098558e466a3997a18b95d22",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
     "production_evidence": "GitHub Actions successivo al merge; non confondere i controlli V7.8 con quelli correnti."
@@ -225,5 +225,20 @@
       "ascolto.html"
     ],
     "primary_navigation_unchanged": true
+  },
+  "v7_11_verification": {
+    "workflow": ".github/workflows/verify-v7-11.yml",
+    "baseline_commit": "85808c6fad9dec32098558e466a3997a18b95d22",
+    "scope": "Nuovi test di dati, integrità, browser e confronto byte di produzione; esiti da consultare nel run del commit effettivamente pubblicato."
+  },
+  "v7_11_audit": {
+    "report": "downloads/Audit_Geografia_Operativo_V7_11.json",
+    "url_reconnaissance_records": 128,
+    "operational_records_reviewed": 30,
+    "records_with_field_changes": 21,
+    "records_confirmed_without_field_change": 9,
+    "new_locations": 15,
+    "remaining_unlocated": 113,
+    "complete": false
   }
 }
