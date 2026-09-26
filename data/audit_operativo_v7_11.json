@@ -1,0 +1,1062 @@
+{
+  "version": "7.11",
+  "baseline_commit": "85808c6fad9dec32098558e466a3997a18b95d22",
+  "checked_at": "2026-09-26",
+  "revisions": [
+    {
+      "service_key": "rete:R3-05",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Rimosso dal campo accesso il riferimento ad Acilia, estraneo a questa sede. L’avviso di sospensione del 6–7 febbraio 2026 è datato: non è trattato come chiusura corrente.",
+      "fields": {
+        "accesso": "Primo contatto con il CSM: accoglienza e valutazione della domanda; contattare la sede per modalità aggiornate.",
+        "orari": "Lun 13–20; mar 08–18; mer–ven 08–15"
+      },
+      "sources": [
+        "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/"
+      ],
+      "evidence": {
+        "accesso": {
+          "sources": [
+            "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:R5-10",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Numeri distinti per funzione e modalità del primo contatto ricontrollati; orari di somministrazione farmaci non confusi con quelli del ricevimento.",
+      "fields": {
+        "telefono": "06 97206760 (infermieri); 06 97206770 (medici); 06 97206764 (responsabile)",
+        "accesso": "Accesso diretto e gratuito oppure appuntamento telefonico/e-mail; per il bacino territoriale indicato dall’ASL. Documento di riconoscimento e tessera sanitaria.",
+        "sede_dettaglio": "Ingresso indicato dalla pagina ASL su Via Santo Stefano; punto cartografico indicativo, non ingresso fisico verificato."
+      },
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "accesso": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "sede_dettaglio": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-052",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Orari riferiti esclusivamente al primo contatto; pagina ASL comune alle due sedi. Nessun dato personale raccolto dal portale.",
+      "fields": {
+        "accesso": "Primo contatto diretto, senza impegnativa né ticket. Richiesta tramite tsmree.subiaco@aslroma5.it o 0774 8115374; specialisti su appuntamento.",
+        "orari": "Telefono per prima visita: lunedì 10:00–12:00; mercoledì 15:00–16:30. Sono fasce di prenotazione, non orari generali di apertura."
+      },
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+      ],
+      "evidence": {
+        "accesso": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-053",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Orari riferiti esclusivamente al primo contatto; pagina ASL comune alle due sedi. Nessun dato personale raccolto dal portale.",
+      "fields": {
+        "accesso": "Primo contatto diretto, senza impegnativa né ticket. Richiesta tramite tsmree.subiaco@aslroma5.it o 0774 8115374; specialisti su appuntamento.",
+        "orari": "Telefono per prima visita: lunedì 10:00–12:00; mercoledì 15:00–16:30. Sono fasce di prenotazione, non orari generali di apertura."
+      },
+      "sources": [
+        "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+      ],
+      "evidence": {
+        "accesso": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "privati:PRI-004",
+      "origin": "privati",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Sostituita l’indicazione generica della sede con l’indirizzo pubblicato dal centro. Non riesaminati costi, autorizzazione o accreditamento.",
+      "fields": {
+        "sede": "Viale di Villa Massimo, 4, Roma",
+        "contatti": "376 2715110; prenotazione tramite il centro"
+      },
+      "sources": [
+        "https://www.qrare.it/"
+      ],
+      "evidence": {
+        "sede": {
+          "sources": [
+            "https://www.qrare.it/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "contatti": {
+          "sources": [
+            "https://www.qrare.it/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "privati:PRI-005",
+      "origin": "privati",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Recapiti di contatto del centro pubblicati sul sito del gestore. Nessuna valutazione indipendente di qualità clinica.",
+      "fields": {
+        "sede": "Via Luigi Perna, 51, Roma",
+        "contatti": "353 3985514",
+        "email": "info@adhdroma.com"
+      },
+      "sources": [
+        "https://www.adhdroma.com/contatti/"
+      ],
+      "evidence": {
+        "sede": {
+          "sources": [
+            "https://www.adhdroma.com/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "contatti": {
+          "sources": [
+            "https://www.adhdroma.com/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.adhdroma.com/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-087",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Sede del centro documentata dal gestore; non prova di aggiornamento del contratto della singola unità. Il rapporto SSN resta quello precedente.",
+      "fields": {
+        "indirizzo": "Via di Pietralatella SNC, Roma",
+        "telefono": "06 4382379; 347 4728757",
+        "orari": "Contatti e appuntamenti: lunedì–venerdì 10:00–18:00",
+        "email": "ilcentroonlus@gmail.com"
+      },
+      "sources": [
+        "https://www.iocentro.it/index.php/contatti/"
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.iocentro.it/index.php/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "telefono": {
+          "sources": [
+            "https://www.iocentro.it/index.php/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://www.iocentro.it/index.php/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.iocentro.it/index.php/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-085",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Superata soltanto la nota geografica V7.9.4 di assenza del pin; il livello resta indicativo.",
+      "fields": {
+        "nota_indirizzo": "Sede SPDC nel Dono Svizzero documentata dall’ASL. V7.11 localizza il solo edificio ospedaliero; stanza, reparto e ingresso non verificati."
+      },
+      "sources": [
+        "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+      ],
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-03",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 1860426",
+        "orari": "Lun e ven 09–13:30"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-04",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 338594",
+        "orari": "Gio 09–13"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-08",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 338817",
+        "orari": "Lun e gio 09–13:30"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-09",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0763 711205 / 0761 1860450",
+        "orari": "Lun e mer 09–13:30"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-10",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 338214",
+        "orari": "Mar 08–14"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-13",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 678555 / 0761 678591",
+        "orari": "Mar e gio 09–13:30"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-15",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 569089",
+        "orari": "Gio 09–13:30"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-17",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 651298",
+        "orari": "Lun e mer 09–13:30"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:VT-18",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "riscontro_documentale_senza_variazione",
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "fields": {
+        "telefono": "0761 338806",
+        "orari": "Lun–ven 08–20; sab 08–14"
+      },
+      "sources": [
+        "https://asl.vt.it/csm-centro-di-salute-mentale"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://asl.vt.it/csm-centro-di-salute-mentale"
+          ],
+          "source_date": "2025-04-16",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-059",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Conservato il record e la sua identità storica; informazioni nuove limitate alla componente nominativamente documentata. Nessuna fusione/splitting automatico.",
+      "fields": {
+        "nota_indirizzo": "La pagina del gestore documenta Comunità San Carlo in Via Alessandro Volta 2, Marino. La scheda storica include anche Villa Santa Francesca Romana: identità/unità da riconciliare; nessun indirizzo o pin unico attribuito all’intera denominazione.",
+        "nota_contatti_v711": "Per la sola Comunità San Carlo: 06 93660116; s.carlo@ceis.it. Non estesi automaticamente all’altra denominazione storica."
+      },
+      "sources": [
+        "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/"
+      ],
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_contatti_v711": {
+          "sources": [
+            "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-083",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Differenziate sede residenziale e centro diurno; nessuna modifica di capacità o classificazione SSN.",
+      "fields": {
+        "indirizzo": "Via Macchia Tonda, 8, Capena",
+        "telefono": "06 90389343; 06 36308629 (informazioni e prenotazioni)",
+        "email": "maieusis.ct@gmail.com",
+        "nota_indirizzo": "Sede residenziale di Capena distinta dal centro diurno in Via Filippo Turati 2/4, Fiano Romano. Nessun pin ricavato dalla sede generica in calce al sito."
+      },
+      "sources": [
+        "https://www.maieusis.org/contatti/"
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "telefono": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.maieusis.org/contatti/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-030",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_contatti_v711": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-031",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_contatti_v711": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-032",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_contatti_v711": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-033",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "sources": [
+        "https://www.ghcspa.com/samadi/contatti"
+      ],
+      "evidence": {
+        "telefono": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "email": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_contatti_v711": {
+          "sources": [
+            "https://www.ghcspa.com/samadi/contatti"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-075",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Tabaccheria Senza Filtro», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "sources": [
+        "https://gabbianotirreno.it/strutture/castel-madama"
+      ],
+      "evidence": {
+        "nota_geografia_v711": {
+          "sources": [
+            "https://gabbianotirreno.it/strutture/castel-madama"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-076",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Tabaccheria Senza Filtro», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "sources": [
+        "https://gabbianotirreno.it/strutture/castel-madama"
+      ],
+      "evidence": {
+        "nota_geografia_v711": {
+          "sources": [
+            "https://gabbianotirreno.it/strutture/castel-madama"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-081",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Falesia di Rocca Canterano», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "sources": [
+        "https://gabbianotirreno.it/strutture/rocca-canterano"
+      ],
+      "evidence": {
+        "nota_geografia_v711": {
+          "sources": [
+            "https://gabbianotirreno.it/strutture/rocca-canterano"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-082",
+      "origin": "moduli",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Falesia di Rocca Canterano», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "sources": [
+        "https://gabbianotirreno.it/strutture/rocca-canterano"
+      ],
+      "evidence": {
+        "nota_geografia_v711": {
+          "sources": [
+            "https://gabbianotirreno.it/strutture/rocca-canterano"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-065",
+      "origin": "rete",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "L’avviso datato è prova di quella sede per l’evento, non di chiusura/trasferimento permanente. Verifica diretta con il servizio ancora necessaria.",
+      "fields": {
+        "nota_indirizzo": "Sede da riconfermare: il record precedente indica Palazzo Dosi Delfini, mentre un avviso ASL per l’Open Day dell’11/03/2025 indica il Centro DCA in Via delle Ortensie 28, primo piano. Non è acquisita una prova di trasferimento definitivo; nessun pin attribuito.",
+        "nota_geografia_v711": "Conflitto fra indicazione precedente e avviso ASL datato; non selezionata automaticamente una sede attuale."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+      ],
+      "evidence": {
+        "nota_indirizzo": {
+          "sources": [
+            "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+          ],
+          "source_date": "2025-03-03",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_geografia_v711": {
+          "sources": [
+            "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+          ],
+          "source_date": "2025-03-03",
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "privati:PRI-003",
+      "origin": "privati",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Indirizzo e contatto della sede riscontrati nella pagina dedicata; gli orari dei prelievi non sono applicati alle prestazioni psicologiche. Geografia ancora da confermare: non scelto arbitrariamente un civico con suffisso diverso.",
+      "fields": {
+        "sede": "Via Goito 58, 00185 Roma",
+        "contatti": "06 84000111; prenotazione tramite il centro",
+        "orari": "Orari della sede: lunedì–venerdì 07:15–20:00; sabato 08:15–13:00. Appuntamenti delle singole prestazioni da concordare."
+      },
+      "sources": [
+        "https://www.santagostino.it/it/sedi/rm-via-goito"
+      ],
+      "evidence": {
+        "sede": {
+          "sources": [
+            "https://www.santagostino.it/it/sedi/rm-via-goito"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "contatti": {
+          "sources": [
+            "https://www.santagostino.it/it/sedi/rm-via-goito"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "orari": {
+          "sources": [
+            "https://www.santagostino.it/it/sedi/rm-via-goito"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    },
+    {
+      "service_key": "privati:PRI76-003",
+      "origin": "privati",
+      "checked_at": "2026-09-26",
+      "scope": "Riesame documentale limitato ai campi elencati; nessuna verifica clinica, telefonica, di posti o ingressi.",
+      "status": "aggiornamento_per_campo",
+      "note": "Sede operativa e contatti pubblici riscontrati; nessuna deduzione dell’accreditamento delle singole prestazioni e nessuna nuova coordinata sufficientemente univoca.",
+      "fields": {
+        "sede": "Via Carlo Cattaneo 46/T, Viterbo",
+        "contatti": "0761 227123 (poliambulatorio); 0761 306111 (centro)",
+        "nota_geografia_v711": "La sede di Viterbo al 46/T resta distinta dalla sede legale romana. Nessun pin attribuito al civico 46/O o a una generica sede del gruppo."
+      },
+      "sources": [
+        "https://www.airrimedical.it/it/ambulatori-viterbo/"
+      ],
+      "evidence": {
+        "sede": {
+          "sources": [
+            "https://www.airrimedical.it/it/ambulatori-viterbo/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "contatti": {
+          "sources": [
+            "https://www.airrimedical.it/it/ambulatori-viterbo/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        },
+        "nota_geografia_v711": {
+          "sources": [
+            "https://www.airrimedical.it/it/ambulatori-viterbo/"
+          ],
+          "source_date": null,
+          "checked_at": "2026-09-26",
+          "basis": "Pagina primaria del servizio; confronto manuale per campo"
+        }
+      }
+    }
+  ],
+  "additions": [],
+  "method": "Aggiornamento e riscontro documentale per campo; nessuna revisione clinica o disponibilità in tempo reale."
+}

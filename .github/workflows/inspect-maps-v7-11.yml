@@ -1,0 +1,36 @@
+name: V7.11 publisher map inspection
+on:
+  push:
+    branches: [v7-11-geography-audit]
+    paths: [tools/inspect-maps-v7-11.py, .github/workflows/inspect-maps-v7-11.yml]
+permissions:
+  contents: write
+concurrency:
+  group: v711-map-inspection
+  cancel-in-progress: false
+jobs:
+  inspect:
+    if: github.ref == 'refs/heads/v7-11-geography-audit'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: v7-11-geography-audit
+      - run: python -m pip install requests beautifulsoup4
+      - run: python tools/inspect-maps-v7-11.py
+      - name: Preserve inspection evidence on research branch
+        run: |
+          git config user.name 'Lazio audit build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/v7_11/map-targets.*
+          if ! git diff --cached --quiet; then
+            git commit -m 'V7.11: publisher map targets; no automatic geographic promotion'
+            git push origin HEAD:v7-11-geography-audit
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v711-map-inspection
+          path: research/v7_11/map-targets.*
+          retention-days: 30

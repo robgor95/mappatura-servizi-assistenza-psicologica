@@ -1,0 +1,1960 @@
+{
+  "https://www.aslroma1.it/salute-mentale": {
+    "url": "https://www.aslroma1.it/salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/salute-mentale",
+    "sha256": "5c817a5ae66aefdefaeae31ec196b652214168ee5c282a0095a47ae781093241",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Salute Mentale",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "via Monte Tomatico e via Farulli Il Dipartimento di Salute Mentale (DSM) è un complesso di str",
+      "Via di Grottarossa, 1035 - Tel",
+      "Viale dell’Università, 30 - 06 4997",
+      "via Plinio, 31 Tel",
+      "Via Palestro e il CSM Plinio ",
+      "Via Palestro, in via Palestro, 39 (tel",
+      "via Palestro, 39 Tel",
+      "Via Plinio ",
+      "via Sabrata, 12 Tel",
+      "via Boemondo, 21 Tel",
+      "via Monte Tomatico, 9 Tel",
+      "Via Farulli , via Ugo Farulli, 6 Tel",
+      "via Farulli sarà aperto : 24 e 25 ottobre",
+      "via Monte Tomatico sarà aperto: 7-8 e 21-22 novembre",
+      "via Boccea, 271 Tel",
+      "via Innocenzo IV, 16/d Tel",
+      "via Pietro Gasparri, 21 Tel",
+      "via Ventura, 60 Tel",
+      "via Antonino Di Giorgio , via Antonino di Giorgio, 19 Tel",
+      "via Cassia 472 martedì e giovedì dalle 8:30 alle 12:30 tel"
+    ]
+  },
+  "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea": {
+    "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/embed/v1/place?key=AIzaSyD6HF96FuVM86PhYLZeafYdxODzHQNJdjA&q=Via%20di%20Boccea%2C%20271%20-%2000168%20Roma",
+      "https://www.google.com/maps/dir/My+Location/Via+di+Boccea,+271+-+00168+Roma,+Italy"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-boccea",
+    "sha256": "c6473152ebc482d1c0bd03a2b44dcc606e616644cc29f9211be38e9a07e28d59",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Centro Salute Mentale Boccea",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "Via di Boccea, 271 - 00168 Roma Linea ATAC 46 Orari Prenotazione Pagamento Ticket (CUP) Access",
+      "Via di Boccea, 271 - 00168 Roma calcola il percorso Lista presidi Distretto 13 Consultorio Fam",
+      "Via Boccea Centro Salute Mentale Boccea Centro Salute Mentale Innocenzo IV Centro Diurno Valle"
+    ]
+  },
+  "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv": {
+    "url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/embed/v1/place?key=AIzaSyD6HF96FuVM86PhYLZeafYdxODzHQNJdjA&q=Via%20Innocenzo%20IV%2C%2016%2FB%20-%2000167%20Roma",
+      "https://www.google.com/maps/dir/My+Location/Via+Innocenzo+IV,+16/B+-+00167+Roma,+Italy"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/presidi-territoriali/centro-salute-mentale-innocenzo-iv",
+    "sha256": "c0b288221ec393a46ec440bc24c34736f557fa2f1cb7a0219a1d166c58995e2e",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Centro Salute Mentale Innocenzo IV",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "Via Innocenzo IV, 16/B - 00167 Roma Linea ATAC  916 METRO Linea A  fermata ‘Cornelia’ Orari Pr",
+      "Via Innocenzo IV, 16/B - 00167 Roma calcola il percorso Lista presidi Distretto 13 Consultorio",
+      "Via Boccea Centro Salute Mentale Boccea Centro Salute Mentale Innocenzo IV Centro Diurno Valle"
+    ]
+  },
+  "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b": {
+    "url": "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/embed/v1/place?key=AIzaSyD6HF96FuVM86PhYLZeafYdxODzHQNJdjA&q=Via%20Nomentana%2C%202%2FB%20-%2000161%20Roma",
+      "https://www.google.com/maps/dir/My+Location/Via+Nomentana,+2/B+-+00161+Roma,+Italy"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/presidi-territoriali/serd-nomentana-2b",
+    "sha256": "fe46558366db05add206e17096b71937feee1d2a5c061d9a7837f1fcd85a8e36",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Servizio Dipendenze Nomentana 2/B (SerD)",
+    "emails": [
+      "protocollo@pec.aslroma1.it",
+      "uosdip.est2@aslroma1.it"
+    ],
+    "address_fragments": [
+      "Via Nomentana, 2/B - 00161 Roma Linee ATAC 60, 66, 82, N66, N90 Metro B Orari Prenotazione Pag",
+      "Strada ( UdS ) e Unità Mobile di Terapia Farmacologica ( UMTF ) Orario Apertura Presidio Orari de",
+      "Strada ( UdS ) e Unità Mobile di Terapia Farmacologica ( UMTF )",
+      "via Nomentana 2/B ",
+      "via dei Frentani, 6 ",
+      "strada per tossicodipendenti, unità di strada giovani, sportelli sociali",
+      "Via Nomentana, 2/B - 00161 Roma calcola il percorso Lista presidi Distretto 2 Centro Vaccinale",
+      "Via Boemondo Centro Salute Mentale Sabrata Presidio Salute Mentale Via Boemondo Consultorio Fa",
+      "Via dei Frentani Centro Diurno Sabrata P",
+      "Via Boemondo Struttura Residenziale Terapeutico-Riabilitativa per trattamenti comunitari esten",
+      "Via Nomentana Servizio Dipendenze Via dei Frentani (SerD) Centro Diurno Forte Antenne Assisten",
+      "Via dei Frentani Consultorio Familiare Via Tagliamento Ambulatorio Sabrata P",
+      "Via degli Olimpionici Centro Diurno Sabrata Disturbi Comportamento Alimentare (DCA) Polo Est A"
+    ]
+  },
+  "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia": {
+    "url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/embed/v1/place?key=AIzaSyD6HF96FuVM86PhYLZeafYdxODzHQNJdjA&q=Via%20Cassia%2C%20472%20-%2000189%20Roma",
+      "https://www.google.com/maps/dir/My+Location/Via+Cassia,+472+-+00189+Roma,+Italy"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/presidi-territoriali/polo-integrato-salute-mentale-cassia",
+    "sha256": "4419fc90d8e95bec923090fae8de3d61244df793c4e35820ff405c3263ed35f4",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Polo Integrato Salute Mentale Cassia",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "via Cassia 472 integra il lavoro di più servizi del Dipartimento di Salute Mentale con l'obiet",
+      "Via Cassia, 472 - 00189 Roma Linea ATAC 201-223-226-301 Orari Prenotazione Pagamento Ticket (C",
+      "via Cassia 472 nei seguenti giorni e orari: martedì e giovedì dalle 8",
+      "Via Cassia, 472 - 00189 Roma calcola il percorso Lista presidi Distretto 15 Consultorio Famili",
+      "Via San Daniele del Friuli Centro Vaccinale Casa della Comunità Cesano Polo Integrato Salute M",
+      "via Antonino Di Giorgio Poliambulatorio Ministero Affari Esteri Centro Diurno Di Giorgio Grupp"
+    ]
+  },
+  "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/": {
+    "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 41.8554176,
+        "lng": 12.4451558,
+        "context": "Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558\">Via Portuense, 571 – 00148 – ROMA</a></p><p>Telefono <span id=\"ctl00_main_Telefono\">06 56485804</s"
+      },
+      {
+        "lat": 41.8619841,
+        "lng": 12.4552434,
+        "context": "Roma+RM/@41.8619841,12.4530547,17z/data=!3m1!4b1!4m5!3m4!1s0x13258abb559ddaab:0x2f031f8af0ae9c54!8m2!3d41.8619841!4d12.4552434\">Via Alessandro Brisse, 20 –  00149 – ROMA</a></p><p><strong>COME ARRIVARE</strong></p><p>IN AUTO: "
+      },
+      {
+        "lat": 41.850745,
+        "lng": 12.412992,
+        "context": "+Roma+RM/@41.850745,12.4104171,17z/data=!3m1!4b1!4m6!3m5!1s0x1325f51642cd6cd7:0x6599c2f9d0a0c6f2!8m2!3d41.850745!4d12.412992!16s%2Fg%2F11crwwz12d?entry=ttu\">Via Marino Mazzacurati, 23 – 00148 – ROMA</a></p><p><strong>COME AR"
+      }
+    ],
+    "links": [
+      "https://www.google.it/maps/place/Via+Portuense,+571,+00149+Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558",
+      "https://www.google.it/maps/place/Via+Alessandro+Brisse,+20,+00149+Roma+RM/@41.8619841,12.4530547,17z/data=!3m1!4b1!4m5!3m4!1s0x13258abb559ddaab:0x2f031f8af0ae9c54!8m2!3d41.8619841!4d12.4552434",
+      "https://www.google.it/maps/place/Via+Marino+Mazzacurati,+23,+00148+Roma+RM/@41.850745,12.4104171,17z/data=!3m1!4b1!4m6!3m5!1s0x1325f51642cd6cd7:0x6599c2f9d0a0c6f2!8m2!3d41.850745!4d12.412992!16s%2Fg%2F11crwwz12d?entry=ttu"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+    "sha256": "3c96b0925461066a9956d2a9c19285f339c7e9128849793ad1e111f6d8e24e09",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "UOC Salute Mentale Distretto Sanitario Municipio XI - Asl Roma 3",
+    "emails": [
+      "dsm.cdportuense@aslroma3.it",
+      "dsm.csmd3@aslroma3.it",
+      "dsm.uosport@aslroma3.it"
+    ],
+    "address_fragments": [
+      "Via Portuense, 571 – 00148 – ROMA Telefono 06 56485804 Funzioni Centro Diurno - \"Brisse\" - Mun",
+      "Via Alessandro Brisse, 20 –  00149 – ROMA COME ARRIVARE IN AUTO: via Portuense, via Vigna Jaco",
+      "via Brisse IN AUTOBUS: Stazione di Trastevere bus 786, 228, 719 IN TRENO: da Orte, da Viterbo,",
+      "Via Marino Mazzacurati, 23 – 00148 – ROMA COME ARRIVARE IN AUTO: da Via Casetta Mattei prender",
+      "Via Poggio Verde IN AUTOBUS: bus 786, 775, 98, 889 fermata Poggio Verde/Quadrelli CONTATTI Tel",
+      "Via Portuense, 571 – 00149 – ROMA COME ARRIVARE IN AUTO: da ple della Radio prendere via Portu",
+      "Largo La Loggia IN AUTOBUS: dalla St"
+    ]
+  },
+  "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale": {
+    "url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.07576099414168,
+        "lng": 11.813756488150585,
+        "context": "-addon-content\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.3700370047554!2d11.813756488150585!3d42.07576099414168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDA0JzMyLjciTiAxMcKwNDgnNTEuNSJF!"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.3700370047554!2d11.813756488150585!3d42.07576099414168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDA0JzMyLjciTiAxMcKwNDgnNTEuNSJF!5e0!3m2!1sit!2sus!4v1596199408265!5m2!1sit!2sus"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+    "sha256": "95bdf20a18df6188479d0bbbca741eded31076bd0e11611ac8899ce051c2a0b7",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Strutture di salute mentale - ASL ROMA 4",
+    "emails": [
+      "carola.celozzi@aslroma4.it",
+      "cdr.f2@aslroma4.it",
+      "centrodiurno.f1@aslroma4.it",
+      "centrodiurno.f3@aslroma4.it",
+      "centrodiurno1@aslroma4.it",
+      "centrodiurno2@aslroma4.it",
+      "centrodiurno3@aslroma4.it",
+      "centrodiurno4@aslroma4.it",
+      "csm.bracciano@aslroma4.it",
+      "csm.f1@aslroma4.it",
+      "csm.f4@aslroma4.it",
+      "csm.ladispoli@aslroma4.it",
+      "ctr@aslroma4.it",
+      "protocollo@pec.aslroma4.it"
+    ],
+    "address_fragments": [
+      "Via delle Azalee,  traversa V",
+      "Via delle Azalee, traversa V",
+      "Via Berna, 6 (zona Cerreto) Responsabile: Umberto Lombardi csm",
+      "Via Trento, 18 Responsabile: Dott",
+      "Via Roncacci, 78 Responsabile: Dott",
+      "Via Toscana, 25 Referente: Dott",
+      "Viale Mediterraneo, 35 Referente: Dott",
+      "Via Trento, 18 Referente: Dott",
+      "Via Fra Giovanni n",
+      "Via Terme di Traiano, 39/A 00053 - Civitavecchia (RM) Centralino Tel: 06/96669100 PEC: protoco"
+    ]
+  },
+  "https://www.aslroma4.it/strutture-sanitarie/ser-d-servizio-per-le-dipendenze": {
+    "url": "https://www.aslroma4.it/strutture-sanitarie/ser-d-servizio-per-le-dipendenze",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma4.it/strutture-sanitarie/ser-d-servizio-per-le-dipendenze",
+    "sha256": "61fe3532e5c87f3b81bc56e46027e51c2d9c95192e0a301fed43fb4dae398513",
+    "content_type": "text/html; charset=utf-8",
+    "title": "SER.D. (Servizio per le Dipendenze) - ASL ROMA 4",
+    "emails": [
+      "protocollo@pec.aslroma4.it",
+      "sert.bracciano@aslroma4.it",
+      "sert.f4@aslroma4.it",
+      "sertf1@aslroma4.it"
+    ],
+    "address_fragments": [
+      "Viale Mario Villotti  s",
+      "Via Santa Lucia, 00062 Bracciano Responsabile Dr",
+      "Via Tiberina km",
+      "Via Terme di Traiano, 39/A 00053 - Civitavecchia (RM) Centralino Tel: 06/96669100 PEC: protoco"
+    ]
+  },
+  "https://www.aslroma5.it/gioco-dazzardo-e-altre-dipendenze-comportamentali/": {
+    "url": "https://www.aslroma5.it/gioco-dazzardo-e-altre-dipendenze-comportamentali/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma5.it/gioco-dazzardo-e-altre-dipendenze-comportamentali/",
+    "sha256": "2e3ce350d5c6d8f48cebc39509800ee449651d920884b8d39e9c1b50561de440",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Gioco d'azzardo e altre dipendenze comportamentali - ASL ROMA 5",
+    "emails": [
+      "francesca.costantini@aslroma5.it",
+      "giocodazzardosos@aslroma5.it",
+      "serd.monterotondo@aslroma5.it",
+      "serd.palestrina@aslroma5.it"
+    ],
+    "address_fragments": [
+      "Via di Porta San Martino 46 – 00036 Palestrina (RM) Dal 17 giugno 2024 con frequenza bisettima"
+    ]
+  },
+  "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/": {
+    "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://maps.app.goo.gl/TaLpFi7K3ctU6jS69"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/",
+    "sha256": "553725f1f44f874e07a62fc6d50fab4be413ab416b9e3f7702040c249fd9543b",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Servizio per le Dipendenze Patologiche Colleferro - ASL ROMA 5",
+    "emails": [
+      "carlos.cecchetti@aslroma5.it",
+      "cristiana.sarno@aslroma5.it",
+      "dipendenzepatologiche@pec.aslroma5.it",
+      "paola.coppolino@aslroma5.it",
+      "serd.colleferro@aslroma5.it"
+    ],
+    "address_fragments": [
+      "Largo Oberdan snc – 00034 Colleferro (RM) Ingresso su Via Santo Stefano E-mail : serd",
+      "via e-mail"
+    ]
+  },
+  "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/": {
+    "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://maps.app.goo.gl/fGGJKta9zNG8NqHt5"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/",
+    "sha256": "0a0ae188bb614a9fc8344f21df394b954030a94a5ab78af8f68549f23b1e5bc0",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Servizio per le Dipendenze Patologiche Subiaco - ASL ROMA 5",
+    "emails": [
+      "dipendenzepatologiche@pec.aslroma5.it",
+      "serd.subiaco@aslroma5.it"
+    ],
+    "address_fragments": [
+      "Contrada Colle Cisterna snc – 00028 Subiaco (RM) Tel : 0774 811 52 19/ 18 E-mail : serd",
+      "via telefonica o in sede"
+    ]
+  },
+  "https://conteinrete.it/vademecum/": {
+    "url": "https://conteinrete.it/vademecum/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://conteinrete.it/vademecum/",
+    "sha256": "7d710936546d39e59aafeadf98fb8d732216c8958b0d6a116681384fbbc03189",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Vademecum - Con Te in Rete",
+    "emails": [
+      "93272319dea.ph3@aslroma6.it",
+      "ar_querini@comune.roccadipapa.rm.it",
+      "assistentesociale@comune.frascati.rm.it",
+      "cadd.valmontone@libero.it",
+      "canali@comune.colleferro.rm.it",
+      "cav.mariellefranco@gmail.com",
+      "comune.artena@pec.it",
+      "comune.colleferro@legalmail.it",
+      "comune.monteporziocatone@legalmail.it",
+      "comune.roccapriora@pec.it",
+      "comune.segni@pec.it",
+      "comune@gorga.rm.gov.it",
+      "comunedinemi@pec.it",
+      "comunegavignano@interfreepec.it",
+      "comunegorga@pec.it"
+    ],
+    "address_fragments": [
+      "Via Matteotti, 59 – tel",
+      "Via Malpasso D'acqua, 2 - Casa della Salute - tel",
+      "Via Enrico Fermi, 2 – tel",
+      "Via Gregoriana, 27 – tel",
+      "Piazza Vittorio Emanuele II, 5 - tel",
+      "Piazza Guglielmo Marconi, 3 - tel",
+      "Piazza del Mercato, 1 – tel",
+      "Via Roma, 5 - tel",
+      "Viale Enrico Ferri, 67 – tel",
+      "Viale degli Olmi, 16 – tel",
+      "Piazza Vittorio Emanuele II, 5 – tel",
+      "Via Angelo Celli, 23 A1 – tel",
+      "Via XX Settembre, 20 – tel",
+      "Via Giovanni Felice, 16 – tel",
+      "Via Roma, 9 – tel",
+      "Via Leonida Montanari, 2 – tel",
+      "Via degli Olmi, 16 – tel",
+      "Via Malpasso d’acqua - Rocca Priora - tel",
+      "Via Fratelli Laracca - angolo Via Artemisia Mammuccari - Velletri piano 1 stanza 3 – tel",
+      "Viale XXIV Maggio, 2 – tel",
+      "Viale del Lavoro, 69 – Ciampino – tel",
+      "Via Mario Calò 5 – tel",
+      "Largo Felice Armati, 1 Palazzina B piano terra tel",
+      "Largo Palazzo Colonna, 1 – tel",
+      "Via Mura dei Francesi 203 c/o Parco Aldo Moro – tel",
+      "Piazza della Repubblica, 1 – tel",
+      "Via Nettunense Ariccia PRONTO SOCCORSO tel",
+      "Via Gallerie di Sotto, 6 - tel",
+      "Via Bologna, 7 – tel",
+      "Via delle Cerquette, 2  c/o Osp"
+    ]
+  },
+  "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale": {
+    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-d"
+  },
+  "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1": {
+    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uosd-csm/csm-distretto-1",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-d"
+  },
+  "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2": {
+    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/csm-distretto-2",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-d"
+  },
+  "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze": {
+    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale/uos-attivita-terapeutico-riabilitative-per-i-disturbi-da-uso-di-sostanze-e-nuove-dipendenze",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-d"
+  },
+  "https://www.asl.rieti.it/guida-ai-servizi/disturbo-da-gioco-dazzardo": {
+    "url": "https://www.asl.rieti.it/guida-ai-servizi/disturbo-da-gioco-dazzardo",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /guida-ai-servizi/disturbo-da-gioco-dazzardo (Caused by ConnectTimeoutErr"
+  },
+  "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-tutela-e-promozione-della-salute-mentale/uoc-patologia-da-dipendenza/alcologia-e-patologie-correlate/": {
+    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-tutela-e-promozione-della-salute-mentale/uoc-patologia-da-dipendenza/alcologia-e-patologie-correlate/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-tutela-e"
+  },
+  "https://asl.vt.it/index.php/dsm-dipartimento-di-salute-mentale": {
+    "url": "https://asl.vt.it/index.php/dsm-dipartimento-di-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://asl.vt.it/index.php/dsm-dipartimento-di-salute-mentale",
+    "sha256": "55dd8e39c2582a619a576a0e1fd3c0ba8065c7a2e01070d80a8fe97121680d9e",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "DSM - Dipartimento di Salute Mentale ASL Viterbo - ASL VITERBO",
+    "emails": [
+      "cristiana.morera@asl.vt.it",
+      "prot.gen.asl.vt.it@legalmail.it"
+    ],
+    "address_fragments": []
+  },
+  "https://asl.vt.it/csm-centro-di-salute-mentale": {
+    "url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.74116391894057,
+        "lng": 11.866071315733052,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20P"
+      },
+      {
+        "lat": 42.62579442627041,
+        "lng": 12.098751865730408,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20"
+      },
+      {
+        "lat": 42.47200633601667,
+        "lng": 11.757058415726958,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20B"
+      },
+      {
+        "lat": 42.34570357744176,
+        "lng": 11.597522232637566,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20"
+      },
+      {
+        "lat": 42.54339983149566,
+        "lng": 12.029380015728618,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20A"
+      },
+      {
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "lat": 42.41683593151219,
+        "lng": 11.872833476480455,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%"
+      },
+      {
+        "lat": 42.56827122991929,
+        "lng": 11.817922215729153,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20d"
+      },
+      {
+        "lat": 42.4603183,
+        "lng": 12.3843114,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e"
+      },
+      {
+        "lat": 42.41998629849533,
+        "lng": 12.23387044906512,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedal"
+      },
+      {
+        "lat": 42.409663939959806,
+        "lng": 12.106888715725605,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20E"
+      },
+      {
+        "lat": 42.25634616134696,
+        "lng": 12.185057149504,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      },
+      {
+        "lat": 42.334274344721806,
+        "lng": 12.294401715723888,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%"
+      },
+      {
+        "lat": 42.24101875089952,
+        "lng": 12.34231065473724,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20V"
+      },
+      {
+        "lat": 42.292493347358,
+        "lng": 12.210283315722934,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedal"
+      },
+      {
+        "lat": 42.30582732055544,
+        "lng": 12.079007267782329,
+        "context": "ht=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20G"
+      },
+      {
+        "lat": 42.37956147627038,
+        "lng": 12.27773970058497,
+        "context": "t=\"150\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20D"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.2310355824693!2d11.866071315733052!3d42.74116391894057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13293a8d64719ef9%3A0x2fd3d5fc1435a47c!2sVia%20Palmiro%20Togliatti%2C%2014%2C%2001021%20Acquapendente%20VT!5e0!3m2!1sit!2sit!4v1678288641313!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6775368737226!2d12.098751865730408!3d42.62579442627041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ed3b4044a3049%3A0x9b75bb2afd86aed2!2sCasa%20della%20salute-Bagnoregio!5e0!3m2!1sit!2sit!4v1678288793769!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.919237445163!2d11.757058415726958!3d42.47200633601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dc362039d715%3A0x9399e85424afaafa!2sVia%20Bachelet%2C%2001011%20Canino%20VT!5e0!3m2!1sit!2sit!4v1678288906807!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.850831579953!2d11.597522232637566!3d42.34570357744176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328ec157568f84f%3A0x2cedea9b5450b93d!2sCasa%20di%20Riposo%20Villa%20Ilvana!5e0!3m2!1sit!2sit!4v1678290252586!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5600351164926!2d12.029380015728618!3d42.54339983149566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13292a8162da856b%3A0x5eccb9c369465fa4!2sVia%20Alighieri%2C%20100%2C%2001027%20Montefiascone%20VT!5e0!3m2!1sit!2sit!4v1678291711254!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20suor%20Serafina%20Giudici%2C%2001016%20Tarquinia%20VT!5e0!3m2!1sit!2sit!4v1678346595227!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.511982354455!2d11.872833476480455!3d42.41683593151219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328dabc8f905743%3A0x388bbd8b80635b8e!2sPiazza%20Franco%20Basile%2C%2001017%20Tuscania%20VT!5e0!3m2!1sit!2sit!4v1744804582293!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.388715400029!2d11.817922215729153!3d42.56827122991929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1329275df2405533%3A0xbfac0c647e657f33!2sVia%20delle%20Mura%2C%2028%2C%2001018%20Valentano%20VT!5e0!3m2!1sit!2sit!4v1678347216678!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11773.874988280797!2d12.3843114!3d42.4603183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2103a52e9e51%3A0x7237cfec56b9bda9!2sOspedale%20di%20Orte!5e0!3m2!1sit!2sit!4v1678357423259!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3640036863508!2d12.23387044906512!3d42.41998629849533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2f6aef133c6f%3A0x23da148e91a8972f!2sOspedale!5e0!3m2!1sit!2sit!4v1678348078203!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.8488310862817!2d12.106888715725605!3d42.409663939959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d045fdc6023%3A0x3ede52c2c689d2dd!2sVia%20Enrico%20Fermi%2C%2015%2C%2001100%20Viterbo%20VT!5e0!3m2!1sit!2sit!4v1678272100015!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1476.5193485256668!2d12.185057149504!3d42.25634616134696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678349637617!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittadella%20della%20salute!5e0!3m2!1sit!2sit!4v1678269354885!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3868794607856!2d12.294401715723888!3d42.334274344721806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3ae117462dbf%3A0x9a07f96834f164a1!2sVicolo%20della%20Pace%2C%202%2C%2001034%20Fabrica%20di%20Roma%20VT!5e0!3m2!1sit!2sit!4v1678350158003!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7563170688845!2d12.34231065473724!3d42.24101875089952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f392c60be51c1%3A0x200f243f9bb58f72!2sASL%20VT5!5e0!3m2!1sit!2sit!4v1678350432285!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.3454710439237!2d12.210283315722934!3d42.292493347358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f30d41e5121d1%3A0x6f175bce63ab56b9!2sOspedale%20Ronciglione!5e0!3m2!1sit!2sit!4v1678350632574!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.720577253348!2d12.079007267782329!3d42.30582732055544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f33571b24343f%3A0xbbca189593990c99!2sVia%20Gilberto%20Pietrella%2C%205%2C%2001019%20Vetralla%20VT!5e0!3m2!1sit!2sit!4v1678351585949!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.6310787851853!2d12.27773970058497!3d42.37956147627038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f25152f899691%3A0xb27a1288ac603fc6!2sVia%20Donatori%20di%20Sangue%2C%2001039%20Vignanello%20VT!5e0!3m2!1sit!2sit!4v1678351985663!5m2!1sit!2sit"
+    ],
+    "status": 200,
+    "final_url": "https://asl.vt.it/csm-centro-di-salute-mentale",
+    "sha256": "419541af1b6769641a3a1ab73b3fd4d68292135ad7122bbddd368e2f439b8fb8",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "ASL Viterbo - CSM - Centro di Salute Mentale - ASL VITERBO",
+    "emails": [
+      "antonio.bisogno@asl.vt.it",
+      "cristiana.morera@asl.vt.it",
+      "francesco.cro@asl.vt.it",
+      "prot.gen.asl.vt.it@legalmail.it"
+    ],
+    "address_fragments": [
+      "via Palmiro Togliatti, 14, 01021 Acquapendente VT 0763711205 mercoledì e venerdì dalle 9",
+      "via Fratelli Agosti, 6, 01022 Bagnoregio VT 07611860426 lunedì e venerdì dalle 9",
+      "Via Bachelet, 01011 Canino VT 0761338594 giovedì dalle 9",
+      "Via della Stazione, 1, 01014 Montalto di Castro VT 0766846502 mercoledì e venerdì dalla 9",
+      "via Dante Alighieri, 100 Tel",
+      "via Suor Serafina Giudici Tel",
+      "via delle Mura Castellane, 28 Tel",
+      "via Innocenzo VIII Tel",
+      "strada Cassia Km",
+      "via Francesco Petrarca, snc Tel",
+      "via Tre Portoni, 2 Tel",
+      "via Ospedale di S",
+      "via Gilberto Pietrella 5 Tel",
+      "via Donatori di Sangue snc Tel"
+    ]
+  },
+  "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo": {
+    "url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.53986183171972,
+        "lng": 12.031310815728444,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.7266123913732!2d12.031310815728444!3d42.53986183171972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328d57df99ac599%3A0x9569a549b29535df!2sVia%20d"
+      },
+      {
+        "lat": 42.249658733812225,
+        "lng": 11.756580331926973,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.7563630605374!2d11.756580331926973!3d42.249658733812225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a14eb68fd%3A0x60230d63db2fa2e4!2sOspedal"
+      },
+      {
+        "lat": 42.41125413985927,
+        "lng": 12.108014615725626,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.774147749841!2d12.108014615725626!3d42.41125413985927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d038afc209f%3A0xdef649a8fd290e57!2sVia%20M"
+      },
+      {
+        "lat": 42.41838193940865,
+        "lng": 12.098737215725782,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.4393645657537!2d12.098737215725782!3d42.41838193940865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2ce2259b50f9%3A0x92d43e0af6434469!2sVia%20S"
+      },
+      {
+        "lat": 42.30201766264147,
+        "lng": 12.412016256284447,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittade"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.7266123913732!2d12.031310815728444!3d42.53986183171972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328d57df99ac599%3A0x9569a549b29535df!2sVia%20della%20Croce%2C%2011%2C%2001027%20Montefiascone%20VT!5e0!3m2!1sit!2sit!4v1678268933600!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.7563630605374!2d11.756580331926973!3d42.249658733812225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a14eb68fd%3A0x60230d63db2fa2e4!2sOspedale%20di%20Tarquinia!5e0!3m2!1sit!2sit!4v1678269053150!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.774147749841!2d12.108014615725626!3d42.41125413985927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d038afc209f%3A0xdef649a8fd290e57!2sVia%20Mariano%20Romiti%2C%2086%2C%2001100%20Viterbo%20VT!5e0!3m2!1sit!2sit!4v1678269136061!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.4393645657537!2d12.098737215725782!3d42.41838193940865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2ce2259b50f9%3A0x92d43e0af6434469!2sVia%20S.%20Giovanni%20Decollato%2C%204%2C%2001100%20Viterbo%20VT!5e0!3m2!1sit!2sit!4v1678269232806!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.4761633961677!2d12.412016256284447!3d42.30201766264147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da1c4469a39%3A0xce87264042cdc4d4!2sCittadella%20della%20salute!5e0!3m2!1sit!2sit!4v1678269354885!5m2!1sit!2sit"
+    ],
+    "status": 200,
+    "final_url": "https://asl.vt.it/droga-alcol-fumo-e-gioco-d-azzardo",
+    "sha256": "3895fa743ae74c28c741c722583df42452a4d510c154eb79bd3db5b8fc62f092",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "ASL Viterbo - Droga, Alcol, Fumo e Gioco d'azzardo - ASL VITERBO",
+    "emails": [
+      "alberta.marino@asl.vt.it",
+      "alessandra.antognoli@asl.vt.it",
+      "angela.lagrutta@asl.vt.it",
+      "asl@asl.vt.it",
+      "direzione.serd@asl.vt.it",
+      "felicetta.belitto@asl.vt.it",
+      "franco.mazza@asl.vt.it",
+      "gelsa.cordovani@asl.vt.it",
+      "maria.derosi@asl.vt.it",
+      "prot.gen.asl.vt.it@legalmail.it",
+      "serd.viterbo@asl.vt.it",
+      "sergio.belsanti@asl.vt.it"
+    ],
+    "address_fragments": [
+      "via della Croce, 11, 01027 Montefiascone VT Email: asl@asl",
+      "Viale Igea, 1, 01016 Tarquinia VT sergio",
+      "Via San Giovanni Decollato, 4, 01100 VT maria",
+      "Via Francesco Petrarca Snc, 01033 Civita Castellana VT alessandra"
+    ]
+  },
+  "https://mentiattive.aslfrosinone.it/il-progetto/": {
+    "url": "https://mentiattive.aslfrosinone.it/il-progetto/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://mentiattive.aslfrosinone.it/il-progetto/",
+    "sha256": "3071b471218487db2d9544aa095d134d8c3cdbf67fb87885cd74b11ab21f3b46",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Il Progetto – Mentiattive",
+    "emails": [
+      "mentiattive.dsmpd@aslfrosinone.it",
+      "mentiattive@aslfrosinone.it"
+    ],
+    "address_fragments": [
+      "strada e prossimità, domiciliari, residenziali e semiresidenziali, ospedalieri"
+    ]
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-salute-mentale-frosinone-alatri-anagni-sora/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/uos-serd-ceccano/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm": {
+    "url": "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm",
+    "sha256": "6bee75dc30b8c24674cff7a0404445868763d18374990ab83bea4d6f10ba9842",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Dipartimento di Salute Mentale",
+    "emails": [
+      "centrodiurno@ausl.latina.it",
+      "centrodiurnolatina@ausl.latina.it",
+      "centrodiurnoterracina@ausl.latina.it",
+      "comunitasantafecitola@ausl.latina.it",
+      "csm.aprilia@ausl.latina.it",
+      "csm.cisterna@ausl.latina.it",
+      "csm.fondi@ausl.latina.it",
+      "csm.fonditerracina@ausl.latina.it",
+      "csm.formiagaeta@ausl.latina.it",
+      "csm.latina@ausl.latina.it",
+      "csm.sabaudia@ausl.latina.it",
+      "csm.terracina@ausl.latina.it",
+      "dipartimentoareasalutementale@ausl.latina.it",
+      "dipsalutementale@pec.ausl.latina.it",
+      "priverno@ausl.latina.it"
+    ],
+    "address_fragments": [
+      "Viale Le Corbusier - Scala C Tel",
+      "Viale Conte Verde, presso Poliambulatorio (ore 8",
+      "Via Lavagna n",
+      "Via Giustiniano 06/928634053 sertapriliacisterna@ausl",
+      "Via Guido Reni 22 c/o Ospedale S",
+      "Via Torretta Rocchigiana 0773/910818 sert",
+      "Via Fratelli Bandiera, 15 0773/708215 serd",
+      "Via Appia Lato Napoli 0771/779394 sertformia@ausl",
+      "via Giustiniano snc c/o “Casa della Salute” 06/928634051 csm",
+      "via degli Oleandri,94 06/928634382 centrodiurnolatina@ausl",
+      "via Conte Verde, 10 0773/520891 Fax 0773/520890 csm",
+      "Via Alfieri, 34 0773/6556670-3 centrodiurno@ausl",
+      "Via Tor Tre Ponti - Latina 0773/6556756-52 Fax 0773/6556753 comunitasantafecitola@ausl",
+      "Via Torretta Rocchigiana, snc 0773/856833 csm",
+      "Via Don Orione, 8 0773/708931 csm",
+      "Via San Magno, 4 ex Poliambulatori 0771/505290 csm",
+      "via Don Orione, 8 0773/708935-6 centrodiurnoterracina@ausl",
+      "Via Fontana di Voza - Minturno 0771/6612323 srtrmarica1@ausl"
+    ]
+  },
+  "https://www.aslroma1.it/servizi-tsmree-tutela-salute-mentale-e-riabilitazione-dell-eta-evolutiva": {
+    "url": "https://www.aslroma1.it/servizi-tsmree-tutela-salute-mentale-e-riabilitazione-dell-eta-evolutiva",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/servizi-tsmree-tutela-salute-mentale-e-riabilitazione-dell-eta-evolutiva",
+    "sha256": "1551cc972bdefa68b697635609772dfeba154b9d36abd2a95815f82d5fd159ae",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Servizio Tutela Salute Mentale e Riabilitazione dell'Età Evolutiva (TSMREE)",
+    "emails": [
+      "protocollo@pec.aslroma1.it",
+      "tsmree.direzione@aslroma1.it",
+      "tsmree@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "Piazza di Santa Maria della Pietà, 5 (Padiglione 26) Tel",
+      "piazza Castellani, 23 Centro Diurno Terapeutico Adolescenti e HUB Adolescenza , via dei Cappellar",
+      "via Tripoli, 39 Distretto 3 TSMREE \"Dina Galli\" , via Dina Galli, 8 Distretto 13 TSMREE \"Caton",
+      "via Catone, 30 Distretto 14 TSMREE \"Santa Maria della Pietà\" , Piazza di Santa Maria della Pie",
+      "via Cassia, 472 Ultimo aggiornamento:"
+    ]
+  },
+  "https://www.aslroma2.it/index.php/organizzazione/dipartimenti/dip-di-salute-mentale": {
+    "url": "https://www.aslroma2.it/index.php/organizzazione/dipartimenti/dip-di-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/d/u/2/viewer?mid=1lhSoVfp3qiaCERyp2lONPFl8vdMEExL3&ll=41.862438290949875%2C12.521068602793418&z=11"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma2.it/index.php/organizzazione/dipartimenti/dip-di-salute-mentale",
+    "sha256": "bf2847ab59bf1370ff44f12d04692e3e6a65ace0f3b1329d22ccd0a263348b86",
+    "content_type": "text/html; charset=utf-8",
+    "title": "ASL Roma 2 - Dip. di Salute Mentale",
+    "emails": [],
+    "address_fragments": [
+      "Via Monza 2 Collabora con il Direttore per le attività della Direzione del Dipartimento e svol",
+      "Via Monza 2 Ha la funzione di raccogliere materiale documentale e normativo, sulle esperienze "
+    ]
+  },
+  "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/": {
+    "url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://maps.app.goo.gl/EpWCavzsc23zaxyLA",
+      "https://maps.app.goo.gl/NdAG6knZhetVTo576"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/",
+    "sha256": "6fedb5f7584c20c526b710eb5c82dfa81db31164da13e671a16406023a819489",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "NPIA di Subiaco e Olevano Romano - ASL ROMA 5",
+    "emails": [
+      "angela.santese@aslroma5.it",
+      "assunta.pizzuti@aslroma5.it",
+      "camilla.pierattini@aslroma5.it",
+      "eleonora.fabrizi@aslroma5.it",
+      "fabrizia.panzini@aslroma5.it",
+      "francesca.petrini@aslroma5.it",
+      "gianluca.pruneddu@aslroma5.it",
+      "mariella.dapote@aslroma5.it",
+      "rossella.perazzoni@aslroma5.it",
+      "tsmree.subiaco@aslroma5.it",
+      "veronica.amoroso@aslroma5.it"
+    ],
+    "address_fragments": [
+      "Largo Giuseppe Mazzini snc – 00028 Subiaco (RM) Tel: 0774 824 140/ 41/ 42/ 36 Sede di Olevano Ro",
+      "Piazzale San Francesco D’Assisi 103 – 00035 Olevano Romano (RM) Tel: 0774 811 53 73/ 74/ 82 E-mail "
+    ]
+  },
+  "https://regione.lazio.it/urp/sintesi-concorsi-bur/sintesi-del-bollettino-ufficiale-n-106-del-27122022": {
+    "url": "https://regione.lazio.it/urp/sintesi-concorsi-bur/sintesi-del-bollettino-ufficiale-n-106-del-27122022",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 403,
+    "final_url": "https://regione.lazio.it/urp/sintesi-concorsi-bur/sintesi-del-bollettino-ufficiale-n-106-del-27122022",
+    "sha256": "39bba9c86e35dc7f720469b9f436199c2595330bcf0a84ec3f68ca4be706d015",
+    "content_type": "text/html"
+  },
+  "https://www.asl.rieti.it/": {
+    "url": "https://www.asl.rieti.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection obje"
+  },
+  "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna": {
+    "url": "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.asl.vt.it/ambulatorio-disturbi-della-nutrizione-e-dell-alimentazione-dna",
+    "sha256": "d95910310a4d806f697bd92f456c40de51c171299471c1f550605a8311e5257d",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "AslViterbo: Disturbi della nutrizione e dell’alimentazione (Dna) - ASL VITERBO",
+    "emails": [
+      "amb.disturbialimentari@asl.vt.it",
+      "prot.gen.asl.vt.it@legalmail.it"
+    ],
+    "address_fragments": [
+      "via Enrico Fermi 15, 2° piano"
+    ]
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/": {
+    "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 41.8554176,
+        "lng": 12.4451558,
+        "context": "Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558\">Via Portuense, 571 – 00148 – ROMA</a></p><p>Telefono <span id=\"ctl00_main_Telefono\">06 56485804</s"
+      },
+      {
+        "lat": 41.8354881,
+        "lng": 12.4293964,
+        "context": "Roma+RM/@41.8354881,12.4272077,17z/data=!3m1!4b1!4m5!3m4!1s0x1325f4d7d53ad303:0x9280f6fa56690539!8m2!3d41.8354881!4d12.4293964\" data-wplink-url-error=\"true\">via Crescenzo dal Monte 13 – 00153 – ROMA</a></p><p><strong>CONTATTI<"
+      }
+    ],
+    "links": [
+      "https://www.google.it/maps/place/Via+Portuense,+571,+00149+Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558",
+      "http://via Crescenzo dal Monte 1300153 - ROMAhttps://www.google.it/maps/place/Via+delle+Catacombe+di+Generosa,+5,+00148+Roma+RM/@41.8354881,12.4272077,17z/data=!3m1!4b1!4m5!3m4!1s0x1325f4d7d53ad303:0x9280f6fa56690539!8m2!3d41.8354881!4d12.4293964",
+      "https://www.google.it/maps/place/Via+delle+Catacombe+di+Generosa,+5,+00148+Roma+RM/@41.8354881,12.4272077,17z/data=!3m1!4b1!4m5!3m4!1s0x1325f4d7d53ad303:0x9280f6fa56690539!8m2!3d41.8354881!4d12.4293964"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xii/",
+    "sha256": "0c2bfead419b4789060d6167cc5b57210a2d525e9535c5340b744032d3b83bc0",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "UOC Salute Mentale Distretto Sanitario Municipio XII - Asl Roma 3",
+    "emails": [
+      "dsm.cdbottazzi@asroma3.it",
+      "dsm.cdgiovagnoli@aslroma3.it"
+    ],
+    "address_fragments": [
+      "Via Portuense, 571 – 00148 – ROMA Telefono 06 56485804 Funzioni Centro Diurno Monteverde - Mun",
+      "via Crescenzo dal Monte 13 – 00153 – ROMA CONTATTI Telefono 0656486501 -0656486505 Email: dsm",
+      "Via Arturo Colautti 28  00152 Roma COME ARRIVARE IN AUTO: Stazione di Trastevere, Circonvallaz",
+      "Via Raffaello Giovagnoli, 28 – 00152 – ROMA COME ARRIVARE IN AUTO: Stazione di Trastevere, cir"
+    ]
+  },
+  "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-xi-e-xii-municipio/": {
+    "url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-xi-e-xii-municipio/",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 41.8554176,
+        "lng": 12.4451558,
+        "context": "Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558\">Via Portuense, 571 – 00148 – ROMA</a></p><p>Telefono <span id=\"ctl00_main_Telefono\">06 56485804</s"
+      }
+    ],
+    "links": [
+      "https://www.google.it/maps/place/Via+Portuense,+571,+00149+Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-xi-e-xii-municipio/",
+    "sha256": "a32c6ef22e671a07f33145980ef9e413564f465dca32a1f4eb15ca1d1a35e182",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "UOC Salute Mentale Distretto Sanitario Municipio XI e XII - Asl Roma 3",
+    "emails": [],
+    "address_fragments": [
+      "Via Portuense, 571 – 00148 – ROMA Telefono 06 56485804 UOS Centro di Salute Mentale XI Municip"
+    ]
+  },
+  "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-salute-mentale": {
+    "url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.096103959619576,
+        "lng": 12.170582451332661,
+        "context": "-addon-content\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.530685209377!2d12.170582451332661!3d42.096103959619576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f4c7ca6752609%3A0xf745e152621597cf!2sOspedal"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.530685209377!2d12.170582451332661!3d42.096103959619576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f4c7ca6752609%3A0xf745e152621597cf!2sOspedale%20San%20Padre%20Pio%20Da%20Petralcina!5e0!3m2!1sit!2sus!4v1596199956282!5m2!1sit!2sus"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-salute-mentale",
+    "sha256": "68626d29ae53ab99a79018c1af95918f5d56de13154c79533b6820dcb1508942",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Dipartimento di Salute Mentale - ASL ROMA 4",
+    "emails": [
+      "carlo.cheli@aslroma4.it",
+      "carola.celozzi@aslroma4.it",
+      "ctr@aslroma4.it",
+      "direzione.dsm@aslroma4.it",
+      "epidsm@aslroma4.it",
+      "protocollo@pec.aslroma4.it"
+    ],
+    "address_fragments": [
+      "Largo dell'Ospedale Vecchio, 8 (piano 1)  - 00062 Bracciano Segreteria: Telefono: 06 998 906 32 ",
+      "via delle Azalee, traversa V",
+      "Via Fra’ Giovanni, 38 - Bracciano Telefono: 0699890300 Email: ctr@aslroma4",
+      "Via della Azalee, Traversa Viale Bianconi - 00053 Civitavecchia (RM) Telefono 0696669820 E-mai",
+      "Largo Dell'Ospedale Vecchio n",
+      "Via Terme di Traiano, 39/A 00053 - Civitavecchia (RM) Centralino Tel: 06/96669100 PEC: protoco"
+    ]
+  },
+  "https://www.aslroma1.it/presidi-territoriali/Distretto%202/lista_presidi": {
+    "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%202/lista_presidi",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/presidi-territoriali/Distretto%202/lista_presidi",
+    "sha256": "5ef3bfa0db2b205f527d957786b3767f6b8d4207867892b584fc2b56bb8d13fd",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Lista presidi Distretto 2",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "Via Sabrata, 12 - 00198 Roma Ambulatorio Sabrata P",
+      "Via Sabrata, 12 - 00198 Roma Assistenza Disabili Adulti Via dei Frentani Via dei Frentani, 6 -",
+      "Via del Forte Antenne - 00199 Roma Centro Diurno Sabrata Disturbi Comportamento Alimentare (DC",
+      "Via Sabrata, 12 - 00198 Roma Centro Diurno Sabrata P",
+      "Via Sabrata, 12 - 00198 Roma Centro Diurno Via Boemondo Via Boemondo, 21 - 00162 Roma Centro R",
+      "Piazzale Porta Pia 121, primo piano Centro Salute Mentale Sabrata Via Sabrata, 12 - 00198 Roma Cent",
+      "Via Boemondo Via Boemondo, 21 -  00162 Roma Centro Vaccinale Via degli Olimpionici Via degli O",
+      "Via dei Frentani Via dei Frentani, 6 - 00185 Roma Consultorio Familiare Via Tagliamento Via Ta",
+      "Via Turchia, 7 - 00196 Roma Presidio Salute Mentale Via Boemondo Via Boemondo, 21 - 00162 Roma",
+      "Via Nomentana, 2/B - 00161 Roma Servizio Dipendenze Via dei Frentani (SerD) Via dei Frentani, ",
+      "Via Tripoli, 39 - 00199 Roma Struttura Residenziale Socio-Riabilitativa (SRSR) Via Nomentana V",
+      "Via Sabrata, 12 - 00198 Roma Ultimo aggiornamento:"
+    ]
+  },
+  "https://www.aslroma1.it/": {
+    "url": "https://www.aslroma1.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/",
+    "sha256": "b7fa281a44def26b4640509a2a7303f05fb2b3c285ba1e3a962c8e3df8c744a4",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "ASL Roma 1",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "piazza del Popolo la prevenzione diventa un gioco: arriva il Festival dei Cinque Colori leggi Pub",
+      "Piazza del Popolo leggi Pubblicata Il"
+    ]
+  },
+  "https://www.aslroma5.it/amministrazione-trasparente/organigramma-dipartimento-di-prevenzione-e-dsmdp-2025/": {
+    "url": "https://www.aslroma5.it/amministrazione-trasparente/organigramma-dipartimento-di-prevenzione-e-dsmdp-2025/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma5.it/amministrazione-trasparente/organigramma-dipartimento-di-prevenzione-e-dsmdp-2025/",
+    "sha256": "c85f45dfb1ba152cbe09ad5a4d37af82c968c91f25ffeb49760da9445781bf4d",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Organigramma Dipartimento di Prevenzione e DSM-DP - ASL ROMA 5",
+    "emails": [],
+    "address_fragments": []
+  },
+  "https://www.regione.lazio.it/notizie/sanita-inaugurata-la-casa-della-comunita-di-pomezia": {
+    "url": "https://www.regione.lazio.it/notizie/sanita-inaugurata-la-casa-della-comunita-di-pomezia",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 403,
+    "final_url": "https://www.regione.lazio.it/notizie/sanita-inaugurata-la-casa-della-comunita-di-pomezia",
+    "sha256": "f4eae5317cebd9a74110abf1f606f523d0406dbf8f83e6b082b5d3514a0d4626",
+    "content_type": "text/html"
+  },
+  "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche": {
+    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /organizzazione-aziendale/dipartimenti/dipartimento-di-salute-mentale-e-d"
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/uos-centri-diurni/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/": {
+    "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='www.asl.fr.it', port=443): Max retries exceeded with url: /strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-"
+  },
+  "https://www.aslroma1.it/presidi-territoriali/Distretto%2013/lista_presidi": {
+    "url": "https://www.aslroma1.it/presidi-territoriali/Distretto%2013/lista_presidi",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma1.it/presidi-territoriali/Distretto%2013/lista_presidi",
+    "sha256": "f62a9943015507a2d46da21cfc09a28a047ae530408d1a3ccc8d9c41e6f3ff66",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Lista presidi Distretto 13",
+    "emails": [
+      "protocollo@pec.aslroma1.it"
+    ],
+    "address_fragments": [
+      "Via di Valle Aurelia, 257 - 00167 Roma Centro Salute Mentale Boccea Via di Boccea, 271 - 00168",
+      "Via Innocenzo IV, 16/B - 00167 Roma Centro Vaccinale Via Boccea Via di Boccea, 625 - 00166 Rom",
+      "Via Domenico Silveri, 8 - 00165 Roma Consultorio Familiare Tornabuoni Via Cosimo Tornabuoni, 5",
+      "Via Gaetano Sodini, 52 - 00166 Roma Servizio Tutela Salute Mentale e Riabilitazione età evolut",
+      "Via Catone, 30 - 00192 Roma Struttura Residenziale Terapeutico-Riabilitativa per trattamenti c",
+      "Via Gaetano Sodini, 24 - 00166 Roma Ultimo aggiornamento:"
+    ]
+  },
+  "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale": {
+    "url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/d/u/2/viewer?mid=1lhSoVfp3qiaCERyp2lONPFl8vdMEExL3&ll=41.862438290949875%2C12.521068602793418&z=11"
+    ],
+    "status": 200,
+    "final_url": "https://www.aslroma2.it/index.php/uosd-residenzialita-salute-mentale",
+    "sha256": "bc0d07fccb2610c3643bbdc456040491cb1bc4bd8f3c428121e5a5a27eda2462",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Residenzialità Salute Mentale",
+    "emails": [
+      "srtr.gozzano@aslroma2.it",
+      "srtr.sillani@aslroma2.it",
+      "uosd.rsm@aslroma2.it"
+    ],
+    "address_fragments": [
+      "Via della Stazione di Salone, 12 Telefono: 06",
+      "Piazza Urbania, 4 Telefono: 06",
+      "Via della Rustica 218 - secondo/terzo piano Telefono: 06"
+    ]
+  },
+  "https://asl.vt.it/centro-diurno-dsm": {
+    "url": "https://asl.vt.it/centro-diurno-dsm",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.536077131959736,
+        "lng": 12.029246315728486,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.9047924674996!2d12.029246315728486!3d42.536077131959736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328d57ea402b5af%3A0xab4fea9b754569e5!2sVia%20D"
+      },
+      {
+        "lat": 42.249892080222594,
+        "lng": 11.759271158259287,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20s"
+      },
+      {
+        "lat": 42.410927739879796,
+        "lng": 12.107928915725537,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.789477227476!2d12.107928915725537!3d42.410927739879796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d038dafbe9f%3A0x4dd6eb490ac09586!2sVia%20M"
+      },
+      {
+        "lat": 42.296798147086456,
+        "lng": 12.406345715723035,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.1437449995515!2d12.406345715723035!3d42.296798147086456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da4b130b421%3A0xfa6550be45e4ba74!2sViale%2"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.9047924674996!2d12.029246315728486!3d42.536077131959736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328d57ea402b5af%3A0xab4fea9b754569e5!2sVia%20Donatori%20di%20Sangue%2C%201%2F2%2C%2001027%20Montefiascone%20VT!5e0!3m2!1sit!2sit!4v1678355967740!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1476.670449478989!2d11.759271158259287!3d42.249892080222594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328bf7a5db4ec55%3A0x3a298d2c5d609be9!2sVia%20suor%20Serafina%20Giudici%2C%2001016%20Tarquinia%20VT!5e0!3m2!1sit!2sit!4v1678346595227!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.789477227476!2d12.107928915725537!3d42.410927739879796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d038dafbe9f%3A0x4dd6eb490ac09586!2sVia%20Mariano%20Romiti%2C%2054%2C%2001100%20Viterbo%20VT!5e0!3m2!1sit!2sit!4v1678356105621!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.1437449995515!2d12.406345715723035!3d42.296798147086456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da4b130b421%3A0xfa6550be45e4ba74!2sViale%20Enrico%20Minio%2C%2001033%20Civita%20Castellana%20VT!5e0!3m2!1sit!2sit!4v1678356956164!5m2!1sit!2sit"
+    ],
+    "status": 200,
+    "final_url": "https://asl.vt.it/centro-diurno-dsm",
+    "sha256": "05c3bca8b40427782bd69653a9526819de611125419f0b9a75130f8bc1b2825e",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "ASL Viterbo - Centro diurno DSM - ASL VITERBO",
+    "emails": [
+      "prot.gen.asl.vt.it@legalmail.it"
+    ],
+    "address_fragments": [
+      "Via Donatori di Sangue, 1-2, 01027 Montefiascone VT 07611860406 — 07611860407 Fax 07611860408 ",
+      "via suor Serafina Giudici, 01016 Tarquinia VT 0766842251 dal lunedì al giovedì dalle 8",
+      "Viale Enrico Minio, 01033 Civita Castellana VT 0761592400 — 0761592401 — 0761592403 Fax 07615924"
+    ]
+  },
+  "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative": {
+    "url": "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.52891793012514,
+        "lng": 12.016676096525241,
+        "context": "idth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d183.7651128636368!2d12.016676096525241!3d42.52891793012514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678355445198!5m2!1sit!2sit\" width=\"100"
+      },
+      {
+        "lat": 42.415300975005195,
+        "lng": 12.100246858260228,
+        "context": "dth=\"0\" scrolling=\"no\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1472.7920394624527!2d12.100246858260228!3d42.415300975005195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d1dc20ae4e3%3A0xee3715b83297c057!2sPiazza%"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d183.7651128636368!2d12.016676096525241!3d42.52891793012514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1678355445198!5m2!1sit!2sit",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1472.7920394624527!2d12.100246858260228!3d42.415300975005195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f2d1dc20ae4e3%3A0xee3715b83297c057!2sPiazza%20S.%20Lorenzo%2C%2001100%20Viterbo%20VT!5e0!3m2!1sit!2sit!4v1678355764427!5m2!1sit!2sit"
+    ],
+    "status": 200,
+    "final_url": "https://asl.vt.it/srsr-strutture-residenziali-socio-riabilitative",
+    "sha256": "ad18756b580b4260e451d7fe56709bee63266da7c7dabff61aa3c46087bd1cf5",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "ASL Viterbo - Strutture residenziali e socio-riabilitative - ASL VITERBO",
+    "emails": [
+      "antonino.martella@asl.vt.it",
+      "prot.gen.asl.vt.it@legalmail.it"
+    ],
+    "address_fragments": [
+      "piazza San Lorenzo, 01100 Viterbo VT 0761092839 CONTATTI DISTRETTO A Direttore SRSR “Villa San Gi"
+    ]
+  },
+  "https://asl.vt.it/strutture-private-accreditate": {
+    "url": "https://asl.vt.it/strutture-private-accreditate",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://asl.vt.it/strutture-private-accreditate",
+    "sha256": "dd8eaa67aab2d01d8311242a6cd33d29af5b8cbf7c58c4947df16429dfa3f55d",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "ASL Viterbo - Strutture Private Accreditate - ASL VITERBO",
+    "emails": [
+      "prot.gen.asl.vt.it@legalmail.it"
+    ],
+    "address_fragments": [
+      "viale fiume, 78 Viterbo (La Quercia) RESIDENZA CIMINA GIOMI CARE via dell’ospedale, 2 Roncciglio",
+      "via dei cappuccini, 1 Bassano Romano MYSOTIS via G",
+      "via Bertina, 13 Montefiascone SANTA RITA CASA DI CURA DI NEPI via Cassia, km 37 Nepi VILLA ANN",
+      "via Falisca, 21 Faleria SAN GIUSEPPE via del seminario, 58 Acquapendente HOSPICE VILLA ROSA vi",
+      "via Cassia, km 37 Nepi NUOVA SANTA TERESA (RO",
+      "via Bertina, 13 Montefiascone VILLA BUON RESPIRO str",
+      "via Carlo Cattaneo, 46 Viterbo PSICHIATRIA VILLA ROSA viale F",
+      "via Umberto Richiello, 4 Viterbo MEDICINA ACUTI NUOVA SANTA TERESA (RO",
+      "via Bertina, 13 Montefiascone VILLA ROSA viale F",
+      "viale Trieste, 97 Viterbo STUDIO RADIOLOGICO E TERAPIA FISICA QUADRANI s",
+      "piazza della Rocca, 25 Viterbo MONTALTO CHECK-UP LABORATORIO DI PATOLOGIA CLINICA via Fiora, 2 Mo",
+      "via Cassia, km 4,300 Vetralla LABORATORIO ANALISI CLINICHE IPPOCRATE via del casaletto, 15 Civ",
+      "via IV novembre, 7 Tarquinia LABORATORIO SAN FAUSTINO piazza San Faustino, 2 Viterbo EMATOLOGI",
+      "via Genova, 36 Viterbo POLIAMBULATORIO MEDICO SPECIALISTICO PROF",
+      "via Verentana, 20 Montefiascone VILLA PAOLA FONDAZIONE MONTI largo Luigi Monti, 1 Capranica PO"
+    ]
+  },
+  "https://www.comunitainsieme.com/strutture/": {
+    "url": "https://www.comunitainsieme.com/strutture/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.comunitainsieme.com/strutture/",
+    "sha256": "8df393e6df180460989c0b47efdb095ecad33faf400f86f621f42961d987ea37",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Strutture - COMUNITA' INSIEME",
+    "emails": [
+      "info@comunitainsieme.com"
+    ],
+    "address_fragments": [
+      "Via de Gasperi 2 – 04021 Castelforte (LT) VAI ALLA PAGINA S",
+      "Via Ausente, 04020 - Cerri Aprano (LT) VAI ALLA PAGINA Strutture Socio Assistenziali Gioia e L",
+      "Via Penitro a Monte, snc - 04023 Formia (LT) VAI ALLA PAGINA S",
+      "Via Ausente Km",
+      "Via Ausente angolo Cerri Aprano - 04020 Santi Cosma e Damiano (LT) VAI ALLA PAGINA S",
+      "Contrada Orfanotrofio, snc - 03040 Ausonia (FR) VAI ALLA PAGINA S",
+      "Via Cerri Aprano - 04020 Santi Cosma e Damiano (LT) VAI ALLA PAGINA Insieme di: A",
+      "via Penitro a Monte 04023 – Formia (LT) Tel: +39"
+    ]
+  },
+  "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate": {
+    "url": "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ausl.latina.it/strutture-sanitarie-private-accreditate/7232-accordi-con-strutture-private-accreditate",
+    "sha256": "35fd91f053599fc4d9deae3ba948390161325590332b47953024ac6380d22dcd",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Accordi con Strutture private accreditate",
+    "emails": [],
+    "address_fragments": [
+      "Via Isonzo) Ambulatorio Polispecialistico (San Michele) Arcobaleno BLP Casa del Sole Casa di C"
+    ]
+  },
+  "https://gestivar.it/le-strutture/": {
+    "url": "https://gestivar.it/le-strutture/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://gestivar.it/le-strutture/",
+    "sha256": "0d585bb76aa07816dcade62d7a3b6171e2a8ff0d7dc4340b8a522a0b3a188f1c",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Le Strutture – Gestivar",
+    "emails": [
+      "dir.san.montello@gestivar.it",
+      "dir.san.villalicia@gestivar.it"
+    ],
+    "address_fragments": [
+      "via San Francesco 2/a - Roccasecca (FR) Montello via Montello 22 - Roccasecca (FR) Villa Licia",
+      "via Enrico Toti 73 – Itri (LT) Contatto diretto 0776 567403 Home Le Strutture Il Team Gallery ",
+      "via San Francesco 2 Roccasecca (FR) 0776 567403 0776 567405 dir",
+      "via Montello 22 Roccasecca (FR) 0776 567264 dir",
+      "via Enrico Toti 73 Itri (LT) 0771 1652157 dir"
+    ]
+  },
+  "https://gestivar.it/contatti/": {
+    "url": "https://gestivar.it/contatti/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://maps.app.goo.gl/XFiAH9WY3VmYZjk69",
+      "https://maps.app.goo.gl/B6wRKta1YgqmKsk89",
+      "https://maps.app.goo.gl/j4s2sgp8MGHhGU1B7"
+    ],
+    "status": 200,
+    "final_url": "https://gestivar.it/contatti/",
+    "sha256": "ee341e5e553898de1677d4d1d59343b365bb968938584eb3bab620759f1c0020",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Contatti – Gestivar",
+    "emails": [
+      "dir.san.borgosantommaso@gestivar.it",
+      "dir.san.montello@gestivar.it",
+      "dir.san.villalicia@gestivar.it",
+      "gestivar@pec.it",
+      "info@gestivar.it"
+    ],
+    "address_fragments": [
+      "via San Francesco 2/a - Roccasecca (FR) Montello via Montello 22 - Roccasecca (FR) Villa Licia",
+      "via Enrico Toti 73 – Itri (LT) Contatto diretto 0776 567403 Home Le Strutture Il Team Gallery ",
+      "via San Francesco, 2/A Roccasecca (FR) telefono 0776 567403 fax 0776 567379 email: info@gestiv",
+      "via San Francesco, 2/A Roccasecca (FR) telefono 0776 567403 fax 0776 567379 email: dir",
+      "via Via Montello 22 Roccasecca (FR) telefono 0776 567264 fax 0776 567146 email: dir",
+      "via Enrico Toti 73 Itri (LT) telefono 0771 1652157 email: dir"
+    ]
+  },
+  "https://gabbianotirreno.it/strutture/rocca-canterano": {
+    "url": "https://gabbianotirreno.it/strutture/rocca-canterano",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://maps.app.goo.gl/d1MTq1ZrJPEbmHK48",
+      "https://maps.google.com/maps?q=Via%20Maddalena%2C%202%20-%2000020%20Rocca%20Canterano%20%28RM%29&t=m&z=10&output=embed&iwloc=near"
+    ],
+    "status": 200,
+    "final_url": "https://gabbianotirreno.it/strutture/rocca-canterano",
+    "sha256": "0efefef1878b6a77a5095beb5a0c4b804d03d1f19887f7225b3f402cb427fc2f",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "SRTRe Rocca Canterano – Gabbiano Tirreno",
+    "emails": [],
+    "address_fragments": [
+      "Via Maddalena, 2 - 00020 Rocca Canterano (RM) Hai bisogno di maggiori informazioni? Siamo a di",
+      "Via cappuccini 4 Milano 20122 | C apitale sociale 46"
+    ]
+  },
+  "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/": {
+    "url": "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.aslroma5.it/amministrazione-trasparente/strutture-sanitarie-private-accreditate/",
+    "sha256": "63f1cc58642aceec54c090d5c0c2fc5cd4fb9b6361c65903a8039028afc06e78",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Strutture sanitarie private accreditate - ASL ROMA 5",
+    "emails": [],
+    "address_fragments": []
+  },
+  "https://gabbianotirreno.it/strutture/castel-madama": {
+    "url": "https://gabbianotirreno.it/strutture/castel-madama",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://maps.app.goo.gl/bNAh7dZSbPJdbi82A",
+      "https://maps.google.com/maps?q=Via%20Provinciale%2C%2040%2FA%20%28anche%20Via%20Aniene%2C%2036%29%20-%2000024%20Castel%20Madama%20%28RM%29&t=m&z=10&output=embed&iwloc=near"
+    ],
+    "status": 200,
+    "final_url": "https://gabbianotirreno.it/strutture/castel-madama",
+    "sha256": "11025318f38d70c625fd0bcbe5f3bcac159daed73a3fd8af3a1ae38f91f84199",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "SRSR Castel Madama – Gabbiano Tirreno",
+    "emails": [],
+    "address_fragments": [
+      "Via Provinciale, 40/A (anche Via Aniene, 36) - 00024 Castel Madama (RM) Strutture residenziali",
+      "Via cappuccini 4 Milano 20122 | C apitale sociale 46"
+    ]
+  },
+  "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/": {
+    "url": "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ceisroma.it/project/comunita-santa-maria-servizio-residenziale-terapeutico-riabilitativo-per-persone-dipendenti/",
+    "sha256": "2fe174bd3029b60cbdf7aa3e5a75577123cdf12120e601ccf27f4bf87f094766",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Santa Maria – CeIS – Centro Italiano di Solidarietà don Mario Picchi",
+    "emails": [
+      "angela.sollami@ceis.it",
+      "ceis@ceis.it",
+      "santa.maria@ceis.it"
+    ],
+    "address_fragments": [
+      "Via Appia Nuova, 1251 - 00178 Roma Contatti tel",
+      "via Attilio Ambrosini 129, 00147 Roma Email: ceis@ceis"
+    ]
+  },
+  "https://www.ceisroma.it/la-gratuita-di-tutti-i-servizi-e-il-nostro-personale/": {
+    "url": "https://www.ceisroma.it/la-gratuita-di-tutti-i-servizi-e-il-nostro-personale/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ceisroma.it/la-gratuita-di-tutti-i-servizi-e-il-nostro-personale/",
+    "sha256": "9e08cff99dc07f0250caa185dbb147124bf2f916a93d50ff2d40ff53dd801338",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "La gratuità di tutti i servizi e il nostro personale – CeIS – Centro Italiano di Solidarietà don Mario Picchi",
+    "emails": [
+      "ceis@ceis.it"
+    ],
+    "address_fragments": [
+      "via Attilio Ambrosini 129, 00147 Roma Email: ceis@ceis"
+    ]
+  },
+  "https://aslroma2.it/index.php/62-cittadini/servizi/medicina-protesica/139-medicina-protesica": {
+    "url": "https://aslroma2.it/index.php/62-cittadini/servizi/medicina-protesica/139-medicina-protesica",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='aslroma2.it', port=443): Max retries exceeded with url: /index.php/62-cittadini/servizi/medicina-protesica/139-medicina-protesica (Cau"
+  },
+  "https://www.actalazio.it/in-dialogo/": {
+    "url": "https://www.actalazio.it/in-dialogo/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 404,
+    "final_url": "https://actalazio.it/in-dialogo/",
+    "sha256": "aad12240e48cd5eaf24708dc63b0ac5cb52d96b49eb1f87c189725692cfb1788",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "https://comunitaindialogo.it/": {
+    "url": "https://comunitaindialogo.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 202,
+    "final_url": "https://comunitaindialogo.it/",
+    "sha256": "dc6e5dc8b17fad470d157ce501e8b2c805c65fdcb5bd7d63082bb6afaa130556",
+    "content_type": "text/html"
+  },
+  "https://www.iocentro.it/index.php/2019/03/15/comunita-terapeutica/": {
+    "url": "https://www.iocentro.it/index.php/2019/03/15/comunita-terapeutica/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.iocentro.it/index.php/2019/03/15/comunita-terapeutica/",
+    "sha256": "dbe11975d386cfcd131793fef8b37761210829f450e65320906d6c672b9389bf",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Comunità terapeutica - IO CENTRO ETS",
+    "emails": [],
+    "address_fragments": []
+  },
+  "https://www.iocentro.it/index.php/2019/03/15/liste-di-attesa/": {
+    "url": "https://www.iocentro.it/index.php/2019/03/15/liste-di-attesa/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.iocentro.it/index.php/2019/03/15/liste-di-attesa/",
+    "sha256": "e9fd198ceb7c6b9e3c185139661b3146bc96ce66bfeae2b6322274ce1562f141",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Liste di attesa - IO CENTRO ETS",
+    "emails": [],
+    "address_fragments": []
+  },
+  "https://www.maieusis.org/la-comunita-maieusis/": {
+    "url": "https://www.maieusis.org/la-comunita-maieusis/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.maieusis.org/la-comunita-maieusis/",
+    "sha256": "d4f3dd11d68db3c587f7c0642a1dd2432a00d18cccbc9891867dfaba31374aeb",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "La Comunità Maieusis - Comunità Maieusis",
+    "emails": [
+      "maieusis.amm@gmail.com",
+      "maieusis.ct@gmail.com"
+    ],
+    "address_fragments": [
+      "via email: maieusis",
+      "Via Macchia Tonda 8, 00060 Capena (RM) Sede operativa: Via Filippo Turati, 2 00065 Fiano Roman"
+    ]
+  },
+  "https://www.maieusis.org/il-modello-maieusis/informazioni-per-linserimento/": {
+    "url": "https://www.maieusis.org/il-modello-maieusis/informazioni-per-linserimento/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.maieusis.org/il-modello-maieusis/informazioni-per-linserimento/",
+    "sha256": "cc5f3687b44f143bb2743d5b7da55e3acbff94f2ea97d40b4be82421a42d049e",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Informazioni per l’inserimento - Comunità Maieusis",
+    "emails": [
+      "maieusis.amm@gmail.com",
+      "maieusis.ct@gmail.com"
+    ],
+    "address_fragments": [
+      "via email: maieusis",
+      "Via Macchia Tonda 8, 00060 Capena (RM) Sede operativa: Via Filippo Turati, 2 00065 Fiano Roman"
+    ]
+  },
+  "https://www.maieusis.org/contatti/": {
+    "url": "https://www.maieusis.org/contatti/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.maieusis.org/contatti/",
+    "sha256": "a291fc47d6e1b0ff2e71d98a6e03d6bf64fc3dcfa291f2c809d6fad191ed728d",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Contatti - Comunità Maieusis",
+    "emails": [
+      "direzione.generale.maieusis@gmail.com",
+      "maieusis-s-c-s@pec.it",
+      "maieusis.amm@gmail.com",
+      "maieusis.ct@gmail.com"
+    ],
+    "address_fragments": [
+      "via email: maieusis",
+      "Via Macchia Tonda 8/10,  00060  Capena  (RM) IVA e C",
+      "Via Macchia Tonda 8, Capena",
+      "Via Macchia Tonda 8, 00060 Capena (RM) Sede operativa: Via Filippo Turati, 2 00065 Fiano Roman"
+    ]
+  },
+  "https://www.strutturapsichiatricavillabelvedere.com/": {
+    "url": "https://www.strutturapsichiatricavillabelvedere.com/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectionError: HTTPSConnectionPool(host='www.strutturapsichiatricavillabelvedere.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.con"
+  },
+  "https://www.asl.rieti.it/trasparency-e-privacy/amministrazione-trasparente/strutture-sanitarie-private-accreditate": {
+    "url": "https://www.asl.rieti.it/trasparency-e-privacy/amministrazione-trasparente/strutture-sanitarie-private-accreditate",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.asl.rieti.it', port=443): Max retries exceeded with url: /trasparency-e-privacy/amministrazione-trasparente/strutture-sanitarie-pr"
+  },
+  "https://www.cooperativasocialeaquiloneazzurro.it/strutture/": {
+    "url": "https://www.cooperativasocialeaquiloneazzurro.it/strutture/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.cooperativasocialeaquiloneazzurro.it/strutture/",
+    "sha256": "19574183899d253e718251dc6061ad38fc56e0fd237fef50443d184e2d4ad925",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Strutture – Aquilone Azzurro",
+    "emails": [],
+    "address_fragments": [
+      "VIA GERMANICO “ Assistenza sulle 12 ore giornaliere La struttura risponde appieno al DPR 14 ge",
+      "Via Germanico” dott",
+      "Via Germanico” e “La Gatta” I programmi socio-riabilitativi personalizzati sono elaborati in c"
+    ]
+  },
+  "https://www.cooperativasocialeaquiloneazzurro.it/": {
+    "url": "https://www.cooperativasocialeaquiloneazzurro.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [
+      "https://www.google.com/maps/place/Via+Germanico,+198+00192+Roma+RM+Italia",
+      "https://www.google.com/maps/place/Lungomare+G.+Marconi,+96+00058+Santa+Marinella+RM+Italia"
+    ],
+    "status": 200,
+    "final_url": "https://www.cooperativasocialeaquiloneazzurro.it/",
+    "sha256": "e93d9158a09f1e31569084496165e932d664221b70c23a4cf77b24648f7158d2",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Aquilone Azzurro",
+    "emails": [
+      "aquiloneazzurro@pec.it",
+      "info@cooperativasocialeaquiloneazzurro.it"
+    ],
+    "address_fragments": [
+      "Via Germanico” e SRSR “La Gatta” che offrono rispettivamente un’assistenza sulle 12 ore la pri",
+      "VIA GERMANICO ” accreditata con D",
+      "Via Germanico, 198 – 00198 – Roma Tel"
+    ]
+  },
+  "https://ceis.viterbo.it/comunita-doppia-diagnosi/": {
+    "url": "https://ceis.viterbo.it/comunita-doppia-diagnosi/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://ceis.viterbo.it/comunita-doppia-diagnosi/",
+    "sha256": "ff2bf453b5768ee6dd1ad30c26580c4c0bcc230625ba528d621ff83d67519b75",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Comunità doppia diagnosi - Ceis San Crispino di Viterbo",
+    "emails": [
+      "info@ceis.viterbo.it"
+    ],
+    "address_fragments": []
+  },
+  "https://www.actalazio.it/exodus-cassino/": {
+    "url": "https://www.actalazio.it/exodus-cassino/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 404,
+    "final_url": "https://actalazio.it/exodus-cassino/",
+    "sha256": "aad12240e48cd5eaf24708dc63b0ac5cb52d96b49eb1f87c189725692cfb1788",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "https://www.exodus.it/sedi-exodus/cassino.html": {
+    "url": "https://www.exodus.it/sedi-exodus/cassino.html",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 41.5049802,
+        "lng": 13.8371348,
+        "context": "               <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.9674489705235!2d13.8371348!3d41.5049802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133abc6f6e82dac7%3A0xb90dbbb5ada9f756!2sVia+San"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.9674489705235!2d13.8371348!3d41.5049802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133abc6f6e82dac7%3A0xb90dbbb5ada9f756!2sVia+San+Domenico+Vertelle%2C+23%2C+03043+Cassino+FR!5e0!3m2!1sit!2sit!4v1441292704499"
+    ],
+    "status": 200,
+    "final_url": "https://www.exodus.it/sedi-exodus/cassino.html",
+    "sha256": "80a9ded28b58a67287ea5684d3639a050c340033216c7f4d39597d74c8b484f6",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Cassino (FR) - Fondazione Exodus",
+    "emails": [],
+    "address_fragments": [
+      "via e-mail i nostri aggiornamenti mensili? Iscriviti alla newsletter! ISCRIVITI SOCIAL COOKIES",
+      "Viale Marotta 18/20  20134  (Milano) | Tel"
+    ]
+  },
+  "https://comunitamondonuovo.it/": {
+    "url": "https://comunitamondonuovo.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nuovo+Onlus!5e0!3m2!1sit!2sit!4v1522258456566"
+    ],
+    "status": 200,
+    "final_url": "https://comunitamondonuovo.it/",
+    "sha256": "13ba791006980769df20526f3f643ea33925ef6bf166a1d75b352125c31c8358",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Comunità Mondo Nuovo ODV | Comunità Mondo Nuovo ODV",
+    "emails": [
+      "comunitamondonuovo@pec.it",
+      "info@mondonuovo.org"
+    ],
+    "address_fragments": [
+      "VIA PUGLIE 5 , 00053 CIVITAVECCHIA (RM) PEC comunitamondonuovo@pec"
+    ]
+  },
+  "https://comunitamondonuovo.it/category/centri-accreditati/": {
+    "url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 42.08060360507716,
+        "lng": 11.807529552800737,
+        "context": "lazy\" style=\"border: 0;\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nu"
+      }
+    ],
+    "links": [
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5922.50832748713!2d11.807529552800737!3d42.08060360507716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc5d380c69bd56e!2sComunit%C3%A0+Mondo+Nuovo+Onlus!5e0!3m2!1sit!2sit!4v1522258456566"
+    ],
+    "status": 200,
+    "final_url": "https://comunitamondonuovo.it/category/centri-accreditati/",
+    "sha256": "1ae121398118e2047081a55f728e0eeffa96c043d6e47a59cd16e57c2559179c",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "CENTRI ACCREDITATI | Comunità Mondo Nuovo ODV",
+    "emails": [
+      "comunitamondonuovo@pec.it",
+      "info@mondonuovo.org"
+    ],
+    "address_fragments": [
+      "VIA PUGLIE 5 , 00053 CIVITAVECCHIA (RM) PEC comunitamondonuovo@pec"
+    ]
+  },
+  "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero": {
+    "url": "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ghcspa.com/samadi/accoglienza/modalita-di-accettazione-e-ricovero",
+    "sha256": "755f70d5b775844f71dc1f890fdcb207350cef6f57942355bbe5c7c8b35f2f56",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Modalità di accettazione e ricovero | Struttura Residenziale Psichiatrica Samadi",
+    "emails": [
+      "accettazione@samadi.it",
+      "dpo@garofalohealthcare.com",
+      "info@garofalohealthcare.com",
+      "samadi@digitahub.it"
+    ],
+    "address_fragments": [
+      "via ordinaria attraverso il servizio d'accettazione",
+      "via Portuense, 700) Casa di Cura di Città di Roma (via F",
+      "via Aurelia, 860) Per qualsiasi informazione/chiarimento potete contattare l'ufficio Digita di",
+      "via di Grottarossa Km",
+      "Piazzale Belle Arti, 6 - 00196 Roma - P",
+      "Via della Conciliazione, 10 - 00193 Roma - P"
+    ]
+  },
+  "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale": {
+    "url": "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ghcspa.com/samadi/chi-siamo/la-struttura-residenziale",
+    "sha256": "6e25c4574d1b01e334734e71db39eb2da9697e1fe77bd556bf36ccb1b20006b1",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "La struttura residenziale | Struttura Residenziale Psichiatrica Samadi",
+    "emails": [
+      "dpo@garofalohealthcare.com",
+      "info@garofalohealthcare.com"
+    ],
+    "address_fragments": [
+      "via di Grottarossa Km",
+      "Piazzale Belle Arti, 6 - 00196 Roma - P",
+      "Via della Conciliazione, 10 - 00193 Roma - P"
+    ]
+  },
+  "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali": {
+    "url": "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ghcspa.com/samadi/accoglienza/informazioni-generali",
+    "sha256": "1c7667abf6deca09440ead2d1e521233029c744da29610d6ca05bf711aab5b49",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Informazioni generali | Struttura Residenziale Psichiatrica Samadi",
+    "emails": [
+      "dpo@garofalohealthcare.com",
+      "info@garofalohealthcare.com"
+    ],
+    "address_fragments": [
+      "via posta, previo pagamento delle relative spese postali, o consegnata presso il front office ",
+      "via di Grottarossa Km",
+      "Piazzale Belle Arti, 6 - 00196 Roma - P",
+      "Via della Conciliazione, 10 - 00193 Roma - P"
+    ]
+  },
+  "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/": {
+    "url": "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/",
+    "sha256": "459b55935f9c1de3ac0768e29966075f7cee47481d6221c3c8b14c529c0e0add",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Comunità San Carlo – CeIS – Centro Italiano di Solidarietà don Mario Picchi",
+    "emails": [
+      "andrea.pascucci@ceis.it",
+      "ceis@ceis.it",
+      "s.carlo@ceis.it"
+    ],
+    "address_fragments": [
+      "Via Alessandro Volta, 2, - 00047 Marino (RM) Contatti tel/fax: 0693660116 email: s",
+      "via Attilio Ambrosini 129, 00147 Roma Email: ceis@ceis"
+    ]
+  },
+  "https://www.ceisroma.it/info-trasparenza/": {
+    "url": "https://www.ceisroma.it/info-trasparenza/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.ceisroma.it/info-trasparenza/",
+    "sha256": "46d9f304534083be2f0d28d46d2ea55e947f85ce7186f13be7e6b1a305902ce7",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Info trasparenza – CeIS – Centro Italiano di Solidarietà don Mario Picchi",
+    "emails": [
+      "ceis@ceis.it"
+    ],
+    "address_fragments": [
+      "via Attilio Ambrosini 129, 00147 Roma Email: ceis@ceis"
+    ]
+  },
+  "https://ceis.viterbo.it/comunita-terapeutica/": {
+    "url": "https://ceis.viterbo.it/comunita-terapeutica/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://ceis.viterbo.it/comunita-terapeutica/",
+    "sha256": "c56938d9d49db217d92ebde89b04a9c9fb0cbe814f2dbd7157525f98b32507f9",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Comunità terapeutica - Ceis San Crispino di Viterbo",
+    "emails": [
+      "info@ceis.viterbo.it"
+    ],
+    "address_fragments": [
+      "Località La Quercia a 2 chilometri da Viterbo, nella Villa dell’ex Seminario Diocesano"
+    ]
+  },
+  "https://www.actalazio.it/": {
+    "url": "https://www.actalazio.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://actalazio.it/",
+    "sha256": "cab3662ff69999c3e5e3bd1fc62cb26d1a8213e9e1be8a44857574d99e78246e",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Pribet Promozioni Mensili — Offerte Esclusive Now — IT 2026",
+    "emails": [],
+    "address_fragments": [
+      "via più rapida per questioni urgenti come un deposito non accreditato o un dubbio sull'attivaz",
+      "via e-mail o SMS ed è immediata"
+    ]
+  },
+  "https://www.cooperativailcastelloincantato.it/portfolio_category/strutture/": {
+    "url": "https://www.cooperativailcastelloincantato.it/portfolio_category/strutture/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.cooperativailcastelloincantato.it/portfolio_category/strutture/",
+    "sha256": "85de8316c508c0e19ff76e85dfb5a695de5f5be54dce9b4b1ee5e9d7a97041ea",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Strutture – Il castello incantato – Coop. Sociale",
+    "emails": [
+      "ilcastelloincantato@pec.it",
+      "info@cooperativailcastelloincantato.it",
+      "info@residenza-villadaniela.it",
+      "info@residenza-villasimona.it",
+      "info@residenzavillalucrezia.it",
+      "webmaster@apiweb.info"
+    ],
+    "address_fragments": [
+      "Via La Cupa, 41 – 03037 Pontecorvo (FR) Residenza Villa Lucrezia Via Casilina, 35 – 03030 Cast",
+      "Via per la Stazione d’Aquino – 03030 Castrocielo (FR) Residenza Villa Simona Via per la Stazio"
+    ]
+  },
+  "https://www.cooperativailcastelloincantato.it/contatti/": {
+    "url": "https://www.cooperativailcastelloincantato.it/contatti/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.cooperativailcastelloincantato.it/contatti/",
+    "sha256": "cbce99a337f72346ed79c8b31924b9c36caa5b09d612a3ef47a82c09173b363b",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Contatti – Il castello incantato – Coop. Sociale",
+    "emails": [
+      "ilcastelloincantato@pec.it",
+      "info@cooperativailcastelloincantato.it",
+      "info@residenza-villadaniela.it",
+      "info@residenza-villasimona.it",
+      "info@residenzavillalucrezia.it",
+      "webmaster@apiweb.info"
+    ],
+    "address_fragments": [
+      "Via La Cupa, 41 – 03037 Pontecorvo (FR) Residenza Villa Lucrezia Via Casilina, 35 – 03030 Cast",
+      "Via per la Stazione d’Aquino – 03030 Castrocielo (FR) Residenza Villa Simona Via per la Stazio"
+    ]
+  },
+  "https://www.cooperativailcastelloincantato.it/la-cooperativa/amministrazione-trasparente/": {
+    "url": "https://www.cooperativailcastelloincantato.it/la-cooperativa/amministrazione-trasparente/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.cooperativailcastelloincantato.it/la-cooperativa/amministrazione-trasparente/",
+    "sha256": "46bdaf7f2ef8480b67bf5ac27779ed3d6994758b2a3ada204809bb4c3699515c",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Amministrazione trasparente – Il castello incantato – Coop. Sociale",
+    "emails": [
+      "ilcastelloincantato@pec.it",
+      "info@cooperativailcastelloincantato.it",
+      "info@residenza-villadaniela.it",
+      "info@residenza-villasimona.it",
+      "info@residenzavillalucrezia.it",
+      "webmaster@apiweb.info"
+    ],
+    "address_fragments": [
+      "Via La Cupa, 41 – 03037 Pontecorvo (FR) Residenza Villa Lucrezia Via Casilina, 35 – 03030 Cast",
+      "Via per la Stazione d’Aquino – 03030 Castrocielo (FR) Residenza Villa Simona Via per la Stazio"
+    ]
+  },
+  "https://reverie.it/strutture/": {
+    "url": "https://reverie.it/strutture/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='reverie.it', port=443): Max retries exceeded with url: /strutture/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_"
+  },
+  "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/": {
+    "url": "https://reverie.it/strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "error": "SSLError: HTTPSConnectionPool(host='reverie.it', port=443): Max retries exceeded with url: /strutture/la-comunita-terapeutica-riabilitativa-residenziale-di-capena-ctc-1/ "
+  },
+  "https://www.santagostino.it/it/news/percorso-disturbi-del-comportamento-alimentare-dca-ora-anche-a-roma": {
+    "url": "https://www.santagostino.it/it/news/percorso-disturbi-del-comportamento-alimentare-dca-ora-anche-a-roma",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.santagostino.it/it/news/percorso-disturbi-del-comportamento-alimentare-dca-ora-anche-a-roma",
+    "sha256": "5b20e067e1d542981762986f77814d399ea7c2f2794af9698fb7b630335e4a6b",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Percorso Disturbi del Comportamento Alimentare (DCA) ora anche a Roma! | Santagostino",
+    "emails": [],
+    "address_fragments": [
+      "via Goito e online A Roma è attivo il Percorso Disturbi del Comportamento Alimentare (DCA) , u",
+      "via Goito , e online ",
+      "via Temperanza 6, 20127 Milano • P"
+    ]
+  },
+  "https://www.qrare.it/": {
+    "url": "https://www.qrare.it/",
+    "checked_at": "2026-09-26",
+    "coordinates": [
+      {
+        "lat": 41.9123576,
+        "lng": 12.5151966,
+        "context": "Roma+RM/@41.9123616,12.5126217,17z/data=!3m1!4b1!4m6!3m5!1s0x132f6171b51c62cb:0xca5d1a2a0d613f85!8m2!3d41.9123576!4d12.5151966!16s%2Fg%2F11c1_415_9?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D\" target=\"_blank\">Vedi indi"
+      }
+    ],
+    "links": [
+      "https://www.google.it/maps/place/Viale+di+Villa+Massimo,+4,+00161+Roma+RM/@41.9123616,12.5126217,17z/data=!3m1!4b1!4m6!3m5!1s0x132f6171b51c62cb:0xca5d1a2a0d613f85!8m2!3d41.9123576!4d12.5151966!16s%2Fg%2F11c1_415_9?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+    ],
+    "status": 200,
+    "final_url": "https://www.qrare.it/",
+    "sha256": "3b912ca32117bd1e86503b206d8a3ff300c48bf1617c1d80a5d46c31f5a67dc2",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Qrare - Neurologia, Psichiatria, ADHD, DSA, Neuropsichiatria Infantile",
+    "emails": [],
+    "address_fragments": [
+      "Piazza Bologna / Policlinico a Roma"
+    ]
+  },
+  "https://www.adhdroma.com/": {
+    "url": "https://www.adhdroma.com/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.adhdroma.com/",
+    "sha256": "aea5a99321a4cffa0d5b93b9f4836008588dcf2cd4c71eff1a7c2c287c54929d",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Home - ADHD Roma",
+    "emails": [],
+    "address_fragments": []
+  },
+  "https://www.hsantalucia.it/neuropsicologia": {
+    "url": "https://www.hsantalucia.it/neuropsicologia",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.hsantalucia.it/neuropsicologia",
+    "sha256": "e1bdef57b0366c6361e18c26182c44762008078a48cf93234794de32bbab7f28",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Ambulatorio di Neuropsicologia | Fondazione Santa Lucia",
+    "emails": [],
+    "address_fragments": [
+      "Via Ardeatina, 306 – 00179 Roma ",
+      "Via Ardeatina 306-354 00179 Roma Tel"
+    ]
+  },
+  "https://www.airrimedical.it/it/ambulatori-viterbo/": {
+    "url": "https://www.airrimedical.it/it/ambulatori-viterbo/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.airrimedical.it/it/ambulatori-viterbo/",
+    "sha256": "74556906f73c1bef5c22f28b554e64d0950bd449f02fa88962a88b946f38a31b",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Airri Medical - Ambulatori",
+    "emails": [
+      "airrimedical@legalmail.it"
+    ],
+    "address_fragments": [
+      "Via della Vittoria, 27 - +39 06 9044194 AMMINISTRAZIONE TRASPARENTE AIRRI MEDICAL viale Luca G"
+    ]
+  },
+  "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/": {
+    "url": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/",
+    "checked_at": "2026-09-26",
+    "coordinates": [],
+    "links": [],
+    "status": 200,
+    "final_url": "https://www.comunitainsieme.com/s-r-s-r-venere-e-marte/",
+    "sha256": "0d7faf6f6d2a3d4b96c84dc74b605c4cb17b6bd11f33f1fa447d34bcf2f63a08",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "S.R.S.R. Venere e Marte - COMUNITA' INSIEME",
+    "emails": [
+      "info@comunitainsieme.com"
+    ],
+    "address_fragments": [
+      "via Ausente – 04020 Cerri Aprano (LT) Queste strutture si distinguono per le differenti proble",
+      "via Penitro a Monte 04023 – Formia (LT) Tel: +39"
+    ]
+  }
+}

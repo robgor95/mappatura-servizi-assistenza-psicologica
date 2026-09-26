@@ -1,0 +1,640 @@
+{
+  "version": "7.11",
+  "baseline_commit": "85808c6fad9dec32098558e466a3997a18b95d22",
+  "checked_at": "2026-09-26",
+  "sources": {
+    "vt_csm": "https://asl.vt.it/csm-centro-di-salute-mentale",
+    "r3_csm": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+    "r4_csm": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+    "colleferro": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/",
+    "subiaco": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/",
+    "npia": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/",
+    "qrare": "https://www.qrare.it/",
+    "adhd": "https://www.adhdroma.com/contatti/",
+    "santalucia": "https://www.hsantalucia.it/neuropsicologia",
+    "formia": "https://www.ausl.latina.it/dipartimenti/31-azienda/449-dsm",
+    "iocentro": "https://www.iocentro.it/index.php/contatti/",
+    "san_carlo": "https://www.ceisroma.it/project/comunita-san-carlo-e-villa-santa-francesca-romana-servizio-residenziale-pedagogico-riabilitativo-per-persone-dipendenti/",
+    "maieusis": "https://www.maieusis.org/contatti/",
+    "samadi": "https://www.ghcspa.com/samadi/contatti",
+    "rocca": "https://gabbianotirreno.it/strutture/rocca-canterano",
+    "castel": "https://gabbianotirreno.it/strutture/castel-madama",
+    "goito": "https://www.santagostino.it/it/sedi/rm-via-goito",
+    "airri": "https://www.airrimedical.it/it/ambulatori-viterbo/",
+    "rieti_dna": "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+  },
+  "pins": [
+    {
+      "key": "rete:R3-05",
+      "source": "r3_csm",
+      "lat": 41.8554176,
+      "lng": 12.4451558,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Posizione indicativa dell’edificio di Via Portuense 571; non un ingresso verificato. Non usate le mappe Brisse/Mazzacurati della stessa pagina.",
+      "source_url": "https://www.aslroma3.it/dipartimenti/dipartimento-di-salute-mentale/uoc-salute-mentale-distretto-sanitario-municipio-xi/",
+      "evidence": {
+        "selector": "!3d41.8554176!4d12.4451558",
+        "publisher_link": "https://www.google.it/maps/place/Via+Portuense,+571,+00149+Roma+RM/@41.8554176,12.4429671,17z/data=!3m1!4b1!4m5!3m4!1s0x13258ab65d84f129:0xbf5ec21afc56aff6!8m2!3d41.8554176!4d12.4451558"
+      }
+    },
+    {
+      "key": "rete:R4-02",
+      "source": "r4_csm",
+      "lat": 42.07575,
+      "lng": 11.8143056,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Punto indicativo CSM Civitavecchia, ricavato dal marcatore DMS pubblicato; non attribuito a Morlupo o Campagnano.",
+      "source_url": "https://www.aslroma4.it/strutture-sanitarie/strutture-di-salute-mentale",
+      "evidence": {
+        "marker_dms": "42°04’32.7”N 11°48’51.5”E",
+        "selector": "etichetta DMS !2z, non !2d/!3d"
+      }
+    },
+    {
+      "key": "rete:R5-10",
+      "source": "colleferro",
+      "lat": 41.7302976,
+      "lng": 13.0038841,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Posizione indicativa della sede/complesso collegata dall’ASL al servizio. La stanza, il reparto e l’ingresso fisico non sono verificati.",
+      "source_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-colleferro/",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/TaLpFi7K3ctU6jS69",
+        "target_name": "SerD ASL RM5 Colleferro",
+        "selector": "!3d/!4d nella destinazione del redirect, non @lat,lng"
+      }
+    },
+    {
+      "key": "rete:R5-12",
+      "source": "subiaco",
+      "lat": 41.932258,
+      "lng": 13.0863798,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Posizione indicativa della sede/complesso collegata dall’ASL al servizio. La stanza, il reparto e l’ingresso fisico non sono verificati.",
+      "source_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-i-serd/servizio-per-le-dipendenze-patologiche-subiaco/",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/fGGJKta9zNG8NqHt5",
+        "target_name": "Ospedale A. Angelucci",
+        "selector": "!3d/!4d nella destinazione del redirect, non @lat,lng"
+      }
+    },
+    {
+      "key": "rete:NET-052",
+      "source": "npia",
+      "lat": 41.9246265,
+      "lng": 13.0919018,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Posizione indicativa della sede/complesso collegata dall’ASL al servizio. La stanza, il reparto e l’ingresso fisico non sono verificati.",
+      "source_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/EpWCavzsc23zaxyLA",
+        "target_name": "ASL Distretto Subiaco, Largo Giuseppe Mazzini",
+        "selector": "!3d/!4d nella destinazione del redirect, non @lat,lng"
+      }
+    },
+    {
+      "key": "rete:NET-053",
+      "source": "npia",
+      "lat": 41.8630775,
+      "lng": 13.0352554,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Posizione indicativa della sede/complesso collegata dall’ASL al servizio. La stanza, il reparto e l’ingresso fisico non sono verificati.",
+      "source_url": "https://www.aslroma5.it/dsmdp-dipartimento-di-salute-mentale-e-delle-dipendenze-patologiche/cosa-sono-le-npia/npia-di-subiaco-e-olevano-romano/",
+      "evidence": {
+        "publisher_link": "https://maps.app.goo.gl/NdAG6knZhetVTo576",
+        "target_name": "ASL Poliambulatorio Olevano Romano",
+        "selector": "!3d/!4d nella destinazione del redirect, non @lat,lng"
+      }
+    },
+    {
+      "key": "privati:PRI-004",
+      "source": "qrare",
+      "lat": 41.9123729,
+      "lng": 12.5152187,
+      "quality": "A",
+      "precision": "address",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Civico 4 di Viale di Villa Massimo pubblicato dal centro e riscontrato in OSM. Non certifica ingresso o accessibilità.",
+      "source_url": "https://www.openstreetmap.org/node/9691449659",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 9691449659,
+        "tags": {
+          "addr:city": "Roma",
+          "addr:housenumber": "4",
+          "addr:postcode": "00161",
+          "addr:street": "Viale di Villa Massimo"
+        },
+        "coordinate_origin": "OSM mapped point"
+      }
+    },
+    {
+      "key": "privati:PRI-005",
+      "source": "adhd",
+      "lat": 41.845444,
+      "lng": 12.4809922,
+      "quality": "C",
+      "precision": "building",
+      "method": "Destinazione cartografica pubblicata nella pagina del servizio; escluso il centro della vista della mappa",
+      "note": "Via Luigi Perna 51, posizione indicativa pubblicata dal centro. Non certifica l’ingresso o la disponibilità di appuntamenti.",
+      "source_url": "https://www.adhdroma.com/contatti/",
+      "evidence": {
+        "target_name": "Via Luigi Perna 51",
+        "selector": "!3d41.845444!4d12.4809922"
+      }
+    },
+    {
+      "key": "rete:VT-03",
+      "source": "vt_csm",
+      "lat": 42.6255597,
+      "lng": 12.1008315,
+      "quality": "C",
+      "precision": "building",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Casa della Salute Bagnoregio: posizione del presidio, non dello specifico ambulatorio CSM; civico/ingresso non verificati.",
+      "source_url": "https://www.openstreetmap.org/node/8431382119",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 8431382119,
+        "name": "Casa della Salute",
+        "coordinate_origin": "OSM mapped point"
+      }
+    },
+    {
+      "key": "rete:VT-09",
+      "source": "vt_csm",
+      "lat": 42.5683524,
+      "lng": 11.8201472,
+      "quality": "C",
+      "precision": "building",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Presidio ASL in Via delle Mura 28 a Valentano; mappato il presidio condiviso, non l’ingresso del CSM.",
+      "source_url": "https://www.openstreetmap.org/node/3503874861",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 3503874861,
+        "name": "ASL VT1 Consultorio Familiare",
+        "coordinate_origin": "OSM mapped point"
+      }
+    },
+    {
+      "key": "rete:VT-10",
+      "source": "vt_csm",
+      "lat": 42.4604088,
+      "lng": 12.3843922,
+      "quality": "C",
+      "precision": "building",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Centro Salute/Ospedale di Orte collegato dalla fonte ASL; punto del presidio, non ingresso dell’ambulatorio.",
+      "source_url": "https://www.openstreetmap.org/node/1818883486",
+      "evidence": {
+        "osm_type": "node",
+        "osm_id": 1818883486,
+        "name": "Centro Salute Orte",
+        "coordinate_origin": "OSM mapped point"
+      }
+    },
+    {
+      "key": "rete:VT-17",
+      "source": "vt_csm",
+      "lat": 42.292384,
+      "lng": 12.212152,
+      "quality": "C",
+      "precision": "building",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Complesso Ospedale Sant’Anna Ronciglione, civico 17; OSM usa Via dell’Ospedale Consorziale. Non è verificato l’ingresso del CSM.",
+      "source_url": "https://www.openstreetmap.org/way/23274363",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 23274363,
+        "name": "Ospedale Sant'Anna",
+        "coordinate_origin": "OSM geometry representative point"
+      }
+    },
+    {
+      "key": "privati:PRI-011",
+      "source": "santalucia",
+      "lat": 41.8411765,
+      "lng": 12.514307,
+      "quality": "C",
+      "precision": "building",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Complesso Fondazione Santa Lucia, non ingresso dell’ambulatorio. La scheda mantiene il percorso privato: nessuna promozione automatica del regime SSN.",
+      "source_url": "https://www.openstreetmap.org/way/226528209",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 226528209,
+        "name": "Fondazione Santa Lucia",
+        "coordinate_origin": "OSM geometry representative point"
+      }
+    },
+    {
+      "key": "rete:NET-085",
+      "source": "formia",
+      "lat": 41.2617916,
+      "lng": 13.6182823,
+      "quality": "C",
+      "precision": "building",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Edificio ospedaliero Dono Svizzero, documentato come sede SPDC; reparto e ingresso non verificati. Non esteso al SerD che indica soltanto Via Appia.",
+      "source_url": "https://www.openstreetmap.org/way/128797276",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 128797276,
+        "name": "Dono Svizzero",
+        "coordinate_origin": "OSM geometry representative point"
+      }
+    },
+    {
+      "key": "moduli:MOD-087",
+      "source": "iocentro",
+      "lat": 41.8976215,
+      "lng": 12.5331143,
+      "quality": "C",
+      "precision": "street",
+      "method": "Confronto manuale fonte del servizio + oggetto OSM in estratto regionale offline del 25/09/2026",
+      "note": "Via di Pietralatella: breve strada cartografata di circa 70 metri. La fonte indica SNC: il punto è sulla via, non sull’edificio o sull’ingresso.",
+      "source_url": "https://www.openstreetmap.org/way/210674874",
+      "evidence": {
+        "osm_type": "way",
+        "osm_id": 210674874,
+        "tags": {
+          "highway": "service",
+          "name": "Via di Pietralatella",
+          "service": "alley"
+        },
+        "coordinate_origin": "OSM geometry representative point"
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "key": "rete:R3-05",
+      "source": "r3_csm",
+      "fields": {
+        "accesso": "Primo contatto con il CSM: accoglienza e valutazione della domanda; contattare la sede per modalità aggiornate.",
+        "orari": "Lun 13–20; mar 08–18; mer–ven 08–15"
+      },
+      "note": "Rimosso dal campo accesso il riferimento ad Acilia, estraneo a questa sede. L’avviso di sospensione del 6–7 febbraio 2026 è datato: non è trattato come chiusura corrente.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "rete:R5-10",
+      "source": "colleferro",
+      "fields": {
+        "telefono": "06 97206760 (infermieri); 06 97206770 (medici); 06 97206764 (responsabile)",
+        "accesso": "Accesso diretto e gratuito oppure appuntamento telefonico/e-mail; per il bacino territoriale indicato dall’ASL. Documento di riconoscimento e tessera sanitaria.",
+        "sede_dettaglio": "Ingresso indicato dalla pagina ASL su Via Santo Stefano; punto cartografico indicativo, non ingresso fisico verificato."
+      },
+      "note": "Numeri distinti per funzione e modalità del primo contatto ricontrollati; orari di somministrazione farmaci non confusi con quelli del ricevimento.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "rete:NET-052",
+      "source": "npia",
+      "fields": {
+        "accesso": "Primo contatto diretto, senza impegnativa né ticket. Richiesta tramite tsmree.subiaco@aslroma5.it o 0774 8115374; specialisti su appuntamento.",
+        "orari": "Telefono per prima visita: lunedì 10:00–12:00; mercoledì 15:00–16:30. Sono fasce di prenotazione, non orari generali di apertura."
+      },
+      "note": "Orari riferiti esclusivamente al primo contatto; pagina ASL comune alle due sedi. Nessun dato personale raccolto dal portale.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "rete:NET-053",
+      "source": "npia",
+      "fields": {
+        "accesso": "Primo contatto diretto, senza impegnativa né ticket. Richiesta tramite tsmree.subiaco@aslroma5.it o 0774 8115374; specialisti su appuntamento.",
+        "orari": "Telefono per prima visita: lunedì 10:00–12:00; mercoledì 15:00–16:30. Sono fasce di prenotazione, non orari generali di apertura."
+      },
+      "note": "Orari riferiti esclusivamente al primo contatto; pagina ASL comune alle due sedi. Nessun dato personale raccolto dal portale.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "privati:PRI-004",
+      "source": "qrare",
+      "fields": {
+        "sede": "Viale di Villa Massimo, 4, Roma",
+        "contatti": "376 2715110; prenotazione tramite il centro"
+      },
+      "note": "Sostituita l’indicazione generica della sede con l’indirizzo pubblicato dal centro. Non riesaminati costi, autorizzazione o accreditamento.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "privati:PRI-005",
+      "source": "adhd",
+      "fields": {
+        "sede": "Via Luigi Perna, 51, Roma",
+        "contatti": "353 3985514",
+        "email": "info@adhdroma.com"
+      },
+      "note": "Recapiti di contatto del centro pubblicati sul sito del gestore. Nessuna valutazione indipendente di qualità clinica.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-087",
+      "source": "iocentro",
+      "fields": {
+        "indirizzo": "Via di Pietralatella SNC, Roma",
+        "telefono": "06 4382379; 347 4728757",
+        "orari": "Contatti e appuntamenti: lunedì–venerdì 10:00–18:00",
+        "email": "ilcentroonlus@gmail.com"
+      },
+      "note": "Sede del centro documentata dal gestore; non prova di aggiornamento del contratto della singola unità. Il rapporto SSN resta quello precedente.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "rete:NET-085",
+      "source": "formia",
+      "fields": {
+        "nota_indirizzo": "Sede SPDC nel Dono Svizzero documentata dall’ASL. V7.11 localizza il solo edificio ospedaliero; stanza, reparto e ingresso non verificati."
+      },
+      "note": "Superata soltanto la nota geografica V7.9.4 di assenza del pin; il livello resta indicativo.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "rete:VT-03",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 1860426",
+        "orari": "Lun e ven 09–13:30"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-04",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 338594",
+        "orari": "Gio 09–13"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-08",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 338817",
+        "orari": "Lun e gio 09–13:30"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-09",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0763 711205 / 0761 1860450",
+        "orari": "Lun e mer 09–13:30"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-10",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 338214",
+        "orari": "Mar 08–14"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-13",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 678555 / 0761 678591",
+        "orari": "Mar e gio 09–13:30"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-15",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 569089",
+        "orari": "Gio 09–13:30"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-17",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 651298",
+        "orari": "Lun e mer 09–13:30"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "rete:VT-18",
+      "source": "vt_csm",
+      "fields": {
+        "telefono": "0761 338806",
+        "orari": "Lun–ven 08–20; sab 08–14"
+      },
+      "note": "Recapiti e fasce orarie confermati nel documento ASL disponibile, con data di pagina 16/04/2025. Consultazione nel 2026 non equivale a nuova data di validità; riconfermare prima di recarsi alla sede.",
+      "status": "riscontro_documentale_senza_variazione",
+      "source_date": "2025-04-16"
+    },
+    {
+      "key": "moduli:MOD-059",
+      "source": "san_carlo",
+      "fields": {
+        "nota_indirizzo": "La pagina del gestore documenta Comunità San Carlo in Via Alessandro Volta 2, Marino. La scheda storica include anche Villa Santa Francesca Romana: identità/unità da riconciliare; nessun indirizzo o pin unico attribuito all’intera denominazione.",
+        "nota_contatti_v711": "Per la sola Comunità San Carlo: 06 93660116; s.carlo@ceis.it. Non estesi automaticamente all’altra denominazione storica."
+      },
+      "note": "Conservato il record e la sua identità storica; informazioni nuove limitate alla componente nominativamente documentata. Nessuna fusione/splitting automatico.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-083",
+      "source": "maieusis",
+      "fields": {
+        "indirizzo": "Via Macchia Tonda, 8, Capena",
+        "telefono": "06 90389343; 06 36308629 (informazioni e prenotazioni)",
+        "email": "maieusis.ct@gmail.com",
+        "nota_indirizzo": "Sede residenziale di Capena distinta dal centro diurno in Via Filippo Turati 2/4, Fiano Romano. Nessun pin ricavato dalla sede generica in calce al sito."
+      },
+      "note": "Differenziate sede residenziale e centro diurno; nessuna modifica di capacità o classificazione SSN.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-030",
+      "source": "samadi",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-031",
+      "source": "samadi",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-032",
+      "source": "samadi",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-033",
+      "source": "samadi",
+      "fields": {
+        "telefono": "06 330141",
+        "email": "accettazione@samadi.it",
+        "nota_contatti_v711": "Ufficio accettazione: lunedì–sabato 09:00–18:00. Questa fascia riguarda i contatti, non l’assistenza residenziale."
+      },
+      "note": "Recapito del presidio comune ai moduli già distinti; non estesi gli orari dell’accettazione all’attività clinico-assistenziale.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-075",
+      "source": "castel",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Tabaccheria Senza Filtro», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-076",
+      "source": "castel",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Tabaccheria Senza Filtro», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-081",
+      "source": "rocca",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Falesia di Rocca Canterano», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "moduli:MOD-082",
+      "source": "rocca",
+      "fields": {
+        "nota_geografia_v711": "Il collegamento cartografico pubblicato dal gestore rinvia a «Falesia di Rocca Canterano», non a una destinazione nominativa coerente con questa struttura. Coordinate scartate; nessun pin aggiunto."
+      },
+      "note": "Controllata la destinazione del link: non utilizzate le coordinate del punto non pertinente.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "rete:NET-065",
+      "source": "rieti_dna",
+      "fields": {
+        "nota_indirizzo": "Sede da riconfermare: il record precedente indica Palazzo Dosi Delfini, mentre un avviso ASL per l’Open Day dell’11/03/2025 indica il Centro DCA in Via delle Ortensie 28, primo piano. Non è acquisita una prova di trasferimento definitivo; nessun pin attribuito.",
+        "nota_geografia_v711": "Conflitto fra indicazione precedente e avviso ASL datato; non selezionata automaticamente una sede attuale."
+      },
+      "note": "L’avviso datato è prova di quella sede per l’evento, non di chiusura/trasferimento permanente. Verifica diretta con il servizio ancora necessaria.",
+      "status": "aggiornamento_per_campo",
+      "source_date": "2025-03-03"
+    },
+    {
+      "key": "privati:PRI-003",
+      "source": "goito",
+      "fields": {
+        "sede": "Via Goito 58, 00185 Roma",
+        "contatti": "06 84000111; prenotazione tramite il centro",
+        "orari": "Orari della sede: lunedì–venerdì 07:15–20:00; sabato 08:15–13:00. Appuntamenti delle singole prestazioni da concordare."
+      },
+      "note": "Indirizzo e contatto della sede riscontrati nella pagina dedicata; gli orari dei prelievi non sono applicati alle prestazioni psicologiche. Geografia ancora da confermare: non scelto arbitrariamente un civico con suffisso diverso.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    },
+    {
+      "key": "privati:PRI76-003",
+      "source": "airri",
+      "fields": {
+        "sede": "Via Carlo Cattaneo 46/T, Viterbo",
+        "contatti": "0761 227123 (poliambulatorio); 0761 306111 (centro)",
+        "nota_geografia_v711": "La sede di Viterbo al 46/T resta distinta dalla sede legale romana. Nessun pin attribuito al civico 46/O o a una generica sede del gruppo."
+      },
+      "note": "Sede operativa e contatti pubblici riscontrati; nessuna deduzione dell’accreditamento delle singole prestazioni e nessuna nuova coordinata sufficientemente univoca.",
+      "status": "aggiornamento_per_campo",
+      "source_date": null
+    }
+  ],
+  "reconnaissance": {
+    "queue_records": 128,
+    "unique_urls": 93,
+    "http_200": 68,
+    "coordinate_candidates_records": 24,
+    "scope": "Ricognizione automatizzata degli URL; non equivale a validazione manuale di 128 sedi o a conferma telefonica.",
+    "source_date_policy": "La data del riesame non sostituisce la data del documento né certifica operatività o disponibilità."
+  },
+  "osm_extract": {
+    "url": "https://download.openstreetmap.fr/extracts/europe/italy/lazio-latest.osm.pbf",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "retrieved_at": "2026-09-26T16:12:54Z",
+    "last_modified": "Fri, 25 Sep 2026 01:45:47 GMT",
+    "sha256": "2c551f007f7839163494048e93446c861d0bbb2e2bfce7b020557ef24e626fcc",
+    "bytes": 126680950,
+    "features": 255907,
+    "boundaries": 398
+  }
+}

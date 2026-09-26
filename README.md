@@ -1,4 +1,14 @@
-## Versione corrente V7.10.3
+# Versione corrente V7.11
+
+Primo ciclo geografia e audit per campo: **443 servizi clinici, 330 localizzati, 113 senza pin**. Quindici nuove localizzazioni documentali, trenta schede riesaminate e nessun ingresso fisico verificato. Il controllo degli URL delle 128 schede iniziali non equivale alla loro validazione completa.
+
+Report corrente: `downloads/Report_Geografia_V7_11.md`; audit: `downloads/Audit_Geografia_Operativo_V7_11.json`.
+
+Checkpoint: `checkpoint-v7-10-3-before-v711-2026-09-26` → `85808c6fad9dec32098558e466a3997a18b95d22`. Menta, percorso studenti e supporto territoriale conservati.
+
+## Cronologia delle edizioni precedenti
+
+## Edizione precedente V7.10.3
 
 V7.10.3 aggiunge un ingresso dedicato “Sei uno studente?” nella home e trasforma `studenti.html` in un hub tra università, scuola, servizi territoriali e ascolto. Menta invia le richieste generiche relative agli studenti a questo hub, mentre richieste esplicite sull’università o sulla scuola continuano ad aprire direttamente le rispettive directory.
 
@@ -8,15 +18,15 @@ Lo strato V7.10 resta separato: 135 consultori, 47 sedi/punti PUA documentati e 
 
 Checkpoint prima del recupero V7.9.4: branch `checkpoint-v7-10-1-before-v794-recovery-2026-09-26` → `021f5fc240137a6d8c3c8974e109441eb71ebba6`.
 
-## Versione corrente V7.9.3
+## Edizione precedente V7.9.3
 
 Riesame operativo additivo: quattro presidi ASL Roma 1 aggiornati per accesso/orari/trasporto, tre sedi ASL Rieti con evidenza edilizia sull’accessibilità, un conflitto di sede Rieti reso esplicito e contesto del finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti. Geografia invariata: 442 servizi, 309 localizzati, 133 senza pin. Indicizzazione ancora disattivata.
 
-## Versione corrente V7.9.2
+## Edizione precedente V7.9.2
 
 V7.9.2: cinque contratti individuali Roma 5 acquisiti, FEBO ricontrollato senza promozione, ricognizione Nuovi Orizzonti consolidata, Menta sincronizzata e geografia conservativa ulteriormente ampliata.
 
-## Versione corrente V7.9.1
+## Edizione precedente V7.9.1
 
 442 servizi, 307 localizzati, 135 senza pin. 51 revisioni per campo, due servizi Villa Pia, contratti per singola unità IHG/Gabbiano e ASL Roma 5. Nessuna riscrittura degli overlay precedenti.
 
@@ -59,7 +69,7 @@ Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository p
 
 Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
 
-## Versione corrente V7.8 — UX e mappa dei presidi
+## Edizione precedente V7.8 — UX e mappa dei presidi
 
 La produzione usa **V7.8** per l’interfaccia, **V7.7.5** per l’overlay multisede, **V7.6** per il riesame documentale precedente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
 

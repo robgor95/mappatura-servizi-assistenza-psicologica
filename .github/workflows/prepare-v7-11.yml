@@ -1,0 +1,51 @@
+name: V7.11 prepare approved candidate
+on:
+  push:
+    branches: [v7-11-geography-audit]
+    paths: [.github/workflows/prepare-v7-11.yml, tools/decisions-v7-11.py, tools/prepare-v7-11.py]
+permissions:
+  contents: write
+concurrency:
+  group: v711-prepare-candidate
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/v7-11-geography-audit'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: v7-11-geography-audit
+          fetch-depth: 0
+      - name: Expand the reviewed decisions, build and test
+        run: |
+          set -euo pipefail
+          python tools/decisions-v7-11.py
+          python tools/prepare-v7-11.py
+          # The connector already installed the historical manual workflow.
+          # Do not change workflow code via this build token.
+          git show HEAD:.github/workflows/verify-v7-10.yml > .github/workflows/verify-v7-10.yml
+          mkdir -p /tmp/v711-build
+          node tools/test-v7-11.cjs | tee /tmp/v711-build/data-tests.json
+          node --check tools/test-ui-v7-11.mjs
+          node --check tools/test-ui-v7-11-new.mjs
+          python -m py_compile tools/verify-production-v7-11.py
+      - name: Commit generated files only on the review branch
+        run: |
+          set -euo pipefail
+          git config user.name 'Lazio audit build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/audit-data-v7-11.js assets/servizi-v7-11.js assets/map-data-v7-11.js assets/directory-v7-11.js data/audit_operativo_v7_11.json data/presidi_geo_v7_11.json downloads/*V7_11* servizi.html archivio.html mappa.html strutture-approfondite.html privati.html documenti.html README.md CHANGELOG.md version.json tools/export-current-v7-11.cjs tools/test-ui-v7-11.mjs research/v7_11/approved.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'V7.11: 15 documented locations, 30 scoped reviews, 330/113 coverage'
+            git push origin HEAD:v7-11-geography-audit
+          fi
+          git rev-parse HEAD > /tmp/v711-build/commit.txt
+          git archive --format=zip HEAD -o /tmp/v711-build/repository.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v711-approved-candidate
+          path: /tmp/v711-build/
+          retention-days: 7

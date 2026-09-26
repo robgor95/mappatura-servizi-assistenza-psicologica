@@ -1,0 +1,20 @@
+name: V7.11 export review snapshot
+on:
+  push:
+    branches: [v7-11-geography-audit]
+    paths: [.github/workflows/export-review-v7-11.yml]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: git archive --format=zip HEAD -o /tmp/v711-repository.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v711-repository-review
+          path: /tmp/v711-repository.zip
+          retention-days: 7
