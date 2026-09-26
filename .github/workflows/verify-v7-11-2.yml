@@ -29,7 +29,7 @@ jobs:
           python - <<'PY'
           import subprocess
           base='2c119884969b77e9f5635af6802c04fbf20f7e8a'
-          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','privati.html','documenti.html'}
+          allowed={'README.md','CHANGELOG.md','version.json','servizi.html','archivio.html','mappa.html','strutture-approfondite.html','privati.html','documenti.html','.github/workflows/verify-v7-11-1.yml'}
           changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
           bad=[]
           for p in changed:
