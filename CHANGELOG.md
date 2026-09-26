@@ -1,3 +1,12 @@
+## 7.11.3 — 2026-09-26
+
+- Quarto ciclo geografico sulla baseline V7.11.2.
+- Aggiunte 3 localizzazioni indicative C: SerD Ceccano, Ambulatorio CSM Osteria Nuova e CSM/ambulatorio Vetralla.
+- Copertura: 353 localizzati e 90 senza pin; 443 servizi clinici invariati.
+- Acquisito l'indirizzo regionale del SerD interno Casa Circondariale Rieti (Viale Maestri del Lavoro 2) senza assegnare un pin.
+- Coordinate secondarie usate solo quando l'indirizzo istituzionale coincide e mantenute come indicative.
+- Zero ingressi fisici verificati; Menta, studenti, supporto territoriale e noindex invariati.
+
 ## 7.11.2 — 2026-09-26
 
 - Terzo ciclo geografico sulla baseline V7.11.1.
