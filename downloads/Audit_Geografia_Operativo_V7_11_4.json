@@ -1,0 +1,35 @@
+{
+  "version": "7.11.4",
+  "baseline_commit": "4c80b37a32088b156551df19a95097ea8bc9ea8e",
+  "checked_at": "2026-09-26",
+  "summary": {
+    "services": 443,
+    "located_before": 353,
+    "located_after": 359,
+    "unlocated_before": 90,
+    "unlocated_after": 84,
+    "new_locations": 6,
+    "address_updates": 2,
+    "quality_after": {
+      "A": 28,
+      "C": 331,
+      "D": 82,
+      "E": 2
+    },
+    "entrances_verified": 0
+  },
+  "localized_keys": [
+    "rete:VT-01",
+    "rete:NET-073",
+    "rete:VT-04",
+    "rete:VT-08",
+    "rete:VT-13",
+    "rete:VT-15"
+  ],
+  "address_updated_keys": [
+    "rete:VT-01",
+    "rete:NET-073"
+  ],
+  "complete": false,
+  "caveat": "Le coordinate provengono da mappe incorporate in pagine ASL ufficiali ma non certificano l'ingresso fisico del singolo servizio."
+}
