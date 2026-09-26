@@ -1,3 +1,11 @@
+## 7.10.1 — 2026-09-26
+
+- Aggiornata la mascotte Menta con un asset WebP trasparente e versionato, ottimizzato per la resa responsive.
+- Conservati asset precedente e checkpoint Git per rollback immediato.
+- Migliorata la resa visiva della mascotte su desktop e mobile senza modificare routing, parole chiave, sicurezza o contenuti clinici.
+- Mantenuti gli stati dinamici CSS/JavaScript e il rispetto di `prefers-reduced-motion`.
+- Aggiunta cache immutabile solo al nuovo asset versionato; nessun tracking o dipendenza esterna.
+
 ## 7.10 — 2026-09-23
 
 - Creato uno strato separato di supporto territoriale senza modificare i 442 servizi clinici.

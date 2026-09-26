@@ -5,6 +5,10 @@ on:
     paths:
       - .github/workflows/verify-v7-10.yml
       - index.html
+      - '**/*.html'
+      - _headers
+      - assets/menta-v7-7.css
+      - assets/menta/**
       - supporto-territoriale.html
       - aiuto-adesso.html
       - ascolto.html
@@ -22,6 +26,10 @@ on:
     paths:
       - .github/workflows/verify-v7-10.yml
       - index.html
+      - '**/*.html'
+      - _headers
+      - assets/menta-v7-7.css
+      - assets/menta/**
       - supporto-territoriale.html
       - aiuto-adesso.html
       - ascolto.html
@@ -61,7 +69,15 @@ jobs:
           python - <<'PY'
           import subprocess
           base='2ad2126b5c972ce49956607e368fc45b3fc4f7e6'
-          allowed={'README.md','CHANGELOG.md','index.html','ascolto.html','centri-ascolto.html','documenti.html','sitemap.xml','version.json','.github/workflows/verify-v7-9-3.yml'}
+          allowed={
+              'README.md','CHANGELOG.md','index.html','ascolto.html','centri-ascolto.html','documenti.html',
+              'sitemap.xml','version.json','_headers','.github/workflows/verify-v7-9-3.yml',
+              '404.html','archivio.html','giovani.html','glossario.html','helpline.html','mappa.html','metodo.html',
+              'orientamento-servizi.html','privati.html','qualita-dati.html','scuole.html','servizi.html',
+              'strutture-approfondite.html','studenti.html','universita.html',
+              'guide/index.html','guide/primo-percorso.html','guide/privato.html','guide/pubblico.html',
+              'guide/riabilitazione.html','guide/ricovero.html','assets/menta-v7-7.css','assets/menta/README.md'
+          }
           changed=subprocess.check_output(['git','diff','--name-only',base,'HEAD'],text=True).splitlines()
           bad=[]
           for p in changed:

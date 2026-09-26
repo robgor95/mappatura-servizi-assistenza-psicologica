@@ -4,7 +4,7 @@
   "archive_version": "7.3",
   "database_version": "7.3",
   "data_extension_version": "7.10",
-  "built_at": "2026-09-23",
+  "built_at": "2026-09-26",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
   "clinical_review": false,
@@ -60,7 +60,7 @@
     "routes": 48,
     "towns": 100
   },
-  "release_note": "V7.10: nuovo strato separato di supporto territoriale con master regionale di 135 consultori, 47 sedi/punti PUA documentati, 6 servizi/linee di emergenza sociale, pagina Aiuto adesso e nuovi percorsi Menta; i 442 servizi clinici e la geografia V7.9.2 restano invariati.",
+  "release_note": "V7.10.1 visual refresh: Menta usa un nuovo asset WebP trasparente e versionato, con resa responsive più nitida e cache immutabile; animazioni, accessibilità, routing e i 442 servizi clinici restano invariati.",
   "navigation_version": "7.8",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -196,5 +196,17 @@
   "v7_10_verification": {
     "local_report": "downloads/Audit_Supporto_Territoriale_V7_10.json",
     "production_evidence": "da verificare separatamente dopo il merge; non riutilizzare esiti V7.9.x"
+  },
+  "menta_asset_version": "7.10.1",
+  "menta_asset": {
+    "file": "assets/menta/menta-base-v7-10-1.webp",
+    "format": "WebP",
+    "width": 480,
+    "height": 494,
+    "transparent": true,
+    "bytes": 34839,
+    "sha256": "a58f528ada6712acc3d2cb9396ff1398b064f53aa4742f1243fb1723b3cea7df",
+    "previous_asset": "assets/menta/menta-base.webp",
+    "behavior": "CSS/JS states unchanged; reduced-motion preserved"
   }
 }
