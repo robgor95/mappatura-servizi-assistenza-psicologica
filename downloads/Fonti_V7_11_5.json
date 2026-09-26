@@ -1,0 +1,68 @@
+{
+  "version": "7.11.5",
+  "checked_at": "2026-09-26",
+  "baseline_commit": "bdfeb28907ae15defc04ddc6092283a8f832abe0",
+  "methodology": "Riutilizzo di coordinate stradali già validate nella mappa per la stessa via e comune; nessuna geocodifica live. Le coordinate non identificano civico, palazzina o ingresso.",
+  "records": {
+    "rete:FR-01": {
+      "address_source": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/",
+      "coordinate_source": "https://www.openstreetmap.org/way/838630957",
+      "shared_coordinate_from": "rete:FR-02",
+      "lat": 41.64114200522622,
+      "lng": 13.308249000477014,
+      "precision": "street",
+      "street_extent_m": 2255,
+      "note": "La sede del DSM è documentata in Via A. Fabi, Palazzina P. Si riusa soltanto il punto stradale già validato per Via Armando Fabi: non identifica la Palazzina P né un ingresso."
+    },
+    "rete:FR-11": {
+      "address_source": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-patologie-da-dipendenza-frosinone-alatri-anagni-sora/",
+      "coordinate_source": "https://www.openstreetmap.org/way/838630957",
+      "shared_coordinate_from": "rete:FR-02",
+      "lat": 41.64114200522622,
+      "lng": 13.308249000477014,
+      "precision": "street",
+      "street_extent_m": 2255,
+      "note": "Il SerD Frosinone è documentato in Via A. Fabi, Palazzina P. Il marker riusa il punto stradale della via già presente: non localizza la palazzina o l'ingresso."
+    },
+    "rete:NET-083": {
+      "address_source": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-residenzialita-e-semiresidenzialita/",
+      "coordinate_source": "https://www.openstreetmap.org/way/838630957",
+      "shared_coordinate_from": "rete:FR-02",
+      "lat": 41.64114200522622,
+      "lng": 13.308249000477014,
+      "precision": "street",
+      "street_extent_m": 2255,
+      "note": "La UOC Residenzialità e Semiresidenzialità è documentata in Via Fabi, Palazzina M. Il marker è solo sulla via e non certifica la Palazzina M o l'ingresso."
+    },
+    "rete:PUB72-FR-001": {
+      "address_source": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+      "coordinate_source": "https://www.openstreetmap.org/way/838630957",
+      "shared_coordinate_from": "rete:FR-02",
+      "lat": 41.64114200522622,
+      "lng": 13.308249000477014,
+      "precision": "street",
+      "street_extent_m": 2255,
+      "note": "La SRTRe Franco Basaglia è documentata in Via A. Fabi snc. Il punto riusa la localizzazione stradale già esistente della via; nessun edificio o ingresso viene dedotto."
+    },
+    "rete:PUB72-FR-002": {
+      "address_source": "https://www.asl.fr.it/wp-content/uploads/avviso-struttura-complessa-RESIDENZIALITA-E-SEMIRESIDENZIALITA.pdf",
+      "coordinate_source": "https://www.openstreetmap.org/way/838630957",
+      "shared_coordinate_from": "rete:FR-02",
+      "lat": 41.64114200522622,
+      "lng": 13.308249000477014,
+      "precision": "street",
+      "street_extent_m": 2255,
+      "note": "La SRTRe Romolo Priori è documentata in Via A. Fabi, Palazzina M. Il punto è soltanto stradale e non identifica la Palazzina M o l'ingresso."
+    },
+    "rete:NET-057": {
+      "address_source": "https://conteinrete.it/vademecum/",
+      "coordinate_source": "https://www.openstreetmap.org/way/90061207",
+      "shared_coordinate_from": "rete:R6-06",
+      "lat": 41.82744226097041,
+      "lng": 12.66528180090223,
+      "precision": "street",
+      "street_extent_m": 2483,
+      "note": "TSMREE Frascati è documentato in Via E. Fermi snc. Si riusa il punto stradale già presente per Via Enrico Fermi a Frascati; non identifica un civico o un ingresso."
+    }
+  }
+}
