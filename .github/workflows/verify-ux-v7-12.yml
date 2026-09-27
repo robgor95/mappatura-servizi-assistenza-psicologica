@@ -1,0 +1,66 @@
+name: V7.12 Menta UX verification
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ux-v712-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Dependencies
+        run: |
+          pip install beautifulsoup4
+          npm install --prefix /tmp/ux-v712-node playwright @axe-core/playwright
+          ln -s /tmp/ux-v712-node/node_modules node_modules
+          /tmp/ux-v712-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Data and protected-file checks
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ux-v712-verification
+          node --check assets/ux-ui-v7-12.js
+          node --check tools/test-ui-v7-12.mjs
+          node tools/test-data-v7-12.cjs | tee /tmp/ux-v712-verification/data.json
+          QA_OUT=/tmp/ux-v712-verification python tools/verify-ux-v7-12.py
+      - name: Browser on candidate
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/ux-v712-http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          QA_OUT=/tmp/ux-v712-verification/browser node tools/test-ui-v7-12.mjs
+      - name: Exact production bytes and privacy headers
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/ux-v712-verification
+        run: python tools/verify-ux-v7-12.py --production
+      - name: Browser on published site
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/ux-v712-verification/browser
+        run: node tools/test-ui-v7-12.mjs
+      - name: Tested commit
+        if: always()
+        run: |
+          mkdir -p /tmp/ux-v712-verification
+          git rev-parse HEAD > /tmp/ux-v712-verification/commit.txt
+          git diff --name-status 9a15c39c6f1c5008cde6fbe44dd4f419f524ba97 HEAD > /tmp/ux-v712-verification/changes.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-v712-${{ github.event_name }}-${{ github.run_id }}
+          path: /tmp/ux-v712-verification
+          retention-days: 30
