@@ -1,3 +1,9 @@
+## Versione corrente candidata V7.11.7
+
+Ottavo ciclo geografico e pulizia della coda: 443 servizi clinici, 373 localizzati e 70 senza pin. Uno dei 70 non dispone al momento di una sede autonoma corrente, quindi la coda geografica effettivamente azionabile è di 69 casi. Tre record diventano localizzabili; indirizzi e conflitti di sede vengono aggiornati senza dedurre ingressi o coordinate non corroborate.
+
+Checkpoint di partenza: `8310d268b6bf643890bf63851144d304c987e8bc` (V7.11.6 su `main`).
+
 ## Versione corrente candidata V7.11.6
 
 Settimo ciclo geografico: 443 servizi clinici, 370 localizzati e 73 senza pin. Cinque nuovi marker C: tre servizi distinti nello stesso presidio di Via Salaria per Roma 36 a Rieti e due strutture Venere/Marte localizzate soltanto a livello di area/via a Cerri Aprano. Nessun ingresso fisico viene dichiarato verificato.

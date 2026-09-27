@@ -1,0 +1,326 @@
+{
+  "version": "7.11.7",
+  "checked_at": "2026-09-27",
+  "summary": {
+    "services": 443,
+    "located_before": 370,
+    "located_after": 373,
+    "unlocated_after": 70,
+    "actionable_geography_queue": 69,
+    "non_actionable_unlocated": 1,
+    "new_locations": 3,
+    "address_updates_without_pin": 2,
+    "conflicts_explicitly_reclassified": 3,
+    "physical_entrances_verified": 0
+  },
+  "excluded_from_actionable_queue": [
+    {
+      "service_key": "rete:R2-10",
+      "categoria": "sede_corrente_non_applicabile",
+      "reason": "SerD Distretto 4 temporaneamente chiuso e in attesa di nuova sede; attività appoggiata ad altri SerD.",
+      "source": "https://www.aslroma2.it/index.php/adulti-6d/sert-tossicodipendenze-ed-alcoolismo-6d"
+    },
+    {
+      "service_key": "rete:NET-082",
+      "categoria": "localizzato_v7117",
+      "reason": "Sede corrente aggiornata e punto stradale C riusato.",
+      "source": "https://www.asl.fr.it/asl-informa/primo-piano/trasferimento-sede-uosd-disturbi-della-nutrizione-alimentare/"
+    },
+    {
+      "service_key": "moduli:MOD-066",
+      "categoria": "localizzato_v7117",
+      "reason": "Destinazione cartografica nominativa pubblicata dal gestore.",
+      "source": "https://www.villamaddalena.eu/contatti/"
+    },
+    {
+      "service_key": "moduli:MOD-070",
+      "categoria": "legacy_riconciliato_localizzato",
+      "reason": "Record storico riconciliato con il modulo canonico già localizzato a Colle Cesarano.",
+      "source": "https://www.kormed.it/strutture/colle-cesarano/"
+    }
+  ],
+  "revisions": [
+    {
+      "service_key": "rete:NET-082",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "sede_aggiornata_localizzazione_indicativa",
+      "scope": "Riesame documentale della sede e riuso prudenziale di un punto stradale già validato; nessun ingresso fisico, disponibilità o revisione clinica.",
+      "note": "L'avviso ASL dell'11 maggio 2026 documenta il trasferimento della UOSD in Via Armando Fabi, Palazzina P, con attività nella nuova sede dal 18 maggio 2026.",
+      "fields": {
+        "indirizzo": "Via Armando Fabi, snc – Palazzina P",
+        "stato_servizio": "Sede trasferita dal 18 maggio 2026",
+        "nota_geografia_v7117": "La sede corrente è documentata in Via Armando Fabi, Palazzina P. Il marker riusa soltanto il punto stradale già validato per Via Armando Fabi; non identifica la Palazzina P né l'ingresso."
+      },
+      "sources": [
+        "https://www.asl.fr.it/asl-informa/primo-piano/trasferimento-sede-uosd-disturbi-della-nutrizione-alimentare/",
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.fr.it/asl-informa/primo-piano/trasferimento-sede-uosd-disturbi-della-nutrizione-alimentare/",
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "L'avviso ASL dell'11 maggio 2026 documenta il trasferimento della UOSD in Via Armando Fabi, Palazzina P, con attività nella nuova sede dal 18 maggio 2026."
+        },
+        "stato_servizio": {
+          "sources": [
+            "https://www.asl.fr.it/asl-informa/primo-piano/trasferimento-sede-uosd-disturbi-della-nutrizione-alimentare/",
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "L'avviso ASL dell'11 maggio 2026 documenta il trasferimento della UOSD in Via Armando Fabi, Palazzina P, con attività nella nuova sede dal 18 maggio 2026."
+        },
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.asl.fr.it/asl-informa/primo-piano/trasferimento-sede-uosd-disturbi-della-nutrizione-alimentare/",
+            "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "L'avviso ASL dell'11 maggio 2026 documenta il trasferimento della UOSD in Via Armando Fabi, Palazzina P, con attività nella nuova sede dal 18 maggio 2026."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-066",
+      "origin": "moduli",
+      "checked_at": "2026-09-27",
+      "status": "localizzazione_indicativa",
+      "scope": "Riesame geografico della sede da pagina ufficiale del gestore; nessun ingresso fisico o disponibilità verificata.",
+      "note": "Il gestore conferma Via Sant'Anna 26, Castel Madama e pubblica una destinazione cartografica nominativa della struttura.",
+      "fields": {
+        "nota_geografia_v7117": "Villa Maddalena è documentata in Via Sant'Anna 26. Il punto deriva dalla destinazione cartografica nominativa pubblicata dal gestore; rappresenta la struttura, non un ingresso verificato."
+      },
+      "sources": [
+        "https://www.villamaddalena.eu/contatti/",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Maddalena.pdf"
+      ],
+      "evidence": {
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.villamaddalena.eu/contatti/",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Maddalena.pdf"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Il gestore conferma Via Sant'Anna 26, Castel Madama e pubblica una destinazione cartografica nominativa della struttura."
+        }
+      }
+    },
+    {
+      "service_key": "moduli:MOD-070",
+      "origin": "moduli",
+      "checked_at": "2026-09-27",
+      "status": "record_legacy_riconciliato",
+      "scope": "Riconciliazione di un record storico con il modulo canonico già aggiunto in V7.9.4; nessuna fusione automatica delle identità storiche.",
+      "note": "Il record storico 'Il Colle' corrisponde al modulo canonico Colle Cesarano – Il Colle – SRSR H24 Nucleo 1 già presente come V794-CESARANO-ILCOLLE-H24.",
+      "fields": {
+        "indirizzo": "Via Maremmana Inferiore, 102",
+        "comune": "Tivoli",
+        "stato_servizio": "Record legacy: usare la scheda canonica Colle Cesarano – Il Colle – SRSR H24 Nucleo 1",
+        "nota_geografia_v7117": "Record legacy riconciliato con il modulo canonico V794-CESARANO-ILCOLLE-H24. Riusa il punto A del complesso Colle Cesarano; l'ingresso del singolo nucleo non è verificato."
+      },
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf"
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Il record storico 'Il Colle' corrisponde al modulo canonico Colle Cesarano – Il Colle – SRSR H24 Nucleo 1 già presente come V794-CESARANO-ILCOLLE-H24."
+        },
+        "comune": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Il record storico 'Il Colle' corrisponde al modulo canonico Colle Cesarano – Il Colle – SRSR H24 Nucleo 1 già presente come V794-CESARANO-ILCOLLE-H24."
+        },
+        "stato_servizio": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Il record storico 'Il Colle' corrisponde al modulo canonico Colle Cesarano – Il Colle – SRSR H24 Nucleo 1 già presente come V794-CESARANO-ILCOLLE-H24."
+        },
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.kormed.it/strutture/colle-cesarano/",
+            "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Il record storico 'Il Colle' corrisponde al modulo canonico Colle Cesarano – Il Colle – SRSR H24 Nucleo 1 già presente come V794-CESARANO-ILCOLLE-H24."
+        }
+      }
+    },
+    {
+      "service_key": "rete:R2-10",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "sede_corrente_non_applicabile",
+      "scope": "Riesame dello stato della sede; nessun pin attribuito.",
+      "note": "La pagina ASL Roma 2 indica il SerD Distretto 4 come temporaneamente chiuso e in attesa di nuova sede; l'attività è appoggiata ad altri SerD.",
+      "fields": {
+        "stato_servizio": "Sede temporaneamente chiusa; in attesa di nuova sede",
+        "nota_geografia_v7117": "Non viene assegnato un pin: il servizio non dispone attualmente di una sede autonoma corrente da localizzare. Verificare i SerD di appoggio indicati dalla ASL."
+      },
+      "sources": [
+        "https://www.aslroma2.it/index.php/adulti-6d/sert-tossicodipendenze-ed-alcoolismo-6d"
+      ],
+      "evidence": {
+        "stato_servizio": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/adulti-6d/sert-tossicodipendenze-ed-alcoolismo-6d"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "La pagina ASL Roma 2 indica il SerD Distretto 4 come temporaneamente chiuso e in attesa di nuova sede; l'attività è appoggiata ad altri SerD."
+        },
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.aslroma2.it/index.php/adulti-6d/sert-tossicodipendenze-ed-alcoolismo-6d"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "La pagina ASL Roma 2 indica il SerD Distretto 4 come temporaneamente chiuso e in attesa di nuova sede; l'attività è appoggiata ad altri SerD."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-01",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "indirizzo_aggiornato_non_localizzato",
+      "scope": "Riesame documentale dell'indirizzo; nessun pin attribuito.",
+      "note": "La documentazione ASL corrente colloca il riferimento dipartimentale nell'area del Nucleo Operativo Cure Primarie di Rieti.",
+      "fields": {
+        "indirizzo": "Via del Terminillo, 42",
+        "nota_geografia_v7117": "Sede documentale aggiornata a Via del Terminillo 42; coordinate e ingresso del riferimento dipartimentale non promossi senza una corrispondenza cartografica sufficientemente univoca."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale"
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "La documentazione ASL corrente colloca il riferimento dipartimentale nell'area del Nucleo Operativo Cure Primarie di Rieti."
+        },
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "La documentazione ASL corrente colloca il riferimento dipartimentale nell'area del Nucleo Operativo Cure Primarie di Rieti."
+        }
+      }
+    },
+    {
+      "service_key": "rete:NET-065",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "indirizzo_aggiornato_non_localizzato",
+      "scope": "Riesame documentale della successione delle sedi; nessun pin attribuito.",
+      "note": "La sede di Palazzo Dosi è storica; una comunicazione ASL successiva colloca il servizio nella sede distrettuale di Via delle Ortensie 28.",
+      "fields": {
+        "indirizzo": "Via delle Ortensie, 28 – sede distrettuale, 1° piano",
+        "nota_geografia_v7117": "Palazzo Dosi è trattato come sede precedente. La fonte ASL successiva indica Via delle Ortensie 28, 1° piano; nessun pin viene aggiunto finché il punto non è corroborato in modo sufficiente."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+      ],
+      "evidence": {
+        "indirizzo": {
+          "sources": [
+            "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "La sede di Palazzo Dosi è storica; una comunicazione ASL successiva colloca il servizio nella sede distrettuale di Via delle Ortensie 28."
+        },
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "La sede di Palazzo Dosi è storica; una comunicazione ASL successiva colloca il servizio nella sede distrettuale di Via delle Ortensie 28."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-08",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "conflitto_sede_aperto",
+      "scope": "Riesame documentale di fonti ASL concorrenti; nessuna scelta arbitraria della sede.",
+      "note": "Una pagina ASL degli ambulatori indica Corso San Giuseppe da Leonessa 70, mentre la pagina CSM consultata in precedenza riportava Via del Corso snc.",
+      "fields": {
+        "nota_geografia_v7117": "Conflitto di sede ancora aperto: Corso San Giuseppe da Leonessa 70 nella pagina Ambulatori contro Via del Corso snc nella pagina CSM precedente. Nessun pin finché la sede corrente non è consolidata."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "evidence": {
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Una pagina ASL degli ambulatori indica Corso San Giuseppe da Leonessa 70, mentre la pagina CSM consultata in precedenza riportava Via del Corso snc."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-09",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "conflitto_sede_aperto",
+      "scope": "Riesame documentale di fonti ASL concorrenti; nessuna scelta arbitraria della sede.",
+      "note": "Una pagina ASL degli ambulatori indica Piazza Aldo Moro 1, mentre la pagina CSM consultata in precedenza riportava Piazza Martiri della Libertà.",
+      "fields": {
+        "nota_geografia_v7117": "Conflitto di sede ancora aperto: Piazza Aldo Moro 1 nella pagina Ambulatori contro Piazza Martiri della Libertà nella pagina CSM precedente. Nessun pin finché la sede corrente non è consolidata."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "evidence": {
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Una pagina ASL degli ambulatori indica Piazza Aldo Moro 1, mentre la pagina CSM consultata in precedenza riportava Piazza Martiri della Libertà."
+        }
+      }
+    },
+    {
+      "service_key": "rete:RI-10",
+      "origin": "rete",
+      "checked_at": "2026-09-27",
+      "status": "conflitto_sede_aperto",
+      "scope": "Riesame documentale di fonti ASL concorrenti; nessuna scelta arbitraria della sede.",
+      "note": "Una pagina ASL degli ambulatori indica l'ex Istituto Omnicomprensivo in frazione Villa San Cipriano, mentre la pagina CSM precedente riportava Via F. Grifoni 26.",
+      "fields": {
+        "nota_geografia_v7117": "Conflitto di sede ancora aperto: ex Istituto Omnicomprensivo, frazione Villa San Cipriano nella pagina Ambulatori contro Via F. Grifoni 26 nella pagina CSM precedente. Nessun pin finché la sede corrente non è consolidata."
+      },
+      "sources": [
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "evidence": {
+        "nota_geografia_v7117": {
+          "sources": [
+            "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+          ],
+          "checked_at": "2026-09-27",
+          "basis": "Una pagina ASL degli ambulatori indica l'ex Istituto Omnicomprensivo in frazione Villa San Cipriano, mentre la pagina CSM precedente riportava Via F. Grifoni 26."
+        }
+      }
+    }
+  ]
+}
