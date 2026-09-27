@@ -1,0 +1,78 @@
+name: Prepare isolated V7.12.1 pathway candidate
+on:
+  push:
+    branches: [release/ux-v7-12-1]
+    paths:
+      - tools/build-pathways-v7-12-1.py
+      - .github/workflows/prepare-pathways-v7-12-1.yml
+permissions:
+  contents: write
+concurrency:
+  group: prepare-pathways-v7121
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/release/ux-v7-12-1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build only the specified UX files
+        run: |
+          set -euo pipefail
+          pip install beautifulsoup4
+          python tools/build-pathways-v7-12-1.py
+          mkdir -p /tmp/ux-v7121-prepare
+          cp /tmp/v7121-generated.txt /tmp/ux-v7121-prepare/generated-paths.txt
+          node --check assets/ux-ui-v7-12-1.js
+          node --check assets/menta-ui-v7-12-1.js
+          node --check tools/test-ui-v7-12-1.mjs
+          node tools/test-data-v7-12-1.cjs > /tmp/ux-v7121-prepare/data.json
+          QA_OUT=/tmp/ux-v7121-prepare python tools/verify-ux-v7-12-1.py > /tmp/ux-v7121-prepare/integrity.log
+      - name: Browser dependencies
+        run: |
+          npm install --prefix /tmp/ux-v7121-node playwright @axe-core/playwright
+          ln -s /tmp/ux-v7121-node/node_modules node_modules
+          /tmp/ux-v7121-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Test candidate without publishing
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/ux-v7121-prepare/server.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
+          QA_OUT=/tmp/ux-v7121-prepare/browser node tools/test-ui-v7-12-1.mjs > /tmp/ux-v7121-prepare/browser.log 2>&1
+      - name: Commit only generated and verified files to the release branch
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/release/ux-v7-12-1
+          git add --pathspec-from-file=/tmp/v7121-generated.txt
+          git diff --cached --stat
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'V7.12.1: distinguish need-based Menta orientation from direct service search'
+          git push origin HEAD:release/ux-v7-12-1
+      - name: Compact test summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ['data.json','integrity.json','browser/report.json']:
+              p=Path('/tmp/ux-v7121-prepare')/name
+              if not p.exists():
+                  print('REPORT MISSING',name)
+                  continue
+              r=json.loads(p.read_text())
+              print('REPORT',name,r.get('passed'),r.get('total'))
+              for c in r.get('tests',r.get('checks',[])):
+                  if not c['passed']: print('FAILED',json.dumps(c,ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-v7121-candidate-${{ github.run_id }}
+          path: /tmp/ux-v7121-prepare
+          retention-days: 30
