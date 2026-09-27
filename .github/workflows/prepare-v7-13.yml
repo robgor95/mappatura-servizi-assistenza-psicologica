@@ -1,0 +1,37 @@
+name: V7.13 isolated geography preparation
+on:
+  push:
+    branches: ['release/v7-13']
+    paths: ['.github/workflows/prepare-v7-13.yml']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Acquire official ISTAT 2026 generalized boundaries
+        run: |
+          mkdir -p /tmp/lazio-v713-bundle
+          curl --fail --location --retry 2 --max-time 150 'https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2026/Limiti01012026_g.zip' -o /tmp/lazio-v713-bundle/Limiti01012026_g.zip
+          python - <<'PY'
+          import zipfile,hashlib,pathlib
+          p=pathlib.Path('/tmp/lazio-v713-bundle/Limiti01012026_g.zip')
+          with zipfile.ZipFile(p) as z:
+              print('\n'.join(z.namelist()))
+          print('SOURCE_SHA256',hashlib.sha256(p.read_bytes()).hexdigest())
+          PY
+      - name: Package repository snapshot without credentials
+        run: |
+          git config --local --get-regexp 'http.*extraheader' && exit 1 || true
+          git archive HEAD -o /tmp/lazio-v713-bundle/repository.tar
+          git bundle create /tmp/lazio-v713-bundle/repository.bundle --all
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lazio-v713-source-review
+          path: /tmp/lazio-v713-bundle
+          retention-days: 7
