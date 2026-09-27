@@ -2,7 +2,7 @@ name: V7.13 reproducible candidate build
 on:
   push:
     branches: ['release/v7-13']
-    paths: ['tools/.source-v7-13.part3.b64']
+    paths: ['tools/.source-v7-13.part3.b64', '.github/workflows/build-v7-13.yml']
 permissions:
   contents: write
 jobs:
@@ -35,6 +35,7 @@ jobs:
           curl --fail --location --retry 2 --max-time 150 'https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2026/Limiti01012026_g.zip' -o /tmp/Limiti01012026_g.zip
           python tools/build-provinces-v7-13.py /tmp/Limiti01012026_g.zip
           python tools/build-search-v7-13.py
+          git diff --exit-code -- .github/workflows
           node --check assets/province-map-v7-13.js
           node --check assets/servizi-v7-13.js
           node tools/test-province-data-v7-13.cjs --write-audit
@@ -47,7 +48,7 @@ jobs:
           git add assets/province-core-v7-13.js assets/province-map-v7-13.js assets/province-map-v7-13.css assets/servizi-v7-13.js
           git add tools/build-provinces-v7-13.py tools/build-search-v7-13.py tools/test-province-data-v7-13.cjs tools/test-provinces-v7-13.mjs tools/verify-release-v7-13.py
           git add data/province_lazio_istat2026_v7_13.geojson data/comuni_province_istat2026_v7_13.json downloads/Audit_Province_V7_13.json downloads/Release_Notes_V7_13.md
-          git add servizi.html archivio.html metodo.html documenti.html version.json CHANGELOG.md README.md .github/workflows/verify-v7-13.yml .github/workflows/verify-ux-v7-12-1.yml
+          git add servizi.html archivio.html metodo.html documenti.html version.json CHANGELOG.md README.md
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'V7.13: integrate province map and synchronized service search; preserve clinical sources'
