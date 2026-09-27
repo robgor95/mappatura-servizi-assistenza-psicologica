@@ -1,0 +1,72 @@
+{
+  "version": "7.11.7",
+  "checked_at": "2026-09-27",
+  "records": {
+    "rete:NET-082": {
+      "sources": [
+        "https://www.asl.fr.it/asl-informa/primo-piano/trasferimento-sede-uosd-disturbi-della-nutrizione-alimentare/",
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uosd-disturbi-del-comportamento-alimentare/"
+      ],
+      "status": "sede_aggiornata_localizzazione_indicativa",
+      "note": "L'avviso ASL dell'11 maggio 2026 documenta il trasferimento della UOSD in Via Armando Fabi, Palazzina P, con attività nella nuova sede dal 18 maggio 2026."
+    },
+    "moduli:MOD-066": {
+      "sources": [
+        "https://www.villamaddalena.eu/contatti/",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Villa-Maddalena.pdf"
+      ],
+      "status": "localizzazione_indicativa",
+      "note": "Il gestore conferma Via Sant'Anna 26, Castel Madama e pubblica una destinazione cartografica nominativa della struttura."
+    },
+    "moduli:MOD-070": {
+      "sources": [
+        "https://www.kormed.it/strutture/colle-cesarano/",
+        "https://www.aslroma5.it/wp-content/uploads/2026/07/Strutture-Private-Accreditate-2025-2026.pdf"
+      ],
+      "status": "record_legacy_riconciliato",
+      "note": "Il record storico 'Il Colle' corrisponde al modulo canonico Colle Cesarano – Il Colle – SRSR H24 Nucleo 1 già presente come V794-CESARANO-ILCOLLE-H24."
+    },
+    "rete:R2-10": {
+      "sources": [
+        "https://www.aslroma2.it/index.php/adulti-6d/sert-tossicodipendenze-ed-alcoolismo-6d"
+      ],
+      "status": "sede_corrente_non_applicabile",
+      "note": "La pagina ASL Roma 2 indica il SerD Distretto 4 come temporaneamente chiuso e in attesa di nuova sede; l'attività è appoggiata ad altri SerD."
+    },
+    "rete:RI-01": {
+      "sources": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti/dipartimento-promozione-e-tutela-della-salute-mentale"
+      ],
+      "status": "indirizzo_aggiornato_non_localizzato",
+      "note": "La documentazione ASL corrente colloca il riferimento dipartimentale nell'area del Nucleo Operativo Cure Primarie di Rieti."
+    },
+    "rete:NET-065": {
+      "sources": [
+        "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+      ],
+      "status": "indirizzo_aggiornato_non_localizzato",
+      "note": "La sede di Palazzo Dosi è storica; una comunicazione ASL successiva colloca il servizio nella sede distrettuale di Via delle Ortensie 28."
+    },
+    "rete:RI-08": {
+      "sources": [
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "status": "conflitto_sede_aperto",
+      "note": "Una pagina ASL degli ambulatori indica Corso San Giuseppe da Leonessa 70, mentre la pagina CSM consultata in precedenza riportava Via del Corso snc."
+    },
+    "rete:RI-09": {
+      "sources": [
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "status": "conflitto_sede_aperto",
+      "note": "Una pagina ASL degli ambulatori indica Piazza Aldo Moro 1, mentre la pagina CSM consultata in precedenza riportava Piazza Martiri della Libertà."
+    },
+    "rete:RI-10": {
+      "sources": [
+        "https://www.asl.rieti.it/strutture-sanitarie/ambulatori/"
+      ],
+      "status": "conflitto_sede_aperto",
+      "note": "Una pagina ASL degli ambulatori indica l'ex Istituto Omnicomprensivo in frazione Villa San Cipriano, mentre la pagina CSM precedente riportava Via F. Grifoni 26."
+    }
+  }
+}
