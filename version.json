@@ -1,5 +1,5 @@
 {
-  "web_version": "7.12",
+  "web_version": "7.12.1",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -61,8 +61,8 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.12: homepage essenziale, Menta in /orientati.html, tutte le sezioni ricercabili e design coerente sulle pagine correnti. Dataset e geografia V7.11.7 preservati.",
-  "navigation_version": "7.12",
+  "release_note": "V7.12.1: orientamento per bisogni distinto dalla ricerca diretta; homepage con due percorsi descritti, Menta con argomenti espandibili e scrittura facoltativa, compatibilità dei vecchi frammenti. Dataset e geografia V7.11.7 invariati.",
+  "navigation_version": "7.12.1",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
     "checked_at": "2026-09-21T18:15:42Z",
@@ -110,7 +110,7 @@
     ]
   },
   "map_version": "7.11.7",
-  "ux_version": "7.12",
+  "ux_version": "7.12.1",
   "map": {
     "services": 443,
     "localized": 373,
@@ -350,5 +350,10 @@
     "tracking": false,
     "workflow": ".github/workflows/verify-ux-v7-12.yml",
     "verification_note": "Esiti del commit effettivo nei workflow; i controlli precedenti restano storici."
+  },
+  "v7_12_1_verification": {
+    "workflow": ".github/workflows/verify-ux-v7-12-1.yml",
+    "baseline_commit": "d57a6df5a3683a6ca4a77dc6ed47b51c15a29fcb",
+    "scope": "Dati, file protetti, navigazione, frammenti legacy, mobile, accessibilità automatica e confronto dei file realmente pubblicati. Consultare il run del commit; non riutilizzare gli esiti V7.12."
   }
 }

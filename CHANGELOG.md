@@ -1,3 +1,7 @@
+## 7.12.1 — 2026-09-27
+
+Orientamento per bisogni e ricerca diretta distinti in homepage e nelle pagine di arrivo. Tre percorsi nativi in Menta, scrittura facoltativa, etichette coerenti e compatibilità dei frammenti della vecchia homepage. Dati e motori di ricerca/analisi invariati. Vedi `downloads/Release_Notes_V7_12_1.md`.
+
 ## 7.12 — 2026-09-27
 
 Homepage con sei percorsi essenziali; Menta e tutti i percorsi estesi in `orientati.html`; indice ricercabile `sezioni.html`; menu e design condivisi sulle pagine correnti. Dataset/geografia V7.11.7 e contenuti storici preservati. Nessun tracciamento o geolocalizzazione aggiunti.

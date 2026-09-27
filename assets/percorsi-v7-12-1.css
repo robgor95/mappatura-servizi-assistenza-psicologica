@@ -1,0 +1,47 @@
+/* V7.12.1: distinguish orientation from directory search, also without JS. */
+.ux-home .ux-hero{grid-template-columns:minmax(0,1fr) 220px;gap:20px 32px;padding:32px 36px}
+.ux-home .ux-hero .lede{max-width:57ch;margin-bottom:0}
+.ux-home .ux-mascot-frame .menta-figure{width:min(100%,185px)}
+.ux-choice-grid{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ux-choice-card{display:flex;flex-direction:column;min-width:0;padding:20px 23px;border:1px solid #b5ccb0;border-radius:22px;background:#edf5e8}
+.ux-choice-card.ux-choice-search{background:#fffefa;border-color:#c5c8b9}
+.ux-choice-label{display:flex;align-items:center;gap:9px;color:#345b43;font-size:.77rem;font-weight:750;letter-spacing:.025em}
+.ux-choice-label svg{width:23px;height:23px;flex:none}
+.ux-choice-search .ux-choice-label{color:#6c4c30}
+.ux-choice-card h2{font-size:1.32rem;line-height:1.3;margin:12px 0 8px;text-wrap:initial}
+.ux-choice-card p{color:#435c50;font-size:.92rem;line-height:1.55;margin:0 0 15px}
+.ux-home .ux-choice-card .actions{margin:auto 0 0;gap:0}
+.ux-home .ux-choice-card .button{min-height:48px;max-width:100%;text-align:center;white-space:normal}
+.ux-choice-search .button.secondary{border-color:#927453;color:#5b412c;background:#fffdf5}
+.ux-choice-search .button.secondary:hover{background:#f5ebdc;color:#4a3422}
+.ux-orientation .menta-home{grid-template-columns:minmax(0,1fr) 155px;gap:24px;align-items:start}
+.ux-orientation .menta-home>.menta-welcome{width:145px;max-width:100%;align-self:start;padding:0;position:static}
+.ux-orientation .menta-home-copy{min-width:0}
+.ux-orientation .menta-home-intro{max-width:70ch}
+.ux-need-paths{margin:24px 0 20px}
+.ux-need-paths h2{font-size:1.3rem;margin:0 0 8px}
+.ux-need-hint{font-size:.88rem;line-height:1.55;color:#435c50;margin:0 0 14px}
+.ux-need-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}
+.ux-need-path{border:1px solid #afc5a9;border-radius:18px;background:#fffefa;min-width:0}
+.ux-need-path>summary{cursor:pointer;min-height:128px;padding:16px;list-style-position:inside;color:#244d3b}
+.ux-need-path>summary strong{font-size:.97rem;line-height:1.45;font-weight:700}
+.ux-need-path>summary span{display:block;font-size:.79rem;line-height:1.5;margin-top:8px;color:#506353}
+.ux-need-path[open]{border-color:#5d8663;background:#f4f8ee}
+.ux-need-path[open]>summary{min-height:0;border-bottom:1px solid #d4e0d1}
+.ux-need-body{padding:14px 16px 16px;font-size:.88rem;line-height:1.6}
+.ux-need-body p{margin:0 0 10px}
+.ux-need-body a{display:inline-flex;align-items:center;min-height:44px;font-weight:650;overflow-wrap:anywhere}
+.ux-custom-need{margin:18px 0;border:1px solid #bdcdb7;border-radius:18px;background:#fffefa;padding:0 18px}
+.ux-custom-need>summary{cursor:pointer;min-height:52px;padding:14px 0;font-weight:650;font-size:.91rem;line-height:1.5}
+.ux-custom-need>p{font-size:.86rem;line-height:1.6;margin:8px 0 16px}
+.ux-custom-need form{margin:0 0 12px}.ux-custom-need .menta-input-row{display:flex;flex-wrap:wrap;gap:10px}.ux-custom-need .menta-input-row input{flex:1 1 210px;width:100%;min-width:0}.ux-custom-need .menta-input-row button{flex:0 1 auto;max-width:100%;white-space:normal}
+.ux-custom-need .menta-examples{padding-bottom:16px}
+.ux-orientation .menta-independent.ux-direct-link{display:block;border:0;padding:0;background:none;font-size:.86rem;line-height:1.65;margin:18px 0 0}
+.ux-direct-link a{display:inline-block;padding-block:4px;min-height:32px}
+.ux-orientation .menta-home-about{grid-column:1/-1}
+.services-page.ux-shell .svc-intro{background:#fffdf5;border-color:#ccc7b4}
+.services-page.ux-shell .svc-intro .eyebrow{color:#6c4c30}
+.services-page.ux-shell .ux-search-hint{margin-top:8px}
+@media(max-width:1000px){.ux-orientation .menta-home{grid-template-columns:minmax(0,1fr)}.ux-orientation .menta-home>.menta-welcome{display:none}.ux-home .ux-hero{grid-template-columns:minmax(0,1fr) 170px;padding:28px}.ux-home .ux-mascot-caption{font-size:.7rem;text-align:center}.ux-choice-card{padding:18px}.ux-choice-card h2{font-size:1.18rem}}
+@media(max-width:620px){.ux-home .ux-hero{display:grid;grid-template-columns:minmax(0,1fr);padding:22px 18px;gap:20px;overflow:visible}.ux-home .ux-hero-copy{padding-top:0}.ux-home .ux-hero h1{font-size:2rem;max-width:none;padding-right:58px}.ux-home .ux-hero .eyebrow{max-width:calc(100% - 60px);margin-bottom:12px}.ux-home .ux-hero .lede{font-size:.95rem;line-height:1.6}.ux-home .ux-mascot-frame{position:absolute;width:67px;right:14px;top:29px;padding:0}.ux-home .ux-mascot-frame .menta-figure{width:67px}.ux-home .ux-mascot-frame:after,.ux-home .ux-mascot-caption{display:none}.ux-choice-grid{grid-template-columns:minmax(0,1fr);gap:12px}.ux-choice-card{padding:16px 18px}.ux-choice-card h2{font-size:1.16rem;margin:9px 0 6px}.ux-choice-card p{font-size:.87rem;margin-bottom:12px}.ux-home .ux-choice-card .button{width:100%;font-size:.88rem}.ux-choice-label{font-size:.73rem}.ux-need-grid{grid-template-columns:minmax(0,1fr)}.ux-need-path>summary{min-height:78px;padding:14px 16px}.ux-need-path>summary span{margin-top:4px}.ux-custom-need{padding-inline:14px}.ux-custom-need .menta-input-row button{width:100%}.ux-orientation .menta-home{padding:22px 18px}}
+@media print{.ux-choice-grid,.ux-need-grid{display:block}.ux-choice-card,.ux-need-path{break-inside:avoid;margin-bottom:12px}.ux-need-path .ux-need-body{display:block!important}}

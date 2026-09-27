@@ -1,22 +1,21 @@
-name: V7.12 Menta UX verification
+name: V7.12 historical UX verification (manual)
 on:
-  pull_request:
-    branches: [main]
-  push:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      ref:
+        description: V7.12 commit or ref to verify locally
+        required: true
+        default: d57a6df5a3683a6ca4a77dc6ed47b51c15a29fcb
 permissions:
   contents: read
-concurrency:
-  group: ux-v712-verify-${{ github.ref }}
-  cancel-in-progress: false
 jobs:
-  verify:
+  verify_historical:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ inputs.ref }}
           fetch-depth: 0
           persist-credentials: false
       - name: Dependencies
@@ -25,65 +24,25 @@ jobs:
           npm install --prefix /tmp/ux-v712-node playwright @axe-core/playwright
           ln -s /tmp/ux-v712-node/node_modules node_modules
           /tmp/ux-v712-node/node_modules/.bin/playwright install --with-deps chromium
-      - name: Data and protected-file checks
+      - name: Historical data, integrity and browser checks
         run: |
           set -euo pipefail
           mkdir -p /tmp/ux-v712-verification
-          node --check assets/ux-ui-v7-12.js
-          node --check assets/directory-disclosure-v7-12.js
-          node --check assets/directory-v7-12.js
-          node --check tools/test-ui-final-v7-12.mjs
           node tools/test-data-v7-12.cjs | tee /tmp/ux-v712-verification/data.json
           QA_OUT=/tmp/ux-v712-verification python tools/verify-ux-v7-12.py
-      - name: Browser on candidate
-        if: github.event_name == 'pull_request'
-        run: |
-          set -euo pipefail
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/ux-v712-http.log 2>&1 &
           PID=$!
           trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
           QA_OUT=/tmp/ux-v712-verification/browser node tools/test-ui-final-v7-12.mjs
-      - name: Exact production bytes and privacy headers
-        if: github.event_name != 'pull_request'
-        env:
-          QA_OUT: /tmp/ux-v712-verification
-        run: python tools/verify-ux-v7-12.py --production
-      - name: Verify remaining directory and responsive assets in production
-        if: github.event_name != 'pull_request'
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          from urllib.request import Request,urlopen
-          import subprocess,json,hashlib
-          origin='https://mappatura-servizi-assistenza-psicologica.pages.dev'
-          commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
-          paths=['assets/ux-polish-v7-12.css','assets/directory-disclosure-v7-12.js','assets/directory-v7-12.js']
-          checks=[]
-          for p in paths:
-              try:
-                  with urlopen(Request(origin+'/'+p+'?ux_verify='+commit,headers={'Cache-Control':'no-cache','User-Agent':'LazioUXVerification/7.12'}),timeout=30) as r:
-                      b=r.read();passed=r.status==200 and b==Path(p).read_bytes() and 'noindex' in r.headers.get('X-Robots-Tag','').lower()
-                      checks.append({'path':p,'passed':passed,'sha256':hashlib.sha256(b).hexdigest()})
-              except Exception as e:checks.append({'path':p,'passed':False,'error':str(e)})
-          report={'version':'7.12','commit':commit,'checks':checks,'passed':sum(x['passed'] for x in checks),'total':len(checks)}
-          Path('/tmp/ux-v712-verification/production-extra-assets.json').write_text(json.dumps(report,indent=2)+'\n')
-          print(json.dumps(report,indent=2));assert all(x['passed'] for x in checks)
-          PY
-      - name: Browser on published site
-        if: github.event_name != 'pull_request'
-        env:
-          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
-          QA_OUT: /tmp/ux-v712-verification/browser
-        run: node tools/test-ui-final-v7-12.mjs
-      - name: Tested commit
+      - name: Tested historical commit
         if: always()
         run: |
           mkdir -p /tmp/ux-v712-verification
           git rev-parse HEAD > /tmp/ux-v712-verification/commit.txt
-          git diff --name-status 9a15c39c6f1c5008cde6fbe44dd4f419f524ba97 HEAD > /tmp/ux-v712-verification/changes.txt
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ux-v712-${{ github.event_name }}-${{ github.run_id }}
+          name: ux-v712-historical-${{ github.run_id }}
           path: /tmp/ux-v712-verification
           retention-days: 30
