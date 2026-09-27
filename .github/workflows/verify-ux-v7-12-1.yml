@@ -1,0 +1,68 @@
+name: V7.12.1 orientation and direct search verification
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ux-v7121-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Test dependencies
+        run: |
+          pip install beautifulsoup4
+          npm install --prefix /tmp/ux-v7121-node playwright @axe-core/playwright
+          ln -s /tmp/ux-v7121-node/node_modules node_modules
+          /tmp/ux-v7121-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Data and historical-file preservation
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ux-v7121-verification
+          node --check assets/ux-ui-v7-12-1.js
+          node --check assets/menta-ui-v7-12-1.js
+          node --check tools/test-ui-v7-12-1.mjs
+          node tools/test-data-v7-12-1.cjs | tee /tmp/ux-v7121-verification/data.json
+          QA_OUT=/tmp/ux-v7121-verification python tools/verify-ux-v7-12-1.py
+      - name: Candidate browser, accessibility and pathway checks
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/ux-v7121-http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
+          QA_OUT=/tmp/ux-v7121-verification/browser node tools/test-ui-v7-12-1.mjs
+      - name: Exact Cloudflare production files and privacy headers
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/ux-v7121-verification
+        run: python tools/verify-ux-v7-12-1.py --production
+      - name: Published-site browser and legacy URL checks
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/ux-v7121-verification/browser
+        run: node tools/test-ui-v7-12-1.mjs
+      - name: Record exact tested commit
+        if: always()
+        run: |
+          mkdir -p /tmp/ux-v7121-verification
+          git rev-parse HEAD > /tmp/ux-v7121-verification/commit.txt
+          git diff --name-status d57a6df5a3683a6ca4a77dc6ed47b51c15a29fcb HEAD > /tmp/ux-v7121-verification/changes.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-v7121-${{ github.event_name }}-${{ github.run_id }}
+          path: /tmp/ux-v7121-verification
+          retention-days: 30
