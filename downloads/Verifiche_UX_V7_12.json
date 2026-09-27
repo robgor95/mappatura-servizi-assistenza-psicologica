@@ -1,0 +1,505 @@
+{
+  "version": "7.12",
+  "base": "http://127.0.0.1:8123",
+  "tested_at": "2026-09-27T15:29:56.000Z",
+  "pages": 30,
+  "viewports": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "scope": "Automated interface, reflow, data-count, navigation, privacy and WCAG checks. Not user research or full accessibility certification.",
+  "tests": [
+    {
+      "name": "Page shell and reflow 390 404.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks 404.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 aiuto-adesso.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks aiuto-adesso.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 archivio.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 documenti.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 giovani.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks giovani.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 glossario.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 helpline.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 index.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks index.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 mappa.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks mappa.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 metodo.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 privacy.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 privati.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks privati.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 scuole.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 servizi.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 studenti.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 supporto-territoriale.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks supporto-territoriale.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 universita.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks universita.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 orientati.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks orientati.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 390 sezioni.html",
+      "passed": true
+    },
+    {
+      "name": "WCAG automatic checks sezioni.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 404.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 aiuto-adesso.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 archivio.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 centri-ascolto.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 documenti.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 giovani.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 glossario.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 guide/index.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 guide/privato.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 guide/pubblico.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 guide/riabilitazione.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 guide/ricovero.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 helpline.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 index.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 mappa.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 metodo.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 orientamento-servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 privacy.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 privati.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 qualita-dati.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 scuole.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 strutture-approfondite.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 studenti.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 supporto-territoriale.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 universita.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 orientati.html",
+      "passed": true
+    },
+    {
+      "name": "Page shell and reflow 1440 sezioni.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 index.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 sezioni.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 orientati.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 mappa.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 supporto-territoriale.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 320 guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 index.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 sezioni.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 orientati.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 servizi.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 mappa.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 supporto-territoriale.html",
+      "passed": true
+    },
+    {
+      "name": "Compact reflow 768 guide/primo-percorso.html",
+      "passed": true
+    },
+    {
+      "name": "Home has six essential destinations and no dense search forms",
+      "passed": true
+    },
+    {
+      "name": "Section index provides all substantive routes and filters locally",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu works with keyboard, Escape and focus restoration",
+      "passed": true
+    },
+    {
+      "name": "Menta stays local and maintains student and urgency routing",
+      "passed": true
+    },
+    {
+      "name": "Old homepage Menta anchor opens the dedicated page",
+      "passed": true
+    },
+    {
+      "name": "All original homepage sections still exist on orientation page",
+      "passed": true
+    },
+    {
+      "name": "Service search, clearer type labels and reset preserve 443 records",
+      "passed": true
+    },
+    {
+      "name": "Service deep links and modal dismissal remain functional",
+      "passed": true
+    },
+    {
+      "name": "Map has unchanged coverage and no tiles before consent",
+      "passed": true
+    },
+    {
+      "name": "Student hub and dedicated directories remain reachable",
+      "passed": true
+    },
+    {
+      "name": "Document history is collapsed but exact hash links reveal old reports",
+      "passed": true
+    },
+    {
+      "name": "No-JavaScript navigation exposes all sections and Menta fallback",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion is honored",
+      "passed": true
+    },
+    {
+      "name": "Partial geography overlay failure is visible, not hidden",
+      "passed": true
+    },
+    {
+      "name": "Compact cards preserve every field and disclose details on demand",
+      "passed": true
+    },
+    {
+      "name": "Structure directory loads the same existing latest address overlays",
+      "passed": true
+    },
+    {
+      "name": "No unhandled JavaScript errors across reviewed pages",
+      "passed": true
+    },
+    {
+      "name": "No external requests occur without explicit map activation",
+      "passed": true
+    }
+  ],
+  "passed": 122,
+  "total": 122
+}

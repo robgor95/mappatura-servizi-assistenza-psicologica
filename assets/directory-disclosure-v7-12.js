@@ -12,7 +12,7 @@ function simplify(){for(const card of grid.querySelectorAll('.directory-card:not
  if(fields.length<=7)continue;
  let preferred=fields.filter(f=>essential.test(norm(f.querySelector('dt')?.textContent)));
  // Service status and SSN caveats stay immediately visible even when other details collapse.
- const mandatory=fields.filter(f=>/^(stato servizio|stato del servizio|rapporto ssn)$/.test(norm(f.querySelector('dt')?.textContent)));
+ const mandatory=fields.filter(f=>/^(stato servizio|stato del servizio|rapporto ssn|stato|stato dato|stato verifica|periodo validita|ultima verifica|anno scolastico|data documentale precedente)$/.test(norm(f.querySelector('dt')?.textContent)));
  if(preferred.length<3)preferred=[...new Set(preferred.concat(fields.slice(0,3)))];
  const visible=new Set([...mandatory,...preferred.slice(0,7)]);
  const details=document.createElement('details');details.className='ux-directory-more';
