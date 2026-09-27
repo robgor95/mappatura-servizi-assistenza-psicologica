@@ -1,0 +1,60 @@
+name: V7.13 reproducible candidate build
+on:
+  push:
+    branches: ['release/v7-13']
+    paths: ['tools/.source-v7-13.xz.b64']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Decode reviewed source delivery
+        run: |
+          python - <<'PY'
+          import base64,lzma,json,hashlib
+          from pathlib import Path
+          payload=base64.b64decode(Path('tools/.source-v7-13.xz.b64').read_text(),validate=True)
+          assert hashlib.sha256(payload).hexdigest()=='69a1a14c56169ab6cdc2d5f6cce1fc82b08924735b8a03e01737772a67088db2'
+          sources=json.loads(lzma.decompress(payload))
+          allowed={'assets/province-core-v7-13.js','assets/province-map-v7-13.js','assets/province-map-v7-13.css','tools/build-provinces-v7-13.py','tools/build-search-v7-13.py','tools/test-province-data-v7-13.cjs','tools/test-provinces-v7-13.mjs','tools/verify-release-v7-13.py','.github/workflows/verify-v7-13.yml'}
+          assert set(sources)==allowed
+          for path,content in sources.items():
+              Path(path).parent.mkdir(parents=True,exist_ok=True)
+              Path(path).write_text(content)
+          PY
+      - name: Reproduce administrative geography and directory integration
+        run: |
+          set -euo pipefail
+          pip install beautifulsoup4 pyshp pyproj shapely
+          curl --fail --location --retry 2 --max-time 150 'https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2026/Limiti01012026_g.zip' -o /tmp/Limiti01012026_g.zip
+          python tools/build-provinces-v7-13.py /tmp/Limiti01012026_g.zip
+          python tools/build-search-v7-13.py
+          node --check assets/province-map-v7-13.js
+          node --check assets/servizi-v7-13.js
+          node tools/test-province-data-v7-13.cjs --write-audit
+          python tools/verify-release-v7-13.py
+      - name: Commit candidate files only, never production
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = 'refs/heads/release/v7-13'
+          rm tools/.source-v7-13.xz.b64
+          git add tools/.source-v7-13.xz.b64
+          git add assets/province-core-v7-13.js assets/province-map-v7-13.js assets/province-map-v7-13.css assets/servizi-v7-13.js
+          git add tools/build-provinces-v7-13.py tools/build-search-v7-13.py tools/test-province-data-v7-13.cjs tools/test-provinces-v7-13.mjs tools/verify-release-v7-13.py
+          git add data/province_lazio_istat2026_v7_13.geojson data/comuni_province_istat2026_v7_13.json downloads/Audit_Province_V7_13.json downloads/Release_Notes_V7_13.md
+          git add servizi.html archivio.html metodo.html documenti.html version.json CHANGELOG.md README.md .github/workflows/verify-v7-13.yml .github/workflows/verify-ux-v7-12-1.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'V7.13: integrate province map and synchronized service search; preserve clinical sources'
+          git push origin HEAD:release/v7-13
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: province-v713-build-checks
+          path: /tmp/province-v713
+          retention-days: 7
