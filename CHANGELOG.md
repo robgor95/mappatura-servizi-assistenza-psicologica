@@ -1,3 +1,9 @@
+## 7.12 — 2026-09-27
+
+Homepage con sei percorsi essenziali; Menta e tutti i percorsi estesi in `orientati.html`; indice ricercabile `sezioni.html`; menu e design condivisi sulle pagine correnti. Dataset/geografia V7.11.7 e contenuti storici preservati. Nessun tracciamento o geolocalizzazione aggiunti.
+
+Vedi `downloads/Release_Notes_V7_12.md` e `.github/workflows/verify-ux-v7-12.yml`.
+
 ## 7.11.7 — 2026-09-27
 
 - Ottavo ciclo geografico e pulizia della coda residua.

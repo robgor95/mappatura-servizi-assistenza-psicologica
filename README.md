@@ -1,3 +1,9 @@
+## Versione V7.12 — homepage essenziale e navigazione Menta
+
+Homepage con sei percorsi essenziali; Menta e tutti i percorsi estesi in `orientati.html`; indice ricercabile `sezioni.html`; menu e design condivisi sulle pagine correnti. Dataset/geografia V7.11.7 e contenuti storici preservati. Nessun tracciamento o geolocalizzazione aggiunti.
+
+Vedi `downloads/Release_Notes_V7_12.md` e `.github/workflows/verify-ux-v7-12.yml`.
+
 ## Versione corrente candidata V7.11.7
 
 Ottavo ciclo geografico e pulizia della coda: 443 servizi clinici, 373 localizzati e 70 senza pin. Uno dei 70 non dispone al momento di una sede autonoma corrente, quindi la coda geografica effettivamente azionabile è di 69 casi. Tre record diventano localizzabili; indirizzi e conflitti di sede vengono aggiornati senza dedurre ingressi o coordinate non corroborate.

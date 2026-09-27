@@ -1,5 +1,5 @@
 {
-  "web_version": "7.11.7",
+  "web_version": "7.12",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -61,8 +61,8 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.11.7: ottavo ciclo geografico e pulizia della coda; 443 servizi, 373 localizzati e 70 senza pin. Un servizio senza sede autonoma corrente è separato dalla coda geografica, che scende a 69 casi azionabili.",
-  "navigation_version": "7.8",
+  "release_note": "V7.12: homepage essenziale, Menta in /orientati.html, tutte le sezioni ricercabili e design coerente sulle pagine correnti. Dataset e geografia V7.11.7 preservati.",
+  "navigation_version": "7.12",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
     "checked_at": "2026-09-21T18:15:42Z",
@@ -110,7 +110,7 @@
     ]
   },
   "map_version": "7.11.7",
-  "ux_version": "7.8",
+  "ux_version": "7.12",
   "map": {
     "services": 443,
     "localized": 373,
@@ -333,5 +333,22 @@
     "address_updates_without_pin": 2,
     "conflicts_reclassified": 3,
     "complete": false
+  },
+  "v7_12_ux": {
+    "baseline_commit": "9a15c39c6f1c5008cde6fbe44dd4f419f524ba97",
+    "pages_styled": 30,
+    "new_pages": [
+      "orientati.html",
+      "sezioni.html"
+    ],
+    "essential_home_routes": 6,
+    "section_index_entries": 26,
+    "data_changes": false,
+    "mascot_image_changed": false,
+    "menta_engine_changed": false,
+    "device_geolocation": false,
+    "tracking": false,
+    "workflow": ".github/workflows/verify-ux-v7-12.yml",
+    "verification_note": "Esiti del commit effettivo nei workflow; i controlli precedenti restano storici."
   }
 }

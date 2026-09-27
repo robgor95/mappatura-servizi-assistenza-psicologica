@@ -1,0 +1,94 @@
+name: Prepare V7.12 Menta redesign
+on:
+  push:
+    branches: [release/ux-v7-12]
+    paths:
+      - tools/build-ux-v7-12.py
+      - tools/finalize-ux-v7-12.py
+      - tools/verify-ux-v7-12.py
+      - tools/test-ui-v7-12.mjs
+      - assets/menta-design-v7-12.css
+      - assets/ux-ui-v7-12.js
+      - assets/ux-polish-v7-12.css
+      - assets/directory-disclosure-v7-12.js
+      - .github/workflows/prepare-ux-v7-12.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ux-v712-preparation
+  cancel-in-progress: true
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/release/ux-v7-12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/ux-v7-12
+          fetch-depth: 0
+      - name: Build isolated candidate
+        run: |
+          set -euo pipefail
+          pip install beautifulsoup4 pillow
+          python tools/finalize-ux-v7-12.py
+          test -f downloads/Verifiche_UX_V7_12.json || printf '{"version":"7.12","status":"not_yet_tested"}\n' > downloads/Verifiche_UX_V7_12.json
+          mkdir -p /tmp/ux-v712-preparation
+          QA_OUT=/tmp/ux-v712-preparation python tools/verify-ux-v7-12.py
+          node --check assets/ux-ui-v7-12.js
+          node --check assets/directory-disclosure-v7-12.js
+          node --check assets/directory-v7-12.js
+          node --check tools/test-ui-final-v7-12.mjs
+          node tools/test-data-v7-12.cjs | tee /tmp/ux-v712-preparation/data.json
+      - name: Browser dependencies
+        run: |
+          npm install --prefix /tmp/ux-v712-node playwright @axe-core/playwright
+          ln -s /tmp/ux-v712-node/node_modules node_modules
+          /tmp/ux-v712-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Test every current page and key journeys
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 > /tmp/ux-v712-preparation/http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          QA_OUT=/tmp/ux-v712-preparation/browser node tools/test-ui-final-v7-12.mjs
+          cp /tmp/ux-v712-preparation/browser/report.json downloads/Verifiche_UX_V7_12.json
+      - name: Reviewable home preview
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageDraw
+          import io,base64
+          root=Path('/tmp/ux-v712-preparation/browser')
+          for name,width,crop in [('1440-index.html.png',480,1100),('390-index.html.png',195,1600)]:
+              p=root/name
+              if not p.exists():continue
+              img=Image.open(p).convert('RGB');img=img.crop((0,0,img.width,min(crop,img.height)));img.thumbnail((width,800))
+              out=io.BytesIO();img.save(out,format='JPEG',quality=35,optimize=True)
+              print('UX_PREVIEW_'+name.replace('.','_').replace('-','_')+'='+base64.b64encode(out.getvalue()).decode())
+          PY
+      - name: Commit only the verified generated interface
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = 'refs/heads/release/ux-v7-12'
+          python - <<'PY'
+          import json,subprocess
+          files=json.load(open('research/v7_12/generated-files.json'))+['research/v7_12/generated-files.json','downloads/Verifiche_UX_V7_12.json']
+          assert all(not p.startswith(('data/','offline/')) and '..' not in p for p in files)
+          subprocess.run(['git','add','--',*files],check=True)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m 'V7.12: generate verified Menta interface and preserve source datasets'
+            git push origin HEAD:release/ux-v7-12
+          fi
+          git rev-parse HEAD > /tmp/ux-v712-preparation/commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-v712-preparation-${{ github.run_id }}
+          path: /tmp/ux-v712-preparation
+          retention-days: 30
