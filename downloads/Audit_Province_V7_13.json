@@ -1,0 +1,147 @@
+{
+  "version": "7.13",
+  "baseline_commit": "110b564a777f94c93f972594c67bb0a4b1f41d8c",
+  "source": {
+    "publisher": "ISTAT",
+    "reference_date": "2026-01-01",
+    "source_url": "https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2026/Limiti01012026_g.zip",
+    "source_page": "https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_sha256": "b011a590656c3a3ebc297fba80726a376aa843b6f164641cf6a4a990021a81d6",
+    "transform": "Generalized ISTAT boundaries: Lazio subset, WGS84 UTM32N to EPSG:4326, coordinates rounded to 6 decimals. Not legal/cadastral boundaries."
+  },
+  "count_unit": "service_record_not_unique_site",
+  "summary": {
+    "total": 443,
+    "located": 373,
+    "unlocated": 70,
+    "indicative": 344,
+    "ownership": {
+      "public": 270,
+      "non_asl": 145,
+      "unknown": 28
+    },
+    "ssn": {
+      "network": 298,
+      "sourced": 70,
+      "declared": 2,
+      "unknown": 73
+    }
+  },
+  "provinces": {
+    "VT": {
+      "total": 48,
+      "located": 40,
+      "unlocated": 8,
+      "indicative": 39,
+      "ownership": {
+        "public": 35,
+        "non_asl": 12,
+        "unknown": 1
+      },
+      "ssn": {
+        "network": 36,
+        "sourced": 1,
+        "declared": 0,
+        "unknown": 11
+      }
+    },
+    "RI": {
+      "total": 23,
+      "located": 13,
+      "unlocated": 10,
+      "indicative": 13,
+      "ownership": {
+        "public": 18,
+        "non_asl": 3,
+        "unknown": 2
+      },
+      "ssn": {
+        "network": 20,
+        "sourced": 1,
+        "declared": 0,
+        "unknown": 2
+      }
+    },
+    "RM": {
+      "total": 286,
+      "located": 258,
+      "unlocated": 28,
+      "indicative": 230,
+      "ownership": {
+        "public": 172,
+        "non_asl": 100,
+        "unknown": 14
+      },
+      "ssn": {
+        "network": 186,
+        "sourced": 56,
+        "declared": 2,
+        "unknown": 42
+      }
+    },
+    "LT": {
+      "total": 41,
+      "located": 29,
+      "unlocated": 12,
+      "indicative": 29,
+      "ownership": {
+        "public": 22,
+        "non_asl": 14,
+        "unknown": 5
+      },
+      "ssn": {
+        "network": 27,
+        "sourced": 9,
+        "declared": 0,
+        "unknown": 5
+      }
+    },
+    "FR": {
+      "total": 45,
+      "located": 33,
+      "unlocated": 12,
+      "indicative": 33,
+      "ownership": {
+        "public": 23,
+        "non_asl": 16,
+        "unknown": 6
+      },
+      "ssn": {
+        "network": 29,
+        "sourced": 3,
+        "declared": 0,
+        "unknown": 13
+      }
+    },
+    "ND": {
+      "total": 0,
+      "located": 0,
+      "unlocated": 0,
+      "indicative": 0,
+      "ownership": {
+        "public": 0,
+        "non_asl": 0,
+        "unknown": 0
+      },
+      "ssn": {
+        "network": 0,
+        "sourced": 0,
+        "declared": 0,
+        "unknown": 0
+      }
+    }
+  },
+  "municipality_count": 378,
+  "attribution_basis": "Municipality name in service record matched to ISTAT 2026; one explicitly named municipality with locality alias; no ASL inference and no live geocoding.",
+  "uncertain_province_records": [],
+  "unchanged_geography": "7.11.7",
+  "limits": [
+    "Counts are service records, not unique facilities.",
+    "Ownership and SSN relationship are independent axes.",
+    "Sourced SSN includes historical evidence, not current contractual availability.",
+    "No new service coordinates or verified entrances.",
+    "Regional summary includes unlocated service records."
+  ]
+}
