@@ -32,6 +32,7 @@ jobs:
           node --check assets/ux-ui-v7-12-1.js
           node --check assets/menta-ui-v7-12-1.js
           node --check tools/test-ui-v7-12-1.mjs
+          node --check tools/test-mascot-layer-v7-12-1.mjs
           node tools/test-data-v7-12-1.cjs | tee /tmp/ux-v7121-verification/data.json
           QA_OUT=/tmp/ux-v7121-verification python tools/verify-ux-v7-12-1.py
       - name: Candidate browser, accessibility and pathway checks
@@ -43,6 +44,7 @@ jobs:
           trap 'kill $PID || true' EXIT
           for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
           QA_OUT=/tmp/ux-v7121-verification/browser node tools/test-ui-v7-12-1.mjs
+          QA_OUT=/tmp/ux-v7121-verification/browser node tools/test-mascot-layer-v7-12-1.mjs
       - name: Exact Cloudflare production files and privacy headers
         if: github.event_name != 'pull_request'
         env:
@@ -53,7 +55,10 @@ jobs:
         env:
           QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
           QA_OUT: /tmp/ux-v7121-verification/browser
-        run: node tools/test-ui-v7-12-1.mjs
+        run: |
+          set -euo pipefail
+          node tools/test-ui-v7-12-1.mjs
+          node tools/test-mascot-layer-v7-12-1.mjs
       - name: Record exact tested commit
         if: always()
         run: |
