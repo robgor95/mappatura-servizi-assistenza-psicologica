@@ -15,7 +15,9 @@
 .ux-choice-search .button.secondary{border-color:#927453;color:#5b412c;background:#fffdf5}
 .ux-choice-search .button.secondary:hover{background:#f5ebdc;color:#4a3422}
 .ux-orientation .menta-home{grid-template-columns:minmax(0,1fr) 155px;gap:24px;align-items:start}
-.ux-orientation .menta-home>.menta-welcome{width:145px;max-width:100%;align-self:start;padding:0;position:static}
+/* Keep the absolute decorative pseudo-element inside the mascot, not the page. */
+.ux-orientation .menta-home>.menta-welcome{width:145px;max-width:100%;align-self:start;padding:0;position:relative}
+.ux-orientation .menta-home>.menta-welcome:before{pointer-events:none}
 .ux-orientation .menta-home-copy{min-width:0}
 .ux-orientation .menta-home-intro{max-width:70ch}
 .ux-need-paths{margin:24px 0 20px}
