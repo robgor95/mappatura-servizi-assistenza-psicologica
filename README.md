@@ -1,3 +1,7 @@
+## Versione web 7.12.1 · Orientarsi oppure cercare
+
+Due percorsi espliciti: Menta per capire da dove partire; ricerca diretta per strutture, indirizzi e contatti. Dati/geografia V7.11.7 invariati. Verifiche: `.github/workflows/verify-ux-v7-12-1.yml`; note: `downloads/Release_Notes_V7_12_1.md`.
+
 ## Versione V7.12 — homepage essenziale e navigazione Menta
 
 Homepage con sei percorsi essenziali; Menta e tutti i percorsi estesi in `orientati.html`; indice ricercabile `sezioni.html`; menu e design condivisi sulle pagine correnti. Dataset/geografia V7.11.7 e contenuti storici preservati. Nessun tracciamento o geolocalizzazione aggiunti.
