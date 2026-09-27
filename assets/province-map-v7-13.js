@@ -75,8 +75,9 @@ function drawMarkers(){
  const counts=C.byProvince(snapshot.rows,snapshot.state,A.matches,geo,G.position);
  if(overview){
   geometry.features.forEach(f=>{const code=f.properties.code,count=counts[code].total;
-   const label=el('span');label.append(el('span',narrow()?code:C.names[code]),el('b',count));
-   const icon=L.divIcon({className:'province-balloon',html:label,iconSize:narrow()?[52,42]:[72,44],iconAnchor:narrow()?[26,21]:[36,22]});
+   const width=map.getSize().x<310?44:map.getSize().x<650?52:72,height=width<72?42:44;
+   const label=el('span');label.append(el('span',width<72?code:C.names[code]),el('b',count));
+   const icon=L.divIcon({className:'province-balloon',html:label,iconSize:[width,height],iconAnchor:[width/2,height/2]});
    const marker=L.marker(f.properties.label,{icon,keyboard:true,title:C.names[code]+': '+count+' schede di servizio. Seleziona provincia.',alt:C.names[code]+': '+count+' schede'}).on('click',()=>choose(code)).addTo(balloons);
    marker.getElement()?.setAttribute('data-province-balloon',code);
   });
