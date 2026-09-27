@@ -2,7 +2,7 @@ name: V7.13 reproducible candidate build
 on:
   push:
     branches: ['release/v7-13']
-    paths: ['tools/.source-v7-13.xz.b64']
+    paths: ['tools/.source-v7-13.part3.b64']
 permissions:
   contents: write
 jobs:
@@ -18,7 +18,8 @@ jobs:
           python - <<'PY'
           import base64,lzma,json,hashlib
           from pathlib import Path
-          payload=base64.b64decode(Path('tools/.source-v7-13.xz.b64').read_text(),validate=True)
+          encoded=''.join(Path(f'tools/.source-v7-13.part{i}.b64').read_text().strip() for i in [1,2,3])
+          payload=base64.b64decode(encoded,validate=True)
           assert hashlib.sha256(payload).hexdigest()=='69a1a14c56169ab6cdc2d5f6cce1fc82b08924735b8a03e01737772a67088db2'
           sources=json.loads(lzma.decompress(payload))
           allowed={'assets/province-core-v7-13.js','assets/province-map-v7-13.js','assets/province-map-v7-13.css','tools/build-provinces-v7-13.py','tools/build-search-v7-13.py','tools/test-province-data-v7-13.cjs','tools/test-provinces-v7-13.mjs','tools/verify-release-v7-13.py','.github/workflows/verify-v7-13.yml'}
@@ -42,8 +43,7 @@ jobs:
         run: |
           set -euo pipefail
           test "$GITHUB_REF" = 'refs/heads/release/v7-13'
-          rm tools/.source-v7-13.xz.b64
-          git add tools/.source-v7-13.xz.b64
+          git rm tools/.source-v7-13.part1.b64 tools/.source-v7-13.part2.b64 tools/.source-v7-13.part3.b64
           git add assets/province-core-v7-13.js assets/province-map-v7-13.js assets/province-map-v7-13.css assets/servizi-v7-13.js
           git add tools/build-provinces-v7-13.py tools/build-search-v7-13.py tools/test-province-data-v7-13.cjs tools/test-provinces-v7-13.mjs tools/verify-release-v7-13.py
           git add data/province_lazio_istat2026_v7_13.geojson data/comuni_province_istat2026_v7_13.json downloads/Audit_Province_V7_13.json downloads/Release_Notes_V7_13.md
