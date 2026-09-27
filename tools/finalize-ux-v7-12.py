@@ -2,22 +2,18 @@
 The source datasets and historical files are never edited.
 """
 from pathlib import Path
-import json, re, runpy, subprocess
+import json, runpy, subprocess
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1]
 runpy.run_path(str(R/'tools/build-ux-v7-12.py'),run_name='__main__')
 BASE='9a15c39c6f1c5008cde6fbe44dd4f419f524ba97'
 audit=json.loads((R/'downloads/Audit_UX_V7_12.json').read_text())
 outputs=json.loads((R/'research/v7_12/generated-files.json').read_text())
-
 def save(p,text):
     (R/p).write_text(text.rstrip()+'\n',encoding='utf-8')
-
 def replacement(text,needle,new):
     assert needle in text, 'Missing expected source fragment: '+needle[:100]
     return text.replace(needle,new,1)
-
-# Keep the old directory engine intact, adding only the already-published overlays.
 engine=subprocess.check_output(['git','show',BASE+':assets/directory-v7-11-2.js'],cwd=R,text=True)
 engine=replacement(engine,'var extraSources=',"var v712Sources=Promise.all([3,4,5,6,7].map(function(n){return fetch('/data/audit_operativo_v7_11_'+n+'.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('Aggiornamenti documentali non caricati');return r.json()})}));\nvar extraSources=")
 engine=replacement(engine,'v7111Source,v7112Source])).then','v7111Source,v7112Source,v712Sources])).then')
@@ -26,7 +22,6 @@ new='audit=x[x.length-9],current=x[x.length-8],latest=x[x.length-7],v793=x[x.len
 engine=replacement(engine,old,new)
 engine=replacement(engine,'rows=window.LazioAudit7112.directory(c,rows,v7112);init(rows)',"rows=window.LazioAudit7112.directory(c,rows,v7112);v712.forEach(function(d,i){rows=window['LazioAudit711'+(i+3)].directory(c,rows,d)});init(rows)")
 save('assets/directory-v7-12.js',engine);outputs.append('assets/directory-v7-12.js')
-
 for item in audit['pages']:
     p=item['path'];s=BeautifulSoup((R/p).read_text(),'html.parser')
     s.head.append(s.new_tag('link',attrs={'rel':'stylesheet','href':'/assets/ux-polish-v7-12.css'}))
@@ -58,16 +53,11 @@ for item in audit['pages']:
             if 'V7.11.1' in str(t):t.replace_with(str(t).replace('V7.11.1','V7.11.7').replace('26/09/2026','27/09/2026'))
         if p=='strutture-approfondite.html':hero.find('h1').string='Comunità e centri diurni'
     save(p,str(s))
-
-# Dates, annuality and operational uncertainty must remain visible in compact cards.
 disclosure=(R/'assets/directory-disclosure-v7-12.js').read_text()
 disclosure=disclosure.replace('/^(stato servizio|stato del servizio|rapporto ssn)$/','/^(stato servizio|stato del servizio|rapporto ssn|stato|stato dato|stato verifica|periodo validita|ultima verifica|anno scolastico|data documentale precedente)$/')
 save('assets/directory-disclosure-v7-12.js',disclosure);outputs.append('assets/directory-disclosure-v7-12.js')
-
-# Use the same complete suite, with richer diagnostics and additional card assertions.
+# Keep the original test source unchanged; build a superset with additional checks.
 test=(R/'tools/test-ui-v7-12.mjs').read_text()
-test=test.replace("assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));", "assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Overflow '+JSON.stringify(await p.evaluate(()=>[...document.querySelectorAll('main *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.right>innerWidth+1}).slice(0,10).map(e=>({tag:e.tagName,id:e.id,class:e.className,width:e.getBoundingClientRect().width}))))));")
-# Add tests once, keeping the original source file unchanged.
 extra="""
  await test('Compact cards preserve every field and disclose details on demand',async()=>{const {c,p}=await context();for(const file of ['universita.html','scuole.html','strutture-approfondite.html','privati.html']){await go(p,file);const card=p.locator('.directory-card[data-ux-compact]').first();await card.waitFor();const original=Number(await card.getAttribute('data-original-fields'));assert.equal(await card.locator('dl.card-fields > div').count(),original);const details=card.locator('.ux-directory-more');if(await details.count()){assert.equal(await details.getAttribute('open'),null);await details.locator('summary').click();assert(await details.locator('dl').isVisible());}assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}await c.close();});
  await test('Structure directory loads the same existing latest address overlays',async()=>{const {c,p}=await context();await go(p,'strutture-approfondite.html');assert.match(await p.locator('#result-count').innerText(),/184/);await p.fill('#directory-search','Il Colle');await p.waitForTimeout(250);const cards=p.locator('.directory-card');assert(await cards.count()>0);const all=await cards.allTextContents();assert(all.some(t=>t.includes('Record legacy')&&t.includes('Via Maremmana Inferiore, 102')));await go(p,'privati.html');assert.match(await p.locator('#result-count').innerText(),/17/);await c.close();});
@@ -75,7 +65,6 @@ extra="""
 needle=" await test('No unhandled JavaScript errors across reviewed pages'"
 test=replacement(test,needle,extra+needle)
 save('tools/test-ui-final-v7-12.mjs',test);outputs.append('tools/test-ui-final-v7-12.mjs')
-
 audit['directory_display']={'progressive_disclosure':True,'original_fields_preserved':True,'existing_overlays_loaded_through':'7.11.7','historical_downloads_labelled':True}
 save('downloads/Audit_UX_V7_12.json',json.dumps(audit,ensure_ascii=False,indent=2))
 notes=(R/'downloads/Release_Notes_V7_12.md').read_text()+'\n## Schede degli elenchi\nLe informazioni essenziali sono mostrate per prime; tutti gli altri campi e le fonti restano disponibili in una sezione espandibile. Date, annualità e avvertenze operative non vengono nascoste dalla semplificazione. Comunità e strutture private applicano anche gli aggiornamenti già disponibili fino alla V7.11.7, senza modificare i dataset.\n'
