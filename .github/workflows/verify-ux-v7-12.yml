@@ -30,7 +30,9 @@ jobs:
           set -euo pipefail
           mkdir -p /tmp/ux-v712-verification
           node --check assets/ux-ui-v7-12.js
-          node --check tools/test-ui-v7-12.mjs
+          node --check assets/directory-disclosure-v7-12.js
+          node --check assets/directory-v7-12.js
+          node --check tools/test-ui-final-v7-12.mjs
           node tools/test-data-v7-12.cjs | tee /tmp/ux-v712-verification/data.json
           QA_OUT=/tmp/ux-v712-verification python tools/verify-ux-v7-12.py
       - name: Browser on candidate
@@ -40,18 +42,39 @@ jobs:
           python -m http.server 8123 --bind 127.0.0.1 >/tmp/ux-v712-http.log 2>&1 &
           PID=$!
           trap 'kill $PID || true' EXIT
-          QA_OUT=/tmp/ux-v712-verification/browser node tools/test-ui-v7-12.mjs
+          QA_OUT=/tmp/ux-v712-verification/browser node tools/test-ui-final-v7-12.mjs
       - name: Exact production bytes and privacy headers
         if: github.event_name != 'pull_request'
         env:
           QA_OUT: /tmp/ux-v712-verification
         run: python tools/verify-ux-v7-12.py --production
+      - name: Verify remaining directory and responsive assets in production
+        if: github.event_name != 'pull_request'
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request,urlopen
+          import subprocess,json,hashlib
+          origin='https://mappatura-servizi-assistenza-psicologica.pages.dev'
+          commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          paths=['assets/ux-polish-v7-12.css','assets/directory-disclosure-v7-12.js','assets/directory-v7-12.js']
+          checks=[]
+          for p in paths:
+              try:
+                  with urlopen(Request(origin+'/'+p+'?ux_verify='+commit,headers={'Cache-Control':'no-cache','User-Agent':'LazioUXVerification/7.12'}),timeout=30) as r:
+                      b=r.read();passed=r.status==200 and b==Path(p).read_bytes() and 'noindex' in r.headers.get('X-Robots-Tag','').lower()
+                      checks.append({'path':p,'passed':passed,'sha256':hashlib.sha256(b).hexdigest()})
+              except Exception as e:checks.append({'path':p,'passed':False,'error':str(e)})
+          report={'version':'7.12','commit':commit,'checks':checks,'passed':sum(x['passed'] for x in checks),'total':len(checks)}
+          Path('/tmp/ux-v712-verification/production-extra-assets.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps(report,indent=2));assert all(x['passed'] for x in checks)
+          PY
       - name: Browser on published site
         if: github.event_name != 'pull_request'
         env:
           QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
           QA_OUT: /tmp/ux-v712-verification/browser
-        run: node tools/test-ui-v7-12.mjs
+        run: node tools/test-ui-final-v7-12.mjs
       - name: Tested commit
         if: always()
         run: |
