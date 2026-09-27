@@ -1,4 +1,4 @@
-name: V7.11.7 seventh geography cycle verification
+name: V7.11.7 eighth geography cycle verification
 on:
   pull_request:
     branches: [main]
