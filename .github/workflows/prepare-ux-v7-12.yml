@@ -4,10 +4,13 @@ on:
     branches: [release/ux-v7-12]
     paths:
       - tools/build-ux-v7-12.py
+      - tools/finalize-ux-v7-12.py
       - tools/verify-ux-v7-12.py
       - tools/test-ui-v7-12.mjs
       - assets/menta-design-v7-12.css
       - assets/ux-ui-v7-12.js
+      - assets/ux-polish-v7-12.css
+      - assets/directory-disclosure-v7-12.js
       - .github/workflows/prepare-ux-v7-12.yml
   workflow_dispatch:
 permissions:
@@ -29,12 +32,14 @@ jobs:
         run: |
           set -euo pipefail
           pip install beautifulsoup4 pillow
-          python tools/build-ux-v7-12.py
+          python tools/finalize-ux-v7-12.py
           test -f downloads/Verifiche_UX_V7_12.json || printf '{"version":"7.12","status":"not_yet_tested"}\n' > downloads/Verifiche_UX_V7_12.json
           mkdir -p /tmp/ux-v712-preparation
           QA_OUT=/tmp/ux-v712-preparation python tools/verify-ux-v7-12.py
           node --check assets/ux-ui-v7-12.js
-          node --check tools/test-ui-v7-12.mjs
+          node --check assets/directory-disclosure-v7-12.js
+          node --check assets/directory-v7-12.js
+          node --check tools/test-ui-final-v7-12.mjs
           node tools/test-data-v7-12.cjs | tee /tmp/ux-v712-preparation/data.json
       - name: Browser dependencies
         run: |
@@ -47,8 +52,23 @@ jobs:
           python -m http.server 8123 --bind 127.0.0.1 > /tmp/ux-v712-preparation/http.log 2>&1 &
           PID=$!
           trap 'kill $PID || true' EXIT
-          QA_OUT=/tmp/ux-v712-preparation/browser node tools/test-ui-v7-12.mjs
+          QA_OUT=/tmp/ux-v712-preparation/browser node tools/test-ui-final-v7-12.mjs
           cp /tmp/ux-v712-preparation/browser/report.json downloads/Verifiche_UX_V7_12.json
+      - name: Reviewable home preview
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageDraw
+          import io,base64
+          root=Path('/tmp/ux-v712-preparation/browser')
+          for name,width,crop in [('1440-index.html.png',480,1100),('390-index.html.png',195,1600)]:
+              p=root/name
+              if not p.exists():continue
+              img=Image.open(p).convert('RGB');img=img.crop((0,0,img.width,min(crop,img.height)));img.thumbnail((width,800))
+              out=io.BytesIO();img.save(out,format='JPEG',quality=35,optimize=True)
+              print('UX_PREVIEW_'+name.replace('.','_').replace('-','_')+'='+base64.b64encode(out.getvalue()).decode())
+          PY
       - name: Commit only the verified generated interface
         run: |
           set -euo pipefail
@@ -66,24 +86,6 @@ jobs:
             git push origin HEAD:release/ux-v7-12
           fi
           git rev-parse HEAD > /tmp/ux-v712-preparation/commit.txt
-      - name: Reviewable home preview
-        if: always()
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          from PIL import Image,ImageOps,ImageDraw
-          import io,base64
-          root=Path('/tmp/ux-v712-preparation/browser')
-          desktop=root/'1440-index.html.png';mobile=root/'390-index.html.png'
-          if desktop.exists() and mobile.exists():
-              a=Image.open(desktop).convert('RGB');a.thumbnail((600,800))
-              b=Image.open(mobile).convert('RGB');b.thumbnail((260,800))
-              sheet=Image.new('RGB',(880,max(a.height,b.height)+32),'white');sheet.paste(a,(8,24));sheet.paste(b,(616,24))
-              d=ImageDraw.Draw(sheet);d.text((8,5),'Desktop',(30,55,45));d.text((616,5),'Mobile',(30,55,45))
-              sheet.save('/tmp/ux-v712-preparation/home-preview.jpg',quality=70)
-              out=io.BytesIO();sheet.save(out,format='JPEG',quality=40)
-              print('UX_HOME_PREVIEW_BASE64='+base64.b64encode(out.getvalue()).decode())
-          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
