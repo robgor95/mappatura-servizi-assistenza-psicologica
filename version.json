@@ -1,5 +1,5 @@
 {
-  "web_version": "7.12.1",
+  "web_version": "7.13",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.12.1: orientamento per bisogni distinto dalla ricerca diretta; homepage con due percorsi descritti, Menta con argomenti espandibili e scrittura facoltativa, compatibilità dei vecchi frammenti. Dataset e geografia V7.11.7 invariati.",
+  "release_note": "V7.13: mappa provinciale integrata nella ricerca, conteggi per territorio e risultati sincronizzati; geometrie ISTAT 2026 locali, sfondo stradale facoltativo. Homepage, dati clinici e coordinate V7.11.7 preservati.",
   "navigation_version": "7.12.1",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -109,8 +109,8 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.11.7",
-  "ux_version": "7.12.1",
+  "map_version": "7.13",
+  "ux_version": "7.13",
   "map": {
     "services": 443,
     "localized": 373,
@@ -355,5 +355,20 @@
     "workflow": ".github/workflows/verify-ux-v7-12-1.yml",
     "baseline_commit": "d57a6df5a3683a6ca4a77dc6ed47b51c15a29fcb",
     "scope": "Dati, file protetti, navigazione, frammenti legacy, mobile, accessibilità automatica e confronto dei file realmente pubblicati. Consultare il run del commit; non riutilizzare gli esiti V7.12."
+  },
+  "geography_data_version": "7.11.7",
+  "v7_13": {
+    "baseline_commit": "110b564a777f94c93f972594c67bb0a4b1f41d8c",
+    "feature": "province_search_map",
+    "source_date": "2026-01-01",
+    "geography_data_unchanged": "7.11.7",
+    "regional_polygons": 5,
+    "municipality_lookup": 378,
+    "map_tiles_opt_in": true,
+    "device_geolocation": false,
+    "tracking": false,
+    "count_unit": "service_record_not_unique_site",
+    "verification_workflow": ".github/workflows/verify-v7-13.yml",
+    "report": "downloads/Audit_Province_V7_13.json"
   }
 }

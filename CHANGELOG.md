@@ -1,3 +1,7 @@
+## 7.13 — 2026-09-27
+
+Mappa locale delle province nella ricerca, con contatori e risultati sincronizzati. Dati e coordinate V7.11.7, Menta e homepage preservati. Sfondo OpenStreetMap facoltativo. Vedi `downloads/Release_Notes_V7_13.md`.
+
 ## 7.12.1 — 2026-09-27
 
 Orientamento per bisogni e ricerca diretta distinti in homepage e nelle pagine di arrivo. Tre percorsi nativi in Menta, scrittura facoltativa, etichette coerenti e compatibilità dei frammenti della vecchia homepage. Dati e motori di ricerca/analisi invariati. Vedi `downloads/Release_Notes_V7_12_1.md`.

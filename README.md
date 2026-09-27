@@ -1,3 +1,7 @@
+## Versione V7.13 — Ricerca per province
+
+Mappa locale delle province nella ricerca, con contatori e risultati sincronizzati. Dati e coordinate V7.11.7, Menta e homepage preservati. Sfondo OpenStreetMap facoltativo. Vedi `downloads/Release_Notes_V7_13.md`.
+
 ## Versione web 7.12.1 · Orientarsi oppure cercare
 
 Due percorsi espliciti: Menta per capire da dove partire; ricerca diretta per strutture, indirizzi e contatti. Dati/geografia V7.11.7 invariati. Verifiche: `.github/workflows/verify-ux-v7-12-1.yml`; note: `downloads/Release_Notes_V7_12_1.md`.
