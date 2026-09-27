@@ -1,0 +1,67 @@
+name: V7.12 canonical URL regression
+on:
+  push:
+    branches: [fix/ux-v7-12-canonical-check]
+    paths: [.github/workflows/fix-ux-canonical-check.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  canonical:
+    if: github.ref == 'refs/heads/fix/ux-v7-12-canonical-check'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/ux-v7-12-canonical-check
+      - name: Dependencies
+        run: |
+          npm install --prefix /tmp/canonical-node playwright @axe-core/playwright
+          ln -s /tmp/canonical-node/node_modules node_modules
+          /tmp/canonical-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Record real production redirect and visible orientation form
+        run: |
+          mkdir -p /tmp/canonical-check
+          node --input-type=module <<'JS'
+          import {chromium} from 'playwright';
+          import fs from 'node:fs/promises';
+          const browser=await chromium.launch({headless:true});
+          const page=await browser.newPage();
+          await page.goto('https://mappatura-servizi-assistenza-psicologica.pages.dev/index.html#menta',{waitUntil:'networkidle'});
+          await page.waitForTimeout(1500);
+          const evidence={url:page.url(),orientationFormVisible:await page.locator('#menta-query').isVisible(),title:await page.title()};
+          console.log(JSON.stringify(evidence,null,2));
+          await fs.writeFile('/tmp/canonical-check/routes.json',JSON.stringify(evidence,null,2));
+          const u=new URL(evidence.url);
+          if(!['/orientati','/orientati.html'].includes(u.pathname)||u.hash!=='#menta'||!evidence.orientationFormVisible)throw Error('Old homepage route did not reach the visible orientation form');
+          await browser.close();
+          JS
+      - name: Refine assertion without changing the application
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          old="await p.waitForURL('**/orientati.html#menta');"
+          new="await p.waitForURL(u=>['/orientati','/orientati.html'].includes(u.pathname)&&u.hash==='#menta');"
+          for name in ['tools/test-ui-v7-12.mjs','tools/test-ui-final-v7-12.mjs']:
+              p=Path(name);s=p.read_text();assert s.count(old)==1,name;p.write_text(s.replace(old,new))
+          PY
+          node --check tools/test-ui-final-v7-12.mjs
+      - name: Full suite against unchanged production
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/canonical-check/browser
+        run: node tools/test-ui-final-v7-12.mjs
+      - name: Commit only the two corrected test assertions
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tools/test-ui-v7-12.mjs tools/test-ui-final-v7-12.mjs
+          git commit -m 'V7.12: accept canonical extensionless URL while checking destination and fragment'
+          git push origin HEAD:fix/ux-v7-12-canonical-check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-v712-canonical-${{ github.run_id }}
+          path: /tmp/canonical-check
+          retention-days: 30
