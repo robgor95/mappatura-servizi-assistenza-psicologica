@@ -1,0 +1,71 @@
+name: V7.13 integrated province map verification
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: province-v713-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Dependencies
+        run: |
+          pip install beautifulsoup4
+          npm install --prefix /tmp/province-node playwright @axe-core/playwright
+          ln -s /tmp/province-node/node_modules node_modules
+          /tmp/province-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Data, administrative distinctions and preserved history
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/province-qa
+          node --check assets/servizi-v7-13.js
+          node --check assets/province-map-v7-13.js
+          node --check assets/province-core-v7-13.js
+          node tools/test-province-data-v7-13.cjs | tee /tmp/province-qa/data.json
+          QA_OUT=/tmp/province-qa python tools/verify-release-v7-13.py
+      - name: Candidate regression and province browser tests
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/province-http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
+          QA_OUT=/tmp/province-qa/regression node tools/test-ui-v7-12-1.mjs
+          QA_OUT=/tmp/province-qa/new-map node tools/test-provinces-v7-13.mjs
+      - name: Exact production bytes and headers
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/province-qa
+        run: python tools/verify-release-v7-13.py --production
+      - name: Published-site regression and province browser tests
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+        run: |
+          set -euo pipefail
+          QA_OUT=/tmp/province-qa/regression node tools/test-ui-v7-12-1.mjs
+          QA_OUT=/tmp/province-qa/new-map node tools/test-provinces-v7-13.mjs
+      - name: Record tested commit
+        if: always()
+        run: |
+          mkdir -p /tmp/province-qa
+          git rev-parse HEAD > /tmp/province-qa/commit.txt
+          git diff --name-status 110b564a777f94c93f972594c67bb0a4b1f41d8c HEAD > /tmp/province-qa/changes.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: province-v713-${{ github.event_name }}-${{ github.run_id }}
+          path: /tmp/province-qa
+          retention-days: 30
