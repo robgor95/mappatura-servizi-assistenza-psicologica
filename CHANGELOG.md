@@ -1,3 +1,12 @@
+## 7.11.7 — 2026-09-27
+
+- Ottavo ciclo geografico e pulizia della coda residua.
+- 443 servizi clinici preservati; 373 localizzati e 70 senza pin.
+- La coda geografica azionabile scende a 69: il SerD Distretto 4 Roma 2 è temporaneamente chiuso e in attesa di nuova sede, quindi non viene trattato come un pin mancante.
+- DNA Frosinone, Villa Maddalena e il record legacy Il Colle diventano localizzabili con provenienza e limiti espliciti.
+- DSM Rieti e DNA Rieti ricevono indirizzi aggiornati senza coordinate forzate; tre conflitti di sede ASL Rieti restano espliciti.
+- Corretto il riepilogo qualità: 29 A, 344 C, 70 D, 0 E; zero ingressi fisici verificati.
+
 ## 7.11.6 — 2026-09-27
 
 - Settimo ciclo geografico sulla baseline V7.11.5.
