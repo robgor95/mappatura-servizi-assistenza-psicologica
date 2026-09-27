@@ -1,0 +1,42 @@
+name: UX V7.12 baseline inventory
+on:
+  push:
+    branches: [release/ux-v7-12]
+    paths: [.github/workflows/audit-ux-v7-12.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: pip install beautifulsoup4 pillow
+      - name: Inventory pages and mascot
+        run: |
+          mkdir -p /tmp/ux-inventory
+          python - <<'PY'
+          import json, pathlib, base64, io
+          from bs4 import BeautifulSoup
+          from PIL import Image
+          R=pathlib.Path('.')
+          pages=sorted(list(R.glob('*.html'))+list((R/'guide').glob('*.html')))
+          inventory=[]
+          for p in pages:
+            s=BeautifulSoup(p.read_text(),'html.parser')
+            main=s.find('main')
+            item={'path':str(p),'title':s.title.get_text(' ',strip=True) if s.title else '', 'h1':[x.get_text(' ',strip=True) for x in s.find_all('h1')],'h2':[x.get_text(' ',strip=True) for x in (main.find_all('h2') if main else [])][:25], 'forms':[{'id':f.get('id'),'fields':[e.get('id') for e in f.select('input,select,button')]} for f in s.find_all('form')], 'scripts':[x.get('src') for x in s.find_all('script',src=True)],'main_classes':main.get('class') if main else None,'body_classes':s.body.get('class') if s.body else None}
+            inventory.append(item)
+          pathlib.Path('/tmp/ux-inventory/pages.json').write_text(json.dumps(inventory,ensure_ascii=False,indent=2))
+          print('INVENTORY_START\n'+json.dumps(inventory,ensure_ascii=False)+'\nINVENTORY_END')
+          img=Image.open('assets/menta/menta-base-v7-10-1.webp').convert('RGBA');img.thumbnail((160,170)); bg=Image.new('RGB',img.size,'white');bg.paste(img,mask=img.getchannel('A'));b=io.BytesIO();bg.save(b,format='JPEG',quality=65)
+          print('MASCOT_JPEG_BASE64='+base64.b64encode(b.getvalue()).decode())
+          print('MASCOT_PALETTE='+str(bg.quantize(colors=10).convert('RGB').getcolors(30000)))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ux-v712-baseline-inventory
+          path: /tmp/ux-inventory
