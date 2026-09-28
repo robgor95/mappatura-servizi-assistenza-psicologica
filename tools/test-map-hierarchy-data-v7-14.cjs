@@ -1,0 +1,29 @@
+'use strict';
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),cp=require('node:child_process');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),root={console,URL,URLSearchParams,document:{readyState:'loading',addEventListener(){}}};root.window=root;vm.createContext(root);
+const load=p=>vm.runInContext(fs.readFileSync(p,'utf8'),root,{filename:p});
+load('assets/servizi-data-v7-5-1.js');
+for(const v of ['7_9','7_9_1','7_9_2','7_9_3','7_9_4','7_11','7_11_1','7_11_2','7_11_3','7_11_4','7_11_5','7_11_6','7_11_7']){load('assets/audit-data-v'+v.replaceAll('_','-')+'.js');root['LazioAudit'+v.replaceAll('_','')].set(read('data/audit_operativo_v'+v+'.json'));}
+const d=read('data/portal_data_v7_3.json');d.moduli.push(...read('data/multisede_v7_7_5.json').records);
+const original=JSON.parse(JSON.stringify(root.LazioServices.build(d,read('data/privati_v7_5.json'))));
+load('assets/map-data-v7-11-7.js');
+const P=require('../assets/province-core-v7-13.js');root.LazioProvinceCore=P;const H=require('../assets/map-hierarchy-core-v7-14.js'),G=root.LazioMapData,A=root.LazioServices;
+const index=read('data/comuni_province_istat2026_v7_13.json'),provinceGeo=read('data/province_lazio_istat2026_v7_13.geojson'),geo=read('data/presidi_geo_v7_11_7.json'),rows=P.assign(original,index);
+const tests=[];function check(name,fn){try{fn();tests.push({name,passed:true});}catch(e){tests.push({name,passed:false,error:e.message});}}
+const baseline='f04771c1bc9f3cd2c81f3ef1ff6f58b18a229476';
+check('All baseline data and historical downloads remain byte-identical',()=>{
+ const paths=cp.execFileSync('git',['ls-tree','-r','--name-only',baseline],{encoding:'utf8'}).trim().split('\n').filter(p=>/^(data\/|downloads\/|offline\/)/.test(p));
+ for(const p of paths)assert(fs.readFileSync(p).equals(cp.execFileSync('git',['show',baseline+':'+p],{maxBuffer:16000000})),p);
+});
+check('443 service identities and source fields remain unchanged',()=>{assert.equal(rows.length,443);assert.equal(new Set(rows.map(r=>r.key)).size,443);assert.deepEqual(rows.map(({provinceEvidence,...r})=>r),original);});
+check('Province attribution remains municipality-based and complete',()=>{P.validateIndex(index);P.validateGeometry(provinceGeo);assert(rows.every(r=>P.codes.includes(r.territory)));assert.equal(rows.filter(r=>r.territory==='ND').length,0);});
+check('Five municipality geometry files validate and contain 378 official municipalities',()=>{let n=0;for(const code of P.codes){const g=read('data/comuni_'+code.toLowerCase()+'_istat2026_v7_14.geojson');H.validateMunicipalGeometry(g,code);assert.equal(g.source.source_sha256,index.source.source_sha256);n+=g.features.length;}assert.equal(n,378);});
+check('Municipality hierarchy accounts for every service record',()=>{const towns=H.byMunicipality(rows,{},A.matches,index,geo,G.position);assert.equal(towns.reduce((n,x)=>n+x.total,0),443);assert(towns.length>100);});
+check('Health hierarchy is a filter over existing ASL fields, not a geographic inference',()=>{for(const code of P.codes){const state={provincia:code},rs=rows.filter(r=>A.matches(r,state)),groups=H.byAsl(rows,state,A.matches);assert.equal(groups.reduce((n,x)=>n+x.total,0),rs.length);}const fake={town:'Roma',asl:'ASL inventata'};assert.equal(H.municipality(fake,index).name,'Roma');assert.equal(H.cleanAsl(fake.asl),'ASL inventata');});
+check('Roma remains one municipality while documented ASL values remain distinct',()=>{const rome=rows.filter(r=>r.town==='Roma'),asls=new Set(rome.map(r=>r.asl).filter(x=>x&&x!=='Non documentata'));assert(rome.length>0);assert(asls.has('ASL Roma 1'));assert(asls.has('ASL Roma 2'));assert(asls.has('ASL Roma 3'));assert.equal(new Set(rome.map(r=>H.municipality(r,index).istat)).size,1);});
+check('Selecting an ASL then municipality never changes management or SSN classification',()=>{const state={provincia:'RM',asl:'ASL Roma 5'},target=rows.filter(r=>A.matches(r,state)),towns=H.byMunicipality(rows,state,A.matches,index,geo,G.position);assert.equal(towns.reduce((n,x)=>n+x.total,0),target.length);for(const r of target){const a=P.administration(r);assert(['public','non_asl','unknown'].includes(a.ownership));assert(['network','sourced','declared','unknown'].includes(a.ssn));}});
+check('Geographic coverage is still exactly 373 located and 70 unlocated',()=>{const s=P.summary(rows,geo,G.position);assert.equal(s.total,443);assert.equal(s.located,373);assert.equal(s.unlocated,70);assert.equal(s.indicative,344);});
+check('No municipality file contains service coordinates or clinical records',()=>{for(const code of P.codes){const raw=fs.readFileSync('data/comuni_'+code.toLowerCase()+'_istat2026_v7_14.geojson','utf8');assert(!/service_key|telefono|email|diagnos|presidi_geo/.test(raw));}});
+check('Manifest declares local hierarchy without device geolocation or live geocoding',()=>{const v=read('version.json');assert.equal(v.web_version,'7.14');assert.equal(v.map_version,'7.14');assert.equal(v.ux_version,'7.14');assert.equal(v.v7_14.municipality_geometry.municipalities,378);assert.equal(v.v7_14.device_geolocation,false);assert.equal(v.v7_14.live_geocoding,false);assert.equal(v.v7_14.tracking,false);assert.equal(v.v7_14.geography_data_unchanged,'7.11.7');});
+check('Hierarchy UI code contains no geolocation, storage, analytics or live geocoding calls',()=>{const s=fs.readFileSync('assets/map-hierarchy-v7-14.js','utf8');assert(!/navigator\.geolocation|localStorage|sessionStorage|sendBeacon|gtag\s*\(|analytics|geocod/i.test(s));assert(/tile\.openstreetmap\.org/.test(s));});
+console.log(JSON.stringify({version:'7.14',tests,passed:tests.filter(t=>t.passed).length,total:tests.length},null,2));if(tests.some(t=>!t.passed))process.exitCode=1;
