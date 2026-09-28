@@ -14,9 +14,9 @@ function article(){const target=$('ng-article');if(!target)return;const id=new U
  document.title=c.title+' | Network Giovani';target.append(el('p',c.category||'Notizie',{class:'ng-kicker'}),el('h1',c.title),el('time',humanDate(c.published_at),{datetime:c.published_at}),el('p',c.summary,{class:'lede'}));if(c.image_id)target.append(el('img',null,{src:'/api/public/media/'+encodeURIComponent(c.image_id),alt:c.image_alt||'',width:'900',height:'500'}));const body=el('div');renderText(body,c.body);target.append(body);if(c.url)target.append(el('a','Approfondisci sul sito esterno ↗',{href:safeURL(c.url,true),target:'_blank',rel:'noopener noreferrer',class:'button secondary'}));}
 async function init(){
  const controller=new AbortController(),t=setTimeout(()=>controller.abort(),5000);
- try{const r=await fetch('/api/public/content',{signal:controller.signal,credentials:'omit',cache:'no-store'});if(!r.ok)throw Error('unavailable');const d=await r.json();items=Array.isArray(d.items)?d.items:[];
+ try{const r=await fetch('/api/public/content',{signal:controller.signal,credentials:'omit',cache:'no-store'});if(!r.ok)throw Error('unavailable');const d=await r.json();items=(Array.isArray(d.items)?d.items:[]).sort((a,b)=>Number(b.featured)-Number(a.featured)||String(b.published_at||'').localeCompare(String(a.published_at||'')));
  if($('ng-category')){const select=$('ng-category');for(const c of [...new Set(items.filter(x=>x.kind!=='banner').map(x=>x.category))].sort())select.append(el('option',c,{value:c}));select.addEventListener('change',renderFeeds);}
- banner();renderFeeds();article();setInterval(()=>{banner();renderFeeds();},60000);
+ banner();renderFeeds();article();setInterval(()=>{banner();renderFeeds();article();},60000);
  }catch(_){const msg=$('ng-editorial-message');if(msg)msg.textContent='Le notizie non sono disponibili in questo momento. I servizi e la mappa restano consultabili.';article();}finally{clearTimeout(t);}
 }
 init();

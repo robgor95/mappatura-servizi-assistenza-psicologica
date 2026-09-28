@@ -11,14 +11,16 @@ function patchRow(row,p){
  const r={...row,raw:{...(row.raw||{})}},v=p.values||{},meta=p.meta||{};
  for(const [k,val] of Object.entries(v)){const field=core?.FIELDS[k];if(!field)continue;r.raw[field.raw]=val;
  if(['name','address','town','access','type','subtype','ssn','accreditation','auth','serviceState','services'].includes(k))r[k]=val||'Non documentato';
- if(k==='name'){r.raw.nome=val;r.raw.denominazione=val;}
+ if(k==='name'){r.raw.nome=val;r.raw.denominazione=val;}if(k==='website')r.raw.sito_ufficiale=val;
+ if(k==='address'||k==='town'){r.raw.nota_geografia_editorial='Sede aggiornata dalla redazione. La localizzazione cartografica precedente non è riconfermata da questa modifica.';}
+ if(['ssn','auth','accreditation'].includes(k)){const labels={'indicata':'Documentato nelle fonti allegate alla revisione','dichiarazione':'Dichiarato dal gestore','da-verificare':'Da verificare','rete-asl':'Rete pubblica / ASL'};r.raw[core.FIELDS[k].raw]=labels[val]||val;if(k==='ssn'){r.raw.rapporto_ssn=labels[val]||val;r.raw.convenzione_ssn=labels[val]||val;}}
  if(k==='phone')r.phone=firstPhone(val);if(k==='email')r.email=val;
  if(k==='contractedBeds')r.beds=/\d/.test(val);
  }
  r.editorialMeta=meta;r.raw._editorial_meta=meta;r.sources=[...new Set((r.sources||[]).concat(Object.values(meta).flatMap(x=>x.sources||[])))];
  r.search=String([r.name,r.town,r.address,r.type,r.subtype,r.asl,r.services,r.raw.gestore,r.raw.destinatari,(r.domains||[]).join(' '),r.regime,r.raw.orari,r.raw.telefono].join(' ')).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();return r;
 }
-function newClinical(p){const v=p.values||{},id=p.key.split(':').slice(1).join(':');const base={key:p.key,id,origin:v.origin||p.key.split(':')[0],raw:{},checked:null,name:'Non documentato',type:'Presidio salute mentale',subtype:'Non documentato',asl:v.asl||'Non documentata',territory:'ND',town:'Non documentato',address:'Non documentato',regime:'Non distinto nel dataset',ownership:'Da verificare',domains:[],admin:{},auth:'da-verificare',accreditation:'da-verificare',ssn:'da-verificare',phone:'',email:'',services:'Non documentato',access:'Non documentato',date:'',status:'Nuova scheda documentale; verifica per campo',sources:[],legacyCategory:'pending',notReviewed:true,mobility:false,extra:false,beds:false};return patchRow(base,p);}
+function newClinical(p){const v=p.values||{},id=p.key.split(':').slice(1).join(':');const base={key:p.key,id,origin:v.origin||p.key.split(':')[0],raw:{id:id},checked:null,name:'Non documentato',type:'Presidio salute mentale',subtype:'Non documentato',asl:v.asl||'Non documentata',territory:'ND',town:'Non documentato',address:'Non documentato',regime:'Non distinto nel dataset',ownership:'Da verificare',domains:[],admin:{},auth:'da-verificare',accreditation:'da-verificare',ssn:'da-verificare',phone:'',email:'',services:'Non documentato',access:'Non documentato',date:'',status:'Nuova scheda documentale; verifica per campo',sources:[],legacyCategory:'pending',notReviewed:true,mobility:false,extra:false,beds:false};return patchRow(base,p);}
 api.applyClinical=function(rows){
  if(!core)return rows;const patches=new Map(api.items.filter(p=>p.entity==='clinical').map(p=>[p.key,p])),ids=new Set(rows.map(r=>r.key));const result=rows.map(r=>patches.has(r.key)?patchRow(r,patches.get(r.key)):r);
  for(const p of patches.values())if(p.addition&&!ids.has(p.key))result.push(newClinical(p));return result;
@@ -32,7 +34,7 @@ api.applySupport=function(data){
 api.applyDirectory=function(category,rows){
  if(!['strutture','privati'].includes(category)||!core)return rows;
  const map=new Map(api.items.filter(x=>x.entity==='clinical').map(x=>[x.key,x])),seen=new Set();
- const result=rows.map(r=>{const id=String(r.id_modulo||r.id||''),key=(category==='privati'?'privati:':'moduli:')+id,p=map.get(key)||map.get('rete:'+id);if(!p)return r;seen.add(p.key);const out={...r,_editorial_meta:p.meta};for(const [k,v] of Object.entries(p.values)){if(!core.FIELDS[k])continue;out[core.FIELDS[k].raw]=v;if(k==='name'){out.nome=v;out.denominazione=v;out.struttura=v;}if(k==='address')out.sede=v;if(k==='type'||k==='subtype')out.tipologia_modulo=v;}return out;});
+ const result=rows.map(r=>{const id=String(r.id_modulo||r.id||''),key=(category==='privati'?'privati:':'moduli:')+id,p=map.get(key)||map.get('rete:'+id);if(!p)return r;seen.add(p.key);const out={...r,_editorial_meta:p.meta};for(const [k,v] of Object.entries(p.values)){if(!core.FIELDS[k])continue;out[core.FIELDS[k].raw]=v;if(['ssn','auth','accreditation'].includes(k)){const label={indicata:'Documentato nelle fonti allegate',dichiarazione:'Dichiarato dal gestore','da-verificare':'Da verificare','rete-asl':'Rete pubblica / ASL'}[v]||v;out[core.FIELDS[k].raw]=label;if(k==='ssn'){out.rapporto_ssn=label;out.convenzione_ssn=label;}}if(k==='name'){out.nome=v;out.denominazione=v;out.struttura=v;}if(k==='address')out.sede=v;if(k==='type'||k==='subtype')out.tipologia_modulo=v;}return out;});
  for(const p of map.values())if(p.addition&&!seen.has(p.key)&&((category==='privati'&&p.key.startsWith('privati:'))||(category==='strutture'&&p.key.startsWith('moduli:')))){const v=p.values,r={id:p.key.split(':')[1],struttura:v.name,nome:v.name,denominazione:v.name,sede:v.address,comune:v.town,_editorial_meta:p.meta};for(const [k,x] of Object.entries(v))if(core.FIELDS[k])r[core.FIELDS[k].raw]=x;result.push(r);}
  return result;
 };

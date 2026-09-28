@@ -1,3 +1,7 @@
+## V7.18 — Network Giovani
+
+Rebranding, interfaccia semplificata e strumenti di redazione e revisione dati. Il backend è chiuso finché Cloudflare non è configurato. Leggere `downloads/Configurazione_Redazione_V7_18.md` prima di abilitare l’area riservata. Nessun dato sanitario originale modificato.
+
 ## Versione V7.17 — PUA e supporto territoriale
 
 Lo strato complementare passa da **47 a 96 sedi/punti PUA documentati**, mantenendo separati i **443 servizi clinici**. Restano 135 consultori e 6 servizi PIS/emergenza sociale documentati. Le reti PUA di Roma 4, Frosinone, Latina e Rieti sono consolidate sulle fonti correnti; Roma 5 e soprattutto Roma 6 mantengono limiti espliciti. I PIS non sono dichiarati esaustivi.

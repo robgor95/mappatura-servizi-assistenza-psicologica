@@ -1,5 +1,5 @@
 {
-  "web_version": "7.17",
+  "web_version": "7.18",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -61,8 +61,8 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.17: ampliato lo strato territoriale a 96 sedi/punti PUA documentati, con reti consolidate per Roma 4, Frosinone, Latina e Rieti; Roma 5/6 e PIS mantengono limiti espliciti. I 443 servizi clinici e la geografia V7.16 restano invariati.",
-  "navigation_version": "7.12.1",
+  "release_note": "V7.18: Network Giovani, interfaccia semplificata, notizie/link/banner e strumenti editoriali e di revisione dati. Area riservata disabilitata fino alla configurazione Cloudflare. Dataset clinici e territoriali di base invariati.",
+  "navigation_version": "7.18",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
     "checked_at": "2026-09-21T18:15:42Z",
@@ -110,7 +110,7 @@
     ]
   },
   "map_version": "7.15",
-  "ux_version": "7.15",
+  "ux_version": "7.18",
   "map": {
     "services": 443,
     "localized": 379,
@@ -552,5 +552,39 @@
     "dataset": "data/supporto_territoriale_v7_17.json",
     "audit": "downloads/Audit_Supporto_Territoriale_V7_17.json",
     "verification_workflow": ".github/workflows/verify-v7-17.yml"
+  },
+  "brand_version": "7.18",
+  "v7_18": {
+    "baseline_commit": "712ba70a5cce0b65243c500451fa25536544c1ae",
+    "brand": "Network Giovani",
+    "attribution": "Un progetto del Network Giovani",
+    "menta_preserved": true,
+    "foundation_section": "informational_only_no_partnership",
+    "clinical_records_preserved": 443,
+    "support_records_preserved": 237,
+    "geography_preserved": "7.16",
+    "questionnaire_url_provided": false,
+    "editorial": {
+      "code_included": true,
+      "activation": "disabled_until_cloudflare_configuration_and_live_acceptance",
+      "open_registration": false,
+      "roles": [
+        "admin",
+        "editor",
+        "data_reviewer",
+        "specialist"
+      ],
+      "private_audit": true,
+      "public_dates": "per_field_partial_verification",
+      "self_approval_data": false,
+      "configuration_guide": "downloads/Configurazione_Redazione_V7_18.md",
+      "first_admin_created": false
+    },
+    "logo": {
+      "path": "assets/network-logo-v7-18.webp",
+      "bytes": 5544,
+      "sha256": "be8d7f30dafb0233095d987b345addc5b313ea0071d5b20561f89f13f542e2d9"
+    },
+    "verification_workflow": ".github/workflows/verify-network-v7-18.yml"
   }
 }

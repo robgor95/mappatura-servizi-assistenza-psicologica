@@ -13,6 +13,7 @@ import {verifyToken,authenticate,protectWrite} from '../lib/editorial-auth.mjs';
 import {freshness,cleanContent,readyToPublish} from '../assets/editorial-core-v7-18.mjs';
 import worker from '../worker/editorial-entry.mjs';
 const ROOT=process.cwd(),OUT=process.env.QA_OUT||'/tmp/network-v718-qa';fs.mkdirSync(OUT,{recursive:true});
+const awaitToken='invalid.test.token';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),results=[];
 async function test(name,fn){try{await fn();results.push({name,passed:true});console.log('PASS '+name);}catch(e){results.push({name,passed:false,error:e.stack||e.message});console.error('FAIL '+name+' '+e.message);}}
 class DB{
@@ -45,7 +46,6 @@ await test('Access JWT validates signature, audience, issuer, expiry and token t
  const expired=await new SignJWT({type:'app',email:admin}).setProtectedHeader({alg:'RS256',kid:'test'}).setIssuer(cfg.issuer).setAudience(cfg.audience).setSubject('test').setIssuedAt(1).setExpirationTime(2).sign(privateKey);await assert.rejects(()=>verifyToken(expired,cfg,keys));
  const good=await token({});await assert.rejects(()=>verifyToken(good,{...cfg,issuer:'https://wrong.example'},keys));await assert.rejects(()=>verifyToken(good,{...cfg,audience:'wrong'},keys));
 });
-const awaitToken='invalid.test.token';
 await test('Disabled backend and anonymous users fail closed',async()=>{
  for(const p of ['/admin/','/api/admin/me']){const r=await worker.fetch(new Request('https://network.example'+p),{ASSETS:{fetch:assetFetch}});assert.equal(r.status,503);}
  assert.equal((await call('/api/admin/me','unknown@example.test')).status,403);
@@ -132,18 +132,29 @@ async function context(width=390,who=null){const c=await browser.newContext({vie
 try{
 await test('Public pages, mobile, navigation, WCAG and original counts',async()=>{
  for(const width of [390,1440]){const {c,p}=await context(width);for(const page of ['index.html','servizi.html','mappa.html','network-giovani.html','fondazione-di-liegro.html','supporto-territoriale.html','strutture-approfondite.html','privati.html','redazione.html']){
- await p.goto(BASE+'/'+page,{waitUntil:'networkidle'});if(page==='servizi.html'){await p.locator('#svc-count').filter({hasText:/443/}).waitFor();assert.match(await p.locator('#search-map-coverage').innerText(),/379 localizzate/);}if(page==='mappa.html'){await p.locator('#map-level-total').filter({hasText:/443/}).waitFor();assert.match(await p.locator('#map-level-coverage').innerText(),/64 senza/);}if(page==='supporto-territoriale.html'){await p.locator('#support-controls:not([hidden])').waitFor();assert.match(await p.locator('#support-count').innerText(),/237 schede/);}if(page==='strutture-approfondite.html'||page==='privati.html'){await p.locator('.directory-card').first().waitFor();}
+ await test('Public page '+page+' at '+width+'px',async()=>{await p.goto(BASE+'/'+page,{waitUntil:'networkidle'});if(page==='servizi.html'){await p.locator('#svc-count').filter({hasText:/443/}).waitFor();assert.match(await p.locator('#search-map-coverage').innerText(),/379 localizzate/);}if(page==='mappa.html'){await p.locator('#map-level-total').filter({hasText:/443/}).waitFor();assert.match(await p.locator('#map-level-coverage').innerText(),/64 senza/);}if(page==='supporto-territoriale.html'){await p.locator('#support-controls:not([hidden])').waitFor();assert.match(await p.locator('#support-count').innerText(),/237 schede/);}if(page==='strutture-approfondite.html'||page==='privati.html'){await p.locator('.directory-card').first().waitFor();}
  assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),page+' overflow '+width);assert.equal(await p.locator('h1').count(),1,page);assert(await p.locator('body').innerText().then(t=>t.includes('Un progetto del Network Giovani')),page);
  const axe=await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();fs.writeFileSync(path.join(OUT,page+'-'+width+'-axe.json'),JSON.stringify(axe.violations,null,2));assert.equal(axe.violations.length,0,JSON.stringify(axe.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))));
  await p.screenshot({path:path.join(OUT,page+'-'+width+'.png'),fullPage:page==='index.html'||page==='network-giovani.html'});
- }await c.close();}
+ });}await c.close();}
 });
 await test('Both maps synchronize province, ASL and municipality',async()=>{
  const {c,p}=await context(1440);await p.goto(BASE+'/servizi.html',{waitUntil:'networkidle'});await p.locator('#search-map-province-buttons [data-search-province="VT"]').click();await p.locator('[data-search-map-municipality]').first().waitFor();assert.equal(await p.locator('#svc-provincia').inputValue(),'VT');await p.locator('#search-map-municipality-buttons [data-search-municipality="Viterbo"]').click();await p.locator('.hierarchy-pin').first().waitFor();assert.equal(await p.locator('#svc-comune').inputValue(),'Viterbo');await c.close();
 });
 await test('Public detail is compact with date and retained sources; Menta remains useful',async()=>{
- const {c,p}=await context();await p.goto(BASE+'/servizi.html?scheda=rete%3AR1-01',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();assert.match(await p.locator('#svc-dialog').innerText(),/Pad\. 26/);assert(await p.locator('#svc-dialog .ng-freshness').count());assert(!/Proposto da:|Approvato da:/.test(await p.locator('#svc-dialog').innerText()));await p.goto(BASE+'/orientati.html',{waitUntil:'networkidle'});await p.locator('#menta-query:not([disabled])').waitFor();await p.locator('#menta-query').fill('cerco un consultorio');await p.locator('#menta-submit').click();await p.locator('#menta-results:not([hidden])').waitFor();assert((await p.locator('#menta-options a').count())>0);await c.close();
+ const {c,p}=await context();await p.goto(BASE+'/servizi.html?scheda=rete%3AR1-01',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();assert.match(await p.locator('#svc-dialog').innerText(),/Pad\. 26/);assert(await p.locator('#svc-dialog .ng-freshness').count());assert(!/Proposto da:|Approvato da:/.test(await p.locator('#svc-dialog').innerText()));await p.goto(BASE+'/orientati.html',{waitUntil:'networkidle'});await p.locator('#orientation-custom > summary').click();await p.locator('#menta-query:not([disabled])').waitFor();await p.locator('#menta-query').fill('cerco un consultorio');await p.locator('#menta-submit').click();await p.locator('#menta-results:not([hidden])').waitFor();assert((await p.locator('#menta-options a').count())>0);await c.close();
 });
+
+await test('Approved field corrections reach both public directories and invalidate old map pins',async()=>{
+ browserEnv.EDITORIAL_ENABLED='true';const clinical=records.records.find(r=>r.key==='rete:R1-01'),support=records.records.find(r=>r.key==='support:PUA-001'),day='2026-09-28',source='https://www.aslroma1.it/test-documentale';
+ const add=(record,values)=>{const meta=Object.fromEntries(Object.keys(values).map(k=>[k,{checked_at:day,changed:true,uncertain:false,sources:[source],author:'PRIVATE_REVIEWER_SENTINEL',approver:'PRIVATE_APPROVER_SENTINEL'}])),base=Object.fromEntries(Object.keys(values).map(k=>[k,record.fields[k]||'']));browserDB.sql.prepare('INSERT INTO cms_overrides(target,entity,values_json,meta_json,base_values,published_at) VALUES(?,?,?,?,?,?)').run(record.key,record.entity,JSON.stringify(values),JSON.stringify(meta),JSON.stringify(base),new Date().toISOString());};
+ add(clinical,{phone:'06 12345678',address:'Via di prova del collaudo 99, Roma'});add(support,{phone:'06 99887766'});
+ const {c,p}=await context(1440);await p.goto(BASE+'/servizi.html?scheda=rete%3AR1-01',{waitUntil:'networkidle'});await p.locator('#svc-dialog[open]').waitFor();assert.match(await p.locator('#svc-dialog').innerText(),/Via di prova del collaudo/);assert.match(await p.locator('#svc-dialog .ng-freshness').innerText(),/Dati aggiornati/);assert.equal(await p.locator('#svc-dialog a[href="tel:0612345678"]').count()>0,true);
+ await p.goto(BASE+'/mappa.html',{waitUntil:'networkidle'});await p.locator('#map-level-coverage').filter({hasText:/378 localizzate/}).waitFor();assert.match(await p.locator('#map-level-coverage').innerText(),/65 senza/);
+ await p.goto(BASE+'/supporto-territoriale.html?q=Eroi&categoria=PUA',{waitUntil:'networkidle'});await p.locator('#support-controls:not([hidden])').waitFor();assert.equal(await p.locator('#support-grid a[href="tel:0699887766"]').count(),1);assert.equal(await p.locator('#support-grid a[href="'+source+'"]').count(),1);
+ const publicRevision=await p.request.get(BASE+'/api/public/revisions'),json=await publicRevision.text();assert(!json.includes('PRIVATE_REVIEWER_SENTINEL'));assert(!json.includes('PRIVATE_APPROVER_SENTINEL'));await c.close();browserDB.sql.exec('DELETE FROM cms_overrides');
+});
+
 await test('Editor panel composes drafts and has no data administration controls',async()=>{
  browserEnv.EDITORIAL_ENABLED='true';const {c,p}=await context(390,author);await p.goto(BASE+'/admin/',{waitUntil:'networkidle'});await p.locator('#admin-identity').filter({hasText:'Editor'}).waitFor();assert.equal(await p.getByRole('button',{name:'Schede dei servizi',exact:true}).count(),0);await p.getByRole('button',{name:'Scrivi una notizia',exact:true}).click();await p.getByLabel('Titolo',{exact:true}).fill('Notizia redazionale di prova');await p.getByLabel('Breve descrizione',{exact:true}).fill('Un testo di prova non pubblico');await p.getByRole('button',{name:'Salva bozza',exact:true}).click();await p.locator('#admin-message').filter({hasText:/bozza|salvat/i}).waitFor();assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await p.screenshot({path:path.join(OUT,'admin-editor-mobile.png'),fullPage:true});await c.close();
 });

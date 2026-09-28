@@ -17,7 +17,7 @@ export function safeURL(value,required=false){
  if(u.protocol!=='https:'||u.username||u.password||/[\u0000-\u0020]/.test(s))throw Error('Il collegamento deve usare HTTPS, senza credenziali.');
  return u.href;
 }
-export function validDay(value){const s=text(value,10);if(!/^\d{4}-\d{2}-\d{2}$/.test(s)||!Number.isFinite(Date.parse(s))||new Date(s).toISOString().slice(0,10)!==s||s>'9999-12-31'||s< '2000-01-01'||s>new Date().toISOString().slice(0,10))throw Error('Data di verifica non valida o futura.');return s;}
+export function validDay(value){const s=text(value,10);if(!/^\d{4}-\d{2}-\d{2}$/.test(s)||!Number.isFinite(Date.parse(s))||new Date(s).toISOString().slice(0,10)!==s||s>'9999-12-31'||s< '2000-01-01'||s>new Date().toLocaleDateString('en-CA',{timeZone:'Europe/Rome'}))throw Error('Data di verifica non valida o futura.');return s;}
 export function cleanContent(input){
  if(!input||!['news','link','banner'].includes(input.kind))throw Error('Tipo di contenuto non valido.');
  const out={kind:input.kind,title:text(input.title||'',160),summary:text(input.summary||'',400),body:text(input.body||'',24000),
@@ -42,7 +42,7 @@ export function freshness(meta,legacyDate=''){
  return {icon:uncertain?'warning':changed?'refresh':'calendar',label:prefix+humanDate(date)+' · controllo parziale'+(uncertain?' · alcuni dati da confermare':'')};
 }
 export function element(tag,txt,attrs={}){const el=document.createElement(tag);if(txt!==null&&txt!==undefined)el.textContent=String(txt);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));return el;}
-export function statusNode(value){if(!value)return document.createTextNode('');const p=element('p',null,{class:'ng-freshness'}),svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',value.icon==='warning'?'M12 3 2 21h20ZM12 9v5m0 3v1':value.icon==='refresh'?'M20 8a8 8 0 1 0 0 8M20 3v5h-5':'M4 5h16v16H4ZM8 2v6m8-6v6M4 10h16');path.setAttribute('fill','none');path.setAttribute('stroke','currentColor');path.setAttribute('stroke-width','1.7');svg.append(path);p.append(svg,document.createTextNode(value.label));return p;}
+export function statusNode(value){if(!value)return document.createTextNode('');const p=element('p',null,{class:'ng-freshness'}),svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');svg.setAttribute('focusable','false');const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',value.icon==='warning'?'M12 3 2 21h20ZM12 9v5m0 3v1':value.icon==='refresh'?'M20 8a8 8 0 1 0 0 8M20 3v5h-5':'M4 5h16v16H4ZM8 2v6m8-6v6M4 10h16');path.setAttribute('fill','none');path.setAttribute('stroke','currentColor');path.setAttribute('stroke-width','1.7');svg.append(path);p.dataset.state=value.icon;p.append(svg,document.createTextNode(value.label));return p;}
 /* Deliberately small Markdown subset, rendered with textContent and validated links. */
 function inline(parent,s){
  const re=/(\*\*([^*\n]+)\*\*|\*([^*\n]+)\*|\[([^\]\n]+)\]\((https:\/\/[^\s)]+)\))/g;let end=0,m;

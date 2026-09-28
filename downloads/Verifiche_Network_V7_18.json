@@ -1,0 +1,157 @@
+{
+  "version": "7.18",
+  "checked_at": "2026-09-28T18:35:36.300Z",
+  "scope": "isolated local database and browser; not a live Access/OTP acceptance test",
+  "tests": [
+    {
+      "name": "Immutable clinical and territorial baseline",
+      "passed": true
+    },
+    {
+      "name": "Access JWT validates signature, audience, issuer, expiry and token type",
+      "passed": true
+    },
+    {
+      "name": "Disabled backend and anonymous users fail closed",
+      "passed": true
+    },
+    {
+      "name": "One-time admin bootstrap requires the configured verified identity",
+      "passed": true
+    },
+    {
+      "name": "Roles, territorial scopes and cross-site protection",
+      "passed": true
+    },
+    {
+      "name": "Drafts, approval and optimistic version checks",
+      "passed": true
+    },
+    {
+      "name": "Private images and published-only media",
+      "passed": true
+    },
+    {
+      "name": "Field proposal requires sources and distinct approval; public audit redacted",
+      "passed": true
+    },
+    {
+      "name": "Sensitive fields require a specialist and retain uncertainty",
+      "passed": true
+    },
+    {
+      "name": "New support records, protected sites, confirmation and conflicts",
+      "passed": true
+    },
+    {
+      "name": "Audit is append-only, rollback has history, revoked users cannot act",
+      "passed": true
+    },
+    {
+      "name": "Public status wording never implies complete clinical certification",
+      "passed": true
+    },
+    {
+      "name": "Public page index.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page servizi.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page mappa.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page network-giovani.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page fondazione-di-liegro.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page supporto-territoriale.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page strutture-approfondite.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page privati.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page redazione.html at 390px",
+      "passed": true
+    },
+    {
+      "name": "Public page index.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page servizi.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page mappa.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page network-giovani.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page fondazione-di-liegro.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page supporto-territoriale.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page strutture-approfondite.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page privati.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public page redazione.html at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Public pages, mobile, navigation, WCAG and original counts",
+      "passed": true
+    },
+    {
+      "name": "Both maps synchronize province, ASL and municipality",
+      "passed": true
+    },
+    {
+      "name": "Public detail is compact with date and retained sources; Menta remains useful",
+      "passed": true
+    },
+    {
+      "name": "Approved field corrections reach both public directories and invalidate old map pins",
+      "passed": true
+    },
+    {
+      "name": "Editor panel composes drafts and has no data administration controls",
+      "passed": true
+    },
+    {
+      "name": "Network feeds and non-invasive banner publish only approved content",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser errors or unrelated external requests",
+      "passed": true
+    }
+  ],
+  "passed": 37,
+  "total": 37
+}

@@ -1,3 +1,12 @@
+## 7.18 — 2026-09-28
+
+- Network Giovani: logo, palette e navigazione semplificata; Menta preservata.
+- Notizie, link, banner non invasivo e Fondazione Di Liegro informativa.
+- Redazione multi-ruolo e revisione dati per campo con audit privato.
+- API protette con Access JWT, ruoli, controlli anti-CSRF, versioni concorrenti e storico.
+- Backend incluso ma non attivato senza configurazione Cloudflare.
+- Dataset clinici, geografia e supporto V7.17 invariati.
+
 ## 7.17 — 2026-09-28
 
 - Strato PUA ampliato da 47 a 96 sedi/punti documentati (+49).

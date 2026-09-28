@@ -1,0 +1,11 @@
+node_modules/
+.ng-build/
+qa-results/
+
+.dev.vars
+.env
+.wrangler/
+.tmp/
+__pycache__/
+
+/node_modules
