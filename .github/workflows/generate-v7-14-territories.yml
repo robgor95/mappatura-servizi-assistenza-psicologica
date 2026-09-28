@@ -1,0 +1,40 @@
+name: Generate V7.14 municipality geometry
+on:
+  push:
+    branches: [release/v7-14]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: generate-v714-territories
+  cancel-in-progress: false
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Dependencies
+        run: pip install pyshp pyproj shapely
+      - name: Download pinned ISTAT 2026 source
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output /tmp/Limiti01012026_g.zip https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2026/Limiti01012026_g.zip
+          echo "b011a590656c3a3ebc297fba80726a376aa843b6f164641cf6a4a990021a81d6  /tmp/Limiti01012026_g.zip" | sha256sum -c -
+      - name: Build municipality files
+        run: python tools/build-territories-v7-14.py /tmp/Limiti01012026_g.zip
+      - name: Commit generated files
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/comuni_*_istat2026_v7_14.geojson
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "V7.14: generate ISTAT 2026 municipality geometry"
+            git push origin HEAD:release/v7-14
+          fi
