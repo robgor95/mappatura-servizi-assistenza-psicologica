@@ -1,0 +1,51 @@
+name: Prepare Network V7.18 candidate
+on:
+  push:
+    branches: [release-v7-18-network-editorial]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: prepare-network-v718
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Preserve source snapshot
+        run: |
+          mkdir -p /tmp/network-v718
+          git archive --format=zip HEAD > /tmp/network-v718/source.zip
+          git rev-parse HEAD > /tmp/network-v718/source-commit.txt
+      - name: Generate integrated candidate
+        run: |
+          set -euo pipefail
+          pip install beautifulsoup4
+          python tools/prepare-network-v7-18.py
+          node tools/export-editorial-catalog-v7-18.cjs
+          for f in assets/*v7-18.js assets/*v7-18.mjs lib/*.mjs worker/*.mjs; do node --check "$f"; done
+      - name: Export candidate and diff
+        if: always()
+        run: |
+          git diff --stat > /tmp/network-v718/diff-stat.txt
+          git diff > /tmp/network-v718/changes.patch
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root=Path.cwd()
+          with zipfile.ZipFile('/tmp/network-v718/candidate.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in root.rglob('*'):
+                  if p.is_file() and '.git' not in p.relative_to(root).parts and 'node_modules' not in p.relative_to(root).parts:
+                      z.write(p,p.relative_to(root))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: network-v718-${{ github.run_id }}
+          path: /tmp/network-v718
+          retention-days: 7
