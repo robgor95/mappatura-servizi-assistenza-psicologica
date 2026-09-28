@@ -31,6 +31,7 @@ jobs:
           pip install beautifulsoup4
           python tools/prepare-network-v7-18.py
           python tools/finalize-network-v7-18.py
+          python tools/polish-network-v7-18.py
           node tools/export-editorial-catalog-v7-18.cjs
           python - <<'PY'
           from pathlib import Path
