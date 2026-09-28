@@ -4,19 +4,22 @@ on:
     branches: [release-v7-18-network-editorial]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: prepare-network-v718
   cancel-in-progress: false
 jobs:
   prepare:
+    if: github.ref == 'refs/heads/release-v7-18-network-editorial'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Preserve source snapshot
         run: |
           mkdir -p /tmp/network-v718
@@ -27,20 +30,58 @@ jobs:
           set -euo pipefail
           pip install beautifulsoup4
           python tools/prepare-network-v7-18.py
+          python tools/finalize-network-v7-18.py
           node tools/export-editorial-catalog-v7-18.cjs
-          for f in assets/*v7-18.js assets/*v7-18.mjs lib/*.mjs worker/*.mjs; do node --check "$f"; done
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/test-network-v7-18.mjs')
+          s=p.read_text().replace("const awaitToken='invalid.test.token';\n",'')
+          s=s.replace("const read=p=>", "const awaitToken='invalid.test.token';\nconst read=p=>")
+          p.write_text(s)
+          PY
+          for f in assets/*v7-18.js assets/*v7-18.mjs lib/*.mjs worker/*.mjs tools/test-network-v7-18.mjs; do node --check "$f"; done
+      - name: Locked toolchain and Worker bundle
+        run: |
+          set -euo pipefail
+          npm install --prefix /tmp/ng-v718 --save-exact jose esbuild playwright @axe-core/playwright
+          ln -s /tmp/ng-v718/node_modules node_modules
+          mkdir -p tools/editorial-toolchain
+          cp /tmp/ng-v718/package.json /tmp/ng-v718/package-lock.json tools/editorial-toolchain/
+          ./node_modules/.bin/esbuild worker/editorial-entry.mjs --bundle --format=esm --platform=browser --target=es2022 --outfile=_worker.js
+          ./node_modules/.bin/playwright install --with-deps chromium
+      - name: Data, authorization, approval, privacy, browser and accessibility
+        env:
+          QA_OUT: /tmp/network-v718/qa
+        run: node tools/test-network-v7-18.mjs
+      - name: Save tested generated candidate on development branch only
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/release-v7-18-network-editorial
+          cp /tmp/network-v718/qa/report.json downloads/Verifiche_Network_V7_18.json
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('.github/workflows/prepare-network-v7-18.yml')
+          s=p.read_text().replace('on:\n  push:\n    branches: [release-v7-18-network-editorial]\n  workflow_dispatch:', 'on:\n  workflow_dispatch:')
+          p.write_text(s)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git diff --cached --check
+          git commit -m 'V7.18 candidato integrato e collaudato: Network, redazione e revisione dati'
+          git push origin HEAD:release-v7-18-network-editorial
+          git rev-parse HEAD > /tmp/network-v718/tested-commit.txt
       - name: Export candidate and diff
         if: always()
         run: |
-          git diff --stat > /tmp/network-v718/diff-stat.txt
-          git diff > /tmp/network-v718/changes.patch
+          git diff --stat 712ba70a5cce0b65243c500451fa25536544c1ae > /tmp/network-v718/diff-stat.txt
           python - <<'PY'
           from pathlib import Path
           import zipfile
           root=Path.cwd()
           with zipfile.ZipFile('/tmp/network-v718/candidate.zip','w',zipfile.ZIP_DEFLATED) as z:
               for p in root.rglob('*'):
-                  if p.is_file() and '.git' not in p.relative_to(root).parts and 'node_modules' not in p.relative_to(root).parts:
+                  if p.is_file() and not any(v in p.relative_to(root).parts for v in ['.git','node_modules','__pycache__']):
                       z.write(p,p.relative_to(root))
           PY
       - uses: actions/upload-artifact@v4
