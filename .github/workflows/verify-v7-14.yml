@@ -1,0 +1,71 @@
+name: V7.14 hierarchical main map verification
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: map-v714-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Dependencies
+        run: |
+          pip install beautifulsoup4
+          npm install --prefix /tmp/map-v714-node playwright @axe-core/playwright
+          ln -s /tmp/map-v714-node/node_modules node_modules
+          /tmp/map-v714-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Data, provenance and integration
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/map-v714
+          node --check assets/map-hierarchy-core-v7-14.js
+          node --check assets/map-hierarchy-v7-14.js
+          node --check tools/test-map-hierarchy-v7-14.mjs
+          node tools/test-map-hierarchy-data-v7-14.cjs | tee /tmp/map-v714/data.json
+          QA_OUT=/tmp/map-v714 python tools/verify-release-v7-14.py
+      - name: Candidate browser, accessibility and hierarchy checks
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/map-v714-http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
+          QA_OUT=/tmp/map-v714/regression node tools/test-ui-v7-14-regression.mjs
+          QA_OUT=/tmp/map-v714/hierarchy node tools/test-map-hierarchy-v7-14.mjs
+      - name: Exact Cloudflare production files and headers
+        if: github.event_name != 'pull_request'
+        env:
+          QA_OUT: /tmp/map-v714
+        run: python tools/verify-release-v7-14.py --production
+      - name: Published-site regression and hierarchy checks
+        if: github.event_name != 'pull_request'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+        run: |
+          set -euo pipefail
+          QA_OUT=/tmp/map-v714/regression node tools/test-ui-v7-14-regression.mjs
+          QA_OUT=/tmp/map-v714/hierarchy node tools/test-map-hierarchy-v7-14.mjs
+      - name: Record tested commit
+        if: always()
+        run: |
+          mkdir -p /tmp/map-v714
+          git rev-parse HEAD > /tmp/map-v714/commit.txt
+          git diff --name-status f04771c1bc9f3cd2c81f3ef1ff6f58b18a229476 HEAD > /tmp/map-v714/changes.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: map-v714-${{ github.event_name }}-${{ github.run_id }}
+          path: /tmp/map-v714
+          retention-days: 30
