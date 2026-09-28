@@ -1,4 +1,4 @@
-## 7.13 — 2026-09-27
+## 7.14 — 2026-09-28\n\n- Mappa principale multilivello: Lazio → provincia → comune → servizio.\n- Vista sanitaria alternativa: provincia → ASL indicata nei dati → comune → servizio.\n- Confini comunali ISTAT 2026 caricati in cinque file separati per ridurre il peso iniziale.\n- Province e comuni funzionano senza richieste cartografiche esterne; OpenStreetMap resta uno sfondo facoltativo.\n- Nessun nuovo confine ASL viene inventato: Roma Capitale resta un unico poligono comunale.\n- 443 schede, 373 localizzate, 70 senza pin e dati V7.11.7 invariati.\n\n## 7.13 — 2026-09-27
 
 Mappa locale delle province nella ricerca, con contatori e risultati sincronizzati. Dati e coordinate V7.11.7, Menta e homepage preservati. Sfondo OpenStreetMap facoltativo. Vedi `downloads/Release_Notes_V7_13.md`.
 
