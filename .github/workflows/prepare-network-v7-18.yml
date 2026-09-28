@@ -32,6 +32,7 @@ jobs:
           python tools/prepare-network-v7-18.py
           python tools/finalize-network-v7-18.py
           python tools/polish-network-v7-18.py
+          python tools/finish-network-v7-18.py
           node tools/export-editorial-catalog-v7-18.cjs
           python - <<'PY'
           from pathlib import Path
@@ -59,12 +60,8 @@ jobs:
           set -euo pipefail
           test "$GITHUB_REF" = refs/heads/release-v7-18-network-editorial
           cp /tmp/network-v718/qa/report.json downloads/Verifiche_Network_V7_18.json
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('.github/workflows/prepare-network-v7-18.yml')
-          s=p.read_text().replace('on:\n  push:\n    branches: [release-v7-18-network-editorial]\n  workflow_dispatch:', 'on:\n  workflow_dispatch:')
-          p.write_text(s)
-          PY
+          git restore --source=HEAD --worktree .github/workflows
+          rm node_modules
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add .
