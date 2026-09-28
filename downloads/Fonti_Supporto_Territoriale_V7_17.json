@@ -1,0 +1,550 @@
+{
+  "version": "7.17",
+  "checked_at": "2026-09-28",
+  "method": "Fonti istituzionali/ASL/Regione/Comuni-Distretti; nessun PUA inferito dalla sola presenza di una Casa della Comunità.",
+  "new_records": [
+    {
+      "id": "PUA-048",
+      "name": "PUA Civitavecchia",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 1",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+        "https://www.aslroma4.it/avvisi-per-l-utenza?start=20"
+      ],
+      "status": "La directory PUA corrente indica Viale Lazio 34/B; un avviso ASL 2026 relativo a contributi riportava Via Etruria 34. Verificare la sede prima di recarsi."
+    },
+    {
+      "id": "PUA-049",
+      "name": "PUA Allumiere",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 1",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-050",
+      "name": "PUA Tolfa",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 1",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-051",
+      "name": "PUA Santa Marinella",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 1",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-052",
+      "name": "PUA Casa della Comunità Ladispoli",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 2",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-053",
+      "name": "PUA Casa della Comunità Cerveteri",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 2",
+      "source_url": "https://www.aslroma4.it/strutture-sanitarie/case-della-comunita/casa-della-comunita-cerveteri",
+      "source_urls": [
+        "https://www.aslroma4.it/strutture-sanitarie/case-della-comunita/casa-della-comunita-cerveteri"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-054",
+      "name": "PUA Bracciano",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 3",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-055",
+      "name": "PUA Trevignano Romano",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 3",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-056",
+      "name": "PUA Canale Monterano",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 3",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-057",
+      "name": "PUA Manziana",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 3",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-058",
+      "name": "PUA Poliambulatorio Anguillara",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 3",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+        "https://www.aslroma4.it/guida-ai-servizi/visite-ed-esami"
+      ],
+      "status": "La pagina PUA indica Via Marco Polo 1; la pagina CUP ASL identifica il poliambulatorio a tale indirizzo come Anguillara Sabazia."
+    },
+    {
+      "id": "PUA-059",
+      "name": "PUA Casa della Comunità Campagnano di Roma",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 4",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-060",
+      "name": "PUA Fiano Romano",
+      "asl": "ASL Roma 4",
+      "district": "Distretto 4",
+      "source_url": "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2",
+      "source_urls": [
+        "https://www.aslroma4.it/pua-punto-unico-di-accesso?rCH=2"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-061",
+      "name": "PUA Distretto di Tivoli",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Tivoli",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/centro-assistenza-domiciliare-cad-distretto-di-tivoli/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/centro-assistenza-domiciliare-cad-distretto-di-tivoli/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-062",
+      "name": "PUA Casa della Comunità Subiaco",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Subiaco",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-subiaco/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-subiaco/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-063",
+      "name": "PUA Distretto di Monterotondo",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Monterotondo",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-distretto-di-monterotondo/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-distretto-di-monterotondo/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-064",
+      "name": "PUA Casa della Comunità Fonte Nuova",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Monterotondo",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-fonte-nuova/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-fonte-nuova/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-065",
+      "name": "PUA Distretto di Guidonia",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Guidonia",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-distretto-di-guidonia/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-distretto-di-guidonia/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-066",
+      "name": "PUA Casa della Comunità Palombara Sabina",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Guidonia",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-palombara-sabina/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-palombara-sabina/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-067",
+      "name": "PUA Distretto di Colleferro",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Colleferro",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-distretto-di-colleferro/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-distretto-di-colleferro/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-068",
+      "name": "PUA Casa della Comunità Zagarolo",
+      "asl": "ASL Roma 5",
+      "district": "Distretto Palestrina",
+      "source_url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-zagarolo/",
+      "source_urls": [
+        "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-zagarolo/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-069",
+      "name": "PUA Distretto H2 Albano Laziale",
+      "asl": "ASL Roma 6",
+      "district": "Distretto H2",
+      "source_url": "https://comune.albanolaziale.rm.it/novita/trasferimento-della-sede-del-distretto-h2/",
+      "source_urls": [
+        "https://comune.albanolaziale.rm.it/novita/trasferimento-della-sede-del-distretto-h2/"
+      ],
+      "status": "Il Comune documenta il trasferimento del Distretto H2, con collegamento al PUA, presso l'ex Ospedale San Giuseppe in Via Olivella km 1. Contatti PUA da confermare sulla fonte ASL."
+    },
+    {
+      "id": "PUA-070",
+      "name": "PUA Casa della Comunità Ciampino",
+      "asl": "ASL Roma 6",
+      "district": "Distretto H3",
+      "source_url": "https://www.comune.ciampino.roma.it/index.php/it/news/6478153",
+      "source_urls": [
+        "https://www.comune.ciampino.roma.it/index.php/it/news/6478153"
+      ],
+      "status": "La Casa della Comunità inaugurata il 3 aprile 2026 dichiara un punto unico di accesso; civico e contatti PUA non sono riportati nella notizia."
+    },
+    {
+      "id": "PUA-071",
+      "name": "PUA Casa della Comunità Lariano",
+      "asl": "ASL Roma 6",
+      "district": "Distretto H5",
+      "source_url": "https://comunicazione.regione.lazio.it/curalazio/news/inaugurata-la-nuova-casa-della-comunita-di-lariano",
+      "source_urls": [
+        "https://comunicazione.regione.lazio.it/curalazio/news/inaugurata-la-nuova-casa-della-comunita-di-lariano"
+      ],
+      "status": "Casa della Comunità inaugurata il 1 luglio 2026; la fonte regionale indica il PUA come elemento centrale della struttura. Contatti PUA non riportati."
+    },
+    {
+      "id": "PUA-072",
+      "name": "PUA Distretto Socio Assistenziale A Alatri",
+      "asl": "ASL Frosinone",
+      "district": "Distretto A",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-073",
+      "name": "PUA Presidio Sanitario Alatri",
+      "asl": "ASL Frosinone",
+      "district": "Distretto A",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-074",
+      "name": "PUA Ex Presidio Sanitario Anagni",
+      "asl": "ASL Frosinone",
+      "district": "Distretto A",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-075",
+      "name": "PUA Distretto Sanitario B Frosinone",
+      "asl": "ASL Frosinone",
+      "district": "Distretto B",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-076",
+      "name": "PUA Casa della Salute Ferentino",
+      "asl": "ASL Frosinone",
+      "district": "Distretto B",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-077",
+      "name": "PUA Casa della Salute Ceccano",
+      "asl": "ASL Frosinone",
+      "district": "Distretto B",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-078",
+      "name": "PUA Casa della Salute Ceprano",
+      "asl": "ASL Frosinone",
+      "district": "Distretto B",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-079",
+      "name": "PUA Distretto Sanitario C Sora",
+      "asl": "ASL Frosinone",
+      "district": "Distretto C",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-080",
+      "name": "PUA Presidio Sanitario Isola del Liri",
+      "asl": "ASL Frosinone",
+      "district": "Distretto C",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-081",
+      "name": "PUA Casa della Salute Atina",
+      "asl": "ASL Frosinone",
+      "district": "Distretto C",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-082",
+      "name": "PUA Distretto Sanitario D Cassino",
+      "asl": "ASL Frosinone",
+      "district": "Distretto D",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-083",
+      "name": "PUA Casa della Salute Pontecorvo",
+      "asl": "ASL Frosinone",
+      "district": "Distretto D",
+      "source_url": "https://www.asl.fr.it/punto-unico-di-accesso-pua/",
+      "source_urls": [
+        "https://www.asl.fr.it/punto-unico-di-accesso-pua/"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-084",
+      "name": "PUA Distretto 1 Aprilia",
+      "asl": "ASL Latina",
+      "district": "Distretto 1",
+      "source_url": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-serviziterritoriali/288-dis1-servizi?tmpl=component",
+      "source_urls": [
+        "https://www.ausl.latina.it/gs-guidaaiservizi/gs-serviziterritoriali/288-dis1-servizi?tmpl=component"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-085",
+      "name": "PUA Distretto 2 Latina",
+      "asl": "ASL Latina",
+      "district": "Distretto 2",
+      "source_url": "https://www.ausl.latina.it/index.php?Itemid=360&catid=105&id=290&option=com_content&view=article",
+      "source_urls": [
+        "https://www.ausl.latina.it/index.php?Itemid=360&catid=105&id=290&option=com_content&view=article"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-086",
+      "name": "PUA Distretto 3 Sezze",
+      "asl": "ASL Latina",
+      "district": "Distretto 3",
+      "source_url": "https://www.ausl.latina.it/index.php?Itemid=360&catid=105&id=292&option=com_content&view=article",
+      "source_urls": [
+        "https://www.ausl.latina.it/index.php?Itemid=360&catid=105&id=292&option=com_content&view=article"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-087",
+      "name": "PUA Distretto 4 Fondi",
+      "asl": "ASL Latina",
+      "district": "Distretto 4",
+      "source_url": "https://www.ausl.latina.it/gs-servterritoriali/294-dis4-servizi",
+      "source_urls": [
+        "https://www.ausl.latina.it/gs-servterritoriali/294-dis4-servizi"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-088",
+      "name": "PUA Distretto 4 Terracina",
+      "asl": "ASL Latina",
+      "district": "Distretto 4",
+      "source_url": "https://www.ausl.latina.it/gs-servterritoriali/294-dis4-servizi",
+      "source_urls": [
+        "https://www.ausl.latina.it/gs-servterritoriali/294-dis4-servizi"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-089",
+      "name": "PUA Distretto 5 Gaeta",
+      "asl": "ASL Latina",
+      "district": "Distretto 5",
+      "source_url": "https://www.ausl.latina.it/component/content/archive?month=5&year=2015",
+      "source_urls": [
+        "https://www.ausl.latina.it/component/content/archive?month=5&year=2015"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-090",
+      "name": "PUA Rieti",
+      "asl": "ASL Rieti",
+      "district": "Distretto 1",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/nucleo-operativo-cure-primarie-rieti",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/nucleo-operativo-cure-primarie-rieti"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-091",
+      "name": "PUA Antrodoco",
+      "asl": "ASL Rieti",
+      "district": "Distretto 1",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/nucleo-operativo-cure-primarie-antrodoco?Submit=Visualizza",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/nucleo-operativo-cure-primarie-antrodoco?Submit=Visualizza"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-092",
+      "name": "PUA Sant'Elpidio",
+      "asl": "ASL Rieti",
+      "district": "Distretto 1",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/nucleo-operativo-cure-primarie-selpidio?Submit=Visualizza",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/nucleo-operativo-cure-primarie-selpidio?Submit=Visualizza"
+      ],
+      "status": "Sede/punto pubblicato dalla fonte istituzionale consultata"
+    },
+    {
+      "id": "PUA-093",
+      "name": "PUA / PASS Amatrice",
+      "asl": "ASL Rieti",
+      "district": "Distretto 1",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/posto-di-assistenza-socio-sanitaria-pass-amatrice",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1",
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-rieti-antrodoco-selpidio-n-1/posto-di-assistenza-socio-sanitaria-pass-amatrice"
+      ],
+      "status": "Il Distretto 1 elenca un PUA PASS Amatrice; la pagina del PASS documenta la sede fisica. Verificare gli orari specifici del PUA."
+    },
+    {
+      "id": "PUA-094",
+      "name": "PUA Poggio Mirteto",
+      "asl": "ASL Rieti",
+      "district": "Distretto 2 Sabino",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-sabino/nucleo-operativo-cure-primarie-di-poggio-mirteto/pua-punto-unico-di-accesso-poggio-mirteto/",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-sabino/nucleo-operativo-cure-primarie-di-poggio-mirteto/pua-punto-unico-di-accesso-poggio-mirteto/"
+      ],
+      "status": "La pagina PUA corrente non espone un indirizzo puntuale: non viene dedotto da documenti precedenti."
+    },
+    {
+      "id": "PUA-095",
+      "name": "PUA Osteria Nuova",
+      "asl": "ASL Rieti",
+      "district": "Distretto 2 Sabino",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-2-salario-mirtense/nucleo-operativo-cure-primarie-di-osteria-nuova/uosd-assistenza-domiciliare-integrata-adi?Submit=Visualizza",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-2-salario-mirtense/nucleo-operativo-cure-primarie-di-osteria-nuova/uosd-assistenza-domiciliare-integrata-adi?Submit=Visualizza"
+      ],
+      "status": "La pagina ADI corrente indica il PUA di riferimento a Viale Europa 13."
+    },
+    {
+      "id": "PUA-096",
+      "name": "PUA Casa della Salute Magliano Sabina",
+      "asl": "ASL Rieti",
+      "district": "Distretto 2 Sabino",
+      "source_url": "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-2-salario-mirtense/casa-della-salute-di-magliano-sabina/pua-punto-unico-di-accesso-magliano-sabina",
+      "source_urls": [
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-2-salario-mirtense/casa-della-salute-di-magliano-sabina/pua-punto-unico-di-accesso-magliano-sabina",
+        "https://www.asl.rieti.it/organizzazione-aziendale/distretti/uoc-distretto-2-salario-mirtense/casa-della-salute-di-magliano-sabina/centro-terapeutico-di-dialisi-magliano-sabina"
+      ],
+      "status": "La pagina PUA documenta il servizio; l'indirizzo della Casa della Salute è confermato nelle pagine ASL della stessa sede."
+    }
+  ]
+}

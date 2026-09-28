@@ -1,3 +1,12 @@
+## 7.17 — 2026-09-28
+
+- Strato PUA ampliato da 47 a 96 sedi/punti documentati (+49).
+- Consolidate le reti documentabili di ASL Roma 4, Frosinone, Latina e Rieti.
+- Documentati i sei hub distrettuali ASL Roma 5 e PUA recenti di Case della Comunità; rete satelliti ancora evolutiva.
+- ASL Roma 6 resta esplicitamente parziale: aggiunte solo sedi correnti con fonte istituzionale.
+- PIS/emergenza sociale restano 6 e non vengono dichiarati completi in assenza di una rubrica regionale unica.
+- 443 servizi clinici, geografia V7.16, Menta, noindex e salvaguardie privacy invariati.
+
 ## 7.16 — 2026-09-28
 
 - Nona tranche geografica conservativa: 6 nuove localizzazioni C.

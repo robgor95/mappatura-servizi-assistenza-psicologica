@@ -1,3 +1,7 @@
+## Versione V7.17 — PUA e supporto territoriale
+
+Lo strato complementare passa da **47 a 96 sedi/punti PUA documentati**, mantenendo separati i **443 servizi clinici**. Restano 135 consultori e 6 servizi PIS/emergenza sociale documentati. Le reti PUA di Roma 4, Frosinone, Latina e Rieti sono consolidate sulle fonti correnti; Roma 5 e soprattutto Roma 6 mantengono limiti espliciti. I PIS non sono dichiarati esaustivi.
+
 ## Versione V7.16 — Nona tranche geografica
 
 Sei nuove localizzazioni conservative portano il portale a **443 schede, 379 localizzate e 64 senza pin**. La coda geografica azionabile scende da 69 a **63 casi**. Nessun ingresso è dichiarato verificato e non vengono usati geocoder live, centroidi comunali o interpolazioni di civici.

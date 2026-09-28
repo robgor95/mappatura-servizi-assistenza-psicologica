@@ -1,0 +1,50 @@
+name: V7.17 territorial support verification
+on:
+  push:
+    branches: [release-v7-17-territorial-support, main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v717-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Static and data checks
+        run: |
+          set -euo pipefail
+          node --check assets/supporto-v7-17.js
+          node --check tools/test-v7-17.cjs
+          node --check tools/test-ui-v7-17.mjs
+          node tools/test-v7-17.cjs
+      - name: Browser dependencies
+        run: |
+          npm install --prefix /tmp/v717-node playwright @axe-core/playwright
+          ln -s /tmp/v717-node/node_modules node_modules
+          /tmp/v717-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Candidate browser and accessibility
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/v717-http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
+          node tools/test-ui-v7-17.mjs
+      - name: Production verification
+        if: github.ref == 'refs/heads/main'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+        run: |
+          ok=0
+          for i in $(seq 1 30); do
+            if curl -fsS -H 'Cache-Control: no-cache' "$QA_BASE/version.json?commit=$GITHUB_SHA" | grep -q '"web_version": "7.17"'; then ok=1; break; fi
+            sleep 5
+          done
+          test "$ok" = 1
+          node tools/test-ui-v7-17.mjs

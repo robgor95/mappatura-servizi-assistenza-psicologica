@@ -1,0 +1,117 @@
+{
+  "version": "7.17",
+  "baseline_commit": "697a034dc6e84359f1e6926d53557a905b1a854b",
+  "checked_at": "2026-09-28",
+  "clinical_database": {
+    "records": 443,
+    "changed": false,
+    "geography_version": "7.16",
+    "localized": 379,
+    "unlocated": 64
+  },
+  "support_layer": {
+    "consultori_master": 135,
+    "pua_before": 47,
+    "pua_after": 96,
+    "pua_added": 49,
+    "pis_social_emergency": 6,
+    "total_directory_rows": 237
+  },
+  "pua_by_asl": {
+    "ASL Frosinone": 12,
+    "ASL Latina": 6,
+    "ASL Rieti": 7,
+    "ASL Roma 1": 17,
+    "ASL Roma 2": 11,
+    "ASL Roma 3": 8,
+    "ASL Roma 4": 13,
+    "ASL Roma 5": 8,
+    "ASL Roma 6": 5,
+    "ASL Viterbo": 9
+  },
+  "coverage": {
+    "pua": {
+      "overall": "documented_not_exhaustive",
+      "documented_sites": 96,
+      "inclusion_rule": "Sedi/punti PUA pubblicati da ASL, Regione, Comune/Distretto o altra fonte istituzionale corrente; satelliti comunali inclusi solo se esplicitamente qualificati come PUA dalla fonte.",
+      "by_asl": {
+        "ASL Roma 1": {
+          "status": "documented_current_directory",
+          "records": 17
+        },
+        "ASL Roma 2": {
+          "status": "documented_current_directory",
+          "records": 11
+        },
+        "ASL Roma 3": {
+          "status": "documented_current_directory",
+          "records": 8
+        },
+        "ASL Roma 4": {
+          "status": "documented_current_directory",
+          "records": 13,
+          "note": "Una discordanza di sede resta esplicita per Civitavecchia."
+        },
+        "ASL Roma 5": {
+          "status": "district_hubs_documented_satellites_evolving",
+          "records": 8
+        },
+        "ASL Roma 6": {
+          "status": "partial_current_sites",
+          "records": 5
+        },
+        "ASL Frosinone": {
+          "status": "complete_against_current_asl_pua_page",
+          "records": 12
+        },
+        "ASL Latina": {
+          "status": "district_hubs_documented",
+          "records": 6
+        },
+        "ASL Rieti": {
+          "status": "district_hubs_documented",
+          "records": 7
+        },
+        "ASL Viterbo": {
+          "status": "documented_current_directory",
+          "records": 9
+        }
+      }
+    },
+    "pis": {
+      "overall": "partial_no_single_regional_registry",
+      "documented_services": 6,
+      "note": "Nessun numero o ambito viene esteso a territori non documentati per analogia."
+    }
+  },
+  "safeguards": {
+    "protected_refuge_addresses_published": 0,
+    "device_geolocation": false,
+    "live_geocoding": false,
+    "tracking": false,
+    "client_search": "same-origin/local filtering",
+    "indexing_enabled": false
+  },
+  "gaps": [
+    {
+      "category": "PUA",
+      "area": "ASL Roma 5",
+      "status": "I sei hub distrettuali risultano documentati; la rete delle nuove Case della Comunità e dei punti comunali è in evoluzione e non viene dichiarata esaustiva."
+    },
+    {
+      "category": "PUA",
+      "area": "ASL Roma 6",
+      "status": "Pomezia/Ardea e alcune sedi correnti di Albano, Ciampino e Lariano sono documentate; restano da consolidare gli altri distretti e punti ASL correnti."
+    },
+    {
+      "category": "PIS",
+      "area": "Lazio",
+      "status": "Non è disponibile una singola rubrica regionale pubblica corrente: restano pubblicati solo i servizi territoriali acquisiti da fonti ufficiali/gestori. Nessun numero viene esteso per analogia."
+    },
+    {
+      "category": "Case della Comunità",
+      "area": "Lazio",
+      "status": "Sono incluse come PUA solo quando una fonte corrente dichiara esplicitamente il Punto Unico di Accesso; non sono trattate automaticamente come servizi psicologici."
+    }
+  ]
+}

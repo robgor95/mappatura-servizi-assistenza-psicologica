@@ -1,7 +1,5 @@
-name: V7.16 geography verification
+name: V7.16 historical verification (manual)
 on:
-  push:
-    branches: [release-v7-16-geography, main]
   workflow_dispatch:
 permissions:
   contents: read
