@@ -1,5 +1,5 @@
 {
-  "web_version": "7.14",
+  "web_version": "7.15",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.14: mappa principale multilivello con vista Territorio (provincia → comune) e Rete sanitaria (provincia → ASL indicata nei dati → comune); confini comunali ISTAT 2026 locali, sfondo stradale facoltativo. Dataset clinici e coordinate V7.11.7 invariati.",
+  "release_note": "V7.15: armonizzata la mappa incorporata in Trova un servizio con la gerarchia della mappa principale (Provincia → ASL/Comune → servizio), stessi stili e OSM opt-in. Dataset clinici e coordinate V7.11.7 invariati.",
   "navigation_version": "7.12.1",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -110,7 +110,7 @@
     ]
   },
   "map_version": "7.14",
-  "ux_version": "7.14",
+  "ux_version": "7.15",
   "map": {
     "services": 443,
     "localized": 373,
@@ -405,5 +405,36 @@
     "tracking": false,
     "release_notes": "downloads/Release_Notes_V7_14.md",
     "verification_workflow": ".github/workflows/verify-v7-14.yml"
+  },
+  "v7_15": {
+    "baseline_commit": "00ba45e18a90181c9185b089fefa0bb9bc98b8e6",
+    "feature": "harmonized_search_and_main_maps",
+    "main_map_version": "7.14",
+    "search_map_version": "7.15",
+    "shared_hierarchy_core": "assets/map-hierarchy-core-v7-14.js",
+    "shared_hierarchy_css": "assets/map-hierarchy-v7-14.css",
+    "territory_view": [
+      "Lazio",
+      "Provincia/Città metropolitana",
+      "Comune",
+      "Servizio"
+    ],
+    "health_view": [
+      "Provincia/Città metropolitana",
+      "ASL indicata nei dati",
+      "Comune",
+      "Servizio"
+    ],
+    "geography_data_unchanged": "7.11.7",
+    "service_records": 443,
+    "localized": 373,
+    "unlocated": 70,
+    "actionable_geography_queue": 69,
+    "map_tiles_opt_in": true,
+    "device_geolocation": false,
+    "live_geocoding": false,
+    "tracking": false,
+    "release_notes": "downloads/Release_Notes_V7_15.md",
+    "verification_workflow": ".github/workflows/verify-v7-15.yml"
   }
 }

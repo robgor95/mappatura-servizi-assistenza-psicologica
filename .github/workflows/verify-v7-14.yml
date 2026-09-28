@@ -1,4 +1,4 @@
-name: V7.14 hierarchical main map verification
+name: V7.14 historical verification (manual)
 on:
   pull_request:
     branches: [main]

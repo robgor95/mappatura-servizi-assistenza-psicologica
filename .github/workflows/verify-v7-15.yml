@@ -1,0 +1,37 @@
+name: V7.15 harmonized maps verification
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: map-v715-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Dependencies
+        run: |
+          npm install --prefix /tmp/map-v715-node playwright @axe-core/playwright
+          ln -s /tmp/map-v715-node/node_modules node_modules
+          /tmp/map-v715-node/node_modules/.bin/playwright install --with-deps chromium
+      - name: Static checks
+        run: |
+          node --check assets/search-map-v7-15.js
+          node --check assets/servizi-v7-15.js
+          node --check tools/test-map-unification-v7-15.mjs
+          node -e "const v=require('./version.json'); if(v.web_version!=='7.15'||v.counts_current.search!==443||v.map.localized!==373||v.map.unlocated!==70||v.data_extension_version!=='7.11.7') process.exit(1)"
+      - name: Browser and accessibility checks
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/map-v715-http.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8123/ >/dev/null && break || sleep 1; done
+          node tools/test-map-unification-v7-15.mjs

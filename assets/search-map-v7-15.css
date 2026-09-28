@@ -1,0 +1,9 @@
+/* V7.15 embedded hierarchy wrapper; shared visual grammar comes from V7.14 hierarchy CSS. */
+.search-map-unified{margin:1.25rem 0 1.45rem;padding:1.15rem;border:1px solid #bbd2c4;border-radius:22px;background:#fffefb;color:#203e32;box-shadow:0 4px 16px #245b4808;scroll-margin-top:90px}
+.search-map-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.8rem}.search-map-heading h2{font-size:1.45rem;line-height:1.3;margin:.15rem 0}.search-map-heading p{margin:.2rem 0;max-width:68ch}.search-map-heading .eyebrow{font-size:.76rem}
+.search-map-unified [hidden]{display:none!important}.search-map-status{font-size:.87rem;line-height:1.5;margin:.65rem 0}.search-map-warning{background:#fff2d8;color:#63460c;padding:.8rem;border:1px solid #b89143;border-radius:12px}
+.search-map-selected{border:1px solid #a5c1ae;background:#f4f8f2;border-radius:12px;padding:.8rem;margin:.8rem 0}.search-map-selected strong{display:block}.search-map-selected p{font-size:.87rem;margin:.3rem 0}.search-map-selected a{display:inline-flex;min-height:44px;align-items:center}
+.search-map-unified .map-canvas.hierarchy-canvas{height:430px}.search-map-unified .map-hierarchy-layout{grid-template-columns:minmax(0,1fr) 275px}.search-map-unified .map-side-card{background:#f4f8f2}
+@media(max-width:850px){.search-map-unified .map-hierarchy-layout{grid-template-columns:minmax(0,1fr) 230px}.search-map-unified .map-canvas.hierarchy-canvas{height:390px}.search-map-heading{flex-direction:column}}
+@media(max-width:720px){.search-map-unified{padding:.85rem;border-radius:17px}.search-map-unified .map-hierarchy-layout{grid-template-columns:1fr}.search-map-unified .map-canvas.hierarchy-canvas{height:350px}.search-map-heading h2{font-size:1.2rem}.search-map-heading p{font-size:.9rem}}
+@media(max-width:430px){.search-map-unified .map-canvas.hierarchy-canvas{height:325px}}
