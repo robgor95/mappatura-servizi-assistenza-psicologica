@@ -1,9 +1,9 @@
 {
-  "web_version": "7.15",
+  "web_version": "7.16",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
-  "data_extension_version": "7.11.7",
+  "data_extension_version": "7.16",
   "built_at": "2026-09-28",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.15: armonizzata la mappa incorporata in Trova un servizio con la gerarchia della mappa principale (Provincia → ASL/Comune → servizio), stessi stili e OSM opt-in. Dataset clinici e coordinate V7.11.7 invariati.",
+  "release_note": "V7.16: sei localizzazioni geografiche conservative; 443 schede, 379 localizzate, 64 senza pin e 63 casi ancora azionabili. UI V7.15 invariata.",
   "navigation_version": "7.12.1",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -113,22 +113,22 @@
   "ux_version": "7.15",
   "map": {
     "services": 443,
-    "localized": 373,
+    "localized": 379,
     "address_geocoded": 66,
-    "street_approximate": 246,
-    "unlocated": 70,
+    "street_approximate": 250,
+    "unlocated": 64,
     "geolocation_enabled": false,
     "tiles_require_action": true,
     "library": "Leaflet 1.9.4 (local)",
     "tiles_provider": "OpenStreetMap",
     "quality": {
-      "D": 70,
+      "D": 64,
       "A": 29,
-      "C": 344,
+      "C": 350,
       "E": 0
     },
     "entrances_verified": 0,
-    "building_approximate": 52
+    "building_approximate": 54
   },
   "ux_map_deployment_verification": {
     "checked_commit": "ea630f7e5c93247addf8f3bdf411cb6adf6b3b05",
@@ -155,7 +155,7 @@
     "tiles_in_automated_tests": "Simulati: nessuno scaricamento automatico di cartografia OSM",
     "scope": "HTML e asset di produzione confrontati con il contenuto testato; noindex HTTP; ricerca e filtri; mappa su consenso; servizi allo stesso indirizzo distinti; fallback; Menta; tastiera e assenza di errori JavaScript. Nessuna certificazione di accessibilità completa o verifica degli ingressi fisici."
   },
-  "audit_version": "7.11.7",
+  "audit_version": "7.16",
   "baseline_commit": "8310d268b6bf643890bf63851144d304c987e8bc",
   "v7_9_verification": {
     "local_report": "downloads/Verifiche_V7_9.json",
@@ -356,7 +356,7 @@
     "baseline_commit": "d57a6df5a3683a6ca4a77dc6ed47b51c15a29fcb",
     "scope": "Dati, file protetti, navigazione, frammenti legacy, mobile, accessibilità automatica e confronto dei file realmente pubblicati. Consultare il run del commit; non riutilizzare gli esiti V7.12."
   },
-  "geography_data_version": "7.11.7",
+  "geography_data_version": "7.16",
   "v7_13": {
     "baseline_commit": "110b564a777f94c93f972594c67bb0a4b1f41d8c",
     "feature": "province_search_map",
@@ -440,5 +440,42 @@
     "main_map_engine": "7.14",
     "search_map_adapter": "7.15",
     "status": "stable"
+  },
+  "v7_16": {
+    "baseline_commit": "9d98af90093fc18924cad5b80c946cce715b831a",
+    "feature": "geography_followup",
+    "previous_geography": "7.11.7",
+    "service_records": 443,
+    "new_locations": 6,
+    "localized": 379,
+    "unlocated": 64,
+    "non_actionable_unlocated": 1,
+    "actionable_geography_queue": 63,
+    "quality": {
+      "D": 64,
+      "A": 29,
+      "C": 350,
+      "E": 0
+    },
+    "precision": {
+      "none": 64,
+      "address": 66,
+      "street": 250,
+      "building": 54,
+      "approximate": 9
+    },
+    "research": {
+      "workflow_run": 36411890302,
+      "candidates": 32,
+      "manual_required": 37,
+      "automatic_promotions": 0,
+      "osm_sha256": "9ef0273d002b1600b57e5a6306b88e548c9c528b9594b916497afe75b989d47d"
+    },
+    "device_geolocation": false,
+    "live_geocoding": false,
+    "tracking": false,
+    "release_notes": "downloads/Release_Notes_V7_16.md",
+    "report": "downloads/Report_Geografia_V7_16.md",
+    "verification_workflow": ".github/workflows/verify-v7-16.yml"
   }
 }

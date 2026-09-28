@@ -1,0 +1,67 @@
+{
+  "version": "7.16",
+  "checked_at": "2026-09-28",
+  "osm_extract": {
+    "url": "https://download.openstreetmap.fr/extracts/europe/italy/lazio-latest.osm.pbf",
+    "retrieved_at": "2026-09-28",
+    "bytes": 126705093,
+    "sha256": "9ef0273d002b1600b57e5a6306b88e548c9c528b9594b916497afe75b989d47d",
+    "last_modified": "Sun, 27 Sep 2026 01:38:21 GMT",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors"
+  },
+  "sources": [
+    {
+      "id": "r1",
+      "url": "https://www.aslroma1.it/azienda-dipartimentieri/dipartimento-integrato-di-salute-mentale"
+    },
+    {
+      "id": "spdc",
+      "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-frosinone-alatri/"
+    },
+    {
+      "id": "prison",
+      "url": "https://www.giustizia.it/giustizia/it/dettaglio_scheda.page?s=MII169535"
+    },
+    {
+      "id": "prisonHealth",
+      "url": "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659"
+    },
+    {
+      "id": "dna",
+      "url": "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+    },
+    {
+      "id": "mondo",
+      "url": "https://comunitamondonuovo.it/wp-content/uploads/2024/07/Carta-Servizi.pdf"
+    },
+    {
+      "id": "airri",
+      "url": "https://www.airrimedical.it/it/ambulatori-viterbo/"
+    },
+    {
+      "id": "osmR1",
+      "url": "https://www.openstreetmap.org/way/55973903"
+    },
+    {
+      "id": "osmFabi",
+      "url": "https://www.openstreetmap.org/way/838630957"
+    },
+    {
+      "id": "osmPrison",
+      "url": "https://www.openstreetmap.org/way/384839032"
+    },
+    {
+      "id": "osmOrtensie",
+      "url": "https://www.openstreetmap.org/way/314479987"
+    },
+    {
+      "id": "osmColle",
+      "url": "https://www.openstreetmap.org/way/101394889"
+    },
+    {
+      "id": "osmCattaneo",
+      "url": "https://www.openstreetmap.org/way/32557965"
+    }
+  ]
+}

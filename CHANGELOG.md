@@ -1,3 +1,12 @@
+## 7.16 — 2026-09-28
+
+- Nona tranche geografica conservativa: 6 nuove localizzazioni C.
+- Copertura: 379 localizzati, 64 senza pin; coda azionabile 63.
+- Aggiornate le sedi della Direzione DSM Roma 1 e dello SPDC Frosinone-Alatri da fonti ufficiali.
+- Ricognizione offline su estratto OSM Lazio: 32 candidati meccanici, zero promozioni automatiche.
+- Corretto il riepilogo interno del dataset geografico dai record effettivi.
+- Nessun geocoding live, centroide comunale, ingresso verificato, tracking o modifica UI.
+
 ## 7.15 — 2026-09-28
 
 - Armonizzata la mappa dentro “Trova un servizio” con la mappa principale V7.14.

@@ -1,7 +1,5 @@
-name: V7.15 harmonized maps verification
+name: V7.15 historical verification (manual)
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

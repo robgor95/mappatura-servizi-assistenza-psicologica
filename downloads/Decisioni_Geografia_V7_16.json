@@ -1,0 +1,77 @@
+{
+  "version": "7.16",
+  "checked_at": "2026-09-28",
+  "baseline": "7.11.7",
+  "research_run": 36411890302,
+  "research_summary": {
+    "queue": 69,
+    "candidate_records": 32,
+    "manual_records": 37,
+    "candidate_types": {
+      "named_feature": 29,
+      "bounded_street": 4
+    },
+    "automatic_promotions": 0
+  },
+  "promoted": [
+    {
+      "service_key": "rete:R1-01",
+      "status": "aggiornato",
+      "sources": [
+        "https://www.aslroma1.it/azienda-dipartimentieri/dipartimento-integrato-di-salute-mentale",
+        "https://www.openstreetmap.org/way/55973903"
+      ],
+      "note": "Aggiornata una sede prima non documentata; posizione C a livello di via condivisa con altri servizi dello stesso complesso."
+    },
+    {
+      "service_key": "rete:NET-074",
+      "status": "aggiornato",
+      "sources": [
+        "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-salute-mentale-e-delle-patologie-da-dipendenza/uoc-spdc-frosinone-alatri/",
+        "https://www.openstreetmap.org/way/838630957"
+      ],
+      "note": "Riconciliato il record che in precedenza riportava Alatri senza indirizzo con la sede Frosinone pubblicata nella pagina specifica del servizio."
+    },
+    {
+      "service_key": "rete:RI-14",
+      "status": "localizzato",
+      "sources": [
+        "https://www.salutelazio.it/documents/10182/41624448/Servizi_pubblici_dipendenze_SerD_26_06_24.pdf/844907e0-14c6-d41e-e503-47ec72b6a4fc?t=1719393411659",
+        "https://www.giustizia.it/giustizia/it/dettaglio_scheda.page?s=MII169535",
+        "https://www.openstreetmap.org/way/384839032"
+      ],
+      "note": "Promosso solo al complesso carcerario; nessuna stanza o ingresso sanitario dedotto."
+    },
+    {
+      "service_key": "rete:NET-065",
+      "status": "localizzato",
+      "sources": [
+        "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/",
+        "https://www.openstreetmap.org/way/314479987"
+      ],
+      "note": "Marker C stradale; nessuna interpolazione del civico."
+    },
+    {
+      "service_key": "moduli:MOD-114",
+      "status": "localizzato",
+      "sources": [
+        "https://comunitamondonuovo.it/wp-content/uploads/2024/07/Carta-Servizi.pdf",
+        "https://www.openstreetmap.org/way/101394889"
+      ],
+      "note": "Corrispondenza nominativa forte fra struttura documentata e area OSM."
+    },
+    {
+      "service_key": "privati:PRI76-003",
+      "status": "localizzato",
+      "sources": [
+        "https://www.airrimedical.it/it/ambulatori-viterbo/",
+        "https://www.openstreetmap.org/way/32557965"
+      ],
+      "note": "Marker C sulla via; nessun civico o ingresso dedotto."
+    }
+  ],
+  "rejected_policy": "I candidati nominali generici (comune, fermata, strada omonima) non sono stati promossi. Nessun civico interpolato, centroide comunale o viewport di mappa è stato usato.",
+  "remaining_actionable": 63,
+  "unlocated_total": 64,
+  "non_actionable_unlocated": 1
+}

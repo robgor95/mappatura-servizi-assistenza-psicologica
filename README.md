@@ -1,3 +1,7 @@
+## Versione V7.16 — Nona tranche geografica
+
+Sei nuove localizzazioni conservative portano il portale a **443 schede, 379 localizzate e 64 senza pin**. La coda geografica azionabile scende da 69 a **63 casi**. Nessun ingresso è dichiarato verificato e non vengono usati geocoder live, centroidi comunali o interpolazioni di civici.
+
 ## Versione V7.15 — Mappe armonizzate
 
 La mappa integrata in **Trova un servizio** e la mappa a pagina intera condividono ora la stessa gerarchia territoriale e la stessa grammatica visiva. Vista territorio: Lazio → provincia/città metropolitana → comune → servizio. Vista rete sanitaria: provincia → ASL indicata nelle schede → comune → servizio. I filtri della mappa nella ricerca aggiornano direttamente l’elenco. Confini comunali ISTAT 2026 caricati per provincia; OpenStreetMap resta facoltativo. Dataset clinici e coordinate V7.11.7 invariati: 443 schede, 373 localizzate, 70 senza pin.
