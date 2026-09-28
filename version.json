@@ -1,10 +1,10 @@
 {
-  "web_version": "7.13",
+  "web_version": "7.14",
   "guides_version": "7.4",
   "archive_version": "7.3",
   "database_version": "7.3",
   "data_extension_version": "7.11.7",
-  "built_at": "2026-09-27",
+  "built_at": "2026-09-28",
   "deployment_branch": "main",
   "deployment_source": "github-cloudflare-pages",
   "clinical_review": false,
@@ -61,7 +61,7 @@
     "routes": 49,
     "towns": 100
   },
-  "release_note": "V7.13: mappa provinciale integrata nella ricerca, conteggi per territorio e risultati sincronizzati; geometrie ISTAT 2026 locali, sfondo stradale facoltativo. Homepage, dati clinici e coordinate V7.11.7 preservati.",
+  "release_note": "V7.14: mappa principale multilivello con vista Territorio (provincia → comune) e Rete sanitaria (provincia → ASL indicata nei dati → comune); confini comunali ISTAT 2026 locali, sfondo stradale facoltativo. Dataset clinici e coordinate V7.11.7 invariati.",
   "navigation_version": "7.12.1",
   "deployment_verification": {
     "checked_commit": "e3f506105736ba4554960aa17c0d82088d06394c",
@@ -109,8 +109,8 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.13",
-  "ux_version": "7.13",
+  "map_version": "7.14",
+  "ux_version": "7.14",
   "map": {
     "services": 443,
     "localized": 373,
@@ -370,5 +370,40 @@
     "count_unit": "service_record_not_unique_site",
     "verification_workflow": ".github/workflows/verify-v7-13.yml",
     "report": "downloads/Audit_Province_V7_13.json"
+  },
+  "v7_14": {
+    "baseline_commit": "f04771c1bc9f3cd2c81f3ef1ff6f58b18a229476",
+    "feature": "main_hierarchical_map",
+    "territory_view": [
+      "Lazio",
+      "Provincia/Città metropolitana",
+      "Comune",
+      "Servizio"
+    ],
+    "health_view": [
+      "Provincia/Città metropolitana",
+      "ASL indicata nei dati",
+      "Comune",
+      "Servizio"
+    ],
+    "municipality_geometry": {
+      "source": "ISTAT",
+      "reference_date": "2026-01-01",
+      "files": 5,
+      "municipalities": 378,
+      "lazy_by_province": true
+    },
+    "intra_rome_asl_boundaries": false,
+    "geography_data_unchanged": "7.11.7",
+    "service_records": 443,
+    "localized": 373,
+    "unlocated": 70,
+    "actionable_geography_queue": 69,
+    "map_tiles_opt_in": true,
+    "device_geolocation": false,
+    "live_geocoding": false,
+    "tracking": false,
+    "release_notes": "downloads/Release_Notes_V7_14.md",
+    "verification_workflow": ".github/workflows/verify-v7-14.yml"
   }
 }
