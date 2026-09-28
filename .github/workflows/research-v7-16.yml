@@ -1,0 +1,36 @@
+name: V7.16 geography research
+on:
+  push:
+    branches: [research-v7-16-geography]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: research-v716-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Dependencies
+        run: pip install requests shapely osmium
+      - name: Research candidates
+        env:
+          RESEARCH_OUT: /tmp/v716-research
+        run: |
+          mkdir -p /tmp/v716-research
+          python tools/research-v7-16.py | tee /tmp/v716-research/run-summary.json
+      - name: Record commit
+        if: always()
+        run: git rev-parse HEAD > /tmp/v716-research/commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: geography-v716-${{ github.run_id }}
+          path: /tmp/v716-research
+          retention-days: 30
