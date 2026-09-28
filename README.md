@@ -1,3 +1,7 @@
+## Versione V7.15 — Mappe armonizzate
+
+La mappa integrata in **Trova un servizio** e la mappa a pagina intera condividono ora la stessa gerarchia territoriale e la stessa grammatica visiva. Vista territorio: Lazio → provincia/città metropolitana → comune → servizio. Vista rete sanitaria: provincia → ASL indicata nelle schede → comune → servizio. I filtri della mappa nella ricerca aggiornano direttamente l’elenco. Confini comunali ISTAT 2026 caricati per provincia; OpenStreetMap resta facoltativo. Dataset clinici e coordinate V7.11.7 invariati: 443 schede, 373 localizzate, 70 senza pin.
+
 ## Versione V7.14 — Mappa multilivello\n\nLa mappa principale permette di esplorare il Lazio per territorio (provincia → comune) oppure per rete sanitaria (provincia → ASL indicata nelle schede → comune). I confini comunali derivano dai dati ISTAT 2026 e vengono caricati soltanto quando serve il relativo territorio. La vista sanitaria è un filtro documentale: non deduce gestione, convenzione o diritto di accesso e non costruisce confini ASL intra-comunali.\n\n## Versione V7.13 — Ricerca per province
 
 Mappa locale delle province nella ricerca, con contatori e risultati sincronizzati. Dati e coordinate V7.11.7, Menta e homepage preservati. Sfondo OpenStreetMap facoltativo. Vedi `downloads/Release_Notes_V7_13.md`.

@@ -109,7 +109,7 @@
       "SEO indexing remains disabled"
     ]
   },
-  "map_version": "7.14",
+  "map_version": "7.15",
   "ux_version": "7.15",
   "map": {
     "services": 443,
@@ -435,6 +435,10 @@
     "live_geocoding": false,
     "tracking": false,
     "release_notes": "downloads/Release_Notes_V7_15.md",
-    "verification_workflow": ".github/workflows/verify-v7-15.yml"
+    "verification_workflow": ".github/workflows/verify-v7-15.yml",
+    "overall_map_version": "7.15",
+    "main_map_engine": "7.14",
+    "search_map_adapter": "7.15",
+    "status": "stable"
   }
 }
