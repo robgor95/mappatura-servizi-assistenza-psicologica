@@ -1,0 +1,23 @@
+name: Export Network baseline
+on:
+  push:
+    branches: [release-v7-18-network-editorial]
+    paths: [.github/workflows/export-network-baseline.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - run: git archive --format=zip --output=/tmp/baseline-v717.zip 712ba70a5cce0b65243c500451fa25536544c1ae
+      - uses: actions/upload-artifact@v4
+        with:
+          name: network-baseline-v717
+          path: /tmp/baseline-v717.zip
+          retention-days: 7
