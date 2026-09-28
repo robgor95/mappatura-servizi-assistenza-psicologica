@@ -1,0 +1,63 @@
+name: V7.18 Network and editorial verification
+on:
+  push:
+    branches: [release-v7-18-network-editorial, main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-network-v718-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install the locked test and build toolchain
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ng-v718 /tmp/network-v718-verification/candidate /tmp/network-v718-verification/production
+          cp tools/editorial-toolchain/package.json tools/editorial-toolchain/package-lock.json /tmp/ng-v718/
+          npm ci --prefix /tmp/ng-v718
+          ln -s /tmp/ng-v718/node_modules node_modules
+          ./node_modules/.bin/playwright install --with-deps chromium
+      - name: Syntax, catalog and shipped Worker integrity
+        run: |
+          set -euo pipefail
+          for f in assets/*v7-18.js assets/*v7-18.mjs lib/*.mjs worker/*.mjs tools/*network*v7-18.mjs; do node --check "$f"; done
+          cp data/editorial-catalog-v7-18.json /tmp/network-v718-verification/catalog.json
+          node tools/export-editorial-catalog-v7-18.cjs
+          cmp data/editorial-catalog-v7-18.json /tmp/network-v718-verification/catalog.json
+          ./node_modules/.bin/esbuild worker/editorial-entry.mjs --bundle --format=esm --platform=browser --target=es2022 --outfile=/tmp/network-v718-verification/worker-rebuilt.js
+          cmp _worker.js /tmp/network-v718-verification/worker-rebuilt.js
+          node --input-type=module -e "import w from './_worker.js'; const r=await w.fetch(new Request('https://example.test/api/public/content'),{}); if((await r.json()).active!==false)process.exit(1); const a=await w.fetch(new Request('https://example.test/admin/'),{}); if(a.status!==503)process.exit(1)"
+      - name: Full isolated candidate verification
+        env:
+          QA_OUT: /tmp/network-v718-verification/candidate
+        run: node tools/test-network-v7-18.mjs
+      - name: Verify actual Cloudflare production
+        if: github.ref == 'refs/heads/main'
+        env:
+          QA_BASE: https://mappatura-servizi-assistenza-psicologica.pages.dev
+          QA_OUT: /tmp/network-v718-verification/production
+        run: node tools/verify-network-production-v7-18.mjs
+      - name: Record tested commit and archive source
+        if: always()
+        run: |
+          mkdir -p /tmp/network-v718-verification
+          git rev-parse HEAD > /tmp/network-v718-verification/commit.txt
+          git diff --name-status 712ba70a5cce0b65243c500451fa25536544c1ae HEAD > /tmp/network-v718-verification/changes.txt
+          git archive --format=zip HEAD > /tmp/network-v718-verification/release-v7-18.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: network-v718-verification-${{ github.run_id }}
+          path: /tmp/network-v718-verification
+          retention-days: 30
