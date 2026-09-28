@@ -1,7 +1,8 @@
 /* V7.14 hierarchy helpers. Presentation-only: no geocoding or clinical inference. */
 (function(root){
 'use strict';
-const P=root.LazioProvinceCore;
+const P=root.LazioProvinceCore || (typeof require==='function'?require('./province-core-v7-13.js'):null);
+if(!P)throw Error('Province core non disponibile');
 const expected={VT:60,RI:73,RM:121,LT:33,FR:91};
 const cleanAsl=v=>String(v||'').trim()||'Non documentata';
 function municipality(row,index){
