@@ -116,7 +116,7 @@ async function municipalityGeometry(code){
  const promise=json('/data/comuni_'+code.toLowerCase()+'_istat2026_v7_14.geojson').then(d=>H.validateMunicipalGeometry(d,code));municipalityCache.set(code,promise);return promise;
 }
 function clearMapLayers(){provinceFeatureLayers.clear();municipalityFeatureLayers.clear();provinceLayer?.clearLayers();municipalityLayer?.clearLayers();labelLayer?.clearLayers();pointLayer?.clearLayers();}
-function provinceStyle(code){return {color:state.provincia===code?'#245b48':'#6d8778',weight:state.provincia===code?3:1.5,fillColor:provinceColors[code],fillOpacity:tiles?.2:.76};}
+function provinceStyle(code){return {color:state.provincia===code?'#245b48':'#6d8778',weight:state.provincia===code?3:1.5,fillColor:provinceColors[code],fillOpacity:tiles ? .2 : .76};}
 function bindPath(layer,label,action,attrs={}){
  layer.on('add',()=>{const p=layer.getElement();if(!p)return;p.setAttribute('role','button');p.setAttribute('tabindex','0');p.setAttribute('aria-label',label);Object.entries(attrs).forEach(([k,v])=>p.setAttribute(k,v));p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();action();}});});layer.on('click',action);
 }
