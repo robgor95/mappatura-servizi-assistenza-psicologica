@@ -1,0 +1,12 @@
+{
+  "project": "Mappatura Reg. Lazio Salute Mentale",
+  "repository": "robgor95/mappatura-servizi-assistenza-psicologica",
+  "version": "7.18",
+  "version_label": "V7.18",
+  "production_branch": "main",
+  "environment": "production",
+  "deployment": "Cloudflare Pages",
+  "source_of_truth": "github-main",
+  "last_application_update": "2026-09-28",
+  "status": "production"
+}
