@@ -54,7 +54,7 @@ jobs:
 ''')
 # New pages are also listed in the prepared sitemap. Indexing remains OFF.
 p=ROOT/'sitemap.xml';s=p.read_text()
-for name in ['network-giovani.html','fondazione-di-liegro.html','redazione.html']:
+for name in ['network-giovani.html','redazione.html']:
  if '/'+name not in s:s=s.replace('</urlset>','<url><loc>https://mappatura-servizi-assistenza-psicologica.pages.dev/'+name+'</loc></url>\n</urlset>')
 p.write_text(s)
 put('downloads/Configurazione_Redazione_V7_18.md','''# Attivazione area redazione — V7.18
