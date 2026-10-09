@@ -32,7 +32,7 @@ const call=async(url,who=admin,method='GET',data,custom={})=>{const request=new 
 const catalog=async(key,who=reviewer)=>{const r=await call('/api/admin/catalog?key='+encodeURIComponent(key),who);assert.equal(r.status,200,JSON.stringify(r.body));return r.body;};
 const proposalBody=(c,patch,mode='update')=>({target:c.record.key,mode,base_hash:c.base_hash,patch,checked_at:'2026-09-28',evidence:Object.fromEntries(Object.keys(patch).map(k=>[k,{urls:['https://www.aslroma1.it/'],kind:'institutional'}])),note:'Nota interna riservata'});
 await test('Immutable clinical and territorial baseline',()=>{
- const v=read('version.json');assert.equal(v.web_version,'7.18');assert.equal(records.clinical,443);assert.equal(records.support,237);assert.equal(records.records.length,680);assert.equal(v.map.localized,379);assert.equal(v.map.unlocated,64);assert.equal(v.indexing_enabled,false);assert.equal(v.clinical_review,false);
+ const v=read('version.json');assert.equal(v.web_version,'7.18');assert.equal(records.clinical,443);assert.equal(records.support,237);assert.equal(records.records.length,680);assert.equal(v.map.localized,379);assert.equal(v.map.unlocated,64);assert.equal(v.indexing_enabled,true);assert.equal(v.clinical_review,false);
  const names=execFileSync('git',['ls-tree','-r','--name-only','712ba70a5cce0b65243c500451fa25536544c1ae'],{encoding:'utf8'}).trim().split('\n').filter(p=>p.startsWith('data/')||p.startsWith('downloads/')||p.startsWith('offline/'));
  for(const p of names)assert(fs.readFileSync(p).equals(execFileSync('git',['show','712ba70a5cce0b65243c500451fa25536544c1ae:'+p],{maxBuffer:10000000})),p+' altered');
 });
@@ -163,4 +163,31 @@ await test('Network feeds and non-invasive banner publish only approved content'
 });
 await test('No uncaught browser errors or unrelated external requests',()=>{assert.deepEqual(errors,[]);assert.deepEqual(external,[]);});
 }finally{await browser.close();await new Promise(r=>server.close(r));browserDB.sql.close();db.sql.close();fs.rmSync(tls,{recursive:true,force:true});}
+await test('SEO whitelist, canonical pages, sitemap and non-indexed technical paths',()=>{
+ const base='https://mappatura-servizi-assistenza-psicologica.pages.dev/';
+ const publicPages=['index.html','servizi.html','mappa.html','orientati.html','aiuto-adesso.html','supporto-territoriale.html','giovani.html','guide/index.html','guide/primo-percorso.html','guide/pubblico.html','guide/privato.html','guide/ricovero.html','guide/riabilitazione.html','ascolto.html','helpline.html','centri-ascolto.html','universita.html','scuole.html','privati.html','strutture-approfondite.html','studenti.html','orientamento-servizi.html','glossario.html','metodo.html'];
+ const version=read('version.json');assert.equal(version.indexing_enabled,true);assert.equal(version.indexable_public_pages,publicPages.length);
+ const sitemap=fs.readFileSync('sitemap.xml','utf8'),urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
+ assert.equal(urls.length,publicPages.length);assert.equal(new Set(urls).size,publicPages.length);assert(!sitemap.includes('<lastmod>'),'Unverified lastmod values');
+ for(const name of publicPages){
+  const html=fs.readFileSync(name,'utf8');
+  const robot=html.match(/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i)?.[0]||'';
+  assert.match(robot,/index,follow/);assert.doesNotMatch(robot,/noindex/);
+  const canonical=html.match(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>/i)?.[0]||'';
+  const expected=base+(name==='index.html'?'':name);
+  assert(canonical.includes('href="'+expected+'"'),name+' canonical missing or incorrect');
+  assert(urls.includes(expected),name+' absent from sitemap');
+ }
+ for(const name of ['network-giovani.html','sezioni.html','documenti.html','qualita-dati.html','privacy.html','redazione.html','notizia.html','archivio.html','interfaccia-precedente.html','404.html']){
+  const html=fs.readFileSync(name,'utf8');const robots=html.match(/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i)?.[0]||'';
+  assert.match(robots,/noindex/,name+' unexpectedly indexable');
+ }
+ const headers=fs.readFileSync('_headers','utf8');
+ const global=headers.split('\n/assets/*')[0];assert.doesNotMatch(global,/^\s+X-Robots-Tag:/im);
+ for(const route of ['/data/*','/downloads/*','/offline/*','/admin/*','/redazione.html','/notizia.html','/network-giovani.html','/sezioni.html','/tools/*','/research/*'])
+  assert(headers.includes('\n'+route+'\n'),route+' missing scoped robots policy');
+ assert(headers.includes('https://:preview.mappatura-servizi-assistenza-psicologica.pages.dev/*'));
+ const robots=fs.readFileSync('robots.txt','utf8');assert(robots.includes('Sitemap: '+base+'sitemap.xml'));
+ assert(!sitemap.includes('fondazione-di-liegro'));
+});
 const report={version:'7.18',checked_at:new Date().toISOString(),scope:'isolated local database and browser; not a live Access/OTP acceptance test',tests:results,passed:results.filter(t=>t.passed).length,total:results.length};fs.writeFileSync(path.join(OUT,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(report.passed!==report.total)process.exitCode=1;

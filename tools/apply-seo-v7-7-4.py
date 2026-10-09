@@ -7,6 +7,12 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://mappatura-servizi-assistenza-psicologica.pages.dev/"
 ROBOTS_OFF = "noindex,nofollow,noarchive,nosnippet,noimageindex"
 
+# Script storico: non ripristinare accidentalmente noindex nelle versioni pubblicate.
+_current_version = ROOT / "version.json"
+if _current_version.is_file() and json.loads(_current_version.read_text(encoding="utf-8")).get("indexing_enabled"):
+    raise SystemExit("Generatore SEO V7.7.4 storico: non eseguire con indicizzazione attiva. Usare tools/set-indexing.py.")
+
+
 SEO = {
     "index.html": ("Salute mentale nel Lazio | Servizi, guide e orientamento",
         "Trova servizi di salute mentale nel Lazio, consulta guide chiare e numeri utili. Menta aiuta a orientarsi senza fare diagnosi."),

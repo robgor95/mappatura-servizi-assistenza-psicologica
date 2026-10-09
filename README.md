@@ -1,3 +1,7 @@
+## SEO e indicizzazione — 9 ottobre 2026
+
+**Configurazione corrente:** 24 pagine pubbliche abilitate (`index,follow`) e sitemap coerente. Le indicazioni precedenti secondo cui l'indicizzazione è disattivata documentano release storiche. Rimangono `noindex`: redazione, pagine editoriali vuote/non pubblicate, documenti tecnici, dataset, download, pagine legacy e anteprime Cloudflare. `python tools/set-indexing.py --enable` ricostruisce la policy e la sitemap, mentre `--disable` è disponibile come misura di rollback. L'indicizzazione effettiva dipende dal deploy e dai motori di ricerca; per Search Console verificare la proprietà e inviare `sitemap.xml`.
+
 ## V7.18 — Network Giovani
 
 Rebranding, interfaccia semplificata e strumenti di redazione e revisione dati. Il backend è chiuso finché Cloudflare non è configurato. Leggere `downloads/Configurazione_Redazione_V7_18.md` prima di abilitare l’area riservata. Nessun dato sanitario originale modificato.

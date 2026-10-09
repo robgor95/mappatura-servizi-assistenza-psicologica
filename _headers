@@ -2,7 +2,6 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  X-Robots-Tag: noindex,nofollow,noarchive,nosnippet,noimageindex
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
 /assets/*
@@ -45,4 +44,55 @@
   X-Robots-Tag: noindex, nofollow, noarchive
 /data/editorial-catalog-v7-18.json
   Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/network-giovani.html
+  X-Robots-Tag: noindex, follow
+
+/sezioni.html
+  X-Robots-Tag: noindex, follow
+
+/notizia.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/redazione.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/tools/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/research/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/lib/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/migrations/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/.github/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/README.md
+  X-Robots-Tag: noindex, nofollow
+
+/CHANGELOG.md
+  X-Robots-Tag: noindex, nofollow
+
+/PROJECT_STATUS.md
+  X-Robots-Tag: noindex, nofollow
+
+/VERSION.json
+  X-Robots-Tag: noindex, nofollow
+
+/version.json
+  X-Robots-Tag: noindex, nofollow
+
+/_worker.js
+  X-Robots-Tag: noindex, nofollow
+
+/_routes.json
+  X-Robots-Tag: noindex, nofollow
+
+https://:preview.mappatura-servizi-assistenza-psicologica.pages.dev/*
   X-Robots-Tag: noindex, nofollow, noarchive

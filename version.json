@@ -31,7 +31,7 @@
   },
   "count_note": "Schede di nodi, moduli e attività privata; non strutture uniche e non censimento esaustivo.",
   "research_status": "parziale_per_campo_non_esaustivo",
-  "deployment_checked_by_preparer": true,
+  "deployment_checked_by_preparer": false,
   "counts_current": {
     "rete": 298,
     "moduli": 128,
@@ -73,9 +73,9 @@
     "scope": "24 pagine HTML uguali al contenuto testato; 7 asset, dataset e PDF con byte corrispondenti; URL archivio.html?view=stpit e pagina 404 effettiva verificati sull'indirizzo di produzione"
   },
   "seo_version": "7.7.4",
-  "indexing_enabled": false,
+  "indexing_enabled": true,
   "sitemap_ready": true,
-  "indexing_policy": "noindex_html_and_http; robots_allows_crawl_to_observe_noindex; sitemap_not_announced",
+  "indexing_policy": "index_follow_on_24_public_pages; selective_noindex_on_admin_datasets_legacy_privacy_and_unpublished_editorial; preview_noindex",
   "seo_deployment_verification": {
     "checked_commit": "b053946845716cb23ca7853a32faba23b9270274",
     "checked_at": "2026-09-21T19:24:00Z",
@@ -586,5 +586,7 @@
       "sha256": "be8d7f30dafb0233095d987b345addc5b313ea0071d5b20561f89f13f542e2d9"
     },
     "verification_workflow": ".github/workflows/verify-network-v7-18.yml"
-  }
+  },
+  "indexable_public_pages": 24,
+  "indexing_reviewed_on": "2026-10-09"
 }

@@ -5,11 +5,30 @@ import argparse, json, re
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://mappatura-servizi-assistenza-psicologica.pages.dev/"
 INDEXABLE = [
-    "mappa.html","giovani.html","index.html","servizi.html","guide/index.html","guide/primo-percorso.html",
-    "guide/pubblico.html","guide/privato.html","guide/ricovero.html",
-    "guide/riabilitazione.html","ascolto.html","helpline.html","centri-ascolto.html",
-    "universita.html","scuole.html","privati.html","strutture-approfondite.html",
-    "studenti.html","orientamento-servizi.html","glossario.html","metodo.html"
+    "index.html",
+    "servizi.html",
+    "mappa.html",
+    "orientati.html",
+    "aiuto-adesso.html",
+    "supporto-territoriale.html",
+    "giovani.html",
+    "guide/index.html",
+    "guide/primo-percorso.html",
+    "guide/pubblico.html",
+    "guide/privato.html",
+    "guide/ricovero.html",
+    "guide/riabilitazione.html",
+    "ascolto.html",
+    "helpline.html",
+    "centri-ascolto.html",
+    "universita.html",
+    "scuole.html",
+    "privati.html",
+    "strutture-approfondite.html",
+    "studenti.html",
+    "orientamento-servizi.html",
+    "glossario.html",
+    "metodo.html",
 ]
 ROBOTS_OFF = "noindex,nofollow,noarchive,nosnippet,noimageindex"
 ROBOTS_ON = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
@@ -57,11 +76,26 @@ def update_robots(enable):
               "# sitemap.xml è predisposta ma non pubblicizzata finché il sito resta fuori dai motori di ricerca.\n")
     (ROOT/"robots.txt").write_text(text,encoding="utf-8")
 
+def update_sitemap():
+    """One canonical, indexable public URL per item; omit unverifiable lastmod dates."""
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for path in INDEXABLE:
+        if not (ROOT / path).is_file():
+            raise FileNotFoundError(path)
+        url = BASE if path == "index.html" else BASE + path
+        lines.extend(['  <url>', f'    <loc>{url}</loc>', '  </url>'])
+    lines.append('</urlset>')
+    (ROOT / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def update_version(enable):
     p=ROOT/"version.json"
     v=json.loads(p.read_text(encoding="utf-8"))
     v["indexing_enabled"]=bool(enable)
     v["sitemap_ready"]=True
+    v["indexable_public_pages"]=len(INDEXABLE)
+    v["indexing_reviewed_on"]="2026-10-09"
     v["indexing_policy"]=(
         "index_follow_for_public_pages; technical_and_legacy_resources_remain_noindex"
         if enable else
@@ -80,6 +114,7 @@ def main():
     for path in INDEXABLE:
         set_robots_meta(path, ROBOTS_ON if enable else ROBOTS_OFF)
     update_global_header(enable)
+    update_sitemap()
     update_robots(enable)
     update_version(enable)
     print("indexing_enabled="+str(enable).lower())

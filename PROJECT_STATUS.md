@@ -8,6 +8,10 @@
 **Ultimo aggiornamento applicativo:** 28 settembre 2026  
 **Hosting di produzione:** Cloudflare Pages
 
+## Aggiornamento SEO — 9 ottobre 2026
+
+Il branch `main` è configurato per l'indicizzazione selettiva di **24 pagine pubbliche**: metadata robots, header HTTP, sitemap e robots.txt allineati. Le pagine tecniche, i dataset, i download, l'area riservata, le pagine legacy e gli URL di anteprima rimangono esclusi; il database dei servizi non è stato modificato. La conferma del deploy effettivo su Cloudflare e l'invio della sitemap a Google Search Console sono verifiche operative distinte.
+
 ## Fonte di verità
 
 Per il codice, i dati, le funzionalità e lo stato corrente del progetto, la fonte primaria e autorevole è sempre il branch `main` di questo repository.

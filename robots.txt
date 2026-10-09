@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-# Indicizzazione disattivata: le pagine inviano noindex via HTML e HTTP.
-# sitemap.xml è predisposta ma non pubblicizzata finché il sito resta fuori dai motori di ricerca.
+Sitemap: https://mappatura-servizi-assistenza-psicologica.pages.dev/sitemap.xml

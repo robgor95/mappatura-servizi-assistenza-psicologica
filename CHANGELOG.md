@@ -1,3 +1,13 @@
+## 7.18 — correzione SEO e indicizzazione — 2026-10-09
+
+- Indicizzazione selettiva preparata per 24 pagine pubbliche con `index,follow`, canonical coerenti e sitemap allineata.
+- Rimossa la direttiva globale `X-Robots-Tag: noindex`; mantenuti `noindex` per dati, download, area redazione, contenuti editoriali non pubblicati, pagine legacy e anteprime Cloudflare.
+- `robots.txt` pubblicizza solo la sitemap delle URL pubbliche approvate; omesse date `lastmod` non verificabili.
+- Adeguati `tools/set-indexing.py` e i test di rete per distinguere pagine pubbliche ed escluse.
+- Confermata da Regione Lazio la disponibilità regionale del 116117 (notizia del 26/08/2026); nessun dato o numero del database modificato.
+- Conservata la distinzione fra rimozione della pagina editoriale della Fondazione Di Liegro (06/10/2026) e mantenimento dei record delle strutture.
+- Attivazione su Cloudflare e presenza sui motori subordinati al deploy effettivo e alla verifica in Search Console.
+
 ## 7.18 — 2026-09-28
 
 - Network Giovani: logo, palette e navigazione semplificata; Menta preservata.
