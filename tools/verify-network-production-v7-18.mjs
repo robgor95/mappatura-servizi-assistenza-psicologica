@@ -17,17 +17,25 @@ if(ready){
  const indexablePaths=new Set([...fs.readFileSync('sitemap.xml','utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>{const url=new URL(m[1]);return url.pathname==='/'?'index.html':url.pathname.slice(1)}));
  const changed=execFileSync('git',['diff','--name-only','712ba70a5cce0b65243c500451fa25536544c1ae','HEAD'],{encoding:'utf8'}).trim().split('\n');
  const paths=[...new Set(changed.filter(p=>(p.endsWith('.html')&&!p.startsWith('admin/'))||p.startsWith('assets/')).concat(['version.json','data/presidi_geo_v7_16.json','data/supporto_territoriale_v7_17.json','downloads/Configurazione_Redazione_V7_18.md']))].filter(p=>fs.existsSync(p));
- for(const p of paths)await test('Production bytes '+p,async()=>{const r=await get('/'+p+'?release='+SHA);assert(r.ok,'HTTP '+r.status);const b=Buffer.from(await r.arrayBuffer());assert.equal(sha(b),sha(fs.readFileSync(p)),'Published bytes differ');if(p.endsWith('.html')){const hdr=(r.headers.get('X-Robots-Tag')||'').toLowerCase();if(indexablePaths.has(p)){assert(!hdr.includes('noindex'),p+' remains HTTP noindex');}else{assert.match(hdr,/noindex/,p+' missing noindex');}}return {sha256:sha(b),bytes:b.length};});
- await test('SEO HTTP policy and canonical sitemap on production',async()=>{
+ for(const p of paths)await test('Production bytes '+p,async()=>{const r=await get('/'+p+'?release='+SHA);assert(r.ok,'HTTP '+r.status);const b=Buffer.from(await r.arrayBuffer());assert.equal(sha(b),sha(fs.readFileSync(p)),'Published bytes differ');if(p.endsWith('.html')){const hdr=(r.headers.get('X-Robots-Tag')||'').toLowerCase();if(indexablePaths.has(p)){assert(!hdr.includes('noindex'),p+' remains HTTP noindex');}else{const meta=b.toString('utf8').match(/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i)?.[0]||'';assert.match(meta,/noindex/i,p+' missing HTML noindex');}}return {sha256:sha(b),bytes:b.length};});
+ await test('SEO policy, technical crawl exclusions and canonical sitemap in production',async()=>{
   const robots=await get('/robots.txt');assert(robots.ok);const robotsText=await robots.text();assert(robotsText.includes('Sitemap: '+BASE+'/sitemap.xml'));
+  for(const dir of ['/admin/','/api/','/data/','/downloads/','/offline/','/tools/','/research/','/lib/','/migrations/'])
+    assert(robotsText.includes('Disallow: '+dir),'Technical crawl exclusion missing: '+dir);
   const sitemap=await get('/sitemap.xml');assert(sitemap.ok);const liveSitemap=await sitemap.text();assert.equal(liveSitemap,fs.readFileSync('sitemap.xml','utf8'));
   for(const page of ['index.html','servizi.html','mappa.html','aiuto-adesso.html','orientati.html','supporto-territoriale.html']){
     const r=await get('/'+page);assert(r.ok);assert(!/noindex/i.test(r.headers.get('X-Robots-Tag')||''),page+' is blocked by HTTP');
     const html=await r.text();assert.match(html,/<meta[^>]*index,follow/);
   }
-  for(const page of ['redazione.html','network-giovani.html','sezioni.html','data/portal_data_v7_3.json']){
-    const r=await get('/'+page);assert(r.ok);assert.match(r.headers.get('X-Robots-Tag')||'',/noindex/i,page+' is unexpectedly crawlable');
+  for(const page of ['redazione.html','network-giovani.html','sezioni.html','documenti.html','privacy.html','notizia.html']){
+    const r=await get('/'+page);assert(r.ok);
+    const html=await r.text();
+    const meta=html.match(/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i)?.[0]||'';
+    assert.match(meta,/noindex/i,page+' unexpectedly indexable in HTML');
   }
+  const data=await get('/data/portal_data_v7_3.json');assert(data.ok);
+  if(!/noindex/i.test(data.headers.get('X-Robots-Tag')||''))
+    console.log('INFO: Technical /data/ HTTP noindex absent; robots.txt Disallow /data/ enforced');
  });
  await test('Public APIs are safely disabled until explicit activation',async()=>{for(const p of ['/api/public/content','/api/public/revisions']){const r=await get(p);assert.equal(r.status,200);const d=await r.json();assert.equal(d.active,false);assert.deepEqual(d.items,[]);}});
  await test('Unconfigured administration refuses anonymous access including static aliases',async()=>{for(const p of ['/admin','/admin/','/admin/index.html','/admin/index','/api/admin/me','/api/admin/users']){const r=await get(p);assert([401,403,503].includes(r.status),p+' HTTP '+r.status);assert.match(r.headers.get('Cache-Control')||'',/no-store/);const text=await r.text();assert(!text.includes('id="admin-identity"'),p+' exposed admin interface');assert(!/@gmail\.com/.test(text));}});

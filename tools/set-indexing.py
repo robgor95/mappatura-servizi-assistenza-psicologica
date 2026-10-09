@@ -67,14 +67,16 @@ def update_global_header(enable):
     p.write_text("\n".join(out).rstrip()+"\n",encoding="utf-8")
 
 def update_robots(enable):
+    # Additional crawl barrier for technical/download paths, even when
+    # individual HTTP X-Robots-Tag rules are not emitted by the CDN.
+    blocked = ["/admin/","/api/","/data/","/downloads/","/offline/","/tools/","/research/","/lib/","/migrations/","/.github/","/version.json","/VERSION.json","/README.md","/CHANGELOG.md","/PROJECT_STATUS.md","/MANIFEST_SHA256_WEB.txt","/_worker.js","/_routes.json"]
+    text = "User-agent: *\nAllow: /\n"
+    text += "".join("Disallow: " + path + "\n" for path in blocked)
     if enable:
-        text=("User-agent: *\nAllow: /\n"
-              f"Sitemap: {BASE}sitemap.xml\n")
+        text += f"Sitemap: {BASE}sitemap.xml\n"
     else:
-        text=("User-agent: *\nAllow: /\n"
-              "# Indicizzazione disattivata: le pagine inviano noindex via HTML e HTTP.\n"
-              "# sitemap.xml è predisposta ma non pubblicizzata finché il sito resta fuori dai motori di ricerca.\n")
-    (ROOT/"robots.txt").write_text(text,encoding="utf-8")
+        text += "# Indicizzazione pubblica disattivata via meta robots e header globali.\n"
+    (ROOT / "robots.txt").write_text(text, encoding="utf-8")
 
 def update_sitemap():
     """One canonical, indexable public URL per item; omit unverifiable lastmod dates."""

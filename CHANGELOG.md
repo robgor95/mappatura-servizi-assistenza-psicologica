@@ -7,6 +7,7 @@
 - Confermata da Regione Lazio la disponibilità regionale del 116117 (notizia del 26/08/2026); nessun dato o numero del database modificato.
 - Conservata la distinzione fra rimozione della pagina editoriale della Fondazione Di Liegro (06/10/2026) e mantenimento dei record delle strutture.
 - Attivazione su Cloudflare e presenza sui motori subordinati al deploy effettivo e alla verifica in Search Console.
+- Aggiunta difesa in profondità: `robots.txt` esclude esplicitamente gli URL tecnici anche se Cloudflare non emette alcuni header HTTP selettivi; normalizzata la separazione dei blocchi `_headers` e adattato il collaudo a verificare i meta `noindex` delle pagine HTML.
 
 ## 7.18 — 2026-09-28
 

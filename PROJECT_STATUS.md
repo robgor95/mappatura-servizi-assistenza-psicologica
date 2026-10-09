@@ -12,6 +12,8 @@
 
 Il branch `main` è configurato per l'indicizzazione selettiva di **24 pagine pubbliche**: metadata robots, header HTTP, sitemap e robots.txt allineati. Le pagine tecniche, i dataset, i download, l'area riservata, le pagine legacy e gli URL di anteprima rimangono esclusi; il database dei servizi non è stato modificato. La conferma del deploy effettivo su Cloudflare e l'invio della sitemap a Google Search Console sono verifiche operative distinte.
 
+La verifica Cloudflare del 09/10/2026 ha mostrato che alcuni header `X-Robots-Tag` per singolo percorso non erano presenti nelle risposte. Per questo le pagine escluse conservano `noindex` nell'HTML e le cartelle tecniche sono anche escluse dalla scansione in `robots.txt`. Un nuovo collaudo della produzione controlla entrambe le protezioni.
+
 ## Fonte di verità
 
 Per il codice, i dati, le funzionalità e lo stato corrente del progetto, la fonte primaria e autorevole è sempre il branch `main` di questo repository.

@@ -75,7 +75,7 @@
   "seo_version": "7.7.4",
   "indexing_enabled": true,
   "sitemap_ready": true,
-  "indexing_policy": "index_follow_on_24_public_pages; selective_noindex_on_admin_datasets_legacy_privacy_and_unpublished_editorial; preview_noindex",
+  "indexing_policy": "index_follow_on_24_public_pages; meta_noindex_for_excluded_html; robots_disallow_for_technical_resources; preview_http_noindex_policy",
   "seo_deployment_verification": {
     "checked_commit": "b053946845716cb23ca7853a32faba23b9270274",
     "checked_at": "2026-09-21T19:24:00Z",
@@ -588,5 +588,25 @@
     "verification_workflow": ".github/workflows/verify-network-v7-18.yml"
   },
   "indexable_public_pages": 24,
-  "indexing_reviewed_on": "2026-10-09"
+  "indexing_reviewed_on": "2026-10-09",
+  "technical_crawl_disallow": [
+    "/admin/",
+    "/api/",
+    "/data/",
+    "/downloads/",
+    "/offline/",
+    "/tools/",
+    "/research/",
+    "/lib/",
+    "/migrations/",
+    "/.github/",
+    "/version.json",
+    "/VERSION.json",
+    "/README.md",
+    "/CHANGELOG.md",
+    "/PROJECT_STATUS.md",
+    "/MANIFEST_SHA256_WEB.txt",
+    "/_worker.js",
+    "/_routes.json"
+  ]
 }

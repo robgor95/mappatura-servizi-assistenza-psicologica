@@ -187,7 +187,7 @@ await test('SEO whitelist, canonical pages, sitemap and non-indexed technical pa
  for(const route of ['/data/*','/downloads/*','/offline/*','/admin/*','/redazione.html','/notizia.html','/network-giovani.html','/sezioni.html','/tools/*','/research/*'])
   assert(headers.includes('\n'+route+'\n'),route+' missing scoped robots policy');
  assert(headers.includes('https://:preview.mappatura-servizi-assistenza-psicologica.pages.dev/*'));
- const robots=fs.readFileSync('robots.txt','utf8');assert(robots.includes('Sitemap: '+base+'sitemap.xml'));
+ const robots=fs.readFileSync('robots.txt','utf8');assert(robots.includes('Sitemap: '+base+'sitemap.xml'));for(const route of ['/admin/','/api/','/data/','/downloads/','/offline/','/tools/','/research/','/lib/','/migrations/','/version.json'])assert(robots.includes('Disallow: '+route),route+' missing robots crawl guard');
  assert(!sitemap.includes('fondazione-di-liegro'));
 });
 const report={version:'7.18',checked_at:new Date().toISOString(),scope:'isolated local database and browser; not a live Access/OTP acceptance test',tests:results,passed:results.filter(t=>t.passed).length,total:results.length};fs.writeFileSync(path.join(OUT,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(report.passed!==report.total)process.exitCode=1;
