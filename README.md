@@ -1,3 +1,9 @@
+## Statistiche aggregate — Cloudflare Web Analytics (9 ottobre 2026)
+
+L'opzione **Enable Web Analytics** è stata selezionata dal proprietario nel progetto Cloudflare Pages. L'attivazione dello script avviene automaticamente al deployment successivo e viene verificata da `tools/verify-network-production-v7-18.mjs`. **Non** aggiungere manualmente un secondo snippet: Cloudflare deve inserirne uno solo. La CSP autorizza `https://static.cloudflareinsights.com/beacon.min.js` e `connect-src 'self'`; Menta, ricerca e dati territoriali non inviano eventi personalizzati.
+
+La sezione `privacy.html#statistiche-privacy` descrive le statistiche del traffico. Restano da indicare l'identità giuridica del titolare e un recapito privacy (adempimento non risolvibile senza informazioni del gestore). Visualizza i dati dalla dashboard Cloudflare Web Analytics associata al progetto.
+
 ## SEO e indicizzazione — 9 ottobre 2026
 
 **Configurazione corrente:** 24 pagine pubbliche abilitate (`index,follow`) e sitemap coerente. Le indicazioni precedenti secondo cui l'indicizzazione è disattivata documentano release storiche. Rimangono `noindex`: redazione, pagine editoriali vuote/non pubblicate, documenti tecnici, dataset, download, pagine legacy e anteprime Cloudflare. `python tools/set-indexing.py --enable` ricostruisce la policy e la sitemap, mentre `--disable` è disponibile come misura di rollback. L'indicizzazione effettiva dipende dal deploy e dai motori di ricerca; per Search Console verificare la proprietà e inviare `sitemap.xml`.

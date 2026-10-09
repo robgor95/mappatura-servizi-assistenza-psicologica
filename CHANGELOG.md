@@ -1,3 +1,10 @@
+## V7.18 — Cloudflare Web Analytics (9 ottobre 2026)
+
+- Il proprietario ha abilitato Web Analytics dalla console Cloudflare Pages; preparato un nuovo deploy su `main` per l'iniezione automatica del beacon.
+- Aggiornata la pagina `privacy.html` per descrivere misurazioni aggregate, pagine visitate, tecnologia Cloudflare e assenza di invio delle ricerche di Menta come eventi; resta necessario indicare formalmente il titolare e il recapito privacy.
+- Adeguato il collaudo di produzione all'iniezione dello script al margine Cloudflare, preservando il controllo del contenuto originale ed evitando falsi errori sui byte HTML trasformati.
+- Nessun snippet manuale, Google Analytics, evento personalizzato, dato clinico o modifiche ai dataset del portale.
+
 ## V7.18 — predisposizione Web Analytics (non attivo) — 2026-10-09
 
 - Autorizzato esclusivamente lo script di Cloudflare Web Analytics nella CSP, senza cambiare `connect-src 'self'` e senza inserire beacon o tracciamenti nel codice.

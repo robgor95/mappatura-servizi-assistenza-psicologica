@@ -608,5 +608,10 @@
     "/MANIFEST_SHA256_WEB.txt",
     "/_worker.js",
     "/_routes.json"
-  ]
+  ],
+  "analytics_provider": "cloudflare_web_analytics",
+  "analytics_mode": "cloudflare_pages_auto_injection",
+  "analytics_dashboard_activation_confirmed_by_owner": true,
+  "analytics_beacon_in_repository": false,
+  "analytics_privacy_controller_contact_pending": true
 }

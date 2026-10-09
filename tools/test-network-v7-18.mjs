@@ -190,4 +190,21 @@ await test('SEO whitelist, canonical pages, sitemap and non-indexed technical pa
  const robots=fs.readFileSync('robots.txt','utf8');assert(robots.includes('Sitemap: '+base+'sitemap.xml'));for(const route of ['/admin/','/api/','/data/','/downloads/','/offline/','/tools/','/research/','/lib/','/migrations/','/version.json'])assert(robots.includes('Disallow: '+route),route+' missing robots crawl guard');
  assert(!sitemap.includes('fondazione-di-liegro'));
 });
+await test('Cloudflare analytics integration is transparent and never hardcoded',()=>{
+ const home=fs.readFileSync('index.html','utf8');
+ const privacy=fs.readFileSync('privacy.html','utf8');
+ const headers=fs.readFileSync('_headers','utf8');
+ const version=read('version.json');
+ assert.equal(version.analytics_provider,'cloudflare_web_analytics');
+ assert.equal(version.analytics_mode,'cloudflare_pages_auto_injection');
+ assert.equal(version.analytics_beacon_in_repository,false);
+ assert(home.includes('<meta name="robots" content="index,follow'));
+ assert(!home.includes('static.cloudflareinsights.com/beacon.min.js'),'Do not duplicate the edge injected beacon');
+ assert(privacy.includes('id="statistiche-privacy"'),'Analytics privacy section missing');
+ assert(privacy.includes('Cloudflare Web Analytics'),'Cloudflare disclosure missing');
+ assert(privacy.includes('L’identità giuridica del titolare'),'Unresolved legal controller must be disclosed');
+ assert(headers.includes('script-src')&&headers.includes('https://static.cloudflareinsights.com/beacon.min.js'));
+ assert(headers.includes("connect-src 'self'"));
+ assert(!headers.includes('https://www.googletagmanager.com'),'Unrequested Google Analytics permission');
+});
 const report={version:'7.18',checked_at:new Date().toISOString(),scope:'isolated local database and browser; not a live Access/OTP acceptance test',tests:results,passed:results.filter(t=>t.passed).length,total:results.length};fs.writeFileSync(path.join(OUT,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(report.passed!==report.total)process.exitCode=1;

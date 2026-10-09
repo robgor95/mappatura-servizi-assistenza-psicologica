@@ -8,9 +8,13 @@
 **Ultimo aggiornamento applicativo:** 28 settembre 2026  
 **Hosting di produzione:** Cloudflare Pages
 
-## Preparazione Cloudflare Web Analytics — 9 ottobre 2026
+## Cloudflare Web Analytics — abilitato dal proprietario il 9 ottobre 2026
 
-La Content Security Policy consente in modo mirato `https://static.cloudflareinsights.com/beacon.min.js` per l'integrazione automatica di Cloudflare Pages. `connect-src 'self'` già autorizza l'invio al percorso sullo stesso dominio `/cdn-cgi/rum`. **Non è stato inserito alcun beacon né attivata l'opzione Web Analytics nel pannello Cloudflare**: l'attivazione richiede il proprietario dell'account e un nuovo deployment. Prima dell'attivazione occorre completare le informazioni sul titolare, la valutazione privacy e la relativa informativa pubblica, mantenendo esclusi eventuali testi di ricerca e dati sanitari.
+Il proprietario del progetto ha confermato l'attivazione di **Enable Web Analytics** nel pannello Cloudflare Pages. Il beacon viene inserito automaticamente da Cloudflare al successivo deployment: non è incluso manualmente nei file HTML, per evitare duplicazioni. La Content Security Policy autorizza precisamente `https://static.cloudflareinsights.com/beacon.min.js` e l'endpoint `connect-src 'self'`.
+
+L'informativa pubblica in `privacy.html` descrive visite e statistiche aggregate, percorsi consultati, tecnologia Cloudflare e limiti sulla riservatezza; non sono introdotti eventi personalizzati, tracking delle ricerche o Google Analytics. La verifica automatizzata di produzione deve constatare la presenza di **un solo beacon** nei documenti pubblici e l'assenza di regressioni nelle funzionalità.
+
+**Adempimento ancora aperto:** il titolare del trattamento e un recapito privacy non sono stati comunicati; la valutazione giuridica e il completamento dell'informativa spettano al responsabile del progetto. Nessun identificativo del titolare è stato inventato.
 
 ## Aggiornamento SEO — 9 ottobre 2026
 
