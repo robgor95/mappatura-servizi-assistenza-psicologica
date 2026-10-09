@@ -1,3 +1,10 @@
+## V7.18 — predisposizione Web Analytics (non attivo) — 2026-10-09
+
+- Autorizzato esclusivamente lo script di Cloudflare Web Analytics nella CSP, senza cambiare `connect-src 'self'` e senza inserire beacon o tracciamenti nel codice.
+- Attivazione del servizio dal pannello Cloudflare e nuova pubblicazione ancora necessari; nessuna dichiarazione di raccolta statistiche già avviata.
+- Da completare prima dell'attivazione: valutazione privacy, identificazione del titolare e aggiornamento dell'informativa.
+- Database, mappe, Menta, asset applicativi e contenuti sanitari invariati.
+
 ## 7.18 — correzione SEO e indicizzazione — 2026-10-09
 
 - Indicizzazione selettiva preparata per 24 pagine pubbliche con `index,follow`, canonical coerenti e sitemap allineata.

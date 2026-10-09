@@ -8,6 +8,10 @@
 **Ultimo aggiornamento applicativo:** 28 settembre 2026  
 **Hosting di produzione:** Cloudflare Pages
 
+## Preparazione Cloudflare Web Analytics — 9 ottobre 2026
+
+La Content Security Policy consente in modo mirato `https://static.cloudflareinsights.com/beacon.min.js` per l'integrazione automatica di Cloudflare Pages. `connect-src 'self'` già autorizza l'invio al percorso sullo stesso dominio `/cdn-cgi/rum`. **Non è stato inserito alcun beacon né attivata l'opzione Web Analytics nel pannello Cloudflare**: l'attivazione richiede il proprietario dell'account e un nuovo deployment. Prima dell'attivazione occorre completare le informazioni sul titolare, la valutazione privacy e la relativa informativa pubblica, mantenendo esclusi eventuali testi di ricerca e dati sanitari.
+
 ## Aggiornamento SEO — 9 ottobre 2026
 
 Il branch `main` è configurato per l'indicizzazione selettiva di **24 pagine pubbliche**: metadata robots, header HTTP, sitemap e robots.txt allineati. Le pagine tecniche, i dataset, i download, l'area riservata, le pagine legacy e gli URL di anteprima rimangono esclusi; il database dei servizi non è stato modificato. La conferma del deploy effettivo su Cloudflare e l'invio della sitemap a Google Search Console sono verifiche operative distinte.
