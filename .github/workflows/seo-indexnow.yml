@@ -1,0 +1,38 @@
+name: SEO live verification and IndexNow
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - 'territori/**'
+      - 'tipi-servizi/**'
+      - 'guide/**'
+      - 'sitemap.xml'
+      - 'd8ceb357f604b51f51a8e5c4c9026d65.txt'
+      - 'tools/seo-indexnow-submit.mjs'
+      - '.github/workflows/seo-indexnow.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: seo-indexnow-main
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check the indexable sitemap and page links
+        run: python3 tools/test-seo-landings.py
+      - name: Verify Cloudflare and notify IndexNow
+        env:
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: node tools/seo-indexnow-submit.mjs

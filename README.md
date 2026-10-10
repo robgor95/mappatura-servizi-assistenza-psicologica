@@ -1,3 +1,6 @@
+### Invio delle nuove pagine ai motori — IndexNow (10 ottobre 2026)
+Configurato su GitHub `main` il protocollo IndexNow con file chiave verificabile nella radice del sito e workflow `.github/workflows/seo-indexnow.yml`. Dopo la pubblicazione Cloudflare, lo script `tools/seo-indexnow-submit.mjs` verifica sitemap, URL, meta robots e corrispondenza esatta del codice servito, poi invia a IndexNow soltanto pagine pubbliche nuove/modificate. Alla prima attivazione vengono segnalate le 12 guide e quattro pagine correlate. L'esito è registrato nel job GitHub Actions: la configurazione non dimostra che il motore abbia ricevuto le URL. Google scopre la sitemap tramite robots.txt; per il rapporto sullo stato di Google è comunque richiesta una proprietà verificata in Search Console. Non vengono inviati dati di visitatori o ricerche.
+
 ## SEO territoriale e di servizio — 10 ottobre 2026
 
 Pubblicate 12 pagine informative statiche: indice `esplora-servizi.html`, cinque guide provinciali `territori/` e sei guide `tipi-servizi/`. Le pagine delle province riportano quattro schede reali dal catalogo editoriale V7.18 e collegamenti alla ricerca filtrata, non duplicano la base dati. I consultori restano nel catalogo complementare, non tra le 443 schede cliniche. Sitemap e `tools/set-indexing.py` includono ora 36 URL pubblici.

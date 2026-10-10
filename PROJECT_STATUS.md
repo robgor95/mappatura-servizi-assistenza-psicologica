@@ -16,6 +16,9 @@ Dati strutturati: WebSite e Organization identificata come Network Giovani nella
 
 Restano verifiche esterne: completamento del deploy Cloudflare, indicizzazione reale su Google/Bing, eventuale Search Console e dati anagrafici del titolare privacy non forniti.
 
+### Invio delle nuove pagine ai motori — IndexNow (10 ottobre 2026)
+Configurato su GitHub `main` il protocollo IndexNow con file chiave verificabile nella radice del sito e workflow `.github/workflows/seo-indexnow.yml`. Dopo la pubblicazione Cloudflare, lo script `tools/seo-indexnow-submit.mjs` verifica sitemap, URL, meta robots e corrispondenza esatta del codice servito, poi invia a IndexNow soltanto pagine pubbliche nuove/modificate. Alla prima attivazione vengono segnalate le 12 guide e quattro pagine correlate. L'esito è registrato nel job GitHub Actions: la configurazione non dimostra che il motore abbia ricevuto le URL. Google scopre la sitemap tramite robots.txt; per il rapporto sullo stato di Google è comunque richiesta una proprietà verificata in Search Console. Non vengono inviati dati di visitatori o ricerche.
+
 ## Cloudflare Web Analytics — abilitato dal proprietario il 9 ottobre 2026
 
 Il proprietario del progetto ha confermato l'attivazione di **Enable Web Analytics** nel pannello Cloudflare Pages. Il beacon viene inserito automaticamente da Cloudflare al successivo deployment: non è incluso manualmente nei file HTML, per evitare duplicazioni. La Content Security Policy autorizza precisamente `https://static.cloudflareinsights.com/beacon.min.js` e l'endpoint `connect-src 'self'`.
