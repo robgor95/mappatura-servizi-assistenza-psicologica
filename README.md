@@ -1,3 +1,11 @@
+## SEO territoriale e di servizio — 10 ottobre 2026
+
+Pubblicate 12 pagine informative statiche: indice `esplora-servizi.html`, cinque guide provinciali `territori/` e sei guide `tipi-servizi/`. Le pagine delle province riportano quattro schede reali dal catalogo editoriale V7.18 e collegamenti alla ricerca filtrata, non duplicano la base dati. I consultori restano nel catalogo complementare, non tra le 443 schede cliniche. Sitemap e `tools/set-indexing.py` includono ora 36 URL pubblici.
+
+Dati strutturati: WebSite e Organization identificata come Network Giovani nella home, CollectionPage nella ricerca, AboutPage in metodo, WebPage/CollectionPage e BreadcrumbList sulle nuove guide. Nessuna rivendicazione di appartenenza alla Regione Lazio, revisione clinica, attuale accreditamento o disponibilità; le date editoriali sono separate dalla verifica delle singole schede. Nessuna modifica a dataset, codice della ricerca, mappe, API o versione applicativa (V7.18).
+
+Restano verifiche esterne: completamento del deploy Cloudflare, indicizzazione reale su Google/Bing, eventuale Search Console e dati anagrafici del titolare privacy non forniti.
+
 ## Statistiche aggregate — Cloudflare Web Analytics (9 ottobre 2026)
 
 L'opzione **Enable Web Analytics** è stata selezionata dal proprietario nel progetto Cloudflare Pages. L'attivazione dello script avviene automaticamente al deployment successivo e viene verificata da `tools/verify-network-production-v7-18.mjs`. **Non** aggiungere manualmente un secondo snippet: Cloudflare deve inserirne uno solo. La CSP autorizza `https://static.cloudflareinsights.com/beacon.min.js` e `connect-src 'self'`; Menta, ricerca e dati territoriali non inviano eventi personalizzati.

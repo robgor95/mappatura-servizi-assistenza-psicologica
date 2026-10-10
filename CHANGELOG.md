@@ -1,3 +1,10 @@
+## 2026-10-10 — Guide SEO territoriali e per servizio
+
+- Nuovo indice statico, 5 province e 6 pagine sulle tipologie di servizio; link a 20 schede reali senza modifiche ai dati.
+- Mappa e ricerca non cambiate; consultori su percorso separato.
+- JSON-LD, fonti/limiti e breadcrumb; 36 URL in sitemap e nella configurazione indicizzabile.
+- Versione applicativa invariata: V7.18.
+
 ## V7.18 — Cloudflare Web Analytics (9 ottobre 2026)
 
 - Il proprietario ha abilitato Web Analytics dalla console Cloudflare Pages; preparato un nuovo deploy su `main` per l'iniezione automatica del beacon.

@@ -29,6 +29,18 @@ INDEXABLE = [
     "orientamento-servizi.html",
     "glossario.html",
     "metodo.html",
+    "esplora-servizi.html",
+    "territori/roma.html",
+    "territori/frosinone.html",
+    "territori/latina.html",
+    "territori/rieti.html",
+    "territori/viterbo.html",
+    "tipi-servizi/csm.html",
+    "tipi-servizi/serd.html",
+    "tipi-servizi/spdc.html",
+    "tipi-servizi/stpit.html",
+    "tipi-servizi/consultori.html",
+    "tipi-servizi/centri-diurni.html",
 ]
 ROBOTS_OFF = "noindex,nofollow,noarchive,nosnippet,noimageindex"
 ROBOTS_ON = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"

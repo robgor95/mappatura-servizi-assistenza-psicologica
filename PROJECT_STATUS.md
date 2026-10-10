@@ -8,6 +8,14 @@
 **Ultimo aggiornamento applicativo:** 28 settembre 2026  
 **Hosting di produzione:** Cloudflare Pages
 
+## SEO territoriale e di servizio — 10 ottobre 2026
+
+Pubblicate 12 pagine informative statiche: indice `esplora-servizi.html`, cinque guide provinciali `territori/` e sei guide `tipi-servizi/`. Le pagine delle province riportano quattro schede reali dal catalogo editoriale V7.18 e collegamenti alla ricerca filtrata, non duplicano la base dati. I consultori restano nel catalogo complementare, non tra le 443 schede cliniche. Sitemap e `tools/set-indexing.py` includono ora 36 URL pubblici.
+
+Dati strutturati: WebSite e Organization identificata come Network Giovani nella home, CollectionPage nella ricerca, AboutPage in metodo, WebPage/CollectionPage e BreadcrumbList sulle nuove guide. Nessuna rivendicazione di appartenenza alla Regione Lazio, revisione clinica, attuale accreditamento o disponibilità; le date editoriali sono separate dalla verifica delle singole schede. Nessuna modifica a dataset, codice della ricerca, mappe, API o versione applicativa (V7.18).
+
+Restano verifiche esterne: completamento del deploy Cloudflare, indicizzazione reale su Google/Bing, eventuale Search Console e dati anagrafici del titolare privacy non forniti.
+
 ## Cloudflare Web Analytics — abilitato dal proprietario il 9 ottobre 2026
 
 Il proprietario del progetto ha confermato l'attivazione di **Enable Web Analytics** nel pannello Cloudflare Pages. Il beacon viene inserito automaticamente da Cloudflare al successivo deployment: non è incluso manualmente nei file HTML, per evitare duplicazioni. La Content Security Policy autorizza precisamente `https://static.cloudflareinsights.com/beacon.min.js` e l'endpoint `connect-src 'self'`.
