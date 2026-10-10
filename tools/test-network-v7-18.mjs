@@ -165,7 +165,10 @@ await test('No uncaught browser errors or unrelated external requests',()=>{asse
 }finally{await browser.close();await new Promise(r=>server.close(r));browserDB.sql.close();db.sql.close();fs.rmSync(tls,{recursive:true,force:true});}
 await test('SEO whitelist, canonical pages, sitemap and non-indexed technical paths',()=>{
  const base='https://mappatura-servizi-assistenza-psicologica.pages.dev/';
- const publicPages=['index.html','servizi.html','mappa.html','orientati.html','aiuto-adesso.html','supporto-territoriale.html','giovani.html','guide/index.html','guide/primo-percorso.html','guide/pubblico.html','guide/privato.html','guide/ricovero.html','guide/riabilitazione.html','ascolto.html','helpline.html','centri-ascolto.html','universita.html','scuole.html','privati.html','strutture-approfondite.html','studenti.html','orientamento-servizi.html','glossario.html','metodo.html'];
+ const manifest=fs.readFileSync('tools/set-indexing.py','utf8').match(/INDEXABLE\s*=\s*\[([\s\S]*?)\]/);assert(manifest,'INDEXABLE missing from tools/set-indexing.py');
+ const publicPages=[...manifest[1].matchAll(/"([^"]+)"/g)].map(m=>m[1]);
+ assert.equal(publicPages.length,new Set(publicPages).size,'Duplicate URLs in indexable manifest');
+ for(const required of ['esplora-servizi.html','territori/roma.html','territori/frosinone.html','territori/latina.html','territori/rieti.html','territori/viterbo.html','tipi-servizi/csm.html','tipi-servizi/serd.html','tipi-servizi/spdc.html','tipi-servizi/stpit.html','tipi-servizi/consultori.html','tipi-servizi/centri-diurni.html'])assert(publicPages.includes(required),'SEO page missing: '+required);
  const version=read('version.json');assert.equal(version.indexing_enabled,true);assert.equal(version.indexable_public_pages,publicPages.length);
  const sitemap=fs.readFileSync('sitemap.xml','utf8'),urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
  assert.equal(urls.length,publicPages.length);assert.equal(new Set(urls).size,publicPages.length);assert(!sitemap.includes('<lastmod>'),'Unverified lastmod values');
