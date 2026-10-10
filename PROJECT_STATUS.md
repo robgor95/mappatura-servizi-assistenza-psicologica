@@ -26,7 +26,7 @@ L'informativa pubblica in `privacy.html` descrive visite e statistiche aggregate
 
 ## Aggiornamento SEO — 9 ottobre 2026
 
-Il branch `main` è configurato per l'indicizzazione selettiva di **24 pagine pubbliche**: metadata robots, header HTTP, sitemap e robots.txt allineati. Le pagine tecniche, i dataset, i download, l'area riservata, le pagine legacy e gli URL di anteprima rimangono esclusi; il database dei servizi non è stato modificato. La conferma del deploy effettivo su Cloudflare e l'invio della sitemap a Google Search Console sono verifiche operative distinte.
+Al 9 ottobre il branch `main` era configurato per l'indicizzazione selettiva di **24 pagine pubbliche**; dal 10 ottobre sono **36**: metadata robots, header HTTP, sitemap e robots.txt allineati. Le pagine tecniche, i dataset, i download, l'area riservata, le pagine legacy e gli URL di anteprima rimangono esclusi; il database dei servizi non è stato modificato. La conferma del deploy effettivo su Cloudflare e l'invio della sitemap a Google Search Console sono verifiche operative distinte.
 
 La verifica Cloudflare del 09/10/2026 ha mostrato che alcuni header `X-Robots-Tag` per singolo percorso non erano presenti nelle risposte. Per questo le pagine escluse conservano `noindex` nell'HTML e le cartelle tecniche sono anche escluse dalla scansione in `robots.txt`. Un nuovo collaudo della produzione controlla entrambe le protezioni.
 

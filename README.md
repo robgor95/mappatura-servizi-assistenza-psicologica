@@ -14,7 +14,7 @@ La sezione `privacy.html#statistiche-privacy` descrive le statistiche del traffi
 
 ## SEO e indicizzazione — 9 ottobre 2026
 
-**Configurazione corrente:** 24 pagine pubbliche abilitate (`index,follow`) e sitemap coerente. Le indicazioni precedenti secondo cui l'indicizzazione è disattivata documentano release storiche. Rimangono `noindex`: redazione, pagine editoriali vuote/non pubblicate, documenti tecnici, dataset, download, pagine legacy e anteprime Cloudflare. `python tools/set-indexing.py --enable` ricostruisce la policy e la sitemap, mentre `--disable` è disponibile come misura di rollback. L'indicizzazione effettiva dipende dal deploy e dai motori di ricerca; per Search Console verificare la proprietà e inviare `sitemap.xml`.
+**Configurazione del 9 ottobre (storica):** 24 pagine pubbliche allora abilitate; dal 10 ottobre sono 36 (`index,follow`) e sitemap coerente. Le indicazioni precedenti secondo cui l'indicizzazione è disattivata documentano release storiche. Rimangono `noindex`: redazione, pagine editoriali vuote/non pubblicate, documenti tecnici, dataset, download, pagine legacy e anteprime Cloudflare. `python tools/set-indexing.py --enable` ricostruisce la policy e la sitemap, mentre `--disable` è disponibile come misura di rollback. L'indicizzazione effettiva dipende dal deploy e dai motori di ricerca; per Search Console verificare la proprietà e inviare `sitemap.xml`.
 
 Nota operativa: la verifica di produzione del 09/10/2026 ha rilevato assenza di alcuni header `X-Robots-Tag` selettivi; le pagine escluse mantengono `noindex` in HTML, le risorse tecniche sono escluse anche da `robots.txt` e le regole `_headers` sono state normalizzate. `robots.txt` non limita l'accesso umano o garantisce la segretezza dei file.
 

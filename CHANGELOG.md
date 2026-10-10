@@ -3,6 +3,7 @@
 - Nuovo indice statico, 5 province e 6 pagine sulle tipologie di servizio; link a 20 schede reali senza modifiche ai dati.
 - Mappa e ricerca non cambiate; consultori su percorso separato.
 - JSON-LD, fonti/limiti e breadcrumb; 36 URL in sitemap e nella configurazione indicizzabile.
+- Menu mobile delle guide collegato al controller UX esistente; aggiunto test statico SEO.
 - Versione applicativa invariata: V7.18.
 
 ## V7.18 — Cloudflare Web Analytics (9 ottobre 2026)
