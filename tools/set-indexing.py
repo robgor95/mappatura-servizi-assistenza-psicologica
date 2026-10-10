@@ -109,7 +109,7 @@ def update_version(enable):
     v["indexing_enabled"]=bool(enable)
     v["sitemap_ready"]=True
     v["indexable_public_pages"]=len(INDEXABLE)
-    v["indexing_reviewed_on"]="2026-10-09"
+    v["indexing_reviewed_on"]="2026-10-10"
     v["indexing_policy"]=(
         "index_follow_for_public_pages; technical_and_legacy_resources_remain_noindex"
         if enable else

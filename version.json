@@ -75,7 +75,7 @@
   "seo_version": "7.7.4",
   "indexing_enabled": true,
   "sitemap_ready": true,
-  "indexing_policy": "index_follow_on_24_public_pages; meta_noindex_for_excluded_html; robots_disallow_for_technical_resources; preview_http_noindex_policy",
+  "indexing_policy": "index_follow_on_36_public_pages; meta_noindex_for_excluded_html; robots_disallow_for_technical_resources; preview_http_noindex_policy",
   "seo_deployment_verification": {
     "checked_commit": "b053946845716cb23ca7853a32faba23b9270274",
     "checked_at": "2026-09-21T19:24:00Z",
@@ -587,8 +587,8 @@
     },
     "verification_workflow": ".github/workflows/verify-network-v7-18.yml"
   },
-  "indexable_public_pages": 24,
-  "indexing_reviewed_on": "2026-10-09",
+  "indexable_public_pages": 36,
+  "indexing_reviewed_on": "2026-10-10",
   "technical_crawl_disallow": [
     "/admin/",
     "/api/",
@@ -613,5 +613,7 @@
   "analytics_mode": "cloudflare_pages_auto_injection",
   "analytics_dashboard_activation_confirmed_by_owner": true,
   "analytics_beacon_in_repository": false,
-  "analytics_privacy_controller_contact_pending": true
+  "analytics_privacy_controller_contact_pending": true,
+  "seo_information_pages": 12,
+  "seo_information_date": "2026-10-10"
 }
