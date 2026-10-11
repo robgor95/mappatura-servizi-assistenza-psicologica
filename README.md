@@ -1,277 +1,30 @@
-### Invio delle nuove pagine ai motori — IndexNow (10 ottobre 2026)
-Configurato su GitHub `main` il protocollo IndexNow con file chiave verificabile nella radice del sito e workflow `.github/workflows/seo-indexnow.yml`. Dopo la pubblicazione Cloudflare, lo script `tools/seo-indexnow-submit.mjs` verifica sitemap, URL, meta robots e corrispondenza esatta del codice servito, poi invia a IndexNow soltanto pagine pubbliche nuove/modificate. Alla prima attivazione vengono segnalate le 12 guide e quattro pagine correlate. L'esito è registrato nel job GitHub Actions: la configurazione non dimostra che il motore abbia ricevuto le URL. Google scopre la sitemap tramite robots.txt; per il rapporto sullo stato di Google è comunque richiesta una proprietà verificata in Search Console. Non vengono inviati dati di visitatori o ricerche.
-
-## SEO territoriale e di servizio — 10 ottobre 2026
-
-Pubblicate 12 pagine informative statiche: indice `esplora-servizi.html`, cinque guide provinciali `territori/` e sei guide `tipi-servizi/`. Le pagine delle province riportano quattro schede reali dal catalogo editoriale V7.18 e collegamenti alla ricerca filtrata, non duplicano la base dati. I consultori restano nel catalogo complementare, non tra le 443 schede cliniche. Sitemap e `tools/set-indexing.py` includono ora 36 URL pubblici.
-
-Dati strutturati: WebSite e Organization identificata come Network Giovani nella home, CollectionPage nella ricerca, AboutPage in metodo, WebPage/CollectionPage e BreadcrumbList sulle nuove guide. Nessuna rivendicazione di appartenenza alla Regione Lazio, revisione clinica, attuale accreditamento o disponibilità; le date editoriali sono separate dalla verifica delle singole schede. Nessuna modifica a dataset, codice della ricerca, mappe, API o versione applicativa (V7.18).
-
-Restano verifiche esterne: completamento del deploy Cloudflare, indicizzazione reale su Google/Bing, eventuale Search Console e dati anagrafici del titolare privacy non forniti.
-
-## Statistiche aggregate — Cloudflare Web Analytics (9 ottobre 2026)
-
-L'opzione **Enable Web Analytics** è stata selezionata dal proprietario nel progetto Cloudflare Pages. L'attivazione dello script avviene automaticamente al deployment successivo e viene verificata da `tools/verify-network-production-v7-18.mjs`. **Non** aggiungere manualmente un secondo snippet: Cloudflare deve inserirne uno solo. La CSP autorizza `https://static.cloudflareinsights.com/beacon.min.js` e `connect-src 'self'`; Menta, ricerca e dati territoriali non inviano eventi personalizzati.
-
-La sezione `privacy.html#statistiche-privacy` descrive le statistiche del traffico. Restano da indicare l'identità giuridica del titolare e un recapito privacy (adempimento non risolvibile senza informazioni del gestore). Visualizza i dati dalla dashboard Cloudflare Web Analytics associata al progetto.
-
-## SEO e indicizzazione — 9 ottobre 2026
-
-**Configurazione del 9 ottobre (storica):** 24 pagine pubbliche allora abilitate; dal 10 ottobre sono 36 (`index,follow`) e sitemap coerente. Le indicazioni precedenti secondo cui l'indicizzazione è disattivata documentano release storiche. Rimangono `noindex`: redazione, pagine editoriali vuote/non pubblicate, documenti tecnici, dataset, download, pagine legacy e anteprime Cloudflare. `python tools/set-indexing.py --enable` ricostruisce la policy e la sitemap, mentre `--disable` è disponibile come misura di rollback. L'indicizzazione effettiva dipende dal deploy e dai motori di ricerca; per Search Console verificare la proprietà e inviare `sitemap.xml`.
-
-Nota operativa: la verifica di produzione del 09/10/2026 ha rilevato assenza di alcuni header `X-Robots-Tag` selettivi; le pagine escluse mantengono `noindex` in HTML, le risorse tecniche sono escluse anche da `robots.txt` e le regole `_headers` sono state normalizzate. `robots.txt` non limita l'accesso umano o garantisce la segretezza dei file.
-
-## V7.18 — Network Giovani
-
-Rebranding, interfaccia semplificata e strumenti di redazione e revisione dati. Il backend è chiuso finché Cloudflare non è configurato. Leggere `downloads/Configurazione_Redazione_V7_18.md` prima di abilitare l’area riservata. Nessun dato sanitario originale modificato.
-
-## Versione V7.17 — PUA e supporto territoriale
-
-Lo strato complementare passa da **47 a 96 sedi/punti PUA documentati**, mantenendo separati i **443 servizi clinici**. Restano 135 consultori e 6 servizi PIS/emergenza sociale documentati. Le reti PUA di Roma 4, Frosinone, Latina e Rieti sono consolidate sulle fonti correnti; Roma 5 e soprattutto Roma 6 mantengono limiti espliciti. I PIS non sono dichiarati esaustivi.
-
-## Versione V7.16 — Nona tranche geografica
-
-Sei nuove localizzazioni conservative portano il portale a **443 schede, 379 localizzate e 64 senza pin**. La coda geografica azionabile scende da 69 a **63 casi**. Nessun ingresso è dichiarato verificato e non vengono usati geocoder live, centroidi comunali o interpolazioni di civici.
-
-## Versione V7.15 — Mappe armonizzate
-
-La mappa integrata in **Trova un servizio** e la mappa a pagina intera condividono ora la stessa gerarchia territoriale e la stessa grammatica visiva. Vista territorio: Lazio → provincia/città metropolitana → comune → servizio. Vista rete sanitaria: provincia → ASL indicata nelle schede → comune → servizio. I filtri della mappa nella ricerca aggiornano direttamente l’elenco. Confini comunali ISTAT 2026 caricati per provincia; OpenStreetMap resta facoltativo. Dataset clinici e coordinate V7.11.7 invariati: 443 schede, 373 localizzate, 70 senza pin.
-
-## Versione V7.14 — Mappa multilivello\n\nLa mappa principale permette di esplorare il Lazio per territorio (provincia → comune) oppure per rete sanitaria (provincia → ASL indicata nelle schede → comune). I confini comunali derivano dai dati ISTAT 2026 e vengono caricati soltanto quando serve il relativo territorio. La vista sanitaria è un filtro documentale: non deduce gestione, convenzione o diritto di accesso e non costruisce confini ASL intra-comunali.\n\n## Versione V7.13 — Ricerca per province
-
-Mappa locale delle province nella ricerca, con contatori e risultati sincronizzati. Dati e coordinate V7.11.7, Menta e homepage preservati. Sfondo OpenStreetMap facoltativo. Vedi `downloads/Release_Notes_V7_13.md`.
-
-## Versione web 7.12.1 · Orientarsi oppure cercare
-
-Due percorsi espliciti: Menta per capire da dove partire; ricerca diretta per strutture, indirizzi e contatti. Dati/geografia V7.11.7 invariati. Verifiche: `.github/workflows/verify-ux-v7-12-1.yml`; note: `downloads/Release_Notes_V7_12_1.md`.
-
-## Versione V7.12 — homepage essenziale e navigazione Menta
-
-Homepage con sei percorsi essenziali; Menta e tutti i percorsi estesi in `orientati.html`; indice ricercabile `sezioni.html`; menu e design condivisi sulle pagine correnti. Dataset/geografia V7.11.7 e contenuti storici preservati. Nessun tracciamento o geolocalizzazione aggiunti.
-
-Vedi `downloads/Release_Notes_V7_12.md` e `.github/workflows/verify-ux-v7-12.yml`.
-
-## Versione corrente candidata V7.11.7
-
-Ottavo ciclo geografico e pulizia della coda: 443 servizi clinici, 373 localizzati e 70 senza pin. Uno dei 70 non dispone al momento di una sede autonoma corrente, quindi la coda geografica effettivamente azionabile è di 69 casi. Tre record diventano localizzabili; indirizzi e conflitti di sede vengono aggiornati senza dedurre ingressi o coordinate non corroborate.
-
-Checkpoint di partenza: `8310d268b6bf643890bf63851144d304c987e8bc` (V7.11.6 su `main`).
-
-## Versione corrente candidata V7.11.6
-
-Settimo ciclo geografico: 443 servizi clinici, 370 localizzati e 73 senza pin. Cinque nuovi marker C: tre servizi distinti nello stesso presidio di Via Salaria per Roma 36 a Rieti e due strutture Venere/Marte localizzate soltanto a livello di area/via a Cerri Aprano. Nessun ingresso fisico viene dichiarato verificato.
-
-Checkpoint pre-release: `checkpoint-v7-11-5-before-v7116-2026-09-27` → `df133596b413d542c0f9b5ea356c13be811e8932`.
-
-## Versione corrente candidata V7.11.5
-
-Sesto ciclo geografico: 443 servizi clinici, 365 localizzati e 78 senza pin. Sei nuovi marker C riutilizzano punti stradali già presenti per la stessa via e comune, senza dedurre civici, palazzine o ingressi. Il DNA Frosinone resta intenzionalmente senza pin per conflitto di sede.
-
-Checkpoint pre-release: `checkpoint-v7-11-4-before-v7115-2026-09-26` → `bdfeb28907ae15defc04ddc6092283a8f832abe0`.
-
-## Versione corrente candidata V7.11.4
-
-Quinto ciclo geografico: 443 servizi clinici, 359 localizzati e 84 senza pin. Sei nuove posizioni C derivano dalle mappe incorporate nella pagina ufficiale ASL Viterbo dedicata ai CSM; per DSM e Ambulatorio DNA viene acquisito Via Enrico Fermi 15. Nessun ingresso fisico viene dichiarato verificato.
-
-Checkpoint pre-release: `checkpoint-v7-11-3-before-v7114-2026-09-26` → `4c80b37a32088b156551df19a95097ea8bc9ea8e`.
-
-## Versione corrente candidata V7.11.3
-
-Quarto ciclo geografico: 443 servizi clinici, 353 localizzati e 90 senza pin. Tre nuove posizioni C sono state aggiunte solo con indirizzo istituzionale documentato; per il SerD interno della Casa Circondariale di Rieti è stato acquisito l'indirizzo regionale senza assegnare un pin. Zero ingressi fisici verificati.
-
-Checkpoint pre-release: `checkpoint-v7-11-2-before-v7113-2026-09-26` → `703db950a93270da3a59aab786d4940baad058af`.
-
-## Versione corrente candidata V7.11.2
-
-Terzo ciclo geografico: 443 servizi clinici, 350 localizzati e 93 senza pin. Sei nuovi punti C utilizzano coordinate pubblicate da enti pubblici per lo stesso indirizzo o presidio; non sono ingressi fisici verificati. I 344 punti V7.11.1 restano invariati. Menta V7.10.3, percorso studenti e supporto territoriale V7.10 non cambiano.
-
-Checkpoint pre-release: `checkpoint-v7-11-1-before-v7112-2026-09-26` → `2c119884969b77e9f5635af6802c04fbf20f7e8a`.
-
-# Versione corrente V7.11.1
-
-**443 servizi, 344 localizzati, 99 senza pin**. Secondo ciclo mirato: 14 localizzazioni indicative C e precisazioni su 23 schede; nessun ingresso verificato e nessun censimento dichiarato completo.
-
-Report: `downloads/Report_Geografia_V7_11_1.md`; audit: `downloads/Audit_Geografia_Operativo_V7_11_1.json`; protezione: `downloads/Integrita_Baseline_V7_11_1.json`.
-
-Checkpoint: `checkpoint-v7-11-before-v7111-2026-09-26` → `791f21cf12724ff3441492d39b6d77b4bcb36589`.
-
-## Edizioni precedenti
-
-# Edizione precedente V7.11
-
-Primo ciclo geografia e audit per campo: **443 servizi clinici, 330 localizzati, 113 senza pin**. Quindici nuove localizzazioni documentali, trenta schede riesaminate e nessun ingresso fisico verificato. Il controllo degli URL delle 128 schede iniziali non equivale alla loro validazione completa.
-
-Report corrente: `downloads/Report_Geografia_V7_11.md`; audit: `downloads/Audit_Geografia_Operativo_V7_11.json`.
-
-Checkpoint: `checkpoint-v7-10-3-before-v711-2026-09-26` → `85808c6fad9dec32098558e466a3997a18b95d22`. Menta, percorso studenti e supporto territoriale conservati.
-
-## Cronologia delle edizioni precedenti
-
-## Edizione precedente V7.10.3
-
-V7.10.3 aggiunge un ingresso dedicato “Sei uno studente?” nella home e trasforma `studenti.html` in un hub tra università, scuola, servizi territoriali e ascolto. Menta invia le richieste generiche relative agli studenti a questo hub, mentre richieste esplicite sull’università o sulla scuola continuano ad aprire direttamente le rispettive directory.
-
-La baseline dati resta quella consolidata in V7.10.2: 443 servizi clinici, 128 moduli, 184 record nella directory strutture, 315 servizi localizzati e 128 senza pin. È stato aggiunto Il Colle / Nucleo 1 SRSR H24 a Colle Cesarano e sono state integrate cinque localizzazioni a livello di complesso ospedaliero, senza dichiarare ingressi verificati.
-
-Lo strato V7.10 resta separato: 135 consultori, 47 sedi/punti PUA documentati e 6 servizi/linee di emergenza sociale. Menta V7.10 e il refresh grafico V7.10.1 restano invariati. Le Case Rifugio non sono geolocalizzate e l'indicizzazione resta disattivata.
-
-Checkpoint prima del recupero V7.9.4: branch `checkpoint-v7-10-1-before-v794-recovery-2026-09-26` → `021f5fc240137a6d8c3c8974e109441eb71ebba6`.
-
-## Edizione precedente V7.9.3
-
-Riesame operativo additivo: quattro presidi ASL Roma 1 aggiornati per accesso/orari/trasporto, tre sedi ASL Rieti con evidenza edilizia sull’accessibilità, un conflitto di sede Rieti reso esplicito e contesto del finanziamento psichiatrico 2026 chiarito senza attribuire budget unitari non acquisiti. Geografia invariata: 442 servizi, 309 localizzati, 133 senza pin. Indicizzazione ancora disattivata.
-
-## Edizione precedente V7.9.2
-
-V7.9.2: cinque contratti individuali Roma 5 acquisiti, FEBO ricontrollato senza promozione, ricognizione Nuovi Orizzonti consolidata, Menta sincronizzata e geografia conservativa ulteriormente ampliata.
-
-## Edizione precedente V7.9.1
-
-442 servizi, 307 localizzati, 135 senza pin. 51 revisioni per campo, due servizi Villa Pia, contratti per singola unità IHG/Gabbiano e ASL Roma 5. Nessuna riscrittura degli overlay precedenti.
-
-Report: `downloads/Release_Notes_V7_9_1.md`; test: `tools/test-ui-v7-9-1.mjs`; integrità e dati: `tools/prepare-release-v7-9-1.py`. Il sito resta statico e noindex. Le sezioni seguenti documentano versioni precedenti.
-
-## V7.9 — geografia e audit operativo
-
-440 servizi (+8); 236 localizzati, 204 senza pin. 47 schede precedenti riesaminate solo per i campi documentati. 11 casi di gestore con riscontri, IHG pendente. Cinque nuovi indirizzi fisici documentati; Venere/Marte sono due servizi ulteriori ma il loro edificio esatto non è consolidato.
-
-Reverie mantiene quattro servizi; Il Ponte mantiene traccia del record precedente e separa accoglienza, comunità e Coccinella. FEBO e Villa Licia non sono classificati come convenzionati. Corretto lo SPDC San Filippo Neri: non è prova di trasferimento.
-
-Storici, vecchi overlay e download conservati byte per byte. Noindex invariato; Leaflet locale; nessun geocoder, posizione dispositivo o tracking; tasselli su consenso.
-
-Questa release non conclude l’audit di tutti i servizi o la geografia. Gli esiti tecnici effettivi sono in `Verifiche_V7_9.json`; la verifica di produzione è un controllo successivo al merge, registrato separatamente in GitHub Actions. VoiceOver reale non eseguito in ambiente Linux.
-
-Report: `downloads/Audit_Operativo_V7_9.json`, `downloads/Report_Geografia_V7_9.md`, `downloads/Verifiche_V7_9.json`.
-
----
-
-# Mappatura servizi di assistenza psicologica — Lazio
-
-Repository del portale pubblico **Mappatura servizi di assistenza psicologica nel Lazio**.
-
-Sito di produzione: https://mappatura-servizi-assistenza-psicologica.pages.dev/
-
-## Deploy
-
-Il progetto Cloudflare Pages è collegato direttamente a questo repository GitHub.
-
-- Repository: `robgor95/mappatura-servizi-assistenza-psicologica`
-- Branch di produzione: `main`
-- Deploy automatici: abilitati
-- Framework: nessuno; sito statico HTML/CSS/JavaScript
-
-Ogni push su `main` avvia automaticamente un nuovo deployment di produzione su Cloudflare Pages.
-
-Non sono necessari GitHub Actions, Wrangler o secret Cloudflare nel repository per il deploy ordinario.
-
-## Struttura
-
-Il repository contiene il portale statico, i dataset, le guide ai percorsi di cura e i file scaricabili.
-
-## Edizione precedente V7.8 — UX e mappa dei presidi
-
-La produzione usa **V7.8** per l’interfaccia, **V7.7.5** per l’overlay multisede, **V7.6** per il riesame documentale precedente, con dataset **V7.3**, integrazioni **V7.5** e cinque guide **V7.4** conservati. Il numero di versione resta documentazione tecnica e non viene mostrato come informazione primaria all’utente finale.
-
-Menta è una guida locale, non un chatbot: **31 intenti**, **276 parole/frasi normalizzate distinte**, **37 espressioni di sicurezza distinte**, **17 pagine di destinazione**. La V7.7.1 aggiunge micro-animazioni contestuali accessibili e stati visivi per errore e assenza risultati. La V7.7.2 semplifica il linguaggio del frontend, sposta i dettagli di audit fuori dal percorso principale e amplia la guida al privato con scelta del professionista e approcci psicoterapeutici. Il testo libero non è trasmesso o memorizzato dal codice del sito. I link contengono solo categorie e luoghi riconosciuti.
-
-- `assets/menta-config-v7-7.js`: vocabolario, priorità, percorsi, combinazioni e luoghi del database.
-- `assets/menta-core-v7-7.js`: funzioni pure di riconoscimento e composizione dei link, senza rete o storage.
-- `assets/menta-ui-v7-7.js`: interfaccia progressiva, scelte, sicurezza e pulizia del campo.
-- `assets/menta-v7-7.css`, `assets/menta-site-v7-7.js`, `assets/menta/`: stile e supporti contestuali.
-
-Non sono effettuate diagnosi, valutazioni del rischio o verifiche di disponibilità. Nessuna promessa automatica di gratuità o convenzione SSN.
-
-
-
-### Integrazione multisede 7.7.5
-
-La gerarchia usata per i nuovi controlli è **ente/gestore → struttura/sede → servizio/modulo**. Più servizi nello stesso indirizzo non vengono accorpati automaticamente.
-
-- Reverie: la ricerca passa da 1 a 4 unità visibili (Comunità romana già presente, CTC 1, CTC 2 e Centro Diurno).
-- Nuovi Orizzonti: aggiunta Casa Gioia di Marino accanto alla Comunità di Piglio già presente.
-- Il Ponte: due sedi operative correnti sono documentate, ma lo split in due record resta pendente finché non viene consolidato il dettaglio amministrativo/accreditamento per singola sede.
-- Cooperate FEBO: rilevato ma non inserito nell’overlay accreditato perché il gestore lo descrive come autorizzato e in attesa di accreditamento.
-
-Audit: `downloads/Audit_Multisede_V7_7_5.json`.
-
-### Indicizzazione e SEO
-
-La struttura SEO è predisposta, ma **l’indicizzazione pubblica è disattivata**. Le pagine principali hanno title, description, canonical, metadata social e sitemap già pronti; noindex è applicato sia nell’HTML sia negli header HTTP. robots.txt consente il crawl per permettere ai motori di leggere il noindex, ma non pubblicizza la sitemap.
-
-Quando si deciderà di aprire il sito ai motori di ricerca, usare python tools/set-indexing.py --enable su un branch dedicato, verificare la preview e solo dopo portare la modifica su main. Dataset, download, pagine legacy e documentazione tecnica rimangono esclusi dall’indicizzazione.
-
-### Verifica della versione corrente
-
-```sh
-node tools/test-menta-v7-7.cjs
-# Solo per test di sviluppo, non per il deploy:
-python tools/test-menta-browser-v7-7.py
-```
-
-Il browser test richiede Playwright e BeautifulSoup; `AXE_PATH` indica il file locale `axe.min.js` per i controlli automatici. Il workflow di verifica li installa solo sul runner di test. Non si aggiungono dipendenze al sito pubblicato.
-
-Il test V7.5.1 citato nelle sezioni storiche sotto conserva le vecchie assunzioni e non è il test dell’overlay V7.6: usare i comandi V7.7 qui sopra.
-
-Report: `downloads/Verifiche_Menta_V7_7.json`; audit e hash dei file preservati: `downloads/Audit_Menta_V7_7.json`; note: `downloads/Note_Rilascio_V7_7.txt`.
-
-La ricerca operativa mostra **432 risultati**: 296 servizi della rete ASL, 119 strutture/servizi non ASL (115 storici + 4 integrazioni multisede) e 17 attività private. I quattro nuovi risultati sono in `data/multisede_v7_7_5.json`: i dataset storici V7.3/V7.5/V7.6 non vengono riscritti.
-
-Le sezioni che seguono documentano le evoluzioni precedenti.
-
-## Versione V7.5
-
-La V7.5 aggiunge dataset e pagine statiche separate per servizi universitari, sportelli scolastici, helpline, centri/sportelli pubblici di ascolto, centri privati e approfondimento di comunità/STPIT/centri diurni. I dataset V7.3 e le guide V7.4 sono preservati.
-
-- Web: V7.5
-- Guide: V7.4 (preservate)
-- Archivio storico: V7.3 (preservato)
-- Verifica nuovi dataset: 2026-09-21
-
-## Interfaccia V7.5.1 — Trova un servizio
-
-Il database operativo è ora in `servizi.html`. `archivio.html` resta un ingresso compatibile: i vecchi parametri di ricerca e gli ID sono convertiti senza perdere la selezione.
-
-L'indice unifica 295 nodi rete ASL, 115 moduli non ASL e 11 schede di attività privata. Sono 421 schede, non strutture uniche. Università, scuole, helpline e centri di ascolto restano mappature dedicate. Nessuna verifica sanitaria aggiuntiva è attribuita al restyling.
-
-- `assets/servizi-data-v7-5-1.js`: adattatore di sola lettura, filtri, compatibilità URL e CSV.
-- `assets/servizi-v7-5-1.js`: interfaccia, dettagli, storia URL e strumenti documentali.
-- `assets/servizi-v7-5-1.css`: stile coerente con il sito e layout mobile.
-- `interfaccia-precedente.html`: copia della precedente interfaccia per compatibilità e confronto.
-
-I dataset e i download precedenti non sono modificati. Le guide cliniche V7.4 rimangono invariate.
-
-### Controlli
-
-Eseguire con Node, senza installare pacchetti:
-
-```sh
-node tools/test-servizi-v7-5-1.cjs
-```
-
-Note di rilascio: `downloads/Note_Rilascio_V7_5_1.txt`.
-Report e limiti del banco di prova Chromium: `downloads/Verifiche_UI_V7_5_1.json`.
-
-## Navigazione 7.7.3
-
-Header e footer sono HTML statico: nessun caricamento remoto del menu. I file navigation-v7-7-3.css/js migliorano la navigazione senza leggere o salvare bisogni. Quattro percorsi primari, Altro per directory e risorse, download secondari. I file PDF precedenti restano immutati e sono etichettati come tali.
-
-Controlli: `node tools/test-menta-v7-7.cjs` e `python tools/test-navigation-v7-7-3.py`. Gli strumenti Python richiedono BeautifulSoup e Playwright solo in sviluppo. Nessuna dipendenza serve al sito statico.
-
-## Mappa interattiva e correzioni UX — 7.8
-
-La mappa `/mappa.html` usa lo stesso adattatore e gli stessi 432 servizi della ricerca, inclusa l’integrazione multisede. La pagina `/giovani.html` offre quattro punti di accesso senza scegliere automaticamente TSMREE/NPIA. Ricerca mobile, titoli, etichette, menu e landmark sono stati corretti dopo l’audit UX.
-
-### Copertura geografica
-- **55** servizi localizzati a livello di indirizzo con OpenStreetMap/Nominatim: non è una verifica dell’ingresso.
-- **140** servizi con posizione indicativa sulla via, graficamente distinta.
-- **237** senza corrispondenza abbastanza univoca: rimangono nell’elenco e l’indirizzo pubblico può essere aperto su una mappa esterna.
-- Nessun punto è inventato al centro del comune. Enti, servizi e unità allo stesso indirizzo non vengono fusi: il raggruppamento è solo visivo.
-
-`data/presidi_geo_v7_8.json` conserva metodo, precisione, data e fonte per posizione, separate dai dati sanitari. La licenza dei dati derivati OSM è ODbL 1.0; l’attribuzione è visibile sulla mappa. La cache delle 301 richieste una tantum è conservata in `downloads/Geocoding_Cache_V7_8.json`; lo script di manutenzione la riusa e non va schedulato o integrato nel browser.
-
-### Privacy e limiti della cartografia
-Leaflet 1.9.4 è distribuito localmente con la propria licenza. Le immagini da `tile.openstreetmap.org` sono richieste soltanto dopo “Apri mappa OpenStreetMap”. Nessun tracciamento, geocodifica live, cookie, salvataggio delle ricerche o accesso alla posizione del dispositivo. Le richieste dei tasselli includono solo l’origine del sito come Referer, mai query o percorso. Il fornitore vede IP e area geografica richiesta. La mappa è opzionale; l’elenco è sempre disponibile. La disponibilità delle immagini OSM non è garantita e le policy del fornitore vanno rispettate.
-
-Policy: https://operations.osmfoundation.org/policies/tiles/ e https://operations.osmfoundation.org/policies/nominatim/ . Libreria: https://leafletjs.com/download.html . I test automatici intercettano i tasselli, senza scaricarli o eseguire scansioni sul servizio pubblico.
-
-**Indicizzazione ancora disattivata**: noindex HTML e HTTP invariati; le due nuove pagine sono solo predisposte nella sitemap e nello script futuro, non viene attivato Google. Nessun file storico in data/, download precedenti o versione offline è riscritto.
+# Menta Campus — prototipo indipendente per studenti Tor Vergata
+
+Stato: **base di branding e navigazione**, non ancora prodotto destinato al pubblico.
+
+Questa branch contiene soltanto file del mini-sito indipendente. Il codice applicativo regionale V7.18 rimane su `main`, che non va alterato né utilizzato per distribuire il pilota.
+
+## Identità
+- Nome provvisorio: **Menta Campus**
+- Pubblico iniziale: studenti di Roma Tor Vergata
+- Non è un sito ufficiale dell'Università e non ne utilizza il marchio o il logo.
+- Branding autonomo, senza elementi o contenuti editoriali provenienti dall'identità precedente del portale regionale.
+
+## Perché questa branch
+L'integrazione GitHub disponibile consente la creazione di branch e commit ma non quella di nuovi repository. Questa è una base temporanea, con una directory principale autonoma, pronta per essere trasferita in un nuovo repository `menta-campus-pilota`. La presenza di file in questa branch **non** costituisce un nuovo progetto Cloudflare e **non** equivale a un lancio riservato.
+
+## Protezione prima del lancio
+- Tutte le pagine hanno `noindex,nofollow,noarchive`.
+- Il file `robots.txt` esclude la scansione e `_headers` imposta `X-Robots-Tag`; **questo non limita la visibilità pubblica**, per test riservati occorre Cloudflare Access o analoga autenticazione.
+- Nessun modulo, database sanitario, analytics, tracker o invio di risposte a servizi esterni.
+- Informazioni sul soggetto responsabile e privacy **da completare prima della pubblicazione**.
+- Servizi e recapiti devono essere riverificati su fonti ufficiali; il prototipo mostra un collegamento di riferimento e non promette l'operatività del servizio.
+
+## Passi successivi
+1. Creare il repository indipendente (inizialmente privato) e trasferire questi file, mantenendo invariata la produzione regionale.
+2. Collegare un progetto separato Cloudflare Pages.
+3. Rivedere identità legale, privacy e fonti.
+4. Collegare soltanto i servizi rilevanti per gli studenti.
+5. Collaudare navigazione, accessibilità e link prima del lancio.
+
+Origine iniziale dei contenuti universitari: ricognizione del portale regionale verificata il 21 settembre 2026. Nessuna nuova verifica delle modalità di accesso in questo commit.

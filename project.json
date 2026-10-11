@@ -1,0 +1,12 @@
+{
+  "name": "Menta Campus",
+  "status": "prototype-branding",
+  "audience": "studenti Università di Roma Tor Vergata",
+  "affiliation": "indipendente, non ufficiale",
+  "hosting": "non configurato",
+  "source_branch": "pilot/menta-campus-indipendente",
+  "production_deploy": false,
+  "indexing_enabled": false,
+  "analytics_enabled": false,
+  "reviewed_service_freshness": "da riverificare"
+}
