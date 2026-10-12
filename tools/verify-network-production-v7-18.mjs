@@ -62,6 +62,17 @@ if(ready){
    assert(csp.includes("connect-src 'self'"),page+' CSP blocks automatic analytics endpoint');
   }
  });
+ await test('Public pages no longer identify the previous promoter',async()=>{
+ for(const page of ['index.html','aggiornamenti.html','metodo.html','privacy.html','notizia.html']){
+  const r=await get('/'+page);assert(r.ok,page+' HTTP '+r.status);
+  const html=await r.text();
+  assert(!/Network[\s_-]*Giovani|network-logo|networkgiovani/i.test(html),page+' legacy branding detected');
+  assert(html.includes('Salute mentale Lazio'),page+' neutral site name absent');
+ }
+ const legacy=await fetch(BASE+'/network-giovani.html',{redirect:'manual',signal:AbortSignal.timeout(25000)});
+ assert([301,302,307,308].includes(legacy.status),'Old news URL should redirect: HTTP '+legacy.status);
+ assert((legacy.headers.get('Location')||'').includes('/aggiornamenti.html'),'Old news redirect points elsewhere');
+});
  await test('SEO policy, technical crawl exclusions and canonical sitemap in production',async()=>{
   const robots=await get('/robots.txt');assert(robots.ok);const robotsText=await robots.text();assert(robotsText.includes('Sitemap: '+BASE+'/sitemap.xml'));
   for(const dir of ['/admin/','/api/','/data/','/downloads/','/offline/','/tools/','/research/','/lib/','/migrations/'])
@@ -71,7 +82,7 @@ if(ready){
     const r=await get('/'+page);assert(r.ok);assert(!/noindex/i.test(r.headers.get('X-Robots-Tag')||''),page+' is blocked by HTTP');
     const html=await r.text();assert.match(html,/<meta[^>]*index,follow/);
   }
-  for(const page of ['redazione.html','network-giovani.html','sezioni.html','documenti.html','privacy.html','notizia.html']){
+  for(const page of ['redazione.html','aggiornamenti.html','sezioni.html','documenti.html','privacy.html','notizia.html']){
     const r=await get('/'+page);assert(r.ok);
     const html=await r.text();
     const meta=html.match(/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i)?.[0]||'';
@@ -85,12 +96,12 @@ if(ready){
  await test('Unconfigured administration refuses anonymous access including static aliases',async()=>{for(const p of ['/admin','/admin/','/admin/index.html','/admin/index','/api/admin/me','/api/admin/users']){const r=await get(p);assert([401,403,503].includes(r.status),p+' HTTP '+r.status);assert.match(r.headers.get('Cache-Control')||'',/no-store/);const text=await r.text();assert(!text.includes('id="admin-identity"'),p+' exposed admin interface');assert(!/@gmail\.com/.test(text));}});
  const browser=await chromium.launch({headless:true}),errors=[],unexpected=[];
  try{const c=await browser.newContext({viewport:{width:390,height:900},reducedMotion:'reduce'});await c.route('**/*',r=>{const u=r.request().url();if(u.startsWith(BASE)||u.startsWith('data:')||/^https:\/\/static\.cloudflareinsights\.com\/beacon\.min\.js(?:[/?#]|$)/.test(u))r.continue();else{unexpected.push(u);r.abort();}});const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));p.setDefaultTimeout(20000);
- for(const page of ['index.html','servizi.html','mappa.html','network-giovani.html','supporto-territoriale.html'])await test('Live browser '+page,async()=>{
- const response=await p.goto(BASE+'/'+page,{waitUntil:'networkidle'});assert.equal(response.status(),200);assert(await p.locator('body').innerText().then(s=>s.includes('Un progetto del Network Giovani')));
+ for(const page of ['index.html','servizi.html','mappa.html','aggiornamenti.html','supporto-territoriale.html'])await test('Live browser '+page,async()=>{
+ const response=await p.goto(BASE+'/'+page,{waitUntil:'networkidle'});assert.equal(response.status(),200);assert(await p.locator('body').innerText().then(s=>s.includes('Portale informativo di orientamento ai servizi nel Lazio.')));
  if(page==='servizi.html'){await p.locator('#svc-count').filter({hasText:/443/}).waitFor();await p.locator('#search-map-coverage').filter({hasText:/379 localizzate/}).waitFor();assert.equal(await p.locator('#ng-overlay-warning').count(),0);}
  if(page==='mappa.html'){await p.locator('#map-level-total').filter({hasText:/443/}).waitFor();await p.locator('#map-level-coverage').filter({hasText:/64 senza/}).waitFor();}
  if(page==='supporto-territoriale.html'){await p.locator('#support-count').filter({hasText:/237 schede/}).waitFor();}
- assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Mobile overflow');const ax=await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();assert.equal(ax.violations.length,0,JSON.stringify(ax.violations.map(v=>v.id)));await p.screenshot({path:path.join(OUT,page+'.png'),fullPage:page==='index.html'||page==='network-giovani.html'});
+ assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Mobile overflow');const ax=await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();assert.equal(ax.violations.length,0,JSON.stringify(ax.violations.map(v=>v.id)));await p.screenshot({path:path.join(OUT,page+'.png'),fullPage:page==='index.html'||page==='aggiornamenti.html'});
  });
  await test('Live mobile navigation and Menta',async()=>{await p.goto(BASE+'/orientati.html',{waitUntil:'networkidle'});await p.locator('#nav-toggle').click();assert.equal(await p.locator('#nav-toggle').getAttribute('aria-expanded'),'true');await p.locator('#nav-toggle').click();await p.locator('#orientation-custom > summary').click();await p.locator('#menta-query:not([disabled])').waitFor();await p.locator('#menta-query').fill('cerco un consultorio');await p.locator('#menta-submit').click();await p.locator('#menta-results:not([hidden])').waitFor();assert((await p.locator('#menta-options a').count())>0);});
  await test('No live JavaScript errors or uncontrolled third-party requests',()=>{assert.deepEqual(errors,[]);assert.deepEqual(unexpected,[]);});await c.close();

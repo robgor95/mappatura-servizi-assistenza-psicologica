@@ -1,3 +1,10 @@
+## 2026-10-12 — Identità neutra del portale regionale
+
+- Tolto il branding precedente dalle pagine pubbliche e dai metadati senza attribuire falsamente responsabilità a soggetti nuovi.
+- Nuovo spazio Aggiornamenti; reindirizzamento permanente dalla vecchia pagina di notizie.
+- Aggiornati favicon e logo; preservate ricerca, mappe, Menta, servizi e backend editoriale.
+- Test di verifica dell'identità e della redirezione; versione applicativa V7.18 invariata.
+
 ## 2026-10-10 — Guide SEO territoriali e per servizio
 
 - Nuovo indice statico, 5 province e 6 pagine sulle tipologie di servizio; link a 20 schede reali senza modifiche ai dati.

@@ -77,7 +77,7 @@ await test('Drafts, approval and optimistic version checks',async()=>{
  r=await call('/api/admin/content',author,'POST',{kind:'link',title:'Unsafe',url:'javascript:alert(1)'});assert.equal(r.status,400);
 });
 await test('Private images and published-only media',async()=>{
- const image=fs.readFileSync('assets/network-logo-v7-18.webp');assert(inspectWebP(image).width>0);assert.throws(()=>inspectWebP(Buffer.from('<svg onload=alert(1)>')));
+ const image=fs.readFileSync('assets/menta/menta-base-v7-10-1.webp');assert(inspectWebP(image).width>0);assert.throws(()=>inspectWebP(Buffer.from('<svg onload=alert(1)>')));
  const objects=new Map();env.EDITORIAL_MEDIA={put:async(k,v)=>objects.set(k,v),get:async k=>objects.has(k)?{body:objects.get(k)}:null,delete:async k=>objects.delete(k)};
  const r=await api(new Request(env.ADMIN_ORIGIN+'/api/admin/media',{method:'POST',headers:{'X-Test-User':author,Origin:env.ADMIN_ORIGIN,'X-Editorial-Request':'1','Content-Type':'image/webp','X-Image-Alt':'Logo%20di%20prova'},body:image}),env);assert.equal(r.status,201,await r.clone().text());const m=await r.json();assert.equal((await call('/api/public/media/'+m.id)).status,404);
  const privateMedia=await api(new Request(env.ADMIN_ORIGIN+'/api/admin/media/'+m.id,{headers:{'X-Test-User':author}}),env);assert.equal(privateMedia.status,200);
@@ -131,11 +131,11 @@ const server=https.createServer({key:fs.readFileSync(tls+'/key.pem'),cert:fs.rea
 async function context(width=390,who=null){const c=await browser.newContext({viewport:{width,height:900},ignoreHTTPSErrors:true,reducedMotion:'reduce',extraHTTPHeaders:who?{'X-Test-User':who}:{}});await c.route('**/*',r=>{const u=r.request().url();if(u.startsWith(BASE)||u.startsWith('data:'))r.continue();else if(u.startsWith('https://tile.openstreetmap.org/'))r.fulfill({status:200,contentType:'image/png',body:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/UAAAAABJRU5ErkJggg==','base64')});else{external.push(u);r.abort();}});const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));p.setDefaultTimeout(12000);return {c,p};}
 try{
 await test('Public pages, mobile, navigation, WCAG and original counts',async()=>{
- for(const width of [390,1440]){const {c,p}=await context(width);for(const page of ['index.html','servizi.html','mappa.html','network-giovani.html','supporto-territoriale.html','strutture-approfondite.html','privati.html','redazione.html']){
+ for(const width of [390,1440]){const {c,p}=await context(width);for(const page of ['index.html','servizi.html','mappa.html','aggiornamenti.html','supporto-territoriale.html','strutture-approfondite.html','privati.html','redazione.html']){
  await test('Public page '+page+' at '+width+'px',async()=>{await p.goto(BASE+'/'+page,{waitUntil:'networkidle'});if(page==='servizi.html'){await p.locator('#svc-count').filter({hasText:/443/}).waitFor();assert.match(await p.locator('#search-map-coverage').innerText(),/379 localizzate/);}if(page==='mappa.html'){await p.locator('#map-level-total').filter({hasText:/443/}).waitFor();assert.match(await p.locator('#map-level-coverage').innerText(),/64 senza/);}if(page==='supporto-territoriale.html'){await p.locator('#support-controls:not([hidden])').waitFor();assert.match(await p.locator('#support-count').innerText(),/237 schede/);}if(page==='strutture-approfondite.html'||page==='privati.html'){await p.locator('.directory-card').first().waitFor();}
- assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),page+' overflow '+width);assert.equal(await p.locator('h1').count(),1,page);assert(await p.locator('body').innerText().then(t=>t.includes('Un progetto del Network Giovani')),page);
+ assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),page+' overflow '+width);assert.equal(await p.locator('h1').count(),1,page);assert(await p.locator('body').innerText().then(t=>t.includes('Portale informativo di orientamento ai servizi nel Lazio.')),page);
  const axe=await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();fs.writeFileSync(path.join(OUT,page+'-'+width+'-axe.json'),JSON.stringify(axe.violations,null,2));assert.equal(axe.violations.length,0,JSON.stringify(axe.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))));
- await p.screenshot({path:path.join(OUT,page+'-'+width+'.png'),fullPage:page==='index.html'||page==='network-giovani.html'});
+ await p.screenshot({path:path.join(OUT,page+'-'+width+'.png'),fullPage:page==='index.html'||page==='aggiornamenti.html'});
  });}await c.close();}
 });
 await test('Both maps synchronize province, ASL and municipality',async()=>{
@@ -181,17 +181,29 @@ await test('SEO whitelist, canonical pages, sitemap and non-indexed technical pa
   assert(canonical.includes('href="'+expected+'"'),name+' canonical missing or incorrect');
   assert(urls.includes(expected),name+' absent from sitemap');
  }
- for(const name of ['network-giovani.html','sezioni.html','documenti.html','qualita-dati.html','privacy.html','redazione.html','notizia.html','archivio.html','interfaccia-precedente.html','404.html']){
+ for(const name of ['aggiornamenti.html','sezioni.html','documenti.html','qualita-dati.html','privacy.html','redazione.html','notizia.html','archivio.html','interfaccia-precedente.html','404.html']){
   const html=fs.readFileSync(name,'utf8');const robots=html.match(/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i)?.[0]||'';
   assert.match(robots,/noindex/,name+' unexpectedly indexable');
  }
  const headers=fs.readFileSync('_headers','utf8');
  const global=headers.split('\n/assets/*')[0];assert.doesNotMatch(global,/^\s+X-Robots-Tag:/im);
- for(const route of ['/data/*','/downloads/*','/offline/*','/admin/*','/redazione.html','/notizia.html','/network-giovani.html','/sezioni.html','/tools/*','/research/*'])
+ for(const route of ['/data/*','/downloads/*','/offline/*','/admin/*','/redazione.html','/notizia.html','/aggiornamenti.html','/sezioni.html','/tools/*','/research/*'])
   assert(headers.includes('\n'+route+'\n'),route+' missing scoped robots policy');
  assert(headers.includes('https://:preview.mappatura-servizi-assistenza-psicologica.pages.dev/*'));
  const robots=fs.readFileSync('robots.txt','utf8');assert(robots.includes('Sitemap: '+base+'sitemap.xml'));for(const route of ['/admin/','/api/','/data/','/downloads/','/offline/','/tools/','/research/','/lib/','/migrations/','/version.json'])assert(robots.includes('Disallow: '+route),route+' missing robots crawl guard');
  assert(!sitemap.includes('fondazione-di-liegro'));
+});
+await test('Neutral public identity is consistent across pages and metadata',()=>{
+ const paths=[...fs.readdirSync('.').filter(p=>p.endsWith('.html')), ...['guide','territori','tipi-servizi','admin'].flatMap(dir=>fs.readdirSync(dir).filter(p=>p.endsWith('.html')).map(p=>dir+'/'+p))];
+ for(const p of paths){
+  const html=fs.readFileSync(p,'utf8');
+  assert(!/Network[\s_-]*Giovani|network-logo|networkgiovani/i.test(html),p+' contains obsolete brand');
+  assert(!html.includes('/assets/network-logo-v7-18.webp'),p+' loads former logo');
+ }
+ assert(fs.existsSync('aggiornamenti.html'));
+ assert(!fs.existsSync('network-giovani.html'));
+ assert(fs.readFileSync('_redirects','utf8').includes('/network-giovani.html /aggiornamenti.html 301'));
+ assert(fs.readFileSync('_headers','utf8').includes('\n/aggiornamenti.html\n'));
 });
 await test('Cloudflare analytics integration is transparent and never hardcoded',()=>{
  const home=fs.readFileSync('index.html','utf8');

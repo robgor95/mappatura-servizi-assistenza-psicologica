@@ -5,8 +5,16 @@
 **Branch di produzione:** `main`  
 **Versione corrente:** **V7.18**  
 **Stato:** Produzione  
-**Ultimo aggiornamento applicativo:** 28 settembre 2026  
+**Ultimo aggiornamento applicativo:** 12 ottobre 2026  
 **Hosting di produzione:** Cloudflare Pages
+
+## Aggiornamento identità del sito — 12 ottobre 2026
+
+Il portale pubblico adotta ora un'identità neutra **Salute mentale Lazio**: riferimenti di branding del precedente promotore eliminati da intestazioni, footer, navigazione, news, privacy informativa e metadati. Logo/favicons aggiornati con Menta. L'area notizie si chiama `aggiornamenti.html`, mentre il vecchio indirizzo viene reindirizzato via `_redirects`; le funzioni editoriali, Menta, ricerca, mappe e dataset restano attivi e invariati. Nei dati JSON-LD è stata eliminata l'attribuzione organizzativa precedente senza inventare un altro ente responsabile.
+
+**Da completare prima dell'uso istituzionale:** identità giuridica del titolare del trattamento e recapito privacy, oltre alla verifica della responsabilità editoriale. I documenti storici nel repository restano una cronologia e non sono dichiarazioni sul gestore attuale. I vecchi script di generazione V7.18 sono storici e non devono essere rieseguiti per ripristinare layout o attribuzioni passate.
+
+Versione applicativa V7.18 mantenuta: rilascio correttivo di branding (non cambia il conteggio dei 443 servizi clinici, né la configurazione SEO delle 36 URL pubbliche).
 
 ## SEO territoriale e di servizio — 10 ottobre 2026
 

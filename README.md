@@ -1,3 +1,11 @@
+## Aggiornamento identità del sito — 12 ottobre 2026
+
+Il portale pubblico adotta ora un'identità neutra **Salute mentale Lazio**: riferimenti di branding del precedente promotore eliminati da intestazioni, footer, navigazione, news, privacy informativa e metadati. Logo/favicons aggiornati con Menta. L'area notizie si chiama `aggiornamenti.html`, mentre il vecchio indirizzo viene reindirizzato via `_redirects`; le funzioni editoriali, Menta, ricerca, mappe e dataset restano attivi e invariati. Nei dati JSON-LD è stata eliminata l'attribuzione organizzativa precedente senza inventare un altro ente responsabile.
+
+**Da completare prima dell'uso istituzionale:** identità giuridica del titolare del trattamento e recapito privacy, oltre alla verifica della responsabilità editoriale. I documenti storici nel repository restano una cronologia e non sono dichiarazioni sul gestore attuale. I vecchi script di generazione V7.18 sono storici e non devono essere rieseguiti per ripristinare layout o attribuzioni passate.
+
+Versione applicativa V7.18 mantenuta: rilascio correttivo di branding (non cambia il conteggio dei 443 servizi clinici, né la configurazione SEO delle 36 URL pubbliche).
+
 ### Invio delle nuove pagine ai motori — IndexNow (10 ottobre 2026)
 Configurato su GitHub `main` il protocollo IndexNow con file chiave verificabile nella radice del sito e workflow `.github/workflows/seo-indexnow.yml`. Dopo la pubblicazione Cloudflare, lo script `tools/seo-indexnow-submit.mjs` verifica sitemap, URL, meta robots e corrispondenza esatta del codice servito, poi invia a IndexNow soltanto pagine pubbliche nuove/modificate. Alla prima attivazione vengono segnalate le 12 guide e quattro pagine correlate. L'esito è registrato nel job GitHub Actions: la configurazione non dimostra che il motore abbia ricevuto le URL. Google scopre la sitemap tramite robots.txt; per il rapporto sullo stato di Google è comunque richiesta una proprietà verificata in Search Console. Non vengono inviati dati di visitatori o ricerche.
 

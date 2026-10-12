@@ -7,6 +7,6 @@
   "environment": "production",
   "deployment": "Cloudflare Pages",
   "source_of_truth": "github-main",
-  "last_application_update": "2026-09-28",
+  "last_application_update": "2026-10-12",
   "status": "production"
 }
