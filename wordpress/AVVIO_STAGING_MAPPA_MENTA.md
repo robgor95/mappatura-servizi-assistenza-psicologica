@@ -9,14 +9,14 @@
 ## Perché un pacchetto unico
 Non esiste in questa sessione un collegamento autenticato all'area amministrativa di AlterVista. Il collegamento `/wp-admin/` fornito dall'utente non concede permessi in questa chat e non è possibile impostare FTP, tema o plugin da remoto senza un'autorizzazione esplicita. Non richiedere password o token in chiaro.
 
-È stato quindi creato localmente il pacchetto `SML_MappaMenta_Installazione_Automatica_Staging_0_3.zip` (**SHA256**: `6675f514285c9b1b458bc746d24e651a768183e937c38d05949afa82db844881`; circa 3,84 MB). È disponibile come allegato di questo scambio, non come file committato nel repository. Contiene **un plugin installatore WordPress** e tre ZIP incorporati: tema V7.18, catalogo V7.18 con 680 schede, protezione anti-indicizzazione.
+È stato quindi creato localmente il pacchetto `SML_MappaMenta_Installazione_Automatica_Staging_0_3.zip` (**SHA256**: `c8179d3c4d039c7dec0ced0948f381bdfe1969c3462b4cdee4e210fd32d1ed08`; circa 3,84 MB). È disponibile come allegato di questo scambio, non come file committato nel repository. Contiene **un plugin installatore WordPress** e tre ZIP incorporati: tema V7.18, catalogo V7.18 con 680 schede, protezione anti-indicizzazione.
 
 Il pacchetto è specificamente destinato a `mappamenta.altervista.org` e, una volta installato/attivato dall'admin, tenta di:
 1. Impostare `blog_public=0` e applicare `noindex`.
 2. Installare/attivare il plugin di protezione staging e il plugin catalogo; non sovrascrive directory già esistenti.
 3. Installare/attivare il tema ponte con i dati pubblici dell'attuale `main`.
 4. Importare automaticamente 443 schede cliniche e 237 complementari in blocchi di 20 tramite la bacheca (richiede scheda browser aperta).
-5. Concludere in stato `imported-needs-testing`, senza pubblicazione/indicizzazione definitiva.
+5. Offrire ripristino non distruttivo del tema precedente da **Strumenti → Avvio MappaMenta**, mantenendo i dati e la protezione noindex.\n6. Concludere in stato `imported-needs-testing`, senza pubblicazione/indicizzazione definitiva.
 
 ## Operazione richiesta sul sito di prova
 Da amministratore WordPress: **Plugin → Aggiungi plugin → Carica plugin**, scegliere il solo ZIP unificato e selezionare **Installa → Attiva**. L'attivazione reindirizza all'installazione guidata; in caso contrario accedere a **Strumenti → Avvio MappaMenta**. Non usare i vecchi plugin beta separati contemporaneamente. È necessario lasciare aperta la scheda fino al messaggio di fine importazione.
