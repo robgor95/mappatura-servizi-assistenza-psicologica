@@ -1,0 +1,65 @@
+name: WordPress staging - prepara tema ponte V7.18
+on:
+  push:
+    branches: [migration/altervista-wordpress]
+    paths:
+      - 'wordpress/sml-lazio/**'
+      - '.github/workflows/build-wordpress-altervista.yml'
+      - 'VERSION.json'
+      - 'data/editorial-catalog-v7-18.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-theme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Costruisce ZIP del tema completo dalla checkout GitHub corrente
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, shutil, zipfile
+          from pathlib import Path
+          root=Path.cwd()
+          v=json.loads((root/'VERSION.json').read_text(encoding='utf-8'))
+          assert v['version']=='7.18' and v['production_branch']=='main', 'Versione non attesa'
+          catalog=json.loads((root/'data/editorial-catalog-v7-18.json').read_text(encoding='utf-8'))
+          assert catalog['clinical']==443 and catalog['support']==237
+          assert len(catalog['records'])==680
+          out=root/'wordpress-dist'
+          theme=out/'sml-lazio'
+          shutil.copytree(root/'wordpress/sml-lazio',theme,dirs_exist_ok=True)
+          public=theme/'legacy'
+          public.mkdir(parents=True,exist_ok=True)
+          allow={'.html','.css','.js','.mjs','.json','.geojson','.txt','.xml','.png','.webp','.jpg','.jpeg','.gif','.svg','.ico','.pdf','.csv'}
+          public_dirs=('assets','data','downloads','guide','territori','tipi-servizi','offline')
+          files=list(root.glob('*.html'))+[root/'robots.txt',root/'sitemap.xml']
+          for sub in public_dirs:
+              if (root/sub).is_dir():
+                  files.extend((root/sub).rglob('*'))
+          copied=set()
+          for f in files:
+              if not f.is_file() or f.is_symlink() or f.suffix.lower() not in allow: continue
+              rel=f.relative_to(root)
+              if any(part.startswith('.') for part in rel.parts): continue
+              if f.name.lower()=='istruzioni_cloudflare.txt': continue
+              dest=public/rel
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copy2(f,dest)
+              copied.add(rel.as_posix())
+          assert {'index.html','servizi.html','mappa.html','sitemap.xml','robots.txt'}.issubset(copied)
+          (out/'manifest.json').write_text(json.dumps({'source_commit':os.environ.get('GITHUB_SHA'),'version':v['version'],'files':len(copied),'clinical':443,'support':237,'status':'STAGING ONLY'},ensure_ascii=False,indent=2))
+          with zipfile.ZipFile(out/'sml-lazio-tema-ponte-staging.zip','w',zipfile.ZIP_DEFLATED,compresslevel=8) as archive:
+              for p in sorted(theme.rglob('*')):
+                  if p.is_file(): archive.write(p,p.relative_to(out).as_posix())
+          print('V7.18 ZIP preparato:',len(copied),'file pubblici')
+          PY
+      - name: Pubblica ZIP e manifest come artefatto GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: sml-tema-ponte-staging-v718
+          path: |
+            wordpress-dist/sml-lazio-tema-ponte-staging.zip
+            wordpress-dist/manifest.json
+          retention-days: 14
