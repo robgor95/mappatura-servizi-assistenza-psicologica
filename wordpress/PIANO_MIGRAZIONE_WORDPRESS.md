@@ -29,3 +29,13 @@ Sviluppo su `migration/altervista-wordpress`, senza modifiche dirette a `main`. 
 - https://help.altervista.org/it/FTP
 - https://tutorial.altervista.org/installa-plugin/
 - https://it.wordpress.org/support/article/managing-plugins/
+
+## Destinazione comunicata il 30 ottobre 2026
+
+- Dominio nuovo: `https://mappamenta.altervista.org/`.
+- Pannello proprietario: `https://mappamenta.altervista.org/wp-admin/`.
+- Non è stato possibile confermare la risposta HTTP del dominio da questa sessione; l'indirizzo è fornito dall'utente, non un accesso amministrativo verificato.
+- Prossimo gate: installare in modo controllato il plugin diagnostico di sola lettura **SML Verifica ambiente** (ZIP consegnato nel dialogo di progetto) ed esaminare il rapporto da `Strumenti → Verifica ambiente SML`.
+- Nel frattempo su `Impostazioni → Lettura` spuntare «Scoraggia i motori di ricerca dall'effettuare l'indicizzazione di questo sito» per evitare duplicazioni prima del cutover. Verificare che il frontend del portale esistente rimanga indipendente.
+- Prima del porting completo controllare versione PHP, limiti ZIP, REST API, permalink, scrivibilità di wp-content e prova dei plugin personalizzati. I plugin e il tema beta precedenti **non sono ancora una release di produzione**.
+- Non raccogliere password, token, database dump o accessi nella conversazione.
