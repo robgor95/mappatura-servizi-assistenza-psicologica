@@ -32,7 +32,7 @@ jobs:
           shutil.copytree(root/'wordpress/sml-lazio',theme,dirs_exist_ok=True)
           public=theme/'legacy'
           public.mkdir(parents=True,exist_ok=True)
-          allow={'.html','.css','.js','.mjs','.json','.geojson','.txt','.xml','.png','.webp','.jpg','.jpeg','.gif','.svg','.ico','.pdf','.csv'}
+          allow={'.html','.css','.js','.mjs','.json','.geojson','.txt','.xml','.png','.webp','.jpg','.jpeg','.gif','.svg','.ico','.pdf','.csv','.md','.xlsx'}
           public_dirs=('assets','data','downloads','guide','territori','tipi-servizi','offline')
           files=list(root.glob('*.html'))+[root/'robots.txt',root/'sitemap.xml']
           for sub in public_dirs:
@@ -48,7 +48,8 @@ jobs:
               dest.parent.mkdir(parents=True,exist_ok=True)
               shutil.copy2(f,dest)
               copied.add(rel.as_posix())
-          assert {'index.html','servizi.html','mappa.html','sitemap.xml','robots.txt'}.issubset(copied)
+          assert {'index.html','servizi.html','mappa.html','sitemap.xml','robots.txt','downloads/Release_Notes_V7_18.md','downloads/Mappatura_Lazio_V7_3.xlsx'}.issubset(copied)
+          (public/'.htaccess').write_text('<IfModule mod_authz_core.c>\\nRequire all denied\\n</IfModule>\\n<IfModule !mod_authz_core.c>\\nDeny from all\\n</IfModule>\\n')
           (out/'manifest.json').write_text(json.dumps({'source_commit':os.environ.get('GITHUB_SHA'),'version':v['version'],'files':len(copied),'clinical':443,'support':237,'status':'STAGING ONLY'},ensure_ascii=False,indent=2))
           with zipfile.ZipFile(out/'sml-lazio-tema-ponte-staging.zip','w',zipfile.ZIP_DEFLATED,compresslevel=8) as archive:
               for p in sorted(theme.rglob('*')):
