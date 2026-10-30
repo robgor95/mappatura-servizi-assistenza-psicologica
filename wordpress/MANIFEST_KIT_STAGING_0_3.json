@@ -6,7 +6,7 @@
   "source_main_sha": "add601f82b672bc2be217f1e77dd339c6d28581f",
   "theme_build_sha": "9cb54d90279d5c8089db3021bae91878088878bf",
   "package_filename": "SML_MappaMenta_Installazione_Automatica_Staging_0_3.zip",
-  "package_sha256": "6675f514285c9b1b458bc746d24e651a768183e937c38d05949afa82db844881",
+  "package_sha256": "c8179d3c4d039c7dec0ced0948f381bdfe1969c3462b4cdee4e210fd32d1ed08",
   "inner": {
     "theme": "sml-lazio.zip",
     "catalog": "sml-catalogo.zip",
