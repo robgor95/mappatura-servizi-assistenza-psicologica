@@ -9,7 +9,7 @@ function sml_theme_asset_allowed(string $path): bool {
     if (strpos($path,"\0")!==false || preg_match('#(^|/)\.#',$path) || str_contains($path,'\\')) return false;
     if (!preg_match('#^[a-zA-Z0-9_./-]+$#D',$path) || str_contains($path,'..')) return false;
     if (preg_match('#^(?:assets|data|downloads|guide|guide[s]?|territori|tipi-servizi|offline)/#',$path)) {
-        return (bool)preg_match('/\.(?:css|js|mjs|json|geojson|html|txt|pdf|csv|png|webp|jpe?g|gif|svg|ico)$/i',$path);
+        return (bool)preg_match('/\.(?:css|js|mjs|json|geojson|html|txt|pdf|csv|md|xlsx|png|webp|jpe?g|gif|svg|ico)$/i',$path);
     }
     return (bool)preg_match('#^(?:(?:[a-z0-9-]+)\.html|robots\.txt|sitemap\.xml)$#i',$path);
 }
@@ -22,13 +22,13 @@ function sml_theme_mime(string $path): string {
         'xml'=>'application/xml; charset=utf-8','txt'=>'text/plain; charset=utf-8',
         'png'=>'image/png','jpg'=>'image/jpeg','jpeg'=>'image/jpeg','gif'=>'image/gif',
         'webp'=>'image/webp','svg'=>'image/svg+xml','ico'=>'image/x-icon',
-        'pdf'=>'application/pdf','csv'=>'text/csv; charset=utf-8',
+        'pdf'=>'application/pdf','csv'=>'text/csv; charset=utf-8','md'=>'text/markdown; charset=utf-8','xlsx'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
     ];
     return $types[$ext]??'application/octet-stream';
 }
 function sml_theme_legacy(): void {
     $request=(string)(wp_parse_url($_SERVER['REQUEST_URI']??'/',PHP_URL_PATH)?:'/');
-    if ($request==='/admin' || $request==='/admin/') {
+    if ($request==='/admin' || $request==='/admin/' || $request==='/admin/index.html') {
         wp_safe_redirect(admin_url('admin.php?page=sml-catalogo'),302);exit;
     }
     if ($request==='/') $request='/index.html';
@@ -67,6 +67,7 @@ function sml_theme_legacy(): void {
             if (!str_contains($html,$robot)) $html=str_replace('<head>','<head>'.$robot,$html);
         }
         $html=str_replace('/cdn-cgi/access/logout',wp_logout_url(),$html);
+        $html=str_replace('href="/admin/index.html"','href="'.esc_url(admin_url('admin.php?page=sml-catalogo')).'"',$html);
         echo $html;
     } else {
         header('Cache-Control: public, max-age=3600');
