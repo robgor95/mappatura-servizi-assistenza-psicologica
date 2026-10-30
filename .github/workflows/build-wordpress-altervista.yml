@@ -49,7 +49,7 @@ jobs:
               shutil.copy2(f,dest)
               copied.add(rel.as_posix())
           assert {'index.html','servizi.html','mappa.html','sitemap.xml','robots.txt','downloads/Release_Notes_V7_18.md','downloads/Mappatura_Lazio_V7_3.xlsx'}.issubset(copied)
-          (public/'.htaccess').write_text('<IfModule mod_authz_core.c>\\nRequire all denied\\n</IfModule>\\n<IfModule !mod_authz_core.c>\\nDeny from all\\n</IfModule>\\n')
+          (public/'.htaccess').write_text(chr(10).join(['<IfModule mod_authz_core.c>','Require all denied','</IfModule>','<IfModule !mod_authz_core.c>','Deny from all','</IfModule>','']))
           (out/'manifest.json').write_text(json.dumps({'source_commit':os.environ.get('GITHUB_SHA'),'version':v['version'],'files':len(copied),'clinical':443,'support':237,'status':'STAGING ONLY'},ensure_ascii=False,indent=2))
           with zipfile.ZipFile(out/'sml-lazio-tema-ponte-staging.zip','w',zipfile.ZIP_DEFLATED,compresslevel=8) as archive:
               for p in sorted(theme.rglob('*')):
