@@ -75,5 +75,33 @@ for r in results:
   if r.get("reason"): print("  "+r["reason"])
   if r.get("x_robots_tag"): print("  X-Robots-Tag: "+r["x_robots_tag"])
 print(f"Totals: PASS={sum(r['result']=='PASS' for r in results)}, FAIL={sum(r['result']=='FAIL' for r in results)}, UNKNOWN={sum(r['result']=='UNKNOWN' for r in results)}")
+
+# Additional read-only coverage against all SEO pages in the *source* sitemap.
+# Staging deliberately suppresses serving its sitemap to crawlers.
+from pathlib import Path
+import xml.etree.ElementTree as ET
+from urllib.parse import urlsplit
+raw=Path("sitemap.xml").read_text(encoding="utf-8")
+urls=[el.text for el in ET.fromstring(raw).iter() if el.tag.endswith("loc") and el.text]
+paths=sorted({urlsplit(u).path or "/" for u in urls})
+if len(paths)!=36:
+    print(f"FAIL source sitemap URL count: {len(paths)} (expected 36)")
+    sys.exit(3)
+page_fails=[]
+for path in paths:
+    url=BASE+path
+    try:
+        req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; SML-staging-smoke/0.1)","Cache-Control":"no-cache"})
+        with urllib.request.urlopen(req,timeout=TIMEOUT) as r:
+            text_body=r.read(100_000).decode("utf-8","replace").lower()
+            noindex="noindex" in r.headers.get("X-Robots-Tag","").lower()
+            if r.status!=200 or (not noindex and 'name="robots" content="noindex' not in text_body):
+                page_fails.append((path,r.status,"missing noindex" if not noindex else "status"))
+    except Exception as e:
+        page_fails.append((path,type(e).__name__,"unavailable"))
+print(f"SEO source pages: reachable+noindex = {len(paths)-len(page_fails)}/{len(paths)}")
+for entry in page_fails:print("  SEO FAIL",*entry)
+if page_fails:sys.exit(4)
+
 if any(r["result"]=="FAIL" for r in results):sys.exit(1)
 if any(r["result"]=="UNKNOWN" for r in results):sys.exit(2)
