@@ -18,8 +18,8 @@ CHECKS = [
   ("/orientati.html", "html", ("menta",)),
   ("/assets/servizi-v7-18.js", "asset", ("LazioServices",)),
   ("/data/editorial-catalog-v7-18.json", "catalog", ()),
-  ("/api/public/revisions", "revisions", ()),
-  ("/api/public/content", "content", ()),
+  ("/assets/editorial-data-v7-18.js?sml-wp=0.4", "adapted_asset", ("/wp-json/sml/v1/revisions",)),
+  ("/assets/editorial-public-v7-18.mjs?sml-wp=0.4", "adapted_asset", ("/wp-json/sml/v1/content","src:c.image_url")),
   ("/wp-json/sml/v1/revisions", "revisions", ()),
   ("/wp-json/sml/v1/content", "content", ()),
   ("/wp-json/", "wpjson", ()),
@@ -50,6 +50,8 @@ for path,kind,tokens in CHECKS:
       errors.append("sitemap indexability must be reviewed")
   elif status!=200:
     errors.append("unexpected HTTP status")
+  if kind=="adapted_asset" and status==200 and not all(t in txt for t in tokens):
+    errors.append("WordPress 0.4 asset not yet installed or cached")
   if kind=="html" and status==200:
     if not all(t in txt.lower() for t in tokens):errors.append("expected page markers missing")
     if "noindex" not in headers.get("x-robots-tag","").lower() and not ("name=\"robots\"" in txt.lower() and "noindex" in txt.lower()):
