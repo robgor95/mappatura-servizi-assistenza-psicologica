@@ -4,6 +4,7 @@ on:
     branches: [migration/altervista-wordpress]
     paths:
       - 'wordpress/sml-lazio/**'
+      - 'tools/wordpress-asset-adapter.py'
       - '.github/workflows/build-wordpress-altervista.yml'
       - 'VERSION.json'
       - 'data/editorial-catalog-v7-18.json'
@@ -19,7 +20,7 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import json, os, shutil, zipfile
+          import json, os, shutil, zipfile, subprocess, sys
           from pathlib import Path
           root=Path.cwd()
           v=json.loads((root/'VERSION.json').read_text(encoding='utf-8'))
@@ -49,8 +50,9 @@ jobs:
               shutil.copy2(f,dest)
               copied.add(rel.as_posix())
           assert {'index.html','servizi.html','mappa.html','sitemap.xml','robots.txt','downloads/Release_Notes_V7_18.md','downloads/Mappatura_Lazio_V7_3.xlsx'}.issubset(copied)
+          subprocess.run([sys.executable, str(root/'tools/wordpress-asset-adapter.py'), str(public)], check=True)
           (public/'.htaccess').write_text(chr(10).join(['<IfModule mod_authz_core.c>','Require all denied','</IfModule>','<IfModule !mod_authz_core.c>','Deny from all','</IfModule>','']))
-          (out/'manifest.json').write_text(json.dumps({'source_commit':os.environ.get('GITHUB_SHA'),'version':v['version'],'files':len(copied),'clinical':443,'support':237,'status':'STAGING ONLY'},ensure_ascii=False,indent=2))
+          (out/'manifest.json').write_text(json.dumps({'source_commit':os.environ.get('GITHUB_SHA'),'version':v['version'],'files':len(copied),'clinical':443,'support':237,'status':'STAGING ONLY','wp_adapter':'0.4-api-fix'},ensure_ascii=False,indent=2))
           with zipfile.ZipFile(out/'sml-lazio-tema-ponte-staging.zip','w',zipfile.ZIP_DEFLATED,compresslevel=8) as archive:
               for p in sorted(theme.rglob('*')):
                   if p.is_file(): archive.write(p,p.relative_to(out).as_posix())
@@ -59,7 +61,7 @@ jobs:
       - name: Pubblica ZIP e manifest come artefatto GitHub Actions
         uses: actions/upload-artifact@v4
         with:
-          name: sml-tema-ponte-staging-v718
+          name: sml-tema-ponte-staging-v718-api-fix
           path: |
             wordpress-dist/sml-lazio-tema-ponte-staging.zip
             wordpress-dist/manifest.json
