@@ -48,3 +48,8 @@ Rollback: se il nuovo tema ha problemi, ripristinare la versione precedente da b
 - Backup MySQL e file/media, ripristino testato, piano per aggiornamento PHP 8.0 gestito da AlterVista e privacy completata.
 - SEO e redirect soltanto dopo che il sito di destinazione ha superato tutti i controlli. Non togliere \`noindex\` durante staging.
 - Cloudflare Pages e GitHub \`main\` **invariati**.
+
+## Collaudo SEO completo
+[GitHub Actions run 41172910459](https://github.com/robgor95/mappatura-servizi-assistenza-psicologica/actions/runs/41172910459): **36/36 URL della sitemap** del \`main\` originale rispondono HTTP 200 su AlterVista e presentano \`noindex\`. Questo non equivale a test visivo, interazione JavaScript o a verifica dell'indicizzazione da parte di Google. Il run continua a fallire per i due endpoint legacy, attesi prima dell'installazione del tema 0.4.
+
+Script di collaudo aggiornato sul ramo per verificare dopo la sostituzione del tema i nuovi riferimenti API negli asset JS e non pretendere che restino attive le vecchie rotte Cloudflare. Nessuna azione WordPress è stata eseguita dal collaudo pubblico.
