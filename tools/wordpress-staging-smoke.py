@@ -20,6 +20,8 @@ CHECKS = [
   ("/data/editorial-catalog-v7-18.json", "catalog", ()),
   ("/api/public/revisions", "revisions", ()),
   ("/api/public/content", "content", ()),
+  ("/wp-json/sml/v1/revisions", "revisions", ()),
+  ("/wp-json/sml/v1/content", "content", ()),
   ("/wp-json/", "wpjson", ()),
   ("/robots.txt", "robots", ()),
   ("/sitemap.xml", "sitemap", ()),
