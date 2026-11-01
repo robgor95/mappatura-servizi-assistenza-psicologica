@@ -1,0 +1,36 @@
+name: Browser QA staging WordPress MappaMenta
+on:
+  push:
+    branches: [migration/altervista-wordpress]
+    paths:
+      - .github/workflows/verify-wordpress-browser.yml
+      - tools/wordpress-staging-browser.mjs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-browser-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install locked browser test dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/sml-browser-toolchain
+          cp tools/editorial-toolchain/package.json tools/editorial-toolchain/package-lock.json /tmp/sml-browser-toolchain/
+          npm ci --prefix /tmp/sml-browser-toolchain
+          ln -s /tmp/sml-browser-toolchain/node_modules node_modules
+          ./node_modules/.bin/playwright install --with-deps chromium
+      - name: Interactive public-browser tests (read only)
+        run: node tools/wordpress-staging-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sml-staging-public-browser-report
+          path: /tmp/sml-staging-browser
+          retention-days: 7
