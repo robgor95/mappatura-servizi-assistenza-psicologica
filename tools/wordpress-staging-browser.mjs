@@ -28,7 +28,7 @@ const audits=[];
 try {
   for (const width of [390,1366]) {
     const {c,p,errors}=await context(width);
-    for (const [path,id] of [['/','main'],['/servizi.html','svc-form'],['/mappa.html','map-controls'],['/orientati.html','menta-query']]) {
+    for (const [path,id] of [['/','contenuto'],['/servizi.html','svc-form'],['/mappa.html','map-controls'],['/orientati.html','menta-query']]) {
       await check(width+' browser page '+path,async()=>{
         const r=await p.goto(BASE+path,{waitUntil:'domcontentloaded',timeout:45000});
         assert.equal(r?.status(),200);
@@ -57,6 +57,7 @@ try {
     });
     await check(width+' Menta orientation (local interaction)',async()=>{
       await p.goto(BASE+'/orientati.html',{waitUntil:'domcontentloaded'});
+      await p.locator('#orientation-custom > summary').click();
       await p.locator('#menta-query:not([disabled])').waitFor({timeout:25000});
       await p.locator('#menta-query').fill('università');
       await p.locator('#menta-submit').click();
@@ -68,7 +69,8 @@ try {
       await p.locator('#map-controls:not([disabled])').waitFor({timeout:35000});
       const count=await p.locator('#map-count').innerText();
       assert.match(count,/443/);
-      assert.match(count,/379/);
+      const coverage=await p.locator('#map-level-coverage').innerText();
+      assert.match(coverage,/379/);
       assert((await p.locator('#map-canvas').count())===1);
     });
     await check(width+' no uncaught JavaScript errors',()=>{
