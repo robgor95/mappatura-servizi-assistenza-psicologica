@@ -6,6 +6,7 @@ on:
       - 'wordpress/sml-lazio/**'
       - 'pilot/tor-vergata/**'
       - 'tools/build-tor-vergata-pilot.py'
+      - 'tools/tor-vergata-pilot-browser.mjs'
       - 'tools/wordpress-asset-adapter.py'
       - 'tools/wordpress-asset-adapter.py'
       - '.github/workflows/build-wordpress-altervista.yml'
@@ -98,6 +99,25 @@ jobs:
               assert len(data["university"])==4
           print("ZIP WordPress integro:",z.stat().st_size,"bytes / 19 servizi entro 8 km")
           PY
+      - name: Browser QA microsito (senza accesso ad AlterVista)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/menta-campus-toolchain
+          cp tools/editorial-toolchain/package.json tools/editorial-toolchain/package-lock.json /tmp/menta-campus-toolchain/
+          npm ci --prefix /tmp/menta-campus-toolchain
+          ln -s /tmp/menta-campus-toolchain/node_modules node_modules
+          ./node_modules/.bin/playwright install --with-deps chromium
+          python3 -m http.server 8765 --directory wordpress-dist/sml-lazio/legacy >/tmp/menta-campus-http.log 2>&1 &
+          srv=$!
+          trap 'kill "$srv" || true' EXIT
+          node tools/tor-vergata-pilot-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sml-pilota-tor-vergata-browser-report
+          path: /tmp/tor-vergata-pilot-browser
+          retention-days: 7
       - name: Pubblica ZIP e manifest come artefatto GitHub Actions
         uses: actions/upload-artifact@v4
         with:

@@ -1,0 +1,50 @@
+import { chromium } from "playwright";
+import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+const URL="http://127.0.0.1:8765/tor-vergata/";
+const OUT="/tmp/tor-vergata-pilot-browser";
+await fs.mkdir(OUT,{recursive:true});
+const browser=await chromium.launch({headless:true});
+const results=[];
+try {
+  for(const width of [390,1366]){
+    const context=await browser.newContext({viewport:{width,height:920},reducedMotion:"reduce"});
+    const page=await context.newPage();
+    const errors=[],external=[];
+    page.on("pageerror",e=>errors.push(e.message));
+    page.on("request",req=>{if(!req.url().startsWith("http://127.0.0.1:8765/"))external.push(req.url());});
+    page.setDefaultTimeout(25000);
+    const r=await page.goto(URL,{waitUntil:"networkidle",timeout:40000});
+    assert.equal(r.status(),200);
+    await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("19 servizi"),{timeout:30000});
+    assert.equal(await page.locator("#tv-university .tv-card").count(),4);
+    assert.match(await page.locator("#tv-title").innerText(),/salute mentale/i);
+    assert.equal(await page.locator(".tv-results .tv-card").count(),19);
+    const overflow=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth}));
+    assert(overflow.scroll<=overflow.width+2,JSON.stringify(overflow));
+    assert.equal(await page.locator('meta[name="robots"]').getAttribute("content"),"noindex,nofollow,noarchive");
+    assert.equal(external.length,0,"Automatic remote requests: "+JSON.stringify(external));
+    assert(await page.locator(".leaflet-container").count(), "Leaflet map not initialized");
+    await page.screenshot({path:OUT+"/tor-vergata-"+width+".png",fullPage:true});
+    await page.locator("#tv-radius").selectOption("5");
+    await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("8 servizi"));
+    assert.equal(await page.locator(".tv-results .tv-card").count(),8);
+    await page.locator("#tv-radius").selectOption("12");
+    await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("52 servizi"));
+    assert.equal(await page.locator(".tv-results .tv-card").count(),52);
+    await page.locator("#tv-type").selectOption("CSM");
+    assert((await page.locator(".tv-results .tv-card").count())>0,"CSM filter empty");
+    await page.locator("#tv-reset").click();
+    await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("19 servizi"));
+    await page.locator("#tv-q").fill("torre spaccata");
+    await page.waitForTimeout(300);
+    assert((await page.locator(".tv-results .tv-card").count())>=1,"name search empty");
+    assert.equal(external.length,0,"Unexpected third-party requests");
+    assert.deepEqual(errors,[],"Uncaught JS errors");
+    results.push({width,passed:true,university:4,clinicalAt8km:19,clinicalAt5km:8,clinicalAt12km:52});
+    console.log("PASS Tor Vergata browser",width,"px: 4 university, 19/8km, 8/5km, 52/12km, CSM/search, no external requests");
+    await context.close();
+  }
+}finally{await browser.close();}
+await fs.writeFile(OUT+"/report.json",JSON.stringify(results,null,2));
+console.log("PASS",results.length,"browser viewport suites");
