@@ -90,7 +90,7 @@ jobs:
         with:
           name: MentaCampus-TorVergata-Plugin-WP-0-1-2-FONTI
           path: |
-            wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_1_FIX_OSM.zip
+            wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_2_FONTI_UNIVERSITARIE.zip
             wordpress-plugin-dist/manifest-microsito.json
           retention-days: 21
       - name: Preserve browser QA evidence
