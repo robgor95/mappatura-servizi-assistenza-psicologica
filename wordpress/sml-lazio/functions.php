@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) exit;
 function sml_theme_asset_allowed(string $path): bool {
     if (strpos($path,"\0")!==false || preg_match('#(^|/)\.#',$path) || str_contains($path,'\\')) return false;
     if (!preg_match('#^[a-zA-Z0-9_./-]+$#D',$path) || str_contains($path,'..')) return false;
-    if (preg_match('#^(?:assets|data|downloads|guide|guide[s]?|territori|tipi-servizi|offline)/#',$path)) {
+    if (preg_match('#^(?:assets|data|downloads|guide|guide[s]?|territori|tipi-servizi|offline|tor-vergata)/#',$path)) {
         return (bool)preg_match('/\.(?:css|js|mjs|json|geojson|html|txt|pdf|csv|md|xlsx|png|webp|jpe?g|gif|svg|ico)$/i',$path);
     }
     return (bool)preg_match('#^(?:(?:[a-z0-9-]+)\.html|robots\.txt|sitemap\.xml)$#i',$path);
@@ -32,6 +32,7 @@ function sml_theme_legacy(): void {
         wp_safe_redirect(admin_url('admin.php?page=sml-catalogo'),302);exit;
     }
     if ($request==='/') $request='/index.html';
+    if ($request==='/tor-vergata' || $request==='/tor-vergata/') $request='/tor-vergata/index.html';
     $path=rawurldecode(ltrim($request,'/'));
     if (!sml_theme_asset_allowed($path)) return;
     $base=realpath(get_stylesheet_directory().'/legacy');
