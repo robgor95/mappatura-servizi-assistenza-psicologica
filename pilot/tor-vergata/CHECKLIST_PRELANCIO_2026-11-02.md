@@ -12,6 +12,8 @@ Branch pilota: pilot/tor-vergata-wordpress. Cloudflare e main non modificati.
 - [x] Correzione OSM 403 confermata funzionante dall'utente.
 - [x] Sportello PTV e riferimenti First Point e Pro-Ben rintracciati sui siti ufficiali.
 
+[x] L'utente ha completato Strumenti > Esporta > Tutti i contenuti in WordPress e confermato l'esportazione il 2 novembre 2026. Il file XML è in custodia dell'utente: non è stato caricato né ispezionato; non sostituisce una copia completa di database e file.
+
 ## Prima del test con un piccolo gruppo
 - [ ] Verificare in WordPress Strumenti > Backup la presenza di uno snapshot di file e database. Prevedere anche una copia esterna ripristinabile; il backup AlterVista non è necessariamente scaricabile.
 - [ ] Verificare le informazioni operative delle 4 risorse universitarie: destinatari, appuntamenti, attività, contatti.
@@ -36,3 +38,11 @@ Branch pilota: pilot/tor-vergata-wordpress. Cloudflare e main non modificati.
 - https://web.uniroma2.it/it/contenuto/ampliamento-dei-servizi-di-ascolto-attivo-lo-sportello-di-mediazione-culturale
 - https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/8981258
 - https://tutorial.altervista.org/perche-e-importante-avere-il-servizio-backup-di-altervista-attivo/
+
+## Aggiornamento fonti sul ramo pilota 2 novembre 2026
+- [x] Sportello PTV studenti: email istituzionale confermata.
+- [x] Counselling personale: email e gratuità recuperate da pagina dedicata.
+- [x] First Point: precisate sedi e sportello di mediazione culturale, orari e lingue dal sito dell'Ateneo.
+- [x] Pro-Ben: descrizione di attività e contatto di riferimento da Orientamento.
+- [ ] Servizi e orari ancora da confermare direttamente dai responsabili prima della diffusione pubblica; per i test usare i link di fonte ufficiale.
+- [ ] Backup completo ripristinabile dei file, database e media: esportazione WordPress XML non sufficiente.

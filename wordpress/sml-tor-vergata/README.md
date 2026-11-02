@@ -3,7 +3,7 @@
 Decisione: opzione A. Un microsito su MappaMenta WordPress gestito AlterVista, senza WordPress Multisite, secondo hosting o sostituzione del tema regionale.
 
 ## Stato
-Versione 0.1.1-beta. Non installato nel WordPress AlterVista da questa procedura. Il sito Cloudflare e GitHub main sono invariati. Il pilot eredita la base V7.18 con 443 record clinici e 237 complementari.
+Versione 0.1.2-beta. Non installato nel WordPress AlterVista da questa procedura. Il sito Cloudflare e GitHub main sono invariati. Il pilot eredita la base V7.18 con 443 record clinici e 237 complementari.
 
 ### Percorso previsto
 https://mappamenta.altervista.org/tor-vergata/ dopo l'installazione del plugin.
@@ -15,7 +15,7 @@ Il plugin serve solo i percorsi /tor-vergata/ e gli asset collegati. Non sostitu
 La selezione per distanza parte dalle stesse fonti verificate del catalogo GitHub main V7.18: 8 servizi clinici entro 5 km, 19 entro 8 km e 52 entro 12 km in linea d'aria dal Rettorato. Le quattro risorse universitarie sono distinte dalle schede cliniche. Le modifiche approvate alle schede già presenti vengono lette dalla REST API WordPress /wp-json/sml/v1/revisions. Nuove sedi, nuove schede o variazioni geografiche richiedono il rilascio di un nuovo dataset pilota e non vengono create automaticamente dal plugin.
 
 ### Installazione
-Aprire WordPress AlterVista -> Plugin -> Aggiungi nuovo -> Carica plugin. Caricare SOLO MentaCampus_TorVergata_Plugin_WordPress_0_1_1_FIX_OSM.zip. Attivare Menta Campus - Tor Vergata (microsito). Non toccare il tema attuale, il plugin Catalogo SML e la protezione SEO. Aprire /tor-vergata/ e verificare la pagina.
+Aprire WordPress AlterVista -> Plugin -> Aggiungi nuovo -> Carica plugin. Caricare SOLO MentaCampus_TorVergata_Plugin_WordPress_0_1_2_FONTI_UNIVERSITARIE.zip. Attivare Menta Campus - Tor Vergata (microsito). Non toccare il tema attuale, il plugin Catalogo SML e la protezione SEO. Aprire /tor-vergata/ e verificare la pagina.
 
 ### Sicurezza e rollback
 Le rotte appartengono a una lista chiusa. Il plugin risponde con noindex, nofollow, noarchive. I file interni sono negati tramite .htaccess per evitare accesso diretto non protetto da noindex. Nessun modulo dati sanitari, nessuna telemetria delle ricerche. Sfondo OpenStreetMap opzionale su click. Rollback: disattivare il plugin senza toccare il database.
@@ -35,3 +35,7 @@ Workflow GitHub Actions: .github/workflows/build-tor-vergata-plugin.yml sul bran
 - Informativa della mappa aggiornata per precisare quando il browser contatta OSM. Non modifica privacy/login/noindex della parte regionale.
 - Riferimenti ufficiali: https://operations.osmfoundation.org/policies/tiles/ e https://wiki.openstreetmap.org/wiki/Blocked_tiles .
 - Il fix richiede **sostituire soltanto il plugin Tor Vergata** da WordPress: non ripetere importazioni o cambiare tema. Con la build riuscita si convalida il pacchetto, non la rimozione del blocco sul browser reale di AlterVista.
+
+
+### Revisione fonti del 2 novembre 2026 (0.1.2)
+Sportello PTV studenti: contatto istituzionale sportellostudenti@uniroma2.it (pagina dedicata aggiornata dicembre 2025). Counselling del personale: confermato gratuito, email livigni@med.uniroma2.it (pagina dedicata agosto 2025). First Point: sede itinerante e sportello di mediazione culturale del lunedì 10–17 Medicina edificio B stanza 2B2, lingue italiano/inglese/farsi (portale sostenibilità, consultato novembre 2026). Pro-Ben: workshop, gruppi e supporto individuale, email indicata dalla pagina orientamento. Orari e accesso devono sempre essere ricontrollati prima del lancio. Il sito indica chiaramente indipendenza dall'Ateneo; nessuna affiliazione presunta. Il catalogo V7.18 del main non viene modificato.

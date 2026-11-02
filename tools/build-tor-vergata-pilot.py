@@ -58,19 +58,35 @@ def build(root,output):
             "source":r["fonte_ufficiale"],"checked_at":r.get("ultima_verifica")
         })
     assert len(university)==2
+    # Source reconciliation on 2026-11-02. Regional V7.18 data remain unchanged.
+    # Current, dedicated university pages take precedence over older generic summaries.
+    by_id={r["id"]:r for r in university}
+    by_id["UNI-004"].update({
+        "place":"Sede da confermare al momento dell'appuntamento",
+        "access":"Invia una email con il tuo recapito telefonico e la richiesta di un appuntamento.",
+        "source":"https://web.uniroma2.it/contenuto/sportello-ptv-per-studenti-e-studentesse",
+        "checked_at":"2026-11-02",
+    })
+    by_id["UNI-005"].update({
+        "price":"Gratuito", "email":"livigni@med.uniroma2.it",
+        "place":"Sede da concordare con il servizio",
+        "access":"Invia una email con il tuo recapito telefonico e la richiesta di un appuntamento.",
+        "source":"https://web.uniroma2.it/contenuto/counselling-psicologico-per-il-personale-dellateneo",
+        "checked_at":"2026-11-02",
+    })
     official="https://orientamento.uniroma2.it/conta-su-di-noi-servizi-di-supporto-agli-studenti/"
     university += [
         {"id":"TV-FIRSTPOINT","title":"First Point — Spazio Tutela e Ascolto",
          "audience":"Studentesse, studenti e comunità universitaria",
-         "summary":"Ascolto e orientamento nei casi di disagio, discriminazioni e difficoltà",
-         "price":"","place":"Sedi dell'Ateneo: vedere la pagina ufficiale",
-         "email":"","phone":"","access":"Verifica le modalità attuali sulla pagina dell'Ateneo",
-         "source":official,"checked_at":"2026-11-02"},
+         "summary":"Ascolto riservato, orientamento e percorsi di tutela in caso di disagio, discriminazioni o violenza. Non è un pronto soccorso.",
+         "price":"","place":"Sportelli in più facoltà e presso il Rettorato, con sedi e orari differenziati",
+         "email":"","phone":"","access":"Consulta le sedi per ciascun giorno. Mediazione culturale: lunedì 10:00–17:00, Facoltà di Medicina, edificio B, 2° piano, stanza 2B2; italiano, inglese e farsi. Confermare orari e accesso.",
+         "source":"https://sostenibile.uniroma2.it/sportelli-dedicati-dedicated-help-desks/","checked_at":"2026-11-02"},
         {"id":"TV-PROBEN","title":"Pro-Ben — Benessere degli studenti",
          "audience":"Studentesse e studenti",
-         "summary":"Iniziative per il benessere psicofisico e supporto psicologico",
+         "summary":"Workshop, gruppi di confronto e possibili percorsi individuali per il benessere psicofisico degli studenti.",
          "price":"","place":"Università di Roma Tor Vergata",
-         "email":"","phone":"","access":"Verifica le iniziative in corso sul sito ufficiale",
+         "email":"sportellostudenti@uniroma2.it","phone":"","access":"Per informazioni su iniziative e disponibilità, consulta la pagina ufficiale oppure contatta lo sportello indicato dall'Ateneo.",
          "source":official,"checked_at":"2026-11-02"}
     ]
     data={

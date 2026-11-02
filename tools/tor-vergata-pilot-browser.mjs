@@ -18,6 +18,9 @@ try {
     assert.equal(r.status(),200);
     await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("19 servizi"),{timeout:30000});
     assert.equal(await page.locator("#tv-university .tv-card").count(),4);
+    assert.equal(await page.locator('#tv-university a[href="mailto:livigni@med.uniroma2.it"]').count(),1);
+    assert.equal(await page.locator('#tv-university a[href="mailto:sportellostudenti@uniroma2.it"]').count(),2);
+    assert.match(await page.locator("#tv-university").innerText(),/stanza 2B2/);
     assert.match(await page.locator("#tv-title").innerText(),/salute mentale/i);
     assert.equal(await page.locator(".tv-results .tv-card").count(),19);
     const overflow=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth}));

@@ -47,12 +47,17 @@ jobs:
           python3 - <<'PY'
           import json,zipfile
           from pathlib import Path
-          p=Path("wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_1_FIX_OSM.zip")
+          p=Path("wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_2_FONTI_UNIVERSITARIE.zip")
           with zipfile.ZipFile(p) as z:
             assert z.testzip() is None
             assert "sml-tor-vergata/sml-tor-vergata.php" in z.namelist()
             d=json.loads(z.read("sml-tor-vergata/public/servizi.json"))
             assert len(d["clinical"])==52 and d["count_8km"]==19 and len(d["university"])==4
+            u={x["id"]:x for x in d["university"]}
+            assert u["UNI-004"]["email"]=="sportellostudenti@uniroma2.it"
+            assert u["UNI-005"]["email"]=="livigni@med.uniroma2.it"
+            assert "stanza 2B2" in u["TV-FIRSTPOINT"]["access"]
+            assert u["TV-PROBEN"]["email"]=="sportellostudenti@uniroma2.it"
             html=z.read("sml-tor-vergata/public/index.html").decode("utf-8")
             assert "/assets/vendor/leaflet/" not in html
             assert "/tor-vergata/assets/leaflet/" in html
@@ -83,7 +88,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: success()
         with:
-          name: MentaCampus-TorVergata-Plugin-WP-0-1-1-FIX-OSM
+          name: MentaCampus-TorVergata-Plugin-WP-0-1-2-FONTI
           path: |
             wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_1_FIX_OSM.zip
             wordpress-plugin-dist/manifest-microsito.json
