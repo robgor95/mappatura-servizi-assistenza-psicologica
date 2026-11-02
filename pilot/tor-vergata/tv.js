@@ -127,7 +127,7 @@ async function load(){
    const types=[...new Set(state.clinical.map(r=>r.type).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"it"));
    for(const type of types){const o=document.createElement("option");o.value=type;o.textContent=type;$("tv-type").append(o);}
    if(window.L){
-     state.map=window.L.map("tv-map",{zoomControl:true,scrollWheelZoom:false,attributionControl:false});
+     state.map=window.L.map("tv-map",{zoomControl:true,scrollWheelZoom:false,attributionControl:true});
      state.map.setView([state.center.lat,state.center.lon],12);
    }else $("tv-map").textContent="Mappa non disponibile: consulta l'elenco dei servizi.";
    render();

@@ -67,11 +67,42 @@ jobs:
                   if p.is_file(): archive.write(p,p.relative_to(out).as_posix())
           print('V7.18 ZIP preparato:',len(copied),'file pubblici')
           PY
+      - name: Verifica sintassi e integrità ZIP WordPress
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check pilot/tor-vergata/tv.js
+          php -l wordpress/sml-lazio/functions.php
+          python3 - <<'PY'
+          import json, zipfile
+          from pathlib import Path
+          z=Path("wordpress-dist/sml-lazio-menta-campus-tor-vergata-beta.zip")
+          assert z.is_file() and z.stat().st_size > 200000, "Tema ZIP mancante o incompleto"
+          with zipfile.ZipFile(z) as archive:
+              assert archive.testzip() is None
+              names=set(archive.namelist())
+              required={
+                "sml-lazio/functions.php",
+                "sml-lazio/style.css",
+                "sml-lazio/legacy/index.html",
+                "sml-lazio/legacy/servizi.html",
+                "sml-lazio/legacy/tor-vergata/index.html",
+                "sml-lazio/legacy/tor-vergata/tv.css",
+                "sml-lazio/legacy/tor-vergata/tv.js",
+                "sml-lazio/legacy/tor-vergata/servizi.json"
+              }
+              assert required.issubset(names), sorted(required-names)
+              data=json.loads(archive.read("sml-lazio/legacy/tor-vergata/servizi.json"))
+              assert len(data["clinical"])==52
+              assert sum(x["distance_km"]<=8 for x in data["clinical"])==19
+              assert len(data["university"])==4
+          print("ZIP WordPress integro:",z.stat().st_size,"bytes / 19 servizi entro 8 km")
+          PY
       - name: Pubblica ZIP e manifest come artefatto GitHub Actions
         uses: actions/upload-artifact@v4
         with:
           name: sml-tema-ponte-pilota-tor-vergata
           path: |
-            wordpress-dist/sml-lazio-tema-ponte-staging.zip
+            wordpress-dist/sml-lazio-menta-campus-tor-vergata-beta.zip
             wordpress-dist/manifest.json
           retention-days: 14
