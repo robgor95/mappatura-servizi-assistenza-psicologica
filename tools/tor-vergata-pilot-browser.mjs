@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
-const URL="http://127.0.0.1:8765/tor-vergata/";
+const BASE_URL="http://127.0.0.1:8765/tor-vergata/";
 const OUT="/tmp/tor-vergata-pilot-browser";
 await fs.mkdir(OUT,{recursive:true});
 const browser=await chromium.launch({headless:true});
@@ -14,7 +14,7 @@ try {
     page.on("pageerror",e=>errors.push(e.message));
     page.on("request",req=>{if(!req.url().startsWith("http://127.0.0.1:8765/"))external.push(req.url());});
     page.setDefaultTimeout(25000);
-    const r=await page.goto(URL,{waitUntil:"networkidle",timeout:40000});
+    const r=await page.goto(BASE_URL,{waitUntil:"networkidle",timeout:40000});
     assert.equal(r.status(),200);
     await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("19 servizi"),{timeout:30000});
     assert.equal(await page.locator("#tv-university .tv-card").count(),4);
