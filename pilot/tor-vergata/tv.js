@@ -144,11 +144,30 @@ $("tv-filter").addEventListener("submit",e=>{e.preventDefault();render();});
 $("tv-reset").addEventListener("click",()=>{$("tv-q").value="";$("tv-radius").value="8";$("tv-type").value="";render();});
 $("tv-tiles").addEventListener("click",()=>{
  if(!state.map||!window.L)return;
+ const message=$("tv-map-alert");
+ if(message){message.hidden=true;message.textContent="";}
  if(state.tiles){state.map.removeLayer(state.tiles);state.tiles=null;$("tv-tiles").textContent="Carica sfondo OpenStreetMap";return;}
- // External tiles are requested only following this explicit click.
- state.tiles=window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
-   attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',maxZoom:18
- }).addTo(state.map);
+ // Respect OSMF tile usage policy: correct single hostname, origin-only
+ // cross-site referrer, visible attribution, and no prefetch/cache bypass.
+ // Request only after a deliberate user click. Browser HTTP cache is kept.
+ let errors=0;
+ const layer=window.L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
+   attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+   referrerPolicy:"strict-origin-when-cross-origin",
+   maxZoom:18,
+   updateWhenIdle:true
+ });
+ layer.on("tileerror",()=>{
+   if(++errors<3||state.tiles!==layer)return;
+   state.map.removeLayer(layer);
+   state.tiles=null;
+   $("tv-tiles").textContent="Riprova sfondo OpenStreetMap";
+   if(message){
+     message.textContent="Lo sfondo non è disponibile. I punti restano visibili. Puoi aprire il collegamento OpenStreetMap qui sotto.";
+     message.hidden=false;
+   }
+ });
+ state.tiles=layer.addTo(state.map);
  $("tv-tiles").textContent="Nascondi lo sfondo OpenStreetMap";
 });
 load();

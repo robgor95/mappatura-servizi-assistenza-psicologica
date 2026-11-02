@@ -44,7 +44,7 @@ def build(root: Path, destination: Path) -> None:
     for image in ('layers.png','layers-2x.png','marker-icon.png','marker-icon-2x.png','marker-shadow.png'):
         shutil.copyfile(source/'vendor'/'leaflet'/'images'/image, public/'assets'/'leaflet'/'images'/image)
     (public/'.htaccess').write_text('<IfModule mod_authz_core.c>\nRequire all denied\n</IfModule>\n<IfModule !mod_authz_core.c>\nDeny from all\n</IfModule>\n',encoding='ascii')
-    output = destination / 'MentaCampus_TorVergata_Plugin_WordPress_0_1_Beta.zip'
+    output = destination / 'MentaCampus_TorVergata_Plugin_WordPress_0_1_1_FIX_OSM.zip'
     if output.exists(): output.unlink()
     with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for f in sorted(stage.rglob('*')):
@@ -60,7 +60,7 @@ def build(root: Path, destination: Path) -> None:
         assert len(json.loads(z.read(f'{PLUGIN}/public/servizi.json'))['clinical'])==52
     manifest={
         'status':'STAGING ONLY, NON INDICIZZARE',
-        'plugin_name':PLUGIN,'plugin_version':'0.1.0-beta','wp_path':'/tor-vergata/',
+        'plugin_name':PLUGIN,'plugin_version':'0.1.1-beta','wp_path':'/tor-vergata/',
         'source_branch':'pilot/tor-vergata-wordpress',
         'source_git_sha':os.environ.get('GITHUB_SHA','local-test'),
         'source_version':'7.18',

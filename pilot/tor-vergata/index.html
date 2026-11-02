@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<meta name="referrer" content="no-referrer">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#0d655c">
 <title>Menta Campus — Tor Vergata | Orientamento al supporto</title>
 <meta name="description" content="Una guida indipendente per trovare ascolto nell'Università di Roma Tor Vergata e conoscere i servizi di salute mentale nelle vicinanze.">
@@ -70,7 +70,9 @@
         <div class="tv-map-head"><h3 id="tv-map-title">Mappa dei presidi</h3><p>Posizioni indicative, ingressi non verificati.</p></div>
         <div id="tv-map" class="tv-map" aria-label="Mappa navigabile del territorio e dei servizi"></div>
         <button type="button" class="tv-button subtle" id="tv-tiles">Carica sfondo OpenStreetMap</button>
-        <p class="tv-note">La mappa funziona senza inviare dati della tua visita a OpenStreetMap. Lo sfondo cartografico esterno viene caricato solo su tua scelta.</p>
+        <p class="tv-note" id="tv-map-alert" role="status" hidden></p>
+        <p class="tv-note">I segnaposto funzionano anche senza sfondo. Se lo attivi, il browser contatta OpenStreetMap e comunica l'origine del sito e l'area cartografica richiesta, oltre alle normali informazioni di rete. Il testo che inserisci nella ricerca non viene inviato a OpenStreetMap.</p>
+        <p class="tv-note">Se lo sfondo rimane bloccato, <a href="https://www.openstreetmap.org/?mlat=41.852760&amp;mlon=12.628480#map=13/41.852760/12.628480" target="_blank" rel="noopener noreferrer">apri la mappa direttamente su OpenStreetMap</a>.</p>
       </aside>
     </div>
     <div class="tv-note">Non tutte le strutture del Lazio dispongono di coordinate utilizzabili. I servizi senza posizione verificabile non sono inseriti nel filtro per distanza. I CSM e gli altri servizi sanitari possono prevedere criteri di competenza territoriale; verifica sempre il percorso d'accesso.</div>

@@ -40,6 +40,26 @@ try {
     await page.waitForTimeout(300);
     assert((await page.locator(".tv-results .tv-card").count())>=1,"name search empty");
     assert.equal(external.length,0,"Unexpected third-party requests");
+    assert.equal(await page.locator('meta[name="referrer"]').getAttribute("content"),"strict-origin-when-cross-origin");
+    const tiles=[];
+    const png=Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/D1sAAAAASUVORK5CYII=","base64");
+    await page.route("https://tile.openstreetmap.org/**",async route=>{
+      const headers=await route.request().allHeaders();
+      tiles.push({url:route.request().url(),referer:headers.referer||""});
+      await route.fulfill({status:200,contentType:"image/png",body:png,headers:{"Cache-Control":"public, max-age=604800"}});
+    });
+    await page.locator("#tv-tiles").click();
+    await page.waitForFunction(()=>document.querySelectorAll("#tv-map img.leaflet-tile").length>0);
+    await page.waitForTimeout(350);
+    assert(tiles.length>0,"No Leaflet OSM requests on user click");
+    assert(tiles.every(t=>new URL(t.url).hostname==="tile.openstreetmap.org"),"Incorrect OSM tile host");
+    assert(tiles.every(t=>t.referer==="http://127.0.0.1:8765/"),"Expected origin-only Referer: "+JSON.stringify(tiles.slice(0,2)));
+    const imagePolicy=await page.locator("#tv-map img.leaflet-tile").first().evaluate(img=>img.referrerPolicy);
+    assert.equal(imagePolicy,"strict-origin-when-cross-origin");
+    assert((await page.locator("#tv-map .leaflet-control-attribution").innerText()).includes("OpenStreetMap"),"OSM attribution missing");
+    assert(external.every(u=>new URL(u).hostname==="tile.openstreetmap.org"),"Non-OSM third-party requests: "+JSON.stringify(external));
+    await page.locator("#tv-tiles").click();
+    assert.equal(await page.locator("#tv-map img.leaflet-tile").count(),0);
     assert.deepEqual(errors,[],"Uncaught JS errors");
     results.push({width,passed:true,university:4,clinicalAt8km:19,clinicalAt5km:8,clinicalAt12km:52});
     console.log("PASS Tor Vergata browser",width,"px: 4 university, 19/8km, 8/5km, 52/12km, CSM/search, no external requests");
