@@ -43,3 +43,9 @@ Poiché la tile riporta un blocco generale anziché soltanto «Referer is requir
 - https://leafletjs.com/reference.html#tilelayer-referrerpolicy
 
 **Stato:** pronta correzione del plugin; non installata automaticamente in WordPress perché non è disponibile una connessione amministrativa autenticata in questa chat.
+
+## Conferma utente — 2 novembre 2026
+
+L'utente conferma in chat che, dopo l'installazione della correzione, lo **sfondo OpenStreetMap su Menta Campus Tor Vergata funziona**. Il precedente errore 403 è pertanto **risolto nell'ambiente e nel browser testati dall'utente**. Questa conferma è una verifica funzionale riportata dal proprietario, non un nuovo collaudo indipendente di tutti i browser o delle politiche future del fornitore di tile.
+
+**Stato incidente:** chiuso per il problema specifico dello sfondo OSM. **Stato progetto:** continua come staging WordPress con `noindex`; non implica approvazione al lancio pubblico né completamento di privacy, verifica delle fonti, backup e workflow redazionale. Conservare invariati GitHub `main` e la produzione Cloudflare.
