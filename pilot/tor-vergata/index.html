@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0d655c">
+<title>Menta Campus — Tor Vergata | Orientamento al supporto</title>
+<meta name="description" content="Una guida indipendente per trovare ascolto nell'Università di Roma Tor Vergata e conoscere i servizi di salute mentale nelle vicinanze.">
+<link rel="canonical" href="https://mappamenta.altervista.org/tor-vergata/">
+<link rel="icon" href="/assets/menta/menta-base-v7-10-1.webp" type="image/webp">
+<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="/tor-vergata/tv.css">
+<script defer src="/assets/vendor/leaflet/leaflet.js"></script>
+<script defer src="/tor-vergata/tv.js"></script>
+</head>
+<body>
+<a class="tv-skip" href="#contenuto">Salta al contenuto</a>
+<div class="tv-emergency">Emergenza o pericolo immediato: <a href="tel:112">112</a> <span aria-hidden="true">·</span> Sanità non urgente nel Lazio: <a href="tel:116117">116117</a></div>
+<header class="tv-top">
+  <a class="tv-logo" href="/tor-vergata/" aria-label="Menta Campus Tor Vergata, homepage">
+    <img src="/assets/menta/menta-base-v7-10-1.webp" alt="" width="60" height="60">
+    <span><strong>Menta Campus</strong><small>Tor Vergata e dintorni</small></span>
+  </a>
+  <nav aria-label="Navigazione microsito">
+    <a href="#ascolto">Ascolto in Ateneo</a>
+    <a href="#vicino">Servizi vicini</a>
+    <a href="#mappa">Mappa</a>
+  </nav>
+</header>
+<main id="contenuto" tabindex="-1">
+  <div class="tv-disclaimer"><strong>Progetto informativo indipendente.</strong> Non è il sito ufficiale dell'Università di Roma Tor Vergata, del Policlinico o di una ASL. Le fonti ufficiali sono collegate nelle schede.</div>
+  <section class="tv-hero" aria-labelledby="tv-title">
+    <div class="tv-hero-copy">
+      <p class="tv-kicker">Un punto di partenza vicino a te</p>
+      <h1 id="tv-title">La salute mentale, <em>anche all'università.</em></h1>
+      <p>Se studi o lavori a Tor Vergata, puoi partire dai servizi di ascolto dell'Ateneo oppure esplorare quelli documentati nel territorio circostante.</p>
+      <div class="tv-buttons"><a class="tv-button primary" href="#ascolto">Parlare con qualcuno</a><a class="tv-button subtle" href="#vicino">Esplora i servizi vicini</a></div>
+    </div>
+    <div class="tv-hero-figure"><img src="/assets/menta/menta-base-v7-10-1.webp" width="260" height="260" alt="Menta, mascotte del progetto"><p>Menta aiuta a orientarsi. Non formula diagnosi.</p></div>
+  </section>
+  <section class="tv-route" aria-labelledby="percorsi-title">
+    <h2 id="percorsi-title">Da dove vuoi iniziare?</h2>
+    <div class="tv-route-grid">
+      <a href="#ascolto"><span>01 · Studenti</span><strong>Ho bisogno di ascolto</strong><p>Sportello PTV e opportunità universitarie</p></a>
+      <a href="#vicino"><span>02 · Territorio</span><strong>Cerco un servizio vicino</strong><p>CSM, SerD e altri presidi documentati</p></a>
+      <a href="#sicurezza"><span>03 · Urgenza</span><strong>Non so chi contattare</strong><p>Numeri utili e quando chiedere aiuto immediato</p></a>
+    </div>
+  </section>
+  <section class="tv-section" id="ascolto" aria-labelledby="ascolto-title">
+    <div class="tv-section-top"><p class="tv-kicker">Servizi dedicati all'Ateneo</p><h2 id="ascolto-title">Ascolto a Tor Vergata</h2><p>Qui sono indicati sportelli, iniziative e collegamenti ufficiali dell'Ateneo. Non tutti sono strutture cliniche e non hanno gli stessi destinatari.</p></div>
+    <div class="tv-university" id="tv-university"><p>Caricamento dei riferimenti ufficiali…</p></div>
+    <p class="tv-note">Verifica sempre sul sito ufficiale se il servizio è attivo, chi può accedere e come prendere appuntamento.</p>
+  </section>
+  <section class="tv-section tv-local" id="vicino" aria-labelledby="vicino-title">
+    <div class="tv-section-top"><p class="tv-kicker">La rete territoriale</p><h2 id="vicino-title">I servizi nei dintorni</h2><p>La distanza è indicativa, calcolata in linea d'aria dal Rettorato in Via Cracovia 50; non rappresenta il percorso da compiere, l'ingresso effettivo o il diritto di accesso.</p></div>
+    <form class="tv-filters" id="tv-filter" role="search">
+      <label for="tv-q">Cerca un servizio<input type="search" id="tv-q" placeholder="CSM, comune, indirizzo…" autocomplete="off"></label>
+      <label for="tv-radius">Distanza dal Rettorato<select id="tv-radius"><option value="5">Entro 5 km</option><option value="8" selected>Entro 8 km</option><option value="12">Entro 12 km</option></select></label>
+      <label for="tv-type">Tipo di servizio<select id="tv-type"><option value="">Tutti i servizi</option></select></label>
+      <button class="tv-button subtle" id="tv-reset" type="button">Azzera filtri</button>
+    </form>
+    <div class="tv-area">
+      <div>
+        <p class="tv-count" id="tv-count" aria-live="polite">Caricamento dei servizi…</p>
+        <div class="tv-results" id="tv-results"></div>
+      </div>
+      <aside id="mappa" class="tv-map-panel" aria-labelledby="tv-map-title">
+        <div class="tv-map-head"><h3 id="tv-map-title">Mappa dei presidi</h3><p>Posizioni indicative, ingressi non verificati.</p></div>
+        <div id="tv-map" class="tv-map" aria-label="Mappa navigabile del territorio e dei servizi"></div>
+        <button type="button" class="tv-button subtle" id="tv-tiles">Carica sfondo OpenStreetMap</button>
+        <p class="tv-note">La mappa funziona senza inviare dati della tua visita a OpenStreetMap. Lo sfondo cartografico esterno viene caricato solo su tua scelta.</p>
+      </aside>
+    </div>
+    <div class="tv-note">Non tutte le strutture del Lazio dispongono di coordinate utilizzabili. I servizi senza posizione verificabile non sono inseriti nel filtro per distanza. I CSM e gli altri servizi sanitari possono prevedere criteri di competenza territoriale; verifica sempre il percorso d'accesso.</div>
+  </section>
+  <section class="tv-section tv-safety" id="sicurezza" aria-labelledby="safety-title">
+    <p class="tv-kicker">Quando serve aiuto</p><h2 id="safety-title">C'è un'emergenza?</h2>
+    <p>Se una persona è in pericolo immediato, chiama il <a href="tel:112">112</a>. Per l'assistenza sanitaria non urgente nel Lazio è disponibile il <a href="tel:116117">116117</a> secondo le modalità del servizio. Gli sportelli universitari non sostituiscono il soccorso.</p>
+  </section>
+</main>
+<footer class="tv-footer">
+  <p><strong>Menta Campus — Tor Vergata</strong> · Pilota informativo indipendente</p>
+  <p>Fonti: Università di Roma Tor Vergata, catalogo servizi V7.18 e geografia V7.16 di MappaMenta. Contatti e accesso vanno sempre confermati presso il servizio.</p>
+  <p><a href="/metodo.html">Metodo e fonti</a> · <a href="/privacy.html">Privacy</a> · <a href="/">MappaMenta — portale generale</a></p>
+</footer>
+</body>
+</html>
