@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+"""Build Tor Vergata data using the V7.18 base, preserving stable IDs and provenance.
+Distances are straight-line only. Never infer entrances, coverage or eligibility.
+"""
+import json, math, sys
+from pathlib import Path
+CAMPUS_LAT,CAMPUS_LON = 41.852760,12.628480
+MAX_KM=12.0
+def km(lat,lon):
+    r=math.pi/180.0
+    x=math.sin((lat-CAMPUS_LAT)*r/2)**2+math.cos(lat*r)*math.cos(CAMPUS_LAT*r)*math.sin((lon-CAMPUS_LON)*r/2)**2
+    return 12742.0*math.asin(min(1.0,math.sqrt(x)))
+def links(items):
+    return list(dict.fromkeys(x for x in items if isinstance(x,str) and x.startswith("https://")))[:6]
+def clean(s):
+    v=str(s or "").strip()
+    return "" if v.lower().startswith(("nd —","non documentat","non indicat")) else v
+def build(root,output):
+    root,output=Path(root),Path(output)
+    catalog=json.loads((root/"data/editorial-catalog-v7-18.json").read_text(encoding="utf-8"))
+    geo=json.loads((root/"data/presidi_geo_v7_16.json").read_text(encoding="utf-8"))
+    universities=json.loads((root/"data/universita_v7_5.json").read_text(encoding="utf-8"))
+    assert len(catalog["records"])==680 and catalog["clinical"]==443 and catalog["support"]==237
+    assert geo["summary"]["located_after"]==379
+    nearby=[]
+    for r in catalog["records"]:
+        if r.get("entity")!="clinical": continue
+        p=geo["records"].get(r["key"])
+        f=r.get("fields") or {}
+        if not p or not isinstance(p.get("lat"),(int,float)) or not isinstance(p.get("lng"),(int,float)):continue
+        if p.get("source_address")!=f.get("address") or p.get("source_town")!=f.get("town"):continue
+        if p.get("quality") not in ("A","B","C") or p.get("precision") not in ("address","street","building","approximate"):continue
+        if not str(p.get("source_url","")).startswith("https://"):continue
+        d=km(p["lat"],p["lng"])
+        if d>MAX_KM:continue
+        nearby.append({
+            "key":r["key"],"name":clean(f.get("name")),"type":clean(f.get("type")),
+            "subtype":clean(f.get("subtype")),"asl":clean(r.get("asl")),
+            "town":clean(f.get("town")),"address":clean(f.get("address")),
+            "phone":clean(f.get("phone")),"email":clean(f.get("email")),"website":clean(f.get("website")),
+            "hours":clean(f.get("hours")),"access":clean(f.get("access")),"latitude":p["lat"],
+            "longitude":p["lng"],"distance_km":round(d,2),"quality":p["quality"],
+            "precision":p["precision"],"entrance_verified":False,
+            "sources":links((r.get("sources") or [])+[p["source_url"]])
+        })
+    nearby.sort(key=lambda x:(x["distance_km"],x["name"]))
+    assert len(nearby)==52,f"within 12 km: {len(nearby)}"
+    assert sum(x["distance_km"]<=8 for x in nearby)==19
+    assert len({x["key"] for x in nearby})==len(nearby)
+    university=[]
+    for r in universities["records"]:
+        if r.get("id") not in ("UNI-004","UNI-005"):continue
+        university.append({
+            "id":r["id"],"title":r["servizio"],"audience":r["destinatari"],
+            "summary":r["tipologia"],"price":clean(r.get("gratuita_costo")),
+            "place":clean(r.get("sede")),"email":clean(r.get("email")),
+            "phone":clean(r.get("telefono")),"access":clean(r.get("prenotazione")),
+            "source":r["fonte_ufficiale"],"checked_at":r.get("ultima_verifica")
+        })
+    assert len(university)==2
+    official="https://orientamento.uniroma2.it/conta-su-di-noi-servizi-di-supporto-agli-studenti/"
+    university += [
+        {"id":"TV-FIRSTPOINT","title":"First Point — Spazio Tutela e Ascolto",
+         "audience":"Studentesse, studenti e comunità universitaria",
+         "summary":"Ascolto e orientamento nei casi di disagio, discriminazioni e difficoltà",
+         "price":"","place":"Sedi dell'Ateneo: vedere la pagina ufficiale",
+         "email":"","phone":"","access":"Verifica le modalità attuali sulla pagina dell'Ateneo",
+         "source":official,"checked_at":"2026-11-02"},
+        {"id":"TV-PROBEN","title":"Pro-Ben — Benessere degli studenti",
+         "audience":"Studentesse e studenti",
+         "summary":"Iniziative per il benessere psicofisico e supporto psicologico",
+         "price":"","place":"Università di Roma Tor Vergata",
+         "email":"","phone":"","access":"Verifica le iniziative in corso sul sito ufficiale",
+         "source":official,"checked_at":"2026-11-02"}
+    ]
+    data={
+       "schema_version":1,"pilot":"tor-vergata","source_branch":"main",
+       "source_version":"7.18",
+       "source_baselines":["data/editorial-catalog-v7-18.json","data/presidi_geo_v7_16.json","data/universita_v7_5.json"],
+       "center":{"name":"Rettorato Tor Vergata — Via Cracovia 50","lat":CAMPUS_LAT,"lon":CAMPUS_LON,
+                 "source":"https://www.turismoroma.it/it/luoghi/biblioteca-dellarea-giuridica-universit%C3%A0-tor-vergata"},
+       "max_radius_km":MAX_KM,"default_radius_km":8,"count_8km":19,"count_12km":52,
+       "limits":"Distanza in linea d'aria dal Rettorato, non dal singolo dipartimento. Localizzazioni indicative e ingressi non verificati. Servizi senza coordinate esclusi dal filtro geografico.",
+       "clinical":nearby,"university":university
+    }
+    output.parent.mkdir(parents=True,exist_ok=True)
+    output.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print("Tor Vergata: ",len(nearby),"nearby clinical services; 19 within 8km;",len(university),"university resources")
+if __name__=="__main__":
+    if len(sys.argv)!=3:raise SystemExit("usage: build-tor-vergata-pilot.py REPOSITORY OUTPUT_JSON")
+    build(sys.argv[1],sys.argv[2])
