@@ -1,0 +1,90 @@
+name: Tor Vergata - plugin WordPress per MappaMenta
+on:
+  push:
+    branches: [pilot/tor-vergata-wordpress]
+    paths:
+      - 'wordpress/sml-tor-vergata/**'
+      - 'tools/package-tor-vergata-plugin.py'
+      - 'tools/build-tor-vergata-pilot.py'
+      - 'tools/tor-vergata-pilot-browser.mjs'
+      - 'pilot/tor-vergata/**'
+      - '.github/workflows/build-tor-vergata-plugin.yml'
+      - 'data/editorial-catalog-v7-18.json'
+      - 'data/presidi_geo_v7_16.json'
+      - 'data/universita_v7_5.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build the plugin from V7.18 versioned data
+        run: python3 tools/package-tor-vergata-plugin.py . wordpress-plugin-dist
+      - name: Check PHP, JS, route isolation and ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          php -l wordpress-plugin-dist/sml-tor-vergata/sml-tor-vergata.php
+          node --check wordpress-plugin-dist/sml-tor-vergata/public/tv.js
+          php -r '
+          define("ABSPATH", "/");
+          function add_action($hook,$callback,$priority=10) {}
+          require "wordpress-plugin-dist/sml-tor-vergata/sml-tor-vergata.php";
+          foreach(["/tor-vergata/","/tor-vergata/servizi.json","/tor-vergata/assets/leaflet/leaflet.js"] as $p) {
+            if (sml_tv_route_spec($p)===null) exit(2);
+          }
+          foreach(["/","/servizi.html","/wp-admin/","/tor-vergata/../wp-config.php","/tor-vergata/private.txt"] as $p) {
+            if (sml_tv_route_spec($p)!==null) exit(3);
+          }
+          echo "PHP route allowlist OK\n";
+          '
+          python3 - <<'PY'
+          import json,zipfile
+          from pathlib import Path
+          p=Path("wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_Beta.zip")
+          with zipfile.ZipFile(p) as z:
+            assert z.testzip() is None
+            assert "sml-tor-vergata/sml-tor-vergata.php" in z.namelist()
+            d=json.loads(z.read("sml-tor-vergata/public/servizi.json"))
+            assert len(d["clinical"])==52 and d["count_8km"]==19 and len(d["university"])==4
+            html=z.read("sml-tor-vergata/public/index.html").decode("utf-8")
+            assert "/assets/vendor/leaflet/" not in html
+            assert "/tor-vergata/assets/leaflet/" in html
+          print("Plugin ZIP and clinical data validated")
+          PY
+      - name: Browser QA with all standalone plugin assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/tor-vergata-test/tor-vergata /tmp/menta-campus-toolchain
+          cp -a wordpress-plugin-dist/sml-tor-vergata/public/. /tmp/tor-vergata-test/tor-vergata/
+          cp tools/editorial-toolchain/package.json tools/editorial-toolchain/package-lock.json /tmp/menta-campus-toolchain/
+          npm ci --prefix /tmp/menta-campus-toolchain
+          ln -s /tmp/menta-campus-toolchain/node_modules node_modules
+          ./node_modules/.bin/playwright install --with-deps chromium
+          python3 -m http.server 8765 --directory /tmp/tor-vergata-test >/tmp/tor-vergata-qa-server.log 2>&1 &
+          server=$!
+          trap 'kill "$server" || true' EXIT
+          node tools/tor-vergata-pilot-browser.mjs
+      - name: Save plugin ZIP and manifest
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: MentaCampus-TorVergata-Plugin-WP-0-1-Beta
+          path: |
+            wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_Beta.zip
+            wordpress-plugin-dist/manifest-microsito.json
+          retention-days: 21
+      - name: Preserve browser QA evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: MentaCampus-TorVergata-Plugin-QA
+          path: /tmp/tor-vergata-pilot-browser
+          retention-days: 7
