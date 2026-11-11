@@ -7,6 +7,7 @@ on:
       - 'tools/package-tor-vergata-plugin.py'
       - 'tools/build-tor-vergata-pilot.py'
       - 'tools/tor-vergata-pilot-browser.mjs'
+      - 'tools/test-tor-vergata-editorial.php'
       - 'pilot/tor-vergata/**'
       - '.github/workflows/build-tor-vergata-plugin.yml'
       - 'data/editorial-catalog-v7-18.json'
