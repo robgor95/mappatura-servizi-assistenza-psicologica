@@ -92,7 +92,7 @@ jobs:
           cp tools/editorial-toolchain/package.json tools/editorial-toolchain/package-lock.json /tmp/menta-campus-toolchain/
           npm ci --prefix /tmp/menta-campus-toolchain
           ln -s /tmp/menta-campus-toolchain/node_modules node_modules
-          ./node_modules/.bin/playwright install --with-deps chromium
+          ./node_modules/.bin/playwright install chromium
           python3 -m http.server 8765 --directory /tmp/tor-vergata-test >/tmp/tor-vergata-qa-server.log 2>&1 &
           server=$!
           trap 'kill "$server" || true' EXIT
