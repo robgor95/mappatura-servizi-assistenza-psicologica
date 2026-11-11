@@ -114,7 +114,7 @@ function smltv_seed(){
            'post_title'=>sanitize_text_field($row['title']),'post_author'=>get_current_user_id()),true);
         if(is_wp_error($post_id)||!$post_id) continue;
         update_post_meta($post_id,'_smltv_key',sanitize_key($row['id']));
-        update_post_meta($post_id,'_smltv_live',wp_json_encode($row,JSON_UNESCAPED_UNICODE));
+        update_post_meta($post_id,'_smltv_live',wp_slash(wp_json_encode($row,JSON_UNESCAPED_UNICODE)));
         update_post_meta($post_id,'_smltv_version',1);
         update_post_meta($post_id,'_smltv_source_seed','V7.18: GitHub main; Tor Vergata pilot 0.1.3');
     }
@@ -157,8 +157,8 @@ function smltv_audit($verb,$key,$old,$new){
     if(is_wp_error($p)||!$p)return;
     update_post_meta($p,'_smltv_action',$verb);
     update_post_meta($p,'_smltv_target',$key);
-    update_post_meta($p,'_smltv_before',wp_json_encode($old));
-    update_post_meta($p,'_smltv_after',wp_json_encode($new));
+    update_post_meta($p,'_smltv_before',wp_slash(wp_json_encode($old)));
+    update_post_meta($p,'_smltv_after',wp_slash(wp_json_encode($new)));
     update_post_meta($p,'_smltv_actor',get_current_user_id());
 }
 function smltv_validate_entry($src,$is_new=false) {
@@ -219,7 +219,7 @@ function smltv_admin_action(){
           'post_title'=>'Proposta '.($target==='new'?'nuova':$target),
           'post_author'=>get_current_user_id()),true);
         if(is_wp_error($p)||!$p)smltv_redirect('Impossibile salvare la proposta',true);
-        update_post_meta($p,'_smltv_payload',wp_json_encode($payload,JSON_UNESCAPED_UNICODE));
+        update_post_meta($p,'_smltv_payload',wp_slash(wp_json_encode($payload,JSON_UNESCAPED_UNICODE)));
         update_post_meta($p,'_smltv_state','submitted');
         smltv_audit('proposed',$target,null,array('proposal_id'=>$p));
         smltv_redirect('Proposta inviata: i dati pubblici non sono cambiati');
@@ -260,7 +260,7 @@ function smltv_admin_action(){
             'post_title'=>$incoming['title'],'post_author'=>$user),true);
         if(is_wp_error($published)||!$published)smltv_redirect('Pubblicazione fallita',true);
         update_post_meta($published,'_smltv_key',sanitize_key($target));
-        update_post_meta($published,'_smltv_live',wp_json_encode($incoming,JSON_UNESCAPED_UNICODE));
+        update_post_meta($published,'_smltv_live',wp_slash(wp_json_encode($incoming,JSON_UNESCAPED_UNICODE)));
         update_post_meta($published,'_smltv_version',1);
         $old=null;
     }else{
@@ -270,7 +270,7 @@ function smltv_admin_action(){
         $published=$old['wp_id'];
         $raw=(string)get_post_meta($published,'_smltv_live',true);
         $incoming['id']=$target;
-        $updated=update_post_meta($published,'_smltv_live',wp_json_encode($incoming,JSON_UNESCAPED_UNICODE),$raw);
+        $updated=update_post_meta($published,'_smltv_live',wp_slash(wp_json_encode($incoming,JSON_UNESCAPED_UNICODE)),wp_slash($raw));
         if(!$updated)smltv_redirect('Aggiornamento non riuscito o versione cambiata',true);
         update_post_meta($published,'_smltv_version',(int)$old['version']+1);
     }
