@@ -55,9 +55,14 @@ function smltv_deactivate(){
 register_deactivation_hook(SMLTV_PLUGIN_FILE,'smltv_deactivate');
 
 function smltv_private_posts($type,$limit=200) {
-    return get_posts(array('post_type'=>$type,'post_status'=>'private',
-        'posts_per_page'=>$limit,'orderby'=>'ID','order'=>'ASC',
-        'suppress_filters'=>true));
+    // Explicitly access only plugin-owned CPTs: public REST users must read
+    // approved university records, never drafts or editorial identities.
+    if(!in_array($type,array('smltv_entry','smltv_proposal','smltv_event'),true))return array();
+    global $wpdb;
+    $sql=$wpdb->prepare("SELECT ID FROM {$wpdb->posts} WHERE post_type=%s AND post_status='private' ORDER BY ID ASC LIMIT %d",
+        $type, max(1,min(1000,(int)$limit)));
+    $ids=$wpdb->get_col($sql);
+    return array_values(array_filter(array_map('get_post',array_map('intval',(array)$ids))));
 }
 function smltv_key_of($post_id){return (string)get_post_meta($post_id,'_smltv_key',true);}
 function smltv_entries() {
