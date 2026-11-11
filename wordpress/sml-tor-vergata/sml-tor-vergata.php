@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Menta Campus - Tor Vergata (microsito)
  * Description: Microsito informativo Tor Vergata in una sezione autonoma dello stesso WordPress MappaMenta. Nessuna nuova installazione, account o database.
- * Version: 0.1.2-beta
+ * Version: 0.1.3-beta
  * Requires at least: 6.4
  * Requires PHP: 8.0
  * Author: Progetto MappaMenta

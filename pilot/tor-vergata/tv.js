@@ -28,13 +28,16 @@ function links(parent,arr){
 }
 function uniCard(r){
  const article=textNode("article","","tv-card");
- article.append(textNode("span",r.price==="Gratuito"?"Gratuito · Ateneo":"Risorsa dell'Ateneo","tv-tag"));
+ const audience=r.id==="UNI-005"?"Per il personale":r.id==="TV-FIRSTPOINT"?"Per la comunità universitaria":"Per studenti";
+ article.append(textNode("span",audience+(r.price==="Gratuito"?" · Gratuito":""),"tv-tag"));
  article.append(textNode("h3",r.title));
  article.append(textNode("p",r.summary));
  article.append(textNode("p","Per chi: "+r.audience));
  if(r.place) article.append(textNode("p","Sede: "+r.place));
  if(r.access) article.append(textNode("p","Accesso: "+r.access));
- links(article,[emailLink(r.email),phoneLink(r.phone),link("Pagina ufficiale",r.source)]);
+ // Keep the contact address readable even on devices without a configured mail app.
+ if(r.email) article.append(textNode("p","Email: "+r.email,"tv-contact"));
+ links(article,[emailLink(r.email),phoneLink(r.phone),link("Apri la pagina ufficiale",r.source)]);
  return article;
 }
 function clinicCard(r){

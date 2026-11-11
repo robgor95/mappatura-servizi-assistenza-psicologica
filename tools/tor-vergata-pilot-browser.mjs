@@ -17,8 +17,12 @@ try {
     const r=await page.goto(BASE_URL,{waitUntil:"networkidle",timeout:40000});
     assert.equal(r.status(),200);
     await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("19 servizi"),{timeout:30000});
-    assert.equal(await page.locator("#tv-university .tv-card").count(),4);
+    assert.equal(await page.locator("#tv-university .tv-card").count(),5);
     assert.equal(await page.locator('#tv-university a[href="mailto:livigni@med.uniroma2.it"]').count(),1);
+    assert.equal(await page.locator('#tv-university a[href="mailto:segreteria@caris.uniroma2.it"]').count(),1);
+    assert.equal(await page.locator('#tv-university a[href="https://caris.uniroma2.it/counselling-psicologico/"]').count(),1);
+    assert.equal(await page.locator('#tv-university a[href="https://web.uniroma2.it/contenuto/counselling-psicologico-per-il-personale-dellateneo"]').count(),1);
+    assert.match(await page.locator("#tv-university").innerText(),/Email: segreteria@caris.uniroma2.it/);
     assert.equal(await page.locator('#tv-university a[href="mailto:sportellostudenti@uniroma2.it"]').count(),2);
     assert.match(await page.locator("#tv-university").innerText(),/stanza 2B2/);
     assert.match(await page.locator("#tv-title").innerText(),/salute mentale/i);
@@ -64,8 +68,8 @@ try {
     await page.locator("#tv-tiles").click();
     assert.equal(await page.locator("#tv-map img.leaflet-tile").count(),0);
     assert.deepEqual(errors,[],"Uncaught JS errors");
-    results.push({width,passed:true,university:4,clinicalAt8km:19,clinicalAt5km:8,clinicalAt12km:52});
-    console.log("PASS Tor Vergata browser",width,"px: 4 university, 19/8km, 8/5km, 52/12km, CSM/search, no external requests");
+    results.push({width,passed:true,university:5,clinicalAt8km:19,clinicalAt5km:8,clinicalAt12km:52});
+    console.log("PASS Tor Vergata browser",width,"px: 5 university, 19/8km, 8/5km, 52/12km, CSM/search, no external requests");
     await context.close();
   }
 }finally{await browser.close();}

@@ -65,17 +65,24 @@ def build(root,output):
         "place":"Sede da confermare al momento dell'appuntamento",
         "access":"Invia una email con il tuo recapito telefonico e la richiesta di un appuntamento.",
         "source":"https://web.uniroma2.it/contenuto/sportello-ptv-per-studenti-e-studentesse",
-        "checked_at":"2026-11-02",
+        "checked_at":"2026-11-11",
     })
     by_id["UNI-005"].update({
         "price":"Gratuito", "email":"livigni@med.uniroma2.it",
         "place":"Sede da concordare con il servizio",
         "access":"Invia una email con il tuo recapito telefonico e la richiesta di un appuntamento.",
         "source":"https://web.uniroma2.it/contenuto/counselling-psicologico-per-il-personale-dellateneo",
-        "checked_at":"2026-11-02",
+        "checked_at":"2026-11-11",
     })
     official="https://orientamento.uniroma2.it/conta-su-di-noi-servizi-di-supporto-agli-studenti/"
     university += [
+        {"id":"TV-CARIS-COUNSELLING","title":"Counselling psicologico CARIS — studenti",
+         "audience":"Studenti e studentesse dell'Ateneo Tor Vergata",
+         "summary":"Servizio di ascolto psicologico per gli studenti; la pagina ufficiale descrive un percorso di circa otto incontri. Le condizioni attuali vanno confermate.",
+         "price":"","place":"Edificio Didattica Macroarea di Ingegneria, aula Progetti CARIS (primo piano). La pagina indica giovedì 09:00–14:00: verificare prima di recarsi in sede.",
+         "email":"segreteria@caris.uniroma2.it","phone":"",
+         "access":"Prenotazione tramite email alla segreteria CARIS; nell'oggetto: Richiesta counselling psicologico. Verificare disponibilità e orari.",
+         "source":"https://caris.uniroma2.it/counselling-psicologico/","checked_at":"2026-11-11"},
         {"id":"TV-FIRSTPOINT","title":"First Point — Spazio Tutela e Ascolto",
          "audience":"Studentesse, studenti e comunità universitaria",
          "summary":"Ascolto riservato, orientamento e percorsi di tutela in caso di disagio, discriminazioni o violenza. Non è un pronto soccorso.",
@@ -89,6 +96,9 @@ def build(root,output):
          "email":"sportellostudenti@uniroma2.it","phone":"","access":"Per informazioni su iniziative e disponibilità, consulta la pagina ufficiale oppure contatta lo sportello indicato dall'Ateneo.",
          "source":official,"checked_at":"2026-11-02"}
     ]
+    assert len(university)==5, f"University resources: {len(university)}"
+    order={"UNI-004":0,"TV-CARIS-COUNSELLING":1,"TV-PROBEN":2,"TV-FIRSTPOINT":3,"UNI-005":4}
+    university.sort(key=lambda r:order.get(r["id"],999))
     data={
        "schema_version":1,"pilot":"tor-vergata","source_branch":"main",
        "source_version":"7.18",
