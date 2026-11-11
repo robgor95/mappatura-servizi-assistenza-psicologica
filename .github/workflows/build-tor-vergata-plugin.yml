@@ -36,6 +36,8 @@ jobs:
           php -r '
           define("ABSPATH", "/");
           function add_action($hook,$callback,$priority=10) {}
+          function register_activation_hook($file,$callback) {}
+          function register_deactivation_hook($file,$callback) {}
           require "wordpress-plugin-dist/sml-tor-vergata/sml-tor-vergata.php";
           foreach(["/tor-vergata/","/tor-vergata/servizi.json","/tor-vergata/assets/leaflet/leaflet.js"] as $p) {
             if (sml_tv_route_spec($p)===null) exit(2);
