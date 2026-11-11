@@ -168,7 +168,7 @@ function smltv_validate_entry($src,$is_new=false) {
     $clean=array();
     foreach($limits as $key=>$max){
         $val=(isset($src[$key])&&is_string($src[$key]))?trim($src[$key]):'';
-        if(mb_strlen($val,'UTF-8')>$max)return new WP_Error('too_long','Campo troppo lungo: '.$key);
+        if((function_exists('mb_strlen')?mb_strlen($val,'UTF-8'):strlen($val))>$max)return new WP_Error('too_long','Campo troppo lungo: '.$key);
         $clean[$key]=sanitize_textarea_field($val);
     }
     if($clean['title']===''||$clean['audience']===''||$clean['summary']==='')
@@ -297,7 +297,7 @@ function smltv_check_links(){
     update_option('smltv_link_audit',$results,false);
 }
 function smltv_admin_menu(){
-    add_menu_page('Menta Campus','Menta Campus','read','sml-tv-admin','smltv_admin_page','dashicons-location-alt',38);
+    add_menu_page('Menta Campus','Menta Campus','smltv_view','sml-tv-admin','smltv_admin_page','dashicons-location-alt',38);
 }
 add_action('admin_menu','smltv_admin_menu');
 function smltv_input($key,$value,$label,$textarea=false){

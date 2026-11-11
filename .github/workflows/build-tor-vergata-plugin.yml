@@ -1,7 +1,7 @@
 name: Tor Vergata - plugin WordPress per MappaMenta
 on:
   push:
-    branches: [pilot/tor-vergata-wordpress]
+    branches: [feature/menta-campus-0.2]
     paths:
       - 'wordpress/sml-tor-vergata/**'
       - 'tools/package-tor-vergata-plugin.py'
@@ -31,6 +31,7 @@ jobs:
         run: |
           set -euo pipefail
           php -l wordpress-plugin-dist/sml-tor-vergata/sml-tor-vergata.php
+          php -l wordpress-plugin-dist/sml-tor-vergata/editorial.php
           node --check wordpress-plugin-dist/sml-tor-vergata/public/tv.js
           php -r '
           define("ABSPATH", "/");
@@ -47,10 +48,11 @@ jobs:
           python3 - <<'PY'
           import json,zipfile
           from pathlib import Path
-          p=Path("wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_3_COUNSELLING_LINKS.zip")
+          p=Path("wordpress-plugin-dist/MentaCampus_TorVergata_WordPress_0_2_0_Beta.zip")
           with zipfile.ZipFile(p) as z:
             assert z.testzip() is None
             assert "sml-tor-vergata/sml-tor-vergata.php" in z.namelist()
+            assert "sml-tor-vergata/editorial.php" in z.namelist()
             d=json.loads(z.read("sml-tor-vergata/public/servizi.json"))
             assert len(d["clinical"])==52 and d["count_8km"]==19 and len(d["university"])==5
             u={x["id"]:x for x in d["university"]}
@@ -91,9 +93,9 @@ jobs:
         uses: actions/upload-artifact@v4
         if: success()
         with:
-          name: MentaCampus-TorVergata-Plugin-WP-0-1-3-COUNSELLING
+          name: MentaCampus-TorVergata-Plugin-WP-0-2-Beta
           path: |
-            wordpress-plugin-dist/MentaCampus_TorVergata_Plugin_WordPress_0_1_3_COUNSELLING_LINKS.zip
+            wordpress-plugin-dist/MentaCampus_TorVergata_WordPress_0_2_0_Beta.zip
             wordpress-plugin-dist/manifest-microsito.json
           retention-days: 21
       - name: Preserve browser QA evidence

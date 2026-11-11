@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Menta Campus - Tor Vergata (microsito)
  * Description: Microsito informativo Tor Vergata in una sezione autonoma dello stesso WordPress MappaMenta. Nessuna nuova installazione, account o database.
- * Version: 0.1.3-beta
+ * Version: 0.2.0-beta
  * Requires at least: 6.4
  * Requires PHP: 8.0
  * Author: Progetto MappaMenta
@@ -15,6 +15,7 @@ function sml_tv_route_spec(string $path): ?array {
     $static = [
         '/tor-vergata'                 => ['index.html', 'text/html; charset=utf-8'],
         '/tor-vergata/'                => ['index.html', 'text/html; charset=utf-8'],
+        '/tor-vergata/en/'             => ['index.html', 'text/html; charset=utf-8'],
         '/tor-vergata/index.html'      => ['index.html', 'text/html; charset=utf-8'],
         '/tor-vergata/tv.css'          => ['tv.css', 'text/css; charset=utf-8'],
         '/tor-vergata/tv.js'           => ['tv.js', 'text/javascript; charset=utf-8'],
@@ -69,3 +70,8 @@ function sml_tv_serve_route(): void {
     exit;
 }
 add_action('template_redirect', 'sml_tv_serve_route', -1000);
+
+/* Editorial subsystem is isolated from the existing regional Catalogo SML. */
+define('SMLTV_PLUGIN_FILE',__FILE__);
+require_once __DIR__ . '/editorial.php';
+register_activation_hook(__FILE__,'smltv_activate');
