@@ -1,0 +1,59 @@
+name: Menta Campus 0.2 - pacchetto integrato e QA sintassi
+on:
+  push:
+    branches: [feature/menta-campus-0.2]
+    paths:
+      - 'wordpress/sml-tor-vergata/**'
+      - 'pilot/tor-vergata/**'
+      - 'tools/build-tor-vergata-pilot.py'
+      - 'tools/package-tor-vergata-plugin.py'
+      - 'tools/test-tor-vergata-editorial.php'
+      - '.github/workflows/package-menta-campus-v02.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: menta-campus-v02-package
+  cancel-in-progress: true
+jobs:
+  package-checked:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build from V7.18 and confirm packaged records
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/package-tor-vergata-plugin.py . wordpress-plugin-dist
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,zipfile
+          p=Path('wordpress-plugin-dist/MentaCampus_TorVergata_WordPress_0_2_0_Beta.zip')
+          assert p.stat().st_size > 50000
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              names=set(z.namelist())
+              assert 'sml-tor-vergata/editorial.php' in names
+              assert 'sml-tor-vergata/sml-tor-vergata.php' in names
+              d=json.loads(z.read('sml-tor-vergata/public/servizi.json'))
+              assert len(d['campuses'])==6 and len(d['university'])==5
+              assert d['count_8km']==19 and d['count_12km']==52
+              assert len(d['clinical']) >= 52
+          print('Pacchetto ZIP V0.2 valido e contiene dataset completo')
+          PY
+      - name: Check PHP and JavaScript / validation tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          php -l wordpress-plugin-dist/sml-tor-vergata/sml-tor-vergata.php
+          php -l wordpress-plugin-dist/sml-tor-vergata/editorial.php
+          node --check wordpress-plugin-dist/sml-tor-vergata/public/tv.js
+          php tools/test-tor-vergata-editorial.php
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MentaCampus-0-2-WP-Beta-Integrated
+          path: |
+            wordpress-plugin-dist/MentaCampus_TorVergata_WordPress_0_2_0_Beta.zip
+            wordpress-plugin-dist/manifest-microsito.json
+          retention-days: 21
