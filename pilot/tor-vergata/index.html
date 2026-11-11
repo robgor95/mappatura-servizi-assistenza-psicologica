@@ -11,9 +11,9 @@
 <link rel="canonical" href="https://mappamenta.altervista.org/tor-vergata/">
 <link rel="icon" href="/assets/menta/menta-base-v7-10-1.webp" type="image/webp">
 <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
-<link rel="stylesheet" href="/tor-vergata/tv.css?v=0.1.3">
+<link rel="stylesheet" href="/tor-vergata/tv.css?v=0.2.0">
 <script defer src="/assets/vendor/leaflet/leaflet.js"></script>
-<script defer src="/tor-vergata/tv.js?v=0.1.3"></script>
+<script defer src="/tor-vergata/tv.js?v=0.2.0"></script>
 </head>
 <body>
 <a class="tv-skip" href="#contenuto">Salta al contenuto</a>
@@ -26,7 +26,11 @@
   <nav aria-label="Navigazione microsito">
     <a href="#ascolto">Ascolto in Ateneo</a>
     <a href="#vicino">Servizi vicini</a>
-    <a href="#mappa">Mappa</a>
+    <a href="#mappa" data-tv-it="Mappa" data-tv-en="Map">Mappa</a>
+    <span class="tv-language" role="group" aria-label="Language / Lingua">
+      <button type="button" id="tv-lang-it" aria-pressed="true">IT</button>
+      <button type="button" id="tv-lang-en" aria-pressed="false">EN</button>
+    </span>
   </nav>
 </header>
 <main id="contenuto" tabindex="-1">
@@ -34,40 +38,43 @@
   <section class="tv-hero" aria-labelledby="tv-title">
     <div class="tv-hero-copy">
       <p class="tv-kicker">Un punto di partenza vicino a te</p>
-      <h1 id="tv-title">La salute mentale, <em>anche all'università.</em></h1>
-      <p>Se studi o lavori a Tor Vergata, puoi partire dai servizi di ascolto dell'Ateneo oppure esplorare quelli documentati nel territorio circostante.</p>
-      <div class="tv-buttons"><a class="tv-button primary" href="#ascolto">Parlare con qualcuno</a><a class="tv-button subtle" href="#vicino">Esplora i servizi vicini</a></div>
+      <h1 id="tv-title"><span data-tv-it="La salute mentale," data-tv-en="Mental health,">La salute mentale,</span> <em data-tv-it="anche all'università." data-tv-en="also at university.">anche all'università.</em></h1>
+      <p data-tv-it="Se studi o lavori a Tor Vergata, puoi partire dai servizi di ascolto dell'Ateneo oppure esplorare quelli documentati nel territorio circostante." data-tv-en="If you study or work at Tor Vergata, start with university support or explore documented services in nearby areas.">Se studi o lavori a Tor Vergata, puoi partire dai servizi di ascolto dell'Ateneo oppure esplorare quelli documentati nel territorio circostante.</p>
+      <div class="tv-buttons"><a class="tv-button primary" href="#ascolto" data-tv-it="Parlare con qualcuno" data-tv-en="Talk to someone">Parlare con qualcuno</a><a class="tv-button subtle" href="#vicino" data-tv-it="Esplora i servizi vicini" data-tv-en="Find services nearby">Esplora i servizi vicini</a></div>
     </div>
     <div class="tv-hero-figure"><img src="/assets/menta/menta-base-v7-10-1.webp" width="260" height="260" alt="Menta, mascotte del progetto"><p>Menta aiuta a orientarsi. Non formula diagnosi.</p></div>
   </section>
   <section class="tv-route" aria-labelledby="percorsi-title">
-    <h2 id="percorsi-title">Da dove vuoi iniziare?</h2>
-    <div class="tv-route-grid">
-      <a href="#ascolto"><span>01 · Studenti</span><strong>Ho bisogno di ascolto</strong><p>Sportello PTV e opportunità universitarie</p></a>
-      <a href="#vicino"><span>02 · Territorio</span><strong>Cerco un servizio vicino</strong><p>CSM, SerD e altri presidi documentati</p></a>
-      <a href="#sicurezza"><span>03 · Urgenza</span><strong>Non so chi contattare</strong><p>Numeri utili e quando chiedere aiuto immediato</p></a>
+    <h2 id="percorsi-title" data-tv-it="Da dove vuoi iniziare?" data-tv-en="Where would you like to start?">Da dove vuoi iniziare?</h2>
+    <p class="tv-note" data-tv-it="Scegli un percorso: potrai sempre tornare a vedere tutte le risorse." data-tv-en="Choose a pathway. You can always show all resources again.">Scegli un percorso: potrai sempre tornare a vedere tutte le risorse.</p>
+    <div class="tv-route-grid tv-role-grid">
+      <button type="button" data-tv-role="student" aria-pressed="false"><span>01 · <span data-tv-it="Studente" data-tv-en="Student">Studente</span></span><strong data-tv-it="Cerco ascolto per studenti" data-tv-en="I need student support">Cerco ascolto per studenti</strong><p>PTV · CARIS · Pro-Ben</p></button>
+      <button type="button" data-tv-role="staff" aria-pressed="false"><span>02 · <span data-tv-it="Personale" data-tv-en="Staff">Personale</span></span><strong data-tv-it="Lavoro in Ateneo" data-tv-en="I work at the University">Lavoro in Ateneo</strong><p data-tv-it="Counselling personale e First Point" data-tv-en="Staff counselling and First Point">Counselling personale e First Point</p></button>
+      <button type="button" data-tv-role="territorial" aria-pressed="false"><span>03 · <span data-tv-it="Territorio" data-tv-en="Nearby">Territorio</span></span><strong data-tv-it="Cerco un servizio vicino" data-tv-en="Find a nearby service">Cerco un servizio vicino</strong><p>CSM · SerD · <span data-tv-it="altri servizi" data-tv-en="more services">altri servizi</span></p></button>
+      <button type="button" data-tv-role="all" aria-pressed="true"><span>04 · <span data-tv-it="Tutte" data-tv-en="All">Tutte</span></span><strong data-tv-it="Mostra tutte le risorse" data-tv-en="Show every service">Mostra tutte le risorse</strong><p data-tv-it="Esplora senza filtri" data-tv-en="Browse without filters">Esplora senza filtri</p></button>
     </div>
   </section>
   <section class="tv-section" id="ascolto" aria-labelledby="ascolto-title">
-    <div class="tv-section-top"><p class="tv-kicker">Servizi dedicati all'Ateneo</p><h2 id="ascolto-title">Ascolto a Tor Vergata</h2><p>Qui sono indicati sportelli, iniziative e collegamenti ufficiali dell'Ateneo. Non tutti sono strutture cliniche e non hanno gli stessi destinatari.</p></div>
+    <div class="tv-section-top"><p class="tv-kicker">Servizi dedicati all'Ateneo</p><h2 id="ascolto-title" data-tv-it="Ascolto a Tor Vergata" data-tv-en="Support at Tor Vergata">Ascolto a Tor Vergata</h2><p data-tv-it="Qui sono indicati sportelli, iniziative e collegamenti ufficiali dell'Ateneo. Non tutti sono strutture cliniche e non hanno gli stessi destinatari." data-tv-en="University support desks and verified links are listed here. Not all are clinical services, and eligibility varies.">Qui sono indicati sportelli, iniziative e collegamenti ufficiali dell'Ateneo. Non tutti sono strutture cliniche e non hanno gli stessi destinatari.</p></div>
     <div class="tv-university" id="tv-university"><p>Caricamento dei riferimenti ufficiali…</p></div>
     <p class="tv-note">Verifica sempre sul sito ufficiale se il servizio è attivo, chi può accedere e come prendere appuntamento.</p>
   </section>
   <section class="tv-section tv-local" id="vicino" aria-labelledby="vicino-title">
-    <div class="tv-section-top"><p class="tv-kicker">La rete territoriale</p><h2 id="vicino-title">I servizi nei dintorni</h2><p>La distanza è indicativa, calcolata in linea d'aria dal Rettorato in Via Cracovia 50; non rappresenta il percorso da compiere, l'ingresso effettivo o il diritto di accesso.</p></div>
+    <div class="tv-section-top"><p class="tv-kicker">La rete territoriale</p><h2 id="vicino-title" data-tv-it="I servizi nei dintorni" data-tv-en="Nearby services">I servizi nei dintorni</h2><p data-tv-it="Le distanze sono indicative, in linea d'aria dalla sede universitaria selezionata. Non rappresentano il percorso, l'ingresso effettivo né il diritto di accesso." data-tv-en="Straight-line distances from the selected campus are approximate. They are not directions, verified entrances or proof of eligibility.">Le distanze sono indicative, in linea d'aria dalla sede universitaria selezionata. Non rappresentano il percorso, l'ingresso effettivo né il diritto di accesso.</p></div>
     <form class="tv-filters" id="tv-filter" role="search">
-      <label for="tv-q">Cerca un servizio<input type="search" id="tv-q" placeholder="CSM, comune, indirizzo…" autocomplete="off"></label>
-      <label for="tv-radius">Distanza dal Rettorato<select id="tv-radius"><option value="5">Entro 5 km</option><option value="8" selected>Entro 8 km</option><option value="12">Entro 12 km</option></select></label>
-      <label for="tv-type">Tipo di servizio<select id="tv-type"><option value="">Tutti i servizi</option></select></label>
-      <button class="tv-button subtle" id="tv-reset" type="button">Azzera filtri</button>
+      <label for="tv-campus"><span data-tv-it="Sede universitaria di partenza" data-tv-en="Starting campus">Sede universitaria di partenza</span><select id="tv-campus" aria-label="University campus"></select></label>
+      <label for="tv-q"><span data-tv-it="Cerca un servizio" data-tv-en="Find a service">Cerca un servizio</span><input type="search" id="tv-q" placeholder="CSM, comune, indirizzo…" data-tv-placeholder-it="CSM, comune, indirizzo…" data-tv-placeholder-en="Type, town, address…" autocomplete="off"></label>
+      <label for="tv-radius"><span data-tv-it="Distanza dalla sede selezionata" data-tv-en="Distance from selected campus">Distanza dalla sede selezionata</span><select id="tv-radius"><option value="5">Entro 5 km</option><option value="8" selected>Entro 8 km</option><option value="12">Entro 12 km</option></select></label>
+      <label for="tv-type"><span data-tv-it="Tipo di servizio" data-tv-en="Service type">Tipo di servizio</span><select id="tv-type"><option value="">Tutti i servizi</option></select></label>
+      <button class="tv-button subtle" id="tv-reset" type="button" data-tv-it="Azzera filtri" data-tv-en="Reset filters">Azzera filtri</button>
     </form>
     <div class="tv-area">
       <div>
-        <p class="tv-count" id="tv-count" aria-live="polite">Caricamento dei servizi…</p>
+        <p class="tv-count" id="tv-count" aria-live="polite">Caricamento dei servizi…</p><p id="tv-copy-status" class="tv-note" aria-live="polite"></p>
         <div class="tv-results" id="tv-results"></div>
       </div>
       <aside id="mappa" class="tv-map-panel" aria-labelledby="tv-map-title">
-        <div class="tv-map-head"><h3 id="tv-map-title">Mappa dei presidi</h3><p>Posizioni indicative, ingressi non verificati.</p></div>
+        <div class="tv-map-head"><h3 id="tv-map-title" data-tv-it="Mappa dei presidi" data-tv-en="Service map">Mappa dei presidi</h3><p>Posizioni indicative, ingressi non verificati.</p></div>
         <div id="tv-map" class="tv-map" aria-label="Mappa navigabile del territorio e dei servizi"></div>
         <button type="button" class="tv-button subtle" id="tv-tiles">Carica sfondo OpenStreetMap</button>
         <p class="tv-note" id="tv-map-alert" role="status" hidden></p>
@@ -83,7 +90,7 @@
   </section>
 </main>
 <footer class="tv-footer">
-  <p><strong>Menta Campus — Tor Vergata</strong> · Pilota informativo indipendente</p>
+  <p><strong>Menta Campus — Tor Vergata</strong> · <span data-tv-it="Pilota informativo indipendente" data-tv-en="Independent informational pilot">Pilota informativo indipendente</span></p>
   <p>Fonti: Università di Roma Tor Vergata, catalogo servizi V7.18 e geografia V7.16 di MappaMenta. Contatti e accesso vanno sempre confermati presso il servizio.</p>
   <p><a href="/metodo.html">Metodo e fonti</a> · <a href="/privacy.html">Privacy</a> · <a href="/">MappaMenta — portale generale</a></p>
 </footer>

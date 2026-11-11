@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 const $=id=>document.getElementById(id), VERSION="0.2";
-const state={clinical:[],university:[],campuses:[],center:null, campus:null,lang:"it",audience:"all",map:null,markers:null,radius:null,tiles:null};
+const state={clinical:[],university:[],campuses:[],center:null, campus:null,lang:location.pathname.includes("/en/")?"en":"it",audience:"all",map:null,markers:null,radius:null,tiles:null};
 const safeUrl=x=>{try{let u=new URL(x);return u.protocol==="https:"&&!u.username&&!u.password?u.href:"";}catch{return ""}};
 const textNode=(tag,value,cls)=>{const e=document.createElement(tag);e.textContent=String(value??"");if(cls)e.className=cls;return e;};
 const link=(label,target,external=true)=>{
