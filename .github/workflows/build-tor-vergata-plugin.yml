@@ -54,7 +54,8 @@ jobs:
             assert "sml-tor-vergata/sml-tor-vergata.php" in z.namelist()
             assert "sml-tor-vergata/editorial.php" in z.namelist()
             d=json.loads(z.read("sml-tor-vergata/public/servizi.json"))
-            assert len(d["clinical"])==52 and d["count_8km"]==19 and len(d["university"])==5
+            assert len(d["clinical"])>=52 and d["count_8km"]==19 and d["count_12km"]==52 and len(d["university"])==5
+            assert len(d["campuses"])==6
             u={x["id"]:x for x in d["university"]}
             assert u["UNI-004"]["email"]=="sportellostudenti@uniroma2.it"
             assert u["UNI-005"]["email"]=="livigni@med.uniroma2.it"

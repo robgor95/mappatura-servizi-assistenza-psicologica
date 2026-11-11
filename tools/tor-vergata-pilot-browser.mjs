@@ -33,6 +33,7 @@ try {
     assert.equal(external.length,0,"Automatic remote requests: "+JSON.stringify(external));
     assert(await page.locator(".leaflet-container").count(), "Leaflet map not initialized");
     await page.screenshot({path:OUT+"/tor-vergata-"+width+".png",fullPage:true});
+    assert.equal(await page.locator("#tv-campus option").count(),6);
     await page.locator("#tv-radius").selectOption("5");
     await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("8 servizi"));
     assert.equal(await page.locator(".tv-results .tv-card").count(),8);
@@ -43,6 +44,18 @@ try {
     assert((await page.locator(".tv-results .tv-card").count())>0,"CSM filter empty");
     await page.locator("#tv-reset").click();
     await page.waitForFunction(()=>document.getElementById("tv-count")?.textContent.includes("19 servizi"));
+    await page.locator("#tv-campus").selectOption("scienze");
+    await page.waitForTimeout(250);
+    assert.match(await page.locator("#tv-count").innerText(),/Scienze/);
+    await page.locator("#tv-lang-en").click();
+    assert.equal(await page.locator("html").getAttribute("lang"),"en");
+    assert.match(await page.locator("#tv-count").innerText(),/located services/);
+    await page.locator("#tv-lang-it").click();
+    await page.locator("#tv-campus").selectOption("rettorato");
+    await page.locator('[data-tv-role="staff"]').click();
+    assert.equal(await page.locator("#tv-university .tv-card").count(),2);
+    await page.locator('[data-tv-role="all"]').click();
+    assert.equal(await page.locator("#tv-university .tv-card").count(),5);
     await page.locator("#tv-q").fill("torre spaccata");
     await page.waitForTimeout(300);
     assert((await page.locator(".tv-results .tv-card").count())>=1,"name search empty");
