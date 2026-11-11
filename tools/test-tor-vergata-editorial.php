@@ -50,8 +50,8 @@ $public=smltv_public_fields(array_merge($sample,['id'=>'UNI-004','author_email'=
 test_(!isset($public['author_email'])&&!isset($public['internal_note'])&&!isset($public['reviewer_id']),'hide internal review metadata from public projection');
 $source=file_get_contents(dirname(__DIR__).'/wordpress/sml-tor-vergata/editorial.php');
 test_(str_contains($source,"check_admin_referer('smltv_action','smltv_nonce')"),'POST-CSRF checks');
-test_(str_contains($source,"$"+"reviewer===(int)$"+"post->post_author"),'reviewer and proposer separated');
-test_(str_contains($source,"$"+"reviewer===$"+"user"),'reviewer and approver separated');
-test_(str_contains($source,"$"+"user===(int)$"+"post->post_author"),'proposer and approver separated');
+test_(str_contains($source,'$reviewer===(int)$post->post_author'),'reviewer and proposer separated');
+test_(str_contains($source,'$reviewer===$user'),'reviewer and approver separated');
+test_(str_contains($source,'$user===(int)$post->post_author'),'proposer and approver separated');
 test_(str_contains($source,"'permission_callback'=>'__return_true'"),'only explicit public REST route');
 echo "Total ".count($tests)." security/validation checks".PHP_EOL;
