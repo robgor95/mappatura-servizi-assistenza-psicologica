@@ -6,10 +6,32 @@ import json, math, sys
 from pathlib import Path
 CAMPUS_LAT,CAMPUS_LON = 41.852760,12.628480
 MAX_KM=12.0
-def km(lat,lon):
+def haversine(lat1,lon1,lat2,lon2):
     r=math.pi/180.0
-    x=math.sin((lat-CAMPUS_LAT)*r/2)**2+math.cos(lat*r)*math.cos(CAMPUS_LAT*r)*math.sin((lon-CAMPUS_LON)*r/2)**2
+    x=math.sin((lat2-lat1)*r/2)**2+math.cos(lat1*r)*math.cos(lat2*r)*math.sin((lon2-lon1)*r/2)**2
     return 12742.0*math.asin(min(1.0,math.sqrt(x)))
+def km(lat,lon):
+    return haversine(CAMPUS_LAT,CAMPUS_LON,lat,lon)
+# Indicative public places at verified Tor Vergata campus addresses; they are
+# not department entrances or medical facility pins.
+CAMPUSES=[
+ {'id':'rettorato','name':'Rettorato / Giurisprudenza','name_en':'Rectorate / Law',
+  'address':'Via Cracovia 50, Roma','lat':CAMPUS_LAT,'lon':CAMPUS_LON,
+  'source':'https://web.uniroma2.it/it/contenuto/dove_siamo'},
+ {'id':'economia','name':'Economia','name_en':'Economics','address':'Via Columbia 2, Roma',
+  'lat':41.853635,'lon':12.623771,
+  'source':'https://turismoroma.it/it/luoghi/biblioteca-dellarea-economica-vilfredo-pareto-universit%C3%A0-tor-vergata'},
+ {'id':'ingegneria','name':'Ingegneria','name_en':'Engineering','address':'Via del Politecnico 1, Roma',
+  'lat':41.85508,'lon':12.62219,'source':'https://mapcarta.com/W79133126'},
+ {'id':'lettere','name':'Lettere e Filosofia','name_en':'Humanities','address':'Via Columbia 1, Roma',
+  'lat':41.85184,'lon':12.62135,'source':'https://turismoroma.it/en/places/biblioteca-dellarea-letteraria-storica-filosofica-universit%C3%A0-tor-vergata'},
+ {'id':'medicina','name':'Medicina e Chirurgia','name_en':'Medicine',
+  'address':'Via Montpellier 1, Roma','lat':41.85657,'lon':12.63392,
+  'source':'https://turismoroma.it/en/places/biblioteca-dellarea-biomedica-paolo-m-fasella-universit%C3%A0-tor-vergata'},
+ {'id':'scienze','name':'Scienze MM.FF.NN.','name_en':'Sciences',
+  'address':'Via della Ricerca Scientifica 1, Roma','lat':41.85319,'lon':12.605375,
+  'source':'https://turismoroma.it/it/luoghi/biblioteca-dellarea-scientifico-tecnologica-universit%C3%A0-tor-vergata'},
+]
 def links(items):
     return list(dict.fromkeys(x for x in items if isinstance(x,str) and x.startswith("https://")))[:6]
 def clean(s):
@@ -32,7 +54,7 @@ def build(root,output):
         if p.get("quality") not in ("A","B","C") or p.get("precision") not in ("address","street","building","approximate"):continue
         if not str(p.get("source_url","")).startswith("https://"):continue
         d=km(p["lat"],p["lng"])
-        if d>MAX_KM:continue
+        if min(haversine(c['lat'],c['lon'],p['lat'],p['lng']) for c in CAMPUSES)>MAX_KM:continue
         nearby.append({
             "key":r["key"],"name":clean(f.get("name")),"type":clean(f.get("type")),
             "subtype":clean(f.get("subtype")),"asl":clean(r.get("asl")),
@@ -44,7 +66,7 @@ def build(root,output):
             "sources":links((r.get("sources") or [])+[p["source_url"]])
         })
     nearby.sort(key=lambda x:(x["distance_km"],x["name"]))
-    assert len(nearby)==52,f"within 12 km: {len(nearby)}"
+    assert sum(x["distance_km"]<=12 for x in nearby)==52, "Rettorato 12km baseline changed"
     assert sum(x["distance_km"]<=8 for x in nearby)==19
     assert len({x["key"] for x in nearby})==len(nearby)
     university=[]
@@ -100,7 +122,7 @@ def build(root,output):
     order={"UNI-004":0,"TV-CARIS-COUNSELLING":1,"TV-PROBEN":2,"TV-FIRSTPOINT":3,"UNI-005":4}
     university.sort(key=lambda r:order.get(r["id"],999))
     data={
-       "schema_version":1,"pilot":"tor-vergata","source_branch":"main",
+       "schema_version":2,"campuses":CAMPUSES,"pilot":"tor-vergata","source_branch":"main",
        "source_version":"7.18",
        "source_baselines":["data/editorial-catalog-v7-18.json","data/presidi_geo_v7_16.json","data/universita_v7_5.json"],
        "center":{"name":"Rettorato Tor Vergata — Via Cracovia 50","lat":CAMPUS_LAT,"lon":CAMPUS_LON,
@@ -111,7 +133,7 @@ def build(root,output):
     }
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("Tor Vergata: ",len(nearby),"nearby clinical services; 19 within 8km;",len(university),"university resources")
+    print("Tor Vergata: ",len(nearby),"records near any of 6 campuses; 19 within 8km of Rectorate;",len(university),"university resources")
 if __name__=="__main__":
     if len(sys.argv)!=3:raise SystemExit("usage: build-tor-vergata-pilot.py REPOSITORY OUTPUT_JSON")
     build(sys.argv[1],sys.argv[2])
