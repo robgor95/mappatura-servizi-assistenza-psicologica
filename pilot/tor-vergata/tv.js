@@ -1,8 +1,8 @@
 /* Menta Campus — pilot Tor Vergata. No search telemetry, no stored inputs. */
 (function(){
 'use strict';
-const $=id=>document.getElementById(id), VERSION="0.1";
-const state={clinical:[],university:[],center:null, map:null, markers:null, radius:null, tiles:null};
+const $=id=>document.getElementById(id), VERSION="0.2";
+const state={clinical:[],university:[],campuses:[],center:null, campus:null,lang:"it",audience:"all",map:null,markers:null,radius:null,tiles:null};
 const safeUrl=x=>{try{let u=new URL(x);return u.protocol==="https:"&&!u.username&&!u.password?u.href:"";}catch{return ""}};
 const textNode=(tag,value,cls)=>{const e=document.createElement(tag);e.textContent=String(value??"");if(cls)e.className=cls;return e;};
 const link=(label,target,external=true)=>{
@@ -12,6 +12,56 @@ const link=(label,target,external=true)=>{
   a.href=u;if(external){a.target='_blank';a.rel='noopener noreferrer';}return a;
 };
 const blank=()=>document.createDocumentFragment();
+const translations={
+ it:{
+  subtitle:"Tor Vergata e dintorni",location:"Sede universitaria",students:"Sono uno studente",staff:"Lavoro in Ateneo",
+  territorial:"Cerco un servizio vicino",all:"Mostra tutte le risorse",contact:"Email",phone:"Chiama",
+  source:"Apri la pagina ufficiale",eligible:"Per chi",place:"Sede",access:"Come si accede",
+  range:"Entro",approx:"Distanza indicativa in linea d'aria dalla sede selezionata",
+  count:"servizi localizzati",noresults:"Nessuna scheda con questi filtri. Prova un altro raggio o sede.",
+  origin:"Sede selezionata (riferimento indicativo; non è un ingresso certificato)",
+  accessNote:"Verifica sempre modalità e bacino territoriale con il servizio.",
+  dataNote:"Informazioni approvate dal progetto: verificare sempre presso il servizio.",
+  verify:"Ultimo controllo documentale",emailCopy:"Copia email",copied:"Indirizzo copiato",
+  mapTitle:"Mappa dei presidi", servicesTitle:"I servizi nei dintorni",
+  campusHelp:"Le distanze sono in linea d'aria, non tempi o percorsi stradali."
+ },
+ en:{
+  subtitle:"Tor Vergata and nearby services",location:"University campus",students:"I am a student",
+  staff:"I work at the University",territorial:"Find a nearby service",
+  all:"Show all resources",contact:"Email",phone:"Call",source:"Official service page",
+  eligible:"Who can use this",place:"Location",access:"How to access",
+  range:"Within",approx:"Approximate straight-line distance from selected campus",
+  count:"located services",noresults:"No results for these filters. Try another campus or radius.",
+  origin:"Selected campus (approximate point; not a verified entrance)",
+  accessNote:"Confirm service eligibility and catchment requirements directly.",
+  dataNote:"Information documented by the project: always confirm with the service.",
+  verify:"Document last checked",emailCopy:"Copy email",copied:"Email copied",
+  mapTitle:"Service map",servicesTitle:"Nearby services",
+  campusHelp:"Distances are straight-line estimates, not travel times or directions."
+ }
+};
+const T=(key)=>translations[state.lang][key]||key;
+function distanceKm(a,b,c,d){const k=Math.PI/180;const z=Math.sin((c-a)*k/2)**2+Math.cos(a*k)*Math.cos(c*k)*Math.sin((d-b)*k/2)**2;return 12742*Math.asin(Math.min(1,Math.sqrt(z)));}
+function campusSelected(){return state.campus||state.center;}
+function displayField(r,key){const name=key+(state.lang==="en"?"_en":"");return r[name]||r[key]||"";}
+function renderStaticTexts(){
+ document.documentElement.lang=state.lang;
+ document.querySelectorAll("[data-tv-it][data-tv-en]").forEach(el=>{
+  el.textContent=el.getAttribute(state.lang==="en"?"data-tv-en":"data-tv-it");
+ });
+ document.querySelectorAll("[data-tv-placeholder-it][data-tv-placeholder-en]").forEach(el=>{
+  el.placeholder=el.getAttribute(state.lang==="en"?"data-tv-placeholder-en":"data-tv-placeholder-it");
+ });
+ for(const [value,id] of [["it","tv-lang-it"],["en","tv-lang-en"]]){
+   const el=$(id);if(el)el.setAttribute("aria-pressed",String(value===state.lang));
+ }
+ document.querySelectorAll("[data-tv-role]").forEach(btn=>btn.setAttribute("aria-pressed",String(btn.dataset.tvRole===state.audience)));
+}
+function copyText(text){if(navigator.clipboard && window.isSecureContext)navigator.clipboard.writeText(text).then(()=>{
+ const msg=$("tv-copy-status");if(msg)msg.textContent=T("copied");
+ }).catch(()=>{});}
+
 function phoneLink(number){
  const n=String(number||"").replace(/[^0-9+]/g,"");
  if(n.length<6)return null;
@@ -28,56 +78,70 @@ function links(parent,arr){
 }
 function uniCard(r){
  const article=textNode("article","","tv-card");
- const audience=r.id==="UNI-005"?"Per il personale":r.id==="TV-FIRSTPOINT"?"Per la comunità universitaria":"Per studenti";
- article.append(textNode("span",audience+(r.price==="Gratuito"?" · Gratuito":""),"tv-tag"));
- article.append(textNode("h3",r.title));
- article.append(textNode("p",r.summary));
- article.append(textNode("p","Per chi: "+r.audience));
- if(r.place) article.append(textNode("p","Sede: "+r.place));
- if(r.access) article.append(textNode("p","Accesso: "+r.access));
- // Keep the contact address readable even on devices without a configured mail app.
- if(r.email) article.append(textNode("p","Email: "+r.email,"tv-contact"));
- links(article,[emailLink(r.email),phoneLink(r.phone),link("Apri la pagina ufficiale",r.source)]);
+ const audience=r.id==="UNI-005"?"staff":r.id==="TV-FIRSTPOINT"?"all":"student";
+ const badge=audience==="staff"?T("staff"):audience==="student"?T("students"):T("all");
+ article.append(textNode("span",badge+(r.price==="Gratuito"&&state.lang==="it"?" · Gratuito":""),"tv-tag"));
+ article.append(textNode("h3",displayField(r,"title")));
+ article.append(textNode("p",displayField(r,"summary")));
+ article.append(textNode("p",T("eligible")+": "+displayField(r,"audience")));
+ if(displayField(r,"place"))article.append(textNode("p",T("place")+": "+displayField(r,"place")));
+ if(displayField(r,"access"))article.append(textNode("p",T("access")+": "+displayField(r,"access")));
+ if(r.checked_at)article.append(textNode("small",T("verify")+": "+r.checked_at));
+ if(r.email){
+   article.append(textNode("p",T("contact")+": "+r.email,"tv-contact"));
+   const b=document.createElement("button");b.type="button";b.className="tv-button subtle";
+   b.textContent=T("emailCopy");b.addEventListener("click",()=>copyText(r.email));article.append(b);
+ }
+ links(article,[emailLink(r.email),phoneLink(r.phone),link(T("source"),r.source)]);
  return article;
 }
-function clinicCard(r){
+
+function clinicCard(r,campus){
  const a=textNode("article","","tv-card");
+ const distance=distanceKm(campus.lat,campus.lon,r.latitude,r.longitude);
  a.append(textNode("span",r.type||"Servizio sanitario","tv-tag"));
  a.append(textNode("h3",r.name));
  a.append(textNode("p",[r.address,r.town].filter(Boolean).join(" · ")));
- if(r.asl)a.append(textNode("p","Rete indicata: "+r.asl));
- a.append(textNode("p",r.distance_km.toFixed(1)+" km in linea d'aria dal Rettorato · Posizione "+(r.quality==="A"?"documentata all'indirizzo":"indicativa")+"; ingresso non verificato."));
- if(r.access) a.append(textNode("p","Modalità di accesso: "+r.access));
+ if(r.asl)a.append(textNode("p",r.asl));
+ a.append(textNode("p",distance.toFixed(1)+" km · "+T("approx")+
+    " · "+(r.quality==="A"?"A":"C")+"."));
+ if(r.access)a.append(textNode("p",T("access")+": "+r.access));
+ a.append(textNode("p",T("accessNote"),"tv-note"));
  const d=textNode("details","");
- d.append(textNode("summary","Contatti e fonti"));
- if(r.hours)d.append(textNode("p","Orari indicati nelle fonti: "+r.hours));
- links(d, [phoneLink(r.phone),emailLink(r.email),link("Sito del servizio",r.website),...(r.sources||[]).slice(0,2).map((x,i)=>link("Fonte "+(i+1),x))]);
+ d.append(textNode("summary",state.lang==="en"?"Contacts and sources":"Contatti e fonti"));
+ if(r.hours)d.append(textNode("p",(state.lang==="en"?"Published hours: ":"Orari nelle fonti: ")+r.hours));
+ if(r.email)d.append(textNode("p",r.email,"tv-contact"));
+ links(d,[phoneLink(r.phone),emailLink(r.email),link(T("source"),r.website),
+    ...(r.sources||[]).slice(0,2).map((x,i)=>link((state.lang==="en"?"Source ":"Fonte ")+(i+1),x))]);
  a.append(d);
  return a;
 }
+
 function getFilters(){
  return {q:($("tv-q").value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("it").trim(),
-  radius:Number($("tv-radius").value)||8,type:$("tv-type").value};
+ radius:Number($("tv-radius").value)||8,type:$("tv-type").value};
 }
 function filtered(){
- const f=getFilters();
+ const f=getFilters(),campus=campusSelected();
  return state.clinical.filter(r=>{
-   if(!Number.isFinite(r.distance_km)||r.distance_km>f.radius)return false;
+   if(!Number.isFinite(r.latitude)||!Number.isFinite(r.longitude))return false;
+   if(distanceKm(campus.lat,campus.lon,r.latitude,r.longitude)>f.radius)return false;
    if(f.type&&r.type!==f.type)return false;
    const corpus=[r.name,r.type,r.subtype,r.address,r.asl,r.town].join(" ").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("it");
    return !f.q||corpus.includes(f.q);
- }).sort((a,b)=>a.distance_km-b.distance_km);
+ }).sort((a,b)=>distanceKm(campus.lat,campus.lon,a.latitude,a.longitude)-distanceKm(campus.lat,campus.lon,b.latitude,b.longitude));
 }
+
 function drawMap(rows,radius){
  if(!state.map)return;
  const L=window.L;
  if(state.markers)state.map.removeLayer(state.markers);
  if(state.radius)state.map.removeLayer(state.radius);
- const [lat,lon]=[state.center.lat,state.center.lon];
+ const [lat,lon]=[campusSelected().lat,campusSelected().lon];
  state.radius=L.circle([lat,lon],{radius:radius*1000,color:"#146c5d",fillColor:"#c0eadc",fillOpacity:.12,weight:2}).addTo(state.map);
  state.markers=L.featureGroup().addTo(state.map);
  const campus=L.circleMarker([lat,lon],{radius:10,color:"#0e5a4d",weight:3,fillColor:"#35b5a3",fillOpacity:1});
- campus.bindPopup("Rettorato — punto di riferimento. Non indica il centro geografico di tutte le sedi universitarie.");
+ campus.bindPopup(T("origin")+" — "+(campusSelected().name||"Tor Vergata"));
  state.markers.addLayer(campus);
  for(const r of rows){
    if(!Number.isFinite(r.latitude)||!Number.isFinite(r.longitude))continue;
@@ -93,13 +157,24 @@ function drawMap(rows,radius){
  state.map.fitBounds(state.radius.getBounds(),{padding:[24,24],maxZoom:13,animate:false});
 }
 function render(){
- const f=getFilters(),rows=filtered();
- $("tv-count").textContent=rows.length+" "+(rows.length===1?"servizio":"servizi")+" localizzati entro "+f.radius+" km dal Rettorato. Raggio in linea d'aria, non percorso stradale.";
+ const f=getFilters(),rows=filtered(),campus=campusSelected();
+ const localLabel=state.lang==="en"?(campus.name_en||campus.name):campus.name;
+ $("tv-count").textContent=rows.length+" "+T("count")+" · "+T("range")+" "+f.radius+" km · "+localLabel+". "+T("campusHelp");
  const host=$("tv-results");host.replaceChildren();
- if(!rows.length)host.append(textNode("p","Non sono presenti schede localizzate con questi filtri. Prova un raggio più ampio o azzera i filtri.","tv-empty"));
- else rows.forEach(r=>host.append(clinicCard(r)));
+ if(!rows.length)host.append(textNode("p",T("noresults"),"tv-empty"));
+ else rows.forEach(r=>host.append(clinicCard(r,campus)));
+ const uni=$("tv-university");uni.replaceChildren();
+ const selection=state.university.filter(r=>state.audience==="all"||
+    (state.audience==="student"&&r.id!=="UNI-005")||
+    (state.audience==="staff"&&(r.id==="UNI-005"||r.id==="TV-FIRSTPOINT"))||
+    state.audience==="territorial");
+ if(state.audience!=="territorial") selection.forEach(x=>uni.append(uniCard(x)));
+ if(!selection.length||state.audience==="territorial")uni.append(textNode("p",
+   state.lang==="en"?"Choose student or staff resources above, or explore nearby services below.":"Seleziona un percorso studenti o personale, oppure consulta i servizi territoriali qui sotto.","tv-note"));
+ renderStaticTexts();
  drawMap(rows,f.radius);
 }
+
 function applyApproved(raw){
  if(!raw||raw.active!==true||!Array.isArray(raw.items))return;
  const map=new Map(state.clinical.map(r=>[r.key,r]));
@@ -122,11 +197,25 @@ async function load(){
    const data=await r.json();
    if(data.pilot!=="tor-vergata"||data.source_version!=="7.18"||!Array.isArray(data.clinical)||data.count_8km!==19)throw Error("Catalogo pilota non coerente.");
    state.center=data.center;state.clinical=data.clinical;state.university=data.university;
+   state.campuses=Array.isArray(data.campuses)?data.campuses:[{...data.center,id:"rettorato",name:"Rettorato / Giurisprudenza"}];
+   state.campus=state.campuses[0];
+   const campusSelect=$("tv-campus");
+   if(campusSelect)for(const c of state.campuses){
+     const o=document.createElement("option");o.value=c.id;o.textContent=c.name;campusSelect.append(o);
+   }
+   try{
+     const published=await fetch("/wp-json/mentacampus/v1/university",{credentials:"omit",cache:"no-store",signal:AbortSignal.timeout(5000)});
+     if(published.ok){
+       const d=await published.json();
+       if(d.active===true&&Array.isArray(d.items)&&d.items.length)state.university=d.items;
+     }
+   }catch(_){} // Safe fallback to versioned, approved public university data.
+
    try{
      const ap=await fetch("/wp-json/sml/v1/revisions",{credentials:"omit",cache:"no-store",signal:AbortSignal.timeout(5000)});
      if(ap.ok)applyApproved(await ap.json());
    }catch(_){} // Approved WordPress overrides are optional; static baseline remains usable.
-   const uni=$("tv-university");uni.replaceChildren();state.university.forEach(x=>uni.append(uniCard(x)));
+
    const types=[...new Set(state.clinical.map(r=>r.type).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"it"));
    for(const type of types){const o=document.createElement("option");o.value=type;o.textContent=type;$("tv-type").append(o);}
    if(window.L){
@@ -145,6 +234,29 @@ async function load(){
 $("tv-filter").addEventListener("submit",e=>{e.preventDefault();render();});
 ["tv-q","tv-radius","tv-type"].forEach(id=>$(id).addEventListener(id==="tv-q"?"input":"change",()=>render()));
 $("tv-reset").addEventListener("click",()=>{$("tv-q").value="";$("tv-radius").value="8";$("tv-type").value="";render();});
+const campusSelect=$("tv-campus");
+if(campusSelect)campusSelect.addEventListener("change",()=>{
+  state.campus=state.campuses.find(c=>c.id===campusSelect.value)||state.center;
+  render();
+});
+for(const lang of ["it","en"]){
+  const b=$("tv-lang-"+lang);
+  if(b)b.addEventListener("click",()=>{
+    state.lang=lang;
+    const select=$("tv-campus");
+    if(select)for(const o of select.options){
+      const c=state.campuses.find(c=>c.id===o.value);if(c)o.textContent=lang==="en"?(c.name_en||c.name):c.name;
+    }
+    render();
+  });
+}
+document.querySelectorAll("[data-tv-role]").forEach(b=>b.addEventListener("click",()=>{
+  state.audience=b.dataset.tvRole;
+  render();
+  const target=state.audience==="territorial"?"vicino":"ascolto";
+  document.getElementById(target)?.scrollIntoView({behavior:"smooth",block:"start"});
+}));
+
 $("tv-tiles").addEventListener("click",()=>{
  if(!state.map||!window.L)return;
  const message=$("tv-map-alert");
