@@ -35,6 +35,7 @@ jobs:
           set -euo pipefail
           php -l wordpress-plugin-dist/sml-tor-vergata/sml-tor-vergata.php
           php -l wordpress-plugin-dist/sml-tor-vergata/editorial.php
+          php tools/test-tor-vergata-editorial.php
           node --check wordpress-plugin-dist/sml-tor-vergata/public/tv.js
           php -r '
           define("ABSPATH", "/");
