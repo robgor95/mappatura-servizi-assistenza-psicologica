@@ -15,6 +15,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: menta-campus-v02-build
+  cancel-in-progress: true
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
