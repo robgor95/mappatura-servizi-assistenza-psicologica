@@ -56,6 +56,11 @@ function renderStaticTexts(){
  for(const [value,id] of [["it","tv-lang-it"],["en","tv-lang-en"]]){
    const el=$(id);if(el)el.setAttribute("aria-pressed",String(value===state.lang));
  }
+ const radiusSelect=$("tv-radius");
+ if(radiusSelect)for(const opt of radiusSelect.options)opt.textContent=(state.lang==="en"?"Within ":"Entro ")+opt.value+" km";
+ const typeSelect=$("tv-type");if(typeSelect&&typeSelect.options.length)typeSelect.options[0].textContent=state.lang==="en"?"All service types":"Tutti i servizi";
+ const btn=$("tv-tiles");
+ if(btn)btn.textContent=state.tiles?(state.lang==="en"?"Hide OpenStreetMap background":"Nascondi lo sfondo OpenStreetMap"):(state.lang==="en"?"Load OpenStreetMap background":"Carica sfondo OpenStreetMap");
  document.querySelectorAll("[data-tv-role]").forEach(btn=>btn.setAttribute("aria-pressed",String(btn.dataset.tvRole===state.audience)));
 }
 function copyText(text){if(navigator.clipboard && window.isSecureContext)navigator.clipboard.writeText(text).then(()=>{
