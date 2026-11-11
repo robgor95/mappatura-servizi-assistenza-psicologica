@@ -224,6 +224,32 @@ function smltv_admin_action(){
         smltv_audit('proposed',$target,null,array('proposal_id'=>$p));
         smltv_redirect('Proposta inviata: i dati pubblici non sono cambiati');
     }
+    if($action==='check_links'){
+        if(!smltv_cap('manage'))wp_die('Non autorizzato',403);
+        smltv_check_links();
+        smltv_redirect('Controllo dei collegamenti completato');
+    }
+    if($action==='restore'){
+        if(!smltv_cap('propose'))wp_die('Non autorizzato',403);
+        $event_id=absint($_POST['event_id']??0);
+        $event=get_post($event_id);
+        if(!$event||$event->post_type!=='smltv_event'||get_post_meta($event_id,'_smltv_action',true)!=='approved')
+            smltv_redirect('Versione non disponibile',true);
+        $old=json_decode((string)get_post_meta($event_id,'_smltv_before',true),true);
+        $target=(string)get_post_meta($event_id,'_smltv_target',true);
+        $entries=smltv_entries();
+        if(!is_array($old)||empty($entries[$target]))smltv_redirect('Versione non ripristinabile',true);
+        $validated=smltv_validate_entry($old);
+        if(is_wp_error($validated))smltv_redirect($validated->get_error_message(),true);
+        $p=wp_insert_post(array('post_type'=>'smltv_proposal','post_status'=>'private',
+           'post_title'=>'Proposta ripristino '.$target,'post_author'=>get_current_user_id()),true);
+        if(is_wp_error($p)||!$p)smltv_redirect('Impossibile proporre il ripristino',true);
+        $payload=array('target'=>$target,'version'=>(int)$entries[$target]['version'],'entry'=>$validated,'restore_from'=>$event_id);
+        update_post_meta($p,'_smltv_payload',wp_slash(wp_json_encode($payload,JSON_UNESCAPED_UNICODE)));
+        update_post_meta($p,'_smltv_state','submitted');
+        smltv_audit('restore_proposed',$target,null,array('event_id'=>$event_id,'proposal_id'=>$p));
+        smltv_redirect('Ripristino proposto: richiede una nuova revisione e approvazione');
+    }
     $id=absint($_POST['proposal_id']??0);
     $post=get_post($id);
     if(!$post||$post->post_type!=='smltv_proposal')smltv_redirect('Proposta non trovata',true);
@@ -356,5 +382,28 @@ function smltv_admin_page(){
     $report=get_option('smltv_link_audit',array());
     echo '<p>Controllo automatico tramite WordPress Cron (dipende dalle visite al sito). Nessuna ricerca o dato degli utenti viene memorizzato.</p>';
     if($report)foreach($report as $r)echo '<p>'.esc_html($r['id'].' — '.$r['status'].' (HTTP '.($r['http']??'non disponibile').') '.$r['checked_at']).'</p>';
+    if(smltv_cap('manage')){
+        echo '<form method="post" action="'.$action_url.'"><input type="hidden" name="action" value="smltv_action"><input type="hidden" name="operation" value="check_links">';
+        wp_nonce_field('smltv_action','smltv_nonce');
+        echo '<button type="submit" class="button">Controlla ora i link ufficiali</button></form>';
+    }
+    echo '<h2>Storico e ripristini</h2><p>Ripristinare una versione crea una nuova proposta, senza eliminare lo storico.</p>';
+    $events=array_reverse(smltv_private_posts('smltv_event',80));$shown=0;
+    foreach($events as $event){
+        if($shown>=25)break;
+        if(get_post_meta($event->ID,'_smltv_action',true)!=='approved')continue;
+        $previous=(string)get_post_meta($event->ID,'_smltv_before',true);
+        if(!$previous||json_decode($previous,true)===null)continue;
+        $shown++;
+        $target=(string)get_post_meta($event->ID,'_smltv_target',true);
+        echo '<p>'.esc_html($event->post_date.' · '.$target);
+        if(smltv_cap('propose')){
+            echo '<form method="post" action="'.$action_url.'" style="display:inline-block;margin-left:10px"><input type="hidden" name="action" value="smltv_action"><input type="hidden" name="operation" value="restore"><input type="hidden" name="event_id" value="'.esc_attr((string)$event->ID).'">';
+            wp_nonce_field('smltv_action','smltv_nonce');
+            echo '<button type="submit" class="button">Proponi ripristino</button></form>';
+        }
+        echo '</p>';
+    }
+    echo '<h2>Prerequisiti per collaboratori reali</h2><p><strong>Backup:</strong> l’export XML WordPress non comprende tutte le tabelle, media e impostazioni. Prima del collaudo utenti verificare una copia ripristinabile dell’intera installazione e definire privacy e responsabilità editoriale.</p>';
     echo '<p>Per la gestione dei ruoli usa Utenti → Aggiungi nuovo, assegnando Menta Campus — redattore, revisore o approvatore a persone distinte.</p></div>';
 }
